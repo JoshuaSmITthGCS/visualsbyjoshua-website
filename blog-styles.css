@@ -1,15 +1,36 @@
 @import url("./styles.css");
 
 :root {
-            --primary: #2c3e50;
-            --secondary: #3498db;
-            --accent: #e74c3c;
-            --light: #f8f9fa;
-            --dark: #212529;
-            --text: #333;
-            --footer: #1a252f;
-            --shadow: 0 5px 15px rgba(0,0,0,0.1);
-            --transition: all 0.3s ease;
+              /* Brand palette, matched to styles.css so the whole site is one design system.
+                 Previously this file declared its own blue/red scheme, which is why the 6
+                 service pages and 55 blog posts rendered differently from the homepage.
+                 Every ratio below was computed before being written:
+                   white on --secondary  5.44   white on --accent   4.71
+                   --secondary on white  5.44   --secondary on cream 4.80
+                   --text on white      15.14   white on --footer  18.34
+                   --muted on cream      4.75   --muted on white    5.38
+                 The old values failed AA: white on #3498db was 3.15, white on #e74c3c 3.82,
+                 #3498db links 3.15. --muted is #636b78 rather than styles.css's #676f7d
+                 because #676f7d lands at 4.47 on the cream background, just under AA. */
+              --primary: #101923;
+              --secondary: #935d35;
+              --accent: #c74a32;
+              --light: #f6f0e7;
+              --dark: #0b1118;
+              --text: #23262d;
+              --footer: #0d1520;
+              --surface: rgba(255, 255, 255, 0.84);
+              --surface-strong: #fffdf9;
+              --surface-muted: rgba(255, 248, 240, 0.72);
+              --muted: #636b78;
+              --line: rgba(16, 25, 35, 0.1);
+              --line-strong: rgba(147, 93, 53, 0.22);
+              --shadow: 0 16px 40px rgba(15, 24, 36, 0.08);
+              --shadow-strong: 0 28px 80px rgba(11, 17, 24, 0.18);
+              --transition: 220ms ease;
+              --radius-sm: 16px;
+              --radius-md: 24px;
+              --radius-lg: 34px;
         }
 
         html {
@@ -139,7 +160,7 @@
         }
 
         .btn:hover {
-            background: #2980b9;
+            background: #7c4e2c;
             transform: translateY(-3px);
         }
 
@@ -148,7 +169,7 @@
         }
 
         .btn-accent:hover {
-            background: #c0392b;
+            background: #a83c28;
         }
 
         .nav-cta {
@@ -162,7 +183,7 @@
             width: 100%;
             min-height: 60vh;
             height: auto;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), #1a252f;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), var(--footer);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -248,7 +269,7 @@
 
         .breadcrumb a:hover,
         .blog-hero a:hover {
-            color: #d7ecfb;
+            color: rgba(255, 245, 235, 0.86);
             text-decoration-color: currentColor;
         }
 
@@ -298,7 +319,7 @@
 
         .blog-text {
             margin-bottom: 30px;
-            color: #555;
+            color: var(--muted);
             font-size: 1.1rem;
             line-height: 1.8;
         }
@@ -385,7 +406,7 @@
 
         .service-description {
             margin-bottom: 20px;
-            color: #666;
+            color: var(--muted);
             flex-grow: 1;
         }
 
@@ -434,7 +455,7 @@
         }
 
         .faq-question:hover {
-            background-color: #e9ecef;
+            background-color: var(--light);
         }
 
         .faq-question i {
@@ -452,7 +473,7 @@
         .faq-answer p {
             padding: 0;
             margin: 0;
-            color: #666;
+            color: var(--muted);
         }
 
         .faq-item.active .faq-question {

@@ -43,7 +43,7 @@
 }
 
 .blog-header a:hover {
-  color: #d7ecfb;
+  color: rgba(255, 245, 235, 0.86);
   text-decoration-color: currentColor;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .blog-excerpt {
-  color: #666;
+  color: var(--muted);
   margin-bottom: 20px;
   line-height: 1.6;
 }
@@ -205,7 +205,7 @@ footer .footer-links a i {
 }
 
 .newsletter-section .newsletter-form button:hover {
-  background: #c0392b;
+  background: #a83c28;
 }
 .sr-only {
   position: absolute;

@@ -1,13 +1,34 @@
 :root {
-  --primary: #2c3e50;
-  --secondary: #3498db;
-  --accent: #e74c3c;
-  --light: #f8f9fa;
-  --dark: #212529;
-  --text: #333;
-  --footer: #1a252f;
-  --shadow: 0 5px 15px rgba(0,0,0,0.1);
-  --transition: all 0.3s ease;
+  /* Brand palette, matched to styles.css so the whole site is one design system.
+     Previously this file declared its own blue/red scheme, which is why the 6
+     service pages and 55 blog posts rendered differently from the homepage.
+     Every ratio below was computed before being written:
+       white on --secondary  5.44   white on --accent   4.71
+       --secondary on white  5.44   --secondary on cream 4.80
+       --text on white      15.14   white on --footer  18.34
+       --muted on cream      4.75   --muted on white    5.38
+     The old values failed AA: white on #3498db was 3.15, white on #e74c3c 3.82,
+     #3498db links 3.15. --muted is #636b78 rather than styles.css's #676f7d
+     because #676f7d lands at 4.47 on the cream background, just under AA. */
+  --primary: #101923;
+  --secondary: #935d35;
+  --accent: #c74a32;
+  --light: #f6f0e7;
+  --dark: #0b1118;
+  --text: #23262d;
+  --footer: #0d1520;
+  --surface: rgba(255, 255, 255, 0.84);
+  --surface-strong: #fffdf9;
+  --surface-muted: rgba(255, 248, 240, 0.72);
+  --muted: #636b78;
+  --line: rgba(16, 25, 35, 0.1);
+  --line-strong: rgba(147, 93, 53, 0.22);
+  --shadow: 0 16px 40px rgba(15, 24, 36, 0.08);
+  --shadow-strong: 0 28px 80px rgba(11, 17, 24, 0.18);
+  --transition: 220ms ease;
+  --radius-sm: 16px;
+  --radius-md: 24px;
+  --radius-lg: 34px;
 }
 
 * {
@@ -58,7 +79,7 @@ h1, h2, h3, h4 {
 }
 
 .btn:hover {
-  background: #2980b9;
+  background: #7c4e2c;
   transform: translateY(-3px);
 }
 
@@ -67,7 +88,7 @@ h1, h2, h3, h4 {
 }
 
 .btn-accent:hover {
-  background: #c0392b;
+  background: #a83c28;
 }
 
 header {
@@ -221,7 +242,7 @@ header {
 }
 
 .section.alt {
-  background-color: #f8f9fa;
+  background-color: var(--light);
 }
 
 .section-title {
@@ -230,7 +251,7 @@ header {
 }
 
 .section-subtitle {
-  color: #666;
+  color: var(--muted);
   margin-bottom: 24px;
 }
 
@@ -311,7 +332,7 @@ header {
 .cta {
   padding: 60px 0;
   text-align: center;
-  background: linear-gradient(135deg, #2c3e50, #1a252f);
+  background: linear-gradient(135deg, var(--primary), var(--footer));
   color: white;
 }
 
@@ -341,7 +362,23 @@ footer {
   display: flex;
   align-items: center;
   text-decoration: none;
+  /* This anchor carried no colour, so it inherited the UA default #0000ee
+     against the dark footer: a 1.66 contrast ratio, effectively an invisible
+     black-on-black link. */
+  color: white;
   margin-bottom: 15px;
+}
+
+/* Catch-all so no footer anchor can fall back to the UA default link colour
+   against the dark background again. */
+footer a:not(.btn),
+footer a:not(.btn):visited {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+footer a:not(.btn):hover,
+footer a:not(.btn):focus-visible {
+  color: white;
 }
 
 .footer-logo img {
@@ -367,7 +404,7 @@ footer {
 }
 
 .footer-links a {
-  color: #ccc;
+  color: rgba(255, 255, 255, 0.78);
   text-decoration: none;
 }
 
@@ -380,7 +417,7 @@ footer {
   margin-top: 30px;
   padding-top: 20px;
   text-align: center;
-  color: #aaa;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 @media (max-width: 992px) {
