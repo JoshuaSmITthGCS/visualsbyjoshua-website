@@ -7,15 +7,51 @@
 .TemporaryItems
 Icon?
 
-# Python virtualenvs and caches (the .seo-audit venv alone is 164 MB)
-.seo-audit/venv/
+# ---------------------------------------------------------------------------
+# Internal working material. This repository is PUBLIC, so none of this may be
+# committed: _private/ holds unpublished client photo originals, Lightroom
+# exports, audit documents, and internal strategy notes. It is also blocked from
+# the live site by forced 404 rules in _redirects.
+#
+# The one exception is _private/build/, the image pipeline. It is ordinary build
+# tooling with nothing sensitive in it, and the repo would be incomplete without
+# the script that generated images/optimized/.
+# ---------------------------------------------------------------------------
+_private/*
+!_private/build/
+_private/build/node_modules/
+
+# Internal SEO tooling and crawl artifacts
+.agents/
+.seo-audit/
+
+# Project instructions and internal planning documents
+CLAUDE.md
+ACTION-PLAN.md
+FULL-AUDIT-REPORT.md
+SEO-REPORT.html
+seo-audit-report.md
+seo-audit.js
+blog-gap-report.md
+photography-blog-instructions.md
+skills-lock.json
+
+# Editor / backup cruft
+*.bak
+*.swp
+*~
+
+# Python virtualenvs and caches
 .venv/
 venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
 
-# Node
+# Node. Dependencies are installed OUTSIDE this folder (~/.visualsbyjoshua-build)
+# because the project lives in iCloud Drive, and a node_modules tree here gets
+# torn apart by sync: it produced "sharp 2" and "semver 2" conflict copies and a
+# sharp install with no package.json.
 node_modules/
 npm-debug.log*
 .npm/
@@ -23,11 +59,5 @@ npm-debug.log*
 # Netlify CLI state
 .netlify/
 
-# Third-party clone with its own git remote (Bhanunamikaze/Agentic-SEO-Skill).
-# Not ours to version; recoverable from GitHub. Still moved out of the public
-# root by WO-02 so it is not served.
+# Third-party clone with its own git remote (Bhanunamikaze/Agentic-SEO-Skill)
 Agentic-SEO-Skill
-
-# Editor scratch
-*.swp
-*~

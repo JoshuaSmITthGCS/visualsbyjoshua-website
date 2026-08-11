@@ -1,0 +1,13 @@
+{
+  "name": "visualsbyjoshua-build",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Build tooling for visualsbyjoshua.com. Lives under _private/ so it is never part of the deployed site. Dependencies install OUTSIDE this folder (see optimize-images.mjs) because iCloud sync corrupts node_modules.",
+  "scripts": {
+    "images": "node optimize-images.mjs",
+    "images:force": "node optimize-images.mjs --force",
+    "images:report": "node optimize-images.mjs --report"
+  },
+  "comment": "sharp is intentionally NOT listed as a dependency. Install it at ~/.visualsbyjoshua-build instead: mkdir -p ~/.visualsbyjoshua-build && cd ~/.visualsbyjoshua-build && npm install sharp@latest"
+}
