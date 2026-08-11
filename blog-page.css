@@ -218,3 +218,17 @@ footer .footer-links a i {
   white-space: nowrap;
   border: 0;
 }
+
+/* ---------------------------------------------------------------------------
+   Responsive images (WO-06)
+
+   Card images are now <picture> elements. .blog-image is a fixed 250px-tall
+   box and .blog-image img fills it with object-fit: cover, so the <picture>
+   wrapper has to be told to fill that box too, otherwise it collapses to an
+   inline element and the img loses its 100%/100% reference.
+   --------------------------------------------------------------------------- */
+.blog-image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
