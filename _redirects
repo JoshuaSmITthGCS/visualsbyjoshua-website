@@ -1,0 +1,42 @@
+# Netlify redirect + rewrite rules for visualsbyjoshua.com
+# Rules are evaluated top to bottom; the first match wins.
+# A trailing "!" forces the rule even when a real file exists at that path,
+# which is what makes the _private blocks effective on a drag-and-drop deploy.
+
+# ---------------------------------------------------------------------------
+# Internal working material must never be served.
+# _private/ holds audit documents, build scripts, unpublished client originals,
+# and Lightroom exports. Without the force flag Netlify would serve the files
+# directly, because they are present in the deploy.
+# ---------------------------------------------------------------------------
+/_private/*            /404.html   404!
+/_private              /404.html   404!
+
+# CLAUDE.md has to stay at the repo root for tooling, so it is blocked by path
+# instead of being moved.
+/CLAUDE.md             /404.html   404!
+/claude.md             /404.html   404!
+
+# Belt and braces: block the internal file extensions and names that were
+# publicly reachable before this change, in case any copy reappears at the root.
+/*.bak                 /404.html   404!
+/ACTION-PLAN.md        /404.html   404!
+/FULL-AUDIT-REPORT.md  /404.html   404!
+/SEO-REPORT.html       /404.html   404!
+/seo-report            /404.html   404!
+/seo-audit.js          /404.html   404!
+/seo-audit-report.md   /404.html   404!
+/blog-gap-report.md    /404.html   404!
+/skills-lock.json      /404.html   404!
+/photography-blog-instructions.md  /404.html  404!
+
+# ---------------------------------------------------------------------------
+# Retired URLs.
+# ---------------------------------------------------------------------------
+# Long-standing misspelling of the testimonials page. Previously handled by a
+# meta-refresh stub, now a real 301 so link equity consolidates.
+/Tesimonials.html      /testimonials   301!
+/tesimonials           /testimonials   301!
+
+# Legacy extension form of the gallery page; canonical is /gallery.
+/gallery.html          /gallery        301!
