@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- SEO Meta Tags -->
+  <title>Thank You | Visuals by Joshua | Charleston Photographer</title>
+  <meta name="description" content="Thank you for contacting Visuals by Joshua. Your message has been received and we'll be in touch shortly.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://visualsbyjoshua.com/thankyou.html">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #3498db;
+      --accent: #e74c3c;
+      --light: #f8f9fa;
+      --dark: #212529;
+      --text: #333;
+      --footer: #1a252f;
+      --shadow: 0 5px 15px rgba(0,0,0,0.1);
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--secondary);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: var(--transition);
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+    }
+
+    .btn:hover {
+      background: #2980b9;
+      transform: translateY(-3px);
+    }
+
+    .btn-accent {
+      background: var(--accent);
+    }
+
+    .btn-accent:hover {
+      background: #c0392b;
+    }
+
+    /* Header & Navigation */
+    header {
+      background-color: rgba(255, 255, 255, 0.95);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: var(--shadow);
+      padding: 15px 0;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo-text {
+      color: var(--primary);
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      margin-right: 20px;
+    }
+
+    .nav-item {
+      margin-left: 25px;
+    }
+
+    .nav-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      transition: var(--transition);
+      font-size: 1rem;
+    }
+
+    .nav-link:hover {
+      color: var(--secondary);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: var(--secondary);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Thank You Section */
+    .thank-you {
+      padding: 120px 0;
+      text-align: center;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+    }
+
+    .thank-you-icon {
+      font-size: 80px;
+      color: var(--accent);
+      margin-bottom: 30px;
+      animation: bounce 2s infinite;
+    }
+
+    .thank-you-title {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    .thank-you-message {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      color: #666;
+    }
+
+    .timeline {
+      margin-bottom: 40px;
+      width: 100%;
+      max-width: 600px;
+      padding: 30px;
+      background-color: var(--light);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+
+    .timeline h3 {
+      margin-bottom: 20px;
+      color: var(--primary);
+      font-size: 1.5rem;
+    }
+
+    .timeline-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .timeline-step {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .step-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      background-color: var(--secondary);
+      color: white;
+      border-radius: 50%;
+      margin-right: 15px;
+      flex-shrink: 0;
+      font-weight: 600;
+    }
+
+    .step-content h4 {
+      margin-bottom: 5px;
+      color: var(--primary);
+    }
+
+    .step-content p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--footer);
+      color: white;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .footer-logo img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .footer-logo-text {
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .copyright {
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-link {
+      color: #aaa;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .social-link:hover {
+      color: white;
+    }
+
+    /* Animations */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .thank-you-title {
+        font-size: 2.5rem;
+      }
+      .action-buttons {
+        flex-direction: column;
+      }
+      .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .thank-you-title {
+        font-size: 2rem;
+      }
+      .thank-you-message {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      
+      <a title="Open Visuals by Joshua" href="/index.html" class="logo">
+  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="40" height="40" decoding="async">
+  <span class="logo-text">Visuals by Joshua</span>
+</a>
+<div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a title="Go to the Visuals by Joshua homepage" href="index.html" class="nav-link" aria-label="Go to the Visuals by Joshua homepage">Home</a></li>
+          <li class="nav-item"><a title="Learn about Joshua Smith photography" href="index.html#about" class="nav-link" aria-label="Learn about Joshua Smith photography">About</a></li>
+          <li class="nav-item"><a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="nav-link" aria-label="View the Visuals by Joshua photography portfolio">Portfolio</a></li>
+          <li class="nav-item"><a title="View Charleston photography services" href="index.html#services" class="nav-link" aria-label="View Charleston photography services">Services</a></li>
+          <li class="nav-item"><a title="Read Visuals by Joshua client reviews" href="index.html#testimonials" class="nav-link" aria-label="Read Visuals by Joshua client reviews">Reviews</a></li>
+          <li class="nav-item"><a title="Read frequently asked photography questions" href="/faq" class="nav-link" aria-label="Read frequently asked photography questions">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Thank You Section -->
+  <section class="thank-you">
+    <div class="container">
+      <div class="thank-you-icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <h1 class="thank-you-title">Thank You for Reaching Out!</h1>
+      <p class="thank-you-message">Your message has been received successfully. I appreciate your interest in my photography services and look forward to creating something beautiful together.</p>
+      
+      <div class="timeline">
+        <h3>What Happens Next?</h3>
+        <div class="timeline-steps">
+          <div class="timeline-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Ill receive the email</h4>
+              <p>My imbox revices your email and contact shortly.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Personal Response</h4>
+              <p>I'll review your inquiry and respond personally within 24 hours.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Consultation</h4>
+              <p>We'll schedule a brief chat to discuss your vision and requirements.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Book Your Session</h4>
+              <p>Once we've finalized the details, we'll confirm your booking.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="action-buttons">
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      
+      <p class="copyright">© 2025 Joshua Smith Photography. All Rights Reserved.</p>
+      <div class="social-links">
+        <a title="Visit Visuals by Joshua on Facebook" href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" class="social-link" aria-label="Visit Visuals by Joshua on Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a title="Visit Visuals by Joshua on Instagram" href="https://www.instagram.com/visuals_by_joshua" class="social-link" aria-label="Visit Visuals by Joshua on Instagram"><i class="fab fa-instagram"></i></a>
+        <a title="Visit Joshua Smith on LinkedIn" href="https://www.linkedin.com/in/joshua-benjamin-smith" class="social-link" aria-label="Visit Joshua Smith on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Optional: Add confetti effect when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      // If you want to add a confetti effect, you could include a confetti library here
+      console.log('Thank you page loaded');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+# macOS / iCloud junk
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+Icon?
+
+# Python virtualenvs and caches (the .seo-audit venv alone is 164 MB)
+.seo-audit/venv/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node
+node_modules/
+npm-debug.log*
+.npm/
+
+# Netlify CLI state
+.netlify/
+
+# Third-party clone with its own git remote (Bhanunamikaze/Agentic-SEO-Skill).
+# Not ours to version; recoverable from GitHub. Still moved out of the public
+# root by WO-02 so it is not served.
+Agentic-SEO-Skill
+
+# Editor scratch
+*.swp
+*~

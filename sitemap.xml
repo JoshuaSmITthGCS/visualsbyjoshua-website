@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Home -->
+  <url>
+    <loc>https://visualsbyjoshua.com/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/privacy-policy.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/terms-of-service.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <!-- Location Service Pages -->
+  <url>
+    <loc>https://visualsbyjoshua.com/charleston-photographer/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.98</priority>
+  </url>
+  <url>
+    <loc>https://visualsbyjoshua.com/dmv-photographer/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://visualsbyjoshua.com/charleston-portrait-photographer/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://visualsbyjoshua.com/charleston-event-photographer/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://visualsbyjoshua.com/dmv-portrait-photographer/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://visualsbyjoshua.com/dmv-event-photographer/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-juneteenth-event-photography/</loc>
+    <lastmod>2026-06-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: Charleston Photography Pricing Guide -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-photography-pricing/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: Charleston Spring Graduation Portrait Session -->
+  <!-- NEW Blog: Charleston Multicultural Student Night Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-multicultural-student-night-photography/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-spring-graduation-portrait-session/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: Shutter Drag Creative Portrait Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/shutter-drag-creative-portrait-photography/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: Multicultural Student Graduation Night Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/multicultural-student-graduation-night-photography/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: Philadelphia Street Photography Reading Terminal -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/philadelphia-street-photography-reading-terminal/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- NEW Blog: World Pride DC Event Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/world-pride-dc-event-photography/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- NEW Blog: Charleston Historic District Graduation Portraits -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-historic-district-graduation-portraits/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: Masters Graduation Photography DC Monuments -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/masters-graduation-photography-dc-monuments/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- NEW Blog: Doctoral Graduation Photography DC Monuments -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/doctoral-graduation-photography-dc-monuments/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- NEW Blog: Sullivan's Island Birthday Portrait Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/sullivans-island-birthday-portrait-photography-charleston/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: FIJI Y2K Party Event Photography Lo-Fi Brewing -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/fiji-y2k-party-event-photography-charleston/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: College Party Event Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/college-party-event-photography/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: Baltimore Garden Fairycore Portrait Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/baltimore-garden-fairycore-portrait-photography/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- NEW Blog: Night Flash Greek Life Portrait Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/night-flash-greek-life-portrait-photography/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: Charleston Graduation Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-graduation-photography/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: Cypress Gardens Engagement Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/cypress-gardens-engagement-photography-charleston/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: Anniversary Photography Downtown Charleston -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/anniversary-photography-downtown-charleston/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: Studio Black & White Portrait Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/studio-black-white-portrait-photography/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW Blog: Concert Photography GZA Wu-Tang -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/concert-photography-gza-wu-tang/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog: Streetwear Event Photography We On The Streets -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/streetwear-popup-photography-we-on-the-streets/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog: Event Photography Checklist Smithsonian Folklife -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/event-photography-checklist-smithsonian-folklife/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog: Smithsonian Portrait Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/smithsonian-portrait-photography/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog: Underground Portraits Metro Guide -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/metro/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog: Choosing the Right Photographer -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/choosing-right-photographer-dmv-area/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog: Photography Pricing Guide -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/photography-pricing/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog: PG County Portrait Locations -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/pg-portrait-locations/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Missing Charleston Articles Start -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-graduation-photography-prices/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/best-photo-spots-charleston-sc/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/sorority-fraternity-group-photos-charleston/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-headshot-pricing/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-family-photo-locations/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-photography-permit-guide/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/best-time-of-day-for-photos-charleston/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Missing Charleston Articles End -->
+
+  <!-- SEO Charleston Guide Pages Start -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-graduation-photo-locations-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-senior-portrait-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-event-photography-planning-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-headshot-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-engagement-photo-locations-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-brand-photography-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-student-organization-event-photography-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-nightlife-party-photography-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-anniversary-proposal-photo-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-seasonal-photo-session-guide/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- SEO Charleston Guide Pages End -->
+
+
+
+
+  <!-- July 2026 Article Pack Start -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/sony-a7iii-event-photography-settings/</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/flash-fill-harsh-sun-settings/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/godox-v1-pro-vs-ad200-flash-guide/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/tamron-28-75-g2-vs-a036-real-world/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/charleston-graduation-photo-locations/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/posing-prompts-script-photographers/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/lightroom-black-skin-tones-workflow/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/graduation-photography-pricing-charleston-dmv/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/backup-gear-checklist-paid-events/</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/ttartisan-fisheye-aps-c-crop-guide/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- July 2026 Article Pack End -->
+
+  <!-- Gallery -->
+  <url>
+    <loc>https://visualsbyjoshua.com/gallery</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://visualsbyjoshua.com/faq</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Testimonials -->
+  <url>
+    <loc>https://visualsbyjoshua.com/testimonials</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- AI Search Context -->
+  <url>
+    <loc>https://visualsbyjoshua.com/llms-full.txt</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
