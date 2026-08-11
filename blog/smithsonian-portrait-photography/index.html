@@ -71,7 +71,14 @@
 
     <style>
         .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/smithsonian-portrait-hero.webp') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/optimized/root/smithsonian-portrait-hero-800.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), image-set(url('/images/optimized/root/smithsonian-portrait-hero-800.avif') type('image/avif'), url('/images/optimized/root/smithsonian-portrait-hero-800.webp') type('image/webp'), url('/images/optimized/root/smithsonian-portrait-hero-800.jpg') type('image/jpeg')) center/cover no-repeat;
+        }
+        @media (min-width: 800px) {
+          .blog-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/optimized/root/smithsonian-portrait-hero-1200.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), image-set(url('/images/optimized/root/smithsonian-portrait-hero-1200.avif') type('image/avif'), url('/images/optimized/root/smithsonian-portrait-hero-1200.webp') type('image/webp'), url('/images/optimized/root/smithsonian-portrait-hero-1200.jpg') type('image/jpeg')) center/cover no-repeat;
+          }
         }
 
         .portrait-gallery {
@@ -186,13 +193,25 @@
             <!-- Portrait Gallery Section -->
             <div class="portrait-gallery">
                 <div class="portrait-item">
-                    <img height="1982" width="1586" src="smithsonian-portrait-1.webp" alt="Professional portrait at Smithsonian Castle columns">
+                    <picture>
+                      <source type="image/avif" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-400.avif 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-800.avif 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-1200.avif 1200w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
+                      <source type="image/webp" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-400.webp 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-800.webp 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-1200.webp 1200w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
+                      <img src="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-1200.jpg" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-400.jpg 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-800.jpg 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-1200.jpg 1200w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)" width="1586" height="1982" alt="Professional portrait at Smithsonian Castle columns" loading="lazy" decoding="async">
+                    </picture>
                 </div>
                 <div class="portrait-item">
-                    <img height="1982" width="1586" src="smithsonian-portrait-2.webp" alt="Portrait photography at Hirshhorn Museum DC">
+                    <picture>
+                      <source type="image/avif" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-400.avif 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-800.avif 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-1200.avif 1200w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
+                      <source type="image/webp" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-400.webp 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-800.webp 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-1200.webp 1200w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
+                      <img src="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-1200.jpg" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-400.jpg 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-800.jpg 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-1200.jpg 1200w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)" width="1586" height="1982" alt="Portrait photography at Hirshhorn Museum DC" loading="lazy" decoding="async">
+                    </picture>
                 </div>
                 <div class="portrait-item">
-                    <img height="1982" width="1586" src="smithsonian-portrait-3.webp" alt="Natural light portrait Smithsonian gardens">
+                    <picture>
+                      <source type="image/avif" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-400.avif 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-800.avif 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-1200.avif 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                      <source type="image/webp" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-400.webp 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-800.webp 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-1200.webp 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                      <img src="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-1200.jpg" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-400.jpg 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-800.jpg 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-1200.jpg 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="1586" height="1982" alt="Natural light portrait Smithsonian gardens" loading="lazy" decoding="async">
+                    </picture>
                 </div>
             </div>
 

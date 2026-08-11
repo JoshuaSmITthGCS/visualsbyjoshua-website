@@ -128,20 +128,81 @@ function groupFor(absSource) {
 /* -------------------------------------------------------------------- build */
 
 const referenced = collectReferencedImages();
-const jobs = [];
-let missingSource = 0;
+
+/**
+ * Sources carried over from a previous run.
+ *
+ * Once a page is rewritten to a <picture>, it points at derivatives and its
+ * original stops appearing as a reference, so a reference-only scan would drop
+ * it. That is fine while the derivatives sit on disk, but a clean rebuild would
+ * then silently fail to regenerate them and every rewritten page would 404 its
+ * images. Unioning in the previous manifest's still-existing sources keeps the
+ * build reproducible from scratch.
+ */
+const carried = new Set();
+
+/**
+ * Reverse-map a derivative reference to the source that produced it.
+ *
+ * A rewritten page references /images/optimized/<group>/<base>-<width>.<ext>.
+ * That reference is itself proof a source exists, and is more reliable than the
+ * previous manifest, which is why it is checked first: it survives a deleted
+ * manifest. groupFor() is the forward mapping; this inverts it.
+ */
+const GROUP_TO_DIR = (group) => {
+  if (group === 'root') return '';
+  if (group === 'newblogimages') return 'newblogimages';
+  if (group.startsWith('posts/')) return path.join('blog', group.slice('posts/'.length));
+  return path.join('images', group);
+};
 
 for (const ref of referenced) {
+  const m = ref.match(/^\/images\/optimized\/(.+)\/([^/]+)-(\d+)\.(avif|webp|jpg)$/);
+  if (!m) continue;
+  const [, group, base] = m;
+  const dir = path.join(SITE, GROUP_TO_DIR(group));
+  if (!fs.existsSync(dir)) continue;
+  for (const ext of ['webp', 'WebP', 'png', 'PNG', 'jpg', 'jpeg', 'JPG', 'avif']) {
+    const cand = path.join(dir, `${base}.${ext}`);
+    if (fs.existsSync(cand)) {
+      const key = '/' + path.relative(SITE, cand).split(path.sep).join('/');
+      carried.add(key);
+      if (!resolvedPaths.has(key)) resolvedPaths.set(key, cand);
+      break;
+    }
+  }
+}
+
+if (fs.existsSync(MANIFEST)) {
+  try {
+    for (const key of Object.keys(JSON.parse(fs.readFileSync(MANIFEST, 'utf8')))) {
+      const abs = path.join(SITE, key.replace(/^\//, ''));
+      if (fs.existsSync(abs) && !abs.startsWith(OUT_ROOT)) {
+        carried.add(key);
+        if (!resolvedPaths.has(key)) resolvedPaths.set(key, abs);
+      }
+    }
+  } catch { /* a corrupt manifest is simply rebuilt from references */ }
+}
+
+const jobs = [];
+const seenAbs = new Set();
+let missingSource = 0;
+
+for (const ref of new Set([...referenced, ...carried])) {
   const abs = resolvedPaths.get(ref);
   if (!abs || !fs.existsSync(abs)) { missingSource++; continue; }
   if (abs.startsWith(OUT_ROOT)) continue;           // already a derivative
+  if (seenAbs.has(abs)) continue;                   // same file, two references
+  seenAbs.add(abs);
   jobs.push({ ref, abs });
 }
 jobs.sort((a, b) => a.ref.localeCompare(b.ref));
+const carriedOnly = [...carried].filter((k) => !referenced.has(k)).length;
 
 console.log(`Site root : ${SITE}`);
 console.log(`sharp     : ${sharp.versions.sharp} (libvips ${sharp.versions.vips})`);
-console.log(`Sources   : ${jobs.length} referenced images${missingSource ? `, ${missingSource} refs with no file` : ''}`);
+console.log(`Sources   : ${jobs.length} images${carriedOnly ? ` (${carriedOnly} carried from the previous manifest, now referenced only via derivatives)` : ''}${missingSource ? `, ${missingSource} refs with no file` : ''}`);
 console.log(`Widths    : ${WIDTHS.join(', ')}   Formats: avif, webp, jpeg`);
 console.log(REPORT_ONLY ? 'Mode      : REPORT ONLY\n' : FORCE ? 'Mode      : FORCE REBUILD\n' : 'Mode      : incremental\n');
 
@@ -169,8 +230,16 @@ for (const { ref, abs } of jobs) {
   const targets = WIDTHS.filter((w) => w <= meta.width);
   if (targets.length === 0) targets.push(meta.width);
 
+  // Key on the resolved, site-absolute path rather than the reference as
+  // written. Blog posts reference images relatively ("folklife-traditional-dance.webp"),
+  // and both that name and "we-on-streets-live-art.webp" exist at the site root
+  // AND inside a post folder. Keying on the raw reference made those two names
+  // ambiguous and would have let a post resolve to the root copy.
+  const siteAbs = '/' + path.relative(SITE, abs).split(path.sep).join('/');
+
   const entry = {
-    source: ref,
+    source: siteAbs,
+    writtenAs: ref,
     width: meta.width,
     height: meta.height,
     aspectRatio: +(meta.width / meta.height).toFixed(4),
@@ -218,7 +287,7 @@ for (const { ref, abs } of jobs) {
     }
   }
 
-  manifest[ref] = entry;
+  manifest[siteAbs] = entry;
 }
 
 if (!REPORT_ONLY) {

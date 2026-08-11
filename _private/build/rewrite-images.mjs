@@ -66,8 +66,20 @@ const SIZES_HERO = '100vw';
 const SIZES_GALLERY =
   '(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)';
 
-/** In-article images sit in a ~760px prose column. */
-const SIZES_PROSE = '(min-width: 800px) 760px, calc(100vw - 40px)';
+/**
+ * In-article images span .blog-container, which is max-width 900px with 20px
+ * side padding, so 860px at full width.
+ */
+const SIZES_PROSE = '(min-width: 940px) 860px, calc(100vw - 40px)';
+
+/**
+ * 28 of the 55 posts place images in grids declared in their own inline
+ * <style>, almost always repeat(auto-fit, minmax(300px, 1fr)) with a 20px gap.
+ * Inside an 860px column that resolves to two ~420px tracks on desktop and one
+ * full-width track on phones. Using the prose recipe here would fetch a 1200w
+ * file to fill a 420px slot.
+ */
+const SIZES_GRID = '(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)';
 
 const TARGETS = {
   blog:    { files: ['blog.html'],                       sizes: () => SIZES_CARD },
@@ -79,7 +91,12 @@ const TARGETS = {
       'dmv-portrait-photographer/index.html',
       'dmv-event-photographer/index.html',
     ], sizes: (ctx) => (ctx.isHero ? SIZES_HERO : SIZES_GALLERY) },
-  posts:   { files: null, sizes: (ctx) => (ctx.isHero ? SIZES_HERO : SIZES_PROSE) },
+  posts:   { files: null, sizes: (ctx) => {
+      if (ctx.isHero) return SIZES_HERO;
+      // Is this image inside a gallery/grid wrapper? Look at the enclosing
+      // markup immediately before the tag for a container class saying so.
+      return /class="[^"]*(?:gallery|grid)[^"]*"/i.test(ctx.before) ? SIZES_GRID : SIZES_PROSE;
+    } },
 };
 
 function postFiles() {
@@ -116,10 +133,25 @@ function parseAttrs(tag) {
   return attrs;
 }
 
-function lookup(src) {
+/**
+ * Resolve an img src to its manifest entry. The manifest is keyed on
+ * site-absolute paths, so a relative src has to be resolved against the
+ * directory of the page that contains it. Blog posts reference their images
+ * relatively, and two of those basenames also exist at the site root, so
+ * resolving against the page is what keeps them apart.
+ */
+function lookup(src, pageRel) {
   if (!src) return null;
-  const clean = decodeURIComponent(src.split('?')[0].split('#')[0]);
-  return manifest[clean] || manifest['/' + clean.replace(/^\.?\//, '')] || null;
+  let clean = decodeURIComponent(src.split('?')[0].split('#')[0]);
+  if (/^(https?:|data:|\/\/)/i.test(clean)) {
+    const own = clean.match(/^https?:\/\/visualsbyjoshua\.com(\/.*)$/i);
+    if (!own) return null;
+    clean = own[1];
+  }
+  const key = clean.startsWith('/')
+    ? clean
+    : '/' + path.posix.normalize(path.posix.join(path.dirname(pageRel).split(path.sep).join('/'), clean)).replace(/^\/+/, '');
+  return manifest[key] || null;
 }
 
 function srcsetFor(entry, ext) {
@@ -176,11 +208,13 @@ function rewriteFile(rel, sizesFn) {
     const attrs = parseAttrs(tag);
     if (SKIP_BASENAMES.has(path.basename(attrs.src || ''))) { skippedLogo++; return match; }
 
-    const entry = lookup(attrs.src);
+    const entry = lookup(attrs.src, rel);
     if (!entry) { skippedNoEntry++; return match; }
 
     const isHero = /hero|fetchpriority/i.test(tag) || attrs.fetchpriority === 'high';
-    const sizes = sizesFn({ isHero, attrs, rel });
+    // Enough preceding markup to see the wrapper elements around this image.
+    const before = src.slice(Math.max(0, offset - 400), offset);
+    const sizes = sizesFn({ isHero, attrs, rel, before });
     converted++;
     savedFrom += entry.sourceBytes;
     return indent + buildPicture(entry, attrs, sizes, indent);

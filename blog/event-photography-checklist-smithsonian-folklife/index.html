@@ -79,7 +79,14 @@
 
     <style>
         .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/folklife-traditional-dance.webp') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/optimized/root/folklife-traditional-dance-800.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), image-set(url('/images/optimized/root/folklife-traditional-dance-800.avif') type('image/avif'), url('/images/optimized/root/folklife-traditional-dance-800.webp') type('image/webp'), url('/images/optimized/root/folklife-traditional-dance-800.jpg') type('image/jpeg')) center/cover no-repeat;
+        }
+        @media (min-width: 800px) {
+          .blog-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/optimized/root/folklife-traditional-dance-1600.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), image-set(url('/images/optimized/root/folklife-traditional-dance-1600.avif') type('image/avif'), url('/images/optimized/root/folklife-traditional-dance-1600.webp') type('image/webp'), url('/images/optimized/root/folklife-traditional-dance-1600.jpg') type('image/jpeg')) center/cover no-repeat;
+          }
         }
 
         .festival-gallery {
@@ -284,21 +291,33 @@
             <!-- Festival Gallery Section -->
             <div class="festival-gallery">
                 <div class="festival-image">
-                    <img height="4000" width="3200" src="folklife-san-jose-mural.webp" alt="San Jose cultural mural at Smithsonian Folklife Festival">
+                    <picture>
+                      <source type="image/avif" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-400.avif 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-800.avif 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-1200.avif 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-1600.avif 1600w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
+                      <source type="image/webp" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-400.webp 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-800.webp 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-1200.webp 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-1600.webp 1600w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
+                      <img src="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-1200.jpg" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-400.jpg 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-800.jpg 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-1200.jpg 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural-1600.jpg 1600w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)" width="3200" height="4000" alt="San Jose cultural mural at Smithsonian Folklife Festival" loading="lazy" decoding="async">
+                    </picture>
                     <div class="image-caption">
                         <p><strong>Cultural Identity:</strong> The vibrant San Jose mural shot at f/1.8, showcasing the festival's celebration of heritage</p>
                     </div>
                 </div>
 
                 <div class="festival-image">
-                    <img height="4412" width="3530" src="folklife-traditional-dance.webp" alt="Traditional Latino dance performance at Folklife Festival">
+                    <picture>
+                      <source type="image/avif" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-400.avif 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-800.avif 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1200.avif 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1600.avif 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                      <source type="image/webp" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-400.webp 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-800.webp 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1200.webp 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1600.webp 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                      <img src="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1200.jpg" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-400.jpg 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-800.jpg 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1200.jpg 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1600.jpg 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="3530" height="4412" alt="Traditional Latino dance performance at Folklife Festival" loading="lazy" decoding="async">
+                    </picture>
                     <div class="image-caption">
                         <p><strong>Peak Action:</strong> Traditional dance performance frozen at 1/500s, showing the 50mm's versatility</p>
                     </div>
                 </div>
 
                 <div class="festival-image">
-                    <img height="5000" width="4000" src="folklife-artisan-demonstration.webp" alt="Artisan craft demonstration at Smithsonian festival">
+                    <picture>
+                      <source type="image/avif" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-400.avif 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-800.avif 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-1200.avif 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-1600.avif 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                      <source type="image/webp" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-400.webp 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-800.webp 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-1200.webp 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-1600.webp 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                      <img src="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-1200.jpg" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-400.jpg 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-800.jpg 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-1200.jpg 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration-1600.jpg 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="4000" height="5000" alt="Artisan craft demonstration at Smithsonian festival" loading="lazy" decoding="async">
+                    </picture>
                     <div class="image-caption">
                         <p><strong>Intimate Details:</strong> Artisan demonstrations shot wide open for clean background separation</p>
                     </div>
@@ -371,21 +390,33 @@
             <!-- More Festival Images -->
             <div class="festival-gallery" style="margin: 60px 0;">
                 <div class="festival-image">
-                    <img height="5000" width="4000" src="folklife-vintage-bike.webp" alt="Vintage bicycle display at Smithsonian Folklife">
+                    <picture>
+                      <source type="image/avif" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-400.avif 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-800.avif 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-1200.avif 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-1600.avif 1600w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
+                      <source type="image/webp" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-400.webp 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-800.webp 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-1200.webp 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-1600.webp 1600w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
+                      <img src="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-1200.jpg" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-400.jpg 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-800.jpg 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-1200.jpg 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike-1600.jpg 1600w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)" width="4000" height="5000" alt="Vintage bicycle display at Smithsonian Folklife" loading="lazy" decoding="async">
+                    </picture>
                     <div class="image-caption">
                         <p><strong>Cultural Artifacts:</strong> A vintage bicycle tells a story of heritage and transportation history</p>
                     </div>
                 </div>
 
                 <div class="festival-image">
-                    <img height="4152" width="3322" src="folklife-street-scene.webp" alt="Festival street scene with yellow umbrellas">
+                    <picture>
+                      <source type="image/avif" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-400.avif 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-800.avif 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-1200.avif 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-1600.avif 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                      <source type="image/webp" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-400.webp 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-800.webp 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-1200.webp 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-1600.webp 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                      <img src="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-1200.jpg" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-400.jpg 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-800.jpg 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-1200.jpg 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-street-scene-1600.jpg 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="3322" height="4152" alt="Festival street scene with yellow umbrellas" loading="lazy" decoding="async">
+                    </picture>
                     <div class="image-caption">
                         <p><strong>Festival Atmosphere:</strong> Yellow vendor umbrellas create leading lines and color harmony</p>
                     </div>
                 </div>
 
                 <div class="festival-image">
-                    <img height="5000" width="4000" src="folklife-family-moment.webp" alt="Family enjoying Smithsonian Folklife Festival">
+                    <picture>
+                      <source type="image/avif" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-400.avif 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-800.avif 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-1200.avif 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-1600.avif 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                      <source type="image/webp" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-400.webp 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-800.webp 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-1200.webp 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-1600.webp 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                      <img src="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-1200.jpg" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-400.jpg 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-800.jpg 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-1200.jpg 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-family-moment-1600.jpg 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="4000" height="5000" alt="Family enjoying Smithsonian Folklife Festival" loading="lazy" decoding="async">
+                    </picture>
                     <div class="image-caption">
                         <p><strong>Human Connection:</strong> Real family moments at a cultural celebration</p>
                     </div>
@@ -600,14 +631,22 @@
             <div class="festival-gallery">
 
                 <div class="festival-image">
-                    <img height="2124" width="1699" src="folklife-traditional-games.webp" alt="Traditional games demonstration at festival">
+                    <picture>
+                      <source type="image/avif" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-400.avif 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-800.avif 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-1200.avif 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-1600.avif 1600w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
+                      <source type="image/webp" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-400.webp 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-800.webp 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-1200.webp 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-1600.webp 1600w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
+                      <img src="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-1200.jpg" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-400.jpg 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-800.jpg 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-1200.jpg 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-games-1600.jpg 1600w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)" width="1699" height="2124" alt="Traditional games demonstration at festival" loading="lazy" decoding="async">
+                    </picture>
                     <div class="image-caption">
                         <p><strong>Cultural Traditions:</strong> Interactive demonstrations bring heritage to life</p>
                     </div>
                 </div>
 
                 <div class="festival-image">
-                    <img height="3321" width="2657" src="folklife-architectural-heritage.webp" alt="Weaving heritage display at Smithsonian">
+                    <picture>
+                      <source type="image/avif" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-400.avif 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-800.avif 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-1200.avif 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-1600.avif 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                      <source type="image/webp" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-400.webp 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-800.webp 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-1200.webp 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-1600.webp 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                      <img src="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-1200.jpg" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-400.jpg 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-800.jpg 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-1200.jpg 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage-1600.jpg 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="2657" height="3321" alt="Weaving heritage display at Smithsonian" loading="lazy" decoding="async">
+                    </picture>
                     <div class="image-caption">
                         <p><strong>Preserving History:</strong> Documentation of cultural weaving and design</p>
                     </div>

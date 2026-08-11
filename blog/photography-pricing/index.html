@@ -68,7 +68,14 @@
 
     <style>
         .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/dmv-photography-pricing-guide.webp') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/optimized/root/dmv-photography-pricing-guide-800.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), image-set(url('/images/optimized/root/dmv-photography-pricing-guide-800.avif') type('image/avif'), url('/images/optimized/root/dmv-photography-pricing-guide-800.webp') type('image/webp'), url('/images/optimized/root/dmv-photography-pricing-guide-800.jpg') type('image/jpeg')) center/cover no-repeat;
+        }
+        @media (min-width: 800px) {
+          .blog-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/optimized/root/dmv-photography-pricing-guide-800.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), image-set(url('/images/optimized/root/dmv-photography-pricing-guide-800.avif') type('image/avif'), url('/images/optimized/root/dmv-photography-pricing-guide-800.webp') type('image/webp'), url('/images/optimized/root/dmv-photography-pricing-guide-800.jpg') type('image/jpeg')) center/cover no-repeat;
+          }
         }
     </style>
   <script src="/analytics.js" defer></script>

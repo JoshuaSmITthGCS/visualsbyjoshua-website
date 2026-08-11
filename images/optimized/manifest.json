@@ -1,6 +1,45 @@
 {
+  "/after3.webp": {
+    "source": "/after3.webp",
+    "writtenAs": "/after3.webp",
+    "width": 3376,
+    "height": 6000,
+    "aspectRatio": 0.5627,
+    "sourceBytes": 3792748,
+    "group": "root",
+    "base": "after3",
+    "widths": [
+      400,
+      800,
+      1200,
+      1600
+    ],
+    "variants": {
+      "400": {
+        "avif": "/images/optimized/root/after3-400.avif",
+        "webp": "/images/optimized/root/after3-400.webp",
+        "jpg": "/images/optimized/root/after3-400.jpg"
+      },
+      "800": {
+        "avif": "/images/optimized/root/after3-800.avif",
+        "webp": "/images/optimized/root/after3-800.webp",
+        "jpg": "/images/optimized/root/after3-800.jpg"
+      },
+      "1200": {
+        "avif": "/images/optimized/root/after3-1200.avif",
+        "webp": "/images/optimized/root/after3-1200.webp",
+        "jpg": "/images/optimized/root/after3-1200.jpg"
+      },
+      "1600": {
+        "avif": "/images/optimized/root/after3-1600.avif",
+        "webp": "/images/optimized/root/after3-1600.webp",
+        "jpg": "/images/optimized/root/after3-1600.jpg"
+      }
+    }
+  },
   "/apple-touch-icon.png": {
     "source": "/apple-touch-icon.png",
+    "writtenAs": "/apple-touch-icon.png",
     "width": 180,
     "height": 180,
     "aspectRatio": 1,
@@ -20,6 +59,7 @@
   },
   "/back.webp": {
     "source": "/back.webp",
+    "writtenAs": "/back.webp",
     "width": 1182,
     "height": 665,
     "aspectRatio": 1.7774,
@@ -45,6 +85,7 @@
   },
   "/blog/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery.webp": {
     "source": "/blog/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery.webp",
+    "writtenAs": "/blog/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery.webp",
     "width": 1400,
     "height": 1750,
     "aspectRatio": 0.8,
@@ -74,8 +115,41 @@
       }
     }
   },
+  "/blog/charleston-multicultural-student-night-photography/1-_DSC3579.webp": {
+    "source": "/blog/charleston-multicultural-student-night-photography/1-_DSC3579.webp",
+    "writtenAs": "/blog/charleston-multicultural-student-night-photography/1-_DSC3579.webp",
+    "width": 1365,
+    "height": 2048,
+    "aspectRatio": 0.6665,
+    "sourceBytes": 489205,
+    "group": "posts/charleston-multicultural-student-night-photography",
+    "base": "1-_DSC3579",
+    "widths": [
+      400,
+      800,
+      1200
+    ],
+    "variants": {
+      "400": {
+        "avif": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.avif",
+        "webp": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.webp",
+        "jpg": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.jpg"
+      },
+      "800": {
+        "avif": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.avif",
+        "webp": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.webp",
+        "jpg": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.jpg"
+      },
+      "1200": {
+        "avif": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.avif",
+        "webp": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.webp",
+        "jpg": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.jpg"
+      }
+    }
+  },
   "/blog/charleston-multicultural-student-night-photography/1-_DSC3579.WebP": {
     "source": "/blog/charleston-multicultural-student-night-photography/1-_DSC3579.WebP",
+    "writtenAs": "/blog/charleston-multicultural-student-night-photography/1-_DSC3579.WebP",
     "width": 1365,
     "height": 2048,
     "aspectRatio": 0.6665,
@@ -107,6 +181,7 @@
   },
   "/dmv-photography-pricing-guide.webp": {
     "source": "/dmv-photography-pricing-guide.webp",
+    "writtenAs": "/dmv-photography-pricing-guide.webp",
     "width": 1080,
     "height": 1350,
     "aspectRatio": 0.8,
@@ -130,82 +205,9 @@
       }
     }
   },
-  "/event1.webp": {
-    "source": "/event1.webp",
-    "width": 4480,
-    "height": 6720,
-    "aspectRatio": 0.6667,
-    "sourceBytes": 2967720,
-    "group": "root",
-    "base": "event1",
-    "widths": [
-      400,
-      800,
-      1200,
-      1600
-    ],
-    "variants": {
-      "400": {
-        "avif": "/images/optimized/root/event1-400.avif",
-        "webp": "/images/optimized/root/event1-400.webp",
-        "jpg": "/images/optimized/root/event1-400.jpg"
-      },
-      "800": {
-        "avif": "/images/optimized/root/event1-800.avif",
-        "webp": "/images/optimized/root/event1-800.webp",
-        "jpg": "/images/optimized/root/event1-800.jpg"
-      },
-      "1200": {
-        "avif": "/images/optimized/root/event1-1200.avif",
-        "webp": "/images/optimized/root/event1-1200.webp",
-        "jpg": "/images/optimized/root/event1-1200.jpg"
-      },
-      "1600": {
-        "avif": "/images/optimized/root/event1-1600.avif",
-        "webp": "/images/optimized/root/event1-1600.webp",
-        "jpg": "/images/optimized/root/event1-1600.jpg"
-      }
-    }
-  },
-  "/event11.webp": {
-    "source": "/event11.webp",
-    "width": 6720,
-    "height": 4480,
-    "aspectRatio": 1.5,
-    "sourceBytes": 1648978,
-    "group": "root",
-    "base": "event11",
-    "widths": [
-      400,
-      800,
-      1200,
-      1600
-    ],
-    "variants": {
-      "400": {
-        "avif": "/images/optimized/root/event11-400.avif",
-        "webp": "/images/optimized/root/event11-400.webp",
-        "jpg": "/images/optimized/root/event11-400.jpg"
-      },
-      "800": {
-        "avif": "/images/optimized/root/event11-800.avif",
-        "webp": "/images/optimized/root/event11-800.webp",
-        "jpg": "/images/optimized/root/event11-800.jpg"
-      },
-      "1200": {
-        "avif": "/images/optimized/root/event11-1200.avif",
-        "webp": "/images/optimized/root/event11-1200.webp",
-        "jpg": "/images/optimized/root/event11-1200.jpg"
-      },
-      "1600": {
-        "avif": "/images/optimized/root/event11-1600.avif",
-        "webp": "/images/optimized/root/event11-1600.webp",
-        "jpg": "/images/optimized/root/event11-1600.jpg"
-      }
-    }
-  },
   "/event12.webp": {
     "source": "/event12.webp",
+    "writtenAs": "/event12.webp",
     "width": 6720,
     "height": 4480,
     "aspectRatio": 1.5,
@@ -243,6 +245,7 @@
   },
   "/event14.webp": {
     "source": "/event14.webp",
+    "writtenAs": "/event14.webp",
     "width": 6220,
     "height": 4480,
     "aspectRatio": 1.3884,
@@ -280,6 +283,7 @@
   },
   "/event16.webp": {
     "source": "/event16.webp",
+    "writtenAs": "/event16.webp",
     "width": 6720,
     "height": 4480,
     "aspectRatio": 1.5,
@@ -317,6 +321,7 @@
   },
   "/event5.webp": {
     "source": "/event5.webp",
+    "writtenAs": "/event5.webp",
     "width": 6000,
     "height": 4000,
     "aspectRatio": 1.5,
@@ -354,6 +359,7 @@
   },
   "/event7.webp": {
     "source": "/event7.webp",
+    "writtenAs": "/event7.webp",
     "width": 6000,
     "height": 4000,
     "aspectRatio": 1.5,
@@ -391,6 +397,7 @@
   },
   "/event9.webp": {
     "source": "/event9.webp",
+    "writtenAs": "/event9.webp",
     "width": 3936,
     "height": 2624,
     "aspectRatio": 1.5,
@@ -428,6 +435,7 @@
   },
   "/favicon-96x96.png": {
     "source": "/favicon-96x96.png",
+    "writtenAs": "/favicon-96x96.png",
     "width": 96,
     "height": 96,
     "aspectRatio": 1,
@@ -447,6 +455,7 @@
   },
   "/folklife-traditional-dance.webp": {
     "source": "/folklife-traditional-dance.webp",
+    "writtenAs": "/folklife-traditional-dance.webp",
     "width": 3530,
     "height": 4412,
     "aspectRatio": 0.8001,
@@ -484,6 +493,7 @@
   },
   "/headshot1.webp": {
     "source": "/headshot1.webp",
+    "writtenAs": "/headshot1.webp",
     "width": 475,
     "height": 712,
     "aspectRatio": 0.6671,
@@ -503,6 +513,7 @@
   },
   "/images/concerts/gza-wu-tang-concert-photography.png": {
     "source": "/images/concerts/gza-wu-tang-concert-photography.png",
+    "writtenAs": "/images/concerts/gza-wu-tang-concert-photography.png",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -534,6 +545,7 @@
   },
   "/images/couples/charleston-anniversary-couple-downtown.webp": {
     "source": "/images/couples/charleston-anniversary-couple-downtown.webp",
+    "writtenAs": "/images/couples/charleston-anniversary-couple-downtown.webp",
     "width": 1206,
     "height": 1660,
     "aspectRatio": 0.7265,
@@ -565,6 +577,7 @@
   },
   "/images/couples/cypress-gardens-engagement-shoot.png": {
     "source": "/images/couples/cypress-gardens-engagement-shoot.png",
+    "writtenAs": "/images/couples/cypress-gardens-engagement-shoot.png",
     "width": 1206,
     "height": 1216,
     "aspectRatio": 0.9918,
@@ -596,6 +609,7 @@
   },
   "/images/events/college-party-event-photography.webp": {
     "source": "/images/events/college-party-event-photography.webp",
+    "writtenAs": "/images/events/college-party-event-photography.webp",
     "width": 1206,
     "height": 1264,
     "aspectRatio": 0.9541,
@@ -627,6 +641,7 @@
   },
   "/images/events/fiji-y2k-party-lofi-brewing-charleston.png": {
     "source": "/images/events/fiji-y2k-party-lofi-brewing-charleston.png",
+    "writtenAs": "/images/events/fiji-y2k-party-lofi-brewing-charleston.png",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -658,6 +673,7 @@
   },
   "/images/portraits/baltimore-garden-fairycore-portrait.webp": {
     "source": "/images/portraits/baltimore-garden-fairycore-portrait.webp",
+    "writtenAs": "/images/portraits/baltimore-garden-fairycore-portrait.webp",
     "width": 1206,
     "height": 1194,
     "aspectRatio": 1.0101,
@@ -689,6 +705,7 @@
   },
   "/images/portraits/charleston-graduation-photography.webp": {
     "source": "/images/portraits/charleston-graduation-photography.webp",
+    "writtenAs": "/images/portraits/charleston-graduation-photography.webp",
     "width": 1206,
     "height": 1221,
     "aspectRatio": 0.9877,
@@ -720,6 +737,7 @@
   },
   "/images/portraits/night-flash-greek-life-portrait.webp": {
     "source": "/images/portraits/night-flash-greek-life-portrait.webp",
+    "writtenAs": "/images/portraits/night-flash-greek-life-portrait.webp",
     "width": 1206,
     "height": 1282,
     "aspectRatio": 0.9407,
@@ -751,6 +769,7 @@
   },
   "/images/portraits/sullivans-island-birthday-portrait-charleston.png": {
     "source": "/images/portraits/sullivans-island-birthday-portrait-charleston.png",
+    "writtenAs": "/images/portraits/sullivans-island-birthday-portrait-charleston.png",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -782,6 +801,7 @@
   },
   "/images/studio/studio-black-white-silhouette-portrait.webp": {
     "source": "/images/studio/studio-black-white-silhouette-portrait.webp",
+    "writtenAs": "/images/studio/studio-black-white-silhouette-portrait.webp",
     "width": 1206,
     "height": 1825,
     "aspectRatio": 0.6608,
@@ -813,6 +833,7 @@
   },
   "/Logo.webp": {
     "source": "/Logo.webp",
+    "writtenAs": "/Logo.webp",
     "width": 575,
     "height": 471,
     "aspectRatio": 1.2208,
@@ -830,8 +851,35 @@
       }
     }
   },
+  "/Me.webp": {
+    "source": "/Me.webp",
+    "writtenAs": "/Me.webp",
+    "width": 886,
+    "height": 886,
+    "aspectRatio": 1,
+    "sourceBytes": 160696,
+    "group": "root",
+    "base": "Me",
+    "widths": [
+      400,
+      800
+    ],
+    "variants": {
+      "400": {
+        "avif": "/images/optimized/root/Me-400.avif",
+        "webp": "/images/optimized/root/Me-400.webp",
+        "jpg": "/images/optimized/root/Me-400.jpg"
+      },
+      "800": {
+        "avif": "/images/optimized/root/Me-800.avif",
+        "webp": "/images/optimized/root/Me-800.webp",
+        "jpg": "/images/optimized/root/Me-800.jpg"
+      }
+    }
+  },
   "/newblogimages/charleston-historic-district-graduation-portraits.png": {
     "source": "/newblogimages/charleston-historic-district-graduation-portraits.png",
+    "writtenAs": "/newblogimages/charleston-historic-district-graduation-portraits.png",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -863,6 +911,7 @@
   },
   "/newblogimages/charleston-historic-district-graduation-portraits.webp": {
     "source": "/newblogimages/charleston-historic-district-graduation-portraits.webp",
+    "writtenAs": "/newblogimages/charleston-historic-district-graduation-portraits.webp",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -894,6 +943,7 @@
   },
   "/newblogimages/charleston-spring-graduation-portrait-session.png": {
     "source": "/newblogimages/charleston-spring-graduation-portrait-session.png",
+    "writtenAs": "/newblogimages/charleston-spring-graduation-portrait-session.png",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -925,6 +975,7 @@
   },
   "/newblogimages/charleston-spring-graduation-portrait-session.webp": {
     "source": "/newblogimages/charleston-spring-graduation-portrait-session.webp",
+    "writtenAs": "/newblogimages/charleston-spring-graduation-portrait-session.webp",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -956,6 +1007,7 @@
   },
   "/newblogimages/doctoral-graduation-photography-dc-monuments.png": {
     "source": "/newblogimages/doctoral-graduation-photography-dc-monuments.png",
+    "writtenAs": "/newblogimages/doctoral-graduation-photography-dc-monuments.png",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -987,6 +1039,7 @@
   },
   "/newblogimages/doctoral-graduation-photography-dc-monuments.webp": {
     "source": "/newblogimages/doctoral-graduation-photography-dc-monuments.webp",
+    "writtenAs": "/newblogimages/doctoral-graduation-photography-dc-monuments.webp",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -1018,6 +1071,7 @@
   },
   "/newblogimages/masters-graduation-photography-dc-monuments.png": {
     "source": "/newblogimages/masters-graduation-photography-dc-monuments.png",
+    "writtenAs": "/newblogimages/masters-graduation-photography-dc-monuments.png",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -1049,6 +1103,7 @@
   },
   "/newblogimages/masters-graduation-photography-dc-monuments.webp": {
     "source": "/newblogimages/masters-graduation-photography-dc-monuments.webp",
+    "writtenAs": "/newblogimages/masters-graduation-photography-dc-monuments.webp",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -1080,6 +1135,7 @@
   },
   "/newblogimages/multicultural-student-graduation-night-photography.png": {
     "source": "/newblogimages/multicultural-student-graduation-night-photography.png",
+    "writtenAs": "/newblogimages/multicultural-student-graduation-night-photography.png",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -1111,6 +1167,7 @@
   },
   "/newblogimages/multicultural-student-graduation-night-photography.webp": {
     "source": "/newblogimages/multicultural-student-graduation-night-photography.webp",
+    "writtenAs": "/newblogimages/multicultural-student-graduation-night-photography.webp",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -1142,6 +1199,7 @@
   },
   "/newblogimages/philadelphia-street-photography-reading-terminal.png": {
     "source": "/newblogimages/philadelphia-street-photography-reading-terminal.png",
+    "writtenAs": "/newblogimages/philadelphia-street-photography-reading-terminal.png",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -1173,6 +1231,7 @@
   },
   "/newblogimages/philadelphia-street-photography-reading-terminal.webp": {
     "source": "/newblogimages/philadelphia-street-photography-reading-terminal.webp",
+    "writtenAs": "/newblogimages/philadelphia-street-photography-reading-terminal.webp",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -1204,6 +1263,7 @@
   },
   "/newblogimages/shutter-drag-creative-portrait-photography.png": {
     "source": "/newblogimages/shutter-drag-creative-portrait-photography.png",
+    "writtenAs": "/newblogimages/shutter-drag-creative-portrait-photography.png",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -1235,6 +1295,7 @@
   },
   "/newblogimages/shutter-drag-creative-portrait-photography.webp": {
     "source": "/newblogimages/shutter-drag-creative-portrait-photography.webp",
+    "writtenAs": "/newblogimages/shutter-drag-creative-portrait-photography.webp",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -1266,6 +1327,7 @@
   },
   "/newblogimages/world-pride-dc-event-photography.png": {
     "source": "/newblogimages/world-pride-dc-event-photography.png",
+    "writtenAs": "/newblogimages/world-pride-dc-event-photography.png",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -1297,6 +1359,7 @@
   },
   "/newblogimages/world-pride-dc-event-photography.webp": {
     "source": "/newblogimages/world-pride-dc-event-photography.webp",
+    "writtenAs": "/newblogimages/world-pride-dc-event-photography.webp",
     "width": 1206,
     "height": 2622,
     "aspectRatio": 0.46,
@@ -1328,6 +1391,7 @@
   },
   "/portrait1.webp": {
     "source": "/portrait1.webp",
+    "writtenAs": "/portrait1.webp",
     "width": 2870,
     "height": 5101,
     "aspectRatio": 0.5626,
@@ -1365,6 +1429,7 @@
   },
   "/portrait2.webp": {
     "source": "/portrait2.webp",
+    "writtenAs": "/portrait2.webp",
     "width": 4000,
     "height": 6000,
     "aspectRatio": 0.6667,
@@ -1400,39 +1465,9 @@
       }
     }
   },
-  "/portrait3.webp": {
-    "source": "/portrait3.webp",
-    "width": 1586,
-    "height": 1982,
-    "aspectRatio": 0.8002,
-    "sourceBytes": 316954,
-    "group": "root",
-    "base": "portrait3",
-    "widths": [
-      400,
-      800,
-      1200
-    ],
-    "variants": {
-      "400": {
-        "avif": "/images/optimized/root/portrait3-400.avif",
-        "webp": "/images/optimized/root/portrait3-400.webp",
-        "jpg": "/images/optimized/root/portrait3-400.jpg"
-      },
-      "800": {
-        "avif": "/images/optimized/root/portrait3-800.avif",
-        "webp": "/images/optimized/root/portrait3-800.webp",
-        "jpg": "/images/optimized/root/portrait3-800.jpg"
-      },
-      "1200": {
-        "avif": "/images/optimized/root/portrait3-1200.avif",
-        "webp": "/images/optimized/root/portrait3-1200.webp",
-        "jpg": "/images/optimized/root/portrait3-1200.jpg"
-      }
-    }
-  },
   "/portrait4.webp": {
     "source": "/portrait4.webp",
+    "writtenAs": "/portrait4.webp",
     "width": 1080,
     "height": 1349,
     "aspectRatio": 0.8006,
@@ -1458,6 +1493,7 @@
   },
   "/portrait6.webp": {
     "source": "/portrait6.webp",
+    "writtenAs": "/portrait6.webp",
     "width": 3376,
     "height": 3376,
     "aspectRatio": 1,
@@ -1493,27 +1529,9 @@
       }
     }
   },
-  "/portrait7.webp": {
-    "source": "/portrait7.webp",
-    "width": 724,
-    "height": 1086,
-    "aspectRatio": 0.6667,
-    "sourceBytes": 122160,
-    "group": "root",
-    "base": "portrait7",
-    "widths": [
-      400
-    ],
-    "variants": {
-      "400": {
-        "avif": "/images/optimized/root/portrait7-400.avif",
-        "webp": "/images/optimized/root/portrait7-400.webp",
-        "jpg": "/images/optimized/root/portrait7-400.jpg"
-      }
-    }
-  },
   "/smithsonian-portrait-hero.webp": {
     "source": "/smithsonian-portrait-hero.webp",
+    "writtenAs": "/smithsonian-portrait-hero.webp",
     "width": 1586,
     "height": 1982,
     "aspectRatio": 0.8002,
@@ -1545,6 +1563,7 @@
   },
   "/we-on-streets-live-art.webp": {
     "source": "/we-on-streets-live-art.webp",
+    "writtenAs": "/we-on-streets-live-art.webp",
     "width": 3555,
     "height": 4444,
     "aspectRatio": 0.8,
@@ -1580,8 +1599,9 @@
       }
     }
   },
-  "07447A60-3633-4BCB-9A48-5949EA2FDA38.webp": {
-    "source": "07447A60-3633-4BCB-9A48-5949EA2FDA38.webp",
+  "/07447A60-3633-4BCB-9A48-5949EA2FDA38.webp": {
+    "source": "/07447A60-3633-4BCB-9A48-5949EA2FDA38.webp",
+    "writtenAs": "07447A60-3633-4BCB-9A48-5949EA2FDA38.webp",
     "width": 1080,
     "height": 1350,
     "aspectRatio": 0.8,
@@ -1605,39 +1625,9 @@
       }
     }
   },
-  "1-_DSC3579.WebP": {
-    "source": "1-_DSC3579.WebP",
-    "width": 1365,
-    "height": 2048,
-    "aspectRatio": 0.6665,
-    "sourceBytes": 489205,
-    "group": "posts/charleston-multicultural-student-night-photography",
-    "base": "1-_DSC3579",
-    "widths": [
-      400,
-      800,
-      1200
-    ],
-    "variants": {
-      "400": {
-        "avif": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.avif",
-        "webp": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.webp",
-        "jpg": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.jpg"
-      },
-      "800": {
-        "avif": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.avif",
-        "webp": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.webp",
-        "jpg": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.jpg"
-      },
-      "1200": {
-        "avif": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.avif",
-        "webp": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.webp",
-        "jpg": "/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.jpg"
-      }
-    }
-  },
-  "2-_DSC3601.WebP": {
-    "source": "2-_DSC3601.WebP",
+  "/blog/charleston-multicultural-student-night-photography/2-_DSC3601.WebP": {
+    "source": "/blog/charleston-multicultural-student-night-photography/2-_DSC3601.WebP",
+    "writtenAs": "2-_DSC3601.WebP",
     "width": 2048,
     "height": 1365,
     "aspectRatio": 1.5004,
@@ -1673,8 +1663,9 @@
       }
     }
   },
-  "3-_DSC3627.WebP": {
-    "source": "3-_DSC3627.WebP",
+  "/blog/charleston-multicultural-student-night-photography/3-_DSC3627.WebP": {
+    "source": "/blog/charleston-multicultural-student-night-photography/3-_DSC3627.WebP",
+    "writtenAs": "3-_DSC3627.WebP",
     "width": 1365,
     "height": 2048,
     "aspectRatio": 0.6665,
@@ -1704,8 +1695,9 @@
       }
     }
   },
-  "4-_DSC3668.WebP": {
-    "source": "4-_DSC3668.WebP",
+  "/blog/charleston-multicultural-student-night-photography/4-_DSC3668.WebP": {
+    "source": "/blog/charleston-multicultural-student-night-photography/4-_DSC3668.WebP",
+    "writtenAs": "4-_DSC3668.WebP",
     "width": 2048,
     "height": 1365,
     "aspectRatio": 1.5004,
@@ -1741,8 +1733,9 @@
       }
     }
   },
-  "5-_DSC3673.WebP": {
-    "source": "5-_DSC3673.WebP",
+  "/blog/charleston-multicultural-student-night-photography/5-_DSC3673.WebP": {
+    "source": "/blog/charleston-multicultural-student-night-photography/5-_DSC3673.WebP",
+    "writtenAs": "5-_DSC3673.WebP",
     "width": 2048,
     "height": 1365,
     "aspectRatio": 1.5004,
@@ -1778,8 +1771,9 @@
       }
     }
   },
-  "53F5D988-ED98-435D-933B-A877EA245339.webp": {
-    "source": "53F5D988-ED98-435D-933B-A877EA245339.webp",
+  "/53F5D988-ED98-435D-933B-A877EA245339.webp": {
+    "source": "/53F5D988-ED98-435D-933B-A877EA245339.webp",
+    "writtenAs": "53F5D988-ED98-435D-933B-A877EA245339.webp",
     "width": 1080,
     "height": 1350,
     "aspectRatio": 0.8,
@@ -1803,8 +1797,9 @@
       }
     }
   },
-  "54CFD996-C4C5-4F92-BAE8-F77BAADF0BE0_4_5005_c.webp": {
-    "source": "54CFD996-C4C5-4F92-BAE8-F77BAADF0BE0_4_5005_c.webp",
+  "/54CFD996-C4C5-4F92-BAE8-F77BAADF0BE0_4_5005_c.webp": {
+    "source": "/54CFD996-C4C5-4F92-BAE8-F77BAADF0BE0_4_5005_c.webp",
+    "writtenAs": "54CFD996-C4C5-4F92-BAE8-F77BAADF0BE0_4_5005_c.webp",
     "width": 640,
     "height": 360,
     "aspectRatio": 1.7778,
@@ -1822,8 +1817,9 @@
       }
     }
   },
-  "5B5C91B5-36DB-450F-BE5A-B4036A73846B_1_102_o.webp": {
-    "source": "5B5C91B5-36DB-450F-BE5A-B4036A73846B_1_102_o.webp",
+  "/5B5C91B5-36DB-450F-BE5A-B4036A73846B_1_102_o.webp": {
+    "source": "/5B5C91B5-36DB-450F-BE5A-B4036A73846B_1_102_o.webp",
+    "writtenAs": "5B5C91B5-36DB-450F-BE5A-B4036A73846B_1_102_o.webp",
     "width": 1982,
     "height": 1586,
     "aspectRatio": 1.2497,
@@ -1859,8 +1855,9 @@
       }
     }
   },
-  "6-_DSC3688.WebP": {
-    "source": "6-_DSC3688.WebP",
+  "/blog/charleston-multicultural-student-night-photography/6-_DSC3688.WebP": {
+    "source": "/blog/charleston-multicultural-student-night-photography/6-_DSC3688.WebP",
+    "writtenAs": "6-_DSC3688.WebP",
     "width": 2048,
     "height": 1365,
     "aspectRatio": 1.5004,
@@ -1896,8 +1893,9 @@
       }
     }
   },
-  "63C48EE3-7ACD-4FC8-AD35-B23614442F7C_1_102_o.webp": {
-    "source": "63C48EE3-7ACD-4FC8-AD35-B23614442F7C_1_102_o.webp",
+  "/63C48EE3-7ACD-4FC8-AD35-B23614442F7C_1_102_o.webp": {
+    "source": "/63C48EE3-7ACD-4FC8-AD35-B23614442F7C_1_102_o.webp",
+    "writtenAs": "63C48EE3-7ACD-4FC8-AD35-B23614442F7C_1_102_o.webp",
     "width": 1982,
     "height": 1586,
     "aspectRatio": 1.2497,
@@ -1933,70 +1931,9 @@
       }
     }
   },
-  "after3.webp": {
-    "source": "after3.webp",
-    "width": 3376,
-    "height": 6000,
-    "aspectRatio": 0.5627,
-    "sourceBytes": 3792748,
-    "group": "root",
-    "base": "after3",
-    "widths": [
-      400,
-      800,
-      1200,
-      1600
-    ],
-    "variants": {
-      "400": {
-        "avif": "/images/optimized/root/after3-400.avif",
-        "webp": "/images/optimized/root/after3-400.webp",
-        "jpg": "/images/optimized/root/after3-400.jpg"
-      },
-      "800": {
-        "avif": "/images/optimized/root/after3-800.avif",
-        "webp": "/images/optimized/root/after3-800.webp",
-        "jpg": "/images/optimized/root/after3-800.jpg"
-      },
-      "1200": {
-        "avif": "/images/optimized/root/after3-1200.avif",
-        "webp": "/images/optimized/root/after3-1200.webp",
-        "jpg": "/images/optimized/root/after3-1200.jpg"
-      },
-      "1600": {
-        "avif": "/images/optimized/root/after3-1600.avif",
-        "webp": "/images/optimized/root/after3-1600.webp",
-        "jpg": "/images/optimized/root/after3-1600.jpg"
-      }
-    }
-  },
-  "back.webp": {
-    "source": "back.webp",
-    "width": 1182,
-    "height": 665,
-    "aspectRatio": 1.7774,
-    "sourceBytes": 125364,
-    "group": "root",
-    "base": "back",
-    "widths": [
-      400,
-      800
-    ],
-    "variants": {
-      "400": {
-        "avif": "/images/optimized/root/back-400.avif",
-        "webp": "/images/optimized/root/back-400.webp",
-        "jpg": "/images/optimized/root/back-400.jpg"
-      },
-      "800": {
-        "avif": "/images/optimized/root/back-800.avif",
-        "webp": "/images/optimized/root/back-800.webp",
-        "jpg": "/images/optimized/root/back-800.jpg"
-      }
-    }
-  },
-  "black-joy-charleston-gallery.webp": {
-    "source": "black-joy-charleston-gallery.webp",
+  "/blog/charleston-juneteenth-event-photography/black-joy-charleston-gallery.webp": {
+    "source": "/blog/charleston-juneteenth-event-photography/black-joy-charleston-gallery.webp",
+    "writtenAs": "black-joy-charleston-gallery.webp",
     "width": 1400,
     "height": 1750,
     "aspectRatio": 0.8,
@@ -2026,8 +1963,9 @@
       }
     }
   },
-  "charleston-juneteenth-guests-gallery.webp": {
-    "source": "charleston-juneteenth-guests-gallery.webp",
+  "/blog/charleston-juneteenth-event-photography/charleston-juneteenth-guests-gallery.webp": {
+    "source": "/blog/charleston-juneteenth-event-photography/charleston-juneteenth-guests-gallery.webp",
+    "writtenAs": "charleston-juneteenth-guests-gallery.webp",
     "width": 1400,
     "height": 1750,
     "aspectRatio": 0.8,
@@ -2057,8 +1995,9 @@
       }
     }
   },
-  "D6EC4006-2CF8-4BED-BDF9-E61F6808952B.webp": {
-    "source": "D6EC4006-2CF8-4BED-BDF9-E61F6808952B.webp",
+  "/D6EC4006-2CF8-4BED-BDF9-E61F6808952B.webp": {
+    "source": "/D6EC4006-2CF8-4BED-BDF9-E61F6808952B.webp",
+    "writtenAs": "D6EC4006-2CF8-4BED-BDF9-E61F6808952B.webp",
     "width": 1536,
     "height": 2730,
     "aspectRatio": 0.5626,
@@ -2088,33 +2027,9 @@
       }
     }
   },
-  "dmv-photography-pricing-guide.webp": {
-    "source": "dmv-photography-pricing-guide.webp",
-    "width": 1080,
-    "height": 1350,
-    "aspectRatio": 0.8,
-    "sourceBytes": 105632,
-    "group": "root",
-    "base": "dmv-photography-pricing-guide",
-    "widths": [
-      400,
-      800
-    ],
-    "variants": {
-      "400": {
-        "avif": "/images/optimized/root/dmv-photography-pricing-guide-400.avif",
-        "webp": "/images/optimized/root/dmv-photography-pricing-guide-400.webp",
-        "jpg": "/images/optimized/root/dmv-photography-pricing-guide-400.jpg"
-      },
-      "800": {
-        "avif": "/images/optimized/root/dmv-photography-pricing-guide-800.avif",
-        "webp": "/images/optimized/root/dmv-photography-pricing-guide-800.webp",
-        "jpg": "/images/optimized/root/dmv-photography-pricing-guide-800.jpg"
-      }
-    }
-  },
-  "event1.webp": {
-    "source": "event1.webp",
+  "/event1.webp": {
+    "source": "/event1.webp",
+    "writtenAs": "event1.webp",
     "width": 4480,
     "height": 6720,
     "aspectRatio": 0.6667,
@@ -2150,8 +2065,9 @@
       }
     }
   },
-  "event11.webp": {
-    "source": "event11.webp",
+  "/event11.webp": {
+    "source": "/event11.webp",
+    "writtenAs": "event11.webp",
     "width": 6720,
     "height": 4480,
     "aspectRatio": 1.5,
@@ -2187,8 +2103,9 @@
       }
     }
   },
-  "folklife-architectural-heritage.webp": {
-    "source": "folklife-architectural-heritage.webp",
+  "/blog/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage.webp": {
+    "source": "/blog/event-photography-checklist-smithsonian-folklife/folklife-architectural-heritage.webp",
+    "writtenAs": "folklife-architectural-heritage.webp",
     "width": 2657,
     "height": 3321,
     "aspectRatio": 0.8001,
@@ -2224,8 +2141,9 @@
       }
     }
   },
-  "folklife-artisan-demonstration.webp": {
-    "source": "folklife-artisan-demonstration.webp",
+  "/blog/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration.webp": {
+    "source": "/blog/event-photography-checklist-smithsonian-folklife/folklife-artisan-demonstration.webp",
+    "writtenAs": "folklife-artisan-demonstration.webp",
     "width": 4000,
     "height": 5000,
     "aspectRatio": 0.8,
@@ -2261,8 +2179,9 @@
       }
     }
   },
-  "folklife-family-moment.webp": {
-    "source": "folklife-family-moment.webp",
+  "/blog/event-photography-checklist-smithsonian-folklife/folklife-family-moment.webp": {
+    "source": "/blog/event-photography-checklist-smithsonian-folklife/folklife-family-moment.webp",
+    "writtenAs": "folklife-family-moment.webp",
     "width": 4000,
     "height": 5000,
     "aspectRatio": 0.8,
@@ -2298,8 +2217,9 @@
       }
     }
   },
-  "folklife-san-jose-mural.webp": {
-    "source": "folklife-san-jose-mural.webp",
+  "/blog/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural.webp": {
+    "source": "/blog/event-photography-checklist-smithsonian-folklife/folklife-san-jose-mural.webp",
+    "writtenAs": "folklife-san-jose-mural.webp",
     "width": 3200,
     "height": 4000,
     "aspectRatio": 0.8,
@@ -2335,8 +2255,9 @@
       }
     }
   },
-  "folklife-street-scene.webp": {
-    "source": "folklife-street-scene.webp",
+  "/blog/event-photography-checklist-smithsonian-folklife/folklife-street-scene.webp": {
+    "source": "/blog/event-photography-checklist-smithsonian-folklife/folklife-street-scene.webp",
+    "writtenAs": "folklife-street-scene.webp",
     "width": 3322,
     "height": 4152,
     "aspectRatio": 0.8001,
@@ -2372,8 +2293,9 @@
       }
     }
   },
-  "folklife-traditional-dance.webp": {
-    "source": "folklife-traditional-dance.webp",
+  "/blog/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance.webp": {
+    "source": "/blog/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance.webp",
+    "writtenAs": "folklife-traditional-dance.webp",
     "width": 3530,
     "height": 4412,
     "aspectRatio": 0.8001,
@@ -2409,8 +2331,9 @@
       }
     }
   },
-  "folklife-traditional-games.webp": {
-    "source": "folklife-traditional-games.webp",
+  "/blog/event-photography-checklist-smithsonian-folklife/folklife-traditional-games.webp": {
+    "source": "/blog/event-photography-checklist-smithsonian-folklife/folklife-traditional-games.webp",
+    "writtenAs": "folklife-traditional-games.webp",
     "width": 1699,
     "height": 2124,
     "aspectRatio": 0.7999,
@@ -2446,8 +2369,9 @@
       }
     }
   },
-  "folklife-vintage-bike.webp": {
-    "source": "folklife-vintage-bike.webp",
+  "/blog/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike.webp": {
+    "source": "/blog/event-photography-checklist-smithsonian-folklife/folklife-vintage-bike.webp",
+    "writtenAs": "folklife-vintage-bike.webp",
     "width": 4000,
     "height": 5000,
     "aspectRatio": 0.8,
@@ -2483,8 +2407,9 @@
       }
     }
   },
-  "headshot2.webp": {
-    "source": "headshot2.webp",
+  "/headshot2.webp": {
+    "source": "/headshot2.webp",
+    "writtenAs": "headshot2.webp",
     "width": 6720,
     "height": 4480,
     "aspectRatio": 1.5,
@@ -2520,39 +2445,9 @@
       }
     }
   },
-  "james-island-juneteenth-event-gallery.webp": {
-    "source": "james-island-juneteenth-event-gallery.webp",
-    "width": 1400,
-    "height": 1750,
-    "aspectRatio": 0.8,
-    "sourceBytes": 500138,
-    "group": "posts/charleston-juneteenth-event-photography",
-    "base": "james-island-juneteenth-event-gallery",
-    "widths": [
-      400,
-      800,
-      1200
-    ],
-    "variants": {
-      "400": {
-        "avif": "/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-400.avif",
-        "webp": "/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-400.webp",
-        "jpg": "/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-400.jpg"
-      },
-      "800": {
-        "avif": "/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-800.avif",
-        "webp": "/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-800.webp",
-        "jpg": "/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-800.jpg"
-      },
-      "1200": {
-        "avif": "/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-1200.avif",
-        "webp": "/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-1200.webp",
-        "jpg": "/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-1200.jpg"
-      }
-    }
-  },
-  "juneteenth-cookout-gallery.webp": {
-    "source": "juneteenth-cookout-gallery.webp",
+  "/blog/charleston-juneteenth-event-photography/juneteenth-cookout-gallery.webp": {
+    "source": "/blog/charleston-juneteenth-event-photography/juneteenth-cookout-gallery.webp",
+    "writtenAs": "juneteenth-cookout-gallery.webp",
     "width": 1400,
     "height": 1750,
     "aspectRatio": 0.8,
@@ -2582,52 +2477,9 @@
       }
     }
   },
-  "Logo.webp": {
-    "source": "Logo.webp",
-    "width": 575,
-    "height": 471,
-    "aspectRatio": 1.2208,
-    "sourceBytes": 59384,
-    "group": "root",
-    "base": "Logo",
-    "widths": [
-      400
-    ],
-    "variants": {
-      "400": {
-        "avif": "/images/optimized/root/Logo-400.avif",
-        "webp": "/images/optimized/root/Logo-400.webp",
-        "jpg": "/images/optimized/root/Logo-400.jpg"
-      }
-    }
-  },
-  "Me.webp": {
-    "source": "Me.webp",
-    "width": 886,
-    "height": 886,
-    "aspectRatio": 1,
-    "sourceBytes": 160696,
-    "group": "root",
-    "base": "Me",
-    "widths": [
-      400,
-      800
-    ],
-    "variants": {
-      "400": {
-        "avif": "/images/optimized/root/Me-400.avif",
-        "webp": "/images/optimized/root/Me-400.webp",
-        "jpg": "/images/optimized/root/Me-400.jpg"
-      },
-      "800": {
-        "avif": "/images/optimized/root/Me-800.avif",
-        "webp": "/images/optimized/root/Me-800.webp",
-        "jpg": "/images/optimized/root/Me-800.jpg"
-      }
-    }
-  },
-  "micah 1.webp": {
-    "source": "micah 1.webp",
+  "/micah 1.webp": {
+    "source": "/micah 1.webp",
+    "writtenAs": "micah 1.webp",
     "width": 2304,
     "height": 1536,
     "aspectRatio": 1.5,
@@ -2663,8 +2515,9 @@
       }
     }
   },
-  "Micah.webp": {
-    "source": "Micah.webp",
+  "/Micah.webp": {
+    "source": "/Micah.webp",
+    "writtenAs": "Micah.webp",
     "width": 1536,
     "height": 2304,
     "aspectRatio": 0.6667,
@@ -2694,8 +2547,9 @@
       }
     }
   },
-  "portrait3.webp": {
-    "source": "portrait3.webp",
+  "/portrait3.webp": {
+    "source": "/portrait3.webp",
+    "writtenAs": "portrait3.webp",
     "width": 1586,
     "height": 1982,
     "aspectRatio": 0.8002,
@@ -2725,8 +2579,9 @@
       }
     }
   },
-  "portrait7.webp": {
-    "source": "portrait7.webp",
+  "/portrait7.webp": {
+    "source": "/portrait7.webp",
+    "writtenAs": "portrait7.webp",
     "width": 724,
     "height": 1086,
     "aspectRatio": 0.6667,
@@ -2744,8 +2599,9 @@
       }
     }
   },
-  "Reema1.webp": {
-    "source": "Reema1.webp",
+  "/Reema1.webp": {
+    "source": "/Reema1.webp",
+    "writtenAs": "Reema1.webp",
     "width": 360,
     "height": 638,
     "aspectRatio": 0.5643,
@@ -2763,8 +2619,9 @@
       }
     }
   },
-  "smithsonian-portrait-1.webp": {
-    "source": "smithsonian-portrait-1.webp",
+  "/blog/smithsonian-portrait-photography/smithsonian-portrait-1.webp": {
+    "source": "/blog/smithsonian-portrait-photography/smithsonian-portrait-1.webp",
+    "writtenAs": "smithsonian-portrait-1.webp",
     "width": 1586,
     "height": 1982,
     "aspectRatio": 0.8002,
@@ -2794,8 +2651,9 @@
       }
     }
   },
-  "smithsonian-portrait-2.webp": {
-    "source": "smithsonian-portrait-2.webp",
+  "/blog/smithsonian-portrait-photography/smithsonian-portrait-2.webp": {
+    "source": "/blog/smithsonian-portrait-photography/smithsonian-portrait-2.webp",
+    "writtenAs": "smithsonian-portrait-2.webp",
     "width": 1586,
     "height": 1982,
     "aspectRatio": 0.8002,
@@ -2825,8 +2683,9 @@
       }
     }
   },
-  "smithsonian-portrait-3.webp": {
-    "source": "smithsonian-portrait-3.webp",
+  "/blog/smithsonian-portrait-photography/smithsonian-portrait-3.webp": {
+    "source": "/blog/smithsonian-portrait-photography/smithsonian-portrait-3.webp",
+    "writtenAs": "smithsonian-portrait-3.webp",
     "width": 1586,
     "height": 1982,
     "aspectRatio": 0.8002,
@@ -2856,39 +2715,9 @@
       }
     }
   },
-  "smithsonian-portrait-hero.webp": {
-    "source": "smithsonian-portrait-hero.webp",
-    "width": 1586,
-    "height": 1982,
-    "aspectRatio": 0.8002,
-    "sourceBytes": 655022,
-    "group": "root",
-    "base": "smithsonian-portrait-hero",
-    "widths": [
-      400,
-      800,
-      1200
-    ],
-    "variants": {
-      "400": {
-        "avif": "/images/optimized/root/smithsonian-portrait-hero-400.avif",
-        "webp": "/images/optimized/root/smithsonian-portrait-hero-400.webp",
-        "jpg": "/images/optimized/root/smithsonian-portrait-hero-400.jpg"
-      },
-      "800": {
-        "avif": "/images/optimized/root/smithsonian-portrait-hero-800.avif",
-        "webp": "/images/optimized/root/smithsonian-portrait-hero-800.webp",
-        "jpg": "/images/optimized/root/smithsonian-portrait-hero-800.jpg"
-      },
-      "1200": {
-        "avif": "/images/optimized/root/smithsonian-portrait-hero-1200.avif",
-        "webp": "/images/optimized/root/smithsonian-portrait-hero-1200.webp",
-        "jpg": "/images/optimized/root/smithsonian-portrait-hero-1200.jpg"
-      }
-    }
-  },
-  "we-on-streets-community.webp": {
-    "source": "we-on-streets-community.webp",
+  "/blog/streetwear-popup-photography-we-on-the-streets/we-on-streets-community.webp": {
+    "source": "/blog/streetwear-popup-photography-we-on-the-streets/we-on-streets-community.webp",
+    "writtenAs": "we-on-streets-community.webp",
     "width": 4000,
     "height": 5000,
     "aspectRatio": 0.8,
@@ -2924,8 +2753,9 @@
       }
     }
   },
-  "we-on-streets-fashion-details.webp": {
-    "source": "we-on-streets-fashion-details.webp",
+  "/blog/streetwear-popup-photography-we-on-the-streets/we-on-streets-fashion-details.webp": {
+    "source": "/blog/streetwear-popup-photography-we-on-the-streets/we-on-streets-fashion-details.webp",
+    "writtenAs": "we-on-streets-fashion-details.webp",
     "width": 4000,
     "height": 6000,
     "aspectRatio": 0.6667,
@@ -2961,8 +2791,9 @@
       }
     }
   },
-  "we-on-streets-live-art.webp": {
-    "source": "we-on-streets-live-art.webp",
+  "/blog/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art.webp": {
+    "source": "/blog/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art.webp",
+    "writtenAs": "we-on-streets-live-art.webp",
     "width": 3555,
     "height": 4444,
     "aspectRatio": 0.8,
@@ -2998,8 +2829,9 @@
       }
     }
   },
-  "we-on-streets-performers.webp": {
-    "source": "we-on-streets-performers.webp",
+  "/blog/streetwear-popup-photography-we-on-the-streets/we-on-streets-performers.webp": {
+    "source": "/blog/streetwear-popup-photography-we-on-the-streets/we-on-streets-performers.webp",
+    "writtenAs": "we-on-streets-performers.webp",
     "width": 4000,
     "height": 5000,
     "aspectRatio": 0.8,
@@ -3035,8 +2867,9 @@
       }
     }
   },
-  "we-on-streets-vendors.webp": {
-    "source": "we-on-streets-vendors.webp",
+  "/blog/streetwear-popup-photography-we-on-the-streets/we-on-streets-vendors.webp": {
+    "source": "/blog/streetwear-popup-photography-we-on-the-streets/we-on-streets-vendors.webp",
+    "writtenAs": "we-on-streets-vendors.webp",
     "width": 4000,
     "height": 6000,
     "aspectRatio": 0.6667,
@@ -3072,8 +2905,9 @@
       }
     }
   },
-  "we-on-streets-venue-sign.webp": {
-    "source": "we-on-streets-venue-sign.webp",
+  "/blog/streetwear-popup-photography-we-on-the-streets/we-on-streets-venue-sign.webp": {
+    "source": "/blog/streetwear-popup-photography-we-on-the-streets/we-on-streets-venue-sign.webp",
+    "writtenAs": "we-on-streets-venue-sign.webp",
     "width": 4000,
     "height": 5000,
     "aspectRatio": 0.8,

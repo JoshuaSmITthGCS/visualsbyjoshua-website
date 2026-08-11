@@ -66,7 +66,14 @@
     }
     </script><style>
         .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)), url('/images/events/college-party-event-photography.webp') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)), url('/images/optimized/events/college-party-event-photography-800.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)), image-set(url('/images/optimized/events/college-party-event-photography-800.avif') type('image/avif'), url('/images/optimized/events/college-party-event-photography-800.webp') type('image/webp'), url('/images/optimized/events/college-party-event-photography-800.jpg') type('image/jpeg')) center/cover no-repeat;
+        }
+        @media (min-width: 800px) {
+          .blog-hero {
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)), url('/images/optimized/events/college-party-event-photography-1200.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.7)), image-set(url('/images/optimized/events/college-party-event-photography-1200.avif') type('image/avif'), url('/images/optimized/events/college-party-event-photography-1200.webp') type('image/webp'), url('/images/optimized/events/college-party-event-photography-1200.jpg') type('image/jpeg')) center/cover no-repeat;
+          }
         }
 
         .tip-card {
@@ -192,7 +199,11 @@
 
             <!-- Featured Image -->
             <div style="margin: 40px 0; max-height: 500px; overflow: hidden; border-radius: 10px; box-shadow: var(--shadow);">
-                <img height="1264" width="1206" src="/images/events/college-party-event-photography.webp" alt="College party event photography at nighttime outdoor party in Charleston SC by Joshua Smith" style="width: 100%; height: 500px; object-fit: cover; border-radius: 10px;">
+                <picture>
+                  <source type="image/avif" srcset="/images/optimized/events/college-party-event-photography-400.avif 400w, /images/optimized/events/college-party-event-photography-800.avif 800w, /images/optimized/events/college-party-event-photography-1200.avif 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                  <source type="image/webp" srcset="/images/optimized/events/college-party-event-photography-400.webp 400w, /images/optimized/events/college-party-event-photography-800.webp 800w, /images/optimized/events/college-party-event-photography-1200.webp 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
+                  <img src="/images/optimized/events/college-party-event-photography-1200.jpg" srcset="/images/optimized/events/college-party-event-photography-400.jpg 400w, /images/optimized/events/college-party-event-photography-800.jpg 800w, /images/optimized/events/college-party-event-photography-1200.jpg 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="1206" height="1264" alt="College party event photography at nighttime outdoor party in Charleston SC by Joshua Smith" style="width: 100%; height: 500px; object-fit: cover; border-radius: 10px;" loading="lazy" decoding="async">
+                </picture>
             </div>
 
             <!-- Why College Parties Are Different -->

@@ -66,7 +66,14 @@
 
     <style>
         .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/smithsonian-portrait-hero.webp') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/optimized/root/smithsonian-portrait-hero-800.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), image-set(url('/images/optimized/root/smithsonian-portrait-hero-800.avif') type('image/avif'), url('/images/optimized/root/smithsonian-portrait-hero-800.webp') type('image/webp'), url('/images/optimized/root/smithsonian-portrait-hero-800.jpg') type('image/jpeg')) center/cover no-repeat;
+        }
+        @media (min-width: 800px) {
+          .blog-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/optimized/root/smithsonian-portrait-hero-1200.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), image-set(url('/images/optimized/root/smithsonian-portrait-hero-1200.avif') type('image/avif'), url('/images/optimized/root/smithsonian-portrait-hero-1200.webp') type('image/webp'), url('/images/optimized/root/smithsonian-portrait-hero-1200.jpg') type('image/jpeg')) center/cover no-repeat;
+          }
         }
 
         .metro-gallery {
