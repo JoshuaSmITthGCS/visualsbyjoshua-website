@@ -26,8 +26,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="preload" as="image" href="/smithsonian-portrait-hero.webp">
-  <link rel="stylesheet" href="/service-page.css">
+  <link rel="preload" as="image" type="image/avif" href="/images/optimized/root/smithsonian-portrait-hero-800.avif" imagesrcset="/images/optimized/root/smithsonian-portrait-hero-400.avif 400w, /images/optimized/root/smithsonian-portrait-hero-800.avif 800w, /images/optimized/root/smithsonian-portrait-hero-1200.avif 1200w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="/service-page.css">
 
   <script type="application/ld+json">
   {
@@ -91,7 +91,11 @@
 
   <main>
     <section class="hero">
-      <img height="1982" width="1586" class="hero-image" src="/smithsonian-portrait-hero.webp" alt="DMV portrait photographer session at the Smithsonian in Washington DC" fetchpriority="high" decoding="async">
+      <picture>
+        <source type="image/avif" srcset="/images/optimized/root/smithsonian-portrait-hero-400.avif 400w, /images/optimized/root/smithsonian-portrait-hero-800.avif 800w, /images/optimized/root/smithsonian-portrait-hero-1200.avif 1200w" sizes="100vw">
+        <source type="image/webp" srcset="/images/optimized/root/smithsonian-portrait-hero-400.webp 400w, /images/optimized/root/smithsonian-portrait-hero-800.webp 800w, /images/optimized/root/smithsonian-portrait-hero-1200.webp 1200w" sizes="100vw">
+        <img src="/images/optimized/root/smithsonian-portrait-hero-1200.jpg" srcset="/images/optimized/root/smithsonian-portrait-hero-400.jpg 400w, /images/optimized/root/smithsonian-portrait-hero-800.jpg 800w, /images/optimized/root/smithsonian-portrait-hero-1200.jpg 1200w" sizes="100vw" width="1586" height="1982" class="hero-image" alt="DMV portrait photographer session at the Smithsonian in Washington DC" fetchpriority="high" decoding="async" loading="eager">
+      </picture>
       <div class="hero-overlay" aria-hidden="true"></div>
       <div class="hero-content">
         <h1 class="hero-title">DMV Portrait Photographer</h1>
@@ -157,9 +161,21 @@
         <h2 class="section-title">Recent DMV portrait work</h2>
         <p class="section-subtitle">A few highlights from recent sessions in the DMV.</p>
         <div class="gallery">
-          <img height="712" width="475" src="/headshot1.webp" alt="DMV professional headshot photographer example" loading="lazy" decoding="async">
-          <img height="3376" width="3376" src="/portrait6.webp" alt="DMV portrait photographer natural light portrait" loading="lazy" decoding="async">
-          <img height="1086" width="724" src="/portrait7.webp" alt="DMV portrait photography session with creative posing" loading="lazy" decoding="async">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/root/headshot1-400.avif 400w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)">
+            <source type="image/webp" srcset="/images/optimized/root/headshot1-400.webp 400w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)">
+            <img src="/images/optimized/root/headshot1-400.jpg" srcset="/images/optimized/root/headshot1-400.jpg 400w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)" width="475" height="712" alt="DMV professional headshot photographer example" loading="lazy" decoding="async">
+          </picture>
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/root/portrait6-400.avif 400w, /images/optimized/root/portrait6-800.avif 800w, /images/optimized/root/portrait6-1200.avif 1200w, /images/optimized/root/portrait6-1600.avif 1600w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)">
+            <source type="image/webp" srcset="/images/optimized/root/portrait6-400.webp 400w, /images/optimized/root/portrait6-800.webp 800w, /images/optimized/root/portrait6-1200.webp 1200w, /images/optimized/root/portrait6-1600.webp 1600w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)">
+            <img src="/images/optimized/root/portrait6-1200.jpg" srcset="/images/optimized/root/portrait6-400.jpg 400w, /images/optimized/root/portrait6-800.jpg 800w, /images/optimized/root/portrait6-1200.jpg 1200w, /images/optimized/root/portrait6-1600.jpg 1600w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)" width="3376" height="3376" alt="DMV portrait photographer natural light portrait" loading="lazy" decoding="async">
+          </picture>
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/root/portrait7-400.avif 400w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)">
+            <source type="image/webp" srcset="/images/optimized/root/portrait7-400.webp 400w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)">
+            <img src="/images/optimized/root/portrait7-400.jpg" srcset="/images/optimized/root/portrait7-400.jpg 400w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)" width="724" height="1086" alt="DMV portrait photography session with creative posing" loading="lazy" decoding="async">
+          </picture>
         </div>
       </div>
     </section>

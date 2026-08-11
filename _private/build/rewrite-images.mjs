@@ -52,8 +52,19 @@ const SKIP_BASENAMES = new Set(['Logo.webp']);
 const SIZES_CARD =
   '(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)';
 
-/** Service and post heroes run the full content column, capped near 1200px. */
-const SIZES_HERO = '(min-width: 1200px) 1200px, 100vw';
+/**
+ * Heroes are full-bleed: .hero-image is position:absolute, inset:0, with
+ * object-fit:cover, so it always spans the viewport with no max-width cap.
+ */
+const SIZES_HERO = '100vw';
+
+/**
+ * .gallery on service pages is repeat(auto-fit, minmax(240px, 1fr)) with 18px
+ * gaps inside a 1200px container, settling at roughly three 380px tracks on
+ * desktop, two mid-width, one on phones.
+ */
+const SIZES_GALLERY =
+  '(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)';
 
 /** In-article images sit in a ~760px prose column. */
 const SIZES_PROSE = '(min-width: 800px) 760px, calc(100vw - 40px)';
@@ -67,7 +78,7 @@ const TARGETS = {
       'dmv-photographer/index.html',
       'dmv-portrait-photographer/index.html',
       'dmv-event-photographer/index.html',
-    ], sizes: (ctx) => (ctx.isHero ? SIZES_HERO : SIZES_PROSE) },
+    ], sizes: (ctx) => (ctx.isHero ? SIZES_HERO : SIZES_GALLERY) },
   posts:   { files: null, sizes: (ctx) => (ctx.isHero ? SIZES_HERO : SIZES_PROSE) },
 };
 

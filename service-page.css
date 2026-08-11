@@ -427,3 +427,19 @@ footer {
   white-space: nowrap;
   border: 0;
 }
+
+/* ---------------------------------------------------------------------------
+   Responsive images (WO-07)
+
+   Hero and gallery images are now <picture> elements.
+
+   .hero-image is position:absolute inset:0 with object-fit:cover, and .gallery
+   img is width:100% height:220px. In both cases the styling targets the <img>,
+   which still matches inside a <picture>. display:contents removes the wrapper
+   box from layout entirely so the img positions against .hero and participates
+   in the .gallery grid exactly as it did before.
+   --------------------------------------------------------------------------- */
+.hero picture,
+.gallery picture {
+  display: contents;
+}

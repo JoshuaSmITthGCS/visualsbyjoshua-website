@@ -26,8 +26,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="preload" as="image" href="/images/portraits/charleston-graduation-photography.webp">
-  <link rel="stylesheet" href="/service-page.css">
+  <link rel="preload" as="image" type="image/avif" href="/images/optimized/portraits/charleston-graduation-photography-800.avif" imagesrcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="/service-page.css">
 
   <script type="application/ld+json">
   {
@@ -217,7 +217,11 @@
 
   <main>
     <section class="hero">
-      <img height="1221" width="1206" class="hero-image" src="/images/portraits/charleston-graduation-photography.webp" alt="Charleston photographer capturing graduation portraits in downtown Charleston" fetchpriority="high" decoding="async">
+      <picture>
+        <source type="image/avif" srcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w" sizes="100vw">
+        <source type="image/webp" srcset="/images/optimized/portraits/charleston-graduation-photography-400.webp 400w, /images/optimized/portraits/charleston-graduation-photography-800.webp 800w, /images/optimized/portraits/charleston-graduation-photography-1200.webp 1200w" sizes="100vw">
+        <img src="/images/optimized/portraits/charleston-graduation-photography-1200.jpg" srcset="/images/optimized/portraits/charleston-graduation-photography-400.jpg 400w, /images/optimized/portraits/charleston-graduation-photography-800.jpg 800w, /images/optimized/portraits/charleston-graduation-photography-1200.jpg 1200w" sizes="100vw" width="1206" height="1221" class="hero-image" alt="Charleston photographer capturing graduation portraits in downtown Charleston" fetchpriority="high" decoding="async" loading="eager">
+      </picture>
       <div class="hero-overlay" aria-hidden="true"></div>
       <div class="hero-content">
         <h1 class="hero-title">Charleston Photographer for Portraits, Graduations, Headshots, and Events</h1>
@@ -302,9 +306,21 @@
         <h2 class="section-title">Recent Charleston photography</h2>
         <p class="section-subtitle">A few images that match the kind of Charleston work this page is targeting.</p>
         <div class="gallery">
-          <img height="1221" width="1206" src="/images/portraits/charleston-graduation-photography.webp" alt="Charleston graduation photographer session in downtown Charleston" loading="lazy" decoding="async">
-          <img height="1660" width="1206" src="/images/couples/charleston-anniversary-couple-downtown.webp" alt="Charleston couples photography session downtown" loading="lazy" decoding="async">
-          <img height="5101" width="2870" src="/portrait1.webp" alt="Charleston portrait photographer creating a lifestyle portrait" loading="lazy" decoding="async">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)">
+            <source type="image/webp" srcset="/images/optimized/portraits/charleston-graduation-photography-400.webp 400w, /images/optimized/portraits/charleston-graduation-photography-800.webp 800w, /images/optimized/portraits/charleston-graduation-photography-1200.webp 1200w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)">
+            <img src="/images/optimized/portraits/charleston-graduation-photography-1200.jpg" srcset="/images/optimized/portraits/charleston-graduation-photography-400.jpg 400w, /images/optimized/portraits/charleston-graduation-photography-800.jpg 800w, /images/optimized/portraits/charleston-graduation-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)" width="1206" height="1221" alt="Charleston graduation photographer session in downtown Charleston" loading="lazy" decoding="async">
+          </picture>
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.avif 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.avif 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.avif 1200w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)">
+            <source type="image/webp" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.webp 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.webp 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.webp 1200w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)">
+            <img src="/images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.jpg 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.jpg 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg 1200w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)" width="1206" height="1660" alt="Charleston couples photography session downtown" loading="lazy" decoding="async">
+          </picture>
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/root/portrait1-400.avif 400w, /images/optimized/root/portrait1-800.avif 800w, /images/optimized/root/portrait1-1200.avif 1200w, /images/optimized/root/portrait1-1600.avif 1600w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)">
+            <source type="image/webp" srcset="/images/optimized/root/portrait1-400.webp 400w, /images/optimized/root/portrait1-800.webp 800w, /images/optimized/root/portrait1-1200.webp 1200w, /images/optimized/root/portrait1-1600.webp 1600w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)">
+            <img src="/images/optimized/root/portrait1-1200.jpg" srcset="/images/optimized/root/portrait1-400.jpg 400w, /images/optimized/root/portrait1-800.jpg 800w, /images/optimized/root/portrait1-1200.jpg 1200w, /images/optimized/root/portrait1-1600.jpg 1600w" sizes="(min-width: 1240px) 380px, (min-width: 790px) 33vw, (min-width: 540px) 50vw, calc(100vw - 40px)" width="2870" height="5101" alt="Charleston portrait photographer creating a lifestyle portrait" loading="lazy" decoding="async">
+          </picture>
         </div>
       </div>
     </section>
