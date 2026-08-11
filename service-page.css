@@ -93,6 +93,8 @@ header {
 
 .logo img {
   height: 40px;
+  width: auto;
+  aspect-ratio: 575 / 471;
   margin-right: 10px;
 }
 
@@ -344,6 +346,8 @@ footer {
 
 .footer-logo img {
   height: 40px;
+  width: auto;
+  aspect-ratio: 575 / 471;
   margin-right: 10px;
 }
 

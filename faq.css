@@ -148,3 +148,52 @@
   white-space: nowrap;
   border: 0;
 }
+
+/* ---------------------------------------------------------------------------
+   Layout stability (WO-10)
+
+   FAQ.html measured lab CLS of 0.44 at 768 px, the worst page on the site,
+   against a "good" threshold of 0.10. The cause is 48 Font Awesome icons
+   arriving from a CDN stylesheet after first paint. Until that CSS lands each
+   <i> is an empty inline box with no width, and every one of them sits in a
+   space-between flex row, so all 48 rows reflow at once when the icon font
+   resolves.
+
+   Reserving the icon box up front means the glyph paints into space that was
+   already allocated, so nothing moves.
+   --------------------------------------------------------------------------- */
+
+.faq-question i,
+.faq-question .icon,
+.faq-category-title i,
+.contact-method i,
+.cta-section i {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  flex: 0 0 auto;
+  text-align: center;
+  font-style: normal;
+}
+
+/* The accordion animates max-height on click. Interaction-driven shifts inside
+   500 ms of the click are excluded from CLS, but containment keeps the answer's
+   reflow from being able to affect anything outside the item. */
+.faq-item {
+  contain: layout paint;
+}
+
+.faq-answer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 0;
+}
+
+/* Logo.webp is 575x471, natural aspect 1.221. The header markup declares
+   width="40" height="40", which reserves a square and then snaps to 49x40 once
+   the bitmap decodes. Pin the intrinsic ratio so the reserved box is correct. */
+.logo img {
+  aspect-ratio: 575 / 471;
+  height: 40px;
+  width: auto;
+}
