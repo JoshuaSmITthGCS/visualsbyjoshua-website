@@ -511,3 +511,73 @@ footer a:not(.btn):focus-visible {
 .card-note strong {
   color: var(--text);
 }
+
+/* ---------------------------------------------------------------------------
+   Rate table (hub page)
+
+   The head-term page now answers "what does it cost" directly instead of
+   sending everyone to the pricing guide. The wrapper scrolls on its own so a
+   six-column table can never make the page body scroll sideways, which is the
+   failure mode the 1024px overflow audit flagged elsewhere.
+   --------------------------------------------------------------------------- */
+.scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  background: white;
+}
+
+.rate-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  min-width: 34rem;
+}
+
+.rate-table caption {
+  text-align: left;
+  padding: 18px 20px 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.rate-table th,
+.rate-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.rate-table thead th {
+  color: var(--muted);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.rate-table tbody th {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* The price column lines up as a column of figures, so it gets tabular
+   numerals and right alignment. */
+.rate-table tbody td:first-of-type {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--secondary);
+  white-space: nowrap;
+}
+
+.rate-table tbody tr:last-child th,
+.rate-table tbody tr:last-child td {
+  border-bottom: none;
+}
