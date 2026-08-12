@@ -1318,6 +1318,58 @@
       }
     }
 
+    /* ---------------------------------------------------------------------
+       Nav collapse at 1024px (WO-13)
+
+       The hamburger previously appeared only at 768px, so between 769px and
+       roughly 1100px a ten-item nav plus the logo plus the CTA button all had
+       to fit one flex row. They did not: the measured overflow was +215px on
+       index at 1024px, and +165 to +286px on blog posts. Collapsing the nav
+       before it runs out of room is the fix; the 768px block below still
+       handles phone-specific type sizes.
+       --------------------------------------------------------------------- */
+    @media (max-width: 1024px) {
+      .hamburger {
+        display: block;
+      }
+      .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+      .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 70px);
+        transition: 0.3s;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        padding: 50px 0;
+        z-index: 1000;
+        overflow-y: auto;
+      }
+      .nav-menu.active {
+        left: 0;
+      }
+      .nav-list {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+      .nav-item {
+        margin: 15px 0;
+      }
+    }
+
     @media (max-width: 768px) {
       .hamburger {
         display: block;

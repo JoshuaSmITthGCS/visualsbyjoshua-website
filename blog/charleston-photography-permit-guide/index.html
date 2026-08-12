@@ -252,7 +252,7 @@
         <img src="/Logo.webp" alt="Visuals by Joshua logo" width="49" height="40" decoding="async">
         <span class="logo-text">Visuals by Joshua</span>
       </a>
-      <div class="nav-menu">
+      <div class="nav-menu" id="site-nav">
         <ul class="nav-list">
           <li class="nav-item"><a title="Go to the Visuals by Joshua homepage" href="/index.html" class="nav-link">Home</a></li>
           <li class="nav-item"><a title="View the Visuals by Joshua photography portfolio" href="/gallery.html" class="nav-link">Portfolio</a></li>
@@ -263,6 +263,11 @@
         </ul>
         <a title="Book a Charleston photography session with Joshua" href="/index.html#contact" class="btn nav-cta">Book Now</a>
       </div>
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
   </header>
   <section class="blog-hero guide-hero">
@@ -490,5 +495,24 @@
       <div class="footer-bottom">&copy; 2026 Visuals by Joshua. All rights reserved.</div>
     </div>
   </footer>
+  <script>
+    (function() {
+      var hamburger = document.querySelector('.hamburger');
+      var navMenu = document.querySelector('.nav-menu');
+      if (!hamburger || !navMenu) return;
+      function close() {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+      hamburger.addEventListener('click', function() {
+        var open = navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active', open);
+        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      navMenu.querySelectorAll('.nav-link').forEach(function(l) { l.addEventListener('click', close); });
+      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
+    })();
+  </script>
 </body>
 </html>
