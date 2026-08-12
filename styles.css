@@ -204,7 +204,7 @@
     button:focus-visible,
     input:focus-visible,
     textarea:focus-visible {
-      outline: 3px solid rgba(52, 152, 219, 0.4);
+      outline: 3px solid rgba(147, 93, 53, 0.4);
       outline-offset: 3px;
     }
 
@@ -967,7 +967,7 @@
     .form-control:focus {
       outline: none;
       border-color: var(--secondary);
-      box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+      box-shadow: 0 0 0 3px rgba(147, 93, 53, 0.25);
     }
 
     .form-control::placeholder {

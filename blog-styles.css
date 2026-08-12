@@ -327,7 +327,7 @@
         .blog-content a:not(.btn),
         .blog-container a:not(.btn) {
             color: var(--secondary);
-            text-decoration-color: rgba(52,152,219,0.45);
+            text-decoration-color: rgba(147, 93, 53,0.45);
             text-decoration-thickness: 1px;
             text-underline-offset: 0.18em;
         }
@@ -621,7 +621,7 @@
             margin: 48px 0;
             padding: 32px;
             border-radius: 14px;
-            background: linear-gradient(135deg, rgba(44, 62, 80, 0.94), rgba(26, 37, 47, 0.92));
+            background: linear-gradient(135deg, rgba(16, 25, 35, 0.94), rgba(13, 21, 32, 0.92));
             color: white;
             box-shadow: var(--shadow);
         }
