@@ -29,8 +29,14 @@
 
   <!-- Location Service Pages -->
   <url>
+    <loc>https://visualsbyjoshua.com/charleston-graduation-photographer/</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://visualsbyjoshua.com/charleston-photographer/</loc>
-    <lastmod>2026-05-02</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.98</priority>
   </url>
@@ -42,13 +48,13 @@
   </url>
   <url>
     <loc>https://visualsbyjoshua.com/charleston-portrait-photographer/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://visualsbyjoshua.com/charleston-event-photographer/</loc>
-    <lastmod>2026-06-26</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
