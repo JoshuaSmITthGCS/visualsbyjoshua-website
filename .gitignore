@@ -28,6 +28,7 @@ _private/build/node_modules/
 # Project instructions and internal planning documents
 CLAUDE.md
 ACTION-PLAN.md
+AUDIT-PLAN.md
 FULL-AUDIT-REPORT.md
 SEO-REPORT.html
 seo-audit-report.md
@@ -35,6 +36,11 @@ seo-audit.js
 blog-gap-report.md
 photography-blog-instructions.md
 skills-lock.json
+docs/
+
+# Isolated workspaces for plan execution (superpowers subagent-driven-development)
+.worktrees/
+.superpowers/
 
 # Editor / backup cruft
 *.bak
