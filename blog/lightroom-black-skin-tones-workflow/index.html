@@ -28,12 +28,13 @@
   <link rel="stylesheet" href="../../blog-styles.css">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   "headline": "Editing Black Skin Tones in Lightroom: A Repeatable Workflow",
   "description": "Use this step-by-step Lightroom workflow for accurate deep skin tones, including HSL values, masking order, and fixes for grey or orange skin.",
   "image": "https://visualsbyjoshua.com/images/optimized/home/dmv-photographer-960.jpg",
   "author": {
     "@type": "Person",
+    "@id": "https://visualsbyjoshua.com/#person",
     "name": "Joshua Smith",
     "url": "https://visualsbyjoshua.com/"
   },
@@ -84,61 +85,7 @@
     }
   ]
 }</script>
-  <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why does dark skin look grey in my photos?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Two causes. Underexposure in camera, or lifted shadows and raised Clarity in post. Fix exposure globally, then raise Orange luminance in HSL."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What HSL settings work for Black skin tones?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Raise Orange luminance, lower Yellow saturation, and leave Red close to neutral. Exact values depend on the light, but that direction is consistent."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I use skin smoothing on darker skin?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lightly. Texture at -10 to -20 keeps pores. Aggressive smoothing removes the specular highlights that give deep skin dimension."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I fix a green cast on skin?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Adjust the tint slider toward magenta, then check the RGB readout on the cheek. Green above red always means a cast, no matter what the screen shows you."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do camera profiles matter for skin tones?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Adobe Color and Camera Standard render skin differently. Pick one and use it across a gallery so tones stay consistent."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long should editing a 50 image gallery take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Between 90 minutes and three hours once you have a workflow and a preset. Longer than that means you are editing image by image instead of by lighting setup."
-      }
-    }
-  ]
-}</script>
-  <style>
+<style>
     .article-hero { background: linear-gradient(rgba(0,0,0,.66), rgba(0,0,0,.66)), url('/images/optimized/home/dmv-photographer-960.jpg') center/cover no-repeat; }
     .article-kicker { color: #74b9e7; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
     .article-toc { margin: 0 0 42px; padding: 24px 28px; border: 1px solid #e2e8f0; border-radius: 10px; background: #f8fafc; }

@@ -92,6 +92,8 @@
 
 .search-input:focus {
   outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(147, 93, 53, 0.25);
 }
 
 .search-button {

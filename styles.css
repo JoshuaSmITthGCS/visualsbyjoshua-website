@@ -1,16 +1,4 @@
-:root {
-      --primary: #2c3e50;
-      --secondary: #3498db;
-      --accent: #e74c3c;
-      --light: #f8f9fa;
-      --dark: #212529;
-      --text: #333;
-      --footer: #1a252f;
-      --shadow: 0 5px 15px rgba(0,0,0,0.1);
-      --transition: all 0.3s ease;
-    }
-
-    html {
+html {
       scroll-behavior: smooth;
       scroll-padding-top: 70px;
     }
@@ -1109,6 +1097,8 @@
 
     .newsletter-input:focus {
       outline: none;
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 3px rgba(147, 93, 53, 0.25);
     }
 
     .newsletter-btn {
@@ -1153,6 +1143,15 @@
       transition: var(--transition);
     }
 
+    /* Icon-only social links need a real touch target; the plain text
+       Privacy/Terms links sharing this class don't need the extra padding. */
+    .footer-social a:has(.icon) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+    }
+
     .footer-social a:hover {
       color: white;
     }
@@ -1181,8 +1180,16 @@
       text-align: center;
     }
 
+    /* Each step is a link: Clarity showed heavy dead-clicking on step 1 when
+       these were plain divs, so they now carry real destinations plus the
+       affordance cues that say "this is clickable". Hover and focus visuals
+       live with the session-path card styles further down so the two share
+       the same palette. */
     .how-it-works-step {
+      display: block;
       padding: 30px;
+      color: inherit;
+      text-decoration: none;
     }
 
     .step-number {
@@ -1200,6 +1207,7 @@
     }
 
     .step-title {
+      display: block;
       font-family: 'Playfair Display', serif;
       margin-bottom: 15px;
       color: var(--primary);
@@ -1208,7 +1216,28 @@
     }
 
     .step-desc {
+      display: block;
       color: #666;
+    }
+
+    .step-action {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--secondary);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .step-action::after {
+      content: '\2192';
+      display: inline-block;
+      margin-left: 0.4em;
+      transition: transform var(--transition);
+    }
+
+    .how-it-works-step:hover .step-action::after,
+    .how-it-works-step:focus-visible .step-action::after {
+      transform: translateX(4px);
     }
 
     /* CTA Banner */
@@ -2432,13 +2461,15 @@
       background: #d7d0c7;
     }
 
-    .service-image-link {
+    .service-image-link,
+    .location-image-link {
       display: block;
       color: white;
       text-decoration: none;
     }
 
-    .service-image-link:focus-visible {
+    .service-image-link:focus-visible,
+    .location-image-link:focus-visible {
       outline: 3px solid var(--accent);
       outline-offset: -3px;
     }
@@ -2484,14 +2515,17 @@
       letter-spacing: -0.02em;
     }
 
-    .service-title-link {
+    .service-title-link,
+    .location-title-link {
       color: inherit;
       text-decoration-color: transparent;
       text-underline-offset: 0.16em;
     }
 
     .service-title-link:hover,
-    .service-title-link:focus-visible {
+    .service-title-link:focus-visible,
+    .location-title-link:hover,
+    .location-title-link:focus-visible {
       color: var(--accent);
       text-decoration-color: currentColor;
     }
@@ -2548,6 +2582,19 @@
       border-radius: 28px;
       background: rgba(255, 253, 249, 0.78);
       box-shadow: var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    }
+
+    .how-it-works-step:hover,
+    .how-it-works-step:focus-visible {
+      transform: translateY(-4px);
+      border-color: rgba(199, 74, 50, 0.28);
+      box-shadow: 0 20px 42px rgba(16, 25, 35, 0.12);
+    }
+
+    .how-it-works-step:focus-visible {
+      outline: 2px solid var(--secondary);
+      outline-offset: 3px;
     }
 
     .step-number {
@@ -3110,19 +3157,77 @@
       }
     }
 
+    /* Collapse toggles are a mobile affordance only; desktop shows the sections
+       in full, exactly as before. */
+    .section-collapse-toggle {
+      display: none;
+    }
+
     @media (max-width: 768px) {
       .container {
         padding: 0 18px;
       }
 
       .desktop-nav-item,
-      .desktop-depth,
       .mobile-extra-service {
         display: none !important;
       }
 
       .mobile-nav-item {
         display: block;
+      }
+
+      /* Mobile section collapse. These four sections were previously hidden
+         outright below 768px, so phone visitors got no process, service areas,
+         guides, or FAQ. They now show a heading plus a toggle, and the body is
+         only hidden while the section is closed -- scoping the rule to
+         :not(.is-open) leaves the grids their own display when open. */
+      .mobile-collapsible:not(.is-open) > .container > *:not(.section-collapse-header):not(.section-collapse-toggle) {
+        display: none;
+      }
+
+      .mobile-collapsible:not(.is-open) {
+        padding-top: 28px;
+        padding-bottom: 28px;
+      }
+
+      .section-collapse-header {
+        margin-bottom: 16px;
+      }
+
+      .section-collapse-header p:not(.section-kicker) {
+        display: none;
+      }
+
+      .section-collapse-toggle {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 15px 16px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background-color: var(--light);
+        color: var(--primary);
+        font-family: inherit;
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .mobile-collapsible.is-open .section-collapse-toggle {
+        margin-bottom: 22px;
+      }
+
+      .section-collapse-toggle .icon {
+        flex-shrink: 0;
+        transition: var(--transition);
+      }
+
+      .section-collapse-toggle[aria-expanded="true"] .icon {
+        transform: rotate(180deg);
       }
 
       header {
@@ -3563,13 +3668,17 @@
     }
 
     /* Form Validation Feedback */
-    .form-group input:invalid:not(:placeholder-shown),
-    .form-group select:invalid:not(:placeholder-shown),
-    .form-group textarea:invalid:not(:placeholder-shown) {
-      border-color: #e74c3c;
+    /* :user-invalid/:user-valid only match after the user has interacted with
+       the field (or a submit attempt), unlike :invalid:not(:placeholder-shown)
+       which fires on <select> immediately on page load since :placeholder-shown
+       never applies to selects. */
+    .form-group input:user-invalid,
+    .form-group select:user-invalid,
+    .form-group textarea:user-invalid {
+      border-color: var(--accent);
     }
 
-    .form-group input:valid:not(:placeholder-shown),
-    .form-group select:valid:not(:placeholder-shown) {
+    .form-group input:user-valid,
+    .form-group select:user-valid {
       border-color: #27ae60;
     }
