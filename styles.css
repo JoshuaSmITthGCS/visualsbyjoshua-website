@@ -1699,3 +1699,520 @@ p {
         align-items: center;
       }
 }
+
+/* ===== Round 2: cta-banner/footer-grid/about-container family recovered from legacy stylesheet ===== */
+.about-container {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+.service-image {
+      position: relative;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+    }
+
+.service-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+.service-card:hover .service-image img {
+      transform: scale(1.05);
+    }
+
+.service-content {
+      padding: 25px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+.service-features {
+      list-style: none;
+      margin-bottom: 25px;
+    }
+
+.service-features li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 25px;
+    }
+
+.service-features li::before {
+      content: '';
+      position: absolute;
+      left: 3px;
+      top: 0.35em;
+      width: 7px;
+      height: 12px;
+      border: solid var(--secondary);
+      border-width: 0 2px 2px 0;
+      color: var(--secondary);
+      transform: rotate(45deg);
+    }
+
+.location-title {
+      font-size: 1.35rem;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+.footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+.footer-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      text-decoration: none;
+    }
+
+.footer-logo img {
+      height: 40px;
+      width: auto;
+      margin-right: 10px;
+    }
+
+.footer-logo-text {
+      color: white;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+.footer-heading {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: white;
+      position: relative;
+      display: inline-block;
+    }
+
+.footer-heading::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 40px;
+      height: 2px;
+      background-color: var(--secondary);
+    }
+
+.cta-banner {
+      padding: 60px 0;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #2a2a2a;
+      color: white;
+      text-align: center;
+    }
+
+.cta-title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+.cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+.section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin-bottom: 1rem;
+      color: var(--secondary);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+.section-kicker::before {
+      content: '';
+      width: 32px;
+      height: 1px;
+      background: currentColor;
+      opacity: 0.5;
+    }
+
+.about-container {
+      gap: 4rem;
+    }
+
+.service-image,
+    .location-card img,
+    .blog-preview-card img {
+      background: #e8e8e8;
+    }
+
+.service-content,
+    .location-content,
+    .blog-preview-content {
+      padding: 1.45rem;
+    }
+
+.service-title,
+    .location-title,
+    .blog-preview-title {
+      letter-spacing: -0.02em;
+    }
+
+.service-features li,
+    .location-list li {
+      color: var(--text);
+    }
+
+.service-features li::before {
+      color: var(--accent);
+    }
+
+.cta-banner {
+      padding: 5rem 0;
+      background:
+        linear-gradient(135deg, rgba(9, 14, 20, 0.86), rgba(9, 14, 20, 0.56)),
+        #2a2a2a;
+    }
+
+.cta-title {
+      max-width: 10ch;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: clamp(2.2rem, 4vw, 3.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+    }
+
+.footer-logo img {
+      border-radius: 12px;
+    }
+
+.footer-heading::after {
+      background: linear-gradient(90deg, var(--accent), rgba(199, 74, 50, 0.2));
+    }
+
+@media (max-width: 992px) {
+  .about-container {
+        flex-direction: column;
+      }
+}
+
+@media (max-width: 768px) {
+  .cta-title {
+        font-size: 1.9rem;
+      }
+  .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+  .cta-banner {
+        padding: 40px 0;
+      }
+  .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+  .cta-buttons .btn {
+        width: 80%;
+        max-width: 280px;
+      }
+}
+
+@media (max-width: 480px) {
+  .cta-title {
+        font-size: 1.6rem;
+      }
+  .service-content {
+        padding: 18px;
+      }
+  .location-title {
+        font-size: 1.2rem;
+      }
+}
+
+@media (min-width: 769px) {
+  .cta-banner {
+        background:
+          linear-gradient(135deg, rgba(9, 14, 20, 0.86), rgba(9, 14, 20, 0.56)),
+          linear-gradient(135deg, #1f2a35, #0f1620) center/cover no-repeat;
+      }
+}
+
+@media (max-width: 768px) {
+  .section-collapse-header p:not(.section-kicker) {
+        display: none;
+      }
+  .about-container {
+        gap: 2rem;
+      }
+  .services-grid,
+      .locations-grid,
+      .blog-preview-grid,
+      .how-it-works-grid,
+      .contact-container,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+  .contact-form-intro .section-kicker {
+        margin-bottom: 0.55rem;
+      }
+  .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+  .cta-buttons .btn {
+        width: 100%;
+      }
+}
+
+/* ===== Round 3: hand-written for classes with no legacy equivalent
+   (pricing tables, breadcrumb, meta rows, location/venue/checklist cards) ===== */
+
+.breadcrumb {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1rem;
+}
+
+.breadcrumb a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.breadcrumb a:hover {
+  opacity: 0.8;
+}
+
+.blog-meta,
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 20px;
+}
+
+.meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.price-card {
+  background: #f5f3f0;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.price-card.featured {
+  border-color: #be976d;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.price-label {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.price-amount {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #be976d;
+  margin-bottom: 1rem;
+}
+
+.price-features {
+  list-style: none;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.price-features li {
+  padding: 6px 0 6px 22px;
+  position: relative;
+  color: #5a5a5a;
+  font-size: 0.9375rem;
+}
+
+.price-features li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: #be976d;
+  font-weight: 700;
+}
+
+.pricing-table,
+.pricing-section {
+  margin: 40px 0;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.price-table th,
+.price-table td {
+  padding: 12px 16px;
+  border: 1px solid #e8e8e8;
+  text-align: left;
+}
+
+.price-table th {
+  background: #f5f3f0;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.location-card {
+  background: #f5f3f0;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.location-highlight {
+  background: #f5f3f0;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  text-align: left;
+  background: #f5f3f0;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.checklist-checkbox {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 2px solid #be976d;
+  margin-top: 2px;
+}
+
+.checklist-item[aria-pressed="true"] .checklist-checkbox {
+  background: #be976d;
+}
+
+.checklist-text {
+  color: #5a5a5a;
+  line-height: 1.6;
+}
+
+.checklist-section,
+.checklist-content {
+  margin: 30px 0;
+}
+
+.checklist-title,
+.venue-name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.venue-item {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 24px 0;
+}
+
+.venue-item:first-child {
+  padding-top: 0;
+}
+
+.venue-details,
+.venue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.venue-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #5a5a5a;
+}
+
+.venue-detail i {
+  color: #be976d;
+  width: 18px;
+  text-align: center;
+}
+
+.technique-card {
+  background: #f5f3f0;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 24px 0;
+}
+
+.shot-type-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f5f3f0;
+  color: #be976d;
+  font-size: 1.25rem;
+  margin-bottom: 14px;
+}
+
+.external-link {
+  color: #be976d;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.external-link:hover {
+  opacity: 0.8;
+}
+
+.upload-help {
+  font-size: 0.8125rem;
+  color: #7a7a7a;
+  margin-top: 6px;
+}
