@@ -1081,7 +1081,11 @@
 
 
                 <!-- Add new blog posts here as you create them -->
-                
+
+            </div>
+            <div class="blog-load-more-row">
+                <p class="blog-load-more-count" id="blog-load-more-count"></p>
+                <button type="button" class="btn btn-secondary" id="blog-load-more">Load More Posts</button>
             </div>
         </div>
     </section>
@@ -1126,29 +1130,70 @@
             });
         }
 
-        // Category filtering
+        // Category filtering + pagination — 55 posts in one unpaginated
+        // scroll made the page ~38,000px tall on mobile. Category filter
+        // previously only toggled display:none, so switching categories
+        // never actually reduced how much the page had already rendered.
+        // This shows a page at a time, re-paginating from the top of the
+        // currently-filtered set whenever the category changes.
         const categoryBtns = document.querySelectorAll('.category-btn');
-        const blogCards = document.querySelectorAll('.blog-card');
+        const blogCards = Array.from(document.querySelectorAll('.blog-card'));
+        const loadMoreBtn = document.getElementById('blog-load-more');
+        const loadMoreCount = document.getElementById('blog-load-more-count');
+        const PAGE_SIZE = 12;
+
+        let currentCategory = 'all';
+        let visibleCount = PAGE_SIZE;
+
+        function filteredCards() {
+            return blogCards.filter(card => {
+                if (currentCategory === 'all') return true;
+                return card.dataset.category.split(/\s+/).includes(currentCategory);
+            });
+        }
+
+        function renderBlogGrid() {
+            const filtered = filteredCards();
+            const filteredSet = new Set(filtered);
+
+            blogCards.forEach(card => {
+                card.style.display = filteredSet.has(card) ? '' : 'none';
+            });
+            filtered.forEach((card, i) => {
+                card.style.display = i < visibleCount ? 'block' : 'none';
+            });
+
+            const shown = Math.min(visibleCount, filtered.length);
+            if (loadMoreCount) {
+                loadMoreCount.textContent = filtered.length
+                    ? `Showing ${shown} of ${filtered.length} posts`
+                    : 'No posts in this category yet';
+            }
+            if (loadMoreBtn) {
+                loadMoreBtn.style.display = shown < filtered.length ? 'inline-block' : 'none';
+            }
+        }
 
         categoryBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Update active button
                 categoryBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
 
-                // Filter posts
-                const category = btn.dataset.category;
-                blogCards.forEach(card => {
-                    const categories = card.dataset.category.split(/\s+/);
-
-                    if (category === 'all' || categories.includes(category)) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
+                currentCategory = btn.dataset.category;
+                visibleCount = PAGE_SIZE;
+                renderBlogGrid();
+                document.querySelector('.blog-grid-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
+
+        if (loadMoreBtn) {
+            loadMoreBtn.addEventListener('click', () => {
+                visibleCount += PAGE_SIZE;
+                renderBlogGrid();
+            });
+        }
+
+        renderBlogGrid();
 
         // Mobile navigation
         const hamburger = document.querySelector('.hamburger');
