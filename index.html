@@ -797,6 +797,109 @@
       text-align: center;
     }
 
+    /* Expandable Service Cards (click-to-toggle accordion) */
+    .service-expandable {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 1rem;
+      padding: 10px 18px;
+      border: 1px solid #be976d;
+      border-radius: 30px;
+      background: transparent;
+      color: #be976d;
+      font-size: 0.875rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .service-toggle:hover,
+    .service-toggle:focus-visible {
+      background: #be976d;
+      color: #fff;
+    }
+
+    .service-toggle-icon {
+      display: inline-block;
+      font-size: 0.7em;
+      transition: transform 0.3s ease;
+    }
+
+    .service-expandable.is-open .service-toggle-icon {
+      transform: rotate(180deg);
+    }
+
+    .service-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      max-height: 0;
+      opacity: 0;
+      margin-top: 0;
+      overflow: hidden;
+      visibility: hidden;
+      pointer-events: none;
+      transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.4s ease, visibility 0s linear 0.4s;
+    }
+
+    .service-expandable.is-open .service-options {
+      max-height: 800px;
+      opacity: 1;
+      margin-top: 1.75rem;
+      visibility: visible;
+      pointer-events: auto;
+      transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.4s ease, visibility 0s linear 0s;
+    }
+
+    .service-option {
+      background: #f5f3f0;
+      padding: 20px 16px;
+      border-radius: 10px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .service-option:hover {
+      background: #ebe8e3;
+      transform: translateX(4px);
+    }
+
+    .service-option h4 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #2a2a2a;
+    }
+
+    .service-option .option-price {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #be976d;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-option p {
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      color: #5a5a5a;
+      margin-bottom: 1rem;
+      max-width: 100%;
+    }
+
+    .service-option .btn {
+      font-size: 0.8125rem;
+      padding: 10px 20px;
+      width: 100%;
+    }
+
     /* ========================================
        ABOUT
        ======================================== */
@@ -1176,27 +1279,30 @@
             <div class="service-price">$80+</div>
             <p class="service-price-note">Starting rate</p>
             <p class="service-description">Personal branding, lifestyle portraits, creative sessions. On-location near me in Charleston or Northern VA / DMV.</p>
-            <p class="service-expand-hint">Hover to see options →</p>
+            <button type="button" class="service-toggle" aria-expanded="false" aria-controls="portrait-options">
+              <span class="service-toggle-text">View Pricing Options</span>
+              <span class="service-toggle-icon" aria-hidden="true">▾</span>
+            </button>
           </div>
 
-          <div class="service-options">
+          <div class="service-options" id="portrait-options">
             <div class="service-option">
               <h4>Single Portrait</h4>
               <div class="option-price">$80</div>
               <p>30-60 minutes, 20+ edited images</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Single Portrait" data-price="$80">Book Now</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Single" data-price="$80">Book Now</a>
             </div>
             <div class="service-option">
               <h4>Couple / Engagement</h4>
               <div class="option-price">$200</div>
               <p>1-2 hours, 50+ images, multiple locations</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Couple / Engagement" data-price="$200">Book Now</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Couple/Engagement" data-price="$200">Book Now</a>
             </div>
             <div class="service-option">
               <h4>Group Portrait</h4>
               <div class="option-price">$150</div>
               <p>1 hour, 30+ images, up to 6 people</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Group Portrait" data-price="$150">Book Now</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Group" data-price="$150">Book Now</a>
             </div>
           </div>
         </div>
@@ -1209,10 +1315,13 @@
             <div class="service-price">$150+</div>
             <p class="service-price-note">Package rate</p>
             <p class="service-description">Graduation photographer near me in Charleston SC & DMV. Cap and gown sessions at best photo spots.</p>
-            <p class="service-expand-hint">Hover to see packages →</p>
+            <button type="button" class="service-toggle" aria-expanded="false" aria-controls="graduation-options">
+              <span class="service-toggle-text">View Packages</span>
+              <span class="service-toggle-icon" aria-hidden="true">▾</span>
+            </button>
           </div>
 
-          <div class="service-options">
+          <div class="service-options" id="graduation-options">
             <div class="service-option">
               <h4>Bronze Package</h4>
               <div class="option-price">$150</div>
@@ -1241,7 +1350,7 @@
           <div class="service-price">Custom</div>
           <p class="service-price-note">Hourly or package</p>
           <p class="service-description">Event coverage photography for university events, concerts, campus parties. Average hourly rate for photographer. Shot for GZA (Wu-Tang Clan).</p>
-          <a href="#contact" class="btn btn-secondary service-cta">Inquire About Events</a>
+          <a href="#contact" class="btn btn-secondary service-cta" data-service="Event Coverage" data-price="Custom">Inquire About Events</a>
         </div>
       </div>
     </div>
@@ -1627,6 +1736,19 @@
         }
       });
     }
+
+    // Click-to-toggle pricing accordion (collapsed by default)
+    document.querySelectorAll('.service-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function() {
+        const card = this.closest('.service-expandable');
+        const isOpen = card.classList.toggle('is-open');
+        this.setAttribute('aria-expanded', isOpen);
+        const label = this.querySelector('.service-toggle-text');
+        const defaultLabel = this.getAttribute('data-default-label') || label.textContent;
+        this.setAttribute('data-default-label', defaultLabel);
+        label.textContent = isOpen ? 'Hide' : defaultLabel;
+      });
+    });
 
     // Pre-fill service/package from "Book Now" buttons
     document.querySelectorAll('[data-service]').forEach(button => {
