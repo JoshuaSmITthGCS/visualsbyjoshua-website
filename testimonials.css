@@ -22,6 +22,16 @@
   opacity: 0.9;
 }
 
+.testimonials-subtitle a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.testimonials-subtitle a:hover {
+  opacity: 0.75;
+}
+
 /* Featured Testimonials Section */
 .featured-testimonials {
   padding: 80px 0;
@@ -288,7 +298,15 @@
 }
 
 .star-rating input {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .star-rating label {
@@ -302,7 +320,13 @@
 .star-rating label:hover,
 .star-rating label:hover ~ label,
 .star-rating input:checked ~ label {
-  color: #ffc107;
+  color: #be976d;
+}
+
+.star-rating input:focus-visible ~ label {
+  outline: 2px solid #be976d;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* Upload */

@@ -119,6 +119,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
@@ -140,11 +141,11 @@
 
 
   <!-- Hero Section -->
-  <section class="testimonials-hero">
+  <section class="testimonials-hero" id="main">
     <div class="container">
       <h1 class="testimonials-title">Charleston Photography Reviews & Client Testimonials</h1>
       <p class="testimonials-subtitle">Read what clients say about portraits, graduations, headshots, couples sessions, and event photography in Charleston.</p>
-      <p class="testimonials-subtitle" style="max-width: 760px; margin: 18px auto 0;">Looking for a specific service? Explore , , or the . DMV sessions remain available by request.</p>
+      <p class="testimonials-subtitle" style="max-width: 760px; margin: 18px auto 0;">Looking for a specific service? Explore <a href="/charleston-portrait-photographer/">Charleston portraits</a>, <a href="/charleston-event-photographer/">Charleston events</a>, or the <a href="/charleston-graduation-photographer/">Charleston graduation</a> page. DMV sessions remain available by request.</p>
     </div>
   </section>
 
@@ -428,19 +429,20 @@
           </div>
           
           <div class="form-group">
-            <label class="form-label">Your Rating *</label>
-            <div class="star-rating">
-              <input type="radio" id="star5" name="rating" value="5" required>
+            <label class="form-label" id="rating-label">Your Rating *</label>
+            <div class="star-rating" role="radiogroup" aria-labelledby="rating-label">
+              <input type="radio" id="star5" name="rating" value="5" aria-label="5 stars" required>
               <label for="star5" title="5 stars"><i class="fas fa-star"></i></label>
-              <input type="radio" id="star4" name="rating" value="4">
+              <input type="radio" id="star4" name="rating" value="4" aria-label="4 stars">
               <label for="star4" title="4 stars"><i class="fas fa-star"></i></label>
-              <input type="radio" id="star3" name="rating" value="3">
+              <input type="radio" id="star3" name="rating" value="3" aria-label="3 stars">
               <label for="star3" title="3 stars"><i class="fas fa-star"></i></label>
-              <input type="radio" id="star2" name="rating" value="2">
+              <input type="radio" id="star2" name="rating" value="2" aria-label="2 stars">
               <label for="star2" title="2 stars"><i class="fas fa-star"></i></label>
-              <input type="radio" id="star1" name="rating" value="1">
+              <input type="radio" id="star1" name="rating" value="1" aria-label="1 star">
               <label for="star1" title="1 star"><i class="fas fa-star"></i></label>
             </div>
+            <p id="rating-readout" aria-live="polite" style="margin-top: 8px; font-size: 0.875rem; color: #5a5a5a;"></p>
           </div>
           
           <div class="form-group">
@@ -473,7 +475,17 @@
     // Mobile Menu Toggle
     document.addEventListener('DOMContentLoaded', function() {
       // Mobile nav handled globally by .nav-toggle in scripts.js
-      
+
+      // Star rating readout for screen readers / color-blind users
+      const ratingReadout = document.getElementById('rating-readout');
+      document.querySelectorAll('.star-rating input[name="rating"]').forEach(function(input) {
+        input.addEventListener('change', function() {
+          if (ratingReadout) {
+            ratingReadout.textContent = this.value + ' out of 5 stars';
+          }
+        });
+      });
+
       // Image upload preview
       const photoInput = document.getElementById('photos');
       const previewContainer = document.getElementById('preview-container');
@@ -538,16 +550,20 @@
             <a href="tel:+12403608465">(240) 360-8465</a><br>
             <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
           </p>
+          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
+            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
+            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
+          </div>
         </div>
 
         <div class="footer-links">
           <h4>Services</h4>
           <ul>
             <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery.html">Full Gallery</a></li>
+            <li><a href="/gallery">Full Gallery</a></li>
             <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/FAQ.html">FAQ</a></li>
-            <li><a href="/blog/best-photo-spots-charleston-sc/">Best Photo Spots</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
           </ul>
         </div>
 
