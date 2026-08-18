@@ -45,6 +45,45 @@
       border-radius: 16px;
       box-shadow: var(--shadow);
       padding: 24px;
+      min-height: 420px;
+    }
+
+    .embed-skeleton {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .embed-skeleton-tile {
+      aspect-ratio: 1;
+      border-radius: 10px;
+      background: linear-gradient(100deg, #f5f3f0 30%, #ece8e1 50%, #f5f3f0 70%);
+      background-size: 200% 100%;
+      animation: embed-skeleton-shimmer 1.4s ease-in-out infinite;
+    }
+
+    @keyframes embed-skeleton-shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .embed-skeleton-tile {
+        animation: none;
+      }
+    }
+
+    .embed-fallback {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 0.9375rem;
+      color: #5a5a5a;
+    }
+
+    .embed-fallback a {
+      color: #be976d;
+      font-weight: 500;
+      text-decoration: underline;
     }
 
     .gallery-related {
@@ -389,9 +428,19 @@
         <p>Recent portraits, events, graduation sessions, and other work pulled directly from Instagram so you can browse current Charleston photography highlights. DMV work remains visible as a secondary archive.</p>
       </div>
       <div class="gallery-embed">
-        <div class="embedsocial-hashtag" data-ref="657f2c8c73198332e098278f169d855b36eecf53" data-lazyload="yes">
-          
+        <div class="embedsocial-hashtag" data-ref="657f2c8c73198332e098278f169d855b36eecf53" data-lazyload="yes" id="embedsocial-hashtag">
+          <div class="embed-skeleton" aria-hidden="true">
+            <div class="embed-skeleton-tile"></div>
+            <div class="embed-skeleton-tile"></div>
+            <div class="embed-skeleton-tile"></div>
+            <div class="embed-skeleton-tile"></div>
+            <div class="embed-skeleton-tile"></div>
+            <div class="embed-skeleton-tile"></div>
+          </div>
         </div>
+        <p class="embed-fallback" id="embed-fallback" hidden>
+          Still loading? <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener">View the latest posts directly on Instagram</a>.
+        </p>
       </div>
       <div class="gallery-related">
         <p>Looking for something specific? Start with the <a href="/charleston-portrait-photographer/">Charleston portrait</a>, <a href="/charleston-event-photographer/">Charleston event</a>, or <a href="/charleston-photographer/">Charleston photographer</a> pages. The <a href="/dmv-photographer/">DMV photographer</a> page remains available for secondary service-area requests.</p>
@@ -415,6 +464,23 @@
       js.src = "https://embedsocial.com/cdn/ht.js";
       d.getElementsByTagName("head")[0].appendChild(js);
     }(document, "script", "EmbedSocialHashtagScript"));
+  </script>
+
+  <script>
+    // Instagram embed fallback — EmbedSocial replaces the skeleton's
+    // innerHTML once it loads real posts. If that hasn't happened after
+    // a few seconds (slow network, ad blocker, script failure), reveal a
+    // direct link to Instagram instead of leaving a silent loading state.
+    (function() {
+      var container = document.getElementById('embedsocial-hashtag');
+      var fallback = document.getElementById('embed-fallback');
+      if (!container || !fallback) return;
+      setTimeout(function() {
+        if (container.querySelector('.embed-skeleton')) {
+          fallback.hidden = false;
+        }
+      }, 4000);
+    })();
   </script>
 
   <script>
