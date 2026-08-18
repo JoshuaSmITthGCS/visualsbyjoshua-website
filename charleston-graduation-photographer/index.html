@@ -24,7 +24,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="preload" as="image" type="image/avif" href="/images/optimized/portraits/charleston-graduation-photography-800.avif" imagesrcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w" imagesizes="100vw" fetchpriority="high">
   <link rel="stylesheet" href="/service-page.css">
@@ -202,8 +202,27 @@
   </script>
 <meta name="robots" content="index, follow">
   <script src="/analytics.js" defer></script>
+  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Visuals by Joshua</a>
+      <ul class="nav-menu">
+        <li><a href="/#portfolio">Portfolio</a></li>
+        <li><a href="/blog/photography-pricing/">Pricing</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+        <li><a href="/#contact">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <header>
     <div class="container header-container">
 
@@ -502,5 +521,49 @@
       });
     })();
   </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Visuals by Joshua</h3>
+          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
+          <p style="margin-top: 1.5rem;">
+            <a href="tel:+12403608465">(240) 360-8465</a><br>
+            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/gallery.html">Full Gallery</a></li>
+            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+            <li><a href="/FAQ.html">FAQ</a></li>
+            <li><a href="/blog/best-photo-spots-charleston-sc/">Best Photo Spots</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Locations</h4>
+          <ul>
+            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+            <li><a href="/blog.html">Photography Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./scripts.js"></script>
+  <script src="/scripts.js"></script>
 </body>
 </html>

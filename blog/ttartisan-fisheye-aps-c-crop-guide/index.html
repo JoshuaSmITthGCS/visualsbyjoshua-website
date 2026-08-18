@@ -23,9 +23,9 @@
   <meta name="twitter:image" content="https://visualsbyjoshua.com/images/optimized/home/concert-photographer-charleston-960.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="../../blog-styles.css">
+  <link rel="stylesheet" href="/styles.css">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -86,7 +86,7 @@
   ]
 }</script>
 <style>
-    .article-hero { background: linear-gradient(rgba(0,0,0,.66), rgba(0,0,0,.66)), url('/images/optimized/home/concert-photographer-charleston-960.jpg') center/cover no-repeat; }
+    .article-hero { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat; }
     .article-kicker { color: #74b9e7; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
     .article-toc { margin: 0 0 42px; padding: 24px 28px; border: 1px solid #e2e8f0; border-radius: 10px; background: #f8fafc; }
     .article-toc h2 { margin-bottom: 14px; }
@@ -113,8 +113,26 @@
     @media (max-width: 700px) { .article-toc ol { columns: 1; } }
   </style>
   <script src="/analytics.js" defer></script>
+  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Visuals by Joshua</a>
+      <ul class="nav-menu">
+        <li><a href="/#portfolio">Portfolio</a></li>
+        <li><a href="/blog/photography-pricing/">Pricing</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+        <li><a href="/#contact">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <header>
     <div class="container header-container">
       <a title="Open Visuals by Joshua" href="/index.html" class="logo">
@@ -294,5 +312,48 @@
       });
     }
   </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Visuals by Joshua</h3>
+          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
+          <p style="margin-top: 1.5rem;">
+            <a href="tel:+12403608465">(240) 360-8465</a><br>
+            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/gallery.html">Full Gallery</a></li>
+            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+            <li><a href="/FAQ.html">FAQ</a></li>
+            <li><a href="/blog/best-photo-spots-charleston-sc/">Best Photo Spots</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Locations</h4>
+          <ul>
+            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+            <li><a href="/blog.html">Photography Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/scripts.js"></script></script>
 </body>
 </html>

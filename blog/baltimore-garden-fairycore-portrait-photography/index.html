@@ -30,11 +30,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Shared Blog Styles -->
-    <link rel="stylesheet" href="../../blog-styles.css">
+    <link rel="stylesheet" href="/styles.css">
 
     <!-- Schema.org markup -->
     <script type="application/ld+json">
@@ -69,13 +69,13 @@
 
 <style>
         .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('/images/optimized/portraits/baltimore-garden-fairycore-portrait-800.jpg') center/cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), image-set(url('/images/optimized/portraits/baltimore-garden-fairycore-portrait-800.avif') type('image/avif'), url('/images/optimized/portraits/baltimore-garden-fairycore-portrait-800.webp') type('image/webp'), url('/images/optimized/portraits/baltimore-garden-fairycore-portrait-800.jpg') type('image/jpeg')) center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
         }
         @media (min-width: 800px) {
           .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('/images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.jpg') center/cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), image-set(url('/images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.avif') type('image/avif'), url('/images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.webp') type('image/webp'), url('/images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.jpg') type('image/jpeg')) center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
           }
         }
 
@@ -143,8 +143,26 @@
   ]
 }
 </script>
+  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">Visuals by Joshua</a>
+      <ul class="nav-menu">
+        <li><a href="/#portfolio">Portfolio</a></li>
+        <li><a href="/blog/photography-pricing/">Pricing</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+        <li><a href="/#contact">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
     <!-- Header -->
     <header>
         <div class="container header-container">
@@ -175,7 +193,7 @@
     </header>
 
     <!-- Blog Hero Section -->
-    <section class="blog-hero">
+    <section class="article-hero"
         <div class="blog-hero-content">
             <h1 class="blog-hero-title">Baltimore Garden Fairy Core Portrait Photography</h1>
             <p class="blog-hero-subtitle">Flowing fabrics, soft light through the trees, and an ethereal fairy core aesthetic in one of Baltimore's lush hidden gardens</p>
@@ -202,7 +220,7 @@
     </section>
 
     <!-- Blog Content -->
-    <section class="blog-content">
+    <section class="article-content">
         <div class="blog-container">
 
             <!-- Introduction -->
@@ -426,5 +444,48 @@
       document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
     })();
   </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Visuals by Joshua</h3>
+          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
+          <p style="margin-top: 1.5rem;">
+            <a href="tel:+12403608465">(240) 360-8465</a><br>
+            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/gallery.html">Full Gallery</a></li>
+            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+            <li><a href="/FAQ.html">FAQ</a></li>
+            <li><a href="/blog/best-photo-spots-charleston-sc/">Best Photo Spots</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Locations</h4>
+          <ul>
+            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+            <li><a href="/blog.html">Photography Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/scripts.js"></script></script>
 </body>
 </html>
