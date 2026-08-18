@@ -172,7 +172,7 @@ button {
 }
 
 .nav-menu a:hover {
-  color: #be976d;
+  color: #856545;
   opacity: 1;
 }
 
@@ -285,7 +285,7 @@ p {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   font-weight: 500;
-  color: #be976d;
+  color: #856545;
   margin-bottom: 0.5rem;
 }
 
@@ -513,7 +513,7 @@ p {
 .portfolio-card-back h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #be976d;
+  color: #856545;
 }
 
 .portfolio-card-back p {
@@ -564,7 +564,7 @@ p {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 600;
-  color: #be976d;
+  color: #856545;
   margin-bottom: 1rem;
 }
 
@@ -578,7 +578,7 @@ p {
 .service-price {
   font-size: 2rem;
   font-weight: 600;
-  color: #be976d;
+  color: #856545;
   margin-bottom: 0.5rem;
 }
 
@@ -621,7 +621,7 @@ p {
 .service-expand-hint {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #be976d;
+  color: #856545;
   margin-top: 1rem;
   opacity: 0.8;
 }
@@ -673,7 +673,7 @@ p {
 .service-option .option-price {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #be976d;
+  color: #856545;
   margin-bottom: 0.5rem;
 }
 
@@ -984,7 +984,7 @@ p {
 }
 
 .article-content a {
-  color: #be976d;
+  color: #856545;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -1108,7 +1108,7 @@ p {
 }
 
 .blog-content a, .blog-container a {
-  color: #be976d;
+  color: #856545;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -1152,7 +1152,7 @@ p {
 }
 
 .blog-resource-links a {
-  color: #be976d;
+  color: #856545;
   font-weight: 500;
   text-decoration: underline;
 }
@@ -1170,7 +1170,7 @@ p {
 }
 
 .breadcrumbs a {
-  color: #be976d;
+  color: #856545;
   font-weight: 500;
 }
 
@@ -1438,7 +1438,7 @@ p {
     }
 
 .btn-accent {
-      background: linear-gradient(135deg, var(--accent), #8a6a4a);
+      background: linear-gradient(135deg, var(--accent), #856545);
       box-shadow: 0 14px 30px rgba(199, 74, 50, 0.22);
     }
 
@@ -2052,7 +2052,7 @@ p {
 .price-amount {
   font-size: 1.75rem;
   font-weight: 600;
-  color: #be976d;
+  color: #856545;
   margin-bottom: 1rem;
 }
 
@@ -2073,7 +2073,7 @@ p {
   content: '\2713';
   position: absolute;
   left: 0;
-  color: #be976d;
+  color: #856545;
   font-weight: 700;
 }
 
@@ -2190,7 +2190,7 @@ p {
 }
 
 .venue-detail i {
-  color: #be976d;
+  color: #856545;
   width: 18px;
   text-align: center;
 }
@@ -2210,13 +2210,13 @@ p {
   height: 48px;
   border-radius: 50%;
   background: #f5f3f0;
-  color: #be976d;
+  color: #856545;
   font-size: 1.25rem;
   margin-bottom: 14px;
 }
 
 .external-link {
-  color: #be976d;
+  color: #856545;
   font-weight: 500;
   text-decoration: underline;
 }

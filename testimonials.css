@@ -336,7 +336,7 @@
 .star-rating label:hover,
 .star-rating label:hover ~ label,
 .star-rating input:checked ~ label {
-  color: #be976d;
+  color: #856545;
 }
 
 .star-rating input:focus-visible ~ label {
