@@ -120,13 +120,13 @@
         }
 
         .location-card h3 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', Georgia, serif;
             color: var(--primary);
             margin-bottom: 10px;
         }
 
         .styling-tip {
-            background: #fdf2f2;
+            background: #f5f3f0;
             border-left: 4px solid var(--accent);
             padding: 25px;
             margin: 30px 0;
@@ -174,20 +174,20 @@
         }
 
         .quote-block {
-            background: linear-gradient(135deg, var(--primary), #1a252f);
+            background: linear-gradient(135deg, var(--primary), #2a2a2a);
             color: white;
             padding: 40px;
             border-radius: 10px;
             margin: 40px 0;
             text-align: center;
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', Georgia, serif;
             font-size: 1.3rem;
             line-height: 1.8;
             font-style: italic;
         }
 
         .quote-block .attribution {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             font-size: 0.9rem;
             font-style: normal;
             margin-top: 15px;
@@ -231,47 +231,24 @@
   <nav class="nav">
     <div class="nav-container">
       <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="/#portfolio">Portfolio</a></li>
         <li><a href="/blog/photography-pricing/">Pricing</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
         <li><a href="/#contact">Book Now</a></li>
       </ul>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
     </div>
   </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            
-            <a title="Open Visuals by Joshua" href="/index.html" class="logo">
-  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="49" height="40" decoding="async">
-  <span class="logo-text">Visuals by Joshua</span>
-</a>
-<div class="nav-menu" id="site-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a title="Go to the Visuals by Joshua homepage" href="/index.html" class="nav-link" aria-label="Go to the Visuals by Joshua homepage">Home</a></li>
-                    <li class="nav-item"><a title="Learn about Joshua Smith photography" href="/index.html#about" class="nav-link" aria-label="Learn about Joshua Smith photography">About</a></li>
-                    <li class="nav-item"><a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="nav-link" aria-label="View the Visuals by Joshua photography portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a title="View Charleston photography services" href="/index.html#services" class="nav-link" aria-label="View Charleston photography services">Services</a></li>
-                    <li class="nav-item"><a title="Read Visuals by Joshua client reviews" href="/index.html#testimonials" class="nav-link" aria-label="Read Visuals by Joshua client reviews">Reviews</a></li>
-                    <li class="nav-item"><a title="Read frequently asked photography questions" href="/faq" class="nav-link" aria-label="Read frequently asked photography questions">FAQ</a></li>
-                    <li class="nav-item"><a title="Contact Joshua Smith about booking photography" href="/index.html#contact" class="nav-link" aria-label="Contact Joshua Smith about booking photography">Contact</a></li>
-                    <li class="nav-item"><a title="Read Visuals by Joshua photography guides" href="/blog.html" class="nav-link" aria-current="page" aria-label="Read Visuals by Joshua photography guides">Blog</a></li>
-                </ul>
-                <a title="Book a Charleston photography session with Joshua" href="/index.html#contact" class="btn nav-cta" aria-label="Book a Charleston photography session with Joshua">Book Now</a>
-            </div>
-            <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-        </div>
-    </header>
 
     <!-- Blog Hero Section -->
-    <section class="article-hero"
+    <section class="article-hero hero-bg" style="--bg-url: url('/images/couples/charleston-anniversary-couple-downtown.webp');">
         <div class="blog-hero-content">
             <h1 class="blog-hero-title">Anniversary Photography in Downtown Charleston: Celebrating Timeless Love</h1>
             <p class="blog-hero-subtitle">An elegant anniversary session through the historic streets, iron gates, and waterfront of the Holy City</p>
@@ -482,63 +459,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    
-                    <a title="Open Joshua Smith" href="/index.html" class="footer-logo">
-  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="575" height="471" loading="lazy" decoding="async">
-  <span class="footer-logo-text">Joshua Smith</span>
-</a>
-<p class="footer-about">Professional photography services in Charleston, specializing in events, headshots, portraits, couples, and graduation photography. DMV sessions are available by request.</p>
-                    <div class="footer-social">
-                        <a title="Visit Visuals by Joshua on Facebook" href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" aria-label="Visit Visuals by Joshua on Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a title="Visit Visuals by Joshua on Instagram" href="https://www.instagram.com/visuals_by_joshua" aria-label="Visit Visuals by Joshua on Instagram"><i class="fab fa-instagram"></i></a>
-                        <a title="Visit Joshua Smith on LinkedIn" href="https://www.linkedin.com/in/joshua-benjamin-smith" aria-label="Visit Joshua Smith on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a title="Go to the Visuals by Joshua homepage" href="/index.html" aria-label="Go to the Visuals by Joshua homepage"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a title="Learn about Joshua Smith photography" href="/index.html#about" aria-label="Learn about Joshua Smith photography"><i class="fas fa-chevron-right"></i> About</a></li>
-                        <li><a title="View Charleston photography services" href="/index.html#services" aria-label="View Charleston photography services"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
-                        <li><a title="Read Visuals by Joshua client testimonials" href="/index.html#testimonials" aria-label="Read Visuals by Joshua client testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
-                        <li><a title="Read frequently asked photography questions" href="/faq" aria-label="Read frequently asked photography questions"><i class="fas fa-chevron-right"></i> FAQ</a></li>
-                        <li><a title="Read Visuals by Joshua photography guides" href="/blog.html" aria-label="Read Visuals by Joshua photography guides"><i class="fas fa-chevron-right"></i> Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Services</h3>
-                    <ul class="footer-links">
-<li><a title="View Charleston event photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Event Photography</a></li>
-<li><a title="View Charleston professional headshot services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Professional Headshots</a></li>
-<li><a title="View Charleston portrait photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Portrait Photography</a></li>
-<li><a title="View Charleston graduation photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Graduation Photography</a></li>
-<li><a title="View Charleston concert and music photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Concert & Music Photography</a></li>
-</ul>
-                </div>
-                <div class="footer-newsletter">
-                    <h3 class="footer-heading">Newsletter</h3>
-                    <p>Subscribe to receive photography tips, exclusive offers, and updates about special seasonal promotions.</p>
-                    <form class="newsletter-form">
-                        <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
-                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2026 Joshua Smith Photography. All Rights Reserved.</p>
-                <div class="footer-social">
-                    <a title="Read the Visuals by Joshua privacy policy" href="/privacy-policy.html" aria-label="Read the Visuals by Joshua privacy policy">Privacy Policy</a>
-                    <a title="Read the Visuals by Joshua terms of service" href="/terms-of-service.html" aria-label="Read the Visuals by Joshua terms of service">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <!-- Back to Top Button -->
     <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
@@ -639,6 +559,6 @@
     </div>
   </footer>
 
-  <script src="/scripts.js"></script></script>
+  <script src="/scripts.js"></script>
 </body>
 </html>
