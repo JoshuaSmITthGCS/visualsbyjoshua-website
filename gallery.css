@@ -73,7 +73,7 @@
 }
 
 .portfolio-categories-header p {
-  color: #666;
+  color: var(--muted);
 }
 
 .portfolio-category-grid {
@@ -141,7 +141,7 @@
 }
 
 .portfolio-category-content p {
-  color: #666;
+  color: var(--muted);
 }
 
 .portfolio-category-actions {
