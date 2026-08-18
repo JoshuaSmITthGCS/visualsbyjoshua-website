@@ -4,7 +4,7 @@
 .testimonials-hero {
   position: relative;
   padding: 80px 0;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('event1.webp') center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/optimized/root/event1-1600.webp') center/cover no-repeat;
   text-align: center;
   color: white;
 }
@@ -252,12 +252,28 @@
   margin-top: 10px;
 }
 
-/* Submit Review Section */
+/* Submit Review Section — the logo reads as a faint, centered "ghost mark"
+   behind the form (background-size: contain, not cover, so it never
+   crops into meaningless zoomed fragments). */
 .submit-review {
+  position: relative;
   padding: 80px 0;
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('Logo.webp') center/cover no-repeat;
+  background-color: #2a2a2a;
   color: white;
   text-align: center;
+  overflow: hidden;
+}
+
+.submit-review::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('Logo.webp') center / min(60%, 420px) no-repeat;
+  opacity: 0.08;
+}
+
+.submit-review > .container {
+  position: relative;
 }
 
 .submit-review-title {
