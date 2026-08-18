@@ -28,8 +28,8 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet"></noscript>
   <link rel="preload" as="image" href="/images/optimized/home/smithsonian-portrait-hero-mobile-720.avif" type="image/avif" media="(max-width: 768px)" fetchpriority="high">
   <link rel="preload" as="image" href="/images/optimized/home/smithsonian-portrait-hero-1120.jpg" imagesrcset="/images/optimized/home/smithsonian-portrait-hero-1120.jpg 1120w, /smithsonian-portrait-hero.webp 1586w" imagesizes="100vw" media="(min-width: 769px)" fetchpriority="high">
   <link rel="stylesheet" href="/styles.min.css">
@@ -423,19 +423,21 @@
       </a>
       <div class="nav-menu" id="site-nav">
         <ul class="nav-list">
-          <li class="nav-item"><a title="Go to the Visuals by Joshua homepage" href="/index.html" class="nav-link" aria-label="Go to the Visuals by Joshua homepage">Home</a></li>
-          <li class="nav-item"><a title="Learn about Joshua Smith photography" href="#about" class="nav-link" aria-label="Learn about Joshua Smith photography">About</a></li>
-          <li class="nav-item"><a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="nav-link" aria-label="View the Visuals by Joshua photography portfolio">Portfolio</a></li>
-          <li class="nav-item"><a title="View Charleston photography pricing" href="/blog/charleston-photography-pricing/" class="nav-link" aria-label="View Charleston photography pricing">Pricing</a></li>
           <li class="nav-item"><a title="View Charleston photography services" href="#services" class="nav-link" aria-label="View Charleston photography services">Services</a></li>
-          <li class="nav-item desktop-nav-item"><a title="View Charleston and DMV photography locations" href="#locations" class="nav-link" aria-label="View Charleston and DMV photography locations">Locations</a></li>
-          <li class="nav-item mobile-nav-item"><a title="Explore Charleston photography services" href="/charleston-photographer/" class="nav-link" aria-label="Explore Charleston photography services">Locations</a></li>
-          <li class="nav-item"><a title="Read Visuals by Joshua client reviews" href="#testimonials" class="nav-link" aria-label="Read Visuals by Joshua client reviews">Reviews</a></li>
-          <li class="nav-item"><a title="Read frequently asked photography questions" href="/faq" class="nav-link" aria-label="Read frequently asked photography questions">FAQ</a></li>
-          <li class="nav-item"><a title="Contact Joshua Smith about booking photography" href="#contact" class="nav-link" aria-label="Contact Joshua Smith about booking photography">Contact</a></li>
-          <li class="nav-item"><a title="Read Visuals by Joshua photography guides" href="blog.html" class="nav-link" aria-label="Read Visuals by Joshua photography guides">Blog</a></li>
+          <li class="nav-item"><a title="View Charleston photography pricing" href="/blog/charleston-photography-pricing/" class="nav-link" aria-label="View Charleston photography pricing">Pricing</a></li>
+          <li class="nav-item"><a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="nav-link" aria-label="View the Visuals by Joshua photography portfolio">Portfolio</a></li>
+          <li class="nav-item nav-item-more">
+            <button type="button" class="nav-link nav-more-toggle" aria-expanded="false" aria-controls="nav-more-menu">More</button>
+            <ul class="nav-more-menu" id="nav-more-menu" hidden>
+              <li><a title="Learn about Joshua Smith photography" href="#about">About</a></li>
+              <li><a title="View Charleston and DMV photography locations" href="#locations">Locations</a></li>
+              <li><a title="Read Visuals by Joshua client reviews" href="#testimonials">Reviews</a></li>
+              <li><a title="Read frequently asked photography questions" href="/faq">FAQ</a></li>
+              <li><a title="Read Visuals by Joshua photography guides" href="/blog.html">Blog</a></li>
+            </ul>
+          </li>
         </ul>
-        <a title="Book a Charleston photography session with Joshua" href="#contact" class="btn nav-cta" data-location="charleston" aria-label="Book a Charleston photography session with Joshua">Book Charleston Session</a>
+        <a title="Book a Charleston photography session with Joshua" href="#contact" class="btn nav-cta" data-location="charleston" aria-label="Book a Charleston photography session with Joshua">Book Session</a>
       </div>
       <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
         <span class="bar"></span>
@@ -459,17 +461,14 @@
       <div class="hero-content animate-on-scroll">
         <p class="section-kicker hero-kicker">Charleston photography</p>
         <h1 class="hero-title">Charleston photographer for graduations, portraits &amp; events.</h1>
-        <p class="hero-subtitle">See work, compare prices, or send your date. Guided posing and fast, clean edits.</p>
+        <p class="hero-subtitle">Guided posing and fast, clean edits. Starting at $80.</p>
         <div class="hero-actions">
-          <a title="Book a Charleston photography session with Joshua" href="#contact" class="btn btn-accent hero-cta" data-location="charleston" aria-label="Book a Charleston photography session with Joshua">Book Your Session</a>
-          <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn btn-secondary hero-cta-secondary" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
-          <a title="View Charleston photography pricing" href="/blog/charleston-photography-pricing/" class="btn btn-secondary hero-cta-secondary" aria-label="View Charleston photography pricing">View Pricing</a>
+          <a title="Book a Charleston photography session with Joshua" href="#contact" class="btn btn-accent btn-large hero-cta" data-location="charleston" aria-label="Book a Charleston photography session with Joshua">Book Your Session</a>
+          <div class="hero-actions-secondary">
+            <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn btn-ghost hero-cta-secondary" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
+            <a title="View Charleston photography pricing" href="/blog/charleston-photography-pricing/" class="btn btn-ghost hero-cta-secondary" aria-label="View Charleston photography pricing">Pricing</a>
+          </div>
         </div>
-        <ul class="hero-services" aria-label="Featured photography services">
-          <li><a title="Start a Charleston graduation photography inquiry" href="#contact" data-service="graduation" data-location="charleston">Graduations</a></li>
-          <li><a title="Start a Charleston portrait photography inquiry" href="#contact" data-service="portrait" data-location="charleston">Portraits</a></li>
-          <li><a title="Start a Charleston event photography inquiry" href="#contact" data-service="event" data-location="charleston">Events</a></li>
-        </ul>
       </div>
       <aside class="hero-panel animate-on-scroll" aria-label="Booking highlights">
         <p class="hero-panel-label">Popular starting points</p>
@@ -642,6 +641,53 @@
           </div>
         </div>
         <p class="about-text about-credential">His concert and event work includes photographing GZA of Wu-Tang Clan, the Smithsonian Folklife Festival, and World Pride DC.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intent-Based Router Section -->
+  <section class="intent-router" id="intent-router">
+    <div class="container">
+      <p class="section-kicker">Start here</p>
+      <h2 class="section-title">What brings you here today?</h2>
+      <p class="intent-router-subtitle">Choose the path that fits your needs - everything's in one place</p>
+
+      <div class="intent-cards">
+        <a href="#services" class="intent-card" data-intent="personal">
+          <div class="intent-icon">📸</div>
+          <h3>I need photos for myself</h3>
+          <p>Portraits, graduation, couples sessions - guided posing and relaxed vibes</p>
+          <ul class="intent-features">
+            <li>Personal portrait sessions</li>
+            <li>Graduation photography</li>
+            <li>Couples & engagement</li>
+          </ul>
+          <span class="intent-cta">Explore personal sessions →</span>
+        </a>
+
+        <a href="#services" class="intent-card" data-intent="professional">
+          <div class="intent-icon">🎯</div>
+          <h3>I'm booking for an event</h3>
+          <p>Professional headshots, event coverage, concert photography - reliable and fast delivery</p>
+          <ul class="intent-features">
+            <li>Corporate events & parties</li>
+            <li>Professional headshots</li>
+            <li>Concert & music photography</li>
+          </ul>
+          <span class="intent-cta">Explore professional services →</span>
+        </a>
+
+        <a href="#how-it-works" class="intent-card" data-intent="research">
+          <div class="intent-icon">🔍</div>
+          <h3>I'm researching photographers</h3>
+          <p>See work, compare pricing, read reviews - transparent rates and no pressure</p>
+          <ul class="intent-features">
+            <li>Full portfolio gallery</li>
+            <li>Pricing breakdowns</li>
+            <li>Client testimonials</li>
+          </ul>
+          <span class="intent-cta">View portfolio & pricing →</span>
+        </a>
       </div>
     </div>
   </section>
@@ -1172,14 +1218,19 @@
               <div class="form-group">
                 <label class="form-label" for="booking-service">Service</label>
                 <select class="form-control" id="booking-service" name="service" required>
-                    <option value="not_sure" selected>Not sure yet - help me choose</option>
-                    <option value="event">Event Photography</option>
-                    <option value="headshot">Professional Headshots</option>
-                    <option value="portrait">Portrait Photography</option>
-                    <option value="graduation">Graduation Photography</option>
-                    <option value="couples">Couples & Engagement Photography</option>
-                    <option value="concert">Concert & Music Photography</option>
-                    <option value="other">Other</option>
+                    <optgroup label="Need help deciding?">
+                        <option value="not_sure" selected>→ Not sure? Let me help you choose</option>
+                    </optgroup>
+                    <optgroup label="Personal sessions">
+                        <option value="portrait">Portrait Photography</option>
+                        <option value="graduation">Graduation Photography</option>
+                        <option value="couples">Couples & Engagement</option>
+                    </optgroup>
+                    <optgroup label="Professional & events">
+                        <option value="headshot">Professional Headshots</option>
+                        <option value="event">Event Photography</option>
+                        <option value="concert">Concert & Music</option>
+                    </optgroup>
                 </select>
               </div>
               <div class="form-group">
@@ -1227,16 +1278,48 @@
   </section>
 
   <!-- Hidden thank you section -->
-  <section id="thank-you" class="thank-you" style="display: none; padding: 60px 0; text-align: center; background-color: white; margin-top: 30px;">
-  <div class="container">
-    <div style="font-size: 60px; color: #e74c3c; margin-bottom: 20px;">
+  <section id="thank-you" class="thank-you" style="display: none; padding: 60px 0; background-color: #f9f9f9; margin-top: 30px;">
+  <div class="container" style="max-width: 800px;">
+    <div style="text-align: center; font-size: 60px; color: #c8735e; margin-bottom: 20px;">
       <svg class="icon icon-thank-you" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
     </div>
-    <h2 class="section-title">Thank You for Reaching Out!</h2>
-    <p style="margin-bottom: 30px; color: #666; max-width: 600px; margin-left: auto; margin-right: auto;">
-      Your message has been received successfully. I appreciate your interest in my photography services and will get back to you within 24 hours.
+    <h2 class="section-title" style="text-align: center;">✓ Inquiry Received!</h2>
+    <p style="margin-bottom: 40px; color: #666; text-align: center; font-size: 1.1rem;">
+      Here's what happens next:
     </p>
-    <a title="View Charleston photography services" href="#services" class="btn btn-accent">View Services</a>
+    <div class="timeline-steps">
+      <div class="timeline-step">
+        <div class="timeline-icon">✉️</div>
+        <div class="timeline-content">
+          <strong>Response in 24h</strong>
+          <p>I'll reply with availability and package details for your session.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-icon">📅</div>
+        <div class="timeline-content">
+          <strong>Schedule session</strong>
+          <p>We'll lock in your date (or hop on a quick call if needed).</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-icon">📸</div>
+        <div class="timeline-content">
+          <strong>Shoot day</strong>
+          <p>Show up, relax, and let me handle the rest. Guided posing throughout.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <div class="timeline-icon">🎉</div>
+        <div class="timeline-content">
+          <strong>Receive photos in 1 week</strong>
+          <p>Fast turnaround with cinematic color grading included.</p>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 40px; text-align: center; color: #666;">
+      Questions before then? Text me: <strong><a href="tel:+12403608465" style="color: #c8735e;">240-360-8465</a></strong>
+    </p>
   </div>
 </section>
   </main>
@@ -1283,9 +1366,13 @@
         </div>
         <div class="footer-newsletter">
           <h3 class="footer-heading">Newsletter</h3>
-          <p>Subscribe to receive photography tips, exclusive offers, and updates about special seasonal promotions.</p>
+          <p>Photography tips and seasonal promotions (1-2 emails/month).</p>
           <form class="newsletter-form">
             <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+            <div class="newsletter-consent" style="margin: 8px 0; font-size: 0.85rem;">
+              <input type="checkbox" id="newsletter-consent" required style="margin-right: 6px;">
+              <label for="newsletter-consent" style="cursor: pointer;">I agree to receive newsletters. <a href="/privacy-policy.html" style="color: var(--accent);">Privacy Policy</a></label>
+            </div>
             <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter"><svg class="icon icon-send" aria-hidden="true"><use href="#icon-send"></use></svg></button>
           </form>
         </div>
@@ -1335,10 +1422,13 @@
       }
     });
       
-// Testimonial Navigation
+// Testimonial Navigation with pause on hover
+(function() {
 const testimonialSlides = document.querySelectorAll('.testimonial-slide');
 const navDots = document.querySelectorAll('.nav-dot');
+const testimonialContainer = document.querySelector('.testimonials');
 let currentTestimonialIndex = 0;
+let isPaused = false;
 
 // Add click event listener to each nav dot
 navDots.forEach((dot, index) => {
@@ -1355,8 +1445,9 @@ navDots.forEach((dot, index) => {
   });
 });
 
-// Optional: Auto-rotate testimonials
+// Auto-rotate testimonials with pause on hover/touch
 function rotateTestimonials() {
+  if (isPaused) return;
   testimonialSlides.forEach(slide => slide.classList.remove('active'));
   navDots.forEach(dot => {
     dot.classList.remove('active');
@@ -1369,9 +1460,17 @@ function rotateTestimonials() {
   navDots[currentTestimonialIndex].setAttribute('aria-pressed', 'true');
 }
 
+// Pause rotation on hover/touch for accessibility
+if (testimonialContainer) {
+  testimonialContainer.addEventListener('mouseenter', () => { isPaused = true; });
+  testimonialContainer.addEventListener('mouseleave', () => { isPaused = false; });
+  testimonialContainer.addEventListener('touchstart', () => { isPaused = true; });
+}
+
 if (testimonialSlides.length && navDots.length && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   setInterval(rotateTestimonials, 15000);
 }
+})();
 
 
       // FAQ Accordions
@@ -1799,10 +1898,35 @@ if (testimonialSlides.length && navDots.length && !window.matchMedia('(prefers-r
   });
   </script>
 
-  <!-- Sticky Book Now CTA -->
+  <!-- Mobile Floating Action Button (FAB) -->
+  <div class="fab-container" id="fab-container">
+    <button type="button" class="fab-button" id="fab-button" aria-label="Quick actions">
+      <svg class="icon" aria-hidden="true"><use href="#icon-menu"></use></svg>
+    </button>
+    <div class="fab-menu" id="fab-menu" hidden>
+      <a href="tel:+12403608465" class="fab-menu-item">
+        <span class="fab-icon">📞</span>
+        <span>Call</span>
+      </a>
+      <a href="/blog/charleston-photography-pricing/" class="fab-menu-item">
+        <span class="fab-icon">💰</span>
+        <span>Pricing</span>
+      </a>
+      <a href="/gallery" class="fab-menu-item">
+        <span class="fab-icon">📸</span>
+        <span>Portfolio</span>
+      </a>
+      <a href="#contact" class="fab-menu-item">
+        <span class="fab-icon">✉️</span>
+        <span>Contact</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sticky Book Now CTA (Desktop Only) -->
   <div class="sticky-cta" id="sticky-cta">
     <div class="sticky-cta-content">
-      <span class="sticky-cta-text">Ready to book your session?</span>
+      <span class="sticky-cta-text">Ready to book?</span>
       <div class="sticky-cta-actions">
         <a href="/blog/charleston-photography-pricing/" class="btn sticky-cta-btn sticky-cta-secondary">Pricing</a>
         <a href="#contact" class="btn sticky-cta-btn sticky-book-btn" data-location="charleston">Contact</a>
@@ -1811,6 +1935,57 @@ if (testimonialSlides.length && navDots.length && !window.matchMedia('(prefers-r
   </div>
 
   <script>
+    // Navigation "More" dropdown toggle
+    (function() {
+      const moreToggle = document.querySelector('.nav-more-toggle');
+      const moreMenu = document.getElementById('nav-more-menu');
+
+      if (!moreToggle || !moreMenu) return;
+
+      moreToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const isExpanded = moreToggle.getAttribute('aria-expanded') === 'true';
+        moreToggle.setAttribute('aria-expanded', !isExpanded);
+        moreMenu.hidden = isExpanded;
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-item-more')) {
+          moreToggle.setAttribute('aria-expanded', 'false');
+          moreMenu.hidden = true;
+        }
+      });
+    })();
+
+    // Mobile FAB (Floating Action Button) toggle
+    (function() {
+      const fabButton = document.getElementById('fab-button');
+      const fabMenu = document.getElementById('fab-menu');
+
+      if (!fabButton || !fabMenu) return;
+
+      fabButton.addEventListener('click', function(e) {
+        e.stopPropagation();
+        fabMenu.hidden = !fabMenu.hidden;
+      });
+
+      // Close FAB menu when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.fab-container')) {
+          fabMenu.hidden = true;
+        }
+      });
+
+      // Close FAB menu when clicking a menu item
+      const fabMenuItems = fabMenu.querySelectorAll('.fab-menu-item');
+      fabMenuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+          fabMenu.hidden = true;
+        });
+      });
+    })();
+
     // Sticky CTA - Show after user scrolls past hero section
     (function() {
       const stickyCta = document.getElementById('sticky-cta');
