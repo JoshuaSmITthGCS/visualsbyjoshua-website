@@ -72,6 +72,24 @@ if (serviceSelect && graduationPackageGroup) {
   });
 }
 
+// Mobile nav toggle
+document.querySelectorAll('.nav-toggle').forEach(function(btn) {
+  const menu = document.getElementById(btn.getAttribute('aria-controls'));
+  if (!menu) return;
+
+  btn.addEventListener('click', function() {
+    const isOpen = menu.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  menu.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      menu.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+});
+
 // Pre-fill service/package from "Book Now" buttons
 document.querySelectorAll('[data-service]').forEach(button => {
   button.addEventListener('click', function(e) {

@@ -85,7 +85,6 @@
             border-radius: 10px;
             margin: 30px 0;
             box-shadow: var(--shadow);
-            border-left: 4px solid var(--secondary);
         }
 
         .settings-grid {
@@ -122,20 +121,19 @@
         }
 
         .pro-tip {
-            background: #e8f5e9;
-            border-left: 4px solid #4caf50;
+            background: #f5f3f0;
             padding: 20px;
             margin: 30px 0;
             border-radius: 5px;
         }
 
         .pro-tip h3 {
-            color: #2e7d32;
+            color: #856545;
             margin-bottom: 10px;
         }
 
         .highlight-box {
-            background: #f3e5f5;
+            background: #f5f3f0;
             padding: 30px;
             border-radius: 10px;
             margin: 40px 0;
@@ -168,6 +166,10 @@
             transform: scale(1.05);
             opacity: 0.9;
         }
+
+        .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
+        .faq-static h3 { margin: 0 0 10px; font-size: 1.2rem; color: var(--primary); }
+        .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
     </style>
   <script src="/analytics.js" defer></script>
 <script type="application/ld+json">
@@ -196,59 +198,39 @@
   ]
 }
 </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can you match your lighting to our organization's colors?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I carry color gels for the major Greek organizations and use them on rim and background lights so your colors read correctly in every portrait."}}, {"@type": "Question", "name": "Do you photograph probate shows and yard shows live?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I cover the full event with a mix of wide reaction shots and tighter portraits, staying locked into the flow of strolls and calls as they happen."}}, {"@type": "Question", "name": "Will the photos look washed out or overexposed at night?", "acceptedAnswer": {"@type": "Answer", "text": "No. I shoot in manual mode and set flash power based on skin tone rather than the camera's meter, which keeps skin looking rich and detailed instead of blown out."}}, {"@type": "Question", "name": "How do you handle large group portraits at night?", "acceptedAnswer": {"@type": "Answer", "text": "I widen my light source or add a second flash to cover the full formation, and shoot from a slightly lower angle for a strong, grounded look that works for chapter photos."}}, {"@type": "Question", "name": "How fast can we get photos after an event?", "acceptedAnswer": {"@type": "Answer", "text": "Social-ready highlights are typically available within 48 hours, with the full curated gallery following within one week."}}, {"@type": "Question", "name": "Do you travel to DMV chapters for Greek life photography?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Charleston is my primary market, and DMV sessions in DC, Maryland, and Northern Virginia are available by request."}}]}</script>
   <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
       <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="/#portfolio">Portfolio</a></li>
         <li><a href="/blog/photography-pricing/">Pricing</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
         <li><a href="/#contact">Book Now</a></li>
       </ul>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
     </div>
   </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            
-            <a title="Open Visuals by Joshua" href="/index.html" class="logo">
-  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="49" height="40" decoding="async">
-  <span class="logo-text">Visuals by Joshua</span>
-</a>
-<div class="nav-menu" id="site-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a title="Go to the Visuals by Joshua homepage" href="/index.html" class="nav-link" aria-label="Go to the Visuals by Joshua homepage">Home</a></li>
-                    <li class="nav-item"><a title="Learn about Joshua Smith photography" href="/index.html#about" class="nav-link" aria-label="Learn about Joshua Smith photography">About</a></li>
-                    <li class="nav-item"><a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="nav-link" aria-label="View the Visuals by Joshua photography portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a title="View Charleston photography services" href="/index.html#services" class="nav-link" aria-label="View Charleston photography services">Services</a></li>
-                    <li class="nav-item"><a title="Read Visuals by Joshua client reviews" href="/index.html#testimonials" class="nav-link" aria-label="Read Visuals by Joshua client reviews">Reviews</a></li>
-                    <li class="nav-item"><a title="Read frequently asked photography questions" href="/faq" class="nav-link" aria-label="Read frequently asked photography questions">FAQ</a></li>
-                    <li class="nav-item"><a title="Contact Joshua Smith about booking photography" href="/index.html#contact" class="nav-link" aria-label="Contact Joshua Smith about booking photography">Contact</a></li>
-                    <li class="nav-item"><a title="Read Visuals by Joshua photography guides" href="/blog.html" class="nav-link" aria-label="Read Visuals by Joshua photography guides">Blog</a></li>
-                </ul>
-                <a title="Book a Charleston photography session with Joshua" href="/index.html#contact" class="btn nav-cta" aria-label="Book a Charleston photography session with Joshua">Book Now</a>
-            </div>
-            <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
-        </div>
-    </header>
 
     <!-- Blog Hero Section -->
-    <section class="article-hero"
+    <section class="article-hero hero-bg" style="--bg-url: url('/images/portraits/night-flash-greek-life-portrait.webp');" id="main">
         <div class="blog-hero-content">
-            <h1 class="blog-hero-title">Night Flash Portrait Photography for Greek Life Organizations</h1>
+            <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Night Flash Portrait Photography for Greek Life Organizations</div>
+          <h1 class="blog-hero-title">Night Flash Portrait Photography for Greek Life Organizations</h1>
             <p class="blog-hero-subtitle">How a Greek life photographer uses flash to create sharp, powerful portraits at probates, strolls, yard shows, and step shows after dark</p>
 
             <div class="blog-meta">
@@ -313,7 +295,7 @@
                 <p class="blog-text">Shooting flash at night is not about blasting your subject with light and hoping for the best. It is about controlling the light so your subject looks intentional, not like they got hit with a camera flash at a house party. Here is how I approach <strong>night flash portrait photography</strong> for Greek events.</p>
 
                 <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Off-Camera Flash for Depth</h3>
-                <p class="blog-text">On-camera flash flattens everything. It kills shadows, washes out skin tones, and makes the background disappear into a black void. I use off-camera flash with modifiers to create dimension. A speedlight in a small softbox at 45 degrees gives you a clean key light with soft falloff. Add a second flash with a colored gel behind the subject and you get rim light that separates them from the dark background. For Kappa Alpha Psi shoots, I will throw a crimson gel on the backlight. That red glow on the edges of the frame ties the whole image to the organization's identity.</p>
+                <p class="blog-text">On-camera flash flattens everything. It kills shadows, washes out skin tones, and makes the background disappear into a black void. I use off-camera flash with modifiers to create dimension. A speedlight in a small softbox at 45 degrees, a setup similar to what <a title="Godox lighting product overview" href="https://www.godox.com/" target="_blank" rel="noopener">Godox</a> builds most of its off-camera flash gear around, gives you a clean key light with soft falloff. Add a second flash with a colored gel behind the subject and you get rim light that separates them from the dark background. For Kappa Alpha Psi shoots, I will throw a crimson gel on the backlight. That red glow on the edges of the frame ties the whole image to the organization's identity.</p>
 
                 <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Exposing for Dark Skin at Night</h3>
                 <p class="blog-text">This is where a lot of photographers fail. Camera meters are biased toward middle gray, which means they consistently underexpose dark skin. At night, the problem gets worse because the meter reads all that darkness and tries to brighten the entire scene, which overexposes the flash on your subject. I shoot in manual mode and set my flash power based on the skin tone I am working with, not what the meter tells me. I overexpose by about two-thirds of a stop to ensure rich, luminous skin tones that show texture and detail instead of muddy shadows.</p>
@@ -387,7 +369,7 @@
                 <h2 class="section-title">Charleston Greek Life, HBCU Culture, and Secondary DMV Availability</h2>
                 <p class="blog-text">Charleston and the broader Lowcountry have a strong Greek life and HBCU-connected culture, from South Carolina State and Claflin to local student and alumni events. DMV chapters and schools such as Howard, Bowie State, Coppin State, and the University of Maryland Eastern Shore remain available by request. As an <strong>HBCU photographer</strong>, I see how Greek life shapes campus identity and extends well beyond graduation.</p>
 
-                <p class="blog-text">Alumni chapters in DC, PG County, and Charleston host events year-round. Founders' Day celebrations, community service events, fundraisers, and social gatherings all call for photography that respects the tradition behind each organization. I have photographed Kappa Alpha Psi events where the crimson and cream were everywhere, from the suits to the decorations, and every detail needed to show up correctly in the final images.</p>
+                <p class="blog-text">Organizations affiliated with the <a title="National Pan-Hellenic Council" href="https://www.nphchq.com/" target="_blank" rel="noopener">National Pan-Hellenic Council</a> host alumni chapters in DC, PG County, and Charleston year-round. Founders' Day celebrations, community service events, fundraisers, and social gatherings all call for photography that respects the tradition behind each organization. I have photographed Kappa Alpha Psi events where the crimson and cream were everywhere, from the suits to the decorations, and every detail needed to show up correctly in the final images.</p>
 
                 <p class="blog-text">This is not just event photography. It is cultural documentation. These organizations have histories that go back over a hundred years, and the images from their events become part of that legacy. I take that seriously every time I pick up the camera.</p>
             </div>
@@ -395,12 +377,49 @@
             <!-- Why Work With Me -->
             <div class="about-container" style="margin: 60px 0;">
                 <div class="about-content">
-                    <h2 class="section-title">What Makes a Good Greek Life Photographer</h2>
+                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">What Makes a Good Greek Life Photographer</h3>
                     <p class="blog-text">Technical skill matters. You need to know how to use flash, how to expose for dark skin properly, and how to work fast in unpredictable conditions. But the thing that separates a good <strong>Greek life photographer</strong> from someone who just shows up with a camera is cultural understanding.</p>
 
                     <p class="blog-text">You need to know what a neophyte show looks like. You need to recognize when a stroll is building to its peak moment. You need to understand why someone wants their letters and their line number visible in every portrait. Those details are not optional. They are the whole point.</p>
 
-                    <p class="blog-text">I bring both. I bring the technical ability to make flash portraits look clean and professional at any time of night, and I bring the cultural knowledge to make sure every portrait actually means something to the people in it. Check out my <a title="View Charleston event photography services" href="/charleston-event-photographer/">Charleston event photography services</a> or read through my <a title="Read the event photography checklist" href="/blog/event-photography-checklist-smithsonian-folklife/">event photography checklist</a> to see how I work.</p>
+                    <p class="blog-text">I bring both. I bring the technical ability to make flash portraits look clean and professional at any time of night, and I bring the cultural knowledge to make sure every portrait actually means something to the people in it. Check out my <a title="View Charleston event photography services" href="/charleston-event-photographer/">Charleston event photography services</a>, read through my <a title="Read the event photography checklist" href="/blog/event-photography-checklist-smithsonian-folklife/">event photography checklist</a>, or browse the <a title="Read the Charleston Juneteenth event photography post" href="/blog/charleston-juneteenth-event-photography/">Charleston Juneteenth coverage</a> to see how I work.</p>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="about-container" style="margin: 60px 0;">
+                <div class="about-content">
+                    <h2 class="section-title">Greek Life Night Photography FAQ</h2>
+
+                    <div class="faq-static">
+                        <h3>Can you match your lighting to our organization's colors?</h3>
+                        <p>Yes. I carry color gels for the major Greek organizations and use them on rim and background lights so your colors read correctly in every portrait.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>Do you photograph probate shows and yard shows live?</h3>
+                        <p>Yes. I cover the full event with a mix of wide reaction shots and tighter portraits, staying locked into the flow of strolls and calls as they happen.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>Will the photos look washed out or overexposed at night?</h3>
+                        <p>No. I shoot in manual mode and set flash power based on skin tone rather than the camera's meter, which keeps skin looking rich and detailed instead of blown out.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>How do you handle large group portraits at night?</h3>
+                        <p>I widen my light source or add a second flash to cover the full formation, and shoot from a slightly lower angle for a strong, grounded look that works for chapter photos.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>How fast can we get photos after an event?</h3>
+                        <p>Social-ready highlights are typically available within 48 hours, with the full curated gallery following within one week.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>Do you travel to DMV chapters for Greek life photography?</h3>
+                        <p>Yes. Charleston is my primary market, and DMV sessions in DC, Maryland, and Northern Virginia are available by request.</p>
+                    </div>
                 </div>
             </div>
 
@@ -418,7 +437,7 @@
                     <li><strong>Social Media Content Packages</strong> for chapter pages and org accounts</li>
                 </ul>
 
-                <p class="blog-text"><strong>Coverage Areas</strong> include Washington DC, Prince George's County, Montgomery County, Northern Virginia, Baltimore, Charleston SC, and surrounding areas. .</p>
+                <p class="blog-text"><strong>Coverage Areas</strong> include Washington DC, Prince George's County, Montgomery County, Northern Virginia, Baltimore, Charleston SC, and surrounding areas.</p>
             </div>
         </div>
     </section>
@@ -429,69 +448,12 @@
             <h2 class="cta-title">Your Chapter Deserves Professional Photography</h2>
             <p class="cta-text">From probates and strolls to portraits and step shows, get night flash photography that represents your organization the way it should be represented.</p>
             <div class="cta-buttons">
-                
+                <a title="Book Greek life or night event photography" href="/index.html?service=event&location=charleston#contact" class="btn btn-accent">Book Your Event</a>
                 <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    
-                    <a title="Open Joshua Smith" href="/index.html" class="footer-logo">
-  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="575" height="471" loading="lazy" decoding="async">
-  <span class="footer-logo-text">Joshua Smith</span>
-</a>
-<p class="footer-about">Professional photography services in Charleston, specializing in events, headshots, portraits, concerts, and graduation photography. DMV sessions are available by request.</p>
-                    <div class="footer-social">
-                        <a title="Visit Visuals by Joshua on Facebook" href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" aria-label="Visit Visuals by Joshua on Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a title="Visit Visuals by Joshua on Instagram" href="https://www.instagram.com/visuals_by_joshua" aria-label="Visit Visuals by Joshua on Instagram"><i class="fab fa-instagram"></i></a>
-                        <a title="Visit Joshua Smith on LinkedIn" href="https://www.linkedin.com/in/joshua-benjamin-smith" aria-label="Visit Joshua Smith on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a title="Go to the Visuals by Joshua homepage" href="/index.html" aria-label="Go to the Visuals by Joshua homepage"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a title="Learn about Joshua Smith photography" href="/index.html#about" aria-label="Learn about Joshua Smith photography"><i class="fas fa-chevron-right"></i> About</a></li>
-                        <li><a title="View Charleston photography services" href="/index.html#services" aria-label="View Charleston photography services"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
-                        <li><a title="Read Visuals by Joshua client testimonials" href="/index.html#testimonials" aria-label="Read Visuals by Joshua client testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
-                        <li><a title="Read frequently asked photography questions" href="/faq" aria-label="Read frequently asked photography questions"><i class="fas fa-chevron-right"></i> FAQ</a></li>
-                        <li><a title="Read Visuals by Joshua photography guides" href="/blog.html" aria-label="Read Visuals by Joshua photography guides"><i class="fas fa-chevron-right"></i> Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Services</h3>
-                    <ul class="footer-links">
-<li><a title="View Charleston event photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Event Photography</a></li>
-<li><a title="View Charleston professional headshot services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Professional Headshots</a></li>
-<li><a title="View Charleston portrait photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Portrait Photography</a></li>
-<li><a title="View Charleston graduation photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Graduation Photography</a></li>
-<li><a title="View Charleston concert and music photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Concert & Music Photography</a></li>
-</ul>
-                </div>
-                <div class="footer-newsletter">
-                    <h3 class="footer-heading">Newsletter</h3>
-                    <p>Subscribe to receive photography tips, exclusive offers, and updates about special seasonal promotions.</p>
-                    <form class="newsletter-form">
-                        <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
-                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2026 Joshua Smith Photography. All Rights Reserved.</p>
-                <div class="footer-social">
-                    <a title="Read the Visuals by Joshua privacy policy" href="/privacy-policy.html" aria-label="Read the Visuals by Joshua privacy policy">Privacy Policy</a>
-                    <a title="Read the Visuals by Joshua terms of service" href="/terms-of-service.html" aria-label="Read the Visuals by Joshua terms of service">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <!-- Back to Top Button -->
     <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
@@ -544,16 +506,20 @@
             <a href="tel:+12403608465">(240) 360-8465</a><br>
             <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
           </p>
+          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
+            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
+            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
+          </div>
         </div>
 
         <div class="footer-links">
           <h4>Services</h4>
           <ul>
             <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery.html">Full Gallery</a></li>
+            <li><a href="/gallery">Full Gallery</a></li>
             <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/FAQ.html">FAQ</a></li>
-            <li><a href="/blog/best-photo-spots-charleston-sc/">Best Photo Spots</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
           </ul>
         </div>
 
@@ -574,6 +540,6 @@
     </div>
   </footer>
 
-  <script src="/scripts.js"></script></script>
+  <script src="/scripts.js"></script>
 </body>
 </html>

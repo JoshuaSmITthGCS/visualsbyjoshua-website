@@ -124,7 +124,7 @@
 .cta-text {
   max-width: 700px;
   margin: 0 auto 30px;
-  color: #666;
+  color: var(--muted);
 }
 
 /* Responsive */

@@ -77,6 +77,10 @@
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
           }
         }
+
+        .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
+        .faq-static h3 { margin: 0 0 10px; font-size: 1.2rem; color: var(--primary); }
+        .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
     </style>
   <script src="/analytics.js" defer></script>
 <script type="application/ld+json">
@@ -105,59 +109,39 @@
   ]
 }
 </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do any of these PG County locations require a permit?", "acceptedAnswer": {"@type": "Answer", "text": "No. Personal portrait sessions at parks like Lake Artemesia, Watkins Regional Park, and Allen Pond Park do not require a permit. Historic sites like Riversdale House and Montpelier Mansion may have separate rules for larger productions."}}, {"@type": "Question", "name": "Which location is best if I want to avoid crowds?", "acceptedAnswer": {"@type": "Answer", "text": "Riversdale House Museum and Buddy Attick Lake Park stay quiet even on weekends. National Harbor and Lake Artemesia draw the most foot traffic, especially in the afternoon."}}, {"@type": "Question", "name": "What if it rains on my scheduled day?", "acceptedAnswer": {"@type": "Answer", "text": "I build weather backups into every outdoor session. Covered pavilions at Watkins and Allen Pond, National Harbor's covered walkways, and historic house museums all work as rain contingencies."}}, {"@type": "Question", "name": "Can we visit more than one location in a single session?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if the locations are close together. Lake Artemesia and Buddy Attick Lake Park, for example, are a short drive apart and pair well in one longer session."}}, {"@type": "Question", "name": "Is parking free at these locations?", "acceptedAnswer": {"@type": "Answer", "text": "Most are free, including Lake Artemesia, Watkins Regional Park, Riversdale House, and Allen Pond Park. National Harbor uses paid garages, though street parking is free after 6 PM."}}, {"@type": "Question", "name": "Do you still book PG County sessions if Charleston is your main market?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, PG County and the wider DMV remain available by request. Charleston is my primary booking focus, but I still travel for DMV portrait sessions."}}]}</script>
   <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
       <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="/#portfolio">Portfolio</a></li>
         <li><a href="/blog/photography-pricing/">Pricing</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
         <li><a href="/#contact">Book Now</a></li>
       </ul>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
     </div>
   </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            
-            <a title="Open Visuals by Joshua" href="/index.html" class="logo">
-  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="49" height="40" decoding="async">
-  <span class="logo-text">Visuals by Joshua</span>
-</a>
-<div class="nav-menu" id="site-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a title="Go to the Visuals by Joshua homepage" href="/index.html" class="nav-link" aria-label="Go to the Visuals by Joshua homepage">Home</a></li>
-                    <li class="nav-item"><a title="Learn about Joshua Smith photography" href="/index.html#about" class="nav-link" aria-label="Learn about Joshua Smith photography">About</a></li>
-                    <li class="nav-item"><a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="nav-link" aria-label="View the Visuals by Joshua photography portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a title="View Charleston photography services" href="/index.html#services" class="nav-link" aria-label="View Charleston photography services">Services</a></li>
-                    <li class="nav-item"><a title="Read Visuals by Joshua client reviews" href="/index.html#testimonials" class="nav-link" aria-label="Read Visuals by Joshua client reviews">Reviews</a></li>
-                    <li class="nav-item"><a title="Read frequently asked photography questions" href="/faq" class="nav-link" aria-label="Read frequently asked photography questions">FAQ</a></li>
-                    <li class="nav-item"><a title="Contact Joshua Smith about booking photography" href="/index.html#contact" class="nav-link" aria-label="Contact Joshua Smith about booking photography">Contact</a></li>
-                    <li class="nav-item"><a title="Read Visuals by Joshua photography guides" href="/blog.html" class="nav-link" aria-label="Read Visuals by Joshua photography guides">Blog</a></li>
-                </ul>
-                <a title="Book a Charleston photography session with Joshua" href="/index.html#contact" class="btn nav-cta" aria-label="Book a Charleston photography session with Joshua">Book Now</a>
-            </div>
-            <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
-        </div>
-    </header>
 
     <!-- Blog Hero Section -->
-    <section class="article-hero"
+    <section class="article-hero hero-bg" style="--bg-url: url('/portrait2.webp');" id="main">
         <div class="blog-hero-content">
-            <h1 class="blog-hero-title">Best Portrait Photography Locations in Prince George's County, MD</h1>
+            <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Best Portrait Photography Locations in Prince George&#x27;s County, MD</div>
+          <h1 class="blog-hero-title">Best Portrait Photography Locations in Prince George's County, MD</h1>
             <p class="blog-hero-subtitle">15 spots I use for family portraits, engagement photos, and professional headshots</p>
 
             <div class="blog-meta">
@@ -189,7 +173,7 @@
             <div class="about-container" style="margin-bottom: 60px;">
                 <div class="about-content">
                     <h2 class="section-title">Why PG County Is Full of Great Portrait Locations</h2>
-                    <p class="blog-text">I have photographed people all over the DMV, and <strong>Prince George's County</strong> consistently delivers some of the best backdrops I have worked with. Lakeside light, historic architecture, wide open fields, urban waterfronts. It is all here, often within a 20-minute drive.</p>
+                    <p class="blog-text">I have photographed people all over the DMV, and <strong>Prince George's County</strong> consistently delivers some of the best backdrops I have worked with. Lakeside light, historic architecture, wide open fields, urban waterfronts. It is all here, often within a 20-minute drive. The <a title="Maryland-National Capital Park and Planning Commission" href="https://www.pgparks.com/" target="_blank" rel="noopener">Maryland-National Capital Park and Planning Commission</a> maintains most of these parks and lists current hours if you want to double-check before you go.</p>
 
                     <p class="blog-text">Whether you need <strong>family portraits in Upper Marlboro</strong>, <strong>engagement photos in Bowie</strong>, or <strong>professional headshots near College Park</strong>, this guide covers the locations I return to again and again. Most of them are free to use and do not require a permit.</p>
 
@@ -425,7 +409,7 @@
                     <h2 class="section-title">Portrait Photography Tips for PG County Locations</h2>
 
                     <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Timing Your Session</h3>
-                    <p class="blog-text">The best light for portraits in PG County happens during golden hour, which is the hour after sunrise or before sunset. During summer, aim for sessions before 9 AM or after 6 PM. Midday sun creates harsh shadows and makes everyone squint.</p>
+                    <p class="blog-text">The best light for portraits in PG County happens during golden hour, which is the hour after sunrise or before sunset. During summer, aim for sessions before 9 AM or after 6 PM. Midday sun creates harsh shadows and makes everyone squint. I check exact sunrise and sunset times on <a title="Sunrise and sunset time calculator" href="https://www.timeanddate.com/sun/usa/upper-marlboro" target="_blank" rel="noopener">timeanddate.com</a> before locking in a session slot.</p>
 
                     <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Dealing with Crowds</h3>
                     <p class="blog-text">National Harbor and Lake Artemesia draw crowds on weekends. If you want the location to yourself, go on a weekday morning or during school hours. Most parks are nearly empty before 8 AM on weekdays.</p>
@@ -454,31 +438,31 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="border-bottom: 1px solid #eee;">
+                        <tr style="border-bottom: 1px solid #e8e8e8;">
                             <td style="padding: 15px;"><strong>Lake Artemesia</strong></td>
                             <td style="padding: 15px; text-align: center;">Nature/Fitness</td>
                             <td style="padding: 15px; text-align: center;">Free</td>
                             <td style="padding: 15px; text-align: center;">Light-Moderate</td>
                         </tr>
-                        <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
+                        <tr style="border-bottom: 1px solid #e8e8e8; background: #f5f3f0;">
                             <td style="padding: 15px;"><strong>Watkins Park</strong></td>
                             <td style="padding: 15px; text-align: center;">Families</td>
                             <td style="padding: 15px; text-align: center;">Free</td>
                             <td style="padding: 15px; text-align: center;">Light</td>
                         </tr>
-                        <tr style="border-bottom: 1px solid #eee;">
+                        <tr style="border-bottom: 1px solid #e8e8e8;">
                             <td style="padding: 15px;"><strong>National Harbor</strong></td>
                             <td style="padding: 15px; text-align: center;">Urban/Modern</td>
                             <td style="padding: 15px; text-align: center;">Paid</td>
                             <td style="padding: 15px; text-align: center;">Heavy</td>
                         </tr>
-                        <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
+                        <tr style="border-bottom: 1px solid #e8e8e8; background: #f5f3f0;">
                             <td style="padding: 15px;"><strong>Riversdale House</strong></td>
                             <td style="padding: 15px; text-align: center;">Elegant/Historic</td>
                             <td style="padding: 15px; text-align: center;">Free</td>
                             <td style="padding: 15px; text-align: center;">Very Light</td>
                         </tr>
-                        <tr style="border-bottom: 1px solid #eee;">
+                        <tr style="border-bottom: 1px solid #e8e8e8;">
                             <td style="padding: 15px;"><strong>Allen Pond</strong></td>
                             <td style="padding: 15px; text-align: center;">Versatile</td>
                             <td style="padding: 15px; text-align: center;">Free</td>
@@ -501,6 +485,8 @@
                     <a title="Read the Charleston graduation photo locations guide" href="/blog/charleston-graduation-photo-locations-guide/">Graduation spots</a>
                     <a title="Read the best Charleston photo spots guide" href="/blog/best-photo-spots-charleston-sc/">Charleston photo spots</a>
                     <a title="Read Charleston seasonal photo session guide" href="/blog/charleston-seasonal-photo-session-guide/">Seasonal timing</a>
+                    <a title="Read Charleston senior portrait guide" href="/blog/charleston-senior-portrait-guide/">Senior portraits</a>
+                    <a title="Read Charleston engagement photo locations guide" href="/blog/charleston-engagement-photo-locations-guide/">Engagement spots</a>
                 </div>
             </div>
 
@@ -519,6 +505,43 @@
                     </ol>
                 </div>
             </div>
+
+            <!-- FAQ -->
+            <div class="about-container" style="margin: 60px 0;">
+                <div class="about-content">
+                    <h2 class="section-title">PG County Portrait Locations FAQ</h2>
+
+                    <div class="faq-static">
+                        <h3>Do any of these PG County locations require a permit?</h3>
+                        <p>No. Personal portrait sessions at parks like Lake Artemesia, Watkins Regional Park, and Allen Pond Park do not require a permit. Historic sites like Riversdale House and Montpelier Mansion may have separate rules for larger productions.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>Which location is best if I want to avoid crowds?</h3>
+                        <p>Riversdale House Museum and Buddy Attick Lake Park stay quiet even on weekends. National Harbor and Lake Artemesia draw the most foot traffic, especially in the afternoon.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>What if it rains on my scheduled day?</h3>
+                        <p>I build weather backups into every outdoor session. Covered pavilions at Watkins and Allen Pond, National Harbor's covered walkways, and historic house museums all work as rain contingencies.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>Can we visit more than one location in a single session?</h3>
+                        <p>Yes, if the locations are close together. Lake Artemesia and Buddy Attick Lake Park, for example, are a short drive apart and pair well in one longer session.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>Is parking free at these locations?</h3>
+                        <p>Most are free, including Lake Artemesia, Watkins Regional Park, Riversdale House, and Allen Pond Park. National Harbor uses paid garages, though street parking is free after 6 PM.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>Do you still book PG County sessions if Charleston is your main market?</h3>
+                        <p>Yes, PG County and the wider DMV remain available by request. Charleston is my primary booking focus, but I still travel for DMV portrait sessions.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -535,63 +558,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    
-                    <a title="Open Joshua Smith" href="/index.html" class="footer-logo">
-  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="575" height="471" loading="lazy" decoding="async">
-  <span class="footer-logo-text">Joshua Smith</span>
-</a>
-<p class="footer-about">Professional photography services in Charleston, specializing in events, headshots, portraits, concerts, and graduation photography. DMV sessions are available by request.</p>
-                    <div class="footer-social">
-                        <a title="Visit Visuals by Joshua on Facebook" href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" aria-label="Visit Visuals by Joshua on Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a title="Visit Visuals by Joshua on Instagram" href="https://www.instagram.com/visuals_by_joshua" aria-label="Visit Visuals by Joshua on Instagram"><i class="fab fa-instagram"></i></a>
-                        <a title="Visit Joshua Smith on LinkedIn" href="https://www.linkedin.com/in/joshua-benjamin-smith" aria-label="Visit Joshua Smith on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a title="Go to the Visuals by Joshua homepage" href="/index.html" aria-label="Go to the Visuals by Joshua homepage"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a title="Learn about Joshua Smith photography" href="/index.html#about" aria-label="Learn about Joshua Smith photography"><i class="fas fa-chevron-right"></i> About</a></li>
-                        <li><a title="View Charleston photography services" href="/index.html#services" aria-label="View Charleston photography services"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
-                        <li><a title="Read Visuals by Joshua client testimonials" href="/index.html#testimonials" aria-label="Read Visuals by Joshua client testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
-                        <li><a title="Read frequently asked photography questions" href="/faq" aria-label="Read frequently asked photography questions"><i class="fas fa-chevron-right"></i> FAQ</a></li>
-                        <li><a title="Read Visuals by Joshua photography guides" href="/blog.html" aria-label="Read Visuals by Joshua photography guides"><i class="fas fa-chevron-right"></i> Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Services</h3>
-                    <ul class="footer-links">
-<li><a title="View Charleston event photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Event Photography</a></li>
-<li><a title="View Charleston professional headshot services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Professional Headshots</a></li>
-<li><a title="View Charleston portrait photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Portrait Photography</a></li>
-<li><a title="View Charleston graduation photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Graduation Photography</a></li>
-<li><a title="View Charleston concert and music photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Concert & Music Photography</a></li>
-</ul>
-                </div>
-                <div class="footer-newsletter">
-                    <h3 class="footer-heading">Newsletter</h3>
-                    <p>Subscribe to receive photography tips, exclusive offers, and updates about special seasonal promotions.</p>
-                    <form class="newsletter-form">
-                        <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
-                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2026 Joshua Smith Photography. All Rights Reserved.</p>
-                <div class="footer-social">
-                    <a title="Read the Visuals by Joshua privacy policy" href="/privacy-policy.html" aria-label="Read the Visuals by Joshua privacy policy">Privacy Policy</a>
-                    <a title="Read the Visuals by Joshua terms of service" href="/terms-of-service.html" aria-label="Read the Visuals by Joshua terms of service">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <!-- Back to Top Button -->
     <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
@@ -644,16 +610,20 @@
             <a href="tel:+12403608465">(240) 360-8465</a><br>
             <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
           </p>
+          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
+            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
+            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
+          </div>
         </div>
 
         <div class="footer-links">
           <h4>Services</h4>
           <ul>
             <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery.html">Full Gallery</a></li>
+            <li><a href="/gallery">Full Gallery</a></li>
             <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/FAQ.html">FAQ</a></li>
-            <li><a href="/blog/best-photo-spots-charleston-sc/">Best Photo Spots</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
           </ul>
         </div>
 
@@ -674,6 +644,6 @@
     </div>
   </footer>
 
-  <script src="/scripts.js"></script></script>
+  <script src="/scripts.js"></script>
 </body>
 </html>

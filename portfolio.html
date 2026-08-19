@@ -32,22 +32,28 @@
 </head>
 
 <body>
+  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
       <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="/#portfolio">Portfolio</a></li>
         <li><a href="/blog/photography-pricing/">Pricing</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
         <li><a href="/#contact">Book Now</a></li>
       </ul>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
     </div>
   </nav>
 
   <!-- Portfolio Header -->
-  <section class="article-hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('/images/couples/cypress-gardens-engagement-shoot.webp') center 35% / cover;">
+  <section class="article-hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('/images/couples/cypress-gardens-engagement-shoot.webp') center 35% / cover;" id="main">
     <div class="article-hero-overlay"></div>
     <div class="article-hero-content">
       <h1>Portfolio</h1>

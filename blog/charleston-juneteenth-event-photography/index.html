@@ -104,6 +104,7 @@
     ]
   }
   </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do you photograph Juneteenth events in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I photograph Juneteenth cookouts, community celebrations, nonprofit programs, private gatherings, and cultural events across Charleston, James Island, North Charleston, Mount Pleasant, and nearby Lowcountry communities."}}, {"@type": "Question", "name": "What does Charleston event photography include?", "acceptedAnswer": {"@type": "Answer", "text": "Coverage can include venue details, food and sponsor displays, candid guest interactions, planned group portraits, host photos, speeches, performances, and wide images that show attendance and atmosphere."}}, {"@type": "Question", "name": "How quickly can event photos be delivered?", "acceptedAnswer": {"@type": "Answer", "text": "Standard event galleries usually arrive within one to two weeks. Fast social selections can be arranged when hosts, brands, or community partners need images while the event is still current."}}, {"@type": "Question", "name": "Do you photograph outdoor cookouts and park events?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Outdoor Juneteenth cookouts and park celebrations are common in Charleston, and I plan for changing light, crowd movement, and food and vendor setups so the gallery captures the full day, not just posed moments."}}, {"@type": "Question", "name": "Can you photograph performances and speeches?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I cover speakers, performers, and program moments alongside candid crowd shots, so the gallery tells the full story of the event, not just one part of it."}}, {"@type": "Question", "name": "How far in advance should I book Juneteenth photography?", "acceptedAnswer": {"@type": "Answer", "text": "Book as early as you can. Juneteenth is a busy weekend for Charleston photographers, and locking in your date early gives you the best chance at your preferred coverage window."}}]}</script>
 
   <style>
     .juneteenth-hero {
@@ -111,7 +112,7 @@
     }
     .event-kicker {
       margin-bottom: 14px;
-      color: #f4c95d;
+      color: #be976d;
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -126,8 +127,7 @@
     }
     .event-summary,
     .event-credit {
-      background: #f8f9fa;
-      border-left: 4px solid #c99a2e;
+      background: #f5f3f0;
     }
     .event-summary dl {
       display: grid;
@@ -137,10 +137,10 @@
     }
     .event-summary dt {
       font-weight: 700;
-      color: #2c3e50;
+      color: #2a2a2a;
     }
     .event-toc {
-      border: 1px solid #e2e8f0;
+      border: 1px solid #e8e8e8;
       background: white;
       box-shadow: var(--shadow);
     }
@@ -172,7 +172,7 @@
     }
     .event-gallery figcaption {
       padding: 14px 16px;
-      background: #1a252f;
+      background: #2a2a2a;
       color: rgba(255,255,255,0.88);
       font-size: 0.92rem;
       line-height: 1.55;
@@ -190,7 +190,7 @@
     }
     .event-section p,
     .event-section li {
-      color: #555;
+      color: #5a5a5a;
       font-size: 1.07rem;
       line-height: 1.8;
     }
@@ -201,7 +201,7 @@
       margin: 18px 0 24px 24px;
     }
     .social-proof {
-      background: #17242d;
+      background: #2a2a2a;
       color: white;
       display: grid;
       grid-template-columns: auto 1fr;
@@ -209,7 +209,7 @@
       align-items: center;
     }
     .social-proof strong {
-      color: #f4c95d;
+      color: #be976d;
       font-size: clamp(2rem, 6vw, 3.3rem);
       line-height: 1;
     }
@@ -221,7 +221,7 @@
       margin: 24px 0;
       padding: 24px;
       border-radius: 10px;
-      background: #f8f9fa;
+      background: #f5f3f0;
       box-shadow: var(--shadow);
     }
     .faq-static h3 {
@@ -247,45 +247,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
       <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="/#portfolio">Portfolio</a></li>
         <li><a href="/blog/photography-pricing/">Pricing</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
         <li><a href="/#contact">Book Now</a></li>
       </ul>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
     </div>
   </nav>
 
-  <header>
-    <div class="container header-container">
-      <a title="Open Visuals by Joshua" href="/index.html" class="logo">
-        <img src="/Logo.webp" alt="Visuals by Joshua logo" width="49" height="40" decoding="async">
-        <span class="logo-text">Visuals by Joshua</span>
-      </a>
-      <div class="nav-menu" id="site-nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="/gallery" class="nav-link">Portfolio</a></li>
-          <li class="nav-item"><a href="/charleston-event-photographer/" class="nav-link">Events</a></li>
-          <li class="nav-item"><a href="/index.html#contact" class="nav-link">Contact</a></li>
-          <li class="nav-item"><a href="/blog.html" class="nav-link" aria-current="page">Blog</a></li>
-        </ul>
-        <a href="/index.html?service=event&amp;location=charleston#contact" class="btn nav-cta">Book Event Coverage</a>
-      </div>
-      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
-    </div>
-  </header>
 
   <main>
     <article>
-    <section class="blog-hero juneteenth-hero">
+    <section class="blog-hero juneteenth-hero hero-bg" style="--bg-url: url('/blog/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery.webp');" id="main">
       <div class="hero-overlay">
         <div class="container">
           <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Charleston Juneteenth Event Photography</div>
@@ -455,11 +440,23 @@
             <h3>How quickly can event photos be delivered?</h3>
             <p>Standard event galleries usually arrive within one to two weeks. Fast social selections can be arranged when hosts, brands, or community partners need images while the event is still current.</p>
           </div>
+          <div class="faq-static">
+            <h3>Do you photograph outdoor cookouts and park events?</h3>
+            <p>Yes. Outdoor Juneteenth cookouts and park celebrations are common in Charleston, and I plan for changing light, crowd movement, and food and vendor setups so the gallery captures the full day, not just posed moments.</p>
+          </div>
+          <div class="faq-static">
+            <h3>Can you photograph performances and speeches?</h3>
+            <p>Yes. I cover speakers, performers, and program moments alongside candid crowd shots, so the gallery tells the full story of the event, not just one part of it.</p>
+          </div>
+          <div class="faq-static">
+            <h3>How far in advance should I book Juneteenth photography?</h3>
+            <p>Book as early as you can. Juneteenth is a busy weekend for Charleston photographers, and locking in your date early gives you the best chance at your preferred coverage window.</p>
+          </div>
         </section>
 
         <section class="blog-conversion-cta">
           <h2>Planning an event in Charleston?</h2>
-          <p>Send the date, James Island or Charleston venue, expected guest count, and the moments your team needs. I will recommend a coverage plan built for both the event and the way you plan to share it.</p>
+          <p>Send the date, James Island or Charleston venue, expected guest count, and the moments your team needs. I'll recommend a coverage plan built for both the event and the way you plan to share it.</p>
           <div class="blog-conversion-actions">
             <a href="/index.html?service=event&amp;location=charleston#contact" class="btn btn-accent">Get an Event Quote</a>
             <a href="/gallery.html#events" class="btn">View Event Work</a>
@@ -470,35 +467,6 @@
     </article>
   </main>
 
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Visuals by Joshua</h3>
-          <p>Charleston event photography by Joshua Smith.</p>
-          <p>Serving James Island and the Charleston Lowcountry.</p>
-        </div>
-        <div class="footer-section">
-          <h3>Event Resources</h3>
-          <ul>
-            <li><a href="/charleston-event-photographer/">Event Photography</a></li>
-            <li><a href="/blog/charleston-event-photography-planning-guide/">Planning Guide</a></li>
-            <li><a href="/blog/charleston-photography-pricing/">Charleston Pricing</a></li>
-            <li><a href="/index.html#contact">Contact Joshua</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Connect</h3>
-          <div class="social-links">
-            <a href="https://www.instagram.com/visuals_by_joshua" aria-label="Visuals by Joshua on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" aria-label="Visuals by Joshua on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/joshua-benjamin-smith" aria-label="Joshua Smith on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom"><p>&copy; 2026 Visuals by Joshua. Charleston Event Photographer.</p></div>
-    </div>
-  </footer>
 
   <script>
     const hamburger = document.querySelector('.hamburger');
@@ -529,16 +497,20 @@
             <a href="tel:+12403608465">(240) 360-8465</a><br>
             <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
           </p>
+          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
+            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
+            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
+          </div>
         </div>
 
         <div class="footer-links">
           <h4>Services</h4>
           <ul>
             <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery.html">Full Gallery</a></li>
+            <li><a href="/gallery">Full Gallery</a></li>
             <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/FAQ.html">FAQ</a></li>
-            <li><a href="/blog/best-photo-spots-charleston-sc/">Best Photo Spots</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
           </ul>
         </div>
 
@@ -559,6 +531,6 @@
     </div>
   </footer>
 
-  <script src="/scripts.js"></script></script>
+  <script src="/scripts.js"></script>
 </body>
 </html>

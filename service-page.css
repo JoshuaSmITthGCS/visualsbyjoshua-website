@@ -488,8 +488,8 @@ footer a:not(.btn):focus-visible {
    page. It mirrors .gallery's auto-fit behaviour but with a wider minimum,
    because these cards carry a paragraph rather than a cropped image.
 
-   .card-note replaces a pattern of inline style="color: #666" that had crept
-   into the service pages. #666 was a hardcoded grey outside the token system;
+   .card-note replaces a pattern of inline style="color: var(--muted)" that had crept
+   into the service pages. var(--muted) was a hardcoded grey outside the token system;
    --muted is the same role and measures 4.75 against the cream background.
    --------------------------------------------------------------------------- */
 .gallery-text-grid {

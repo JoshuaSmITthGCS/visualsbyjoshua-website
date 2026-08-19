@@ -86,19 +86,17 @@
             border-radius: 10px;
             margin: 30px 0;
             box-shadow: var(--shadow);
-            border-left: 4px solid var(--secondary);
         }
 
         .pro-tip {
-            background: #e8f5e9;
-            border-left: 4px solid #4caf50;
+            background: #f5f3f0;
             padding: 20px;
             margin: 30px 0;
             border-radius: 5px;
         }
 
         .pro-tip h3 {
-            color: #2e7d32;
+            color: #856545;
             margin-bottom: 10px;
         }
 
@@ -122,7 +120,7 @@
 
         .faq-item p {
             line-height: 1.7;
-            color: #555;
+            color: #5a5a5a;
         }
 
         .location-highlight {
@@ -160,59 +158,39 @@
   ]
 }
 </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is shutter drag in photography?", "acceptedAnswer": {"@type": "Answer", "text": "Shutter drag is a technique using a slow shutter speed, typically 1/8 to 1/2 second, combined with a flash to create motion blur in the background while keeping the subject sharp. The flash freezes the subject and the slow shutter allows ambient light and movement to streak and blur around them. It is commonly used in nightlife, event, and creative portrait photography."}}, {"@type": "Question", "name": "What camera settings do you use for shutter drag portraits?", "acceptedAnswer": {"@type": "Answer", "text": "Start with a shutter speed between 1/8 and 1/2 second, aperture at f/5.6 to f/8, and ISO at 100-400. Use rear curtain sync on your flash so the motion blur trails behind the subject. Adjust flash power to properly expose the subject while the slow shutter captures the ambient light trails. The exact settings depend on the venue's ambient light level."}}, {"@type": "Question", "name": "What are the best locations for shutter drag photography?", "acceptedAnswer": {"@type": "Answer", "text": "Locations with colorful ambient light in dark environments work best. Bars with neon signs, nightclubs with LED lighting, concert venues with stage lights, and downtown streets at night with signage and city lights. The key is having multiple colored light sources at different positions so the motion blur creates vibrant, varied streaks."}}, {"@type": "Question", "name": "What is rear curtain sync and why does it matter for shutter drag?", "acceptedAnswer": {"@type": "Answer", "text": "Rear curtain sync fires the flash at the end of the exposure instead of the beginning. This means the motion blur trails appear behind the subject in the direction of movement, which looks natural. Front curtain sync fires the flash first and records motion afterward, creating blur in front of the subject that looks unnatural. Always use rear curtain sync for shutter drag."}}, {"@type": "Question", "name": "Can you do shutter drag photography without an external flash?", "acceptedAnswer": {"@type": "Answer", "text": "You can use a built-in camera flash for basic shutter drag, but an external speedlight gives you more control over power, direction, and sync mode. An on-camera speedlight bounced off a ceiling produces softer light. Off-camera flash with a wireless trigger gives the most creative options. For consistent professional results, an external flash is worth the investment."}}]}</script>
   <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
       <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="/#portfolio">Portfolio</a></li>
         <li><a href="/blog/photography-pricing/">Pricing</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
         <li><a href="/#contact">Book Now</a></li>
       </ul>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
     </div>
   </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            
-            <a title="Open Visuals by Joshua" href="/index.html" class="logo">
-  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="49" height="40" decoding="async">
-  <span class="logo-text">Visuals by Joshua</span>
-</a>
-<div class="nav-menu" id="site-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a title="Go to the Visuals by Joshua homepage" href="/index.html" class="nav-link" aria-label="Go to the Visuals by Joshua homepage">Home</a></li>
-                    <li class="nav-item"><a title="Learn about Joshua Smith photography" href="/index.html#about" class="nav-link" aria-label="Learn about Joshua Smith photography">About</a></li>
-                    <li class="nav-item"><a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="nav-link" aria-label="View the Visuals by Joshua photography portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a title="View Charleston photography services" href="/index.html#services" class="nav-link" aria-label="View Charleston photography services">Services</a></li>
-                    <li class="nav-item"><a title="Read Visuals by Joshua client reviews" href="/index.html#testimonials" class="nav-link" aria-label="Read Visuals by Joshua client reviews">Reviews</a></li>
-                    <li class="nav-item"><a title="Read frequently asked photography questions" href="/faq" class="nav-link" aria-label="Read frequently asked photography questions">FAQ</a></li>
-                    <li class="nav-item"><a title="Contact Joshua Smith about booking photography" href="/index.html#contact" class="nav-link" aria-label="Contact Joshua Smith about booking photography">Contact</a></li>
-                    <li class="nav-item"><a title="Read Visuals by Joshua photography guides" href="/blog.html" class="nav-link" aria-label="Read Visuals by Joshua photography guides">Blog</a></li>
-                </ul>
-                <a title="Book a Charleston photography session with Joshua" href="/index.html#contact" class="btn nav-cta" aria-label="Book a Charleston photography session with Joshua">Book Now</a>
-            </div>
-            <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
-        </div>
-    </header>
 
     <!-- Blog Hero Section -->
-    <section class="article-hero"
+    <section class="article-hero hero-bg" style="--bg-url: url('/newblogimages/shutter-drag-creative-portrait-photography.webp');" id="main">
         <div class="blog-hero-content">
-            <h1 class="blog-hero-title">Shutter Drag Creative Portrait Photography</h1>
+            <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Shutter Drag Creative Portrait Photography</div>
+          <h1 class="blog-hero-title">Shutter Drag Creative Portrait Photography</h1>
             <p class="blog-hero-subtitle">How slow shutter speeds, rear curtain sync flash, and neon light create vibrant motion blur portraits in nightlife settings</p>
 
             <div class="blog-meta">
@@ -272,7 +250,7 @@
 
                 <p class="blog-text"><strong>ISO: 100 to 400.</strong> Keep it low. The flash is your main light source and the slow shutter is already letting in plenty of ambient light. High ISO will blow out the light trails and add noise to the dark areas. I shot most of this session at ISO 200.</p>
 
-                <p class="blog-text"><strong>Flash: rear curtain sync, manual power.</strong> This is the piece that makes the whole thing work. Rear curtain sync tells the flash to fire at the end of the exposure instead of the beginning. That means the camera records all the motion blur first, then the flash fires and freezes the subject as the last thing recorded. The result is motion trails that appear behind the subject, which looks natural and intentional. Front curtain sync does the opposite and it looks wrong. Always rear curtain for shutter drag.</p>
+                <p class="blog-text"><strong>Flash: rear curtain sync, manual power.</strong> This is the piece that makes the whole thing work. <a title="Rear curtain sync explained" href="https://digital-photography-school.com/" target="_blank" rel="noopener">Rear curtain sync</a> tells the flash to fire at the end of the exposure instead of the beginning. That means the camera records all the motion blur first, then the flash fires and freezes the subject as the last thing recorded. The result is motion trails that appear behind the subject, which looks natural and intentional. Front curtain sync does the opposite and it looks wrong. Always rear curtain for shutter drag.</p>
 
                 <p class="blog-text">Flash power depends on your distance to the subject and your aperture. I was shooting with an on-camera speedlight at about 1/8 to 1/4 power for most of this session. Close enough for the flash to light the face and chest, far enough that the power did not overpower the ambient light trails in the background.</p>
             </div>
@@ -304,7 +282,7 @@
 
                 <p class="blog-text">The colored light matters because it makes the trails visually interesting. White light streaks look flat and clinical. But when you have red neon, blue LEDs, warm tungsten bar lights, and green beer signs all in the same frame, the motion blur becomes a rainbow of color that fills the background with energy. Every bar has a different light palette, which means every location gives you a different look without changing anything about your technique.</p>
 
-                <p class="blog-text">Charleston's bar scene on King Street and Upper King has plenty of options. I have shot shutter drag at venues with heavy neon, at rooftop bars with string lights and city skyline behind, and at concert venues with stage lighting that changes color every few seconds. Each one gives you something different. If you have seen my , some of those shots use shutter drag on the dance floor with DJ lighting, and the results are some of the most requested images from those events.</p>
+                <p class="blog-text">Charleston's bar scene on King Street and Upper King has plenty of options. I have shot shutter drag at venues with heavy neon, at rooftop bars with string lights and city skyline behind, and at concert venues with stage lighting that changes color every few seconds. Each one gives you something different. If you have seen my <a href="/gallery">event gallery</a>, some of those shots use shutter drag on the dance floor with DJ lighting, and the results are some of the most requested images from those events.</p>
             </div>
 
             <!-- Pro Tip -->
@@ -325,7 +303,7 @@
 
                     <p class="blog-text">I leave the light trails mostly untouched in terms of sharpness. They are supposed to be blurry. Trying to sharpen them or add clarity to the streaks defeats the purpose. The contrast between the sharp subject and the blurred light is what makes the technique work visually.</p>
 
-                    <p class="blog-text">Color grading is the final step. I usually push the highlights toward warm tones and the shadows toward cool blue or teal. This creates color separation between the flash-lit subject, which picks up the warm shift, and the ambient background, which goes cooler. That split toning adds a cinematic quality that elevates the image from a cool technique shot to something that feels intentional and polished.</p>
+                    <p class="blog-text">Color grading is the final step. I usually push the highlights toward warm tones and the shadows toward cool blue or teal. This creates color separation between the flash-lit subject, which picks up the warm shift, and the ambient background, which goes cooler. That split toning gives the image a cinematic quality, turning a cool technique shot into something that feels intentional and polished.</p>
                 </div>
             </div>
 
@@ -371,7 +349,7 @@
 
                 <div class="faq-item">
                     <h3>Can you do shutter drag photography without an external flash?</h3>
-                    <p>You can use a built-in camera flash for basic shutter drag, but an external speedlight gives you more control over power, direction, and sync mode. An on-camera speedlight bounced off a ceiling produces softer light. Off-camera flash with a wireless trigger gives the most creative options. For consistent professional results, an external flash is worth the investment.</p>
+                    <p>You can use a built-in camera flash for basic shutter drag, but an <a title="Godox speedlight lineup" href="https://www.godox.com/" target="_blank" rel="noopener">external speedlight</a> gives you more control over power, direction, and sync mode. An on-camera speedlight bounced off a ceiling produces softer light. Off-camera flash with a wireless trigger gives the most creative options. For consistent professional results, an external flash is worth the investment.</p>
                 </div>
             </div>
 
@@ -397,63 +375,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    
-                    <a title="Open Joshua Smith" href="/index.html" class="footer-logo">
-  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="575" height="471" loading="lazy" decoding="async">
-  <span class="footer-logo-text">Joshua Smith</span>
-</a>
-<p class="footer-about">Professional photography services in Charleston, specializing in events, headshots, portraits, concerts, and graduation photography. DMV sessions are available by request.</p>
-                    <div class="footer-social">
-                        <a title="Visit Visuals by Joshua on Facebook" href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" aria-label="Visit Visuals by Joshua on Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a title="Visit Visuals by Joshua on Instagram" href="https://www.instagram.com/visuals_by_joshua" aria-label="Visit Visuals by Joshua on Instagram"><i class="fab fa-instagram"></i></a>
-                        <a title="Visit Joshua Smith on LinkedIn" href="https://www.linkedin.com/in/joshua-benjamin-smith" aria-label="Visit Joshua Smith on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a title="Go to the Visuals by Joshua homepage" href="/index.html" aria-label="Go to the Visuals by Joshua homepage"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a title="Learn about Joshua Smith photography" href="/index.html#about" aria-label="Learn about Joshua Smith photography"><i class="fas fa-chevron-right"></i> About</a></li>
-                        <li><a title="View Charleston photography services" href="/index.html#services" aria-label="View Charleston photography services"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
-                        <li><a title="Read Visuals by Joshua client testimonials" href="/index.html#testimonials" aria-label="Read Visuals by Joshua client testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
-                        <li><a title="Read frequently asked photography questions" href="/faq" aria-label="Read frequently asked photography questions"><i class="fas fa-chevron-right"></i> FAQ</a></li>
-                        <li><a title="Read Visuals by Joshua photography guides" href="/blog.html" aria-label="Read Visuals by Joshua photography guides"><i class="fas fa-chevron-right"></i> Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Services</h3>
-                    <ul class="footer-links">
-<li><a title="View Charleston event photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Event Photography</a></li>
-<li><a title="View Charleston professional headshot services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Professional Headshots</a></li>
-<li><a title="View Charleston portrait photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Portrait Photography</a></li>
-<li><a title="View Charleston graduation photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Graduation Photography</a></li>
-<li><a title="View Charleston concert and music photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Concert & Music Photography</a></li>
-</ul>
-                </div>
-                <div class="footer-newsletter">
-                    <h3 class="footer-heading">Newsletter</h3>
-                    <p>Subscribe to receive photography tips, exclusive offers, and updates about special seasonal promotions.</p>
-                    <form class="newsletter-form">
-                        <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
-                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2026 Joshua Smith Photography. All Rights Reserved.</p>
-                <div class="footer-social">
-                    <a title="Read the Visuals by Joshua privacy policy" href="/privacy-policy.html" aria-label="Read the Visuals by Joshua privacy policy">Privacy Policy</a>
-                    <a title="Read the Visuals by Joshua terms of service" href="/terms-of-service.html" aria-label="Read the Visuals by Joshua terms of service">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <!-- Back to Top Button -->
     <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
@@ -506,16 +427,20 @@
             <a href="tel:+12403608465">(240) 360-8465</a><br>
             <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
           </p>
+          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
+            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
+            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
+          </div>
         </div>
 
         <div class="footer-links">
           <h4>Services</h4>
           <ul>
             <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery.html">Full Gallery</a></li>
+            <li><a href="/gallery">Full Gallery</a></li>
             <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/FAQ.html">FAQ</a></li>
-            <li><a href="/blog/best-photo-spots-charleston-sc/">Best Photo Spots</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
           </ul>
         </div>
 
@@ -536,6 +461,6 @@
     </div>
   </footer>
 
-  <script src="/scripts.js"></script></script>
+  <script src="/scripts.js"></script>
 </body>
 </html>

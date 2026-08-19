@@ -136,7 +136,6 @@
             border-radius: 10px;
             margin: 30px 0;
             box-shadow: var(--shadow);
-            border-left: 4px solid var(--secondary);
         }
 
         .shot-list-grid {
@@ -166,15 +165,14 @@
         }
 
         .lighting-tip {
-            background: #e8f5e9;
-            border-left: 4px solid #4caf50;
+            background: #f5f3f0;
             padding: 20px;
             margin: 30px 0;
             border-radius: 5px;
         }
 
         .culture-highlight {
-            background: #f3e5f5;
+            background: #f5f3f0;
             padding: 30px;
             border-radius: 10px;
             margin: 40px 0;
@@ -188,6 +186,10 @@
             margin: 40px 0;
             box-shadow: var(--shadow);
         }
+
+        .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
+        .faq-static h3 { margin: 0 0 10px; font-size: 1.2rem; color: var(--primary); }
+        .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
     </style>
   <script src="/analytics.js" defer></script>
 <script type="application/ld+json">
@@ -216,59 +218,39 @@
   ]
 }
 </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do vendors get their photos after a popup event?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I offer to send every vendor their photos after the event, since most need that content for their own marketing and social media."}}, {"@type": "Question", "name": "How do you handle unpredictable indoor lighting at popups?", "acceptedAnswer": {"@type": "Answer", "text": "I shoot in RAW so I have full control over color correction in post, and adjust ISO and aperture zone by zone as the venue's mixed lighting shifts."}}, {"@type": "Question", "name": "Can you photograph live performances and vendor booths in the same event?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I move through the room covering performers at peak energy, vendor setups, live art, and candid attendee moments within a single shoot."}}, {"@type": "Question", "name": "Will you photograph attendees without permission?", "acceptedAnswer": {"@type": "Answer", "text": "I focus on candid coverage of the event's atmosphere, and I respect any vendor's request not to photograph specific interactions, like customers mid-transaction."}}, {"@type": "Question", "name": "How fast do you deliver photos after a popup or fashion event?", "acceptedAnswer": {"@type": "Answer", "text": "Social-ready highlights typically go out within 48 hours, with the full curated gallery following within about a week."}}, {"@type": "Question", "name": "Do you photograph events outside DC, like Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Charleston is my primary market, and DMV events including DC, Maryland, and Northern Virginia remain available by request."}}]}</script>
   <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
       <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="/#portfolio">Portfolio</a></li>
         <li><a href="/blog/photography-pricing/">Pricing</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
         <li><a href="/#contact">Book Now</a></li>
       </ul>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
     </div>
   </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            
-            <a title="Open Visuals by Joshua" href="/index.html" class="logo">
-  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="49" height="40" decoding="async">
-  <span class="logo-text">Visuals by Joshua</span>
-</a>
-<div class="nav-menu" id="site-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a title="Go to the Visuals by Joshua homepage" href="/index.html" class="nav-link" aria-label="Go to the Visuals by Joshua homepage">Home</a></li>
-                    <li class="nav-item"><a title="Learn about Joshua Smith photography" href="/index.html#about" class="nav-link" aria-label="Learn about Joshua Smith photography">About</a></li>
-                    <li class="nav-item"><a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="nav-link" aria-label="View the Visuals by Joshua photography portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a title="View Charleston photography services" href="/index.html#services" class="nav-link" aria-label="View Charleston photography services">Services</a></li>
-                    <li class="nav-item"><a title="Read Visuals by Joshua client reviews" href="/index.html#testimonials" class="nav-link" aria-label="Read Visuals by Joshua client reviews">Reviews</a></li>
-                    <li class="nav-item"><a title="Read frequently asked photography questions" href="/faq" class="nav-link" aria-label="Read frequently asked photography questions">FAQ</a></li>
-                    <li class="nav-item"><a title="Contact Joshua Smith about booking photography" href="/index.html#contact" class="nav-link" aria-label="Contact Joshua Smith about booking photography">Contact</a></li>
-                    <li class="nav-item"><a title="Read Visuals by Joshua photography guides" href="/blog.html" class="nav-link" aria-label="Read Visuals by Joshua photography guides">Blog</a></li>
-                </ul>
-                <a title="Book a Charleston photography session with Joshua" href="/index.html#contact" class="btn nav-cta" aria-label="Book a Charleston photography session with Joshua">Book Now</a>
-            </div>
-            <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
-        </div>
-    </header>
 
     <!-- Blog Hero Section -->
-    <section class="article-hero"
+    <section class="article-hero hero-bg" style="--bg-url: url('/we-on-streets-live-art.webp');" id="main">
         <div class="blog-hero-content">
-            <h1 class="blog-hero-title">Streetwear Event Photography: Inside the We On The Streets Popup</h1>
+            <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Streetwear Event Photography: Inside the We On The Streets Popup</div>
+          <h1 class="blog-hero-title">Streetwear Event Photography: Inside the We On The Streets Popup</h1>
             <p class="blog-hero-subtitle">Shooting fashion, live art, and community at one of DC's best streetwear events</p>
 
             <div class="blog-meta">
@@ -315,7 +297,7 @@
                       <img src="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-performers-1200.jpg" srcset="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-performers-400.jpg 400w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-performers-800.jpg 800w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-performers-1200.jpg 1200w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-performers-1600.jpg 1600w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)" width="4000" height="5000" alt="Live performance at We On The Streets popup" loading="lazy" decoding="async">
                     </picture>
                     <div class="image-overlay">
-                        <h4>Live Performance Energy</h4>
+                        <h3>Live Performance Energy</h3>
                         <p>Performers brought the crowd to life between shopping</p>
                     </div>
                 </div>
@@ -327,7 +309,7 @@
                       <img src="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-venue-sign-1200.jpg" srcset="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-venue-sign-400.jpg 400w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-venue-sign-800.jpg 800w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-venue-sign-1200.jpg 1200w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-venue-sign-1600.jpg 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="4000" height="5000" alt="On The Street neon sign at popup event" loading="lazy" decoding="async">
                     </picture>
                     <div class="image-overlay">
-                        <h4>Branding and Atmosphere</h4>
+                        <h3>Branding and Atmosphere</h3>
                         <p>The signage set the tone from the moment you walked in</p>
                     </div>
                 </div>
@@ -339,7 +321,7 @@
                       <img src="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-vendors-1200.jpg" srcset="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-vendors-400.jpg 400w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-vendors-800.jpg 800w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-vendors-1200.jpg 1200w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-vendors-1600.jpg 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="4000" height="6000" alt="Streetwear vendors at We On The Streets" loading="lazy" decoding="async">
                     </picture>
                     <div class="image-overlay">
-                        <h4>Vendor Row</h4>
+                        <h3>Vendor Row</h3>
                         <p>Independent brands lined the room with original pieces</p>
                     </div>
                 </div>
@@ -436,13 +418,13 @@
                 </ul>
 
                 <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Lenses I Brought</h3>
-                <p class="blog-text">I ran a <strong>24-70mm f/2.8</strong> for most of the night. It covers vendor booths, group shots, and environmental portraits without needing to swap glass. I also had a <strong>50mm f/1.8</strong> for tighter portraits and detail work, and a <strong>16-35mm f/2.8</strong> for the wide venue shots that show the full scope of the event.</p>
+                <p class="blog-text">I ran a <a title="24-70mm f/2.8 lens overview" href="https://www.dpreview.com/lenses" target="_blank" rel="noopener"><strong>24-70mm f/2.8</strong></a> for most of the night. It covers vendor booths, group shots, and environmental portraits without needing to swap glass. I also had a <strong>50mm f/1.8</strong> for tighter portraits and detail work, and a <strong>16-35mm f/2.8</strong> for the wide venue shots that show the full scope of the event.</p>
             </div>
 
             <!-- Lighting Tip -->
             <div class="lighting-tip">
                 <h3>Working with Colored Venue Lighting</h3>
-                <p>The venue had heavy purple and blue LEDs running throughout the space. That looks great in person but it fights your white balance. I shot everything in RAW and handled the color correction in post. When I could, I positioned subjects near neutral light sources for more natural skin tones. But sometimes you lean into the colored light and let it become part of the aesthetic. At a streetwear event, that look works.</p>
+                <p>The venue had heavy purple and blue LEDs running throughout the space, the kind of mixed-source lighting <a title="Understanding white balance in mixed lighting" href="https://helpx.adobe.com/lightroom-classic/using/white-balance.html" target="_blank" rel="noopener">Lightroom's white balance tools</a> are built to handle in RAW. That looks great in person but it fights your white balance. I shot everything in RAW and handled the color correction in post. When I could, I positioned subjects near neutral light sources for more natural skin tones. But sometimes you lean into the colored light and let it become part of the aesthetic. At a streetwear event, that look works.</p>
             </div>
 
             <!-- Second Gallery -->
@@ -454,7 +436,7 @@
                       <img src="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-fashion-details-1200.jpg" srcset="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-fashion-details-400.jpg 400w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-fashion-details-800.jpg 800w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-fashion-details-1200.jpg 1200w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-fashion-details-1600.jpg 1600w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)" width="4000" height="6000" alt="Streetwear fashion details at popup" loading="lazy" decoding="async">
                     </picture>
                     <div class="image-overlay">
-                        <h4>The Details Matter</h4>
+                        <h3>The Details Matter</h3>
                         <p>"Talented, Respected and Prosperous" printed on fabric that means something</p>
                     </div>
                 </div>
@@ -466,7 +448,7 @@
                       <img src="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-community-1200.jpg" srcset="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-community-400.jpg 400w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-community-800.jpg 800w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-community-1200.jpg 1200w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-community-1600.jpg 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="4000" height="5000" alt="Community gathering at streetwear event" loading="lazy" decoding="async">
                     </picture>
                     <div class="image-overlay">
-                        <h4>Real Community</h4>
+                        <h3>Real Community</h3>
                         <p>People connecting over shared culture and shared taste</p>
                     </div>
                 </div>
@@ -478,7 +460,7 @@
                       <img src="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-1200.jpg" srcset="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-400.jpg 400w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-800.jpg 800w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-1200.jpg 1200w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-1600.jpg 1600w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="3555" height="4444" alt="Live art creation at We On The Streets" loading="lazy" decoding="async">
                     </picture>
                     <div class="image-overlay">
-                        <h4>Art in Progress</h4>
+                        <h3>Art in Progress</h3>
                         <p>Custom work created live during the event</p>
                     </div>
                 </div>
@@ -515,14 +497,51 @@
                     <h2 class="section-title">What I Took Away from This Shoot</h2>
                     <p class="blog-text">Events like <strong>We On The Streets</strong> remind me why I got into this work. You are not just documenting what happened. You are showing what it felt like to be in the room. The energy, the creativity, the community. That does not come from technical perfection. It comes from being present, moving with the event, and photographing real moments as they happen.</p>
 
-                    <p class="blog-text">If you are organizing a streetwear popup, a fashion show, or any kind of cultural event in the DMV, I want to hear about it. This is the kind of work I am built for.</p>
+                    <p class="blog-text">If you are organizing a streetwear popup, a fashion show, or any kind of cultural event in the DMV, I want to hear about it. This is the kind of work I am built for. I bring the same energy-first approach to Charleston work, like this <a title="Read the record store editorial fashion photography post" href="/blog/record-store-editorial-fashion-photography/">record store editorial fashion shoot</a>.</p>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="about-container" style="margin: 60px 0;">
+                <div class="about-content">
+                    <h2 class="section-title">Streetwear and Popup Event Photography FAQ</h2>
+
+                    <div class="faq-static">
+                        <h3>Do vendors get their photos after a popup event?</h3>
+                        <p>Yes. I offer to send every vendor their photos after the event, since most need that content for their own marketing and social media.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>How do you handle unpredictable indoor lighting at popups?</h3>
+                        <p>I shoot in RAW so I have full control over color correction in post, and adjust ISO and aperture zone by zone as the venue's mixed lighting shifts.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>Can you photograph live performances and vendor booths in the same event?</h3>
+                        <p>Yes. I move through the room covering performers at peak energy, vendor setups, live art, and candid attendee moments within a single shoot.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>Will you photograph attendees without permission?</h3>
+                        <p>I focus on candid coverage of the event's atmosphere, and I respect any vendor's request not to photograph specific interactions, like customers mid-transaction.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>How fast do you deliver photos after a popup or fashion event?</h3>
+                        <p>Social-ready highlights typically go out within 48 hours, with the full curated gallery following within about a week.</p>
+                    </div>
+
+                    <div class="faq-static">
+                        <h3>Do you photograph events outside DC, like Charleston?</h3>
+                        <p>Yes. Charleston is my primary market, and DMV events including DC, Maryland, and Northern Virginia remain available by request.</p>
+                    </div>
                 </div>
             </div>
 
             <!-- CTA Section -->
             <div class="location-highlight">
                 <h2 class="section-title">Book Event Photography in the DMV</h2>
-                <p class="blog-text">I photograph <strong>streetwear popups</strong>, <strong>fashion events</strong>, <strong>concerts</strong>, and <strong>cultural events</strong> throughout the DC, Maryland, and Virginia area. If you need a photographer who understands the culture and can move with the energy of your event, let's talk.</p>
+                <p class="blog-text">I photograph <strong>streetwear popups</strong>, <strong>fashion events</strong>, <strong>concerts</strong>, and <strong>cultural events</strong> throughout the DC, Maryland, and Virginia area. If you need a photographer who understands the culture and can move with the energy of your event, let's talk. For a look at another high-energy shoot with unpredictable lighting, see my <a title="Read the concert photography GZA Wu-Tang post" href="/blog/concert-photography-gza-wu-tang/">GZA concert photography breakdown</a>.</p>
 
                 <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Event Photography Services</h3>
                 <ul style="margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
@@ -551,63 +570,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    
-                    <a title="Open Joshua Smith" href="/index.html" class="footer-logo">
-  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="575" height="471" loading="lazy" decoding="async">
-  <span class="footer-logo-text">Joshua Smith</span>
-</a>
-<p class="footer-about">Professional photography services in Charleston, specializing in events, headshots, portraits, concerts, and graduation photography. DMV sessions are available by request.</p>
-                    <div class="footer-social">
-                        <a title="Visit Visuals by Joshua on Facebook" href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" aria-label="Visit Visuals by Joshua on Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a title="Visit Visuals by Joshua on Instagram" href="https://www.instagram.com/visuals_by_joshua" aria-label="Visit Visuals by Joshua on Instagram"><i class="fab fa-instagram"></i></a>
-                        <a title="Visit Joshua Smith on LinkedIn" href="https://www.linkedin.com/in/joshua-benjamin-smith" aria-label="Visit Joshua Smith on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a title="Go to the Visuals by Joshua homepage" href="/index.html" aria-label="Go to the Visuals by Joshua homepage"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a title="Learn about Joshua Smith photography" href="/index.html#about" aria-label="Learn about Joshua Smith photography"><i class="fas fa-chevron-right"></i> About</a></li>
-                        <li><a title="View Charleston photography services" href="/index.html#services" aria-label="View Charleston photography services"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
-                        <li><a title="Read Visuals by Joshua client testimonials" href="/index.html#testimonials" aria-label="Read Visuals by Joshua client testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
-                        <li><a title="Read frequently asked photography questions" href="/faq" aria-label="Read frequently asked photography questions"><i class="fas fa-chevron-right"></i> FAQ</a></li>
-                        <li><a title="Read Visuals by Joshua photography guides" href="/blog.html" aria-label="Read Visuals by Joshua photography guides"><i class="fas fa-chevron-right"></i> Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="footer-heading">Services</h3>
-                    <ul class="footer-links">
-<li><a title="View Charleston event photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Event Photography</a></li>
-<li><a title="View Charleston professional headshot services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Professional Headshots</a></li>
-<li><a title="View Charleston portrait photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Portrait Photography</a></li>
-<li><a title="View Charleston graduation photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Graduation Photography</a></li>
-<li><a title="View Charleston concert and music photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Concert & Music Photography</a></li>
-</ul>
-                </div>
-                <div class="footer-newsletter">
-                    <h3 class="footer-heading">Newsletter</h3>
-                    <p>Subscribe to receive photography tips, exclusive offers, and updates about special seasonal promotions.</p>
-                    <form class="newsletter-form">
-                        <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
-                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2026 Joshua Smith Photography. All Rights Reserved.</p>
-                <div class="footer-social">
-                    <a title="Read the Visuals by Joshua privacy policy" href="/privacy-policy.html" aria-label="Read the Visuals by Joshua privacy policy">Privacy Policy</a>
-                    <a title="Read the Visuals by Joshua terms of service" href="/terms-of-service.html" aria-label="Read the Visuals by Joshua terms of service">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <!-- Back to Top Button -->
     <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
@@ -660,16 +622,20 @@
             <a href="tel:+12403608465">(240) 360-8465</a><br>
             <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
           </p>
+          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
+            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
+            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
+          </div>
         </div>
 
         <div class="footer-links">
           <h4>Services</h4>
           <ul>
             <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery.html">Full Gallery</a></li>
+            <li><a href="/gallery">Full Gallery</a></li>
             <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/FAQ.html">FAQ</a></li>
-            <li><a href="/blog/best-photo-spots-charleston-sc/">Best Photo Spots</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
           </ul>
         </div>
 
@@ -690,6 +656,6 @@
     </div>
   </footer>
 
-  <script src="/scripts.js"></script></script>
+  <script src="/scripts.js"></script>
 </body>
 </html>

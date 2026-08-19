@@ -81,50 +81,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
       <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu">
+      <ul class="nav-menu" id="nav-menu">
         <li><a href="/#portfolio">Portfolio</a></li>
         <li><a href="/blog/photography-pricing/">Pricing</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
         <li><a href="/#contact">Book Now</a></li>
       </ul>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
     </div>
   </nav>
 
     
     <!-- Use your existing header -->
-    <header>
-    <div class="container header-container">
-      
-      <a title="Open Visuals by Joshua" href="/index.html" class="logo">
-  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="49" height="40" decoding="async">
-  <span class="logo-text">Visuals by Joshua</span>
-</a>
-<div class="nav-menu" id="site-nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a title="Go to the Visuals by Joshua homepage" href="/index.html" class="nav-link" aria-label="Go to the Visuals by Joshua homepage">Home</a></li>
-          <li class="nav-item"><a title="Learn about Joshua Smith photography" href="/index.html#about" class="nav-link" aria-label="Learn about Joshua Smith photography">About</a></li>
-          <li class="nav-item"><a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="nav-link" aria-label="View the Visuals by Joshua photography portfolio">Portfolio</a></li>
-          <li class="nav-item"><a title="View Charleston photography services" href="/index.html#services" class="nav-link" aria-label="View Charleston photography services">Services</a></li>
-          <li class="nav-item"><a title="View Charleston and DMV photography locations" href="/index.html#locations" class="nav-link" aria-label="View Charleston and DMV photography locations">Locations</a></li>
-          <li class="nav-item"><a title="Read Visuals by Joshua client reviews" href="/index.html#testimonials" class="nav-link" aria-label="Read Visuals by Joshua client reviews">Reviews</a></li>
-          <li class="nav-item"><a title="Read frequently asked photography questions" href="/faq" class="nav-link" aria-label="Read frequently asked photography questions">FAQ</a></li>
-          <li class="nav-item"><a title="Contact Joshua Smith about booking photography" href="/index.html#contact" class="nav-link" aria-label="Contact Joshua Smith about booking photography">Contact</a></li>
-          <li class="nav-item"><a title="Read Visuals by Joshua photography guides" href="/blog.html" class="nav-link" aria-current="page" aria-label="Read Visuals by Joshua photography guides">Blog</a></li>
-        </ul>
-        <a title="Book a Charleston photography session with Joshua" href="/index.html#contact" class="btn nav-cta" aria-label="Book a Charleston photography session with Joshua">Book Now</a>
-      </div>
-      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-    </div>
-  </header>
 
     <main id="main">
     <!-- Blog Header -->
@@ -153,6 +131,24 @@
 
             <!-- Blog Posts Grid -->
             <div class="blog-grid">
+
+<article class="blog-card" data-category="portraits">
+    <div class="blog-image">
+        <picture>
+          <source type="image/avif" srcset="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-400.avif 400w, /images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.avif 800w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
+          <source type="image/webp" srcset="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-400.webp 400w, /images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.webp 800w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
+          <img src="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.jpg" srcset="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-400.jpg 400w, /images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.jpg 800w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1586" height="1982" alt="Two models flipping through vinyl records in a Charleston record store, editorial fashion photography" loading="lazy" decoding="async">
+        </picture>
+    </div>
+    <div class="blog-content">
+        <div class="blog-date">August 18, 2026</div>
+        <h2 class="blog-title">Editorial Fashion Photography Inside a Record Store</h2>
+        <p class="blog-excerpt">Styling, low-light technique, and directing candid energy between two models for a shoot built entirely around a found location.</p>
+        <a title="Read Editorial Fashion Photography Inside a Record Store" href="/blog/record-store-editorial-fashion-photography/" class="read-more" aria-label="Read Editorial Fashion Photography Inside a Record Store">
+            Read Guide <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</article>
 
 <!-- July 2026 Article Pack Start -->
 <article class="blog-card" data-category="education events">
@@ -213,7 +209,7 @@
 
 <article class="blog-card" data-category="locations graduations">
     <div class="blog-image">
-        <img height="640" width="960" src="/images/optimized/home/charleston-graduation-photography-960.jpg" alt="College of Charleston graduation portrait in Charleston South Carolina" loading="lazy" decoding="async">
+        <img height="972" width="960" src="/images/optimized/home/charleston-graduation-photography-960.jpg" alt="College of Charleston graduation portrait in Charleston South Carolina" loading="lazy" decoding="async">
     </div>
     <div class="blog-content">
         <div class="blog-date">July 11, 2026</div>
@@ -374,7 +370,7 @@
 
 <article class="blog-card" data-category="business portraits">
     <div class="blog-image">
-        <img height="455" width="960" src="/images/optimized/home/charleston-headshot-photographer-960.jpg" alt="Charleston professional headshot portrait with clean background" loading="lazy" decoding="async">
+        <img height="600" width="400" src="/images/optimized/root/headshot1-400.jpg" alt="Charleston professional headshot portrait with clean background" loading="lazy" decoding="async">
     </div>
     <div class="blog-content">
         <div class="blog-date">May 3, 2026</div>
@@ -478,7 +474,7 @@
 
 <article class="blog-card" data-category="portraits business">
     <div class="blog-image">
-        <img height="455" width="960" src="/images/optimized/home/charleston-headshot-photographer-960.jpg" alt="Charleston professional headshot portrait with clean background" loading="lazy" decoding="async">
+        <img height="600" width="400" src="/images/optimized/root/headshot1-400.jpg" alt="Charleston professional headshot portrait with clean background" loading="lazy" decoding="async">
     </div>
     <div class="blog-content">
         <div class="blog-date">May 2, 2026</div>
@@ -493,9 +489,9 @@
 <article class="blog-card" data-category="couples locations">
     <div class="blog-image">
         <picture>
-          <source type="image/avif" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.avif 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.avif 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.webp 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.webp 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.jpg 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.jpg 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1216" alt="Charleston engagement photography at Cypress Gardens" loading="lazy" decoding="async">
+          <source type="image/avif" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-213.avif 213w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
+          <source type="image/webp" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-213.webp 213w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
+          <img src="/images/optimized/couples/cypress-gardens-engagement-shoot-213.jpg" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-213.jpg 213w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="213" height="339" alt="Charleston engagement photography at Cypress Gardens" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -561,9 +557,9 @@
 <article class="blog-card" data-category="couples locations">
     <div class="blog-image">
         <picture>
-          <source type="image/avif" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.avif 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.avif 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.webp 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.webp 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.jpg 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.jpg 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1660" alt="Anniversary photography in downtown Charleston" loading="lazy" decoding="async">
+          <source type="image/avif" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-263.avif 263w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
+          <source type="image/webp" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-263.webp 263w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
+          <img src="/images/optimized/couples/charleston-anniversary-couple-downtown-263.jpg" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-263.jpg 263w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="263" height="339" alt="Anniversary photography in downtown Charleston" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -581,7 +577,7 @@
         <picture>
           <source type="image/avif" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.avif 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.avif 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
           <source type="image/webp" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.webp 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.webp 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.jpg" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.jpg 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.jpg 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="2622" alt="Charleston spring portrait session under oak trees" loading="lazy" decoding="async">
+          <img src="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.jpg" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.jpg 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.jpg 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Charleston spring portrait session under oak trees" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -620,7 +616,7 @@
         <picture>
           <source type="image/avif" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.avif 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.avif 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
           <source type="image/webp" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.webp 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.webp 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.jpg" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.jpg 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.jpg 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="2622" alt="Charleston spring graduation portrait session under oak trees" loading="lazy" decoding="async">
+          <img src="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.jpg" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.jpg 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.jpg 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Charleston spring graduation portrait session under oak trees" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -657,7 +653,7 @@
         <picture>
           <source type="image/avif" srcset="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-400.avif 400w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.avif 800w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
           <source type="image/webp" srcset="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-400.webp 400w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.webp 800w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.jpg" srcset="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-400.jpg 400w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.jpg 800w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="2622" alt="Shutter drag creative portrait photography in Charleston" loading="lazy" decoding="async">
+          <img src="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.jpg" srcset="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-400.jpg 400w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.jpg 800w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Shutter drag creative portrait photography in Charleston" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -676,7 +672,7 @@
         <picture>
           <source type="image/avif" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.avif 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.avif 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
           <source type="image/webp" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.webp 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.webp 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.jpg" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.jpg 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.jpg 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="2622" alt="Multicultural student graduation night photography in Charleston" loading="lazy" decoding="async">
+          <img src="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.jpg" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.jpg 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.jpg 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Multicultural student graduation night photography in Charleston" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -695,7 +691,7 @@
         <picture>
           <source type="image/avif" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.avif 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.avif 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
           <source type="image/webp" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.webp 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.webp 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.jpg" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.jpg 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.jpg 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="2622" alt="Philadelphia street photography at Reading Terminal Market and Chinatown" loading="lazy" decoding="async">
+          <img src="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.jpg" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.jpg 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.jpg 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Philadelphia street photography at Reading Terminal Market and Chinatown" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -714,7 +710,7 @@
         <picture>
           <source type="image/avif" srcset="/images/optimized/newblogimages/world-pride-dc-event-photography-400.avif 400w, /images/optimized/newblogimages/world-pride-dc-event-photography-800.avif 800w, /images/optimized/newblogimages/world-pride-dc-event-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
           <source type="image/webp" srcset="/images/optimized/newblogimages/world-pride-dc-event-photography-400.webp 400w, /images/optimized/newblogimages/world-pride-dc-event-photography-800.webp 800w, /images/optimized/newblogimages/world-pride-dc-event-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/world-pride-dc-event-photography-1200.jpg" srcset="/images/optimized/newblogimages/world-pride-dc-event-photography-400.jpg 400w, /images/optimized/newblogimages/world-pride-dc-event-photography-800.jpg 800w, /images/optimized/newblogimages/world-pride-dc-event-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="2622" alt="World Pride DC event photography in Washington DC" loading="lazy" decoding="async">
+          <img src="/images/optimized/newblogimages/world-pride-dc-event-photography-1200.jpg" srcset="/images/optimized/newblogimages/world-pride-dc-event-photography-400.jpg 400w, /images/optimized/newblogimages/world-pride-dc-event-photography-800.jpg 800w, /images/optimized/newblogimages/world-pride-dc-event-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="World Pride DC event photography in Washington DC" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -733,7 +729,7 @@
         <picture>
           <source type="image/avif" srcset="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-400.avif 400w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.avif 800w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
           <source type="image/webp" srcset="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-400.webp 400w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.webp 800w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.jpg" srcset="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-400.jpg 400w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.jpg 800w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="2622" alt="Charleston historic district graduation portrait photography" loading="lazy" decoding="async">
+          <img src="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.jpg" srcset="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-400.jpg 400w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.jpg 800w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Charleston historic district graduation portrait photography" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -752,7 +748,7 @@
         <picture>
           <source type="image/avif" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.avif 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.avif 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
           <source type="image/webp" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.webp 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.webp 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.jpg" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.jpg 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.jpg 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="2622" alt="Masters graduation photography at DC monuments in Washington" loading="lazy" decoding="async">
+          <img src="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.jpg" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.jpg 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.jpg 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Masters graduation photography at DC monuments in Washington" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -771,7 +767,7 @@
         <picture>
           <source type="image/avif" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.avif 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.avif 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
           <source type="image/webp" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.webp 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.webp 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.jpg" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.jpg 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.jpg 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="2622" alt="Doctoral graduation photography at DC monuments and the Lincoln Memorial" loading="lazy" decoding="async">
+          <img src="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.jpg" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.jpg 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.jpg 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Doctoral graduation photography at DC monuments and the Lincoln Memorial" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -790,7 +786,7 @@
         <picture>
           <source type="image/avif" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.avif 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.avif 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
           <source type="image/webp" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.webp 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.webp 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.jpg 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.jpg 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="2622" alt="Sullivan's Island Birthday Portrait Photography Charleston" loading="lazy" decoding="async">
+          <img src="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.jpg 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.jpg 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Sullivan's Island Birthday Portrait Photography Charleston" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -809,7 +805,7 @@
         <picture>
           <source type="image/avif" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.avif 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.avif 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
           <source type="image/webp" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.webp 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.webp 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.jpg" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.jpg 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.jpg 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="2622" alt="FIJI Y2K Party Event Photography Lo-Fi Brewing Charleston" loading="lazy" decoding="async">
+          <img src="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.jpg" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.jpg 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.jpg 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="FIJI Y2K Party Event Photography Lo-Fi Brewing Charleston" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -902,9 +898,9 @@
 <article class="blog-card" data-category="couples">
     <div class="blog-image">
         <picture>
-          <source type="image/avif" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.avif 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.avif 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.webp 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.webp 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.jpg 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.jpg 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1216" alt="Engagement Photography at Cypress Gardens Charleston" loading="lazy" decoding="async">
+          <source type="image/avif" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-213.avif 213w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
+          <source type="image/webp" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-213.webp 213w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
+          <img src="/images/optimized/couples/cypress-gardens-engagement-shoot-213.jpg" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-213.jpg 213w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="213" height="339" alt="Engagement Photography at Cypress Gardens Charleston" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -921,9 +917,9 @@
 <article class="blog-card" data-category="couples">
     <div class="blog-image">
         <picture>
-          <source type="image/avif" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.avif 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.avif 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.webp 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.webp 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.jpg 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.jpg 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1660" alt="Anniversary Photography Downtown Charleston" loading="lazy" decoding="async">
+          <source type="image/avif" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-263.avif 263w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
+          <source type="image/webp" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-263.webp 263w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
+          <img src="/images/optimized/couples/charleston-anniversary-couple-downtown-263.jpg" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-263.jpg 263w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="263" height="339" alt="Anniversary Photography Downtown Charleston" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -959,9 +955,9 @@
 <article class="blog-card" data-category="concerts">
     <div class="blog-image">
         <picture>
-          <source type="image/avif" srcset="/images/optimized/concerts/gza-wu-tang-concert-photography-400.avif 400w, /images/optimized/concerts/gza-wu-tang-concert-photography-800.avif 800w, /images/optimized/concerts/gza-wu-tang-concert-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/concerts/gza-wu-tang-concert-photography-400.webp 400w, /images/optimized/concerts/gza-wu-tang-concert-photography-800.webp 800w, /images/optimized/concerts/gza-wu-tang-concert-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/concerts/gza-wu-tang-concert-photography-1200.jpg" srcset="/images/optimized/concerts/gza-wu-tang-concert-photography-400.jpg 400w, /images/optimized/concerts/gza-wu-tang-concert-photography-800.jpg 800w, /images/optimized/concerts/gza-wu-tang-concert-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="2622" alt="Concert Photography GZA Wu-Tang Clan" loading="lazy" decoding="async">
+          <source type="image/avif" srcset="/images/optimized/concerts/gza-wu-tang-concert-photography-400.avif 400w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
+          <source type="image/webp" srcset="/images/optimized/concerts/gza-wu-tang-concert-photography-400.webp 400w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
+          <img src="/images/optimized/concerts/gza-wu-tang-concert-photography-400.jpg" srcset="/images/optimized/concerts/gza-wu-tang-concert-photography-400.jpg 400w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Concert Photography GZA Wu-Tang Clan" loading="lazy" decoding="async">
         </picture>
     </div>
     <div class="blog-content">
@@ -1103,7 +1099,11 @@
 
 
                 <!-- Add new blog posts here as you create them -->
-                
+
+            </div>
+            <div class="blog-load-more-row">
+                <p class="blog-load-more-count" id="blog-load-more-count"></p>
+                <button type="button" class="btn btn-secondary" id="blog-load-more">Load More Posts</button>
             </div>
         </div>
     </section>
@@ -1114,8 +1114,11 @@
             <div class="newsletter-content">
                 <h2>Get Photography Tips & Special Offers</h2>
                 <p>Join the newsletter for Charleston photography tips, seasonal booking notes, and occasional DMV availability updates.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
+                <form class="newsletter-form" action="https://formsubmit.co/jbmsmusic05@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New newsletter signup">
+                    <input type="hidden" name="_next" value="https://visualsbyjoshua.com/thankyou.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="email" name="email" placeholder="Your email address" required>
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
@@ -1123,64 +1126,6 @@
     </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            
-            <a title="Open Joshua Smith" href="/index.html" class="footer-logo">
-  <img src="/Logo.webp" alt="Visuals by Joshua logo" width="575" height="471" loading="lazy" decoding="async">
-  <span class="footer-logo-text">Joshua Smith</span>
-</a>
-<p class="footer-about">Professional photography services in Charleston, specializing in events, headshots, portraits, and graduation photography with a focus on quality and customer satisfaction.</p>
-            <div class="footer-social">
-              <a title="Visit Visuals by Joshua on Facebook" href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" aria-label="Visit Visuals by Joshua on Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a title="Visit Visuals by Joshua on Instagram" href="https://www.instagram.com/visuals_by_joshua" aria-label="Visit Visuals by Joshua on Instagram"><i class="fab fa-instagram"></i></a>
-              <a title="Visit Joshua Smith on LinkedIn" href="https://www.linkedin.com/in/joshua-benjamin-smith" aria-label="Visit Joshua Smith on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-          <div>
-            <h3 class="footer-heading">Quick Links</h3>
-            <ul class="footer-links">
-              <li><a title="Go to the Visuals by Joshua homepage" href="/index.html" aria-label="Go to the Visuals by Joshua homepage"><i class="fas fa-chevron-right"></i> Home</a></li>
-              <li><a title="Learn about Joshua Smith photography" href="/index.html#about" aria-label="Learn about Joshua Smith photography"><i class="fas fa-chevron-right"></i> About</a></li>
-              <li><a title="View Charleston photography services" href="/index.html#services" aria-label="View Charleston photography services"><i class="fas fa-chevron-right"></i> Services</a></li>
-              <li><a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
-              <li><a title="Read Visuals by Joshua client testimonials" href="/index.html#testimonials" aria-label="Read Visuals by Joshua client testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
-              <li><a title="Read frequently asked photography questions" href="/faq" aria-label="Read frequently asked photography questions"><i class="fas fa-chevron-right"></i> FAQ</a></li>
-              <li><a title="Read Visuals by Joshua photography guides" href="/blog.html" aria-label="Read Visuals by Joshua photography guides"><i class="fas fa-chevron-right"></i> Blog</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="footer-heading">Services</h3>
-            <ul class="footer-links">
-<li><a title="View Charleston event photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Event Photography</a></li>
-<li><a title="View Charleston professional headshot services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Professional Headshots</a></li>
-<li><a title="View Charleston portrait photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Portrait Photography</a></li>
-<li><a title="View Charleston graduation photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Graduation Photography</a></li>
-<li><a title="View Charleston couples and engagement photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Couples & Engagement</a></li>
-<li><a title="View Charleston concert and music photography services" href="/index.html#services"><i class="fas fa-chevron-right"></i> Concert & Music Photography</a></li>
-</ul>
-          </div>
-          <div class="footer-newsletter">
-            <h3 class="footer-heading">Newsletter</h3>
-            <p>Subscribe to receive photography tips, exclusive offers, and updates about special seasonal promotions.</p>
-            <form class="newsletter-form">
-              <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
-              <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
-            </form>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p class="copyright">© 2026 Joshua Smith Photography. All Rights Reserved.</p>
-          <div class="footer-social">
-            <a title="Read the Visuals by Joshua privacy policy" href="/privacy-policy.html" aria-label="Read the Visuals by Joshua privacy policy">Privacy Policy</a>
-            <a title="Read the Visuals by Joshua terms of service" href="/terms-of-service.html" aria-label="Read the Visuals by Joshua terms of service">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-    </footer>
 
     <script>
         const blogGrid = document.querySelector('.blog-grid');
@@ -1203,29 +1148,70 @@
             });
         }
 
-        // Category filtering
+        // Category filtering + pagination — 55 posts in one unpaginated
+        // scroll made the page ~38,000px tall on mobile. Category filter
+        // previously only toggled display:none, so switching categories
+        // never actually reduced how much the page had already rendered.
+        // This shows a page at a time, re-paginating from the top of the
+        // currently-filtered set whenever the category changes.
         const categoryBtns = document.querySelectorAll('.category-btn');
-        const blogCards = document.querySelectorAll('.blog-card');
+        const blogCards = Array.from(document.querySelectorAll('.blog-card'));
+        const loadMoreBtn = document.getElementById('blog-load-more');
+        const loadMoreCount = document.getElementById('blog-load-more-count');
+        const PAGE_SIZE = 12;
+
+        let currentCategory = 'all';
+        let visibleCount = PAGE_SIZE;
+
+        function filteredCards() {
+            return blogCards.filter(card => {
+                if (currentCategory === 'all') return true;
+                return card.dataset.category.split(/\s+/).includes(currentCategory);
+            });
+        }
+
+        function renderBlogGrid() {
+            const filtered = filteredCards();
+            const filteredSet = new Set(filtered);
+
+            blogCards.forEach(card => {
+                card.style.display = filteredSet.has(card) ? '' : 'none';
+            });
+            filtered.forEach((card, i) => {
+                card.style.display = i < visibleCount ? 'block' : 'none';
+            });
+
+            const shown = Math.min(visibleCount, filtered.length);
+            if (loadMoreCount) {
+                loadMoreCount.textContent = filtered.length
+                    ? `Showing ${shown} of ${filtered.length} posts`
+                    : 'No posts in this category yet';
+            }
+            if (loadMoreBtn) {
+                loadMoreBtn.style.display = shown < filtered.length ? 'inline-block' : 'none';
+            }
+        }
 
         categoryBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Update active button
                 categoryBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
 
-                // Filter posts
-                const category = btn.dataset.category;
-                blogCards.forEach(card => {
-                    const categories = card.dataset.category.split(/\s+/);
-
-                    if (category === 'all' || categories.includes(category)) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
+                currentCategory = btn.dataset.category;
+                visibleCount = PAGE_SIZE;
+                renderBlogGrid();
+                document.querySelector('.blog-grid-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
+
+        if (loadMoreBtn) {
+            loadMoreBtn.addEventListener('click', () => {
+                visibleCount += PAGE_SIZE;
+                renderBlogGrid();
+            });
+        }
+
+        renderBlogGrid();
 
         // Mobile navigation
         const hamburger = document.querySelector('.hamburger');
@@ -1265,16 +1251,20 @@
             <a href="tel:+12403608465">(240) 360-8465</a><br>
             <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
           </p>
+          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
+            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
+            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
+          </div>
         </div>
 
         <div class="footer-links">
           <h4>Services</h4>
           <ul>
             <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery.html">Full Gallery</a></li>
+            <li><a href="/gallery">Full Gallery</a></li>
             <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/FAQ.html">FAQ</a></li>
-            <li><a href="/blog/best-photo-spots-charleston-sc/">Best Photo Spots</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
           </ul>
         </div>
 
