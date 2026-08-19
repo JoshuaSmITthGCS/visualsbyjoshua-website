@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- SEO Meta Tags -->
+    <!-- SEO Meta Tags -->
     <title>Smithsonian Portrait Photography Guide | DC</title>
     <meta name="description" content="Professional portrait photography session at the Smithsonian Castle and Hirshhorn Museum in Washington DC. Location guide and posing tips from Joshua Smith.">
     <meta name="author" content="Joshua Smith">
@@ -13,8 +13,8 @@
 
     <!-- OG Tags -->
     <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Visuals by Joshua">
-  <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Visuals by Joshua">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://visualsbyjoshua.com/blog/smithsonian-portrait-photography/" />
     <meta property="og:title" content="Portrait Photography at the Smithsonian DC: Location Guide and Posing Tips" />
     <meta property="og:description" content="Behind the scenes of a professional portrait session at DC's Smithsonian Castle and Hirshhorn Museum with posing techniques and location tips." />
@@ -27,14 +27,10 @@
     <meta name="twitter:description" content="Behind the scenes of a professional portrait session at DC's Smithsonian Castle and Hirshhorn Museum with posing techniques and location tips." />
     <meta name="twitter:image" content="https://visualsbyjoshua.com/smithsonian-portrait-hero.webp" />
 
-    <!-- Fonts -->
+    <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Shared Blog Styles -->
-    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Schema.org markup -->
     <script type="application/ld+json">
@@ -69,466 +65,900 @@
         ]
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://visualsbyjoshua.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://visualsbyjoshua.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Portrait Photography at the Smithsonian DC: Location Guide and Posing Tips",
+          "item": "https://visualsbyjoshua.com/blog/smithsonian-portrait-photography/"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need a permit to shoot portraits at the Smithsonian?", "acceptedAnswer": {"@type": "Answer", "text": "No, not for a small personal portrait session with handheld gear. Larger productions with lighting stands or props may need one, and I know which areas require it."}}, {"@type": "Question", "name": "Is there a fee to use the Smithsonian grounds?", "acceptedAnswer": {"@type": "Answer", "text": "No. The Smithsonian grounds are free for personal photography, including the Castle exterior, gardens, and the Hirshhorn sculpture garden."}}, {"@type": "Question", "name": "What is the best time to avoid tourist crowds?", "acceptedAnswer": {"@type": "Answer", "text": "Sunrise to 8 AM gives you the emptiest grounds and the softest light. By midday, foot traffic picks up significantly around the Castle and National Mall."}}, {"@type": "Question", "name": "What happens if it rains on my session day?", "acceptedAnswer": {"@type": "Answer", "text": "I keep weather backup plans ready. If it rains, we move indoors or reschedule so the session still delivers strong images."}}, {"@type": "Question", "name": "Can we visit multiple Smithsonian-area locations in one session?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Castle, Hirshhorn Museum, National Gallery of Art, and Enid A. Haupt Garden are all within a short walk, so a 60 to 90 minute session can cover several distinct backdrops."}}, {"@type": "Question", "name": "How much does a Smithsonian portrait session cost?", "acceptedAnswer": {"@type": "Answer", "text": "Sessions start at $250 for one hour, with extended time and additional locations available. See the DMV photography pricing guide for full details."}}]}</script>
+
+    <script src="/analytics.js" defer></script>
 
     <style>
-        .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-        }
-        @media (min-width: 800px) {
-          .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-          }
+        /* ========================================
+           RESET & BASE (matches homepage design system)
+           ======================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
         }
 
-        .portrait-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #2a2a2a;
+            background-color: #fcfbfa;
+            overflow-x: hidden;
         }
 
-        .portrait-item {
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s ease; }
+        a:hover { opacity: 0.7; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: #2a2a2a;
+            color: #fff;
+            padding: 12px 22px;
+            z-index: 1000;
+            border-radius: 0 0 8px 0;
+            font-size: 0.9rem;
+        }
+        .skip-link:focus { left: 0; }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(252, 251, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px clamp(20px, 5vw, 80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+
+        .nav-menu { display: flex; gap: 40px; list-style: none; }
+        .nav-menu a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2a2a2a;
+        }
+        .nav-menu a:hover { color: #be976d; opacity: 1; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+        }
+        .nav-toggle-bar {
+            width: 22px;
+            height: 2px;
+            background: #2a2a2a;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: #fcfbfa;
+                border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+                padding: 8px 0 16px;
+                transform: translateY(-12px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.25s ease;
+            }
+            .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-menu a { display: block; padding: 14px 20px; }
+            .nav-toggle { display: flex; }
+        }
+
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        p { font-size: 1rem; line-height: 1.8; }
+
+        .kicker {
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #be976d;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* ========================================
+           LAYOUT PRIMITIVES
+           ======================================== */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .btn-ghost {
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            color: #ffffff;
+            background: transparent;
+        }
+        .btn-ghost:hover { background: rgba(255, 255, 255, 0.15); opacity: 1; }
+        .btn-primary {
+            background: #be976d;
+            color: #ffffff;
+            border: 2px solid #be976d;
+        }
+        .btn-primary:hover {
+            background: #a67f5a;
+            border-color: #a67f5a;
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #2a2a2a;
+            border: 2px solid #2a2a2a;
+        }
+        .btn-secondary:hover { background: #2a2a2a; color: #fcfbfa; opacity: 1; }
+
+        /* ========================================
+           ARTICLE HERO
+           ======================================== */
+        .article-hero {
             position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            transition: transform 0.3s ease;
-        }
-
-        .portrait-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .portrait-item img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            min-height: 64vh;
+            margin-top: 80px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(20,18,15,0.15) 0%, rgba(20,18,15,0.55) 100%), url('/smithsonian-portrait-hero.webp') center 35% / cover no-repeat;
+        }
+        @media (max-width: 768px) { .article-hero { margin-top: 68px; min-height: 56vh; } }
+
+        .article-hero-content {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            width: 100%;
+            padding: 60px clamp(20px, 5vw, 80px) 56px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
-        .posing-tip {
-            background: var(--light);
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 5px;
+        .breadcrumb {
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 18px;
+        }
+        .breadcrumb a { color: #ffffff; }
+        .breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+        .article-hero h1 {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            font-style: italic;
+            letter-spacing: -0.01em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            max-width: 900px;
+            margin-bottom: 1rem;
         }
 
-        .location-highlight {
-            background: white;
-            padding: 30px;
+        .article-hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 300;
+            max-width: 640px;
+            opacity: 0.95;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            margin-top: 30px;
+            font-size: 0.8125rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* ========================================
+           ARTICLE BODY
+           ======================================== */
+        .article-body {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
+        }
+
+        .article-body h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-style: italic;
+            margin: 3.25rem 0 1.25rem;
+            scroll-margin-top: 96px;
+        }
+        .article-body h2:first-of-type { margin-top: 0; }
+
+        .article-body h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #2a2a2a;
+            margin: 2.25rem 0 1rem;
+            padding-left: 16px;
+            border-left: 3px solid #be976d;
+        }
+
+        /* First paragraph after a heading reads as a lede: slightly heavier weight
+           gives skimmers a scan-anchor without adding another visual element. */
+        .article-body h2 + p {
+            font-weight: 500;
+            font-size: 1.0625rem;
+            color: #2a2a2a;
+        }
+
+        .article-body p { margin-bottom: 1.5rem; color: #3a3630; }
+
+        .article-body ul {
+            margin: 0 0 1.75rem 1.25rem;
+            line-height: 2;
+            color: #3a3630;
+        }
+
+        .article-body a {
+            color: #7d5732;
+            border-bottom: 1px solid rgba(190, 151, 109, 0.5);
+        }
+        .article-body a:hover { opacity: 1; border-color: #be976d; }
+
+        .article-body strong { font-weight: 600; color: #2a2a2a; }
+
+        .article-figure { margin: 3rem 0; text-align: center; }
+        .article-figure img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
             border-radius: 10px;
-            box-shadow: var(--shadow);
-            margin: 40px 0;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            margin: 0 auto;
+        }
+        .article-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.875rem;
+            font-style: italic;
+            color: #63594e;
         }
 
-        .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
-        .faq-static h3 { margin: 0 0 10px; font-size: 1.2rem; color: var(--primary); }
-        .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
+        /* ========================================
+           SESSION TABLE (Best-time-of-day reference)
+           ======================================== */
+        .article-body table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 0 1.75rem;
+            font-size: 0.9375rem;
+        }
+        .article-body th {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 500;
+        }
+        .article-body td {
+            padding: 14px 16px;
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+            color: #3a3630;
+        }
+        .article-body tbody tr:nth-child(even) { background: #f5f3f0; }
+
+        /* ========================================
+           PULL QUOTE
+           ======================================== */
+        .pull-quote {
+            margin: 3.5rem 0;
+            padding-left: 28px;
+            border-left: 3px solid #be976d;
+        }
+        .pull-quote p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+            line-height: 1.35;
+            color: #2a2a2a;
+            margin: 0;
+        }
+
+        /* ========================================
+           COLLAPSIBLE SECTIONS (native <details>, no JS dependency)
+           ======================================== */
+        .toc-box {
+            margin-bottom: 3rem;
+            padding: 22px 26px;
+            background: #f5f3f0;
+            border-radius: 10px;
+        }
+        .toc-box summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.15rem;
+            color: #2a2a2a;
+        }
+        .toc-box summary::-webkit-details-marker { display: none; }
+        .toc-box summary::after {
+            content: '+';
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .toc-box[open] summary::after { transform: rotate(45deg); }
+        .toc-list {
+            list-style: none;
+            margin: 18px 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 24px;
+        }
+        @media (max-width: 560px) { .toc-list { grid-template-columns: 1fr; } }
+        .toc-list a {
+            font-size: 0.9375rem;
+            color: #5a564e;
+            border-bottom: none;
+        }
+        .toc-list a:hover { color: #7d5732; opacity: 1; }
+
+        /* ========================================
+           FAQ
+           ======================================== */
+        .faq-item {
+            padding: 4px 0;
+            border-top: 1px solid rgba(42, 42, 42, 0.1);
+        }
+        .faq-item:last-child { border-bottom: 1px solid rgba(42, 42, 42, 0.1); }
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            flex-shrink: 0;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .faq-item[open] summary::after { transform: rotate(45deg); }
+        .faq-item p { margin: 0 0 22px; color: #5a564e; }
+
+        /* ========================================
+           CTA BANNER
+           ======================================== */
+        .cta-banner {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: clamp(60px, 8vw, 90px) 0;
+            text-align: center;
+        }
+        .cta-banner .container { max-width: 700px; }
+        .cta-banner h2 { color: #ffffff; font-style: italic; margin-bottom: 1.25rem; }
+        .cta-banner p { color: rgba(255, 255, 255, 0.85); margin-bottom: 2rem; }
+        .cta-banner p a { color: #d9b48f; border-bottom: 1px solid rgba(217, 180, 143, 0.5); }
+        .cta-banner p a:hover { opacity: 1; }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer { background: #2a2a2a; color: #ffffff; padding: 60px 0 110px; }
+        @media (min-width: 769px) { .footer { padding-bottom: 30px; } }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p { font-size: 0.9375rem; opacity: 0.8; }
+        .footer-links h4 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { font-size: 0.9375rem; opacity: 0.8; transition: opacity 0.3s ease; }
+        .footer-links a:hover { opacity: 1; }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+            font-size: 0.875rem;
+            opacity: 0.7;
+        }
+
+        /* ========================================
+           BACK TO TOP
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 90;
+        }
+        .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .back-to-top:hover { opacity: 0.85; background: #be976d; }
+
+        /* ========================================
+           SCROLL REVEAL
+           ======================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+        }
     </style>
-  <script src="/analytics.js" defer></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://visualsbyjoshua.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://visualsbyjoshua.com/blog.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Portrait Photography at the Smithsonian DC: Location Guide and Posing Tips",
-      "item": "https://visualsbyjoshua.com/blog/smithsonian-portrait-photography/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need a permit to shoot portraits at the Smithsonian?", "acceptedAnswer": {"@type": "Answer", "text": "No, not for a small personal portrait session with handheld gear. Larger productions with lighting stands or props may need one, and I know which areas require it."}}, {"@type": "Question", "name": "Is there a fee to use the Smithsonian grounds?", "acceptedAnswer": {"@type": "Answer", "text": "No. The Smithsonian grounds are free for personal photography, including the Castle exterior, gardens, and the Hirshhorn sculpture garden."}}, {"@type": "Question", "name": "What is the best time to avoid tourist crowds?", "acceptedAnswer": {"@type": "Answer", "text": "Sunrise to 8 AM gives you the emptiest grounds and the softest light. By midday, foot traffic picks up significantly around the Castle and National Mall."}}, {"@type": "Question", "name": "What happens if it rains on my session day?", "acceptedAnswer": {"@type": "Answer", "text": "I keep weather backup plans ready. If it rains, we move indoors or reschedule so the session still delivers strong images."}}, {"@type": "Question", "name": "Can we visit multiple Smithsonian-area locations in one session?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Castle, Hirshhorn Museum, National Gallery of Art, and Enid A. Haupt Garden are all within a short walk, so a 60 to 90 minute session can cover several distinct backdrops."}}, {"@type": "Question", "name": "How much does a Smithsonian portrait session cost?", "acceptedAnswer": {"@type": "Answer", "text": "Sessions start at $250 for one hour, with extended time and additional locations available. See the DMV photography pricing guide for full details."}}]}</script>
-  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/blog/photography-pricing/">Pricing</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
-        <li><a href="/#contact">Book Now</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </nav>
+    <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
 
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Visuals by Joshua</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/blog/photography-pricing/">Pricing</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+                <li><a href="/#contact">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Blog Hero Section -->
-    <section class="article-hero hero-bg" style="--bg-url: url('/smithsonian-portrait-hero.webp');" id="main">
-        <div class="blog-hero-content">
+    <!-- Article Hero -->
+    <section class="article-hero" id="main">
+        <div class="article-hero-content">
             <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Portrait Photography at the Smithsonian DC: Location Guide and Posing Tips</div>
-          <h1 class="blog-hero-title">Portrait Photography at the Smithsonian DC: Location Guide and Posing Tips</h1>
-            <p class="blog-hero-subtitle">What I learned shooting portraits at the Smithsonian Castle and Hirshhorn Museum on the National Mall</p>
-
-            <div class="blog-meta">
-                <div class="meta-item">
-                    <i class="fas fa-user"></i>
-                    <span>By Joshua Smith</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-calendar"></i>
-                    <span>July 9th, 2025</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i>
-                    <span>8 min read</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Washington, DC</span>
-                </div>
+            <h1>Portrait Photography at the Smithsonian DC: Location Guide and Posing Tips</h1>
+            <p class="article-hero-subtitle">What I learned shooting portraits at the Smithsonian Castle and Hirshhorn Museum on the National Mall</p>
+            <div class="article-meta">
+                <span>By Joshua Smith</span>
+                <span>July 9th, 2025</span>
+                <span>8 min read</span>
+                <span>Washington, DC</span>
             </div>
         </div>
     </section>
 
-    <!-- Blog Content -->
-    <section class="article-content">
-        <div class="blog-container">
+    <main>
+    <article class="article-body">
 
-            <!-- Introduction -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">Shooting Portraits at DC's Smithsonian and Hirshhorn Museum</h2>
-                    <p class="blog-text">Last Saturday I drove into DC and spent the morning photographing <strong>professional portraits</strong> at two of my favorite spots on the National Mall. The <strong>Smithsonian Castle</strong> and the <strong>Hirshhorn Museum and Sculpture Garden</strong> sit right next to each other, which means you get two completely different looks without ever moving your car.</p>
+        <details class="toc-box reveal">
+            <summary>In this guide</summary>
+            <ul class="toc-list">
+                <li><a href="#shooting-portraits">Shooting portraits at the Smithsonian and Hirshhorn</a></li>
+                <li><a href="#why-smithsonian-works">Why the Smithsonian works so well</a></li>
+                <li><a href="#posing-techniques">Posing techniques that work</a></li>
+                <li><a href="#best-light">Best time of day for light</a></li>
+                <li><a href="#what-to-wear">What to wear</a></li>
+                <li><a href="#other-locations">Other locations nearby</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </details>
 
-                    <p class="blog-text">I want to walk you through what made this session work. If you are planning your own <strong>portrait session at the Smithsonian</strong> or you just want to understand how location and posing come together, this is the post for you.</p>
-                </div>
-            </div>
+        <h2 id="shooting-portraits" class="reveal">Shooting Portraits at DC's Smithsonian and Hirshhorn Museum</h2>
+        <p>Last Saturday I drove into DC and spent the morning photographing <strong>professional portraits</strong> at two of my favorite spots on the National Mall. The <strong>Smithsonian Castle</strong> and the <strong>Hirshhorn Museum and Sculpture Garden</strong> sit right next to each other, which means you get two completely different looks without ever moving your car.</p>
 
-            <!-- Portrait Gallery Section -->
-            <div class="portrait-gallery">
-                <div class="portrait-item">
-                    <picture>
-                      <source type="image/avif" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-400.avif 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-800.avif 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-1200.avif 1200w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
-                      <source type="image/webp" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-400.webp 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-800.webp 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-1200.webp 1200w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
-                      <img src="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-1200.jpg" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-400.jpg 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-800.jpg 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-1200.jpg 1200w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)" width="1586" height="1982" alt="Professional portrait at Smithsonian Castle columns" loading="lazy" decoding="async">
-                    </picture>
-                </div>
-                <div class="portrait-item">
-                    <picture>
-                      <source type="image/avif" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-400.avif 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-800.avif 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-1200.avif 1200w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
-                      <source type="image/webp" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-400.webp 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-800.webp 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-1200.webp 1200w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)">
-                      <img src="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-1200.jpg" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-400.jpg 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-800.jpg 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-1200.jpg 1200w" sizes="(min-width: 940px) 420px, (min-width: 660px) 50vw, calc(100vw - 40px)" width="1586" height="1982" alt="Portrait photography at Hirshhorn Museum DC" loading="lazy" decoding="async">
-                    </picture>
-                </div>
-                <div class="portrait-item">
-                    <picture>
-                      <source type="image/avif" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-400.avif 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-800.avif 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-1200.avif 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                      <source type="image/webp" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-400.webp 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-800.webp 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-1200.webp 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                      <img src="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-1200.jpg" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-400.jpg 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-800.jpg 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-1200.jpg 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="1586" height="1982" alt="Natural light portrait Smithsonian gardens" loading="lazy" decoding="async">
-                    </picture>
-                </div>
-            </div>
+        <p>I want to walk you through what made this session work. If you are planning your own <strong>portrait session at the Smithsonian</strong> or you just want to understand how location and posing come together, this is the post for you.</p>
 
-            <!-- Why Smithsonian Section -->
-            <div class="location-highlight">
-                <h2 class="section-title">Why the Smithsonian Works So Well for Portraits</h2>
-                <p class="blog-text">The <a title="Smithsonian Institution official site" href="https://www.si.edu/" target="_blank" rel="noopener">Smithsonian Castle</a> was built in 1855 out of red sandstone. That warm stone does something good for skin tones across the board. But the architecture is what really sells it for portrait work.</p>
+        <figure class="article-figure reveal">
+            <picture>
+                <source type="image/avif" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-400.avif 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-800.avif 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-1200.avif 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <source type="image/webp" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-400.webp 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-800.webp 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-1200.webp 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <img src="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-1200.jpg" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-400.jpg 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-800.jpg 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-1-1200.jpg 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)" width="1586" height="1982" alt="Professional portrait at Smithsonian Castle columns" loading="lazy" decoding="async">
+            </picture>
+        </figure>
 
-                <ul style="margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
-                    <li><strong>Red sandstone walls</strong> that throw warm, flattering tones back onto your subject's skin</li>
-                    <li><strong>Archways, columns, and doorways</strong> that give you natural framing without any extra gear</li>
-                    <li><strong>Covered walkways</strong> that act like a giant softbox, giving you even light with no harsh shadows</li>
-                    <li><strong>Low foot traffic early in the morning</strong> so you can actually work without strangers walking through your frame</li>
-                    <li><strong>Indoor and outdoor options</strong> so weather never kills the session</li>
-                </ul>
+        <figure class="article-figure reveal">
+            <picture>
+                <source type="image/avif" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-400.avif 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-800.avif 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-1200.avif 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <source type="image/webp" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-400.webp 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-800.webp 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-1200.webp 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <img src="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-1200.jpg" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-400.jpg 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-800.jpg 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-2-1200.jpg 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)" width="1586" height="1982" alt="Portrait photography at Hirshhorn Museum DC" loading="lazy" decoding="async">
+            </picture>
+        </figure>
 
-                <p class="blog-text">You can walk from classical architecture to a modern sculpture garden in five minutes. That kind of variety in a single session is hard to find anywhere else in DC.</p>
-            </div>
+        <figure class="article-figure reveal">
+            <picture>
+                <source type="image/avif" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-400.avif 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-800.avif 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-1200.avif 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <source type="image/webp" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-400.webp 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-800.webp 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-1200.webp 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <img src="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-1200.jpg" srcset="/images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-400.jpg 400w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-800.jpg 800w, /images/optimized/posts/smithsonian-portrait-photography/smithsonian-portrait-3-1200.jpg 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)" width="1586" height="1982" alt="Natural light portrait Smithsonian gardens" loading="lazy" decoding="async">
+            </picture>
+        </figure>
 
-            <!-- Posing Techniques Section -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Posing Techniques That Actually Work</h2>
-                    <p class="blog-text">Most people freeze up the second a camera points at them. That is normal. My job is to give you specific, simple directions that make you look natural without feeling awkward. Here is what we focused on during this session.</p>
-                </div>
-            </div>
+        <h2 id="why-smithsonian-works" class="reveal">Why the Smithsonian Works So Well for Portraits</h2>
+        <p>The <a title="Smithsonian Institution official site" href="https://www.si.edu/" target="_blank" rel="noopener">Smithsonian Castle</a> was built in 1855 out of red sandstone. That warm stone does something good for skin tones across the board. But the architecture is what really sells it for portrait work.</p>
 
-            <div class="posing-tip">
-                <h3 style="color: var(--primary); margin-bottom: 15px;">1. Angles Change Everything</h3>
-                <p>A straight-on shot almost never looks as good as a turned one. Small adjustments make a big difference.</p>
-                <ul style="margin-left: 2rem; margin-top: 15px; line-height: 1.8;">
-                    <li><strong>Three-quarter turns</strong> add dimension and create a more flattering body position</li>
-                    <li><strong>Turning your shoulders</strong> slightly away from the camera naturally slims your frame</li>
-                    <li><strong>Chin slightly forward and down</strong> defines the jawline and kills unflattering under-chin shadows</li>
-                    <li><strong>Shifting weight to one hip</strong> creates natural curves and keeps the pose from looking stiff</li>
-                </ul>
-            </div>
+        <ul>
+            <li><strong>Red sandstone walls</strong> that throw warm, flattering tones back onto your subject's skin</li>
+            <li><strong>Archways, columns, and doorways</strong> that give you natural framing without any extra gear</li>
+            <li><strong>Covered walkways</strong> that act like a giant softbox, giving you even light with no harsh shadows</li>
+            <li><strong>Low foot traffic early in the morning</strong> so you can actually work without strangers walking through your frame</li>
+            <li><strong>Indoor and outdoor options</strong> so weather never kills the session</li>
+        </ul>
 
-            <div class="posing-tip">
-                <h3 style="color: var(--primary); margin-bottom: 15px;">2. What to Do with Your Hands</h3>
-                <p>Hands are the number one thing people struggle with during a portrait session. Here is how I direct it.</p>
-                <ul style="margin-left: 2rem; margin-top: 15px; line-height: 1.8;">
-                    <li><strong>Light face or hair touches</strong> add movement and keep the image from looking static</li>
-                    <li><strong>Hands on hips</strong> project confidence and create space between your arm and body</li>
-                    <li><strong>Soft, curved fingers</strong> always look better than flat, rigid ones</li>
-                    <li><strong>Leaning on columns or railings</strong> gives your hands a job and keeps the whole pose relaxed</li>
-                </ul>
-            </div>
+        <p>You can walk from classical architecture to a modern sculpture garden in five minutes. That kind of variety in a single session is hard to find anywhere else in DC.</p>
 
-            <div class="posing-tip">
-                <h3 style="color: var(--primary); margin-bottom: 15px;">3. Using the Architecture</h3>
-                <p>The Smithsonian's buildings are not just backdrops. They are tools you can use to build a stronger image.</p>
-                <ul style="margin-left: 2rem; margin-top: 15px; line-height: 1.8;">
-                    <li><strong>Leading lines</strong> from columns and walkways pull the viewer's eye straight to you</li>
-                    <li><strong>Varying your distance</strong> from architectural elements creates depth in the frame</li>
-                    <li><strong>Archways and doorways</strong> give you a frame within the frame for free</li>
-                    <li><strong>Rough stone against smooth skin</strong> creates a texture contrast that makes the subject pop</li>
-                </ul>
-            </div>
+        <h2 id="posing-techniques" class="reveal">Posing Techniques That Actually Work</h2>
+        <p>Most people freeze up the second a camera points at them. That is normal. My job is to give you specific, simple directions that make you look natural without feeling awkward. Here is what we focused on during this session.</p>
 
-            <!-- Best Times Section -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">When to Show Up for the Best Light</h2>
-                    <p class="blog-text">Timing matters more than gear at a location like this. I have shot at the Smithsonian in every kind of light, and here is what I tell every client.</p>
+        <h3>1. Angles Change Everything</h3>
+        <p>A straight-on shot almost never looks as good as a turned one. Small adjustments make a big difference.</p>
+        <ul>
+            <li><strong>Three-quarter turns</strong> add dimension and create a more flattering body position</li>
+            <li><strong>Turning your shoulders</strong> slightly away from the camera naturally slims your frame</li>
+            <li><strong>Chin slightly forward and down</strong> defines the jawline and kills unflattering under-chin shadows</li>
+            <li><strong>Shifting weight to one hip</strong> creates natural curves and keeps the pose from looking stiff</li>
+        </ul>
 
-                    <div class="pricing-table" style="margin: 30px 0;">
-                        <table style="width: 100%; border-collapse: collapse;">
-                            <thead>
-                                <tr style="background: var(--primary); color: white;">
-                                    <th style="padding: 15px; text-align: left;">Time of Day</th>
-                                    <th style="padding: 15px; text-align: center;">Lighting Quality</th>
-                                    <th style="padding: 15px; text-align: center;">Crowd Level</th>
-                                    <th style="padding: 15px; text-align: center;">Best For</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr style="border-bottom: 1px solid #e8e8e8;">
-                                    <td style="padding: 15px;"><strong>Sunrise (6-8 AM)</strong></td>
-                                    <td style="padding: 15px; text-align: center;">Soft, golden</td>
-                                    <td style="padding: 15px; text-align: center;">Empty</td>
-                                    <td style="padding: 15px; text-align: center;">Romantic portraits</td>
-                                </tr>
-                                <tr style="border-bottom: 1px solid #e8e8e8; background: #f5f3f0;">
-                                    <td style="padding: 15px;"><strong>Morning (8-10 AM)</strong></td>
-                                    <td style="padding: 15px; text-align: center;">Bright, even</td>
-                                    <td style="padding: 15px; text-align: center;">Light</td>
-                                    <td style="padding: 15px; text-align: center;">Professional headshots</td>
-                                </tr>
-                                <tr style="border-bottom: 1px solid #e8e8e8;">
-                                    <td style="padding: 15px;"><strong>Midday (11 AM-2 PM)</strong></td>
-                                    <td style="padding: 15px; text-align: center;">Harsh, direct</td>
-                                    <td style="padding: 15px; text-align: center;">Heavy</td>
-                                    <td style="padding: 15px; text-align: center;">Indoor or shaded areas only</td>
-                                </tr>
-                                <tr style="border-bottom: 1px solid #e8e8e8; background: #f5f3f0;">
-                                    <td style="padding: 15px;"><strong>Golden Hour (5-7 PM)</strong></td>
-                                    <td style="padding: 15px; text-align: center;">Warm, directional</td>
-                                    <td style="padding: 15px; text-align: center;">Moderate</td>
-                                    <td style="padding: 15px; text-align: center;">All portrait types</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+        <h3>2. What to Do with Your Hands</h3>
+        <p>Hands are the number one thing people struggle with during a portrait session. Here is how I direct it.</p>
+        <ul>
+            <li><strong>Light face or hair touches</strong> add movement and keep the image from looking static</li>
+            <li><strong>Hands on hips</strong> project confidence and create space between your arm and body</li>
+            <li><strong>Soft, curved fingers</strong> always look better than flat, rigid ones</li>
+            <li><strong>Leaning on columns or railings</strong> gives your hands a job and keeps the whole pose relaxed</li>
+        </ul>
 
-            <!-- What to Wear Section -->
-            <div class="location-highlight">
-                <h2 class="section-title">What to Wear to Your Session</h2>
-                <p class="blog-text">For this shoot, the client wore a bold tropical print dress. It worked perfectly against the neutral stone. Here is what I tell people when they ask about wardrobe.</p>
+        <h3>3. Using the Architecture</h3>
+        <p>Here's how each element of the building becomes part of the composition, from leading lines to a frame within the frame:</p>
+        <ul>
+            <li><strong>Leading lines</strong> from columns and walkways pull the viewer's eye straight to you</li>
+            <li><strong>Varying your distance</strong> from architectural elements creates depth in the frame</li>
+            <li><strong>Archways and doorways</strong> give you a frame within the frame for free</li>
+            <li><strong>Rough stone against smooth skin</strong> creates a texture contrast that makes the subject pop</li>
+        </ul>
 
-                <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Colors That Photograph Well Here</h3>
-                <ul style="margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
-                    <li><strong>Bold patterns and prints</strong> pop against the neutral stone backgrounds</li>
-                    <li><strong>Jewel tones</strong> like emerald, sapphire, and ruby complement the warm sandstone</li>
-                    <li><strong>Classic black, white, or cream</strong> give you a timeless look</li>
-                    <li><strong>Skip beige and tan</strong> because you will blend right into the building</li>
-                </ul>
+        <blockquote class="pull-quote reveal">
+            <p>The Smithsonian's buildings are not just backdrops. They are tools you can use to build a stronger image.</p>
+        </blockquote>
 
-                <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Fabric and Fit</h3>
-                <ul style="margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
-                    <li><strong>Flowing fabrics</strong> add movement and look great in natural light</li>
-                    <li><strong>Structured pieces</strong> complement the strong architectural lines around you</li>
-                    <li><strong>Layers like jackets or scarves</strong> give us more options during the session</li>
-                    <li><strong>Comfortable shoes</strong> because we will be walking between spots</li>
-                </ul>
-            </div>
+        <h2 id="best-light" class="reveal">When to Show Up for the Best Light</h2>
+        <p>Timing matters more than gear at a location like this. I have shot at the Smithsonian in every kind of light, and here is what I tell every client.</p>
 
-            <!-- Alternative Locations Section -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Other Portrait Locations Within Walking Distance</h2>
-                    <p class="blog-text">The Smithsonian Castle is just the starting point. All of these spots are a short walk away, and I regularly use them to add variety to a single session.</p>
-                </div>
-            </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time of Day</th>
+                    <th>Lighting Quality</th>
+                    <th>Crowd Level</th>
+                    <th>Best For</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Sunrise (6-8 AM)</strong></td>
+                    <td>Soft, golden</td>
+                    <td>Empty</td>
+                    <td>Romantic portraits</td>
+                </tr>
+                <tr>
+                    <td><strong>Morning (8-10 AM)</strong></td>
+                    <td>Bright, even</td>
+                    <td>Light</td>
+                    <td>Professional headshots</td>
+                </tr>
+                <tr>
+                    <td><strong>Midday (11 AM-2 PM)</strong></td>
+                    <td>Harsh, direct</td>
+                    <td>Heavy</td>
+                    <td>Indoor or shaded areas only</td>
+                </tr>
+                <tr>
+                    <td><strong>Golden Hour (5-7 PM)</strong></td>
+                    <td>Warm, directional</td>
+                    <td>Moderate</td>
+                    <td>All portrait types</td>
+                </tr>
+            </tbody>
+        </table>
 
-            <div class="location-grid">
-                <div class="location-card">
-                    <div class="location-content">
-                        <h3 class="location-title">Hirshhorn Museum and Sculpture Garden</h3>
-                        <p><strong>Distance:</strong> 5-minute walk</p>
-                        <p><strong>Best Features:</strong> Modern architecture, outdoor sculptures</p>
-                        <ul style="margin-top: 15px;">
-                            <li>Contemporary backdrop that contrasts the Castle</li>
-                            <li>Unique circular building design</li>
-                            <li>Sunken sculpture garden</li>
-                        </ul>
-                    </div>
-                </div>
+        <h2 id="what-to-wear" class="reveal">What to Wear to Your Session</h2>
+        <p>For this shoot, the client wore a bold tropical print dress. It worked perfectly against the neutral stone. Here is what I tell people when they ask about wardrobe.</p>
 
-                <div class="location-card">
-                    <div class="location-content">
-                        <h3 class="location-title">National Gallery of Art</h3>
-                        <p><strong>Distance:</strong> 10-minute walk</p>
-                        <p><strong>Best Features:</strong> Classical columns, dramatic lighting</p>
-                        <ul style="margin-top: 15px;">
-                            <li>East Building for modern lines</li>
-                            <li>West Building for classical columns</li>
-                            <li>Connecting tunnel with moving walkway</li>
-                        </ul>
-                    </div>
-                </div>
+        <h3>Colors That Photograph Well Here</h3>
+        <ul>
+            <li><strong>Bold patterns and prints</strong> pop against the neutral stone backgrounds</li>
+            <li><strong>Jewel tones</strong> like emerald, sapphire, and ruby complement the warm sandstone</li>
+            <li><strong>Classic black, white, or cream</strong> give you a timeless look</li>
+            <li><strong>Skip beige and tan</strong> because you will blend right into the building</li>
+        </ul>
 
-                <div class="location-card">
-                    <div class="location-content">
-                        <h3 class="location-title">Enid A. Haupt Garden</h3>
-                        <p><strong>Distance:</strong> Adjacent to Castle</p>
-                        <p><strong>Best Features:</strong> Victorian garden design</p>
-                        <ul style="margin-top: 15px;">
-                            <li>Seasonal flowers and plants</li>
-                            <li>Moongate Garden for an Asian-inspired look</li>
-                            <li>Fountain Garden for softer, romantic shots</li>
-                        </ul>
-                    </div>
-                </div>
+        <h3>Fabric and Fit</h3>
+        <ul>
+            <li><strong>Flowing fabrics</strong> add movement and look great in natural light</li>
+            <li><strong>Structured pieces</strong> complement the strong architectural lines around you</li>
+            <li><strong>Layers like jackets or scarves</strong> give us more options during the session</li>
+            <li><strong>Comfortable shoes</strong> because we will be walking between spots</li>
+        </ul>
 
-                <div class="location-card">
-                    <div class="location-content">
-                        <h3 class="location-title">Arts and Industries Building</h3>
-                        <p><strong>Distance:</strong> 2-minute walk</p>
-                        <p><strong>Best Features:</strong> Victorian architecture</p>
-                        <ul style="margin-top: 15px;">
-                            <li>Colorful geometric patterns</li>
-                            <li>Historic carousel nearby</li>
-                            <li>Way less crowded than the main museums</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <h2 id="other-locations" class="reveal">Other Portrait Locations Within Walking Distance</h2>
+        <p>The Smithsonian Castle is just the starting point. All of these spots are a short walk away, and I regularly use them to add variety to a single session.</p>
 
-            <!-- Why Choose Section -->
-            <div class="location-highlight">
-                <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Why Working with a Local Photographer Matters</h3>
-                <p class="blog-text">I'm a Charleston-based photographer who also shoots in DC constantly, by request. That regular DMV presence means your session runs smoother than it would with someone visiting for the first time &mdash; and if you're in Charleston instead, see my <a href="/charleston-portrait-photographer/">Charleston portrait photography</a> page.</p>
+        <h3>Hirshhorn Museum and Sculpture Garden</h3>
+        <p><strong>Distance:</strong> 5-minute walk</p>
+        <p><strong>Best Features:</strong> Modern architecture, outdoor sculptures</p>
+        <ul>
+            <li>Contemporary backdrop that contrasts the Castle</li>
+            <li>Unique circular building design</li>
+            <li>Sunken sculpture garden</li>
+        </ul>
 
-                <ul style="margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
-                    <li><strong>No location fees.</strong> The Smithsonian grounds are free for photography.</li>
-                    <li><strong>I know the permit rules.</strong> Which areas need them, which do not, per the <a title="National Park Service filming and photography permits" href="https://www.nps.gov/nama/planyourvisit/commercial-filming-and-photography-permits.htm" target="_blank" rel="noopener">National Park Service guidelines</a>.</li>
-                    <li><strong>I know the timing.</strong> Years of sessions here means I know exactly when the tourists thin out.</li>
-                    <li><strong>I know the hidden spots.</strong> Side entrances, lesser-known gardens, angles most people walk right past.</li>
-                    <li><strong>I have weather backup plans.</strong> If it rains, we move indoors and the session still works.</li>
-                    <li><strong>I know where to park.</strong> That alone saves you 20 minutes of stress.</li>
-                </ul>
+        <h3>National Gallery of Art</h3>
+        <p><strong>Distance:</strong> 10-minute walk</p>
+        <p><strong>Best Features:</strong> Classical columns, dramatic lighting</p>
+        <ul>
+            <li>East Building for modern lines</li>
+            <li>West Building for classical columns</li>
+            <li>Connecting tunnel with moving walkway</li>
+        </ul>
 
-                <p class="blog-text">You focus on showing up and looking your best. I handle everything else. If you want another cinematic DC backdrop to compare, my <a title="Read the DC Metro portrait photography guide" href="/blog/metro/">Metro station portrait guide</a> covers a very different look just a short ride away.</p>
-            </div>
+        <h3>Enid A. Haupt Garden</h3>
+        <p><strong>Distance:</strong> Adjacent to Castle</p>
+        <p><strong>Best Features:</strong> Victorian garden design</p>
+        <ul>
+            <li>Seasonal flowers and plants</li>
+            <li>Moongate Garden for an Asian-inspired look</li>
+            <li>Fountain Garden for softer, romantic shots</li>
+        </ul>
 
-            <!-- FAQ -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Smithsonian Portrait Session FAQ</h2>
+        <h3>Arts and Industries Building</h3>
+        <p><strong>Distance:</strong> 2-minute walk</p>
+        <p><strong>Best Features:</strong> Victorian architecture</p>
+        <ul>
+            <li>Colorful geometric patterns</li>
+            <li>Historic carousel nearby</li>
+            <li>Way less crowded than the main museums</li>
+        </ul>
 
-                    <div class="faq-static">
-                        <h3>Do I need a permit to shoot portraits at the Smithsonian?</h3>
-                        <p>No, not for a small personal portrait session with handheld gear. Larger productions with lighting stands or props may need one, and I know which areas require it.</p>
-                    </div>
+        <h3>Why Working with a Local Photographer Matters</h3>
+        <p>I'm a Charleston-based photographer who also shoots in DC constantly, by request. That regular DMV presence means your session runs smoother than it would with someone visiting for the first time &mdash; and if you're in Charleston instead, see my <a href="/charleston-portrait-photographer/">Charleston portrait photography</a> page.</p>
 
-                    <div class="faq-static">
-                        <h3>Is there a fee to use the Smithsonian grounds?</h3>
-                        <p>No. The Smithsonian grounds are free for personal photography, including the Castle exterior, gardens, and the Hirshhorn sculpture garden.</p>
-                    </div>
+        <ul>
+            <li><strong>No location fees.</strong> The Smithsonian grounds are free for photography.</li>
+            <li><strong>I know the permit rules.</strong> Which areas need them, which do not, per the <a title="National Park Service filming and photography permits" href="https://www.nps.gov/nama/planyourvisit/commercial-filming-and-photography-permits.htm" target="_blank" rel="noopener">National Park Service guidelines</a>.</li>
+            <li><strong>I know the timing.</strong> Years of sessions here means I know exactly when the tourists thin out.</li>
+            <li><strong>I know the hidden spots.</strong> Side entrances, lesser-known gardens, angles most people walk right past.</li>
+            <li><strong>I have weather backup plans.</strong> If it rains, we move indoors and the session still works.</li>
+            <li><strong>I know where to park.</strong> That alone saves you 20 minutes of stress.</li>
+        </ul>
 
-                    <div class="faq-static">
-                        <h3>What is the best time to avoid tourist crowds?</h3>
-                        <p>Sunrise to 8 AM gives you the emptiest grounds and the softest light. By midday, foot traffic picks up significantly around the Castle and National Mall.</p>
-                    </div>
+        <p>You focus on showing up and looking your best. I handle everything else. If you want another cinematic DC backdrop to compare, my <a title="Read the DC Metro portrait photography guide" href="/blog/metro/">Metro station portrait guide</a> covers a very different look just a short ride away.</p>
 
-                    <div class="faq-static">
-                        <h3>What happens if it rains on my session day?</h3>
-                        <p>I keep weather backup plans ready. If it rains, we move indoors or reschedule so the session still delivers strong images.</p>
-                    </div>
+        <h2 id="faq" class="reveal">Smithsonian Portrait Session FAQ</h2>
 
-                    <div class="faq-static">
-                        <h3>Can we visit multiple Smithsonian-area locations in one session?</h3>
-                        <p>Yes. The Castle, Hirshhorn Museum, National Gallery of Art, and Enid A. Haupt Garden are all within a short walk, so a 60 to 90 minute session can cover several distinct backdrops.</p>
-                    </div>
+        <details class="faq-item">
+            <summary>Do I need a permit to shoot portraits at the Smithsonian?</summary>
+            <p>No, not for a small personal portrait session with handheld gear. Larger productions with lighting stands or props may need one, and I know which areas require it.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Is there a fee to use the Smithsonian grounds?</summary>
+            <p>No. The Smithsonian grounds are free for personal photography, including the Castle exterior, gardens, and the Hirshhorn sculpture garden.</p>
+        </details>
+        <details class="faq-item">
+            <summary>What is the best time to avoid tourist crowds?</summary>
+            <p>Sunrise to 8 AM gives you the emptiest grounds and the softest light. By midday, foot traffic picks up significantly around the Castle and National Mall.</p>
+        </details>
+        <details class="faq-item">
+            <summary>What happens if it rains on my session day?</summary>
+            <p>I keep weather backup plans ready. If it rains, we move indoors or reschedule so the session still delivers strong images.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Can we visit multiple Smithsonian-area locations in one session?</summary>
+            <p>Yes. The Castle, Hirshhorn Museum, National Gallery of Art, and Enid A. Haupt Garden are all within a short walk, so a 60 to 90 minute session can cover several distinct backdrops.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How much does a Smithsonian portrait session cost?</summary>
+            <p>Sessions start at $250 for one hour, with extended time and additional locations available. See the DMV photography pricing guide for full details.</p>
+        </details>
 
-                    <div class="faq-static">
-                        <h3>How much does a Smithsonian portrait session cost?</h3>
-                        <p>Sessions start at $250 for one hour, with extended time and additional locations available. See the DMV photography pricing guide for full details.</p>
-                    </div>
-                </div>
-            </div>
+        <h2 class="reveal">Book Your Smithsonian Portrait Session</h2>
+        <p>Here is what every session includes.</p>
 
-            <!-- Booking Information -->
-            <div class="location-highlight">
-                <h2 class="section-title">Book Your Smithsonian Portrait Session</h2>
-                <p class="blog-text">Here is what every session includes.</p>
+        <ul>
+            <li><strong>Pre-session consultation</strong> where we talk through your vision and wardrobe</li>
+            <li><strong>60-90 minute session</strong> at multiple locations around the Smithsonian</li>
+            <li><strong>Professional posing direction</strong> the entire time</li>
+            <li><strong>30-50 edited images</strong> delivered within one week</li>
+            <li><strong>Online gallery</strong> for easy downloading and sharing</li>
+            <li><strong>Print release</strong> so you can order prints wherever you want</li>
+        </ul>
 
-                <ul style="margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
-                    <li><strong>Pre-session consultation</strong> where we talk through your vision and wardrobe</li>
-                    <li><strong>60-90 minute session</strong> at multiple locations around the Smithsonian</li>
-                    <li><strong>Professional posing direction</strong> the entire time</li>
-                    <li><strong>30-50 edited images</strong> delivered within one week</li>
-                    <li><strong>Online gallery</strong> for easy downloading and sharing</li>
-                    <li><strong>Print release</strong> so you can order prints wherever you want</li>
-                </ul>
+        <p><strong>Investment:</strong> Portrait sessions at the Smithsonian start at $250 for one hour. Extended sessions and additional locations are available. Check out my <a title="Open the DMV photography pricing guide" href="/blog/photography-pricing/">DMV photography pricing guide</a> for more details on what to expect.</p>
 
-                <p class="blog-text"><strong>Investment:</strong> Portrait sessions at the Smithsonian start at $250 for one hour. Extended sessions and additional locations are available. Check out my <a title="Open the DMV photography pricing guide" href="/blog/photography-pricing/">DMV photography pricing guide</a> for more details on what to expect.</p>
-            </div>
-        </div>
-    </section>
+    </article>
 
     <!-- CTA Banner -->
     <section class="cta-banner">
         <div class="container">
-            <h2 class="cta-title">Let's Shoot Your Portraits at the Smithsonian</h2>
-            <p class="cta-text">Whether you want the Smithsonian Castle, the National Mall, or your favorite DC landmark, I will help you get portraits you are proud of. Learn more about Smithsonian portrait sessions or book your session today.</p>
+            <h2>Let's Shoot Your Portraits at the Smithsonian</h2>
+            <p>Whether you want the Smithsonian Castle, the National Mall, or your favorite DC landmark, I will help you get portraits you are proud of. Learn more about Smithsonian portrait sessions or book your session today.</p>
             <div class="cta-buttons">
-                <a title="Book a portrait session with Joshua" href="/index.html?service=portrait&location=dmv#contact" class="btn btn-accent">Book Portraits</a>
-                <a title="View portrait portfolio examples" href="/gallery#portraits" class="btn">View Portraits</a>
+                <a title="Book a portrait session with Joshua" href="/index.html?service=portrait&location=dmv#contact" class="btn btn-primary">Book Portraits</a>
+                <a title="View portrait portfolio examples" href="/gallery#portraits" class="btn btn-ghost">View Portraits</a>
             </div>
         </div>
     </section>
-
+    </main>
 
     <!-- Back to Top Button -->
-    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
+    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page">&uarr;</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals by Joshua</h3>
+                    <p>Editorial photography for milestones &amp; moments. Serving Charleston SC + Northern VA / DMV.</p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="tel:+12403608465" style="display: block; margin-bottom: 0.5rem;">&#128222; (240) 360-8465</a>
+                        <a href="mailto:jbmsmusic05@gmail.com" style="display: block; margin-bottom: 0.5rem;">&#9993;&#65039; jbmsmusic05@gmail.com</a>
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128247; Instagram</a>
+                        <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128218; Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/gallery">Full Gallery</a></li>
+                        <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+                        <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+                        <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+                        <li><a href="/blog.html">Photography Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Visuals by Joshua. Charleston SC &amp; Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.add('show');
@@ -536,77 +966,28 @@
                 backToTopButton.classList.remove('show');
             }
         });
-
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Scroll reveal for section headings, pull-quote, figure, and TOC
+        const revealTargets = document.querySelectorAll('.reveal');
+        if (revealTargets.length && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+            revealTargets.forEach(el => revealObserver.observe(el));
+        } else {
+            revealTargets.forEach(el => el.classList.add('in-view'));
+        }
     </script>
-  <script>
-    (function() {
-      var hamburger = document.querySelector('.hamburger');
-      var navMenu = document.querySelector('.nav-menu');
-      if (!hamburger || !navMenu) return;
-      function close() {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-      }
-      hamburger.addEventListener('click', function() {
-        var open = navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active', open);
-        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      navMenu.querySelectorAll('.nav-link').forEach(function(l) { l.addEventListener('click', close); });
-      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
-    })();
-  </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Visuals by Joshua</h3>
-          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
-          <p style="margin-top: 1.5rem;">
-            <a href="tel:+12403608465">(240) 360-8465</a><br>
-            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
-          </p>
-          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
-            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery">Full Gallery</a></li>
-            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Locations</h4>
-          <ul>
-            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
-            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
-            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
-            <li><a href="/blog.html">Photography Blog</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>
