@@ -81,6 +81,7 @@
     }
   ]
 }</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much do graduation photos cost in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Graduation photos in Charleston usually cost $150 to $600. A short solo session costs less. A longer session with family, friends, multiple locations, and fast delivery costs more."}}, {"@type": "Question", "name": "How much are College of Charleston graduation photos?", "acceptedAnswer": {"@type": "Answer", "text": "Most CofC graduation sessions fall between $150 and $600 depending on time, route, image count, family photos, and delivery speed."}}, {"@type": "Question", "name": "When should I book a Charleston graduation photographer?", "acceptedAnswer": {"@type": "Answer", "text": "Book 4 to 8 weeks before spring commencement. If you want Cistern Yard during prime evening light, book earlier."}}, {"@type": "Question", "name": "What is included in a graduation photo session?", "acceptedAnswer": {"@type": "Answer", "text": "A session usually includes planning help, guided posing, edited digital images, an online gallery, and personal use rights. Ask before you book."}}, {"@type": "Question", "name": "Do I need more than one location?", "acceptedAnswer": {"@type": "Answer", "text": "You do not need more than one location. One strong campus route works well. Add a second spot when you want downtown Charleston or waterfront variety."}}, {"@type": "Question", "name": "Can family join my graduation photos?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Tell your photographer how many people will join. Group photos slow the pace, so build them into the session plan."}}]}</script>
   <style>
     .guide-hero {
       background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
@@ -222,13 +223,9 @@
       background: #f5f3f0;
       color: #2a2a2a;
     }
-    .guide-faq .faq-answer {
-      max-height: none;
-      padding: 20px;
-    }
-    .guide-faq .faq-question {
-      cursor: default;
-    }
+    .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
+    .faq-static h3 { margin: 0 0 10px; font-size: 1.3rem; }
+    .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
     @media (max-width: 768px) {
       .guide-summary,
       .guide-checklist,
@@ -398,33 +395,31 @@
 
       <section class="guide-section guide-faq" id="faq">
         <h2 class="section-title">FAQ</h2>
-        <div class="faq-list">
-          <div class="faq-item active">
-            <div class="faq-question">How much do graduation photos cost in Charleston?</div>
-            <div class="faq-answer"><p>Graduation photos in Charleston usually cost $150 to $600. A short solo session costs less. A longer session with family, friends, multiple locations, and fast delivery costs more.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">How much are College of Charleston graduation photos?</div>
-            <div class="faq-answer"><p>Most CofC graduation sessions fall between $150 and $600 depending on time, route, image count, family photos, and delivery speed.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">When should I book a Charleston graduation photographer?</div>
-            <div class="faq-answer"><p>Book 4 to 8 weeks before spring commencement. If you want Cistern Yard during prime evening light, book earlier.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">What is included in a graduation photo session?</div>
-            <div class="faq-answer"><p>A session usually includes planning help, guided posing, edited digital images, an online gallery, and personal use rights. Ask before you book.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">Do I need more than one location?</div>
-            <div class="faq-answer"><p>You do not need more than one location. One strong campus route works well. Add a second spot when you want downtown Charleston or waterfront variety.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">Can family join my graduation photos?</div>
-            <div class="faq-answer"><p>Yes. Tell your photographer how many people will join. Group photos slow the pace, so build them into the session plan.</p></div>
-          </div>
-        </div>
-      </section>
+            <div class="faq-static">
+      <h3>How much do graduation photos cost in Charleston?</h3>
+      <p>Graduation photos in Charleston usually cost $150 to $600. A short solo session costs less. A longer session with family, friends, multiple locations, and fast delivery costs more.</p>
+    </div>
+    <div class="faq-static">
+      <h3>How much are College of Charleston graduation photos?</h3>
+      <p>Most CofC graduation sessions fall between $150 and $600 depending on time, route, image count, family photos, and delivery speed.</p>
+    </div>
+    <div class="faq-static">
+      <h3>When should I book a Charleston graduation photographer?</h3>
+      <p>Book 4 to 8 weeks before spring commencement. If you want Cistern Yard during prime evening light, book earlier.</p>
+    </div>
+    <div class="faq-static">
+      <h3>What is included in a graduation photo session?</h3>
+      <p>A session usually includes planning help, guided posing, edited digital images, an online gallery, and personal use rights. Ask before you book.</p>
+    </div>
+    <div class="faq-static">
+      <h3>Do I need more than one location?</h3>
+      <p>You do not need more than one location. One strong campus route works well. Add a second spot when you want downtown Charleston or waterfront variety.</p>
+    </div>
+    <div class="faq-static">
+      <h3>Can family join my graduation photos?</h3>
+      <p>Yes. Tell your photographer how many people will join. Group photos slow the pace, so build them into the session plan.</p>
+    </div>
+  </section>
 
       <div class="guide-links">
         <p class="guide-box-title">Related Charleston photography pages</p>
@@ -451,7 +446,7 @@
 
       <div class="blog-conversion-cta">
         <p class="guide-cta-title">Ready to plan your Charleston session?</p>
-        <p>Send your session type, date, location idea, and delivery needs. I will reply with the best package or a custom plan.</p>
+        <p>Send your session type, date, location idea, and delivery needs. I'll reply with the best package or a custom plan.</p>
         <div class="blog-conversion-actions">
           <a title="Contact Joshua Smith about Charleston photography" href="/index.html#contact" class="btn btn-accent">Check Availability</a>
           <a title="View Visuals by Joshua portfolio" href="/gallery" class="btn">View Portfolio</a>

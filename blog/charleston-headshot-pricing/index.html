@@ -81,6 +81,7 @@
     }
   ]
 }</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much do headshots cost in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Individual headshots usually start around $40 to $150. Team and on site headshots cost more because they need more planning and setup."}}, {"@type": "Question", "name": "How much should a LinkedIn headshot cost?", "acceptedAnswer": {"@type": "Answer", "text": "A simple LinkedIn headshot should fit the lower end of the range if you need one outfit, one background, and a fast session."}}, {"@type": "Question", "name": "What should I wear for a professional headshot?", "acceptedAnswer": {"@type": "Answer", "text": "Wear clean, fitted clothing in solid colors. Avoid tiny patterns, wrinkled fabric, and anything that distracts from your face."}}, {"@type": "Question", "name": "Can a photographer come to my office?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. On site headshots work well when the office has a quiet room, enough space, and a simple schedule."}}, {"@type": "Question", "name": "How fast can I get headshots back?", "acceptedAnswer": {"@type": "Answer", "text": "Many individual headshots can be delivered within 48 hours when you request fast delivery before booking."}}, {"@type": "Question", "name": "Do teams need matching backgrounds?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if the photos appear together on a website. Matching light, background, and crop make the team look organized."}}]}</script>
   <style>
     .guide-hero {
       background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
@@ -222,13 +223,9 @@
       background: #f5f3f0;
       color: #2a2a2a;
     }
-    .guide-faq .faq-answer {
-      max-height: none;
-      padding: 20px;
-    }
-    .guide-faq .faq-question {
-      cursor: default;
-    }
+    .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
+    .faq-static h3 { margin: 0 0 10px; font-size: 1.3rem; }
+    .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
     @media (max-width: 768px) {
       .guide-summary,
       .guide-checklist,
@@ -398,33 +395,31 @@
 
       <section class="guide-section guide-faq" id="faq">
         <h2 class="section-title">FAQ</h2>
-        <div class="faq-list">
-          <div class="faq-item active">
-            <div class="faq-question">How much do headshots cost in Charleston?</div>
-            <div class="faq-answer"><p>Individual headshots usually start around $40 to $150. Team and on site headshots cost more because they need more planning and setup.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">How much should a LinkedIn headshot cost?</div>
-            <div class="faq-answer"><p>A simple LinkedIn headshot should fit the lower end of the range if you need one outfit, one background, and a fast session.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">What should I wear for a professional headshot?</div>
-            <div class="faq-answer"><p>Wear clean, fitted clothing in solid colors. Avoid tiny patterns, wrinkled fabric, and anything that distracts from your face.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">Can a photographer come to my office?</div>
-            <div class="faq-answer"><p>Yes. On site headshots work well when the office has a quiet room, enough space, and a simple schedule.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">How fast can I get headshots back?</div>
-            <div class="faq-answer"><p>Many individual headshots can be delivered within 48 hours when you request fast delivery before booking.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">Do teams need matching backgrounds?</div>
-            <div class="faq-answer"><p>Yes, if the photos appear together on a website. Matching light, background, and crop make the team look organized.</p></div>
-          </div>
-        </div>
-      </section>
+            <div class="faq-static">
+      <h3>How much do headshots cost in Charleston?</h3>
+      <p>Individual headshots usually start around $40 to $150. Team and on site headshots cost more because they need more planning and setup.</p>
+    </div>
+    <div class="faq-static">
+      <h3>How much should a LinkedIn headshot cost?</h3>
+      <p>A simple LinkedIn headshot should fit the lower end of the range if you need one outfit, one background, and a fast session.</p>
+    </div>
+    <div class="faq-static">
+      <h3>What should I wear for a professional headshot?</h3>
+      <p>Wear clean, fitted clothing in solid colors. Avoid tiny patterns, wrinkled fabric, and anything that distracts from your face.</p>
+    </div>
+    <div class="faq-static">
+      <h3>Can a photographer come to my office?</h3>
+      <p>Yes. On site headshots work well when the office has a quiet room, enough space, and a simple schedule.</p>
+    </div>
+    <div class="faq-static">
+      <h3>How fast can I get headshots back?</h3>
+      <p>Many individual headshots can be delivered within 48 hours when you request fast delivery before booking.</p>
+    </div>
+    <div class="faq-static">
+      <h3>Do teams need matching backgrounds?</h3>
+      <p>Yes, if the photos appear together on a website. Matching light, background, and crop make the team look organized.</p>
+    </div>
+  </section>
 
       <div class="guide-links">
         <p class="guide-box-title">Related Charleston photography pages</p>
@@ -451,7 +446,7 @@
 
       <div class="blog-conversion-cta">
         <p class="guide-cta-title">Ready to plan your Charleston session?</p>
-        <p>Send your session type, date, location idea, and delivery needs. I will reply with the best package or a custom plan.</p>
+        <p>Send your session type, date, location idea, and delivery needs. I'll reply with the best package or a custom plan.</p>
         <div class="blog-conversion-actions">
           <a title="Contact Joshua Smith about Charleston photography" href="/index.html#contact" class="btn btn-accent">Check Availability</a>
           <a title="View Visuals by Joshua portfolio" href="/gallery" class="btn">View Portfolio</a>

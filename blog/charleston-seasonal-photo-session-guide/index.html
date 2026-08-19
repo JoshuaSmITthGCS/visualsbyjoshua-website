@@ -76,6 +76,7 @@
     }
   ]
 }</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the best season for photos in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Spring and fall work best for many outdoor sessions. Summer works with early timing and shade. Winter works well for downtown, headshots, and formal outfits."}}, {"@type": "Question", "name": "How do I plan photos around Charleston rain?", "acceptedAnswer": {"@type": "Answer", "text": "Keep one backup date, choose a covered location option, and bring clear umbrellas when light rain is possible. Heavy rain needs a reschedule or indoor plan."}}, {"@type": "Question", "name": "When should I book spring graduation photos?", "acceptedAnswer": {"@type": "Answer", "text": "Book 4 to 8 weeks before commencement if you want strong date options. Spring fills fast with graduation, family visits, and campus events."}}, {"@type": "Question", "name": "Are summer photo sessions worth it in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, when you plan around heat. Choose sunrise, late afternoon, shade, water access, and breathable outfits."}}, {"@type": "Question", "name": "What should I wear for winter photos in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Wear structured layers, jackets, knits, trousers, boots, and colors that fit the location. Winter lets you use formal styling without heavy heat."}}]}</script>
   <style>
     .guide-hero {
       background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
@@ -198,13 +199,9 @@
       font-size: 1.5rem;
       margin: 28px 0 12px;
     }
-    .guide-faq .faq-answer {
-      max-height: none;
-      padding: 20px;
-    }
-    .guide-faq .faq-question {
-      cursor: default;
-    }
+    .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
+    .faq-static h3 { margin: 0 0 10px; font-size: 1.3rem; }
+    .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
     @media (max-width: 768px) {
       .guide-summary,
       .guide-checklist,
@@ -360,27 +357,25 @@
   </div>
       <section class="guide-section guide-faq" id="faq">
     <h2 class="section-title">FAQ</h2>
-    <div class="faq-list">
-      <div class="faq-item active">
-        <div class="faq-question">What is the best season for photos in Charleston?</div>
-        <div class="faq-answer"><p>Spring and fall work best for many outdoor sessions. Summer works with early timing and shade. Winter works well for downtown, headshots, and formal outfits.</p></div>
-      </div>
-<div class="faq-item active">
-        <div class="faq-question">How do I plan photos around Charleston rain?</div>
-        <div class="faq-answer"><p>Keep one backup date, choose a covered location option, and bring clear umbrellas when light rain is possible. Heavy rain needs a reschedule or indoor plan.</p></div>
-      </div>
-<div class="faq-item active">
-        <div class="faq-question">When should I book spring graduation photos?</div>
-        <div class="faq-answer"><p>Book 4 to 8 weeks before commencement if you want strong date options. Spring fills fast with graduation, family visits, and campus events.</p></div>
-      </div>
-<div class="faq-item active">
-        <div class="faq-question">Are summer photo sessions worth it in Charleston?</div>
-        <div class="faq-answer"><p>Yes, when you plan around heat. Choose sunrise, late afternoon, shade, water access, and breathable outfits.</p></div>
-      </div>
-<div class="faq-item active">
-        <div class="faq-question">What should I wear for winter photos in Charleston?</div>
-        <div class="faq-answer"><p>Wear structured layers, jackets, knits, trousers, boots, and colors that fit the location. Winter lets you use formal styling without heavy heat.</p></div>
-      </div>
+        <div class="faq-static">
+      <h3>What is the best season for photos in Charleston?</h3>
+      <p>Spring and fall work best for many outdoor sessions. Summer works with early timing and shade. Winter works well for downtown, headshots, and formal outfits.</p>
+    </div>
+    <div class="faq-static">
+      <h3>How do I plan photos around Charleston rain?</h3>
+      <p>Keep one backup date, choose a covered location option, and bring clear umbrellas when light rain is possible. Heavy rain needs a reschedule or indoor plan.</p>
+    </div>
+    <div class="faq-static">
+      <h3>When should I book spring graduation photos?</h3>
+      <p>Book 4 to 8 weeks before commencement if you want strong date options. Spring fills fast with graduation, family visits, and campus events.</p>
+    </div>
+    <div class="faq-static">
+      <h3>Are summer photo sessions worth it in Charleston?</h3>
+      <p>Yes, when you plan around heat. Choose sunrise, late afternoon, shade, water access, and breathable outfits.</p>
+    </div>
+    <div class="faq-static">
+      <h3>What should I wear for winter photos in Charleston?</h3>
+      <p>Wear structured layers, jackets, knits, trousers, boots, and colors that fit the location. Winter lets you use formal styling without heavy heat.</p>
     </div>
   </section>
       <div class="guide-links">
@@ -406,7 +401,7 @@
 
       <div class="blog-conversion-cta">
         <p class="guide-cta-title">Ready to plan your Charleston session?</p>
-        <p>Send your session type, date, location idea, and delivery needs. I will reply with the best package or a custom plan.</p>
+        <p>Send your session type, date, location idea, and delivery needs. I'll reply with the best package or a custom plan.</p>
         <div class="blog-conversion-actions">
           <a title="Contact Joshua Smith about Charleston photography" href="/index.html#contact" class="btn btn-accent">Check Availability</a>
           <a title="View Visuals by Joshua portfolio" href="/gallery" class="btn">View Portfolio</a>

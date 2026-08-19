@@ -81,6 +81,7 @@
     }
   ]
 }</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where should families take photos in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Families should consider Hampton Park, Waterfront Park, Sullivan's Island, Isle of Palms, Colonial Lake, and shaded downtown streets."}}, {"@type": "Question", "name": "What is the best Charleston photo spot for kids?", "acceptedAnswer": {"@type": "Answer", "text": "Hampton Park works best for many kids because it has shade, room to move, and a calmer pace."}}, {"@type": "Question", "name": "What is the best beach for family photos near Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Sullivan's Island and Isle of Palms both work well. Choose Sullivan's Island for a quieter look and Isle of Palms for easy beach access."}}, {"@type": "Question", "name": "When should we take family photos in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Morning works best for young kids. Sunset works best for beaches and older kids who can handle a later schedule."}}, {"@type": "Question", "name": "What should families wear for Charleston photos?", "acceptedAnswer": {"@type": "Answer", "text": "Choose soft colors, comfortable shoes, and simple textures. Coordinate instead of matching everyone exactly."}}, {"@type": "Question", "name": "Can grandparents join family photos?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Plan their photos early, keep walking short, and choose a location with benches or easy access."}}]}</script>
   <style>
     .guide-hero {
       background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
@@ -222,13 +223,9 @@
       background: #f5f3f0;
       color: #2a2a2a;
     }
-    .guide-faq .faq-answer {
-      max-height: none;
-      padding: 20px;
-    }
-    .guide-faq .faq-question {
-      cursor: default;
-    }
+    .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
+    .faq-static h3 { margin: 0 0 10px; font-size: 1.3rem; }
+    .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
     @media (max-width: 768px) {
       .guide-summary,
       .guide-checklist,
@@ -398,33 +395,31 @@
 
       <section class="guide-section guide-faq" id="faq">
         <h2 class="section-title">FAQ</h2>
-        <div class="faq-list">
-          <div class="faq-item active">
-            <div class="faq-question">Where should families take photos in Charleston?</div>
-            <div class="faq-answer"><p>Families should consider Hampton Park, Waterfront Park, Sullivan's Island, Isle of Palms, Colonial Lake, and shaded downtown streets.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">What is the best Charleston photo spot for kids?</div>
-            <div class="faq-answer"><p>Hampton Park works best for many kids because it has shade, room to move, and a calmer pace.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">What is the best beach for family photos near Charleston?</div>
-            <div class="faq-answer"><p>Sullivan's Island and Isle of Palms both work well. Choose Sullivan's Island for a quieter look and Isle of Palms for easy beach access.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">When should we take family photos in Charleston?</div>
-            <div class="faq-answer"><p>Morning works best for young kids. Sunset works best for beaches and older kids who can handle a later schedule.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">What should families wear for Charleston photos?</div>
-            <div class="faq-answer"><p>Choose soft colors, comfortable shoes, and simple textures. Coordinate instead of matching everyone exactly.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">Can grandparents join family photos?</div>
-            <div class="faq-answer"><p>Yes. Plan their photos early, keep walking short, and choose a location with benches or easy access.</p></div>
-          </div>
-        </div>
-      </section>
+            <div class="faq-static">
+      <h3>Where should families take photos in Charleston?</h3>
+      <p>Families should consider Hampton Park, Waterfront Park, Sullivan's Island, Isle of Palms, Colonial Lake, and shaded downtown streets.</p>
+    </div>
+    <div class="faq-static">
+      <h3>What is the best Charleston photo spot for kids?</h3>
+      <p>Hampton Park works best for many kids because it has shade, room to move, and a calmer pace.</p>
+    </div>
+    <div class="faq-static">
+      <h3>What is the best beach for family photos near Charleston?</h3>
+      <p>Sullivan's Island and Isle of Palms both work well. Choose Sullivan's Island for a quieter look and Isle of Palms for easy beach access.</p>
+    </div>
+    <div class="faq-static">
+      <h3>When should we take family photos in Charleston?</h3>
+      <p>Morning works best for young kids. Sunset works best for beaches and older kids who can handle a later schedule.</p>
+    </div>
+    <div class="faq-static">
+      <h3>What should families wear for Charleston photos?</h3>
+      <p>Choose soft colors, comfortable shoes, and simple textures. Coordinate instead of matching everyone exactly.</p>
+    </div>
+    <div class="faq-static">
+      <h3>Can grandparents join family photos?</h3>
+      <p>Yes. Plan their photos early, keep walking short, and choose a location with benches or easy access.</p>
+    </div>
+  </section>
 
       <div class="guide-links">
         <p class="guide-box-title">Related Charleston photography pages</p>
@@ -451,7 +446,7 @@
 
       <div class="blog-conversion-cta">
         <p class="guide-cta-title">Ready to plan your Charleston session?</p>
-        <p>Send your session type, date, location idea, and delivery needs. I will reply with the best package or a custom plan.</p>
+        <p>Send your session type, date, location idea, and delivery needs. I'll reply with the best package or a custom plan.</p>
         <div class="blog-conversion-actions">
           <a title="Contact Joshua Smith about Charleston photography" href="/index.html#contact" class="btn btn-accent">Check Availability</a>
           <a title="View Visuals by Joshua portfolio" href="/gallery" class="btn">View Portfolio</a>

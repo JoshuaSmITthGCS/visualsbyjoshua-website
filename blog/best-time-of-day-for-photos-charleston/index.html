@@ -81,6 +81,7 @@
     }
   ]
 }</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the best time of day for photos in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Golden hour is best for most Charleston photos. Downtown often works better early in the morning because streets stay calmer."}}, {"@type": "Question", "name": "Is sunrise or sunset better for Charleston beach photos?", "acceptedAnswer": {"@type": "Answer", "text": "Both work. Sunrise is quieter. Sunset gives warmer light and usually fits more schedules."}}, {"@type": "Question", "name": "Can you take photos in Charleston at noon?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you use shade. Direct noon sun creates harsh shadows and squinting."}}, {"@type": "Question", "name": "What time is best for family photos in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Morning works best for families with young kids. Sunset works for older kids and beach sessions."}}, {"@type": "Question", "name": "What time is best for graduation photos at CofC?", "acceptedAnswer": {"@type": "Answer", "text": "Early morning works well for Cistern Yard and campus routes. Late afternoon works if you want warmer light and can handle more people around."}}, {"@type": "Question", "name": "What happens if it rains during a Charleston session?", "acceptedAnswer": {"@type": "Answer", "text": "Use a covered backup, wait for a lighter window, or reschedule when the rain changes the whole plan."}}]}</script>
   <style>
     .guide-hero {
       background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
@@ -222,13 +223,9 @@
       background: #f5f3f0;
       color: #2a2a2a;
     }
-    .guide-faq .faq-answer {
-      max-height: none;
-      padding: 20px;
-    }
-    .guide-faq .faq-question {
-      cursor: default;
-    }
+    .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
+    .faq-static h3 { margin: 0 0 10px; font-size: 1.3rem; }
+    .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
     @media (max-width: 768px) {
       .guide-summary,
       .guide-checklist,
@@ -398,33 +395,31 @@
 
       <section class="guide-section guide-faq" id="faq">
         <h2 class="section-title">FAQ</h2>
-        <div class="faq-list">
-          <div class="faq-item active">
-            <div class="faq-question">What is the best time of day for photos in Charleston?</div>
-            <div class="faq-answer"><p>Golden hour is best for most Charleston photos. Downtown often works better early in the morning because streets stay calmer.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">Is sunrise or sunset better for Charleston beach photos?</div>
-            <div class="faq-answer"><p>Both work. Sunrise is quieter. Sunset gives warmer light and usually fits more schedules.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">Can you take photos in Charleston at noon?</div>
-            <div class="faq-answer"><p>Yes, if you use shade. Direct noon sun creates harsh shadows and squinting.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">What time is best for family photos in Charleston?</div>
-            <div class="faq-answer"><p>Morning works best for families with young kids. Sunset works for older kids and beach sessions.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">What time is best for graduation photos at CofC?</div>
-            <div class="faq-answer"><p>Early morning works well for Cistern Yard and campus routes. Late afternoon works if you want warmer light and can handle more people around.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">What happens if it rains during a Charleston session?</div>
-            <div class="faq-answer"><p>Use a covered backup, wait for a lighter window, or reschedule when the rain changes the whole plan.</p></div>
-          </div>
-        </div>
-      </section>
+            <div class="faq-static">
+      <h3>What is the best time of day for photos in Charleston?</h3>
+      <p>Golden hour is best for most Charleston photos. Downtown often works better early in the morning because streets stay calmer.</p>
+    </div>
+    <div class="faq-static">
+      <h3>Is sunrise or sunset better for Charleston beach photos?</h3>
+      <p>Both work. Sunrise is quieter. Sunset gives warmer light and usually fits more schedules.</p>
+    </div>
+    <div class="faq-static">
+      <h3>Can you take photos in Charleston at noon?</h3>
+      <p>Yes, if you use shade. Direct noon sun creates harsh shadows and squinting.</p>
+    </div>
+    <div class="faq-static">
+      <h3>What time is best for family photos in Charleston?</h3>
+      <p>Morning works best for families with young kids. Sunset works for older kids and beach sessions.</p>
+    </div>
+    <div class="faq-static">
+      <h3>What time is best for graduation photos at CofC?</h3>
+      <p>Early morning works well for Cistern Yard and campus routes. Late afternoon works if you want warmer light and can handle more people around.</p>
+    </div>
+    <div class="faq-static">
+      <h3>What happens if it rains during a Charleston session?</h3>
+      <p>Use a covered backup, wait for a lighter window, or reschedule when the rain changes the whole plan.</p>
+    </div>
+  </section>
 
       <div class="guide-links">
         <p class="guide-box-title">Related Charleston photography pages</p>
@@ -451,7 +446,7 @@
 
       <div class="blog-conversion-cta">
         <p class="guide-cta-title">Ready to plan your Charleston session?</p>
-        <p>Send your session type, date, location idea, and delivery needs. I will reply with the best package or a custom plan.</p>
+        <p>Send your session type, date, location idea, and delivery needs. I'll reply with the best package or a custom plan.</p>
         <div class="blog-conversion-actions">
           <a title="Contact Joshua Smith about Charleston photography" href="/index.html#contact" class="btn btn-accent">Check Availability</a>
           <a title="View Visuals by Joshua portfolio" href="/gallery" class="btn">View Portfolio</a>

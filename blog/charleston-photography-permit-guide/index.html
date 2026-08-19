@@ -81,6 +81,7 @@
     }
   ]
 }</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need a permit for photos in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "You need to check the rules when the shoot is commercial, uses props, includes a large group, reserves space, or affects streets, sidewalks, parks, or venues."}}, {"@type": "Question", "name": "Do I need a permit for engagement photos in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Simple engagement photos often stay straightforward. Styled setups, props, reserved parks, commercial use, and private venues need review."}}, {"@type": "Question", "name": "Do I need a permit for graduation photos in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Small graduation portraits usually stay simple. Large groups, props, reserved spaces, and commercial setups need more review."}}, {"@type": "Question", "name": "How long does a Charleston film or photography permit take?", "acceptedAnswer": {"@type": "Answer", "text": "The City film and photography application says applications need 10 business days before the activity."}}, {"@type": "Question", "name": "Do Charleston parks require photo permits?", "acceptedAnswer": {"@type": "Answer", "text": "Some park uses need reservations or permits, especially events, reserved spaces, large groups, and setups that affect public use."}}, {"@type": "Question", "name": "Who handles private venue photo permission?", "acceptedAnswer": {"@type": "Answer", "text": "The venue handles it. Ask the venue directly and get written permission before the session."}}]}</script>
   <style>
     .guide-hero {
       background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
@@ -222,13 +223,9 @@
       background: #f5f3f0;
       color: #2a2a2a;
     }
-    .guide-faq .faq-answer {
-      max-height: none;
-      padding: 20px;
-    }
-    .guide-faq .faq-question {
-      cursor: default;
-    }
+    .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
+    .faq-static h3 { margin: 0 0 10px; font-size: 1.3rem; }
+    .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
     @media (max-width: 768px) {
       .guide-summary,
       .guide-checklist,
@@ -400,33 +397,31 @@
 
       <section class="guide-section guide-faq" id="faq">
         <h2 class="section-title">FAQ</h2>
-        <div class="faq-list">
-          <div class="faq-item active">
-            <div class="faq-question">Do I need a permit for photos in Charleston?</div>
-            <div class="faq-answer"><p>You need to check the rules when the shoot is commercial, uses props, includes a large group, reserves space, or affects streets, sidewalks, parks, or venues.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">Do I need a permit for engagement photos in Charleston?</div>
-            <div class="faq-answer"><p>Simple engagement photos often stay straightforward. Styled setups, props, reserved parks, commercial use, and private venues need review.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">Do I need a permit for graduation photos in Charleston?</div>
-            <div class="faq-answer"><p>Small graduation portraits usually stay simple. Large groups, props, reserved spaces, and commercial setups need more review.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">How long does a Charleston film or photography permit take?</div>
-            <div class="faq-answer"><p>The City film and photography application says applications need 10 business days before the activity.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">Do Charleston parks require photo permits?</div>
-            <div class="faq-answer"><p>Some park uses need reservations or permits, especially events, reserved spaces, large groups, and setups that affect public use.</p></div>
-          </div>
-          <div class="faq-item active">
-            <div class="faq-question">Who handles private venue photo permission?</div>
-            <div class="faq-answer"><p>The venue handles it. Ask the venue directly and get written permission before the session.</p></div>
-          </div>
-        </div>
-      </section>
+            <div class="faq-static">
+      <h3>Do I need a permit for photos in Charleston?</h3>
+      <p>You need to check the rules when the shoot is commercial, uses props, includes a large group, reserves space, or affects streets, sidewalks, parks, or venues.</p>
+    </div>
+    <div class="faq-static">
+      <h3>Do I need a permit for engagement photos in Charleston?</h3>
+      <p>Simple engagement photos often stay straightforward. Styled setups, props, reserved parks, commercial use, and private venues need review.</p>
+    </div>
+    <div class="faq-static">
+      <h3>Do I need a permit for graduation photos in Charleston?</h3>
+      <p>Small graduation portraits usually stay simple. Large groups, props, reserved spaces, and commercial setups need more review.</p>
+    </div>
+    <div class="faq-static">
+      <h3>How long does a Charleston film or photography permit take?</h3>
+      <p>The City film and photography application says applications need 10 business days before the activity.</p>
+    </div>
+    <div class="faq-static">
+      <h3>Do Charleston parks require photo permits?</h3>
+      <p>Some park uses need reservations or permits, especially events, reserved spaces, large groups, and setups that affect public use.</p>
+    </div>
+    <div class="faq-static">
+      <h3>Who handles private venue photo permission?</h3>
+      <p>The venue handles it. Ask the venue directly and get written permission before the session.</p>
+    </div>
+  </section>
 
       <div class="guide-links">
         <p class="guide-box-title">Related Charleston photography pages</p>
@@ -454,7 +449,7 @@
 
       <div class="blog-conversion-cta">
         <p class="guide-cta-title">Ready to plan your Charleston session?</p>
-        <p>Send your session type, date, location idea, and delivery needs. I will reply with the best package or a custom plan.</p>
+        <p>Send your session type, date, location idea, and delivery needs. I'll reply with the best package or a custom plan.</p>
         <div class="blog-conversion-actions">
           <a title="Contact Joshua Smith about Charleston photography" href="/index.html#contact" class="btn btn-accent">Check Availability</a>
           <a title="View Visuals by Joshua portfolio" href="/gallery" class="btn">View Portfolio</a>
