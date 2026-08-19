@@ -13,8 +13,8 @@
 
     <!-- OG Tags -->
     <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Visuals by Joshua">
-  <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Visuals by Joshua">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://visualsbyjoshua.com/blog/sullivans-island-birthday-portrait-photography-charleston/" />
     <meta property="og:title" content="Sullivan's Island Birthday Portrait Photography | Charleston Portrait Photographer" />
     <meta property="og:description" content="Golden hour birthday portrait session on Sullivan's Island. Natural light, a Tamron 28-75mm f/2.8, and the right location make all the difference." />
@@ -27,16 +27,12 @@
     <meta name="twitter:description" content="Golden hour birthday portrait session on Sullivan's Island. Natural light, a Tamron 28-75mm f/2.8, and the right location make all the difference." />
     <meta name="twitter:image" content="https://visualsbyjoshua.com/images/portraits/sullivans-island-birthday-portrait-charleston.webp" />
 
-    <!-- Fonts -->
+    <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Shared Blog Styles -->
-    <link rel="stylesheet" href="/styles.css">
-
-    <!-- Schema.org BlogPosting markup -->
+    <!-- Schema.org markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -68,334 +64,762 @@
         },
         "keywords": "Sullivan's Island portrait photographer, Charleston birthday photography, beach portrait photographer Charleston SC, golden hour photography Charleston"
     }
-    </script><style>
-        .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://visualsbyjoshua.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://visualsbyjoshua.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sullivan's Island Birthday Portrait Photography in Charleston",
+          "item": "https://visualsbyjoshua.com/blog/sullivans-island-birthday-portrait-photography-charleston/"
         }
-        @media (min-width: 800px) {
-          .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-          }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the best time of day for beach portraits on Sullivan's Island?", "acceptedAnswer": {"@type": "Answer", "text": "Golden hour, the last hour before sunset. The sun drops behind you while you face the ocean, giving you warm, soft light on your subject's face. Avoid shooting between 11am and 3pm when the overhead sun creates harsh shadows and squinting."}}, {"@type": "Question", "name": "How much does a birthday portrait session in Charleston cost?", "acceptedAnswer": {"@type": "Answer", "text": "Birthday portrait sessions in Charleston typically start around $200-$400 depending on session length and number of edited images. Check out my Charleston photography pricing guide for a full breakdown."}}, {"@type": "Question", "name": "What should I wear for a beach portrait session on Sullivan's Island?", "acceptedAnswer": {"@type": "Answer", "text": "Light, flowy fabrics work best. They move with the ocean breeze and photograph well in golden hour light. Solid colors or soft pastels pop against sand and water. White, cream, light blue, and earth tones are safe picks. Avoid busy patterns and neon colors."}}, {"@type": "Question", "name": "Do I need a permit for portrait photography on Sullivan's Island?", "acceptedAnswer": {"@type": "Answer", "text": "Small portrait sessions with natural light and no equipment setups do not require a permit on Sullivan's Island. Larger productions with props, backdrops, or groups over 10 people should check with the Town of Sullivan's Island for permit requirements."}}, {"@type": "Question", "name": "How long does a golden hour portrait session last?", "acceptedAnswer": {"@type": "Answer", "text": "A golden hour session runs 45 minutes to one hour. The best light window is tight, about 40 minutes before sunset. Arrive early to get settled and start shooting as soon as the light hits. Trying to extend past sunset means you lose the warm tones that make golden hour worth chasing."}}, {"@type": "Question", "name": "Why is Sullivan's Island a good location for portrait photography?", "acceptedAnswer": {"@type": "Answer", "text": "Sullivan's Island is less crowded than Folly Beach and Isle of Palms, which means fewer people in your background. The beach is wide with natural dunes and driftwood. The east-facing shore gives you clean golden hour backlight, and the drive from downtown Charleston is only about 25 minutes."}}]}</script>
+
+    <script src="/analytics.js" defer></script>
+
+    <style>
+        /* ========================================
+           RESET & BASE (matches homepage design system)
+           ======================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
         }
 
-        .tip-card {
-            background: var(--light);
-            padding: 30px;
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #2a2a2a;
+            background-color: #fcfbfa;
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s ease; }
+        a:hover { opacity: 0.7; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: #2a2a2a;
+            color: #fff;
+            padding: 12px 22px;
+            z-index: 1000;
+            border-radius: 0 0 8px 0;
+            font-size: 0.9rem;
+        }
+        .skip-link:focus { left: 0; }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(252, 251, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px clamp(20px, 5vw, 80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+
+        .nav-menu { display: flex; gap: 40px; list-style: none; }
+        .nav-menu a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2a2a2a;
+        }
+        .nav-menu a:hover { color: #be976d; opacity: 1; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+        }
+        .nav-toggle-bar {
+            width: 22px;
+            height: 2px;
+            background: #2a2a2a;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: #fcfbfa;
+                border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+                padding: 8px 0 16px;
+                transform: translateY(-12px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.25s ease;
+            }
+            .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-menu a { display: block; padding: 14px 20px; }
+            .nav-toggle { display: flex; }
+        }
+
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        p { font-size: 1rem; line-height: 1.8; }
+
+        .kicker {
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #be976d;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* ========================================
+           LAYOUT PRIMITIVES
+           ======================================== */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
             border-radius: 10px;
-            margin: 30px 0;
-            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        .btn-ghost {
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            color: #ffffff;
+            background: transparent;
+        }
+        .btn-ghost:hover { background: rgba(255, 255, 255, 0.15); opacity: 1; }
+        .btn-primary {
+            background: #be976d;
+            color: #ffffff;
+            border: 2px solid #be976d;
+        }
+        .btn-primary:hover {
+            background: #a67f5a;
+            border-color: #a67f5a;
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #2a2a2a;
+            border: 2px solid #2a2a2a;
+        }
+        .btn-secondary:hover { background: #2a2a2a; color: #fcfbfa; opacity: 1; }
+
+        /* ========================================
+           ARTICLE HERO
+           ======================================== */
+        .article-hero {
+            position: relative;
+            width: 100%;
+            min-height: 64vh;
+            margin-top: 80px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(20,18,15,0.15) 0%, rgba(20,18,15,0.55) 100%), url('/images/portraits/sullivans-island-birthday-portrait-charleston.webp') center 35% / cover no-repeat;
+        }
+        @media (max-width: 768px) { .article-hero { margin-top: 68px; min-height: 56vh; } }
+
+        .article-hero-content {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            width: 100%;
+            padding: 60px clamp(20px, 5vw, 80px) 56px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
-        .pro-tip {
+        .breadcrumb {
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 18px;
+        }
+        .breadcrumb a { color: #ffffff; }
+        .breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+        .article-hero h1 {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            font-style: italic;
+            letter-spacing: -0.01em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            max-width: 900px;
+            margin-bottom: 1rem;
+        }
+
+        .article-hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 300;
+            max-width: 640px;
+            opacity: 0.95;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            margin-top: 30px;
+            font-size: 0.8125rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* ========================================
+           ARTICLE BODY
+           ======================================== */
+        .article-body {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
+        }
+
+        .article-body h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-style: italic;
+            margin: 3.25rem 0 1.25rem;
+            scroll-margin-top: 96px;
+        }
+        .article-body h2:first-of-type { margin-top: 0; }
+
+        .article-body h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #2a2a2a;
+            margin: 2.25rem 0 1rem;
+            padding-left: 16px;
+            border-left: 3px solid #be976d;
+        }
+
+        /* First paragraph after a heading reads as a lede: slightly heavier weight
+           gives skimmers a scan-anchor without adding another visual element. */
+        .article-body h2 + p {
+            font-weight: 500;
+            font-size: 1.0625rem;
+            color: #2a2a2a;
+        }
+
+        .article-body p { margin-bottom: 1.5rem; color: #3a3630; }
+
+        .article-body ul {
+            margin: 0 0 1.75rem 1.25rem;
+            line-height: 2;
+            color: #3a3630;
+        }
+
+        .article-body a {
+            color: #7d5732;
+            border-bottom: 1px solid rgba(190, 151, 109, 0.5);
+        }
+        .article-body a:hover { opacity: 1; border-color: #be976d; }
+
+        .article-body strong { font-weight: 600; color: #2a2a2a; }
+
+        .article-figure { margin: 3rem 0; text-align: center; }
+        .article-figure img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            margin: 0 auto;
+        }
+        .article-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.875rem;
+            font-style: italic;
+            color: #63594e;
+        }
+
+        /* ========================================
+           PULL QUOTE
+           ======================================== */
+        .pull-quote {
+            margin: 3.5rem 0;
+            padding-left: 28px;
+            border-left: 3px solid #be976d;
+        }
+        .pull-quote p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+            line-height: 1.35;
+            color: #2a2a2a;
+            margin: 0;
+        }
+
+        /* ========================================
+           COLLAPSIBLE SECTIONS (native <details>, no JS dependency)
+           ======================================== */
+        .toc-box {
+            margin-bottom: 3rem;
+            padding: 22px 26px;
             background: #f5f3f0;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
-        }
-
-        .pro-tip h3 {
-            color: #856545;
-            margin-bottom: 10px;
-        }
-
-        .faq-section {
-            margin: 60px 0;
-        }
-
-        .faq-item {
-            background: var(--light);
-            padding: 25px 30px;
             border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: var(--shadow);
         }
-
-        .faq-item h3 {
-            color: var(--primary);
-            margin-bottom: 12px;
+        .toc-box summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
             font-size: 1.15rem;
+            color: #2a2a2a;
+        }
+        .toc-box summary::-webkit-details-marker { display: none; }
+        .toc-box summary::after {
+            content: '+';
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .toc-box[open] summary::after { transform: rotate(45deg); }
+        .toc-list {
+            list-style: none;
+            margin: 18px 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 24px;
+        }
+        @media (max-width: 560px) { .toc-list { grid-template-columns: 1fr; } }
+        .toc-list a {
+            font-size: 0.9375rem;
+            color: #5a564e;
+            border-bottom: none;
+        }
+        .toc-list a:hover { color: #7d5732; opacity: 1; }
+
+        /* ========================================
+           FAQ
+           ======================================== */
+        .faq-item {
+            padding: 4px 0;
+            border-top: 1px solid rgba(42, 42, 42, 0.1);
+        }
+        .faq-item:last-child { border-bottom: 1px solid rgba(42, 42, 42, 0.1); }
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            flex-shrink: 0;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .faq-item[open] summary::after { transform: rotate(45deg); }
+        .faq-item p { margin: 0 0 22px; color: #5a564e; }
+
+        /* ========================================
+           CTA BANNER
+           ======================================== */
+        .cta-banner {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: clamp(60px, 8vw, 90px) 0;
+            text-align: center;
+        }
+        .cta-banner .container { max-width: 700px; }
+        .cta-banner h2 { color: #ffffff; font-style: italic; margin-bottom: 1.25rem; }
+        .cta-banner p { color: rgba(255, 255, 255, 0.85); margin-bottom: 2rem; }
+        .cta-banner p a { color: #d9b48f; border-bottom: 1px solid rgba(217, 180, 143, 0.5); }
+        .cta-banner p a:hover { opacity: 1; }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer { background: #2a2a2a; color: #ffffff; padding: 60px 0 110px; }
+        @media (min-width: 769px) { .footer { padding-bottom: 30px; } }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p { font-size: 0.9375rem; opacity: 0.8; }
+        .footer-links h4 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { font-size: 0.9375rem; opacity: 0.8; transition: opacity 0.3s ease; }
+        .footer-links a:hover { opacity: 1; }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+            font-size: 0.875rem;
+            opacity: 0.7;
         }
 
-        .faq-item p {
-            line-height: 1.7;
-            color: #5a5a5a;
+        /* ========================================
+           BACK TO TOP
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 90;
         }
+        .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .back-to-top:hover { opacity: 0.85; background: #be976d; }
 
-        .location-highlight {
-            background: var(--light);
-            padding: 30px;
-            border-radius: 10px;
-            margin: 40px 0;
-            box-shadow: var(--shadow);
+        /* ========================================
+           SCROLL REVEAL
+           ======================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
         }
     </style>
-  <script src="/analytics.js" defer></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://visualsbyjoshua.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://visualsbyjoshua.com/blog.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Sullivan's Island Birthday Portrait Photography in Charleston",
-      "item": "https://visualsbyjoshua.com/blog/sullivans-island-birthday-portrait-photography-charleston/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the best time of day for beach portraits on Sullivan's Island?", "acceptedAnswer": {"@type": "Answer", "text": "Golden hour, the last hour before sunset. The sun drops behind you while you face the ocean, giving you warm, soft light on your subject's face. Avoid shooting between 11am and 3pm when the overhead sun creates harsh shadows and squinting."}}, {"@type": "Question", "name": "How much does a birthday portrait session in Charleston cost?", "acceptedAnswer": {"@type": "Answer", "text": "Birthday portrait sessions in Charleston typically start around $200-$400 depending on session length and number of edited images. Check out my Charleston photography pricing guide for a full breakdown."}}, {"@type": "Question", "name": "What should I wear for a beach portrait session on Sullivan's Island?", "acceptedAnswer": {"@type": "Answer", "text": "Light, flowy fabrics work best. They move with the ocean breeze and photograph well in golden hour light. Solid colors or soft pastels pop against sand and water. White, cream, light blue, and earth tones are safe picks. Avoid busy patterns and neon colors."}}, {"@type": "Question", "name": "Do I need a permit for portrait photography on Sullivan's Island?", "acceptedAnswer": {"@type": "Answer", "text": "Small portrait sessions with natural light and no equipment setups do not require a permit on Sullivan's Island. Larger productions with props, backdrops, or groups over 10 people should check with the Town of Sullivan's Island for permit requirements."}}, {"@type": "Question", "name": "How long does a golden hour portrait session last?", "acceptedAnswer": {"@type": "Answer", "text": "A golden hour session runs 45 minutes to one hour. The best light window is tight, about 40 minutes before sunset. Arrive early to get settled and start shooting as soon as the light hits. Trying to extend past sunset means you lose the warm tones that make golden hour worth chasing."}}, {"@type": "Question", "name": "Why is Sullivan's Island a good location for portrait photography?", "acceptedAnswer": {"@type": "Answer", "text": "Sullivan's Island is less crowded than Folly Beach and Isle of Palms, which means fewer people in your background. The beach is wide with natural dunes and driftwood. The east-facing shore gives you clean golden hour backlight, and the drive from downtown Charleston is only about 25 minutes."}}]}</script>
-  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/blog/photography-pricing/">Pricing</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
-        <li><a href="/#contact">Book Now</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </nav>
+    <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
 
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Visuals by Joshua</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/blog/photography-pricing/">Pricing</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+                <li><a href="/#contact">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Blog Hero Section -->
-    <section class="article-hero hero-bg" style="--bg-url: url('/images/portraits/sullivans-island-birthday-portrait-charleston.webp');" id="main">
-        <div class="blog-hero-content">
+    <!-- Article Hero -->
+    <section class="article-hero" id="main">
+        <div class="article-hero-content">
             <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Sullivan&#x27;s Island Birthday Portrait Photography in Charleston</div>
-          <h1 class="blog-hero-title">Sullivan's Island Birthday Portrait Photography in Charleston</h1>
-            <p class="blog-hero-subtitle">A golden hour beach session, a 28-75mm f/2.8, and why Sullivan's Island is one of the best portrait locations in Charleston</p>
-
-            <div class="blog-meta">
-                <div class="meta-item">
-                    <i class="fas fa-user"></i>
-                    <span>By Joshua Smith</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-calendar"></i>
-                    <span>March 21, 2026</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i>
-                    <span>6 min read</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Sullivan's Island, SC</span>
-                </div>
+            <h1>Sullivan's Island Birthday Portrait Photography in Charleston</h1>
+            <p class="article-hero-subtitle">A golden hour beach session, a 28-75mm f/2.8, and why Sullivan's Island is one of the best portrait locations in Charleston</p>
+            <div class="article-meta">
+                <span>By Joshua Smith</span>
+                <span>March 21, 2026</span>
+                <span>6 min read</span>
+                <span>Sullivan's Island, SC</span>
             </div>
         </div>
     </section>
 
-    <!-- Blog Content -->
-    <section class="article-content">
-        <div class="blog-container">
+    <main>
+    <article class="article-body">
 
-            <!-- Introduction -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">The Best Birthday Gift Is One You Can Frame</h2>
-                    <p class="blog-text">Your 19th birthday does not come with a massive party or a legal milestone. It falls in that quiet gap between 18 and 21 where people forget to make a big deal out of it. That is exactly why a <strong>Sullivan's Island portrait session</strong> works so well for a birthday like this. You take an hour, you get on the beach at the right time, and you walk away with photos that actually feel like you at 19.</p>
+        <details class="toc-box reveal">
+            <summary>In this guide</summary>
+            <ul class="toc-list">
+                <li><a href="#best-birthday-gift">The best birthday gift is one you can frame</a></li>
+                <li><a href="#why-sullivans-island">Why Sullivan's Island beats every other beach</a></li>
+                <li><a href="#golden-hour">Golden hour on the beach</a></li>
+                <li><a href="#one-lens">One lens for the whole session</a></li>
+                <li><a href="#directing-the-session">Directing a portrait session</a></li>
+                <li><a href="#what-to-wear">What to wear for beach portraits</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </details>
 
-                    <p class="blog-text">I shot this session today on Sullivan's Island during golden hour. Just me, my Tamron 28-75mm f/2.8, and a client named Layla who wanted something relaxed and natural for her birthday. No studio. No artificial lighting. Just the beach, the last hour of sun, and good energy. Here is how it came together and why this location keeps pulling me back.</p>
-                </div>
-            </div>
+        <h2 id="best-birthday-gift" class="reveal">The Best Birthday Gift Is One You Can Frame</h2>
+        <p>Your 19th birthday does not come with a massive party or a legal milestone. It falls in that quiet gap between 18 and 21 where people forget to make a big deal out of it. That is exactly why a <strong>Sullivan's Island portrait session</strong> works so well for a birthday like this. You take an hour, you get on the beach at the right time, and you walk away with photos that actually feel like you at 19.</p>
 
-            <!-- Featured Image -->
-            <div style="margin: 40px 0; max-height: 500px; overflow: hidden; border-radius: 10px; box-shadow: var(--shadow);">
-                <picture>
-                  <source type="image/avif" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.avif 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.avif 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.avif 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <source type="image/webp" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.webp 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.webp 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.webp 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <img src="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.jpg 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.jpg 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="1206" height="2622" alt="Golden hour birthday portrait on Sullivan's Island beach in Charleston SC by Joshua Smith photographer" style="width: 100%; height: 500px; object-fit: cover; border-radius: 10px;" loading="lazy" decoding="async">
-                </picture>
-            </div>
+        <p>I shot this session today on Sullivan's Island during golden hour. Just me, my Tamron 28-75mm f/2.8, and a client named Layla who wanted something relaxed and natural for her birthday. No studio. No artificial lighting. Just the beach, the last hour of sun, and good energy. Here is how it came together and why this location keeps pulling me back.</p>
 
-            <!-- Why Sullivan's Island -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Why Sullivan's Island Beats Every Other Charleston Beach for Portraits</h2>
-                    <p class="blog-text">Charleston has beaches. Sullivan's Island has a beach that actually works for photography. The difference matters.</p>
+        <figure class="article-figure reveal">
+            <picture>
+                <source type="image/avif" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.avif 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.avif 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.avif 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <source type="image/webp" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.webp 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.webp 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.webp 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <img src="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.jpg 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.jpg 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)" width="1206" height="2622" alt="Golden hour birthday portrait on Sullivan's Island beach in Charleston SC by Joshua Smith photographer" loading="lazy" decoding="async">
+            </picture>
+        </figure>
 
-                    <p class="blog-text">Folly Beach gets packed. Isle of Palms has the commercial strip right behind you. Sullivan's Island stays quieter, especially on weekday evenings. You get a wide stretch of sand, natural dune grass, and fewer strangers walking through your frame every thirty seconds. For portrait work that means fewer retakes and more usable shots per hour.</p>
+        <h2 id="why-sullivans-island" class="reveal">Why Sullivan's Island Beats Every Other Charleston Beach for Portraits</h2>
+        <p>Charleston has beaches. Sullivan's Island has a beach that actually works for photography. The difference matters.</p>
 
-                    <p class="blog-text">The geography helps too. Sullivan's Island faces east, so during golden hour the sun drops behind you while the ocean stretches out in front of your subject. That gives you warm backlight on hair and shoulders with soft, even light on the face. You do not need a reflector. You do not need fill flash. The light does the work if you time it right.</p>
+        <p>Folly Beach gets packed. Isle of Palms has the commercial strip right behind you. Sullivan's Island stays quieter, especially on weekday evenings. You get a wide stretch of sand, natural dune grass, and fewer strangers walking through your frame every thirty seconds. For portrait work that means fewer retakes and more usable shots per hour.</p>
 
-                    <p class="blog-text">From downtown Charleston the drive is about 25 minutes over the <a title="Sullivan's Island visitor information" href="https://www.sullivansisland-sc.gov/" target="_blank" rel="noopener">Ben Sawyer Bridge</a>. Short enough that your client is not exhausted before the session starts. That matters more than people think.</p>
-                </div>
-            </div>
+        <p>The geography helps too. Sullivan's Island faces east, so during golden hour the sun drops behind you while the ocean stretches out in front of your subject. That gives you warm backlight on hair and shoulders with soft, even light on the face. You do not need a reflector. You do not need fill flash.</p>
 
-            <!-- Golden Hour -->
-            <div class="tip-card">
-                <h2 class="section-title">Golden Hour on the Beach Is a Short Window</h2>
-                <p class="blog-text">People talk about golden hour like it is this long, forgiving stretch of perfect light. It is not. On Sullivan's Island you get about 40 good minutes. The light shifts from warm and directional to flat and orange to gone. If you are not shooting by the time the sun is low enough, you missed it.</p>
+        <p>From downtown Charleston the drive is about 25 minutes over the <a title="Sullivan's Island visitor information" href="https://www.sullivansisland-sc.gov/" target="_blank" rel="noopener">Ben Sawyer Bridge</a>. Short enough that your client is not exhausted before the session starts. That matters more than people think.</p>
 
-                <p class="blog-text">I tell my clients to arrive 15 minutes before I plan to start shooting. That gives us time to walk to the right spot, talk through a few poses, and get comfortable before the light peaks. For this session with Layla we started around 6:15 and shot until about 7:00. That gave us the full golden hour window plus a few minutes of that soft post-sunset glow that works well for closer portraits.</p>
+        <blockquote class="pull-quote reveal">
+            <p>The light does the work if you time it right.</p>
+        </blockquote>
 
-                <p class="blog-text">Timing your session around the tide is non-negotiable for beach portraits. I check the exact time the morning of and plan backwards from there. If your photographer is not thinking about this, find one who is.</p>
-            </div>
+        <h2 id="golden-hour" class="reveal">Golden Hour on the Beach Is a Short Window</h2>
+        <p>People talk about golden hour like it is this long, forgiving stretch of perfect light. It is not. On Sullivan's Island you get about 40 good minutes. The light shifts from warm and directional to flat and orange to gone. If you are not shooting by the time the sun is low enough, you missed it.</p>
 
-            <!-- Gear -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">One Lens for the Whole Session</h2>
-                    <p class="blog-text">I shot this entire session on my Tamron 28-75mm f/2.8. No lens changes. No backup body. One lens, one camera, full focus on the person in front of me.</p>
+        <p>I tell my clients to arrive 15 minutes before I plan to start shooting. That gives us time to walk to the right spot, talk through a few poses, and get comfortable before the light peaks. For this session with Layla we started around 6:15 and shot until about 7:00. That gave us the full golden hour window plus a few minutes of that soft post-sunset glow that works well for closer portraits.</p>
 
-                    <p class="blog-text">The 28-75 range covers everything you need for a beach portrait session. At 28mm you get wide environmental shots that show the ocean, the sand, the full scene. At 75mm you get tight headshots with smooth background compression and that creamy bokeh at f/2.8 that separates your subject from the water behind them.</p>
+        <p>Timing your session around the tide is non-negotiable for beach portraits. I check the exact time the morning of and plan backwards from there. If your photographer is not thinking about this, find one who is.</p>
 
-                    <p class="blog-text">I kept the aperture at f/2.8 for most of the session. On the beach you want that shallow depth of field because the background is simple enough to blur clean. Sand and water turn into soft streaks of color that frame the subject without competing for attention. If there were more detailed backgrounds I would stop down to f/4 or f/5.6 to keep some context sharp. On a beach that is not necessary.</p>
+        <h2 id="one-lens" class="reveal">One Lens for the Whole Session</h2>
+        <p>I shot this entire session on my Tamron 28-75mm f/2.8. No lens changes. No backup body. One lens, one camera, full focus on the person in front of me.</p>
 
-                    <p class="blog-text">Natural light only. No flash, no reflector. Golden hour on Sullivan's Island gives you enough light to shoot at ISO 100-200 with a fast shutter speed. Clean files, no noise, no gear to carry across the sand. Keep it simple and the photos look better for it.</p>
-                </div>
-            </div>
+        <p>The 28-75 range covers everything you need for a beach portrait session. At 28mm you get wide environmental shots that show the ocean, the sand, the full scene. At 75mm you get tight headshots with smooth background compression and that creamy bokeh at f/2.8 that separates your subject from the water behind them.</p>
 
-            <!-- Directing the Session -->
-            <div class="tip-card">
-                <h2 class="section-title">Directing a Portrait Session When Your Client Is Not a Model</h2>
-                <p class="blog-text">Most of my portrait clients have never done a photoshoot before. Layla had not. That is normal and it does not matter as long as you know how to direct.</p>
+        <p>I kept the aperture at f/2.8 for most of the session. On the beach you want that shallow depth of field because the background is simple enough to blur clean. Sand and water turn into soft streaks of color that frame the subject without competing for attention. If there were more detailed backgrounds I would stop down to f/4 or f/5.6 to keep some context sharp. On a beach that is not necessary.</p>
 
-                <p class="blog-text">I start with movement. Walk toward me, look over your shoulder, play with your hair. Movement creates natural body language and takes the pressure off "posing." Nobody looks relaxed when they are standing still trying to figure out what to do with their hands. Give them an action and the pose happens on its own.</p>
+        <p>Natural light only. No flash, no reflector. Golden hour on Sullivan's Island gives you enough light to shoot at ISO 100-200 with a fast shutter speed. Clean files, no noise, no gear to carry across the sand. Keep it simple and the photos look better for it.</p>
 
-                <p class="blog-text">Then I move to stationary poses but I keep them loose. Weight on one hip, chin slightly up, eyes past the camera. I shoot through the transitions between poses because those in-between moments often look more genuine than the held position. A laugh between setups. A glance down at the sand. That is where the real photos live.</p>
+        <h2 id="directing-the-session" class="reveal">Directing a Portrait Session When Your Client Is Not a Model</h2>
+        <p>Most of my portrait clients have never done a photoshoot before. Layla had not. That is normal and it does not matter as long as you know how to direct.</p>
 
-                <p class="blog-text">For birthday sessions specifically I want the photos to feel celebratory without being forced. No "hold up 19 fingers" shots. Just confidence, good light, and a location that makes the whole thing feel easy. The goal is photos your client looks at and thinks "yeah, that is me" not "I look like I am trying to look good."</p>
-            </div>
+        <p>I start with movement. Walk toward me, look over your shoulder, play with your hair. Movement creates natural body language and takes the pressure off "posing." Nobody looks relaxed when they are standing still trying to figure out what to do with their hands. Give them an action and the pose happens on its own.</p>
 
-            <!-- Wardrobe -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">What to Wear for Beach Portraits in Charleston</h2>
-                    <p class="blog-text">Layla wore a white flowy top with light jeans. That is close to a perfect beach portrait outfit and here is why.</p>
+        <p>Then I move to stationary poses but I keep them loose. Weight on one hip, chin slightly up, eyes past the camera. I shoot through the transitions between poses because those in-between moments often look more genuine than the held position. A laugh between setups. A glance down at the sand. That is where the real photos live.</p>
 
-                    <p class="blog-text">Light colors reflect golden hour light. White and cream fabrics glow warm in that last hour of sun. Dark colors absorb light and can make your subject look flat against a bright background. Flowy fabrics move with the ocean breeze and create texture in the frame. A stiff blazer or structured dress fights the wind and looks out of place on sand.</p>
+        <p>For birthday sessions specifically I want the photos to feel celebratory without being forced. No "hold up 19 fingers" shots. Just confidence, good light, and a location that makes the whole thing feel easy. The goal is photos your client looks at and thinks "yeah, that is me" not "I look like I am trying to look good."</p>
 
-                    <p class="blog-text">If you are booking a beach portrait session and you are not sure what to wear, stick with these guidelines.</p>
+        <h2 id="what-to-wear" class="reveal">What to Wear for Beach Portraits in Charleston</h2>
+        <p>Layla wore a white flowy top with light jeans. That is close to a perfect beach portrait outfit and here is why.</p>
 
-                    <ul class="blog-text" style="margin-left: 20px; margin-top: 10px; line-height: 2;">
-                        <li>Solid colors or soft pastels. No busy patterns.</li>
-                        <li>Fabrics that move. Linen, chiffon, cotton.</li>
-                        <li>Layers if you want variety between shots.</li>
-                        <li>Skip the heels. You are walking on sand.</li>
-                        <li>Bring a second outfit if the session is over 45 minutes.</li>
-                    </ul>
+        <p>Light colors reflect golden hour light. White and cream fabrics glow warm in that last hour of sun. Dark colors absorb light and can make your subject look flat against a bright background. Flowy fabrics move with the ocean breeze and create texture in the frame. A stiff blazer or structured dress fights the wind and looks out of place on sand.</p>
 
-                    <p class="blog-text">I send a detailed prep guide to every client before their session. If you want a head start, check out my post on <a title="Read the Charleston spring graduation portrait session guide" href="/blog/charleston-spring-graduation-portrait-session/">Charleston spring graduation portraits</a> where I break down how to prepare.</p>
-                </div>
-            </div>
+        <p>If you are booking a beach portrait session and you are not sure what to wear, stick with these guidelines.</p>
 
-            <!-- Pro Tip -->
-            <div class="pro-tip">
-                <h3><i class="fas fa-lightbulb"></i> Pro Tip: Scout Your Beach Location Before the Session</h3>
-                <p>I walked Sullivan's Island the day before Layla's session to check the tide and find the best stretches of sand. High tide pushes the shooting area smaller and can leave seaweed across the beach. Low tide gives you a wide, clean canvas. Check the <a title="Check Charleston tide predictions" href="https://tidesandcurrents.noaa.gov/noaatidepredictions.html?id=8665530" rel="noopener">Charleston tide chart</a> and plan around low or mid tide for the most usable space.</p>
-            </div>
+        <ul>
+            <li>Solid colors or soft pastels. No busy patterns.</li>
+            <li>Fabrics that move. Linen, chiffon, cotton.</li>
+            <li>Layers if you want variety between shots.</li>
+            <li>Skip the heels. You are walking on sand.</li>
+            <li>Bring a second outfit if the session is over 45 minutes.</li>
+        </ul>
 
-            <!-- Other Charleston Locations -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Other Charleston Portrait Locations Worth Knowing</h3>
-                    <p class="blog-text">Sullivan's Island is my top pick for beach sessions but it is not the only option in Charleston. If you want variety or a different backdrop here are a few locations I shoot regularly.</p>
+        <p>I send a detailed prep guide to every client before their session. If you want a head start, check out my post on <a title="Read the Charleston spring graduation portrait session guide" href="/blog/charleston-spring-graduation-portrait-session/">Charleston spring graduation portraits</a> where I break down how to prepare.</p>
 
-                    <p class="blog-text"><strong>Waterfront Park</strong> gives you the iconic Pineapple Fountain and harbor views. Good for golden hour with the water catching light behind your subject. Gets busy on weekends though so weekday sessions are better here.</p>
+        <h3>Pro Tip: Scout Your Beach Location Before the Session</h3>
+        <p>I walked Sullivan's Island the day before Layla's session to check the tide and find the best stretches of sand. High tide pushes the shooting area smaller and can leave seaweed across the beach. Low tide gives you a wide, clean canvas. Check the <a title="Check Charleston tide predictions" href="https://tidesandcurrents.noaa.gov/noaatidepredictions.html?id=8665530" rel="noopener">Charleston tide chart</a> and plan around low or mid tide for the most usable space.</p>
 
-                    <p class="blog-text"><strong>Rainbow Row</strong> is colorful and recognizable but the sidewalk is narrow and tourists will walk through your shots constantly. I use it for quick series of 10-15 frames and then move on. Not ideal for a full session.</p>
+        <h3>Other Charleston Portrait Locations Worth Knowing</h3>
+        <p>Sullivan's Island is my top pick for beach sessions but it is not the only option in Charleston. If you want variety or a different backdrop here are a few locations I shoot regularly.</p>
 
-                    <p class="blog-text"><strong>Cypress Gardens</strong> is about 30 minutes from downtown and gives you swamp, Spanish moss, and those wooden bridges that look like something out of a film. I shot an <a title="Read the Cypress Gardens engagement photography guide" href="/blog/cypress-gardens-engagement-photography-charleston/">engagement session at Cypress Gardens</a> and the results were worth the drive.</p>
+        <p><strong>Waterfront Park</strong> gives you the iconic Pineapple Fountain and harbor views. Good for golden hour with the water catching light behind your subject. Gets busy on weekends though so weekday sessions are better here.</p>
 
-                    <p class="blog-text"><strong>Downtown alleys and side streets</strong> near King Street have brick walls, iron gates, and textures that work well for urban portraits. I have used these for <a title="Read the Charleston historic district graduation portraits guide" href="/blog/charleston-historic-district-graduation-portraits/">historic district graduation portraits</a> and they hold up in daylight too.</p>
-                </div>
-            </div>
+        <p><strong>Rainbow Row</strong> is colorful and recognizable but the sidewalk is narrow and tourists will walk through your shots constantly. I use it for quick series of 10-15 frames and then move on. Not ideal for a full session.</p>
 
-            <!-- FAQ Section -->
-            <div class="faq-section">
-                <h2 class="section-title">Frequently Asked Questions</h2>
+        <p><strong>Cypress Gardens</strong> is about 30 minutes from downtown and gives you swamp, Spanish moss, and those wooden bridges that look like something out of a film. I shot an <a title="Read the Cypress Gardens engagement photography guide" href="/blog/cypress-gardens-engagement-photography-charleston/">engagement session at Cypress Gardens</a> and the results were worth the drive.</p>
 
-                <div class="faq-item">
-                    <h3>What is the best time of day for beach portraits on Sullivan's Island?</h3>
-                    <p>Golden hour, the last hour before sunset. The sun drops behind you while you face the ocean, giving you warm, soft light on your subject's face. Avoid shooting between 11am and 3pm when the overhead sun creates harsh shadows and squinting.</p>
-                </div>
+        <p><strong>Downtown alleys and side streets</strong> near King Street have brick walls, iron gates, and textures that work well for urban portraits. I have used these for <a title="Read the Charleston historic district graduation portraits guide" href="/blog/charleston-historic-district-graduation-portraits/">historic district graduation portraits</a> and they hold up in daylight too.</p>
 
-                <div class="faq-item">
-                    <h3>How much does a birthday portrait session in Charleston cost?</h3>
-                    <p>Birthday portrait sessions in Charleston typically start around $200-$400 depending on session length and number of edited images. Check out my <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston photography pricing guide</a> for a full breakdown.</p>
-                </div>
+        <h2 id="faq" class="reveal">Frequently Asked Questions</h2>
 
-                <div class="faq-item">
-                    <h3>What should I wear for a beach portrait session on Sullivan's Island?</h3>
-                    <p>Light, flowy fabrics work best. They move with the ocean breeze and photograph well in golden hour light. Solid colors or soft pastels pop against sand and water. White, cream, light blue, and earth tones are safe picks. Avoid busy patterns and neon colors.</p>
-                </div>
+        <details class="faq-item">
+            <summary>What is the best time of day for beach portraits on Sullivan's Island?</summary>
+            <p>Golden hour, the last hour before sunset. The sun drops behind you while you face the ocean, giving you warm, soft light on your subject's face. Avoid shooting between 11am and 3pm when the overhead sun creates harsh shadows and squinting.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How much does a birthday portrait session in Charleston cost?</summary>
+            <p>Birthday portrait sessions in Charleston typically start around $200-$400 depending on session length and number of edited images. Check out my <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston photography pricing guide</a> for a full breakdown.</p>
+        </details>
+        <details class="faq-item">
+            <summary>What should I wear for a beach portrait session on Sullivan's Island?</summary>
+            <p>Light, flowy fabrics work best. They move with the ocean breeze and photograph well in golden hour light. Solid colors or soft pastels pop against sand and water. White, cream, light blue, and earth tones are safe picks. Avoid busy patterns and neon colors.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Do I need a permit for portrait photography on Sullivan's Island?</summary>
+            <p>Small portrait sessions with natural light and no equipment setups do not require a permit on Sullivan's Island. Larger productions with props, backdrops, or groups over 10 people should check with the Town of Sullivan's Island for permit requirements.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How long does a golden hour portrait session last?</summary>
+            <p>A golden hour session runs 45 minutes to one hour. The best light window is tight, about 40 minutes before sunset. Arrive early to get settled and start shooting as soon as the light hits. Trying to extend past sunset means you lose the warm tones that make golden hour worth chasing.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Why is Sullivan's Island a good location for portrait photography?</summary>
+            <p>Sullivan's Island is less crowded than Folly Beach and Isle of Palms, which means fewer people in your background. The beach is wide with natural dunes and driftwood. The east-facing shore gives you clean golden hour backlight, and the drive from downtown Charleston is only about 25 minutes.</p>
+        </details>
 
-                <div class="faq-item">
-                    <h3>Do I need a permit for portrait photography on Sullivan's Island?</h3>
-                    <p>Small portrait sessions with natural light and no equipment setups do not require a permit on Sullivan's Island. Larger productions with props, backdrops, or groups over 10 people should check with the Town of Sullivan's Island for permit requirements.</p>
-                </div>
+        <h2 id="book-a-session" class="reveal">Book a Portrait Session on Sullivan's Island</h2>
+        <p>I shoot portrait sessions across Charleston, from Sullivan's Island to downtown to Cypress Gardens and everywhere in between. If you have a birthday, graduation, or just want portraits that look like you, let's find the right location and the right light. Check out my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more of my portrait work or <a title="Contact Joshua Smith about Charleston portrait photography" href="/index.html#contact">book a portrait session</a>.</p>
 
-                <div class="faq-item">
-                    <h3>How long does a golden hour portrait session last?</h3>
-                    <p>A golden hour session runs 45 minutes to one hour. The best light window is tight, about 40 minutes before sunset. Arrive early to get settled and start shooting as soon as the light hits. Trying to extend past sunset means you lose the warm tones that make golden hour worth chasing.</p>
-                </div>
+        <p>You can also visit my <a title="View Charleston portrait photography services" href="/charleston-portrait-photographer/">Charleston portrait photographer</a> page for packages and availability. If you have questions before booking, my <a title="Read photography booking FAQs" href="/faq">FAQ</a> covers the basics.</p>
 
-                <div class="faq-item">
-                    <h3>Why is Sullivan's Island a good location for portrait photography?</h3>
-                    <p>Sullivan's Island is less crowded than Folly Beach and Isle of Palms, which means fewer people in your background. The beach is wide with natural dunes and driftwood. The east-facing shore gives you clean golden hour backlight, and the drive from downtown Charleston is only about 25 minutes.</p>
-                </div>
-            </div>
-
-            <!-- CTA Section -->
-            <div class="location-highlight">
-                <h2 class="section-title">Book a Portrait Session on Sullivan's Island</h2>
-                <p class="blog-text">I shoot portrait sessions across Charleston, from Sullivan's Island to downtown to Cypress Gardens and everywhere in between. If you have a birthday, graduation, or just want portraits that look like you, let's find the right location and the right light. Check out my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="external-link" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more of my portrait work or <a title="Contact Joshua Smith about Charleston portrait photography" href="/index.html#contact">book a portrait session</a>.</p>
-
-                <p class="blog-text">You can also visit my <a title="View Charleston portrait photography services" href="/charleston-portrait-photographer/">Charleston portrait photographer</a> page for packages and availability. If you have questions before booking, my <a title="Read photography booking FAQs" href="/faq">FAQ</a> covers the basics.</p>
-            </div>
-        </div>
-    </section>
+    </article>
 
     <!-- CTA Banner -->
     <section class="cta-banner">
         <div class="container">
-            <h2 class="cta-title">Let's Get Your Portrait Session on the Calendar</h2>
-            <p class="cta-text">Beach portraits, downtown sessions, or studio work. Professional portrait photography in Charleston that fits your style and your schedule.</p>
+            <h2>Let's Get Your Portrait Session on the Calendar</h2>
+            <p>Beach portraits, downtown sessions, or studio work. Professional portrait photography in Charleston that fits your style and your schedule.</p>
             <div class="cta-buttons">
-                
-                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
+                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn btn-ghost" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
             </div>
         </div>
     </section>
-
+    </main>
 
     <!-- Back to Top Button -->
-    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
+    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page">&uarr;</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals by Joshua</h3>
+                    <p>Editorial photography for milestones &amp; moments. Serving Charleston SC + Northern VA / DMV.</p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="tel:+12403608465" style="display: block; margin-bottom: 0.5rem;">&#128222; (240) 360-8465</a>
+                        <a href="mailto:jbmsmusic05@gmail.com" style="display: block; margin-bottom: 0.5rem;">&#9993;&#65039; jbmsmusic05@gmail.com</a>
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128247; Instagram</a>
+                        <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128218; Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/gallery">Full Gallery</a></li>
+                        <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+                        <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+                        <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+                        <li><a href="/blog.html">Photography Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Visuals by Joshua. Charleston SC &amp; Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.add('show');
@@ -403,77 +827,28 @@
                 backToTopButton.classList.remove('show');
             }
         });
-
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Scroll reveal for section headings, pull-quote, figure, and TOC
+        const revealTargets = document.querySelectorAll('.reveal');
+        if (revealTargets.length && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+            revealTargets.forEach(el => revealObserver.observe(el));
+        } else {
+            revealTargets.forEach(el => el.classList.add('in-view'));
+        }
     </script>
-  <script>
-    (function() {
-      var hamburger = document.querySelector('.hamburger');
-      var navMenu = document.querySelector('.nav-menu');
-      if (!hamburger || !navMenu) return;
-      function close() {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-      }
-      hamburger.addEventListener('click', function() {
-        var open = navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active', open);
-        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      navMenu.querySelectorAll('.nav-link').forEach(function(l) { l.addEventListener('click', close); });
-      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
-    })();
-  </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Visuals by Joshua</h3>
-          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
-          <p style="margin-top: 1.5rem;">
-            <a href="tel:+12403608465">(240) 360-8465</a><br>
-            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
-          </p>
-          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
-            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery">Full Gallery</a></li>
-            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Locations</h4>
-          <ul>
-            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
-            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
-            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
-            <li><a href="/blog.html">Photography Blog</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>
