@@ -13,8 +13,8 @@
 
     <!-- OG Tags -->
     <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Visuals by Joshua">
-  <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Visuals by Joshua">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://visualsbyjoshua.com/blog/cypress-gardens-engagement-photography-charleston/" />
     <meta property="og:title" content="Cypress Gardens Engagement Photography in Charleston SC" />
     <meta property="og:description" content="Discover why Cypress Gardens is the perfect location for engagement photos in Charleston. Tips on best spots, timing, outfits, and photographing the proposal naturally." />
@@ -27,12 +27,10 @@
     <meta name="twitter:description" content="Discover why Cypress Gardens is the perfect location for engagement photos in Charleston. Tips on best spots, timing, outfits, and photographing the proposal naturally." />
     <meta name="twitter:image" content="https://visualsbyjoshua.com/images/couples/cypress-gardens-engagement-shoot.webp" />
 
-    <!-- Fonts -->
+    <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Schema.org markup -->
     <script type="application/ld+json">
@@ -62,268 +60,618 @@
         }
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://visualsbyjoshua.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://visualsbyjoshua.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cypress Gardens Engagement Photography in Charleston SC",
+          "item": "https://visualsbyjoshua.com/blog/cypress-gardens-engagement-photography-charleston/"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need to pay Cypress Gardens admission separately?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Cypress Gardens charges its own entrance fee, separate from my session rate. I recommend arriving 15 minutes early so we can walk in together and start on time."}}, {"@type": "Question", "name": "How long should we book for an engagement session?", "acceptedAnswer": {"@type": "Answer", "text": "At least 90 minutes. That gives us time to move between the swamp garden, the butterfly house, and the walking trails without rushing between locations."}}, {"@type": "Question", "name": "What is the best season for Cypress Gardens engagement photos?", "acceptedAnswer": {"@type": "Answer", "text": "Late March through mid-April, when the azaleas bloom. Fall, from late October through November, is a strong second choice with fewer crowds and warm foliage colors."}}, {"@type": "Question", "name": "Can you photograph a surprise proposal at Cypress Gardens?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I coordinate with whoever is planning the proposal ahead of time, then position myself at a distance with a longer lens so the couple does not notice me until the moment happens."}}, {"@type": "Question", "name": "What happens if it rains on our session day?", "acceptedAnswer": {"@type": "Answer", "text": "I offer free rescheduling for weather. Charleston rain moves fast, so we will find a new date that works instead of shooting in a downpour."}}, {"@type": "Question", "name": "Should we bring insect repellent?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, it is a swamp garden in the Lowcountry. Use a non-greasy formula so it does not leave a visible sheen on your skin in the photos."}}]}</script>
+
+    <script src="/analytics.js" defer></script>
 
     <style>
-        .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-        }
-        @media (min-width: 800px) {
-          .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-          }
+        /* ========================================
+           RESET & BASE (matches homepage design system)
+           ======================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
         }
 
-        .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
-        .faq-static h3 { margin: 0 0 10px; font-size: 1.2rem; color: var(--primary); }
-        .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #2a2a2a;
+            background-color: #fcfbfa;
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s ease; }
+        a:hover { opacity: 0.7; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: #2a2a2a;
+            color: #fff;
+            padding: 12px 22px;
+            z-index: 1000;
+            border-radius: 0 0 8px 0;
+            font-size: 0.9rem;
+        }
+        .skip-link:focus { left: 0; }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(252, 251, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px clamp(20px, 5vw, 80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+
+        .nav-menu { display: flex; gap: 40px; list-style: none; }
+        .nav-menu a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2a2a2a;
+        }
+        .nav-menu a:hover { color: #be976d; opacity: 1; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+        }
+        .nav-toggle-bar {
+            width: 22px;
+            height: 2px;
+            background: #2a2a2a;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: #fcfbfa;
+                border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+                padding: 8px 0 16px;
+                transform: translateY(-12px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.25s ease;
+            }
+            .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-menu a { display: block; padding: 14px 20px; }
+            .nav-toggle { display: flex; }
+        }
+
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        p { font-size: 1rem; line-height: 1.8; }
+
+        .kicker {
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #be976d;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* ========================================
+           LAYOUT PRIMITIVES
+           ======================================== */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .btn-ghost {
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            color: #ffffff;
+            background: transparent;
+        }
+        .btn-ghost:hover { background: rgba(255, 255, 255, 0.15); opacity: 1; }
+        .btn-primary {
+            background: #be976d;
+            color: #ffffff;
+            border: 2px solid #be976d;
+        }
+        .btn-primary:hover {
+            background: #a67f5a;
+            border-color: #a67f5a;
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #2a2a2a;
+            border: 2px solid #2a2a2a;
+        }
+        .btn-secondary:hover { background: #2a2a2a; color: #fcfbfa; opacity: 1; }
+
+        /* ========================================
+           ARTICLE HERO
+           ======================================== */
+        .article-hero {
+            position: relative;
+            width: 100%;
+            min-height: 64vh;
+            margin-top: 80px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(20,18,15,0.15) 0%, rgba(20,18,15,0.55) 100%), url('/images/couples/cypress-gardens-engagement-shoot.webp') center 35% / cover no-repeat;
+        }
+        @media (max-width: 768px) { .article-hero { margin-top: 68px; min-height: 56vh; } }
+
+        .article-hero-content {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            width: 100%;
+            padding: 60px clamp(20px, 5vw, 80px) 56px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            font-size: 0.75rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 18px;
+        }
+        .breadcrumb a { color: #ffffff; }
+        .breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+        .article-hero h1 {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            font-style: italic;
+            letter-spacing: -0.01em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            max-width: 900px;
+            margin-bottom: 1rem;
+        }
+
+        .article-hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 300;
+            max-width: 640px;
+            opacity: 0.95;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            margin-top: 30px;
+            font-size: 0.8125rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* ========================================
+           ARTICLE BODY
+           ======================================== */
+        .article-body {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
+        }
+
+        .article-body h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-style: italic;
+            margin: 3.25rem 0 1.25rem;
+        }
+        .article-body h2:first-of-type { margin-top: 0; }
+
+        .article-body h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #be976d;
+            margin: 2.25rem 0 1rem;
+        }
+
+        .article-body p { margin-bottom: 1.5rem; color: #3a3a3a; }
+
+        .article-body ul {
+            margin: 0 0 1.75rem 1.25rem;
+            line-height: 2;
+            color: #3a3a3a;
+        }
+
+        .article-body a {
+            color: #a67f5a;
+            border-bottom: 1px solid rgba(190, 151, 109, 0.4);
+        }
+        .article-body a:hover { opacity: 1; border-color: #be976d; }
+
+        .article-body strong { font-weight: 600; color: #2a2a2a; }
+
+        .article-figure { margin: 3rem 0; text-align: center; }
+        .article-figure img {
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            margin: 0 auto;
+        }
+        .article-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.875rem;
+            font-style: italic;
+            color: #8a8a8a;
+        }
+
+        /* ========================================
+           FAQ
+           ======================================== */
+        .faq-item {
+            padding: 26px 0;
+            border-top: 1px solid rgba(42, 42, 42, 0.1);
+        }
+        .faq-item:last-child { border-bottom: 1px solid rgba(42, 42, 42, 0.1); }
+        .faq-item h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+            margin-bottom: 0.5rem;
+        }
+        .faq-item p { margin: 0; color: #5a5a5a; }
+
+        /* ========================================
+           CTA BANNER
+           ======================================== */
+        .cta-banner {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: clamp(60px, 8vw, 90px) 0;
+            text-align: center;
+        }
+        .cta-banner .container { max-width: 700px; }
+        .cta-banner h2 { color: #ffffff; font-style: italic; margin-bottom: 1.25rem; }
+        .cta-banner p { color: rgba(255, 255, 255, 0.85); margin-bottom: 2rem; }
+        .cta-banner p a { color: #d9b48f; border-bottom: 1px solid rgba(217, 180, 143, 0.5); }
+        .cta-banner p a:hover { opacity: 1; }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer { background: #2a2a2a; color: #ffffff; padding: 60px 0 30px; }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p { font-size: 0.9375rem; opacity: 0.8; }
+        .footer-links h4 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { font-size: 0.9375rem; opacity: 0.8; transition: opacity 0.3s ease; }
+        .footer-links a:hover { opacity: 1; }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+            font-size: 0.875rem;
+            opacity: 0.7;
+        }
+
+        /* ========================================
+           BACK TO TOP
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 90;
+        }
+        .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .back-to-top:hover { opacity: 0.85; background: #be976d; }
     </style>
-  <script src="/analytics.js" defer></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://visualsbyjoshua.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://visualsbyjoshua.com/blog.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Cypress Gardens Engagement Photography in Charleston SC",
-      "item": "https://visualsbyjoshua.com/blog/cypress-gardens-engagement-photography-charleston/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need to pay Cypress Gardens admission separately?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Cypress Gardens charges its own entrance fee, separate from my session rate. I recommend arriving 15 minutes early so we can walk in together and start on time."}}, {"@type": "Question", "name": "How long should we book for an engagement session?", "acceptedAnswer": {"@type": "Answer", "text": "At least 90 minutes. That gives us time to move between the swamp garden, the butterfly house, and the walking trails without rushing between locations."}}, {"@type": "Question", "name": "What is the best season for Cypress Gardens engagement photos?", "acceptedAnswer": {"@type": "Answer", "text": "Late March through mid-April, when the azaleas bloom. Fall, from late October through November, is a strong second choice with fewer crowds and warm foliage colors."}}, {"@type": "Question", "name": "Can you photograph a surprise proposal at Cypress Gardens?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I coordinate with whoever is planning the proposal ahead of time, then position myself at a distance with a longer lens so the couple does not notice me until the moment happens."}}, {"@type": "Question", "name": "What happens if it rains on our session day?", "acceptedAnswer": {"@type": "Answer", "text": "I offer free rescheduling for weather. Charleston rain moves fast, so we will find a new date that works instead of shooting in a downpour."}}, {"@type": "Question", "name": "Should we bring insect repellent?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, it is a swamp garden in the Lowcountry. Use a non-greasy formula so it does not leave a visible sheen on your skin in the photos."}}]}</script>
-  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/blog/photography-pricing/">Pricing</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
-        <li><a href="/#contact">Book Now</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </nav>
+    <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
 
-    
-    <!-- Header - using your existing structure -->
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Visuals by Joshua</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/blog/photography-pricing/">Pricing</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+                <li><a href="/#contact">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Blog Hero Section -->
-    <section class="article-hero hero-bg" style="--bg-url: url('/images/couples/cypress-gardens-engagement-shoot.webp');" id="main">
-        <div class="blog-hero-content">
+    <!-- Article Hero -->
+    <section class="article-hero" id="main">
+        <div class="article-hero-content">
             <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Cypress Gardens Engagement Photography in Charleston SC</div>
-          <h1 class="blog-hero-title">Cypress Gardens Engagement Photography in Charleston SC</h1>
-            <p class="blog-hero-subtitle">A Photographer's Guide to Capturing Your Love Story in One of the Lowcountry's Most Beautiful Gardens</p>
-
-            <div class="blog-meta">
-                <div class="meta-item">
-                    <i class="fas fa-user"></i>
-                    <span>By Joshua Smith</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-calendar"></i>
-                    <span>March 15, 2026</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i>
-                    <span>8 min read</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Charleston, SC</span>
-                </div>
+            <h1>Cypress Gardens Engagement Photography in Charleston SC</h1>
+            <p class="article-hero-subtitle">A Photographer's Guide to Capturing Your Love Story in One of the Lowcountry's Most Beautiful Gardens</p>
+            <div class="article-meta">
+                <span>By Joshua Smith</span>
+                <span>March 15, 2026</span>
+                <span>8 min read</span>
+                <span>Charleston, SC</span>
             </div>
         </div>
     </section>
 
-    <!-- Blog Content -->
-    <main id="main">
-    <section class="article-content">
-        <div class="blog-container">
+    <main>
+    <article class="article-body">
 
-            <!-- Introduction -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">Why Cypress Gardens Is the Perfect Engagement Photo Location</h2>
-                    <p class="blog-text">There are a handful of places in the Charleston area that genuinely take my breath away every time I visit, and <strong>Cypress Gardens</strong> sits right at the top of that list. When a couple recently reached out about doing their <strong>engagement photos at Cypress Gardens</strong>, I was immediately on board. Having photographed dozens of sessions across Charleston, I can confidently say that Cypress Gardens offers something no other venue in the Lowcountry can match: a landscape so lush and layered that every frame feels like it belongs in a painting.</p>
+        <h2>Why Cypress Gardens Is the Perfect Engagement Photo Location</h2>
+        <p>There are a handful of places in the Charleston area that genuinely take my breath away every time I visit, and <strong>Cypress Gardens</strong> sits right at the top of that list. When a couple recently reached out about doing their <strong>engagement photos at Cypress Gardens</strong>, I was immediately on board. Having photographed dozens of sessions across Charleston, I can confidently say that Cypress Gardens offers something no other venue in the Lowcountry can match: a landscape so lush and layered that every frame feels like it belongs in a painting.</p>
 
-                    <p class="blog-text">Located about 30 minutes north of downtown Charleston in Moncks Corner, <a title="Cypress Gardens official site" href="https://www.cypressgardens.org/" target="_blank" rel="noopener">Cypress Gardens</a> spans 170 acres of blackwater swamp, manicured gardens, and forested walking trails. It was originally part of the Dean Hall rice plantation, and that history gives the grounds a timeless, almost otherworldly quality. Spanish moss drapes from ancient cypress trees, flat-bottomed boats glide across dark, mirror-still water, and light filters through the canopy in ways that make a photographer's job feel effortless. For couples looking for <strong>Charleston engagement photos</strong> that feel romantic, natural, and completely unique, this is the place.</p>
-                </div>
-            </div>
+        <p>Located about 30 minutes north of downtown Charleston in Moncks Corner, <a title="Cypress Gardens official site" href="https://www.cypressgardens.org/" target="_blank" rel="noopener">Cypress Gardens</a> spans 170 acres of blackwater swamp, manicured gardens, and forested walking trails. It was originally part of the Dean Hall rice plantation, and that history gives the grounds a timeless, almost otherworldly quality. Spanish moss drapes from ancient cypress trees, flat-bottomed boats glide across dark, mirror-still water, and light filters through the canopy in ways that make a photographer's job feel effortless. For couples looking for <strong>Charleston engagement photos</strong> that feel romantic, natural, and completely unique, this is the place.</p>
 
-            <!-- Best Spots Within the Gardens -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">The Best Spots Inside Cypress Gardens for Engagement Photos</h2>
+        <h2>The Best Spots Inside Cypress Gardens for Engagement Photos</h2>
 
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">The Swamp Garden and Boat Landing</h3>
-                    <p class="blog-text">This is the signature shot of any <strong>Cypress Gardens photo shoot</strong>, and for good reason. The blackwater swamp reflects the towering bald cypress trees like a mirror, creating a dramatic, symmetrical backdrop that looks incredible in photos. I typically start sessions here because the water is calmest early in the day, and the reflections are at their sharpest. For this particular engagement shoot, we had the couple standing on one of the small wooden bridges that arc over the water. The result was a frame where the trees, the Spanish moss, the water, and the couple all came together into something genuinely cinematic. If the couple is up for it, the flat-bottomed boats add another layer of storytelling to the images.</p>
+        <h3>The Swamp Garden and Boat Landing</h3>
+        <p>This is the signature shot of any <strong>Cypress Gardens photo shoot</strong>, and for good reason. The blackwater swamp reflects the towering bald cypress trees like a mirror, creating a dramatic, symmetrical backdrop that looks incredible in photos. I typically start sessions here because the water is calmest early in the day, and the reflections are at their sharpest. For this particular engagement shoot, we had the couple standing on one of the small wooden bridges that arc over the water. The result was a frame where the trees, the Spanish moss, the water, and the couple all came together into something genuinely cinematic. If the couple is up for it, the flat-bottomed boats add another layer of storytelling to the images.</p>
 
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">The Butterfly House</h3>
-                    <p class="blog-text">Cypress Gardens is home to a butterfly house that most visitors treat as a quick stop, but as a photographer, I use it for one of the best light setups on the property. The soft, filtered light inside is incredibly flattering for close-up portraits and intimate moments. During our session, we stepped inside for a few frames, and the warm tones combined with the occasional butterfly landing nearby added a sense of wonder to the images that you simply cannot stage. For couples who want a mix of grand landscapes and delicate, personal details in their <strong>engagement photography</strong>, the butterfly house delivers both.</p>
+        <h3>The Butterfly House</h3>
+        <p>Cypress Gardens is home to a butterfly house that most visitors treat as a quick stop, but as a photographer, I use it for one of the best light setups on the property. The soft, filtered light inside is incredibly flattering for close-up portraits and intimate moments. During our session, we stepped inside for a few frames, and the warm tones combined with the occasional butterfly landing nearby added a sense of wonder to the images that you simply cannot stage. For couples who want a mix of grand landscapes and delicate, personal details in their <strong>engagement photography</strong>, the butterfly house delivers both.</p>
 
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">The Walking Trails and Garden Paths</h3>
-                    <p class="blog-text">Beyond the swamp and the butterfly house, Cypress Gardens has miles of walking trails that wind through live oaks, azalea beds, and open meadow areas. These trails are where I get some of my favorite candid shots: the couple walking hand-in-hand, laughing together, or simply enjoying the quiet of the garden. The paths offer natural leading lines that draw the viewer's eye directly to the couple, and the changing scenery means every few steps presents a new backdrop. I always recommend leaving at least 90 minutes for a session here so we have time to explore without feeling rushed.</p>
-                </div>
-            </div>
+        <h3>The Walking Trails and Garden Paths</h3>
+        <p>Beyond the swamp and the butterfly house, Cypress Gardens has miles of walking trails that wind through live oaks, azalea beds, and open meadow areas. These trails are where I get some of my favorite candid shots: the couple walking hand-in-hand, laughing together, or simply enjoying the quiet of the garden. The paths offer natural leading lines that draw the viewer's eye directly to the couple, and the changing scenery means every few steps presents a new backdrop. I always recommend leaving at least 90 minutes for a session here so we have time to explore without feeling rushed.</p>
 
-            <!-- Featured Image -->
-            <div class="about-container" style="margin-bottom: 60px; text-align: center;">
-                <picture>
-                  <source type="image/avif" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-213.avif 213w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <source type="image/webp" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-213.webp 213w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <img src="/images/optimized/couples/cypress-gardens-engagement-shoot-213.jpg" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-213.jpg 213w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="213" height="339" alt="Engagement photos at Cypress Gardens in Charleston SC by Visuals by Joshua" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" loading="lazy" decoding="async">
-                </picture>
-                <p style="margin-top: 12px; color: #5a5a5a; font-size: 0.9rem; font-style: italic;">A romantic moment framed by the ancient cypress trees and Spanish moss at Cypress Gardens, Charleston SC.</p>
-            </div>
+        <figure class="article-figure">
+            <picture>
+                <source type="image/avif" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-213.avif 213w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <source type="image/webp" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-213.webp 213w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <img src="/images/optimized/couples/cypress-gardens-engagement-shoot-213.jpg" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-213.jpg 213w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)" width="213" height="339" alt="Engagement photos at Cypress Gardens in Charleston SC by Visuals by Joshua" loading="lazy" decoding="async">
+            </picture>
+            <figcaption>A romantic moment framed by the ancient cypress trees and Spanish moss at Cypress Gardens, Charleston SC.</figcaption>
+        </figure>
 
-            <!-- What to Wear -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">What to Wear to Your Engagement Shoot at Cypress Gardens</h2>
-                    <p class="blog-text">One of the most common questions I hear from couples is about wardrobe, and it matters more than most people realize. The setting at Cypress Gardens is rich in greens, browns, and earth tones, which means your outfit choices can either harmonize beautifully with the landscape or compete with it. Here is what I recommend based on years of <strong>engagement photography in Charleston SC</strong>:</p>
+        <h2>What to Wear to Your Engagement Shoot at Cypress Gardens</h2>
+        <p>One of the most common questions I hear from couples is about wardrobe, and it matters more than most people realize. The setting at Cypress Gardens is rich in greens, browns, and earth tones, which means your outfit choices can either harmonize beautifully with the landscape or compete with it. Here is what I recommend based on years of <strong>engagement photography in Charleston SC</strong>:</p>
 
-                    <p class="blog-text"><strong>For her:</strong> Flowy dresses in soft neutrals, dusty rose, sage green, or cream photograph exceptionally well against the garden backdrop. Avoid busy patterns or overly bright neon colors that pull attention away from your face and the natural setting. A longer dress or skirt catches the breeze along the trails and adds movement to the images. Comfortable shoes are a must since parts of the garden involve walking on uneven ground and wooden boardwalks.</p>
+        <p><strong>For her:</strong> Flowy dresses in soft neutrals, dusty rose, sage green, or cream photograph exceptionally well against the garden backdrop. Avoid busy patterns or overly bright neon colors that pull attention away from your face and the natural setting. A longer dress or skirt catches the breeze along the trails and adds movement to the images. Comfortable shoes are a must since parts of the garden involve walking on uneven ground and wooden boardwalks.</p>
 
-                    <p class="blog-text"><strong>For him:</strong> Solid-colored button-downs in navy, charcoal, olive, or light blue pair well with the earthy environment. Rolled sleeves give a relaxed, natural look. Dark jeans or chinos work well. Skip the bright white shirt if possible since it can blow out in direct sunlight and become a distraction in the frame.</p>
+        <p><strong>For him:</strong> Solid-colored button-downs in navy, charcoal, olive, or light blue pair well with the earthy environment. Rolled sleeves give a relaxed, natural look. Dark jeans or chinos work well. Skip the bright white shirt if possible since it can blow out in direct sunlight and become a distraction in the frame.</p>
 
-                    <p class="blog-text"><strong>As a pair:</strong> Coordinate but do not match exactly. You want your outfits to look intentional together without being identical. I share more detailed wardrobe guidance during our planning call. Check out the <a title="Read the Charleston spring graduation portrait session guide" href="/blog/charleston-spring-graduation-portrait-session/">portrait session prep guide</a> for more preparation tips, the <a title="Read the Charleston anniversary and proposal photo guide" href="/blog/charleston-anniversary-proposal-photo-guide/">anniversary and proposal photo guide</a> if you are planning the moment itself, or take a look at the <a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see how other couples have styled their sessions.</p>
-                </div>
-            </div>
+        <p><strong>As a pair:</strong> Coordinate but do not match exactly. You want your outfits to look intentional together without being identical. I share more detailed wardrobe guidance during our planning call. Check out the <a title="Read the Charleston spring graduation portrait session guide" href="/blog/charleston-spring-graduation-portrait-session/">portrait session prep guide</a> for more preparation tips, the <a title="Read the Charleston anniversary and proposal photo guide" href="/blog/charleston-anniversary-proposal-photo-guide/">anniversary and proposal photo guide</a> if you are planning the moment itself, or take a look at the <a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see how other couples have styled their sessions.</p>
 
-            <!-- Best Time of Day and Year -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">Best Time of Day and Year to Shoot at Cypress Gardens</h2>
-                    <p class="blog-text">Timing is everything in outdoor photography, and Cypress Gardens rewards you for planning around the light.</p>
+        <h2>Best Time of Day and Year to Shoot at Cypress Gardens</h2>
+        <p>Timing is everything in outdoor photography, and Cypress Gardens rewards you for planning around the light.</p>
 
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Time of Day</h3>
-                    <p class="blog-text">The golden hour, roughly the last 90 minutes before sunset, is the single best window for <strong>engagement photos at Cypress Gardens</strong>. The low-angle light filters through the canopy and bounces off the water, creating a warm, glowing quality that flatters every skin tone. Early morning sessions, right after the gates open, are my second choice. The swamp water is perfectly still, the light is soft and cool, and you will have the garden almost entirely to yourselves. I avoid midday sessions here because the dense canopy creates harsh, patchy shadows that are difficult to work with.</p>
+        <h3>Time of Day</h3>
+        <p>The golden hour, roughly the last 90 minutes before sunset, is the single best window for <strong>engagement photos at Cypress Gardens</strong>. The low-angle light filters through the canopy and bounces off the water, creating a warm, glowing quality that flatters every skin tone. Early morning sessions, right after the gates open, are my second choice. The swamp water is perfectly still, the light is soft and cool, and you will have the garden almost entirely to yourselves. I avoid midday sessions here because the dense canopy creates harsh, patchy shadows that are difficult to work with.</p>
 
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Time of Year</h3>
-                    <p class="blog-text">Spring, particularly late March through mid-April, is when Cypress Gardens is at its most spectacular. The azaleas are in full bloom, painting the trails in vibrant pinks, purples, and whites. This is peak season, and the gardens can get crowded on weekends, so weekday sessions are ideal if your schedule allows. Fall, from late October through November, is a strong runner-up. The foliage shifts to warm oranges and reds, the crowds thin out, and the softer autumn light gives images a completely different mood. Summer is workable but hot and humid, so I schedule those sessions for early morning only. Winter can be beautiful in its own stripped-down, moody way, but the garden hours are shorter.</p>
-                </div>
-            </div>
+        <h3>Time of Year</h3>
+        <p>Spring, particularly late March through mid-April, is when Cypress Gardens is at its most spectacular. The azaleas are in full bloom, painting the trails in vibrant pinks, purples, and whites. This is peak season, and the gardens can get crowded on weekends, so weekday sessions are ideal if your schedule allows. Fall, from late October through November, is a strong runner-up. The foliage shifts to warm oranges and reds, the crowds thin out, and the softer autumn light gives images a completely different mood. Summer is workable but hot and humid, so I schedule those sessions for early morning only. Winter can be beautiful in its own stripped-down, moody way, but the garden hours are shorter.</p>
 
-            <!-- Capturing the Proposal Moment -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">How I Photograph the Proposal Moment Naturally</h2>
-                    <p class="blog-text">Some of the couples I work with are freshly engaged and want to recreate or celebrate the proposal moment during their session. Others are planning a surprise proposal at Cypress Gardens and want me there to document it as it happens. Either way, my approach is the same: stay invisible and keep it real.</p>
+        <h2>How I Photograph the Proposal Moment Naturally</h2>
+        <p>Some of the couples I work with are freshly engaged and want to recreate or celebrate the proposal moment during their session. Others are planning a surprise proposal at Cypress Gardens and want me there to document it as it happens. Either way, my approach is the same: stay invisible and keep it real.</p>
 
-                    <p class="blog-text">For surprise proposals, I typically arrive early and scout the location, positioning myself at a distance with a longer lens so the couple does not notice me until the ring is already on. I coordinate with the person planning the proposal ahead of time so I know the general plan, the timing, and where they intend to drop to one knee. The swamp garden bridge and the oak-lined paths are two of the most popular proposal spots within Cypress Gardens, and both offer sightlines that let me shoot from a respectful distance without missing anything.</p>
+        <p>For surprise proposals, I typically arrive early and scout the location, positioning myself at a distance with a longer lens so the couple does not notice me until the ring is already on. I coordinate with the person planning the proposal ahead of time so I know the general plan, the timing, and where they intend to drop to one knee. The swamp garden bridge and the oak-lined paths are two of the most popular proposal spots within Cypress Gardens, and both offer sightlines that let me shoot from a respectful distance without missing anything.</p>
 
-                    <p class="blog-text">For recreated proposals, I guide the moment loosely but never script it. I will suggest a general position and a direction to face for the best light, then ask the couple to just be themselves. The genuine reactions, the laughter, the tears, the tight embrace afterward, those are the frames that matter. Over-directing kills the emotion, and I have learned that the best engagement photographs come from the spaces between the poses, not from stiff, choreographed setups. That philosophy carries through everything I shoot, whether it is an engagement session or a wedding day.</p>
+        <p>For recreated proposals, I guide the moment loosely but never script it. I will suggest a general position and a direction to face for the best light, then ask the couple to just be themselves. The genuine reactions, the laughter, the tears, the tight embrace afterward, those are the frames that matter. Over-directing kills the emotion, and I have learned that the best engagement photographs come from the spaces between the poses, not from stiff, choreographed setups. That philosophy carries through everything I shoot, whether it is an engagement session or a wedding day.</p>
 
-                    <p class="blog-text">The images from this particular session turned out exactly the way I hoped. The guy got down on one knee under a canopy of cypress branches, she said yes before he even finished asking, and the embrace that followed was one of the most genuine moments I have ever had the privilege of photographing. That is what Cypress Gardens does to people. The setting strips away the self-consciousness and lets the real connection shine through.</p>
-                </div>
-            </div>
+        <p>The images from this particular session turned out exactly the way I hoped. The guy got down on one knee under a canopy of cypress branches, she said yes before he even finished asking, and the embrace that followed was one of the most genuine moments I have ever had the privilege of photographing. That is what Cypress Gardens does to people. The setting strips away the self-consciousness and lets the real connection shine through.</p>
 
-            <!-- Practical Tips -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">Practical Tips for Your Cypress Gardens Session</h2>
-                    <p class="blog-text">A few logistical details that will help your session go smoothly:</p>
+        <h2>Practical Tips for Your Cypress Gardens Session</h2>
+        <p>A few logistical details that will help your session go smoothly:</p>
 
-                    <ul style="margin-left: 2rem; margin-bottom: 2rem; line-height: 2;">
-                        <li><strong>Admission:</strong> There is a small entrance fee to Cypress Gardens. I recommend arriving 15 minutes before our scheduled session start time so we can walk in together and begin right away.</li>
-                        <li><strong>Bug spray:</strong> This is a swamp garden in the Lowcountry. Bring insect repellent, but opt for a non-greasy formula that will not leave a sheen on your skin in photos. The <a title="CDC insect repellent guidance" href="https://www.cdc.gov/mosquitoes/mosquito-bite/prevention/repellents.html" target="_blank" rel="noopener">CDC's repellent guidance</a> is a good reference if you want to compare options.</li>
-                        <li><strong>Footwear:</strong> Bring comfortable walking shoes for getting between spots, plus your photo shoes to change into for the actual frames.</li>
-                        <li><strong>Weather backup:</strong> Charleston weather can shift quickly. If we get rained out, I offer free rescheduling. Rain date flexibility is something I build into every outdoor session.</li>
-                        <li><strong>Session length:</strong> I recommend booking at least a 90-minute session for Cypress Gardens to take full advantage of the variety the grounds offer.</li>
-                    </ul>
-                </div>
-            </div>
+        <ul>
+            <li><strong>Admission:</strong> There is a small entrance fee to Cypress Gardens. I recommend arriving 15 minutes before our scheduled session start time so we can walk in together and begin right away.</li>
+            <li><strong>Bug spray:</strong> This is a swamp garden in the Lowcountry. Bring insect repellent, but opt for a non-greasy formula that will not leave a sheen on your skin in photos. The <a title="CDC insect repellent guidance" href="https://www.cdc.gov/mosquitoes/mosquito-bite/prevention/repellents.html" target="_blank" rel="noopener">CDC's repellent guidance</a> is a good reference if you want to compare options.</li>
+            <li><strong>Footwear:</strong> Bring comfortable walking shoes for getting between spots, plus your photo shoes to change into for the actual frames.</li>
+            <li><strong>Weather backup:</strong> Charleston weather can shift quickly. If we get rained out, I offer free rescheduling. Rain date flexibility is something I build into every outdoor session.</li>
+            <li><strong>Session length:</strong> I recommend booking at least a 90-minute session for Cypress Gardens to take full advantage of the variety the grounds offer.</li>
+        </ul>
 
-            <!-- FAQ -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">Cypress Gardens Engagement Photography FAQ</h2>
+        <h2>Cypress Gardens Engagement Photography FAQ</h2>
 
-                    <div class="faq-static">
-                        <h3>Do I need to pay Cypress Gardens admission separately?</h3>
-                        <p>Yes. Cypress Gardens charges its own entrance fee, separate from my session rate. I recommend arriving 15 minutes early so we can walk in together and start on time.</p>
-                    </div>
-
-                    <div class="faq-static">
-                        <h3>How long should we book for an engagement session?</h3>
-                        <p>At least 90 minutes. That gives us time to move between the swamp garden, the butterfly house, and the walking trails without rushing between locations.</p>
-                    </div>
-
-                    <div class="faq-static">
-                        <h3>What is the best season for Cypress Gardens engagement photos?</h3>
-                        <p>Late March through mid-April, when the azaleas bloom. Fall, from late October through November, is a strong second choice with fewer crowds and warm foliage colors.</p>
-                    </div>
-
-                    <div class="faq-static">
-                        <h3>Can you photograph a surprise proposal at Cypress Gardens?</h3>
-                        <p>Yes. I coordinate with whoever is planning the proposal ahead of time, then position myself at a distance with a longer lens so the couple does not notice me until the moment happens.</p>
-                    </div>
-
-                    <div class="faq-static">
-                        <h3>What happens if it rains on our session day?</h3>
-                        <p>I offer free rescheduling for weather. Charleston rain moves fast, so we will find a new date that works instead of shooting in a downpour.</p>
-                    </div>
-
-                    <div class="faq-static">
-                        <h3>Should we bring insect repellent?</h3>
-                        <p>Yes, it is a swamp garden in the Lowcountry. Use a non-greasy formula so it does not leave a visible sheen on your skin in the photos.</p>
-                    </div>
-                </div>
-            </div>
-
+        <div class="faq-item">
+            <h3>Do I need to pay Cypress Gardens admission separately?</h3>
+            <p>Yes. Cypress Gardens charges its own entrance fee, separate from my session rate. I recommend arriving 15 minutes early so we can walk in together and start on time.</p>
         </div>
-    </section>
+        <div class="faq-item">
+            <h3>How long should we book for an engagement session?</h3>
+            <p>At least 90 minutes. That gives us time to move between the swamp garden, the butterfly house, and the walking trails without rushing between locations.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What is the best season for Cypress Gardens engagement photos?</h3>
+            <p>Late March through mid-April, when the azaleas bloom. Fall, from late October through November, is a strong second choice with fewer crowds and warm foliage colors.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can you photograph a surprise proposal at Cypress Gardens?</h3>
+            <p>Yes. I coordinate with whoever is planning the proposal ahead of time, then position myself at a distance with a longer lens so the couple does not notice me until the moment happens.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What happens if it rains on our session day?</h3>
+            <p>I offer free rescheduling for weather. Charleston rain moves fast, so we will find a new date that works instead of shooting in a downpour.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Should we bring insect repellent?</h3>
+            <p>Yes, it is a swamp garden in the Lowcountry. Use a non-greasy formula so it does not leave a visible sheen on your skin in the photos.</p>
+        </div>
+
+    </article>
 
     <!-- CTA Banner -->
     <section class="cta-banner">
         <div class="container">
-            <h2 class="cta-title">Book Your Engagement Session at Cypress Gardens</h2>
-            <p class="cta-text">Whether you are planning a surprise proposal or celebrating your engagement with a dedicated photo session, I would love to help you tell your story at Cypress Gardens. Explore my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more Charleston work, review <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston pricing</a>, or reach out directly to start planning your session.</p>
+            <h2>Book Your Engagement Session at Cypress Gardens</h2>
+            <p>Whether you are planning a surprise proposal or celebrating your engagement with a dedicated photo session, I would love to help you tell your story at Cypress Gardens. Explore my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more Charleston work, review <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston pricing</a>, or reach out directly to start planning your session.</p>
             <div class="cta-buttons">
-                <a title="Book a Cypress Gardens engagement session" href="/index.html?service=couples&location=charleston#contact" class="btn btn-accent">Book Your Session</a>
-                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
+                <a title="Book a Cypress Gardens engagement session" href="/index.html?service=couples&location=charleston#contact" class="btn btn-primary">Book Your Session</a>
+                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn btn-ghost" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
             </div>
         </div>
     </section>
     </main>
 
-
     <!-- Back to Top Button -->
-    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
+    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page">&uarr;</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals by Joshua</h3>
+                    <p>Editorial photography for milestones &amp; moments. Serving Charleston SC + Northern VA / DMV.</p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="tel:+12403608465" style="display: block; margin-bottom: 0.5rem;">&#128222; (240) 360-8465</a>
+                        <a href="mailto:jbmsmusic05@gmail.com" style="display: block; margin-bottom: 0.5rem;">&#9993;&#65039; jbmsmusic05@gmail.com</a>
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128247; Instagram</a>
+                        <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128218; Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/gallery">Full Gallery</a></li>
+                        <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+                        <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+                        <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+                        <li><a href="/blog.html">Photography Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Visuals by Joshua. Charleston SC &amp; Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.add('show');
@@ -331,95 +679,12 @@
                 backToTopButton.classList.remove('show');
             }
         });
-
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-
-        // Mobile navigation
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-
-        if (hamburger) {
-            const toggleMenu = () => {
-                navMenu.classList.toggle('active');
-            };
-
-            hamburger.addEventListener('click', toggleMenu);
-            hamburger.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    toggleMenu();
-                }
-            });
-
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', () => {
-                    navMenu.classList.remove('active');
-                });
-            });
-        }
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                if (this.getAttribute('href') !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }
-            });
-        });
     </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Visuals by Joshua</h3>
-          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
-          <p style="margin-top: 1.5rem;">
-            <a href="tel:+12403608465">(240) 360-8465</a><br>
-            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
-          </p>
-          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
-            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery">Full Gallery</a></li>
-            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Locations</h4>
-          <ul>
-            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
-            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
-            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
-            <li><a href="/blog.html">Photography Blog</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>
