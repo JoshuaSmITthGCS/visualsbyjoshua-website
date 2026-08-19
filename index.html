@@ -700,6 +700,7 @@
       position: sticky;
       top: 0;
       height: 100vh;
+      height: 100dvh;
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -2225,7 +2226,7 @@
         wrapper.style.height = (window.innerHeight + scrollDistance) + 'px';
       }
 
-      function onScroll() {
+      function applyScroll() {
         var rect = wrapper.getBoundingClientRect();
         var total = wrapper.offsetHeight - window.innerHeight;
         var progress = total > 0 ? (-rect.top) / total : 0;
@@ -2233,11 +2234,24 @@
         if (progress > 1) progress = 1;
 
         if (isMobile()) {
-          colA.style.transform = 'translateY(-' + (progress * distA) + 'px)';
-          colB.style.transform = 'translateY(' + ((progress - 1) * distB) + 'px)';
+          colA.style.transform = 'translate3d(0, -' + (progress * distA) + 'px, 0)';
+          colB.style.transform = 'translate3d(0, ' + ((progress - 1) * distB) + 'px, 0)';
         } else {
-          track.style.transform = 'translateY(-' + (progress * scrollDistance) + 'px)';
+          track.style.transform = 'translate3d(0, -' + (progress * scrollDistance) + 'px, 0)';
         }
+      }
+
+      // Throttle scroll-driven writes to one per animation frame so mobile
+      // touch-scroll (which fires far more often than the display refreshes)
+      // doesn't do redundant layout reads/writes and feel choppy.
+      var ticking = false;
+      function onScroll() {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(function () {
+          applyScroll();
+          ticking = false;
+        });
       }
 
       window.addEventListener('resize', function () {
@@ -2248,11 +2262,11 @@
 
       window.addEventListener('load', function () {
         measure();
-        onScroll();
+        applyScroll();
       });
 
       measure();
-      onScroll();
+      applyScroll();
     })();
   </script>
 </body>
