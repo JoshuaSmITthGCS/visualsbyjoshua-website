@@ -13,8 +13,8 @@
 
     <!-- OG Tags -->
     <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Visuals by Joshua">
-  <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Visuals by Joshua">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://visualsbyjoshua.com/blog/doctoral-graduation-photography-dc-monuments/" />
     <meta property="og:title" content="Doctoral Graduation Photography at DC Monuments | DMV Doctoral Graduation Photographer" />
     <meta property="og:description" content="Doctoral graduation portrait session at DC monuments. Full academic regalia at the Lincoln Memorial, outfit change to white dress, and why doctoral photos demand a different approach." />
@@ -27,16 +27,12 @@
     <meta name="twitter:description" content="Doctoral graduation portrait session at DC monuments. Full academic regalia at the Lincoln Memorial, outfit change to white dress, and why doctoral photos demand a different approach." />
     <meta name="twitter:image" content="https://visualsbyjoshua.com/newblogimages/doctoral-graduation-photography-dc-monuments.webp" />
 
-    <!-- Fonts -->
+    <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Shared Blog Styles -->
-    <link rel="stylesheet" href="/styles.css">
-
-    <!-- Schema.org Article markup -->
+    <!-- Schema.org markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -68,330 +64,760 @@
         },
         "keywords": "doctoral graduation photographer DC, PhD graduation photos Washington DC, graduation photography Lincoln Memorial, DMV doctoral graduation photographer, cap and gown photos DC monuments"
     }
-    </script><style>
-        .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://visualsbyjoshua.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://visualsbyjoshua.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Doctoral Graduation Photography at DC Monuments",
+          "item": "https://visualsbyjoshua.com/blog/doctoral-graduation-photography-dc-monuments/"
         }
-        @media (min-width: 800px) {
-          .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-          }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do you photograph doctoral regalia properly?", "acceptedAnswer": {"@type": "Answer", "text": "Doctoral regalia has details that standard gowns do not: velvet panels, sleeve stripes, and hood colors representing your field and university. I use angles and poses that show the full gown including sleeves and hood. Side profiles and three-quarter turns reveal the velvet accents. Soft, even light keeps detail in the dark fabric instead of losing it to shadow. I also capture close-up detail shots of the velvet and hood colors."}}, {"@type": "Question", "name": "What are the best poses with a graduation gown for photos?", "acceptedAnswer": {"@type": "Answer", "text": "Walking poses with the gown flowing behind you, standing with one hand adjusting the cap, holding your diploma at your side, and looking over your shoulder to show hood colors all work well. Avoid stiff front-facing poses that hide gown details. Movement and three-quarter angles photograph best because they show the gown's drape and your confidence simultaneously."}}, {"@type": "Question", "name": "How long does a DC monument graduation session take?", "acceptedAnswer": {"@type": "Answer", "text": "A single-location session takes about 45 minutes to one hour. Multi-location sessions covering two or three monuments run 90 minutes to two hours including walking time. Add 15 to 20 minutes for an outfit change. I recommend booking at least 90 minutes for doctoral sessions since the regalia deserves more attention and you will want variety across multiple compositions."}}, {"@type": "Question", "name": "Can you do outfit changes during a DC monument graduation photo session?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Most clients start in full cap and gown regalia and then change into a personal outfit for a second look. There are restrooms near most monument locations, and the walking time between spots gives a natural transition point. I recommend no more than two outfits to keep the session focused and make the most of the available light."}}, {"@type": "Question", "name": "What should you bring to a doctoral graduation photo session?", "acceptedAnswer": {"@type": "Answer", "text": "Bring your full regalia, cap, hood, tassel, comfortable walking shoes, and a lint roller. If you want a second look, bring one clean outfit that you can change into quickly. Small personal items like an announcement board or diploma cover work well. Keep props simple so the focus stays on you and the regalia."}}]}</script>
+
+    <script src="/analytics.js" defer></script>
+
+    <style>
+        /* ========================================
+           RESET & BASE (matches homepage design system)
+           ======================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
         }
 
-        .tip-card {
-            background: var(--light);
-            padding: 30px;
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #2a2a2a;
+            background-color: #fcfbfa;
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s ease; }
+        a:hover { opacity: 0.7; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: #2a2a2a;
+            color: #fff;
+            padding: 12px 22px;
+            z-index: 1000;
+            border-radius: 0 0 8px 0;
+            font-size: 0.9rem;
+        }
+        .skip-link:focus { left: 0; }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(252, 251, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px clamp(20px, 5vw, 80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+
+        .nav-menu { display: flex; gap: 40px; list-style: none; }
+        .nav-menu a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2a2a2a;
+        }
+        .nav-menu a:hover { color: #be976d; opacity: 1; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+        }
+        .nav-toggle-bar {
+            width: 22px;
+            height: 2px;
+            background: #2a2a2a;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: #fcfbfa;
+                border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+                padding: 8px 0 16px;
+                transform: translateY(-12px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.25s ease;
+            }
+            .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-menu a { display: block; padding: 14px 20px; }
+            .nav-toggle { display: flex; }
+        }
+
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        p { font-size: 1rem; line-height: 1.8; }
+
+        .kicker {
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #be976d;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* ========================================
+           LAYOUT PRIMITIVES
+           ======================================== */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
             border-radius: 10px;
-            margin: 30px 0;
-            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        .btn-ghost {
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            color: #ffffff;
+            background: transparent;
+        }
+        .btn-ghost:hover { background: rgba(255, 255, 255, 0.15); opacity: 1; }
+        .btn-primary {
+            background: #be976d;
+            color: #ffffff;
+            border: 2px solid #be976d;
+        }
+        .btn-primary:hover {
+            background: #a67f5a;
+            border-color: #a67f5a;
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #2a2a2a;
+            border: 2px solid #2a2a2a;
+        }
+        .btn-secondary:hover { background: #2a2a2a; color: #fcfbfa; opacity: 1; }
+
+        /* ========================================
+           ARTICLE HERO
+           ======================================== */
+        .article-hero {
+            position: relative;
+            width: 100%;
+            min-height: 64vh;
+            margin-top: 80px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(20,18,15,0.15) 0%, rgba(20,18,15,0.55) 100%), url('/newblogimages/doctoral-graduation-photography-dc-monuments.webp') center 35% / cover no-repeat;
+        }
+        @media (max-width: 768px) { .article-hero { margin-top: 68px; min-height: 56vh; } }
+
+        .article-hero-content {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            width: 100%;
+            padding: 60px clamp(20px, 5vw, 80px) 56px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
-        .pro-tip {
+        .breadcrumb {
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 18px;
+        }
+        .breadcrumb a { color: #ffffff; }
+        .breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+        .article-hero h1 {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            font-style: italic;
+            letter-spacing: -0.01em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            max-width: 900px;
+            margin-bottom: 1rem;
+        }
+
+        .article-hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 300;
+            max-width: 640px;
+            opacity: 0.95;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            margin-top: 30px;
+            font-size: 0.8125rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* ========================================
+           ARTICLE BODY
+           ======================================== */
+        .article-body {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
+        }
+
+        .article-body h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-style: italic;
+            margin: 3.25rem 0 1.25rem;
+            scroll-margin-top: 96px;
+        }
+        .article-body h2:first-of-type { margin-top: 0; }
+
+        .article-body h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #2a2a2a;
+            margin: 2.25rem 0 1rem;
+            padding-left: 16px;
+            border-left: 3px solid #be976d;
+        }
+
+        /* First paragraph after a heading reads as a lede: slightly heavier weight
+           gives skimmers a scan-anchor without adding another visual element. */
+        .article-body h2 + p {
+            font-weight: 500;
+            font-size: 1.0625rem;
+            color: #2a2a2a;
+        }
+
+        .article-body p { margin-bottom: 1.5rem; color: #3a3630; }
+
+        .article-body ul {
+            margin: 0 0 1.75rem 1.25rem;
+            line-height: 2;
+            color: #3a3630;
+        }
+
+        .article-body a {
+            color: #7d5732;
+            border-bottom: 1px solid rgba(190, 151, 109, 0.5);
+        }
+        .article-body a:hover { opacity: 1; border-color: #be976d; }
+
+        .article-body strong { font-weight: 600; color: #2a2a2a; }
+
+        .article-figure { margin: 3rem 0; text-align: center; }
+        .article-figure img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            margin: 0 auto;
+        }
+        .article-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.875rem;
+            font-style: italic;
+            color: #63594e;
+        }
+
+        /* ========================================
+           PULL QUOTE
+           ======================================== */
+        .pull-quote {
+            margin: 3.5rem 0;
+            padding-left: 28px;
+            border-left: 3px solid #be976d;
+        }
+        .pull-quote p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+            line-height: 1.35;
+            color: #2a2a2a;
+            margin: 0;
+        }
+
+        /* ========================================
+           COLLAPSIBLE SECTIONS (native <details>, no JS dependency)
+           ======================================== */
+        .toc-box {
+            margin-bottom: 3rem;
+            padding: 22px 26px;
             background: #f5f3f0;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
-        }
-
-        .pro-tip h3 {
-            color: #856545;
-            margin-bottom: 10px;
-        }
-
-        .faq-section {
-            margin: 60px 0;
-        }
-
-        .faq-item {
-            background: var(--light);
-            padding: 25px 30px;
             border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: var(--shadow);
         }
-
-        .faq-item h3 {
-            color: var(--primary);
-            margin-bottom: 12px;
+        .toc-box summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
             font-size: 1.15rem;
+            color: #2a2a2a;
+        }
+        .toc-box summary::-webkit-details-marker { display: none; }
+        .toc-box summary::after {
+            content: '+';
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .toc-box[open] summary::after { transform: rotate(45deg); }
+        .toc-list {
+            list-style: none;
+            margin: 18px 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 24px;
+        }
+        @media (max-width: 560px) { .toc-list { grid-template-columns: 1fr; } }
+        .toc-list a {
+            font-size: 0.9375rem;
+            color: #5a564e;
+            border-bottom: none;
+        }
+        .toc-list a:hover { color: #7d5732; opacity: 1; }
+
+        /* ========================================
+           FAQ
+           ======================================== */
+        .faq-item {
+            padding: 4px 0;
+            border-top: 1px solid rgba(42, 42, 42, 0.1);
+        }
+        .faq-item:last-child { border-bottom: 1px solid rgba(42, 42, 42, 0.1); }
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            flex-shrink: 0;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .faq-item[open] summary::after { transform: rotate(45deg); }
+        .faq-item p { margin: 0 0 22px; color: #5a564e; }
+
+        /* ========================================
+           CTA BANNER
+           ======================================== */
+        .cta-banner {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: clamp(60px, 8vw, 90px) 0;
+            text-align: center;
+        }
+        .cta-banner .container { max-width: 700px; }
+        .cta-banner h2 { color: #ffffff; font-style: italic; margin-bottom: 1.25rem; }
+        .cta-banner p { color: rgba(255, 255, 255, 0.85); margin-bottom: 2rem; }
+        .cta-banner p a { color: #d9b48f; border-bottom: 1px solid rgba(217, 180, 143, 0.5); }
+        .cta-banner p a:hover { opacity: 1; }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer { background: #2a2a2a; color: #ffffff; padding: 60px 0 110px; }
+        @media (min-width: 769px) { .footer { padding-bottom: 30px; } }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p { font-size: 0.9375rem; opacity: 0.8; }
+        .footer-links h4 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { font-size: 0.9375rem; opacity: 0.8; transition: opacity 0.3s ease; }
+        .footer-links a:hover { opacity: 1; }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+            font-size: 0.875rem;
+            opacity: 0.7;
         }
 
-        .faq-item p {
-            line-height: 1.7;
-            color: #5a5a5a;
+        /* ========================================
+           BACK TO TOP
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 90;
         }
+        .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .back-to-top:hover { opacity: 0.85; background: #be976d; }
 
-        .location-highlight {
-            background: var(--light);
-            padding: 30px;
-            border-radius: 10px;
-            margin: 40px 0;
-            box-shadow: var(--shadow);
+        /* ========================================
+           SCROLL REVEAL
+           ======================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
         }
     </style>
-  <script src="/analytics.js" defer></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://visualsbyjoshua.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://visualsbyjoshua.com/blog.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Doctoral Graduation Photography at DC Monuments",
-      "item": "https://visualsbyjoshua.com/blog/doctoral-graduation-photography-dc-monuments/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do you photograph doctoral regalia properly?", "acceptedAnswer": {"@type": "Answer", "text": "Doctoral regalia has details that standard gowns do not: velvet panels, sleeve stripes, and hood colors representing your field and university. I use angles and poses that show the full gown including sleeves and hood. Side profiles and three-quarter turns reveal the velvet accents. Soft, even light keeps detail in the dark fabric instead of losing it to shadow. I also capture close-up detail shots of the velvet and hood colors."}}, {"@type": "Question", "name": "What are the best poses with a graduation gown for photos?", "acceptedAnswer": {"@type": "Answer", "text": "Walking poses with the gown flowing behind you, standing with one hand adjusting the cap, holding your diploma at your side, and looking over your shoulder to show hood colors all work well. Avoid stiff front-facing poses that hide gown details. Movement and three-quarter angles photograph best because they show the gown's drape and your confidence simultaneously."}}, {"@type": "Question", "name": "How long does a DC monument graduation session take?", "acceptedAnswer": {"@type": "Answer", "text": "A single-location session takes about 45 minutes to one hour. Multi-location sessions covering two or three monuments run 90 minutes to two hours including walking time. Add 15 to 20 minutes for an outfit change. I recommend booking at least 90 minutes for doctoral sessions since the regalia deserves more attention and you will want variety across multiple compositions."}}, {"@type": "Question", "name": "Can you do outfit changes during a DC monument graduation photo session?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Most clients start in full cap and gown regalia and then change into a personal outfit for a second look. There are restrooms near most monument locations, and the walking time between spots gives a natural transition point. I recommend no more than two outfits to keep the session focused and make the most of the available light."}}, {"@type": "Question", "name": "What should you bring to a doctoral graduation photo session?", "acceptedAnswer": {"@type": "Answer", "text": "Bring your full regalia, cap, hood, tassel, comfortable walking shoes, and a lint roller. If you want a second look, bring one clean outfit that you can change into quickly. Small personal items like an announcement board or diploma cover work well. Keep props simple so the focus stays on you and the regalia."}}]}</script>
-  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/blog/photography-pricing/">Pricing</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
-        <li><a href="/#contact">Book Now</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </nav>
+    <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
 
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Visuals by Joshua</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/blog/photography-pricing/">Pricing</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+                <li><a href="/#contact">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Blog Hero Section -->
-    <section class="article-hero hero-bg" style="--bg-url: url('/newblogimages/doctoral-graduation-photography-dc-monuments.webp');" id="main">
-        <div class="blog-hero-content">
+    <!-- Article Hero -->
+    <section class="article-hero" id="main">
+        <div class="article-hero-content">
             <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Doctoral Graduation Photography at DC Monuments</div>
-          <h1 class="blog-hero-title">Doctoral Graduation Photography at DC Monuments</h1>
-            <p class="blog-hero-subtitle">Full doctoral regalia on the steps of the Lincoln Memorial, an outfit change to white, and why photographing a doctorate demands a different approach</p>
-
-            <div class="blog-meta">
-                <div class="meta-item">
-                    <i class="fas fa-user"></i>
-                    <span>By Joshua Smith</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-calendar"></i>
-                    <span>June 1, 2025</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i>
-                    <span>7 min read</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Washington, DC</span>
-                </div>
+            <h1>Doctoral Graduation Photography at DC Monuments</h1>
+            <p class="article-hero-subtitle">Full doctoral regalia on the steps of the Lincoln Memorial, an outfit change to white, and why photographing a doctorate demands a different approach</p>
+            <div class="article-meta">
+                <span>By Joshua Smith</span>
+                <span>June 1, 2025</span>
+                <span>7 min read</span>
+                <span>Washington, DC</span>
             </div>
         </div>
     </section>
 
-    <!-- Blog Content -->
-    <section class="article-content">
-        <div class="blog-container">
+    <main>
+    <article class="article-body">
 
-            <!-- Introduction -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">What Makes Doctoral Graduation Photos Different from Every Other Graduation Shoot?</h2>
-                    <p class="blog-text">A doctoral degree is the highest academic achievement there is. The regalia reflects that. Where a bachelors graduate wears a simple black gown and a masters graduate adds a hood, a doctoral candidate walks in wearing something that demands attention: crimson or dark robes with velvet panels, striped sleeves, a hood lined with the colors of their university and discipline. This is not a standard cap and gown. This is academic armor, and it needs to be photographed like it matters.</p>
+        <details class="toc-box reveal">
+            <summary>In this guide</summary>
+            <ul class="toc-list">
+                <li><a href="#what-makes-it-different">What makes doctoral photos different</a></li>
+                <li><a href="#session-breakdown">How the session came together</a></li>
+                <li><a href="#photographing-regalia">Photographing regalia details</a></li>
+                <li><a href="#why-dc-monuments">Why DC monuments fit a doctorate</a></li>
+                <li><a href="#outfit-change">Planning an outfit change</a></li>
+                <li><a href="#best-poses">Best poses for doctoral photos</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </details>
 
-                    <p class="blog-text">I shot this <strong>doctoral graduation portrait session</strong> on June 1, 2025 at DC monuments. My client came in full doctoral regalia, a rich crimson robe with purple velvet accents, her graduation cap, and a graduation announcement board she wanted to include in the photos. We started on the grand marble steps and columns of the memorial, then she changed into a white dress for a second look that was completely different in tone but equally powerful. Two outfits, one location, and a set of images that capture both the formal weight of a doctorate and the personal joy of being done.</p>
+        <h2 id="what-makes-it-different" class="reveal">What Makes Doctoral Graduation Photos Different from Every Other Graduation Shoot?</h2>
+        <p>A doctoral degree is the highest academic achievement there is. The regalia reflects that. Where a bachelors graduate wears a simple black gown and a masters graduate adds a hood, a doctoral candidate walks in wearing something that demands attention: crimson or dark robes with velvet panels, striped sleeves, a hood lined with the colors of their university and discipline. That difference changes everything about how the session should be planned and shot.</p>
 
-                    <p class="blog-text">If you are finishing your doctoral program anywhere in the DMV, here is how I approach these sessions and why the details of your regalia matter more than you might think. I cover the DMV area extensively as a graduation photographer, and doctoral graduation sessions are some of my favorite work.</p>
-                </div>
-            </div>
+        <blockquote class="pull-quote reveal">
+            <p>This is not a standard cap and gown. This is academic armor, and it needs to be photographed like it matters.</p>
+        </blockquote>
 
-            <!-- Featured Image -->
-            <div style="margin: 40px 0; max-height: 500px; overflow: hidden; border-radius: 10px; box-shadow: var(--shadow);">
-                <picture>
-                  <source type="image/avif" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.avif 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.avif 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.avif 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <source type="image/webp" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.webp 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.webp 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.webp 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <img src="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.jpg" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.jpg 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.jpg 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.jpg 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="1206" height="2622" alt="Doctoral graduation portrait at DC monuments, woman in crimson doctoral regalia with purple velvet accents on marble steps by Joshua Smith photographer" style="width: 100%; height: 500px; object-fit: cover; border-radius: 10px;" loading="lazy" decoding="async">
-                </picture>
-            </div>
+        <p>I shot this <strong>doctoral graduation portrait session</strong> on June 1, 2025 at DC monuments. My client came in full doctoral regalia, a rich crimson robe with purple velvet accents, her graduation cap, and a graduation announcement board she wanted to include in the photos. We started on the grand marble steps and columns of the memorial, then she changed into a white dress for a second look that was completely different in tone but equally powerful. Two outfits, one location, and a set of images that capture both the formal weight of a doctorate and the personal joy of being done.</p>
 
-            <!-- Session Breakdown -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">How Did This Doctoral Graduation Session Come Together?</h2>
-                    <p class="blog-text">We started on the marble steps. Those wide, white steps with the massive columns rising behind them are one of the most photographed spots in DC, and for good reason. The scale is overwhelming in the best way. A single person standing on those steps in full doctoral regalia looks like they belong there. The architecture was built to honor significant achievement, and a doctorate is exactly that.</p>
+        <p>If you are finishing your doctoral program anywhere in the DMV, here is how I approach these sessions and why the details of your regalia matter more than you might think. I cover the DMV area extensively as a graduation photographer, and doctoral graduation sessions are some of my favorite work.</p>
 
-                    <p class="blog-text">I positioned her on the steps at varying heights to play with scale. Lower on the steps with the columns towering above her emphasizes the grandeur. Higher up on the steps looking down gives a sense of having climbed to the top. Both compositions tell a different part of the story, and I wanted both in the final set.</p>
+        <figure class="article-figure reveal">
+            <picture>
+                <source type="image/avif" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.avif 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.avif 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.avif 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <source type="image/webp" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.webp 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.webp 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.webp 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <img src="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.jpg" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.jpg 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.jpg 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.jpg 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)" width="1206" height="2622" alt="Doctoral graduation portrait at DC monuments, woman in crimson doctoral regalia with purple velvet accents on marble steps by Joshua Smith photographer" loading="lazy" decoding="async">
+            </picture>
+        </figure>
 
-                    <p class="blog-text">The crimson doctoral robe against the white marble was striking. That color contrast is one of the reasons I push doctoral clients toward monument locations. Dark regalia against dark brick or city backgrounds gets lost. Dark regalia against white stone and blue sky comes alive. The purple velvet panels on her sleeves and front caught the light beautifully, and I made sure to get close-up detail shots of those accents because they represent years of work and a specific academic discipline.</p>
+        <h2 id="session-breakdown" class="reveal">How Did This Doctoral Graduation Session Come Together?</h2>
+        <p>We started on the marble steps. Those wide, white steps with the massive columns rising behind them are one of the most photographed spots in DC, and for good reason. The scale is overwhelming in the best way. A single person standing on those steps in full doctoral regalia looks like they belong there. The architecture was built to honor significant achievement, and a doctorate is exactly that.</p>
 
-                    <p class="blog-text">She brought a graduation announcement board, which we incorporated into several frames. Props like this work well when they are personal and relevant. A board announcing your degree, your university, and your name adds context to the photo and gives the viewer specific information. It is not just a person in a gown. It is Dr. [Name] from [University] holding proof that she did the thing.</p>
+        <p>I positioned her on the steps at varying heights to play with scale. Lower on the steps with the columns towering above her emphasizes the grandeur. Higher up on the steps looking down gives a sense of having climbed to the top. Both compositions tell a different part of the story, and I wanted both in the final set.</p>
 
-                    <p class="blog-text">After the regalia series, she changed into a white dress for a completely different look. The white dress against the same marble backdrop created a softer, more personal feel. Where the doctoral gown photos said "I am a doctor," the white dress photos said "I am celebrating." Both are true. Both matter. And having both in your gallery gives you range when you are sharing these photos with family, posting on social media, or printing for your wall.</p>
-                </div>
-            </div>
+        <p>The crimson doctoral robe against the white marble was striking. That color contrast is one of the reasons I push doctoral clients toward monument locations. Dark regalia against dark brick or city backgrounds gets lost. Dark regalia against white stone and blue sky comes alive. The purple velvet panels on her sleeves and front caught the light beautifully, and I made sure to get close-up detail shots of those accents because they represent years of work and a specific academic discipline.</p>
 
-            <!-- Photographing Regalia -->
-            <div class="tip-card">
-                <h2 class="section-title">How Do You Photograph Doctoral Regalia to Get the Details Right?</h2>
-                <p class="blog-text">Doctoral regalia is not just clothing. It is a system of symbols. The color of the velvet panels represents your academic field: purple for law, gold for science, white for arts and letters, dark blue for philosophy. The hood lining shows your university colors. The sleeve stripes, the cut of the gown, the shape of the cap, all of it means something. If your photographer does not know this, they will miss the details that make doctoral photos different from any other graduation shoot.</p>
+        <p>She brought a graduation announcement board, which we incorporated into several frames. Props like this work well when they are personal and relevant. A board announcing your degree, your university, and your name adds context to the photo and gives the viewer specific information. It is not just a person in a gown. It is Dr. [Name] from [University] holding proof that she did the thing.</p>
 
-                <p class="blog-text">I make sure to capture several specific elements. Full-length shots that show the entire gown from cap to hem. Three-quarter turns that reveal the hood colors draped down the back. Close-ups of the velvet sleeve panels and front accents. Shots from behind that display the full hood spread across the shoulders. Each of these tells a different part of the story, and doctoral clients appreciate when the photographer understands what the regalia represents.</p>
+        <p>After the regalia series, she changed into a white dress for a completely different look. The white dress against the same marble backdrop created a softer, more personal feel. Where the doctoral gown photos said "I am a doctor," the white dress photos said "I am celebrating." Both are true. Both matter. And having both in your gallery gives you range when you are sharing these photos with family, posting on social media, or printing for your wall.</p>
 
-                <p class="blog-text">Lighting matters even more with doctoral gowns because the fabric is often dark. Crimson, black, and navy gowns absorb light. In harsh midday sun, the details disappear into shadow and the velvet loses its texture. I shoot doctoral sessions in soft, even light. Overcast days are actually ideal, or during the golden hour when the warm light brings out the richness of the fabric without blowing out the highlights on the white marble behind.</p>
+        <h2 id="photographing-regalia" class="reveal">How Do You Photograph Doctoral Regalia to Get the Details Right?</h2>
+        <p>Doctoral regalia is not just clothing. It is a system of symbols. The color of the velvet panels represents your academic field: purple for law, gold for science, white for arts and letters, dark blue for philosophy. The hood lining shows your university colors. The sleeve stripes, the cut of the gown, the shape of the cap, all of it means something. If your photographer does not know this, they will miss the details that make doctoral photos different from any other graduation shoot.</p>
 
-                <p class="blog-text">For this session the light was cooperative. We had soft, slightly directional light that carved out the velvet texture without creating harsh shadows in the folds of the gown. The purple accents glowed against the crimson, and the white marble provided a natural reflector that bounced light back into the darker areas of the regalia. That is why DC monuments work so well for this: the white stone bounces soft fill light onto your subject from below and to the sides.</p>
-            </div>
+        <p>I make sure to capture several specific elements. Full-length shots that show the entire gown from cap to hem. Three-quarter turns that reveal the hood colors draped down the back. Close-ups of the velvet sleeve panels and front accents. Shots from behind that display the full hood spread across the shoulders. Each of these tells a different part of the story, and doctoral clients appreciate when the photographer understands what the regalia represents.</p>
 
-            <!-- Why DC Monuments Match a Doctorate -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Why Do DC Monuments Match the Significance of a Doctoral Degree?</h2>
-                    <p class="blog-text">There is a reason people do not shoot doctoral graduation photos in a parking lot. The location needs to match the achievement. A doctorate typically takes four to seven years beyond a masters degree. It involves original research, a dissertation defense, and a level of expertise that puts you at the top of your field. The photos should reflect that gravity.</p>
+        <p>Lighting matters even more with doctoral gowns because the fabric is often dark. Crimson, black, and navy gowns absorb light. In harsh midday sun, the details disappear into shadow and the velvet loses its texture. I shoot doctoral sessions in soft, even light. Overcast days are actually ideal, or during the golden hour when the warm light brings out the richness of the fabric without blowing out the highlights on the white marble behind.</p>
 
-                    <p class="blog-text">DC monuments were built to honor people and ideas that shaped history. When you stand on those steps in doctoral regalia, there is an unspoken connection between the monument's purpose and yours. You dedicated years to advancing knowledge. The building behind you was dedicated to preserving it. That alignment is not accidental, and it shows in the photos.</p>
+        <p>For this session the light was cooperative. We had soft, slightly directional light that carved out the velvet texture without creating harsh shadows in the folds of the gown. The purple accents glowed against the crimson, and the white marble provided a natural reflector that bounced light back into the darker areas of the regalia. That is why DC monuments work so well for this: the white stone bounces soft fill light onto your subject from below and to the sides.</p>
 
-                    <p class="blog-text">I recently shot a masters graduation session as well, and while the approach is similar, the energy of a doctoral session is different. Masters graduates are relieved and excited. Doctoral graduates carry a quieter intensity, a sense of "I did something most people will never attempt, and I finished it." That energy translates directly into the photos when the backdrop supports it.</p>
+        <h2 id="why-dc-monuments" class="reveal">Why Do DC Monuments Match the Significance of a Doctoral Degree?</h2>
+        <p>There is a reason people do not shoot doctoral graduation photos in a parking lot. The location needs to match the achievement. A doctorate typically takes four to seven years beyond a masters degree. It involves original research, a dissertation defense, and a level of expertise that puts you at the top of your field. The photos should reflect that gravity.</p>
 
-                    <p class="blog-text">The scale helps too. These are not small buildings. The <a title="Lincoln Memorial official site" href="https://www.nps.gov/linc/index.htm" target="_blank" rel="noopener">Lincoln Memorial</a> is 190 feet wide and 99 feet tall. When a person stands in front of something that massive in full academic regalia, the contrast creates visual power. You are small against the monument but the regalia and your posture communicate that you belong there. That tension between human scale and architectural scale is what makes monument graduation photos work.</p>
-                </div>
-            </div>
+        <p>DC monuments were built to honor people and ideas that shaped history. When you stand on those steps in doctoral regalia, there is an unspoken connection between the monument's purpose and yours. You dedicated years to advancing knowledge. The building behind you was dedicated to preserving it. That alignment is not accidental, and it shows in the photos.</p>
 
-            <!-- Outfit Change Strategy -->
-            <div class="tip-card">
-                <h2 class="section-title">Why Should You Plan an Outfit Change During Your Graduation Session?</h2>
-                <p class="blog-text">I recommend an outfit change for almost every doctoral graduation session, and here is why. Your regalia photos are formal and ceremonial. They document the achievement in its official form. But you are also a person who just spent the better part of a decade working toward something, and there is a personal side to that story that a gown and cap cannot fully express.</p>
+        <p>I recently shot a masters graduation session as well, and while the approach is similar, the energy of a doctoral session is different. Masters graduates are relieved and excited. Doctoral graduates carry a quieter intensity, a sense of "I did something most people will never attempt, and I finished it." That energy translates directly into the photos when the backdrop supports it.</p>
 
-                <p class="blog-text">For this session, the switch from crimson doctoral regalia to a clean white dress changed everything about the photos. Same location, same marble steps, same columns. But the mood shifted from formal to celebratory. The white dress moved differently in the breeze. Her posture relaxed. Her expressions opened up. Those second-look photos often end up being the ones clients print largest and share most, because they show the person behind the degree.</p>
+        <p>The scale helps too. These are not small buildings. The <a title="Lincoln Memorial official site" href="https://www.nps.gov/linc/index.htm" target="_blank" rel="noopener">Lincoln Memorial</a> is 190 feet wide and 99 feet tall. When a person stands in front of something that massive in full academic regalia, the contrast creates visual power. You are small against the monument but the regalia and your posture communicate that you belong there. That tension between human scale and architectural scale is what makes monument graduation photos work.</p>
 
-                <p class="blog-text">Logistically, outfit changes at DC monuments are straightforward. There are restrooms near most major memorial locations. The walking time between spots gives you a natural break point. I tell my clients to bring their second outfit in a garment bag and we find the right moment to switch. Fifteen minutes for the change, then we are back shooting in a completely different look.</p>
+        <h2 id="outfit-change" class="reveal">Why Should You Plan an Outfit Change During Your Graduation Session?</h2>
+        <p>I recommend an outfit change for almost every doctoral graduation session, and here is why. Your regalia photos are formal and ceremonial. They document the achievement in its official form. But you are also a person who just spent the better part of a decade working toward something, and there is a personal side to that story that a gown and cap cannot fully express.</p>
 
-                <p class="blog-text">Keep it to two outfits maximum. More than that and you spend too much time changing and not enough time in good light. Two looks give you variety without sacrificing quality. The regalia for the formal photos. Something personal and stylish for the celebration photos. That is all you need.</p>
-            </div>
+        <p>For this session, the switch from crimson doctoral regalia to a clean white dress changed everything about the photos. Same location, same marble steps, same columns. But the mood shifted from formal to celebratory. The white dress moved differently in the breeze. Her posture relaxed. Her expressions opened up. Those second-look photos often end up being the ones clients print largest and share most, because they show the person behind the degree.</p>
 
-            <!-- Pro Tip -->
-            <div class="pro-tip">
-                <h3><i class="fas fa-lightbulb"></i> Pro Tip: Steam Your Doctoral Gown Before the Session</h3>
-                <p>Doctoral gowns ship folded and they hold creases. Those creases show up in every single photo, especially in the velvet panels. Steam your gown the night before your session or hang it in the bathroom while you shower to let the steam relax the fabric. Wrinkled regalia in a photo is like a typo in your dissertation. It distracts from everything you worked for. Five minutes of steaming saves hours of editing.</p>
-            </div>
+        <p>Logistically, outfit changes at DC monuments are straightforward. There are restrooms near most major memorial locations. The walking time between spots gives you a natural break point. I tell my clients to bring their second outfit in a garment bag and we find the right moment to switch. Fifteen minutes for the change, then we are back shooting in a completely different look.</p>
 
-            <!-- Best Poses -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">What Are the Best Poses for Doctoral Graduation Photos?</h2>
-                    <p class="blog-text">Doctoral gowns have more structure and weight than standard graduation gowns, which means posing works differently. You cannot move as quickly or as loosely in full regalia, and that is actually an advantage. The poses should match the gravitas of the achievement: deliberate, confident, composed.</p>
+        <p>Keep it to two outfits maximum. More than that and you spend too much time changing and not enough time in good light. Two looks give you variety without sacrificing quality. The regalia for the formal photos. Something personal and stylish for the celebration photos. That is all you need.</p>
 
-                    <p class="blog-text">I start with standing poses on the steps. Weight on one foot, body angled slightly away from the camera, chin level or slightly lifted. This communicates confidence without looking stiff. I have my client hold the front of the gown with one hand to show the velvet panel, while the other hand rests naturally or holds a diploma or announcement board.</p>
+        <h3>Pro Tip: Steam Your Doctoral Gown Before the Session</h3>
+        <p>Doctoral gowns ship folded and they hold creases. Those creases show up in every single photo, especially in the velvet panels. Steam your gown the night before your session or hang it in the bathroom while you shower to let the steam relax the fabric. Wrinkled regalia in a photo is like a typo in your dissertation. It distracts from everything you worked for. Five minutes of steaming saves hours of editing.</p>
 
-                    <p class="blog-text">Walking poses work well on the wide steps. Walking down the steps toward the camera with the gown flowing behind creates movement and drama. Walking up the steps communicates ascent and achievement. I shoot in burst mode during walking poses to capture the exact moment when the gown drapes right and the expression is natural.</p>
+        <h2 id="best-poses" class="reveal">What Are the Best Poses for Doctoral Graduation Photos?</h2>
+        <p>Doctoral gowns have more structure and weight than standard graduation gowns, which means posing works differently. You cannot move as quickly or as loosely in full regalia, and that is actually an advantage. The poses should match the gravitas of the achievement: deliberate, confident, composed.</p>
 
-                    <p class="blog-text">Back-facing shots are essential for doctoral regalia because the hood is displayed on the back. I position the camera slightly above and behind to show the full hood spread across the shoulders with the steps or columns receding into the distance. These are the photos that show your university colors and your academic discipline without needing a caption.</p>
+        <p>I start with standing poses on the steps. Weight on one foot, body angled slightly away from the camera, chin level or slightly lifted. This communicates confidence without looking stiff. I have my client hold the front of the gown with one hand to show the velvet panel, while the other hand rests naturally or holds a diploma or announcement board.</p>
 
-                    <p class="blog-text">For the white dress portion, I loosened the direction entirely. Spinning, laughing, sitting on the steps, leaning against a column. The shift from formal to relaxed gives the gallery emotional range that a single outfit cannot achieve. You can see more examples of how I direct portrait sessions in my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="external-link" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a>.</p>
-                </div>
-            </div>
+        <p>Walking poses work well on the wide steps. Walking down the steps toward the camera with the gown flowing behind creates movement and drama. Walking up the steps communicates ascent and achievement. I shoot in burst mode during walking poses to capture the exact moment when the gown drapes right and the expression is natural.</p>
 
-            <!-- Other DMV Graduation Spots -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Where Else Can You Shoot Doctoral Graduation Photos in the DMV?</h3>
-                    <p class="blog-text">DC monuments are the most popular option and for good reason, but depending on your story there may be other locations that fit your doctoral celebration even better.</p>
+        <p>Back-facing shots are essential for doctoral regalia because the hood is displayed on the back. I position the camera slightly above and behind to show the full hood spread across the shoulders with the steps or columns receding into the distance. These are the photos that show your university colors and your academic discipline without needing a caption.</p>
 
-                    <p class="blog-text"><strong>Your university campus.</strong> If you earned your doctorate from Howard, Georgetown, GWU, American, Catholic, or UMD, shooting on campus connects the photos directly to where you did the work. The libraries, lecture halls, and campus quads carry personal meaning that no monument can replicate.</p>
+        <p>For the white dress portion, I loosened the direction entirely. Spinning, laughing, sitting on the steps, leaning against a column. The shift from formal to relaxed gives the gallery emotional range that a single outfit cannot achieve. You can see more examples of how I direct portrait sessions in my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a>.</p>
 
-                    <p class="blog-text"><strong>The Library of Congress.</strong> The exterior columns and steps make one of the most striking backdrops in DC, and for someone who spent years in libraries researching, there is a personal connection too. The interior requires a permit but the exterior steps and facade are open.</p>
+        <h3>Where Else Can You Shoot Doctoral Graduation Photos in the DMV?</h3>
+        <p>DC monuments are the most popular option and for good reason, but depending on your story there may be other locations that fit your doctoral celebration even better.</p>
 
-                    <p class="blog-text"><strong>The <a title="Smithsonian Institution official site" href="https://www.si.edu/" target="_blank" rel="noopener">Smithsonian Castle</a> and National Mall museums.</strong> I have shot graduation sessions there and the architecture is incredible. The red sandstone of the Castle, the clean lines of the modern museums, and the garden spaces all work for graduation photos.</p>
+        <p><strong>Your university campus.</strong> If you earned your doctorate from Howard, Georgetown, GWU, American, Catholic, or UMD, shooting on campus connects the photos directly to where you did the work. The libraries, lecture halls, and campus quads carry personal meaning that no monument can replicate.</p>
 
-                    <p class="blog-text"><strong>Meridian Hill Park.</strong> The cascading fountain and Italian-style terraces create a European feel that works beautifully with formal academic regalia. It is less crowded than the monuments and the stone architecture provides a warm, textured backdrop.</p>
-                </div>
-            </div>
+        <p><strong>The Library of Congress.</strong> The exterior columns and steps make one of the most striking backdrops in DC, and for someone who spent years in libraries researching, there is a personal connection too. The interior requires a permit but the exterior steps and facade are open.</p>
 
-            <!-- FAQ Section -->
-            <div class="faq-section">
-                <h2 class="section-title">Frequently Asked Questions</h2>
+        <p><strong>The <a title="Smithsonian Institution official site" href="https://www.si.edu/" target="_blank" rel="noopener">Smithsonian Castle</a> and National Mall museums.</strong> I have shot graduation sessions there and the architecture is incredible. The red sandstone of the Castle, the clean lines of the modern museums, and the garden spaces all work for graduation photos.</p>
 
-                <div class="faq-item">
-                    <h3>How do you photograph doctoral regalia properly?</h3>
-                    <p>Doctoral regalia has details that standard gowns do not: velvet panels, sleeve stripes, and hood colors representing your field and university. I use angles and poses that show the full gown including sleeves and hood. Side profiles and three-quarter turns reveal the velvet accents. Soft, even light keeps detail in the dark fabric instead of losing it to shadow. I also capture close-up detail shots of the velvet and hood colors.</p>
-                </div>
+        <p><strong>Meridian Hill Park.</strong> The cascading fountain and Italian-style terraces create a European feel that works beautifully with formal academic regalia. It is less crowded than the monuments and the stone architecture provides a warm, textured backdrop.</p>
 
-                <div class="faq-item">
-                    <h3>What are the best poses with a graduation gown for photos?</h3>
-                    <p>Walking poses with the gown flowing behind you, standing with one hand adjusting the cap, holding your diploma at your side, and looking over your shoulder to show hood colors all work well. Avoid stiff front-facing poses that hide gown details. Movement and three-quarter angles photograph best because they show the gown's drape and your confidence simultaneously.</p>
-                </div>
+        <h2 id="faq" class="reveal">Frequently Asked Questions</h2>
 
-                <div class="faq-item">
-                    <h3>How long does a DC monument graduation session take?</h3>
-                    <p>A single-location session takes about 45 minutes to one hour. Multi-location sessions covering two or three monuments run 90 minutes to two hours including walking time. Add 15 to 20 minutes for an outfit change. I recommend booking at least 90 minutes for doctoral sessions since the regalia deserves more attention and you will want variety across multiple compositions.</p>
-                </div>
+        <details class="faq-item">
+            <summary>How do you photograph doctoral regalia properly?</summary>
+            <p>Doctoral regalia has details that standard gowns do not: velvet panels, sleeve stripes, and hood colors representing your field and university. I use angles and poses that show the full gown including sleeves and hood. Side profiles and three-quarter turns reveal the velvet accents. Soft, even light keeps detail in the dark fabric instead of losing it to shadow. I also capture close-up detail shots of the velvet and hood colors.</p>
+        </details>
+        <details class="faq-item">
+            <summary>What are the best poses with a graduation gown for photos?</summary>
+            <p>Walking poses with the gown flowing behind you, standing with one hand adjusting the cap, holding your diploma at your side, and looking over your shoulder to show hood colors all work well. Avoid stiff front-facing poses that hide gown details. Movement and three-quarter angles photograph best because they show the gown's drape and your confidence simultaneously.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How long does a DC monument graduation session take?</summary>
+            <p>A single-location session takes about 45 minutes to one hour. Multi-location sessions covering two or three monuments run 90 minutes to two hours including walking time. Add 15 to 20 minutes for an outfit change. I recommend booking at least 90 minutes for doctoral sessions since the regalia deserves more attention and you will want variety across multiple compositions.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Can you do outfit changes during a DC monument graduation photo session?</summary>
+            <p>Yes. Most clients start in full cap and gown regalia and then change into a personal outfit for a second look. There are restrooms near most monument locations, and the walking time between spots gives a natural transition point. I recommend no more than two outfits to keep the session focused and make the most of the available light.</p>
+        </details>
+        <details class="faq-item">
+            <summary>What should you bring to a doctoral graduation photo session?</summary>
+            <p>Bring your full regalia, cap, hood, tassel, comfortable walking shoes, and a lint roller. If you want a second look, bring one clean outfit that you can change into quickly. Small personal items like an announcement board or diploma cover work well. Keep props simple so the focus stays on you and the regalia.</p>
+        </details>
 
-                <div class="faq-item">
-                    <h3>Can you do outfit changes during a DC monument graduation photo session?</h3>
-                    <p>Yes. Most clients start in full cap and gown regalia and then change into a personal outfit for a second look. There are restrooms near most monument locations, and the walking time between spots gives a natural transition point. I recommend no more than two outfits to keep the session focused and make the most of the available light.</p>
-                </div>
+        <h2 class="reveal">Book Your Doctoral Graduation Photo Session</h2>
+        <p>You spent years earning this degree. The photos should be worth as much as the frame your diploma goes in. I shoot doctoral, masters, and undergraduate graduation sessions across the DMV, DC monuments, university campuses, and anywhere else that fits the scale of what you accomplished. Your regalia tells a story. Let's make sure the photos do too.</p>
 
-                <div class="faq-item">
-                    <h3>What should you bring to a doctoral graduation photo session?</h3>
-                    <p>Bring your full regalia, cap, hood, tassel, comfortable walking shoes, and a lint roller. If you want a second look, bring one clean outfit that you can change into quickly. Small personal items like an announcement board or diploma cover work well. Keep props simple so the focus stays on you and the regalia.</p>
-                </div>
-            </div>
+        <p>Check out my <a title="View DMV portrait photography services" href="/dmv-portrait-photographer/">DMV portrait photographer</a> page for packages and availability, or <a title="Contact Joshua Smith about graduation photography" href="/index.html#contact">contact me</a> directly. I also shot a <a title="Read the DC monuments masters graduation photography guide" href="/blog/masters-graduation-photography-dc-monuments/">masters graduation session at the DC monuments</a> if you want to see how that approach compares. Graduation season books up quickly, so get your date on the calendar early.</p>
 
-            <!-- CTA Section -->
-            <div class="location-highlight">
-                <h2 class="section-title">Book Your Doctoral Graduation Photo Session</h2>
-                <p class="blog-text">You spent years earning this degree. The photos should be worth as much as the frame your diploma goes in. I shoot doctoral, masters, and undergraduate graduation sessions across the DMV, DC monuments, university campuses, and anywhere else that fits the scale of what you accomplished. Your regalia tells a story. Let's make sure the photos do too.</p>
+        <p>Based in Charleston, SC and available in the DMV by request &mdash; see more <a href="/charleston-graduation-photographer/">Charleston graduation photography</a> or book a DC-area session directly.</p>
 
-                <p class="blog-text">Check out my <a title="View DMV portrait photography services" href="/dmv-portrait-photographer/">DMV portrait photographer</a> page for packages and availability, or <a title="Contact Joshua Smith about graduation photography" href="/index.html#contact">contact me</a> directly. I also shot a <a title="Read the DC monuments masters graduation photography guide" href="/blog/masters-graduation-photography-dc-monuments/">masters graduation session at the DC monuments</a> if you want to see how that approach compares. Graduation season books up quickly, so get your date on the calendar early.</p>
-                <p class="blog-text">Based in Charleston, SC and available in the DMV by request &mdash; see more <a href="/charleston-graduation-photographer/">Charleston graduation photography</a> or book a DC-area session directly.</p>
-            </div>
-        </div>
-    </section>
+    </article>
 
     <!-- CTA Banner -->
     <section class="cta-banner">
         <div class="container">
-            <h2 class="cta-title">You Earned the Title. Now Get the Photos to Match.</h2>
-            <p class="cta-text">Doctoral, masters, and undergraduate graduation photography at DC monuments and across the DMV. Professional portraits that honor the years of work behind the degree.</p>
+            <h2>You Earned the Title. Now Get the Photos to Match.</h2>
+            <p>Doctoral, masters, and undergraduate graduation photography at DC monuments and across the DMV. Professional portraits that honor the years of work behind the degree.</p>
             <div class="cta-buttons">
-                
-                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
+                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn btn-ghost" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
             </div>
         </div>
     </section>
-
+    </main>
 
     <!-- Back to Top Button -->
-    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
+    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page">&uarr;</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals by Joshua</h3>
+                    <p>Editorial photography for milestones &amp; moments. Serving Charleston SC + Northern VA / DMV.</p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="tel:+12403608465" style="display: block; margin-bottom: 0.5rem;">&#128222; (240) 360-8465</a>
+                        <a href="mailto:jbmsmusic05@gmail.com" style="display: block; margin-bottom: 0.5rem;">&#9993;&#65039; jbmsmusic05@gmail.com</a>
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128247; Instagram</a>
+                        <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128218; Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/gallery">Full Gallery</a></li>
+                        <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+                        <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+                        <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+                        <li><a href="/blog.html">Photography Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Visuals by Joshua. Charleston SC &amp; Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.add('show');
@@ -399,77 +825,28 @@
                 backToTopButton.classList.remove('show');
             }
         });
-
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Scroll reveal for section headings, pull-quote, figure, and TOC
+        const revealTargets = document.querySelectorAll('.reveal');
+        if (revealTargets.length && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+            revealTargets.forEach(el => revealObserver.observe(el));
+        } else {
+            revealTargets.forEach(el => el.classList.add('in-view'));
+        }
     </script>
-  <script>
-    (function() {
-      var hamburger = document.querySelector('.hamburger');
-      var navMenu = document.querySelector('.nav-menu');
-      if (!hamburger || !navMenu) return;
-      function close() {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-      }
-      hamburger.addEventListener('click', function() {
-        var open = navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active', open);
-        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      navMenu.querySelectorAll('.nav-link').forEach(function(l) { l.addEventListener('click', close); });
-      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
-    })();
-  </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Visuals by Joshua</h3>
-          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
-          <p style="margin-top: 1.5rem;">
-            <a href="tel:+12403608465">(240) 360-8465</a><br>
-            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
-          </p>
-          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
-            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery">Full Gallery</a></li>
-            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Locations</h4>
-          <ul>
-            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
-            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
-            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
-            <li><a href="/blog.html">Photography Blog</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>

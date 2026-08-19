@@ -13,8 +13,8 @@
 
     <!-- OG Tags -->
     <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Visuals by Joshua">
-  <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Visuals by Joshua">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://visualsbyjoshua.com/blog/college-party-event-photography/" />
     <meta property="og:title" content="College Party Event Photography: How I Shoot the Chaos" />
     <meta property="og:description" content="A college party event photographer breaks down flash techniques, crowd shots, and how to work nighttime outdoor events in Charleston." />
@@ -27,16 +27,12 @@
     <meta name="twitter:description" content="A college party event photographer breaks down flash techniques, crowd shots, and how to work nighttime outdoor events in Charleston." />
     <meta name="twitter:image" content="https://visualsbyjoshua.com/images/events/college-party-event-photography.webp" />
 
-    <!-- Fonts -->
+    <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Shared Blog Styles -->
-    <link rel="stylesheet" href="/styles.css">
-
-    <!-- Schema.org BlogPosting markup -->
+    <!-- Schema.org markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -65,311 +61,740 @@
         },
         "keywords": "college party event photographer, event photography college parties, party photographer Charleston, nighttime event photography"
     }
-    </script><style>
-        .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://visualsbyjoshua.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://visualsbyjoshua.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "College Party Event Photography: How I Shoot the Chaos",
+          "item": "https://visualsbyjoshua.com/blog/college-party-event-photography/"
         }
-        @media (min-width: 800px) {
-          .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-          }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does a college party event photographer cost?", "acceptedAnswer": {"@type": "Answer", "text": "Rates depend on the length of coverage and what you need delivered. Most college event photography packages start between $200 and $500 for 2-3 hours of coverage with edited digital images. Check out my Charleston photography pricing guide for a detailed breakdown."}}, {"@type": "Question", "name": "Do you use flash at college parties?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Outdoor nighttime parties almost always require flash. An on-camera flash bounced or diffused keeps the images looking natural while giving enough light to freeze the action. Direct flash with intention can also create a raw, editorial party look that fits these events well."}}, {"@type": "Question", "name": "How do you handle group photos at a crowded party?", "acceptedAnswer": {"@type": "Answer", "text": "Be direct and confident. Walk up, tell people exactly where to stand, count down from three, and take multiple frames. At parties you have about five seconds of cooperation before people drift. Shoot fast, check focus, and move on. A wide-angle lens in the 24-35mm range works best for fitting groups in tight spaces."}}, {"@type": "Question", "name": "How quickly do you deliver photos after a college party event?", "acceptedAnswer": {"@type": "Answer", "text": "Social media highlights go out within 48 hours so organizers can post while the event is still fresh. The full edited gallery is usually ready within one week. Fast turnaround matters because the buzz fades quickly."}}, {"@type": "Question", "name": "Do you need a guest list or event details in advance?", "acceptedAnswer": {"@type": "Answer", "text": "I do not need a full guest list, but knowing the flow of the night helps me position myself for the shots that matter most. Send me the start time, venue, and any planned moments you want covered, like a toast or a group photo."}}]}</script>
+
+    <script src="/analytics.js" defer></script>
+
+    <style>
+        /* ========================================
+           RESET & BASE (matches homepage design system)
+           ======================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
         }
 
-        .tip-card {
-            background: var(--light);
-            padding: 30px;
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #2a2a2a;
+            background-color: #fcfbfa;
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s ease; }
+        a:hover { opacity: 0.7; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: #2a2a2a;
+            color: #fff;
+            padding: 12px 22px;
+            z-index: 1000;
+            border-radius: 0 0 8px 0;
+            font-size: 0.9rem;
+        }
+        .skip-link:focus { left: 0; }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(252, 251, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px clamp(20px, 5vw, 80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+
+        .nav-menu { display: flex; gap: 40px; list-style: none; }
+        .nav-menu a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2a2a2a;
+        }
+        .nav-menu a:hover { color: #be976d; opacity: 1; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+        }
+        .nav-toggle-bar {
+            width: 22px;
+            height: 2px;
+            background: #2a2a2a;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: #fcfbfa;
+                border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+                padding: 8px 0 16px;
+                transform: translateY(-12px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.25s ease;
+            }
+            .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-menu a { display: block; padding: 14px 20px; }
+            .nav-toggle { display: flex; }
+        }
+
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        p { font-size: 1rem; line-height: 1.8; }
+
+        .kicker {
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #be976d;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* ========================================
+           LAYOUT PRIMITIVES
+           ======================================== */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
             border-radius: 10px;
-            margin: 30px 0;
-            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        .btn-ghost {
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            color: #ffffff;
+            background: transparent;
+        }
+        .btn-ghost:hover { background: rgba(255, 255, 255, 0.15); opacity: 1; }
+        .btn-primary {
+            background: #be976d;
+            color: #ffffff;
+            border: 2px solid #be976d;
+        }
+        .btn-primary:hover {
+            background: #a67f5a;
+            border-color: #a67f5a;
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #2a2a2a;
+            border: 2px solid #2a2a2a;
+        }
+        .btn-secondary:hover { background: #2a2a2a; color: #fcfbfa; opacity: 1; }
+
+        /* ========================================
+           ARTICLE HERO
+           ======================================== */
+        .article-hero {
+            position: relative;
+            width: 100%;
+            min-height: 64vh;
+            margin-top: 80px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(20,18,15,0.15) 0%, rgba(20,18,15,0.55) 100%), url('/images/events/college-party-event-photography.webp') center 35% / cover no-repeat;
+        }
+        @media (max-width: 768px) { .article-hero { margin-top: 68px; min-height: 56vh; } }
+
+        .article-hero-content {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            width: 100%;
+            padding: 60px clamp(20px, 5vw, 80px) 56px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
-        .pro-tip {
+        .breadcrumb {
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 18px;
+        }
+        .breadcrumb a { color: #ffffff; }
+        .breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+        .article-hero h1 {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            font-style: italic;
+            letter-spacing: -0.01em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            max-width: 900px;
+            margin-bottom: 1rem;
+        }
+
+        .article-hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 300;
+            max-width: 640px;
+            opacity: 0.95;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            margin-top: 30px;
+            font-size: 0.8125rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* ========================================
+           ARTICLE BODY
+           ======================================== */
+        .article-body {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
+        }
+
+        .article-body h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-style: italic;
+            margin: 3.25rem 0 1.25rem;
+            scroll-margin-top: 96px;
+        }
+        .article-body h2:first-of-type { margin-top: 0; }
+
+        .article-body h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #2a2a2a;
+            margin: 2.25rem 0 1rem;
+            padding-left: 16px;
+            border-left: 3px solid #be976d;
+        }
+
+        /* First paragraph after a heading reads as a lede: slightly heavier weight
+           gives skimmers a scan-anchor without adding another visual element. */
+        .article-body h2 + p {
+            font-weight: 500;
+            font-size: 1.0625rem;
+            color: #2a2a2a;
+        }
+
+        .article-body p { margin-bottom: 1.5rem; color: #3a3630; }
+
+        .article-body ul {
+            margin: 0 0 1.75rem 1.25rem;
+            line-height: 2;
+            color: #3a3630;
+        }
+
+        .article-body a {
+            color: #7d5732;
+            border-bottom: 1px solid rgba(190, 151, 109, 0.5);
+        }
+        .article-body a:hover { opacity: 1; border-color: #be976d; }
+
+        .article-body strong { font-weight: 600; color: #2a2a2a; }
+
+        .article-figure { margin: 3rem 0; text-align: center; }
+        .article-figure img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            margin: 0 auto;
+        }
+        .article-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.875rem;
+            font-style: italic;
+            color: #63594e;
+        }
+
+        /* ========================================
+           PULL QUOTE
+           ======================================== */
+        .pull-quote {
+            margin: 3.5rem 0;
+            padding-left: 28px;
+            border-left: 3px solid #be976d;
+        }
+        .pull-quote p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+            line-height: 1.35;
+            color: #2a2a2a;
+            margin: 0;
+        }
+
+        /* ========================================
+           COLLAPSIBLE SECTIONS (native <details>, no JS dependency)
+           ======================================== */
+        .toc-box {
+            margin-bottom: 3rem;
+            padding: 22px 26px;
             background: #f5f3f0;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
-        }
-
-        .pro-tip h3 {
-            color: #856545;
-            margin-bottom: 10px;
-        }
-
-        .faq-section {
-            margin: 60px 0;
-        }
-
-        .faq-item {
-            background: var(--light);
-            padding: 25px 30px;
             border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: var(--shadow);
         }
-
-        .faq-item h3 {
-            color: var(--primary);
-            margin-bottom: 12px;
+        .toc-box summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
             font-size: 1.15rem;
+            color: #2a2a2a;
+        }
+        .toc-box summary::-webkit-details-marker { display: none; }
+        .toc-box summary::after {
+            content: '+';
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .toc-box[open] summary::after { transform: rotate(45deg); }
+        .toc-list {
+            list-style: none;
+            margin: 18px 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 24px;
+        }
+        @media (max-width: 560px) { .toc-list { grid-template-columns: 1fr; } }
+        .toc-list a {
+            font-size: 0.9375rem;
+            color: #5a564e;
+            border-bottom: none;
+        }
+        .toc-list a:hover { color: #7d5732; opacity: 1; }
+
+        /* ========================================
+           FAQ
+           ======================================== */
+        .faq-item {
+            padding: 4px 0;
+            border-top: 1px solid rgba(42, 42, 42, 0.1);
+        }
+        .faq-item:last-child { border-bottom: 1px solid rgba(42, 42, 42, 0.1); }
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            flex-shrink: 0;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .faq-item[open] summary::after { transform: rotate(45deg); }
+        .faq-item p { margin: 0 0 22px; color: #5a564e; }
+
+        /* ========================================
+           CTA BANNER
+           ======================================== */
+        .cta-banner {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: clamp(60px, 8vw, 90px) 0;
+            text-align: center;
+        }
+        .cta-banner .container { max-width: 700px; }
+        .cta-banner h2 { color: #ffffff; font-style: italic; margin-bottom: 1.25rem; }
+        .cta-banner p { color: rgba(255, 255, 255, 0.85); margin-bottom: 2rem; }
+        .cta-banner p a { color: #d9b48f; border-bottom: 1px solid rgba(217, 180, 143, 0.5); }
+        .cta-banner p a:hover { opacity: 1; }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer { background: #2a2a2a; color: #ffffff; padding: 60px 0 110px; }
+        @media (min-width: 769px) { .footer { padding-bottom: 30px; } }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p { font-size: 0.9375rem; opacity: 0.8; }
+        .footer-links h4 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { font-size: 0.9375rem; opacity: 0.8; transition: opacity 0.3s ease; }
+        .footer-links a:hover { opacity: 1; }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+            font-size: 0.875rem;
+            opacity: 0.7;
         }
 
-        .faq-item p {
-            line-height: 1.7;
-            color: #5a5a5a;
+        /* ========================================
+           BACK TO TOP
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 90;
         }
+        .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .back-to-top:hover { opacity: 0.85; background: #be976d; }
 
-        .location-highlight {
-            background: var(--light);
-            padding: 30px;
-            border-radius: 10px;
-            margin: 40px 0;
-            box-shadow: var(--shadow);
+        /* ========================================
+           SCROLL REVEAL
+           ======================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
         }
     </style>
-  <script src="/analytics.js" defer></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://visualsbyjoshua.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://visualsbyjoshua.com/blog.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "College Party Event Photography: How I Shoot the Chaos",
-      "item": "https://visualsbyjoshua.com/blog/college-party-event-photography/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does a college party event photographer cost?", "acceptedAnswer": {"@type": "Answer", "text": "Rates depend on the length of coverage and what you need delivered. Most college event photography packages start between $200 and $500 for 2-3 hours of coverage with edited digital images. Check out my Charleston photography pricing guide for a detailed breakdown."}}, {"@type": "Question", "name": "Do you use flash at college parties?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Outdoor nighttime parties almost always require flash. An on-camera flash bounced or diffused keeps the images looking natural while giving enough light to freeze the action. Direct flash with intention can also create a raw, editorial party look that fits these events well."}}, {"@type": "Question", "name": "How do you handle group photos at a crowded party?", "acceptedAnswer": {"@type": "Answer", "text": "Be direct and confident. Walk up, tell people exactly where to stand, count down from three, and take multiple frames. At parties you have about five seconds of cooperation before people drift. Shoot fast, check focus, and move on. A wide-angle lens in the 24-35mm range works best for fitting groups in tight spaces."}}, {"@type": "Question", "name": "How quickly do you deliver photos after a college party event?", "acceptedAnswer": {"@type": "Answer", "text": "Social media highlights go out within 48 hours so organizers can post while the event is still fresh. The full edited gallery is usually ready within one week. Fast turnaround matters because the buzz fades quickly."}}, {"@type": "Question", "name": "Do you need a guest list or event details in advance?", "acceptedAnswer": {"@type": "Answer", "text": "I do not need a full guest list, but knowing the flow of the night helps me position myself for the shots that matter most. Send me the start time, venue, and any planned moments you want covered, like a toast or a group photo."}}]}</script>
-  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/blog/photography-pricing/">Pricing</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
-        <li><a href="/#contact">Book Now</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </nav>
+    <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
 
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Visuals by Joshua</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/blog/photography-pricing/">Pricing</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+                <li><a href="/#contact">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Blog Hero Section -->
-    <section class="article-hero hero-bg" style="--bg-url: url('/images/events/college-party-event-photography.webp');" id="main">
-        <div class="blog-hero-content">
+    <!-- Article Hero -->
+    <section class="article-hero" id="main">
+        <div class="article-hero-content">
             <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; College Party Event Photography: How I Shoot the Chaos</div>
-          <h1 class="blog-hero-title">College Party Event Photography: How I Shoot the Chaos</h1>
-            <p class="blog-hero-subtitle">Flash techniques, crowd energy, and what it actually takes to photograph a nighttime college party in Charleston</p>
-
-            <div class="blog-meta">
-                <div class="meta-item">
-                    <i class="fas fa-user"></i>
-                    <span>By Joshua Smith</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-calendar"></i>
-                    <span>March 19, 2026</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i>
-                    <span>7 min read</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Charleston, SC</span>
-                </div>
+            <h1>College Party Event Photography: How I Shoot the Chaos</h1>
+            <p class="article-hero-subtitle">Flash techniques, crowd energy, and what it actually takes to photograph a nighttime college party in Charleston</p>
+            <div class="article-meta">
+                <span>By Joshua Smith</span>
+                <span>March 19, 2026</span>
+                <span>7 min read</span>
+                <span>Charleston, SC</span>
             </div>
         </div>
     </section>
 
-    <!-- Blog Content -->
-    <section class="article-content">
-        <div class="blog-container">
+    <main>
+    <article class="article-body">
 
-            <!-- Introduction -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">The Party Won't Wait for You</h2>
-                    <p class="blog-text">College parties are the most unpredictable events I photograph. There is no schedule, no stage manager, no lighting designer. Just a yard full of people, phone flashlights, maybe a string of LEDs taped to a fence, and music loud enough to rattle the windows. You either figure out how to work in that environment or you go home with a memory card full of blurry, underexposed nothing.</p>
+        <details class="toc-box reveal">
+            <summary>In this guide</summary>
+            <ul class="toc-list">
+                <li><a href="#the-party-wont-wait">The party won't wait for you</a></li>
+                <li><a href="#why-different">Why college parties are their own animal</a></li>
+                <li><a href="#flash">Flash is not optional</a></li>
+                <li><a href="#group-shots">Group shots at a party</a></li>
+                <li><a href="#candids">Candids and crowd shots</a></li>
+                <li><a href="#gear-settings">Gear and settings that work</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </details>
 
-                    <p class="blog-text">I have been shooting college events around Charleston for a while and I have learned what works and what falls apart when the sun goes down. This is the honest breakdown of how I approach <strong>college party event photography</strong> from gear choices to reading a crowd that is not thinking about you at all.</p>
-                </div>
-            </div>
+        <h2 id="the-party-wont-wait" class="reveal">The Party Won't Wait for You</h2>
+        <p>College parties are the most unpredictable events I photograph. There is no schedule, no stage manager, no lighting designer. Just a yard full of people, phone flashlights, maybe a string of LEDs taped to a fence, and music loud enough to rattle the windows. You either figure out how to work in that environment or you go home with a memory card full of blurry, underexposed nothing.</p>
 
-            <!-- Featured Image -->
-            <div style="margin: 40px 0; max-height: 500px; overflow: hidden; border-radius: 10px; box-shadow: var(--shadow);">
-                <picture>
-                  <source type="image/avif" srcset="/images/optimized/events/college-party-event-photography-400.avif 400w, /images/optimized/events/college-party-event-photography-800.avif 800w, /images/optimized/events/college-party-event-photography-1200.avif 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <source type="image/webp" srcset="/images/optimized/events/college-party-event-photography-400.webp 400w, /images/optimized/events/college-party-event-photography-800.webp 800w, /images/optimized/events/college-party-event-photography-1200.webp 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <img src="/images/optimized/events/college-party-event-photography-1200.jpg" srcset="/images/optimized/events/college-party-event-photography-400.jpg 400w, /images/optimized/events/college-party-event-photography-800.jpg 800w, /images/optimized/events/college-party-event-photography-1200.jpg 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="1206" height="1264" alt="College party event photography at nighttime outdoor party in Charleston SC by Joshua Smith" style="width: 100%; height: 500px; object-fit: cover; border-radius: 10px;" loading="lazy" decoding="async">
-                </picture>
-            </div>
+        <p>I have been shooting college events around Charleston for a while and I have learned what works and what falls apart when the sun goes down. This is the honest breakdown of how I approach <strong>college party event photography</strong> from gear choices to reading a crowd that is not thinking about you at all.</p>
 
-            <!-- Why College Parties Are Different -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Why College Parties Are Their Own Animal</h2>
-                    <p class="blog-text">A concert has a stage and a performer who knows they are being photographed. A wedding has a venue and at least some controlled lighting. A college house party has none of that. The "venue" is someone's backyard. The lighting is whatever porch lights happen to be on. The subjects are moving constantly, holding drinks, mid-conversation, dancing in groups that form and dissolve in seconds.</p>
+        <figure class="article-figure reveal">
+            <picture>
+                <source type="image/avif" srcset="/images/optimized/events/college-party-event-photography-400.avif 400w, /images/optimized/events/college-party-event-photography-800.avif 800w, /images/optimized/events/college-party-event-photography-1200.avif 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <source type="image/webp" srcset="/images/optimized/events/college-party-event-photography-400.webp 400w, /images/optimized/events/college-party-event-photography-800.webp 800w, /images/optimized/events/college-party-event-photography-1200.webp 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <img src="/images/optimized/events/college-party-event-photography-1200.jpg" srcset="/images/optimized/events/college-party-event-photography-400.jpg 400w, /images/optimized/events/college-party-event-photography-800.jpg 800w, /images/optimized/events/college-party-event-photography-1200.jpg 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)" width="1206" height="1264" alt="College party event photography at nighttime outdoor party in Charleston SC by Joshua Smith" loading="lazy" decoding="async">
+            </picture>
+        </figure>
 
-                    <p class="blog-text">That chaos is also what makes these events worth shooting. The energy is real. Nobody is posing for a brand. People are just having a good time and when you photograph that honestly it shows. The photos feel alive in a way that more controlled settings rarely produce.</p>
+        <h2 id="why-different" class="reveal">Why College Parties Are Their Own Animal</h2>
+        <p>A concert has a stage and a performer who knows they are being photographed. A wedding has a venue and at least some controlled lighting. A college house party has none of that. The "venue" is someone's backyard. The lighting is whatever porch lights happen to be on. The subjects are moving constantly, holding drinks, mid-conversation, dancing in groups that form and dissolve in seconds.</p>
 
-                    <p class="blog-text">But you have to be ready. The party is not going to slow down because you need to check your settings.</p>
-                </div>
-            </div>
+        <p>That chaos is also what makes these events worth shooting. The energy is real. Nobody is posing for a brand. People are just having a good time and when you photograph that honestly it shows. The photos feel alive in a way that more controlled settings rarely produce.</p>
 
-            <!-- Flash Technique -->
-            <div class="tip-card">
-                <h2 class="section-title">Flash Is Not Optional</h2>
-                <p class="blog-text">I know some photographers treat flash like a last resort. At a nighttime outdoor college party it is the only resort. There is not enough ambient light to shoot naturally unless you want every image at ISO 12800 with a shutter speed so slow that every hand looks like a ghost.</p>
+        <p>But you have to be ready. The party is not going to slow down because you need to check your settings.</p>
 
-                <p class="blog-text">I run an on-camera speedlight for most of the night. Direct flash, angled slightly up, with a small diffuser. That gives me a look that is punchy and raw. It has an editorial quality to it that fits the vibe of a party. Think <a title="Direct flash photography technique" href="https://digital-photography-school.com/" target="_blank" rel="noopener">direct on-camera flash</a> but with more intention and better framing.</p>
+        <h2 id="flash" class="reveal">Flash Is Not Optional</h2>
+        <p>I know some photographers treat flash like a last resort. At a nighttime outdoor college party it is the only resort. There is not enough ambient light to shoot naturally unless you want every image at ISO 12800 with a shutter speed so slow that every hand looks like a ghost.</p>
 
-                <p class="blog-text">The key is balancing your flash with whatever ambient light exists. I set my camera to manual exposure for the background and let TTL handle the flash output. That way I get some color from the string lights or the glow of the house behind the crowd without losing my subjects to darkness. If I want a moodier shot I drop the flash power and let the ambient take over. If I want something crisp and loud I let the flash do the heavy lifting.</p>
+        <p>I run an on-camera speedlight for most of the night. Direct flash, angled slightly up, with a small diffuser. That gives me a look that is punchy and raw. It has an editorial quality to it that fits the vibe of a party. Think <a title="Direct flash photography technique" href="https://digital-photography-school.com/" target="_blank" rel="noopener">direct on-camera flash</a> but with more intention and better framing.</p>
 
-                <p class="blog-text">Bring extra batteries. A busy party burns through flash batteries in about 90 minutes and you do not want to be swapping AAs while the dance circle peaks.</p>
-            </div>
+        <p>The key is balancing your flash with whatever ambient light exists. I set my camera to manual exposure for the background and let TTL handle the flash output. That way I get some color from the string lights or the glow of the house behind the crowd without losing my subjects to darkness. If I want a moodier shot I drop the flash power and let the ambient take over. If I want something crisp and loud I let the flash do the heavy lifting.</p>
 
-            <!-- Group Shots -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Group Shots at a Party Are a Five-Second Window</h2>
-                    <p class="blog-text">At any college event people are going to want group photos. Friends see the camera and they pull each other in. You get about five seconds of cooperation before someone turns around or someone else jumps in or the whole group dissolves because a song they like just came on.</p>
+        <p>Bring extra batteries. A busy party burns through flash batteries in about 90 minutes and you do not want to be swapping AAs while the dance circle peaks.</p>
 
-                    <p class="blog-text">Be direct. Walk up with confidence and tell them where to stand. "Y'all step in tight, I need everyone closer." Count down from three out loud. Take three or four frames fast. Check your LCD for closed eyes and missed focus. If it looks good tell them it came out clean and keep moving. If someone blinked run it back once. Do not stand there reviewing for thirty seconds because the moment is already gone.</p>
+        <h2 id="group-shots" class="reveal">Group Shots at a Party Are a Five-Second Window</h2>
+        <p>At any college event people are going to want group photos. Friends see the camera and they pull each other in. You get about five seconds of cooperation before someone turns around or someone else jumps in or the whole group dissolves because a song they like just came on.</p>
 
-                    <p class="blog-text">I shoot groups at around 24-35mm on a full frame body, a range <a title="Wide-angle lens buying guide" href="https://www.dpreview.com/lenses" target="_blank" rel="noopener">most wide-angle zooms</a> cover well. Wider than that and you get distortion on the people at the edges. Tighter than that and you cannot fit six people in frame without backing up into a table of drinks. F/4 to f/5.6 is the move here because you need enough depth of field to keep the whole group sharp. Your flash gives you the light to stop down so use it.</p>
-                </div>
-            </div>
+        <p>Be direct. Walk up with confidence and tell them where to stand. "Y'all step in tight, I need everyone closer." Count down from three out loud. Take three or four frames fast. Check your LCD for closed eyes and missed focus. If it looks good tell them it came out clean and keep moving. If someone blinked run it back once. Do not stand there reviewing for thirty seconds because the moment is already gone.</p>
 
-            <!-- Crowd and Candid -->
-            <div class="tip-card">
-                <h2 class="section-title">Candids and Crowd Shots Tell the Real Story</h2>
-                <p class="blog-text">Group photos are what people ask for. Candids are what they share. The best photos I bring back from a college party are the ones nobody posed for. Someone mid-laugh with their head thrown back. A crowd of people all moving together during a song. Two friends in a conversation that clearly means something even though you cannot hear a word over the bass.</p>
+        <p>I shoot groups at around 24-35mm on a full frame body, a range <a title="Wide-angle lens buying guide" href="https://www.dpreview.com/lenses" target="_blank" rel="noopener">most wide-angle zooms</a> cover well. Wider than that and you get distortion on the people at the edges. Tighter than that and you cannot fit six people in frame without backing up into a table of drinks. F/4 to f/5.6 is the move here because you need enough depth of field to keep the whole group sharp. Your flash gives you the light to stop down so use it.</p>
 
-                <p class="blog-text">I spend about half the night just moving through the crowd and shooting what I see. A longer lens helps here. I will switch to a 50mm or even an 85mm and shoot from a few feet back. It lets me photograph people in their element without interrupting the moment. They know there is a photographer around but they are not performing for me and that is when the best frames happen.</p>
+        <blockquote class="pull-quote reveal">
+            <p>Group photos are what people ask for. Candids are what they share.</p>
+        </blockquote>
 
-                <p class="blog-text">The dance floor is where the energy lives. Get low, shoot up into the crowd, and let the flash freeze the motion. Those high-energy frames with arms in the air and everyone locked into the same beat are the images that end up on the flyer for the next event.</p>
-            </div>
+        <h2 id="candids" class="reveal">Candids and Crowd Shots Tell the Real Story</h2>
+        <p>That's the difference between what people ask for and what they actually share. The best photos I bring back from a college party are the ones nobody posed for. Someone mid-laugh with their head thrown back. A crowd of people all moving together during a song. Two friends in a conversation that clearly means something even though you cannot hear a word over the bass.</p>
 
-            <!-- Practical Advice -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Gear and Settings That Actually Work</h2>
-                    <p class="blog-text">I am not going to list every piece of equipment I own. Here is what I actually bring to a college party and why.</p>
+        <p>I spend about half the night just moving through the crowd and shooting what I see. A longer lens helps here. I will switch to a 50mm or even an 85mm and shoot from a few feet back. It lets me photograph people in their element without interrupting the moment. They know there is a photographer around but they are not performing for me and that is when the best frames happen.</p>
 
-                    <p class="blog-text">One camera body with a 24-70mm f/2.8 handles 80% of the night. It is versatile enough for groups and tight enough for candids without switching lenses in the dark. I bring a 50mm f/1.8 as a backup for when I want shallower depth of field or if I am working a smaller space. One speedlight with a diffuser and four sets of AA batteries. Two memory cards. That is it. You are going to be on your feet for hours carrying this gear through a crowd. Travel light.</p>
+        <p>The dance floor is where the energy lives. Get low, shoot up into the crowd, and let the flash freeze the motion. Those high-energy frames with arms in the air and everyone locked into the same beat are the images that end up on the flyer for the next event.</p>
 
-                    <p class="blog-text">Settings vary through the night but my baseline is ISO 800, f/4, 1/125s with flash. I bump ISO to 1600 if the ambient is really dark and I want more background detail. Shutter speed stays at 1/125 or faster because anything slower gives you motion blur on people who are dancing. If you have gone through my <a title="Read the event photography checklist" href="/blog/event-photography-checklist-smithsonian-folklife/">event photography checklist</a> you know I am big on having your settings dialed before you show up. College parties do not give you a warmup period.</p>
-                </div>
-            </div>
+        <h2 id="gear-settings" class="reveal">Gear and Settings That Actually Work</h2>
+        <p>I am not going to list every piece of equipment I own. Here is what I actually bring to a college party and why.</p>
 
-            <!-- Pro Tip -->
-            <div class="pro-tip">
-                <h3><i class="fas fa-lightbulb"></i> Pro Tip: Deliver Fast or Do Not Bother</h3>
-                <p>The shelf life of college party photos is about 48 hours. After that everyone has already posted their phone photos and moved on. I send a batch of 10-15 highlights to the organizer the next morning and the full gallery within the week. Speed matters. If you want your photos shared and your name attached to them you have to beat the Instagram cycle. That fast turnaround is also what gets you booked for the next one.</p>
-            </div>
+        <p>One camera body with a 24-70mm f/2.8 handles 80% of the night. It is versatile enough for groups and tight enough for candids without switching lenses in the dark. I bring a 50mm f/1.8 as a backup for when I want shallower depth of field or if I am working a smaller space. One speedlight with a diffuser and four sets of AA batteries. Two memory cards. That is it. You are going to be on your feet for hours carrying this gear through a crowd. Travel light.</p>
 
-            <!-- Working With Organizers -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Working With Event Organizers</h3>
-                    <p class="blog-text">Most college party organizers are students. They are not event planners. They might not know what to ask for or what deliverables mean. Make it easy for them. Have a simple <a title="View Charleston event photography packages" href="/charleston-event-photographer/">event photography package</a> and be clear about what they get. Number of edited photos, turnaround time, usage rights. Put it in writing even if it is just a text thread. Professionalism builds trust and trust gets you repeat work.</p>
+        <p>Settings vary through the night but my baseline is ISO 800, f/4, 1/125s with flash. I bump ISO to 1600 if the ambient is really dark and I want more background detail. Shutter speed stays at 1/125 or faster because anything slower gives you motion blur on people who are dancing. If you have gone through my <a title="Read the event photography checklist" href="/blog/event-photography-checklist-smithsonian-folklife/">event photography checklist</a> you know I am big on having your settings dialed before you show up. College parties do not give you a warmup period.</p>
 
-                    <p class="blog-text">Talk to the organizer before the event about what they want documented. Is this a birthday party where one person should be the focus? A club event where they need crowd shots for promo? A fundraiser where they need photos of the setup and the turnout? Knowing the purpose changes how you shoot.</p>
+        <h3>Pro Tip: Deliver Fast or Do Not Bother</h3>
+        <p>The shelf life of college party photos is about 48 hours. After that everyone has already posted their phone photos and moved on. I send a batch of 10-15 highlights to the organizer the next morning and the full gallery within the week. Speed matters. If you want your photos shared and your name attached to them you have to beat the Instagram cycle. That fast turnaround is also what gets you booked for the next one.</p>
 
-                    <p class="blog-text">And show up on time. If the event starts at 10 be there at 9:30. Photograph the setup, the empty yard before it fills in, the DJ getting the speakers right. Those early shots round out the story and give the organizer content they did not even know they wanted.</p>
-                </div>
-            </div>
+        <h3>Working With Event Organizers</h3>
+        <p>Most college party organizers are students. They are not event planners. They might not know what to ask for or what deliverables mean. Make it easy for them. Have a simple <a title="View Charleston event photography packages" href="/charleston-event-photographer/">event photography package</a> and be clear about what they get. Number of edited photos, turnaround time, usage rights. Put it in writing even if it is just a text thread. Professionalism builds trust and trust gets you repeat work.</p>
 
-            <!-- FAQ Section -->
-            <div class="faq-section">
-                <h2 class="section-title">Frequently Asked Questions</h2>
+        <p>Talk to the organizer before the event about what they want documented. Is this a birthday party where one person should be the focus? A club event where they need crowd shots for promo? A fundraiser where they need photos of the setup and the turnout? Knowing the purpose changes how you shoot.</p>
 
-                <div class="faq-item">
-                    <h3>How much does a college party event photographer cost?</h3>
-                    <p>Rates depend on the length of coverage and what you need delivered. Most college event photography packages start between $200 and $500 for 2-3 hours of coverage with edited digital images. Check out my <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston photography pricing guide</a> for a detailed breakdown.</p>
-                </div>
+        <p>And show up on time. If the event starts at 10 be there at 9:30. Photograph the setup, the empty yard before it fills in, the DJ getting the speakers right. Those early shots round out the story and give the organizer content they did not even know they wanted.</p>
 
-                <div class="faq-item">
-                    <h3>Do you use flash at college parties?</h3>
-                    <p>Yes. Outdoor nighttime parties almost always require flash. An on-camera flash bounced or diffused keeps the images looking natural while giving enough light to freeze the action. Direct flash with intention can also create a raw, editorial party look that fits these events well.</p>
-                </div>
+        <h2 id="faq" class="reveal">Frequently Asked Questions</h2>
 
-                <div class="faq-item">
-                    <h3>How do you handle group photos at a crowded party?</h3>
-                    <p>Be direct and confident. Walk up, tell people exactly where to stand, count down from three, and take multiple frames. At parties you have about five seconds of cooperation before people drift. Shoot fast, check focus, and move on. A wide-angle lens in the 24-35mm range works best for fitting groups in tight spaces.</p>
-                </div>
+        <details class="faq-item">
+            <summary>How much does a college party event photographer cost?</summary>
+            <p>Rates depend on the length of coverage and what you need delivered. Most college event photography packages start between $200 and $500 for 2-3 hours of coverage with edited digital images. Check out my <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston photography pricing guide</a> for a detailed breakdown.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Do you use flash at college parties?</summary>
+            <p>Yes. Outdoor nighttime parties almost always require flash. An on-camera flash bounced or diffused keeps the images looking natural while giving enough light to freeze the action. Direct flash with intention can also create a raw, editorial party look that fits these events well.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How do you handle group photos at a crowded party?</summary>
+            <p>Be direct and confident. Walk up, tell people exactly where to stand, count down from three, and take multiple frames. At parties you have about five seconds of cooperation before people drift. Shoot fast, check focus, and move on. A wide-angle lens in the 24-35mm range works best for fitting groups in tight spaces.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How quickly do you deliver photos after a college party event?</summary>
+            <p>Social media highlights go out within 48 hours so organizers can post while the event is still fresh. The full edited gallery is usually ready within one week. Fast turnaround matters because the buzz fades quickly.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Do you need a guest list or event details in advance?</summary>
+            <p>I do not need a full guest list, but knowing the flow of the night helps me position myself for the shots that matter most. Send me the start time, venue, and any planned moments you want covered, like a toast or a group photo.</p>
+        </details>
 
-                <div class="faq-item">
-                    <h3>How quickly do you deliver photos after a college party event?</h3>
-                    <p>Social media highlights go out within 48 hours so organizers can post while the event is still fresh. The full edited gallery is usually ready within one week. Fast turnaround matters because the buzz fades quickly.</p>
-                </div>
+        <h2 class="reveal">Need a College Party or Event Photographer in Charleston?</h2>
+        <p>I shoot events across Charleston, with DMV coverage available by request. Whether it is a college party, a campus organization event, or a private celebration I bring the gear, the experience, and the turnaround speed to make sure you walk away with photos that look like the night felt. Take a look at my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more of my event work or <a title="Contact Joshua Smith about event photography" href="/index.html#contact">get a quote</a>.</p>
 
-                <div class="faq-item">
-                    <h3>Do you need a guest list or event details in advance?</h3>
-                    <p>Send me the start time, venue, and any planned moments you want covered, like a toast or a group photo. I don't need a full guest list, but knowing the flow of the night helps me position myself for the shots that matter most.</p>
-                </div>
-            </div>
+        <p>You can also visit my <a title="View Charleston event photography services" href="/charleston-event-photographer/">Charleston event photographer</a> page for more details on packages and coverage areas, or compare rates in the <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston pricing guide</a>. If you have questions before booking head over to my <a title="Read photography booking FAQs" href="/faq">FAQ</a> for the quick answers.</p>
 
-            <!-- CTA Section -->
-            <div class="location-highlight">
-                <h2 class="section-title">Need a College Party or Event Photographer in Charleston?</h2>
-                <p class="blog-text">I shoot events across Charleston, with DMV coverage available by request. Whether it is a college party, a campus organization event, or a private celebration I bring the gear, the experience, and the turnaround speed to make sure you walk away with photos that look like the night felt. Take a look at my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="external-link" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more of my event work or <a title="Contact Joshua Smith about event photography" href="/index.html#contact">get a quote</a>.</p>
-
-                <p class="blog-text">You can also visit my <a title="View Charleston event photography services" href="/charleston-event-photographer/">Charleston event photographer</a> page for more details on packages and coverage areas, or compare rates in the <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston pricing guide</a>. If you have questions before booking head over to my <a title="Read photography booking FAQs" href="/faq">FAQ</a> for the quick answers.</p>
-            </div>
-        </div>
-    </section>
+    </article>
 
     <!-- CTA Banner -->
     <section class="cta-banner">
         <div class="container">
-            <h2 class="cta-title">Let's Shoot Your Next Event</h2>
-            <p class="cta-text">From college parties to campus events and private celebrations, get professional event photography that matches the energy of the night.</p>
+            <h2>Let's Shoot Your Next Event</h2>
+            <p>From college parties to campus events and private celebrations, get professional event photography that matches the energy of the night.</p>
             <div class="cta-buttons">
-                
-                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
+                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn btn-primary" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
             </div>
         </div>
     </section>
-
+    </main>
 
     <!-- Back to Top Button -->
-    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
+    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page">&uarr;</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals by Joshua</h3>
+                    <p>Editorial photography for milestones &amp; moments. Serving Charleston SC + Northern VA / DMV.</p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="tel:+12403608465" style="display: block; margin-bottom: 0.5rem;">&#128222; (240) 360-8465</a>
+                        <a href="mailto:jbmsmusic05@gmail.com" style="display: block; margin-bottom: 0.5rem;">&#9993;&#65039; jbmsmusic05@gmail.com</a>
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128247; Instagram</a>
+                        <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128218; Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/gallery">Full Gallery</a></li>
+                        <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+                        <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+                        <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+                        <li><a href="/blog.html">Photography Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Visuals by Joshua. Charleston SC &amp; Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.add('show');
@@ -377,77 +802,28 @@
                 backToTopButton.classList.remove('show');
             }
         });
-
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Scroll reveal for section headings, pull-quote, figure, and TOC
+        const revealTargets = document.querySelectorAll('.reveal');
+        if (revealTargets.length && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+            revealTargets.forEach(el => revealObserver.observe(el));
+        } else {
+            revealTargets.forEach(el => el.classList.add('in-view'));
+        }
     </script>
-  <script>
-    (function() {
-      var hamburger = document.querySelector('.hamburger');
-      var navMenu = document.querySelector('.nav-menu');
-      if (!hamburger || !navMenu) return;
-      function close() {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-      }
-      hamburger.addEventListener('click', function() {
-        var open = navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active', open);
-        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      navMenu.querySelectorAll('.nav-link').forEach(function(l) { l.addEventListener('click', close); });
-      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
-    })();
-  </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Visuals by Joshua</h3>
-          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
-          <p style="margin-top: 1.5rem;">
-            <a href="tel:+12403608465">(240) 360-8465</a><br>
-            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
-          </p>
-          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
-            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery">Full Gallery</a></li>
-            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Locations</h4>
-          <ul>
-            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
-            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
-            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
-            <li><a href="/blog.html">Photography Blog</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>

@@ -13,8 +13,8 @@
 
     <!-- OG Tags -->
     <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Visuals by Joshua">
-  <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Visuals by Joshua">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://visualsbyjoshua.com/blog/masters-graduation-photography-dc-monuments/" />
     <meta property="og:title" content="Masters Graduation Photography at DC Monuments | Visuals by Joshua" />
     <meta property="og:description" content="Masters graduation portraits at Washington DC monuments, with DMV sessions by request and Charleston graduation photography available." />
@@ -27,16 +27,12 @@
     <meta name="twitter:description" content="Masters graduation portraits at DC monuments, with Charleston graduation sessions available." />
     <meta name="twitter:image" content="https://visualsbyjoshua.com/newblogimages/masters-graduation-photography-dc-monuments.webp" />
 
-    <!-- Fonts -->
+    <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Shared Blog Styles -->
-    <link rel="stylesheet" href="/styles.css">
-
-    <!-- Schema.org Article markup -->
+    <!-- Schema.org markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -68,334 +64,764 @@
         },
         "keywords": "DC graduation photographer, masters graduation photos Washington DC, graduation photography DC monuments, DMV graduation photographer, Charleston graduation photographer, Lincoln Memorial graduation photos"
     }
-    </script><style>
-        .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://visualsbyjoshua.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://visualsbyjoshua.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Masters Graduation Photography at DC Monuments",
+          "item": "https://visualsbyjoshua.com/blog/masters-graduation-photography-dc-monuments/"
         }
-        @media (min-width: 800px) {
-          .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-          }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are the best DC monuments for graduation photos?", "acceptedAnswer": {"@type": "Answer", "text": "The Lincoln Memorial, Jefferson Memorial, and Washington Monument are the top three. The Lincoln Memorial gives you grand marble columns and sweeping steps. The Jefferson Memorial offers columns reflected in the Tidal Basin. The Washington Monument works as a powerful background element from the National Mall. Each photographs differently depending on time of day and season."}}, {"@type": "Question", "name": "Do you need a permit for graduation photos at DC monuments?", "acceptedAnswer": {"@type": "Answer", "text": "For small portrait sessions with just a photographer and one or two subjects using handheld camera equipment, no permit is required at most DC monuments and National Mall locations. The National Park Service considers this casual photography. Larger productions with lighting equipment, tripods, props, or big groups may need a permit. Check the National Park Service site for current requirements."}}, {"@type": "Question", "name": "What should I wear under my graduation gown for photos?", "acceptedAnswer": {"@type": "Answer", "text": "Wear something you would feel confident photographing in on its own. A solid-colored dress or a clean blouse with dress pants works well. Avoid busy patterns that compete with the cap and gown. Many clients bring a second outfit for variety after the gown photos. Heels are fine for posing but bring comfortable shoes for walking between monument locations."}}, {"@type": "Question", "name": "How much do DC graduation photos cost?", "acceptedAnswer": {"@type": "Answer", "text": "Graduation portrait sessions in DC typically range from $250 to $500 depending on session length, number of locations, and edited images included. Single-location sessions run about 45 minutes to one hour. Multi-location sessions take 90 minutes to two hours. Check out my DMV photography pricing guide for a full breakdown."}}, {"@type": "Question", "name": "Can you shoot multiple DC monuments in one graduation session?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A 90-minute to two-hour session gives you enough time for two or three monuments if we start early, move efficiently, and keep outfits simple. I usually pair the Washington Monument with the Jefferson or Lincoln Memorial because each location gives you a different look. Comfortable shoes and a short shot list keep the pace up."}}]}</script>
+
+    <script src="/analytics.js" defer></script>
+
+    <style>
+        /* ========================================
+           RESET & BASE (matches homepage design system)
+           ======================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
         }
 
-        .tip-card {
-            background: var(--light);
-            padding: 30px;
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #2a2a2a;
+            background-color: #fcfbfa;
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s ease; }
+        a:hover { opacity: 0.7; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: #2a2a2a;
+            color: #fff;
+            padding: 12px 22px;
+            z-index: 1000;
+            border-radius: 0 0 8px 0;
+            font-size: 0.9rem;
+        }
+        .skip-link:focus { left: 0; }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(252, 251, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px clamp(20px, 5vw, 80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+
+        .nav-menu { display: flex; gap: 40px; list-style: none; }
+        .nav-menu a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2a2a2a;
+        }
+        .nav-menu a:hover { color: #be976d; opacity: 1; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+        }
+        .nav-toggle-bar {
+            width: 22px;
+            height: 2px;
+            background: #2a2a2a;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: #fcfbfa;
+                border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+                padding: 8px 0 16px;
+                transform: translateY(-12px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.25s ease;
+            }
+            .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-menu a { display: block; padding: 14px 20px; }
+            .nav-toggle { display: flex; }
+        }
+
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        p { font-size: 1rem; line-height: 1.8; }
+
+        .kicker {
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #be976d;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* ========================================
+           LAYOUT PRIMITIVES
+           ======================================== */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
             border-radius: 10px;
-            margin: 30px 0;
-            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        .btn-ghost {
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            color: #ffffff;
+            background: transparent;
+        }
+        .btn-ghost:hover { background: rgba(255, 255, 255, 0.15); opacity: 1; }
+        .btn-primary {
+            background: #be976d;
+            color: #ffffff;
+            border: 2px solid #be976d;
+        }
+        .btn-primary:hover {
+            background: #a67f5a;
+            border-color: #a67f5a;
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #2a2a2a;
+            border: 2px solid #2a2a2a;
+        }
+        .btn-secondary:hover { background: #2a2a2a; color: #fcfbfa; opacity: 1; }
+
+        /* ========================================
+           ARTICLE HERO
+           ======================================== */
+        .article-hero {
+            position: relative;
+            width: 100%;
+            min-height: 64vh;
+            margin-top: 80px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(20,18,15,0.15) 0%, rgba(20,18,15,0.55) 100%), url('/newblogimages/masters-graduation-photography-dc-monuments.webp') center 35% / cover no-repeat;
+        }
+        @media (max-width: 768px) { .article-hero { margin-top: 68px; min-height: 56vh; } }
+
+        .article-hero-content {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            width: 100%;
+            padding: 60px clamp(20px, 5vw, 80px) 56px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
-        .pro-tip {
+        .breadcrumb {
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 18px;
+        }
+        .breadcrumb a { color: #ffffff; }
+        .breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+        .article-hero h1 {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            font-style: italic;
+            letter-spacing: -0.01em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            max-width: 900px;
+            margin-bottom: 1rem;
+        }
+
+        .article-hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 300;
+            max-width: 640px;
+            opacity: 0.95;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            margin-top: 30px;
+            font-size: 0.8125rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* ========================================
+           ARTICLE BODY
+           ======================================== */
+        .article-body {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
+        }
+
+        .article-body h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-style: italic;
+            margin: 3.25rem 0 1.25rem;
+            scroll-margin-top: 96px;
+        }
+        .article-body h2:first-of-type { margin-top: 0; }
+
+        .article-body h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #2a2a2a;
+            margin: 2.25rem 0 1rem;
+            padding-left: 16px;
+            border-left: 3px solid #be976d;
+        }
+
+        /* First paragraph after a heading reads as a lede: slightly heavier weight
+           gives skimmers a scan-anchor without adding another visual element. */
+        .article-body h2 + p {
+            font-weight: 500;
+            font-size: 1.0625rem;
+            color: #2a2a2a;
+        }
+
+        .article-body p { margin-bottom: 1.5rem; color: #3a3630; }
+
+        .article-body ul {
+            margin: 0 0 1.75rem 1.25rem;
+            line-height: 2;
+            color: #3a3630;
+        }
+
+        .article-body a {
+            color: #7d5732;
+            border-bottom: 1px solid rgba(190, 151, 109, 0.5);
+        }
+        .article-body a:hover { opacity: 1; border-color: #be976d; }
+
+        .article-body strong { font-weight: 600; color: #2a2a2a; }
+
+        .article-figure { margin: 3rem 0; text-align: center; }
+        .article-figure img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            margin: 0 auto;
+        }
+        .article-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.875rem;
+            font-style: italic;
+            color: #63594e;
+        }
+
+        /* ========================================
+           PULL QUOTE
+           ======================================== */
+        .pull-quote {
+            margin: 3.5rem 0;
+            padding-left: 28px;
+            border-left: 3px solid #be976d;
+        }
+        .pull-quote p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+            line-height: 1.35;
+            color: #2a2a2a;
+            margin: 0;
+        }
+
+        /* ========================================
+           COLLAPSIBLE SECTIONS (native <details>, no JS dependency)
+           ======================================== */
+        .toc-box {
+            margin-bottom: 3rem;
+            padding: 22px 26px;
             background: #f5f3f0;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
-        }
-
-        .pro-tip h3 {
-            color: #856545;
-            margin-bottom: 10px;
-        }
-
-        .faq-section {
-            margin: 60px 0;
-        }
-
-        .faq-item {
-            background: var(--light);
-            padding: 25px 30px;
             border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: var(--shadow);
         }
-
-        .faq-item h3 {
-            color: var(--primary);
-            margin-bottom: 12px;
+        .toc-box summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
             font-size: 1.15rem;
+            color: #2a2a2a;
+        }
+        .toc-box summary::-webkit-details-marker { display: none; }
+        .toc-box summary::after {
+            content: '+';
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .toc-box[open] summary::after { transform: rotate(45deg); }
+        .toc-list {
+            list-style: none;
+            margin: 18px 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 24px;
+        }
+        @media (max-width: 560px) { .toc-list { grid-template-columns: 1fr; } }
+        .toc-list a {
+            font-size: 0.9375rem;
+            color: #5a564e;
+            border-bottom: none;
+        }
+        .toc-list a:hover { color: #7d5732; opacity: 1; }
+
+        /* ========================================
+           FAQ
+           ======================================== */
+        .faq-item {
+            padding: 4px 0;
+            border-top: 1px solid rgba(42, 42, 42, 0.1);
+        }
+        .faq-item:last-child { border-bottom: 1px solid rgba(42, 42, 42, 0.1); }
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            flex-shrink: 0;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .faq-item[open] summary::after { transform: rotate(45deg); }
+        .faq-item p { margin: 0 0 22px; color: #5a564e; }
+
+        /* ========================================
+           CTA BANNER
+           ======================================== */
+        .cta-banner {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: clamp(60px, 8vw, 90px) 0;
+            text-align: center;
+        }
+        .cta-banner .container { max-width: 700px; }
+        .cta-banner h2 { color: #ffffff; font-style: italic; margin-bottom: 1.25rem; }
+        .cta-banner p { color: rgba(255, 255, 255, 0.85); margin-bottom: 2rem; }
+        .cta-banner p a { color: #d9b48f; border-bottom: 1px solid rgba(217, 180, 143, 0.5); }
+        .cta-banner p a:hover { opacity: 1; }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer { background: #2a2a2a; color: #ffffff; padding: 60px 0 110px; }
+        @media (min-width: 769px) { .footer { padding-bottom: 30px; } }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p { font-size: 0.9375rem; opacity: 0.8; }
+        .footer-links h4 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { font-size: 0.9375rem; opacity: 0.8; transition: opacity 0.3s ease; }
+        .footer-links a:hover { opacity: 1; }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+            font-size: 0.875rem;
+            opacity: 0.7;
         }
 
-        .faq-item p {
-            line-height: 1.7;
-            color: #5a5a5a;
+        /* ========================================
+           BACK TO TOP
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 90;
         }
+        .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .back-to-top:hover { opacity: 0.85; background: #be976d; }
 
-        .location-highlight {
-            background: var(--light);
-            padding: 30px;
-            border-radius: 10px;
-            margin: 40px 0;
-            box-shadow: var(--shadow);
+        /* ========================================
+           SCROLL REVEAL
+           ======================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
         }
     </style>
-  <script src="/analytics.js" defer></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://visualsbyjoshua.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://visualsbyjoshua.com/blog.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Masters Graduation Photography at DC Monuments",
-      "item": "https://visualsbyjoshua.com/blog/masters-graduation-photography-dc-monuments/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are the best DC monuments for graduation photos?", "acceptedAnswer": {"@type": "Answer", "text": "The Lincoln Memorial, Jefferson Memorial, and Washington Monument are the top three. The Lincoln Memorial gives you grand marble columns and sweeping steps. The Jefferson Memorial offers columns reflected in the Tidal Basin. The Washington Monument works as a powerful background element from the National Mall. Each photographs differently depending on time of day and season."}}, {"@type": "Question", "name": "Do you need a permit for graduation photos at DC monuments?", "acceptedAnswer": {"@type": "Answer", "text": "For small portrait sessions with just a photographer and one or two subjects using handheld camera equipment, no permit is required at most DC monuments and National Mall locations. The National Park Service considers this casual photography. Larger productions with lighting equipment, tripods, props, or big groups may need a permit. Check the National Park Service site for current requirements."}}, {"@type": "Question", "name": "What should I wear under my graduation gown for photos?", "acceptedAnswer": {"@type": "Answer", "text": "Wear something you would feel confident photographing in on its own. A solid-colored dress or a clean blouse with dress pants works well. Avoid busy patterns that compete with the cap and gown. Many clients bring a second outfit for variety after the gown photos. Heels are fine for posing but bring comfortable shoes for walking between monument locations."}}, {"@type": "Question", "name": "How much do DC graduation photos cost?", "acceptedAnswer": {"@type": "Answer", "text": "Graduation portrait sessions in DC typically range from $250 to $500 depending on session length, number of locations, and edited images included. Single-location sessions run about 45 minutes to one hour. Multi-location sessions take 90 minutes to two hours. Check out my DMV photography pricing guide for a full breakdown."}}, {"@type": "Question", "name": "Can you shoot multiple DC monuments in one graduation session?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A 90-minute to two-hour session gives you enough time for two or three monuments if we start early, move efficiently, and keep outfits simple. I usually pair the Washington Monument with the Jefferson or Lincoln Memorial because each location gives you a different look. Comfortable shoes and a short shot list keep the pace up."}}]}</script>
-  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/blog/photography-pricing/">Pricing</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
-        <li><a href="/#contact">Book Now</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </nav>
+    <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
 
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Visuals by Joshua</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/blog/photography-pricing/">Pricing</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+                <li><a href="/#contact">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Blog Hero Section -->
-    <section class="article-hero hero-bg" style="--bg-url: url('/newblogimages/masters-graduation-photography-dc-monuments.webp');" id="main">
-        <div class="blog-hero-content">
+    <!-- Article Hero -->
+    <section class="article-hero" id="main">
+        <div class="article-hero-content">
             <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Masters Graduation Photography at DC Monuments</div>
-          <h1 class="blog-hero-title">Masters Graduation Photography at DC Monuments</h1>
-            <p class="blog-hero-subtitle">A masters graduation portrait session at the Washington Monument, Jefferson Memorial, and Tidal Basin, and why DC monuments are built for celebrating this kind of achievement</p>
-
-            <div class="blog-meta">
-                <div class="meta-item">
-                    <i class="fas fa-user"></i>
-                    <span>By Joshua Smith</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-calendar"></i>
-                    <span>May 18, 2025</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i>
-                    <span>7 min read</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Washington, DC</span>
-                </div>
+            <h1>Masters Graduation Photography at DC Monuments</h1>
+            <p class="article-hero-subtitle">A masters graduation portrait session at the Washington Monument, Jefferson Memorial, and Tidal Basin, and why DC monuments are built for celebrating this kind of achievement</p>
+            <div class="article-meta">
+                <span>By Joshua Smith</span>
+                <span>May 18, 2025</span>
+                <span>7 min read</span>
+                <span>Washington, DC</span>
             </div>
         </div>
     </section>
 
-    <!-- Blog Content -->
-    <section class="article-content">
-        <div class="blog-container">
+    <main>
+    <article class="article-body">
 
-            <!-- Introduction -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">Why DC Monuments Are the Perfect Graduation Backdrop</h2>
-                    <p class="blog-text">A masters degree is not a small thing. You spent years in graduate school: the research, the late nights, the thesis revisions, the moments where you questioned whether it was worth it. It was. And when someone finishes that kind of grind, they deserve photos that match the weight of what they accomplished. A blank wall in a campus hallway does not do it. The Washington Monument does.</p>
+        <details class="toc-box reveal">
+            <summary>In this guide</summary>
+            <ul class="toc-list">
+                <li><a href="#why-dc-monuments">Why DC monuments are the perfect backdrop</a></li>
+                <li><a href="#session-breakdown">How this session came together</a></li>
+                <li><a href="#navigating-crowds">Navigating crowds and tourists</a></li>
+                <li><a href="#best-time-of-day">Best time of day to shoot</a></li>
+                <li><a href="#celebrate-your-degree">Why celebrate with professional photos</a></li>
+                <li><a href="#what-to-wear">What to wear under the gown</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </details>
 
-                    <p class="blog-text">I shot this <strong>masters graduation portrait session</strong> in Washington DC on May 18, 2025. My client came in her blue masters cap and gown, ready to use the most iconic landmarks in the country as her backdrop. We hit the Washington Monument, the Jefferson Memorial, and the Tidal Basin waterfront. Each spot gave us something different, and together they told the full story of someone who earned every inch of that degree.</p>
+        <h2 id="why-dc-monuments" class="reveal">Why DC Monuments Are the Perfect Graduation Backdrop</h2>
+        <p>A masters degree is not a small thing. You spent years in graduate school: the research, the late nights, the thesis revisions, the moments where you questioned whether it was worth it. It was. And when someone finishes that kind of grind, they deserve photos that match the weight of what they accomplished. A blank wall in a campus hallway does not do it. The Washington Monument does.</p>
 
-                    <p class="blog-text">If you are finishing your masters or any graduate program in the DMV area, here is why DC monuments work so well for graduation portraits and how I approach these sessions as a DMV graduation photographer.</p>
-                </div>
-            </div>
+        <p>I shot this <strong>masters graduation portrait session</strong> in Washington DC on May 18, 2025. My client came in her blue masters cap and gown, ready to use the most iconic landmarks in the country as her backdrop. We hit the Washington Monument, the Jefferson Memorial, and the Tidal Basin waterfront. Each spot gave us something different, and together they told the full story of someone who earned every inch of that degree.</p>
 
-            <!-- Featured Image -->
-            <div style="margin: 40px 0; max-height: 500px; overflow: hidden; border-radius: 10px; box-shadow: var(--shadow);">
-                <picture>
-                  <source type="image/avif" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.avif 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.avif 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.avif 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <source type="image/webp" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.webp 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.webp 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.webp 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <img src="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.jpg" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.jpg 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.jpg 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.jpg 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="1206" height="2622" alt="Masters graduation portrait at DC monuments with Washington Monument in background, woman in blue cap and gown by Joshua Smith photographer" style="width: 100%; height: 500px; object-fit: cover; border-radius: 10px;" loading="lazy" decoding="async">
-                </picture>
-            </div>
+        <p>If you are finishing your masters or any graduate program in the DMV area, here is why DC monuments work so well for graduation portraits and how I approach these sessions as a DMV graduation photographer.</p>
 
-            <!-- Session Breakdown -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">How Did This Masters Graduation Session Come Together?</h2>
-                    <p class="blog-text">We started at the <a title="Washington Monument official site" href="https://www.nps.gov/wamo/index.htm" target="_blank" rel="noopener">Washington Monument</a>. It is the most recognizable landmark on the National Mall and for good reason. That white obelisk against a blue sky gives you a clean, powerful background that does not compete with your subject. I positioned my client so the monument rose directly behind her, framing her cap and gown against something that says "this matters" without needing a single word.</p>
+        <figure class="article-figure reveal">
+            <picture>
+                <source type="image/avif" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.avif 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.avif 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.avif 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <source type="image/webp" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.webp 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.webp 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.webp 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <img src="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.jpg" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.jpg 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.jpg 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.jpg 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)" width="1206" height="2622" alt="Masters graduation portrait at DC monuments with Washington Monument in background, woman in blue cap and gown by Joshua Smith photographer" loading="lazy" decoding="async">
+            </picture>
+        </figure>
 
-                    <p class="blog-text">The blue masters gown popped against the white stone and green grass. That color contrast is something I think about before every session. Blue regalia, white monument, green lawn, blue sky. Every element worked together without any planning beyond knowing what the location offers and timing the light right.</p>
+        <h2 id="session-breakdown" class="reveal">How Did This Masters Graduation Session Come Together?</h2>
+        <p>We started at the <a title="Washington Monument official site" href="https://www.nps.gov/wamo/index.htm" target="_blank" rel="noopener">Washington Monument</a>. It is the most recognizable landmark on the National Mall and for good reason. That white obelisk against a blue sky gives you a clean, powerful background that does not compete with your subject. I positioned my client so the monument rose directly behind her, framing her cap and gown against something that says "this matters" without needing a single word.</p>
 
-                    <p class="blog-text">From there we moved to the Jefferson Memorial. The marble columns there give you a completely different feel. Where the Washington Monument is open and expansive, the Jefferson Memorial is architectural and grand. The columns frame your subject naturally, and the stone steps create leading lines that pull the viewer's eye straight to the person in the gown. I had her stand between columns with the Tidal Basin visible behind her. That layered depth (columns, subject, water, trees) makes a flat photo feel three-dimensional.</p>
+        <p>The blue masters gown popped against the white stone and green grass. That color contrast is something I think about before every session. Blue regalia, white monument, green lawn, blue sky. Every element worked together without any planning beyond knowing what the location offers and timing the light right.</p>
 
-                    <p class="blog-text">We finished at the Tidal Basin waterfront. The water reflects whatever light is in the sky, so even on a slightly overcast day you get this soft glow bouncing back up at your subject. I shot some wider frames here to show the full environment: cap, gown, water, monument in the distance. Then we moved in tight for some closer portraits where the water behind her went soft and out of focus. Those ended up being some of the strongest images from the session.</p>
-                </div>
-            </div>
+        <p>From there we moved to the Jefferson Memorial. The marble columns there give you a completely different feel. Where the Washington Monument is open and expansive, the Jefferson Memorial is architectural and grand. The columns frame your subject naturally, and the stone steps create leading lines that pull the viewer's eye straight to the person in the gown. I had her stand between columns with the Tidal Basin visible behind her. That layered depth (columns, subject, water, trees) makes a flat photo feel three-dimensional.</p>
 
-            <!-- Navigating Crowds -->
-            <div class="tip-card">
-                <h2 class="section-title">How Do You Navigate Crowds and Tourists at DC Monuments?</h2>
-                <p class="blog-text">This is the question I get most from clients considering a DC monument session. The National Mall is a tourist destination. People are there. You cannot avoid them entirely, but you can work around them if you know what you are doing.</p>
+        <p>We finished at the Tidal Basin waterfront. The water reflects whatever light is in the sky, so even on a slightly overcast day you get this soft glow bouncing back up at your subject. I shot some wider frames here to show the full environment: cap, gown, water, monument in the distance. Then we moved in tight for some closer portraits where the water behind her went soft and out of focus. Those ended up being some of the strongest images from the session.</p>
 
-                <p class="blog-text">First, timing matters. Early morning and late afternoon thin the crowds significantly. Weekdays are better than weekends. We shot this session on a Sunday but started early enough that the tour buses had not fully descended yet. By the time we were finishing at the Tidal Basin, the crowds were building but we already had our best frames in the bag.</p>
+        <h2 id="navigating-crowds" class="reveal">How Do You Navigate Crowds and Tourists at DC Monuments?</h2>
+        <p>This is the question I get most from clients considering a DC monument session. The National Mall is a tourist destination. People are there. You cannot avoid them entirely, but you can work around them if you know what you are doing.</p>
 
-                <p class="blog-text">Second, I use angles. Most tourists gather in the center of spaces: the middle of the steps, the front of the memorial, the main path. I work the edges. Side angles at the Jefferson Memorial columns. Off-center compositions at the Washington Monument that use perspective to make it feel like you have the place to yourself. A 75mm or longer focal length compresses the background and narrows the frame enough to crop out people standing 20 feet to the side.</p>
+        <p>First, timing matters. Early morning and late afternoon thin the crowds significantly. Weekdays are better than weekends. We shot this session on a Sunday but started early enough that the tour buses had not fully descended yet. By the time we were finishing at the Tidal Basin, the crowds were building but we already had our best frames in the bag.</p>
 
-                <p class="blog-text">Third, patience. Sometimes you wait 30 seconds for a group to pass. That is fine. You do not need every single frame to be clean. You need five or six great ones from each location, and those happen in the gaps between tour groups. I keep shooting through the busy moments for candid expressions and then dial in the clean backgrounds when the window opens.</p>
-            </div>
+        <p>Second, I use angles. Most tourists gather in the center of spaces: the middle of the steps, the front of the memorial, the main path. I work the edges. Side angles at the Jefferson Memorial columns. Off-center compositions at the Washington Monument that use perspective to make it feel like you have the place to yourself. A 75mm or longer focal length compresses the background and narrows the frame enough to crop out people standing 20 feet to the side.</p>
 
-            <!-- Best Time of Day -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">What Is the Best Time of Day for Monument Photography in DC?</h2>
-                    <p class="blog-text">The monuments face different directions, which means the light hits them differently throughout the day. The Lincoln Memorial faces east, so it catches beautiful morning light on the front steps. The Jefferson Memorial sits on the south side of the Tidal Basin and looks best in late afternoon when the sun wraps around from the west.</p>
+        <p>Third, patience. Sometimes you wait 30 seconds for a group to pass. That is fine. You do not need every single frame to be clean. You need five or six great ones from each location, and those happen in the gaps between tour groups. I keep shooting through the busy moments for candid expressions and then dial in the clean backgrounds when the window opens.</p>
 
-                    <p class="blog-text">For a multi-location session like this one, I plan the route based on where the sun will be at each stop. We hit the Washington Monument first when the light was still relatively high and even, giving us clean exposure on the blue gown without harsh shadows. The Jefferson Memorial came next as the light started to soften and angle in from the side, which carved out the column details and added dimension to the portraits. The Tidal Basin waterfront was our last stop as the light went fully golden.</p>
+        <h2 id="best-time-of-day" class="reveal">What Is the Best Time of Day for Monument Photography in DC?</h2>
+        <p>The monuments face different directions, which means the light hits them differently throughout the day. The Lincoln Memorial faces east, so it catches beautiful morning light on the front steps. The Jefferson Memorial sits on the south side of the Tidal Basin and looks best in late afternoon when the sun wraps around from the west.</p>
 
-                    <p class="blog-text">If you only have time for one location and want the most dramatic light, shoot at the Lincoln Memorial about 90 minutes before sunset. The warm light floods up those massive steps and columns, and the elevated position gives you the entire Mall stretching out behind you with the Washington Monument and Capitol dome in the distance. It is arguably the single best graduation photo spot in the entire city.</p>
+        <p>For a multi-location session like this one, I plan the route based on where the sun will be at each stop. We hit the Washington Monument first when the light was still relatively high and even, giving us clean exposure on the blue gown without harsh shadows. The Jefferson Memorial came next as the light started to soften and angle in from the side, which carved out the column details and added dimension to the portraits. The Tidal Basin waterfront was our last stop as the light went fully golden.</p>
 
-                    <p class="blog-text">I wrote about shooting at DC landmarks in my <a title="Read the doctoral graduation photography guide" href="/blog/doctoral-graduation-photography-dc-monuments/">doctoral graduation photography guide</a> if you want more detail on working with these locations.</p>
-                </div>
-            </div>
+        <p>If you only have time for one location and want the most dramatic light, shoot at the Lincoln Memorial about 90 minutes before sunset. The warm light floods up those massive steps and columns, and the elevated position gives you the entire Mall stretching out behind you with the Washington Monument and Capitol dome in the distance. It is arguably the single best graduation photo spot in the entire city.</p>
 
-            <!-- Pro Tip -->
-            <div class="pro-tip">
-                <h3><i class="fas fa-lightbulb"></i> Pro Tip: Bring Comfortable Shoes for Walking Between Monuments</h3>
-                <p>A multi-location DC monument session means walking. The distance from the Washington Monument to the Jefferson Memorial is about a 15-minute walk. From there to the Lincoln Memorial is another 15 to 20 minutes. Wear comfortable shoes for the walk and change into heels or dress shoes when we stop to shoot. Your feet will thank you and you will have more energy for the session.</p>
-            </div>
+        <p>I wrote about shooting at DC landmarks in my <a title="Read the doctoral graduation photography guide" href="/blog/doctoral-graduation-photography-dc-monuments/">doctoral graduation photography guide</a> if you want more detail on working with these locations.</p>
 
-            <!-- Celebrating Achievement -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Why Should You Celebrate Your Masters Degree with Professional Photos?</h2>
-                    <p class="blog-text">Here is something I notice about graduate students. They downplay their achievement. Undergrad gets the big family celebration, the party, the social media posts. A masters degree often gets a quiet nod and a "finally done" text to friends. That is wrong. A masters degree is a significant accomplishment and it deserves to be documented properly.</p>
+        <h3>Pro Tip: Bring Comfortable Shoes for Walking Between Monuments</h3>
+        <p>A multi-location DC monument session means walking. The distance from the Washington Monument to the Jefferson Memorial is about a 15-minute walk. From there to the Lincoln Memorial is another 15 to 20 minutes. Wear comfortable shoes for the walk and change into heels or dress shoes when we stop to shoot. Your feet will thank you and you will have more energy for the session.</p>
 
-                    <p class="blog-text">Professional graduation photos are not vanity. They are a record of a milestone. Ten years from now you will look at a phone selfie in your gown and think "I wish I had done something better." You will look at a portrait shot at the Jefferson Memorial with the columns framing you and your blue gown catching the light and think "that is exactly how that moment felt."</p>
+        <h2 id="celebrate-your-degree" class="reveal">Why Should You Celebrate Your Masters Degree with Professional Photos?</h2>
+        <p>Here is something I notice about graduate students. They downplay their achievement. Undergrad gets the big family celebration, the party, the social media posts. A masters degree often gets a quiet nod and a "finally done" text to friends. That is wrong. A masters degree is a significant accomplishment and it deserves to be documented properly.</p>
 
-                    <p class="blog-text">I have shot graduation sessions for undergrads, masters students, and doctoral candidates across the DMV. The energy is different for each one. Masters graduates carry this quiet confidence. They know what they went through and they know it mattered. My job is to make photos that reflect that confidence. Not stiff, not overly posed. Just someone standing in front of something monumental because they did something monumental.</p>
+        <p>Professional graduation photos are not vanity. They are a record of a milestone. Ten years from now you will look at a phone selfie in your gown and think "I wish I had done something better." You will look at a portrait shot at the Jefferson Memorial with the columns framing you and your blue gown catching the light and think "that is exactly how that moment felt."</p>
 
-                    <p class="blog-text">If you are thinking about graduation photography and whether it is worth the investment, consider this: your degree cost tens of thousands of dollars and years of your life. A portrait session that properly commemorates it is a fraction of that cost.</p>
-                </div>
-            </div>
+        <p>I have shot graduation sessions for undergrads, masters students, and doctoral candidates across the DMV. The energy is different for each one. Masters graduates carry this quiet confidence. They know what they went through and they know it mattered. My job is to make photos that reflect that confidence, not stiff or overly posed portraits.</p>
 
-            <!-- What to Wear -->
-            <div class="tip-card">
-                <h2 class="section-title">What Should You Wear Under Your Graduation Gown for Photos?</h2>
-                <p class="blog-text">Your cap and gown will be the star of most frames, but at some point during the session you will probably want to take the gown off for a different look. What you are wearing underneath matters.</p>
+        <blockquote class="pull-quote reveal">
+            <p>Just someone standing in front of something monumental because they did something monumental.</p>
+        </blockquote>
 
-                <p class="blog-text">I tell my clients to wear something they would feel confident photographing in on its own. A solid-colored dress works well because it photographs clean against the stone and marble of the monuments. Black, white, navy, and jewel tones all pop. Avoid busy patterns, since they compete with the architecture and distract the eye.</p>
+        <p>If you are thinking about graduation photography and whether it is worth the investment, consider this: your degree cost tens of thousands of dollars and years of your life. A portrait session that properly commemorates it is a fraction of that cost.</p>
 
-                <p class="blog-text">For this session my client kept her blue gown on the entire time, which worked perfectly because the color was strong against every backdrop we used. But many of my graduation clients want two looks: gown on for the formal achievement photos, gown off for something more personal and stylish. If that is your plan, pick an outfit that transitions well from the ceremony look to a portrait look.</p>
+        <h2 id="what-to-wear" class="reveal">What Should You Wear Under Your Graduation Gown for Photos?</h2>
+        <p>Your cap and gown will be the star of most frames, but at some point during the session you will probably want to take the gown off for a different look. What you are wearing underneath matters.</p>
 
-                <ul class="blog-text" style="margin-left: 20px; margin-top: 10px; line-height: 2;">
-                    <li>Solid colors that contrast with white or grey stone.</li>
-                    <li>A dress or outfit you feel confident in without the gown.</li>
-                    <li>Comfortable shoes for walking, dress shoes for posing.</li>
-                    <li>Minimal jewelry that does not compete with your regalia.</li>
-                    <li>Bring your diploma, stole, or honor cords as props.</li>
-                </ul>
-            </div>
+        <p>I tell my clients to wear something they would feel confident photographing in on its own. A solid-colored dress works well because it photographs clean against the stone and marble of the monuments. Black, white, navy, and jewel tones all pop. Avoid busy patterns, since they compete with the architecture and distract the eye.</p>
 
-            <!-- Other DMV Locations -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Where Else Can You Shoot Graduation Photos in the DMV?</h3>
-                    <p class="blog-text">DC monuments are the flagship option, but they are not the only game in the DMV for graduation portraits. Here are a few other locations I recommend.</p>
+        <p>For this session my client kept her blue gown on the entire time, which worked perfectly because the color was strong against every backdrop we used. But many of my graduation clients want two looks: gown on for the formal achievement photos, gown off for something more personal and stylish. If that is your plan, pick an outfit that transitions well from the ceremony look to a portrait look.</p>
 
-                    <p class="blog-text"><strong>Georgetown waterfront</strong> gives you the Potomac River, cobblestone streets, and colorful row houses. It is a more relaxed, neighborhood feel compared to the grandeur of the monuments. Good for graduates who want something less formal.</p>
+        <ul>
+            <li>Solid colors that contrast with white or grey stone.</li>
+            <li>A dress or outfit you feel confident in without the gown.</li>
+            <li>Comfortable shoes for walking, dress shoes for posing.</li>
+            <li>Minimal jewelry that does not compete with your regalia.</li>
+            <li>Bring your diploma, stole, or honor cords as props.</li>
+        </ul>
 
-                    <p class="blog-text"><strong>The Smithsonian museums</strong> offer incredible architecture both inside and outside. I shot a session there and the stone arches and natural light in those buildings photograph beautifully.</p>
+        <h3>Where Else Can You Shoot Graduation Photos in the DMV?</h3>
+        <p>DC monuments are the flagship option, but they are not the only game in the DMV for graduation portraits. Here are a few other locations I recommend.</p>
 
-                    <p class="blog-text"><strong>Howard University, Georgetown University, and George Washington University campuses</strong> each have their own architectural character. If your degree is from one of these schools, shooting on campus adds personal meaning to the photos.</p>
+        <p><strong>Georgetown waterfront</strong> gives you the Potomac River, cobblestone streets, and colorful row houses. It is a more relaxed, neighborhood feel compared to the grandeur of the monuments. Good for graduates who want something less formal.</p>
 
-                    <p class="blog-text"><strong>Great Falls Park</strong> in Virginia and Maryland offers dramatic natural scenery. Not traditional for graduation photos, but for someone who wants something completely different, the waterfalls and rock formations create a striking contrast with formal academic regalia.</p>
+        <p><strong>The Smithsonian museums</strong> offer incredible architecture both inside and outside. I shot a session there and the stone arches and natural light in those buildings photograph beautifully.</p>
 
-                    <p class="blog-text">Check out my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="external-link" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more of my portrait and graduation work across the DMV.</p>
-                </div>
-            </div>
+        <p><strong>Howard University, Georgetown University, and George Washington University campuses</strong> each have their own architectural character. If your degree is from one of these schools, shooting on campus adds personal meaning to the photos.</p>
 
-            <!-- FAQ Section -->
-            <div class="faq-section">
-                <h2 class="section-title">Frequently Asked Questions</h2>
+        <p><strong>Great Falls Park</strong> in Virginia and Maryland offers dramatic natural scenery. Not traditional for graduation photos, but for someone who wants something completely different, the waterfalls and rock formations create a striking contrast with formal academic regalia.</p>
 
-                <div class="faq-item">
-                    <h3>What are the best DC monuments for graduation photos?</h3>
-                    <p>The Lincoln Memorial, Jefferson Memorial, and Washington Monument are the top three. The Lincoln Memorial gives you grand marble columns and sweeping steps. The Jefferson Memorial offers columns reflected in the Tidal Basin. The Washington Monument works as a powerful background element from the National Mall. Each photographs differently depending on time of day and season.</p>
-                </div>
+        <p>Check out my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more of my portrait and graduation work across the DMV.</p>
 
-                <div class="faq-item">
-                    <h3>Do you need a permit for graduation photos at DC monuments?</h3>
-                    <p>For small portrait sessions with just a photographer and one or two subjects using handheld camera equipment, no permit is required at most DC monuments and National Mall locations. The National Park Service considers this casual photography. Larger productions with lighting equipment, tripods, props, or big groups may need a permit. Check the <a title="National Park Service permit information" href="https://www.nps.gov/nama/planyourvisit/commercial-filming-and-photography-permits.htm" target="_blank" rel="noopener">National Park Service site</a> for current requirements.</p>
-                </div>
+        <h2 id="faq" class="reveal">Frequently Asked Questions</h2>
 
-                <div class="faq-item">
-                    <h3>What should I wear under my graduation gown for photos?</h3>
-                    <p>Wear something you would feel confident photographing in on its own. A solid-colored dress or a clean blouse with dress pants works well. Avoid busy patterns that compete with the cap and gown. Many clients bring a second outfit for variety after the gown photos. Heels are fine for posing but bring comfortable shoes for walking between monument locations.</p>
-                </div>
+        <details class="faq-item">
+            <summary>What are the best DC monuments for graduation photos?</summary>
+            <p>The Lincoln Memorial, Jefferson Memorial, and Washington Monument are the top three. The Lincoln Memorial gives you grand marble columns and sweeping steps. The Jefferson Memorial offers columns reflected in the Tidal Basin. The Washington Monument works as a powerful background element from the National Mall. Each photographs differently depending on time of day and season.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Do you need a permit for graduation photos at DC monuments?</summary>
+            <p>For small portrait sessions with just a photographer and one or two subjects using handheld camera equipment, no permit is required at most DC monuments and National Mall locations. The National Park Service considers this casual photography. Larger productions with lighting equipment, tripods, props, or big groups may need a permit. Check the <a title="National Park Service permit information" href="https://www.nps.gov/nama/planyourvisit/commercial-filming-and-photography-permits.htm" target="_blank" rel="noopener">National Park Service site</a> for current requirements.</p>
+        </details>
+        <details class="faq-item">
+            <summary>What should I wear under my graduation gown for photos?</summary>
+            <p>Wear something you would feel confident photographing in on its own. A solid-colored dress or a clean blouse with dress pants works well. Avoid busy patterns that compete with the cap and gown. Many clients bring a second outfit for variety after the gown photos. Heels are fine for posing but bring comfortable shoes for walking between monument locations.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How much do DC graduation photos cost?</summary>
+            <p>Graduation portrait sessions in DC typically range from $250 to $500 depending on session length, number of locations, and edited images included. Single-location sessions run about 45 minutes to one hour. Multi-location sessions take 90 minutes to two hours. Check out my <a title="Open the DMV photography pricing guide" href="/blog/photography-pricing/">DMV photography pricing guide</a> for a full breakdown.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Can you shoot multiple DC monuments in one graduation session?</summary>
+            <p>Yes. A 90-minute to two-hour session gives you enough time for two or three monuments if we start early, move efficiently, and keep outfits simple. I usually pair the Washington Monument with the Jefferson or Lincoln Memorial because each location gives you a different look. Comfortable shoes and a short shot list keep the pace up.</p>
+        </details>
 
-                <div class="faq-item">
-                    <h3>How much do DC graduation photos cost?</h3>
-                    <p>Graduation portrait sessions in DC typically range from $250 to $500 depending on session length, number of locations, and edited images included. Single-location sessions run about 45 minutes to one hour. Multi-location sessions take 90 minutes to two hours. Check out my <a title="Open the DMV photography pricing guide" href="/blog/photography-pricing/">DMV photography pricing guide</a> for a full breakdown.</p>
-                </div>
+        <h2 id="book-your-session" class="reveal">Book Your DC Graduation Photo Session</h2>
+        <p>You worked for this degree. Let's make sure the photos match the effort. I shoot graduation sessions across the DMV by request and focus regular graduation bookings in Charleston: College of Charleston, The Citadel, Charleston Southern, downtown, and waterfront locations. Whether you just finished your masters, your bachelors, or your doctorate, I will make sure you walk away with photos that capture what this milestone actually means to you.</p>
 
-                <div class="faq-item">
-                    <h3>Can you shoot multiple DC monuments in one graduation session?</h3>
-                    <p>Yes. A 90-minute to two-hour session gives you enough time for two or three monuments if we start early, move efficiently, and keep outfits simple. I usually pair the Washington Monument with the Jefferson or Lincoln Memorial because each location gives you a different look. Comfortable shoes and a short shot list keep the pace up.</p>
-                </div>
-            </div>
+        <p>Check out my <a title="Read the Charleston graduation photography guide" href="/blog/charleston-graduation-photography/">Charleston graduation photography guide</a>, browse my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more graduation and portrait work, or <a title="Contact Joshua Smith about graduation photography" href="/index.html?service=graduation&location=charleston#contact">contact me</a> directly. Graduation season fills up fast, so lock in your date early.</p>
 
-            <!-- CTA Section -->
-            <div class="location-highlight">
-                <h2 class="section-title">Book Your DC Graduation Photo Session</h2>
-                <p class="blog-text">You worked for this degree. Let's make sure the photos match the effort. I shoot graduation sessions across the DMV by request and focus regular graduation bookings in Charleston: College of Charleston, The Citadel, Charleston Southern, downtown, and waterfront locations. Whether you just finished your masters, your bachelors, or your doctorate, I will make sure you walk away with photos that capture what this milestone actually means to you.</p>
-
-                <p class="blog-text">Check out my <a title="Read the Charleston graduation photography guide" href="/blog/charleston-graduation-photography/">Charleston graduation photography guide</a>, browse my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="external-link" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more graduation and portrait work, or <a title="Contact Joshua Smith about graduation photography" href="/index.html?service=graduation&location=charleston#contact">contact me</a> directly. Graduation season fills up fast, so lock in your date early.</p>
-            </div>
-        </div>
-    </section>
+    </article>
 
     <!-- CTA Banner -->
     <section class="cta-banner">
         <div class="container">
-            <h2 class="cta-title">Your Degree Deserves More Than a Phone Photo</h2>
-            <p class="cta-text">Masters, doctoral, or undergraduate graduation photography in Charleston first, with DC monument and DMV sessions available by request. Professional portraits that match the scale of your achievement.</p>
+            <h2>Your Degree Deserves More Than a Phone Photo</h2>
+            <p>Masters, doctoral, or undergraduate graduation photography in Charleston first, with DC monument and DMV sessions available by request. Professional portraits that match the scale of your achievement.</p>
             <div class="cta-buttons">
-                <a title="Book Charleston graduation photography" href="/index.html?service=graduation&location=charleston#contact" class="btn btn-accent">Book Charleston Graduation</a>
-                <a title="Request DMV graduation photography" href="/index.html?service=graduation&location=dmv#contact" class="btn">Request DMV Graduation</a>
-                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
+                <a title="Book Charleston graduation photography" href="/index.html?service=graduation&location=charleston#contact" class="btn btn-primary">Book Charleston Graduation</a>
+                <a title="Request DMV graduation photography" href="/index.html?service=graduation&location=dmv#contact" class="btn btn-ghost">Request DMV Graduation</a>
+                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn btn-ghost" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
             </div>
         </div>
     </section>
-
+    </main>
 
     <!-- Back to Top Button -->
-    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
+    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page">&uarr;</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals by Joshua</h3>
+                    <p>Editorial photography for milestones &amp; moments. Serving Charleston SC + Northern VA / DMV.</p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="tel:+12403608465" style="display: block; margin-bottom: 0.5rem;">&#128222; (240) 360-8465</a>
+                        <a href="mailto:jbmsmusic05@gmail.com" style="display: block; margin-bottom: 0.5rem;">&#9993;&#65039; jbmsmusic05@gmail.com</a>
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128247; Instagram</a>
+                        <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128218; Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/gallery">Full Gallery</a></li>
+                        <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+                        <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+                        <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+                        <li><a href="/blog.html">Photography Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Visuals by Joshua. Charleston SC &amp; Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.add('show');
@@ -403,77 +829,28 @@
                 backToTopButton.classList.remove('show');
             }
         });
-
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Scroll reveal for section headings, pull-quote, figure, and TOC
+        const revealTargets = document.querySelectorAll('.reveal');
+        if (revealTargets.length && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+            revealTargets.forEach(el => revealObserver.observe(el));
+        } else {
+            revealTargets.forEach(el => el.classList.add('in-view'));
+        }
     </script>
-  <script>
-    (function() {
-      var hamburger = document.querySelector('.hamburger');
-      var navMenu = document.querySelector('.nav-menu');
-      if (!hamburger || !navMenu) return;
-      function close() {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-      }
-      hamburger.addEventListener('click', function() {
-        var open = navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active', open);
-        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      navMenu.querySelectorAll('.nav-link').forEach(function(l) { l.addEventListener('click', close); });
-      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
-    })();
-  </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Visuals by Joshua</h3>
-          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
-          <p style="margin-top: 1.5rem;">
-            <a href="tel:+12403608465">(240) 360-8465</a><br>
-            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
-          </p>
-          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
-            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery">Full Gallery</a></li>
-            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Locations</h4>
-          <ul>
-            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
-            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
-            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
-            <li><a href="/blog.html">Photography Blog</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>

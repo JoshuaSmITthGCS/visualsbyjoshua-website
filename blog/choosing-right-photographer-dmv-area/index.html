@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- SEO Meta Tags -->
+    <!-- SEO Meta Tags -->
     <title>How to Choose a Photographer in DMV or Charleston</title>
     <meta name="description" content="How to choose a photographer in the DMV or Charleston. Compare portfolios, pricing, local knowledge, editing style, and booking details before you hire.">
     <meta name="author" content="Joshua Smith">
@@ -13,8 +13,8 @@
 
     <!-- OG Tags -->
     <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Visuals by Joshua">
-  <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Visuals by Joshua">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://visualsbyjoshua.com/blog/choosing-right-photographer-dmv-area/" />
     <meta property="og:title" content="How to Choose a Photographer in DMV or Charleston" />
     <meta property="og:description" content="A real guide to finding the right photographer in the DMV or Charleston: pricing, questions to ask, and how to judge local experience." />
@@ -27,12 +27,10 @@
     <meta name="twitter:description" content="How to compare photographers by portfolio, pricing, local knowledge, editing style, and booking details." />
     <meta name="twitter:image" content="https://visualsbyjoshua.com/smithsonian-portrait-hero.webp" />
 
-    <!-- Fonts -->
+    <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Schema.org markup -->
     <script type="application/ld+json">
@@ -63,426 +61,771 @@
         }
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://visualsbyjoshua.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://visualsbyjoshua.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to Choose the Right Photographer in the DMV Area",
+          "item": "https://visualsbyjoshua.com/blog/choosing-right-photographer-dmv-area/"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How familiar are you with my specific DMV location?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about their experience with your specific area, whether that is downtown DC, Prince George's County MD, Northern Virginia, or Charleston SC. They should be able to tell you the best shooting times, where to park, and where they would go if the weather turns. For DC sessions, they need to understand monument and permit limitations without you having to bring it up."}}, {"@type": "Question", "name": "Can you show me examples of similar DMV work?", "acceptedAnswer": {"@type": "Answer", "text": "Ask to see recent work from sessions similar to yours. Look at more than just the highlight reel. You want to see consistency in quality, style, and editing across different venues and lighting. If every photo on their site was taken at the same spot in perfect light, that tells you something."}}, {"@type": "Question", "name": "What's your experience with permits and restrictions?", "acceptedAnswer": {"@type": "Answer", "text": "For DC monument shoots or historic spots in Maryland and Virginia, your photographer needs to know the permit rules, restricted areas, and backup options. This is not something they should be figuring out the day of your session. A professional stays current with changing regulations."}}, {"@type": "Question", "name": "What's included in your DMV photography packages?", "acceptedAnswer": {"@type": "Answer", "text": "Get the details in writing. How many edited photos do you receive? What is the turnaround time? Do you get high-resolution files and a print release? Is there an online gallery? Are there extra fees for DMV travel? The more specific they are, the less likely you are to get surprised later."}}, {"@type": "Question", "name": "Do you have backup plans for weather or issues?", "acceptedAnswer": {"@type": "Answer", "text": "This matters for any outdoor DMV session. A professional will already have covered locations in mind, a clear rescheduling policy, and indoor alternatives ready to go. If their answer is \"we'll figure it out,\" keep looking."}}]}</script>
+
+    <script src="/analytics.js" defer></script>
 
     <style>
-        .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
+        /* ========================================
+           RESET & BASE (matches homepage design system)
+           ======================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
         }
-        @media (min-width: 800px) {
-          .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-          }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #2a2a2a;
+            background-color: #fcfbfa;
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s ease; }
+        a:hover { opacity: 0.7; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: #2a2a2a;
+            color: #fff;
+            padding: 12px 22px;
+            z-index: 1000;
+            border-radius: 0 0 8px 0;
+            font-size: 0.9rem;
+        }
+        .skip-link:focus { left: 0; }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(252, 251, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px clamp(20px, 5vw, 80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+
+        .nav-menu { display: flex; gap: 40px; list-style: none; }
+        .nav-menu a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2a2a2a;
+        }
+        .nav-menu a:hover { color: #be976d; opacity: 1; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+        }
+        .nav-toggle-bar {
+            width: 22px;
+            height: 2px;
+            background: #2a2a2a;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: #fcfbfa;
+                border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+                padding: 8px 0 16px;
+                transform: translateY(-12px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.25s ease;
+            }
+            .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-menu a { display: block; padding: 14px 20px; }
+            .nav-toggle { display: flex; }
+        }
+
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        p { font-size: 1rem; line-height: 1.8; }
+
+        .kicker {
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #be976d;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* ========================================
+           LAYOUT PRIMITIVES
+           ======================================== */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .btn-ghost {
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            color: #ffffff;
+            background: transparent;
+        }
+        .btn-ghost:hover { background: rgba(255, 255, 255, 0.15); opacity: 1; }
+        .btn-primary {
+            background: #be976d;
+            color: #ffffff;
+            border: 2px solid #be976d;
+        }
+        .btn-primary:hover {
+            background: #a67f5a;
+            border-color: #a67f5a;
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #2a2a2a;
+            border: 2px solid #2a2a2a;
+        }
+        .btn-secondary:hover { background: #2a2a2a; color: #fcfbfa; opacity: 1; }
+
+        /* ========================================
+           ARTICLE HERO
+           ======================================== */
+        .article-hero {
+            position: relative;
+            width: 100%;
+            min-height: 64vh;
+            margin-top: 80px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(20,18,15,0.15) 0%, rgba(20,18,15,0.55) 100%), url('/smithsonian-portrait-hero.webp') center 35% / cover no-repeat;
+        }
+        @media (max-width: 768px) { .article-hero { margin-top: 68px; min-height: 56vh; } }
+
+        .article-hero-content {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            width: 100%;
+            padding: 60px clamp(20px, 5vw, 80px) 56px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 18px;
+        }
+        .breadcrumb a { color: #ffffff; }
+        .breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+        .article-hero h1 {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            font-style: italic;
+            letter-spacing: -0.01em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            max-width: 900px;
+            margin-bottom: 1rem;
+        }
+
+        .article-hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 300;
+            max-width: 640px;
+            opacity: 0.95;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            margin-top: 30px;
+            font-size: 0.8125rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* ========================================
+           ARTICLE BODY
+           ======================================== */
+        .article-body {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
+        }
+
+        .article-body h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-style: italic;
+            margin: 3.25rem 0 1.25rem;
+            scroll-margin-top: 96px;
+        }
+        .article-body h2:first-of-type { margin-top: 0; }
+
+        .article-body h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #2a2a2a;
+            margin: 2.25rem 0 1rem;
+            padding-left: 16px;
+            border-left: 3px solid #be976d;
+        }
+
+        /* First paragraph after a heading reads as a lede: slightly heavier weight
+           gives skimmers a scan-anchor without adding another visual element. */
+        .article-body h2 + p {
+            font-weight: 500;
+            font-size: 1.0625rem;
+            color: #2a2a2a;
+        }
+
+        .article-body p { margin-bottom: 1.5rem; color: #3a3630; }
+
+        .article-body ul {
+            margin: 0 0 1.75rem 1.25rem;
+            line-height: 2;
+            color: #3a3630;
+        }
+
+        .article-body a {
+            color: #7d5732;
+            border-bottom: 1px solid rgba(190, 151, 109, 0.5);
+        }
+        .article-body a:hover { opacity: 1; border-color: #be976d; }
+
+        .article-body strong { font-weight: 600; color: #2a2a2a; }
+
+        .article-figure { margin: 3rem 0; text-align: center; }
+        .article-figure img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            margin: 0 auto;
+        }
+        .article-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.875rem;
+            font-style: italic;
+            color: #63594e;
+        }
+
+        /* ========================================
+           PULL QUOTE
+           ======================================== */
+        .pull-quote {
+            margin: 3.5rem 0;
+            padding-left: 28px;
+            border-left: 3px solid #be976d;
+        }
+        .pull-quote p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+            line-height: 1.35;
+            color: #2a2a2a;
+            margin: 0;
+        }
+
+        /* ========================================
+           COLLAPSIBLE SECTIONS (native <details>, no JS dependency)
+           ======================================== */
+        .toc-box {
+            margin-bottom: 3rem;
+            padding: 22px 26px;
+            background: #f5f3f0;
+            border-radius: 10px;
+        }
+        .toc-box summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.15rem;
+            color: #2a2a2a;
+        }
+        .toc-box summary::-webkit-details-marker { display: none; }
+        .toc-box summary::after {
+            content: '+';
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .toc-box[open] summary::after { transform: rotate(45deg); }
+        .toc-list {
+            list-style: none;
+            margin: 18px 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 24px;
+        }
+        @media (max-width: 560px) { .toc-list { grid-template-columns: 1fr; } }
+        .toc-list a {
+            font-size: 0.9375rem;
+            color: #5a564e;
+            border-bottom: none;
+        }
+        .toc-list a:hover { color: #7d5732; opacity: 1; }
+
+        /* ========================================
+           FAQ
+           ======================================== */
+        .faq-item {
+            padding: 4px 0;
+            border-top: 1px solid rgba(42, 42, 42, 0.1);
+        }
+        .faq-item:last-child { border-bottom: 1px solid rgba(42, 42, 42, 0.1); }
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            flex-shrink: 0;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .faq-item[open] summary::after { transform: rotate(45deg); }
+        .faq-item p { margin: 0 0 22px; color: #5a564e; }
+
+        /* ========================================
+           CTA BANNER
+           ======================================== */
+        .cta-banner {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: clamp(60px, 8vw, 90px) 0;
+            text-align: center;
+        }
+        .cta-banner .container { max-width: 700px; }
+        .cta-banner h2 { color: #ffffff; font-style: italic; margin-bottom: 1.25rem; }
+        .cta-banner p { color: rgba(255, 255, 255, 0.85); margin-bottom: 2rem; }
+        .cta-banner p a { color: #d9b48f; border-bottom: 1px solid rgba(217, 180, 143, 0.5); }
+        .cta-banner p a:hover { opacity: 1; }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer { background: #2a2a2a; color: #ffffff; padding: 60px 0 110px; }
+        @media (min-width: 769px) { .footer { padding-bottom: 30px; } }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p { font-size: 0.9375rem; opacity: 0.8; }
+        .footer-links h4 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { font-size: 0.9375rem; opacity: 0.8; transition: opacity 0.3s ease; }
+        .footer-links a:hover { opacity: 1; }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+            font-size: 0.875rem;
+            opacity: 0.7;
+        }
+
+        /* ========================================
+           BACK TO TOP
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 90;
+        }
+        .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .back-to-top:hover { opacity: 0.85; background: #be976d; }
+
+        /* ========================================
+           SCROLL REVEAL
+           ======================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
         }
     </style>
-  <script src="/analytics.js" defer></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://visualsbyjoshua.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://visualsbyjoshua.com/blog.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "How to Choose the Right Photographer in the DMV Area",
-      "item": "https://visualsbyjoshua.com/blog/choosing-right-photographer-dmv-area/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How familiar are you with my specific DMV location?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about their experience with your specific area, whether that is downtown DC, Prince George's County MD, Northern Virginia, or Charleston SC. They should be able to tell you the best shooting times, where to park, and where they would go if the weather turns. For DC sessions, they need to understand monument and permit limitations without you having to bring it up."}}, {"@type": "Question", "name": "Can you show me examples of similar DMV work?", "acceptedAnswer": {"@type": "Answer", "text": "Ask to see recent work from sessions similar to yours. Look at more than just the highlight reel. You want to see consistency in quality, style, and editing across different venues and lighting. If every photo on their site was taken at the same spot in perfect light, that tells you something."}}, {"@type": "Question", "name": "What's your experience with permits and restrictions?", "acceptedAnswer": {"@type": "Answer", "text": "For DC monument shoots or historic spots in Maryland and Virginia, your photographer needs to know the permit rules, restricted areas, and backup options. This is not something they should be figuring out the day of your session. A professional stays current with changing regulations."}}, {"@type": "Question", "name": "What's included in your DMV photography packages?", "acceptedAnswer": {"@type": "Answer", "text": "Get the details in writing. How many edited photos do you receive? What is the turnaround time? Do you get high-resolution files and a print release? Is there an online gallery? Are there extra fees for DMV travel? The more specific they are, the less likely you are to get surprised later."}}, {"@type": "Question", "name": "Do you have backup plans for weather or issues?", "acceptedAnswer": {"@type": "Answer", "text": "This matters for any outdoor DMV session. A professional will already have covered locations in mind, a clear rescheduling policy, and indoor alternatives ready to go. If their answer is \"we'll figure it out,\" keep looking."}}]}</script>
-  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/blog/photography-pricing/">Pricing</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
-        <li><a href="/#contact">Book Now</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </nav>
+    <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
 
-    
-    <!-- Header - using your existing structure -->
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Visuals by Joshua</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/blog/photography-pricing/">Pricing</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+                <li><a href="/#contact">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Blog Hero Section -->
-    <section class="article-hero hero-bg" style="--bg-url: url('/smithsonian-portrait-hero.webp');" id="main">
-        <div class="blog-hero-content">
+    <!-- Article Hero -->
+    <section class="article-hero" id="main" style="background: linear-gradient(180deg, rgba(20,18,15,0.15) 0%, rgba(20,18,15,0.55) 100%), url('/smithsonian-portrait-hero.webp') center 35% / cover no-repeat;">
+        <div class="article-hero-content">
             <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; How to Choose the Right Photographer in the DMV Area</div>
-          <h1 class="blog-hero-title">How to Choose the Right Photographer in the DMV Area</h1>
-            <p class="blog-hero-subtitle">What to Look For, What to Ask, and What to Avoid When Hiring in DC, Maryland, or Virginia</p>
-
-            <div class="blog-meta">
-                <div class="meta-item">
-                    <i class="fas fa-user"></i>
-                    <span>By Joshua Smith</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-calendar"></i>
-                    <span>June 2, 2025</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i>
-                    <span>12 min read</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>DMV Area</span>
-                </div>
+            <h1>How to Choose the Right Photographer in the DMV Area</h1>
+            <p class="article-hero-subtitle">What to Look For, What to Ask, and What to Avoid When Hiring in DC, Maryland, or Virginia</p>
+            <div class="article-meta">
+                <span>By Joshua Smith</span>
+                <span>June 2, 2025</span>
+                <span>12 min read</span>
+                <span>DMV Area</span>
             </div>
         </div>
     </section>
 
-    <!-- Blog Content -->
-    <main id="main">
-    <section class="article-content">
-        <div class="blog-container">
+    <main>
+    <article class="article-body">
 
-            <!-- Introduction -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">Hiring a Photographer in the DMV Is Harder Than It Should Be</h2>
-                    <p class="blog-text">There are thousands of <strong>photographers in the DMV area</strong> (Washington DC, Maryland, and Virginia). Some are full-time professionals. Some picked up a camera last month. Telling the difference from a website alone is not easy.</p>
+        <details class="toc-box reveal">
+            <summary>In this guide</summary>
+            <ul class="toc-list">
+                <li><a href="#dmv-hiring-challenge">Hiring a photographer in the DMV</a></li>
+                <li><a href="#what-separates-good-photographers">What separates good photographers</a></li>
+                <li><a href="#location-knowledge">Why location knowledge matters</a></li>
+                <li><a href="#pricing-guide">DMV pricing guide</a></li>
+                <li><a href="#how-to-prepare">How to prepare</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </details>
 
-                    <p class="blog-text">I have been shooting across all three jurisdictions for years, and I have seen what happens when people hire based on price alone or skip the vetting process. The wrong photographer does not just deliver bad photos. They miss the moments you actually wanted and leave you with nothing to show for it.</p>
+        <h2 id="dmv-hiring-challenge" class="reveal">Hiring a Photographer in the DMV Is Harder Than It Should Be</h2>
+        <p>There are thousands of <strong>photographers in the DMV area</strong> (Washington DC, Maryland, and Virginia). Some are full-time professionals. Some picked up a camera last month. Telling the difference from a website alone is not easy.</p>
 
-                    <p class="blog-text">This guide breaks down what actually matters when you are choosing between <strong>DC wedding photographers</strong>, <strong>Maryland corporate headshot shooters</strong>, or <strong>Virginia family portrait photographers</strong>. Whether you live in <strong>Northern Virginia</strong>, <strong>Prince George's County</strong>, or <strong>Arlington</strong>, the same principles apply.</p>
+        <p>I have been shooting across all three jurisdictions for years, and I have seen what happens when people hire based on price alone or skip the vetting process.</p>
 
-                    <p class="blog-text">The same checklist applies if you are hiring a <strong>Charleston photographer</strong>. You want someone who understands the light downtown, how crowded waterfront locations get, where to park near campus, and how to move quickly between portrait, graduation, and event moments. If you already know you need Charleston coverage, you can <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact">check availability here</a>.</p>
-                </div>
-            </div>
+        <blockquote class="pull-quote reveal">
+            <p>The wrong photographer does not just deliver bad photos. They miss the moments you actually wanted and leave you with nothing to show for it.</p>
+        </blockquote>
 
-            <!-- What Makes a Great DMV Photographer -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">What Actually Separates Good DMV Photographers from Bad Ones</h2>
-                    <p class="blog-text">Anyone can buy a nice camera. The difference shows up in the details. Here is what real <strong>DMV area photographers</strong> bring to the table, including consistent editing, location planning, backup gear, and the ability to make you look natural on camera.</p>
-                </div>
-            </div>
+        <p>This guide breaks down what actually matters when you are choosing between <strong>DC wedding photographers</strong>, <strong>Maryland corporate headshot shooters</strong>, or <strong>Virginia family portrait photographers</strong>. Whether you live in <strong>Northern Virginia</strong>, <strong>Prince George's County</strong>, or <strong>Arlington</strong>, the same principles apply.</p>
 
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-image">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">They Know the DMV Like a Local</h3>
-                        <p class="service-description">A photographer who actually works in this area knows DC's tricky lighting at the monuments, Maryland's best-kept venue secrets, and Virginia's scenic spots that don't get overrun with crowds. They also know strong portrait locations in <strong>Prince George's County</strong>, the go-to locations in <strong>Northern Virginia</strong>, and how to translate that planning mindset to Charleston sessions.</p>
-                        <ul class="service-features">
-                            <li>DC monument permit knowledge</li>
-                            <li>Maryland venue familiarity</li>
-                            <li>Virginia location expertise</li>
-                            <li>Weather backup plans</li>
-                        </ul>
-                    </div>
-                </div>
+        <p>The same checklist applies if you are hiring a <strong>Charleston photographer</strong>. You want someone who understands the light downtown, how crowded waterfront locations get, where to park near campus, and how to move quickly between portrait, graduation, and event moments. If you already know you need Charleston coverage, you can <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact">check availability here</a>.</p>
 
-                <div class="service-card">
-                    <div class="service-image">
-                        <i class="fas fa-camera"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Their Gear Matches the Job</h3>
-                        <p class="service-description">You need cameras and lenses that perform in all conditions. A dimly lit <strong>DC corporate event</strong> requires different gear than an outdoor <strong>Maryland graduation session</strong> or a golden-hour <strong>Virginia family shoot</strong>. Professionals carry backup equipment because things break at the worst possible time.</p>
-                        <ul class="service-features">
-                            <li>Professional camera bodies</li>
-                            <li>Multiple lens options</li>
-                            <li>Backup equipment</li>
-                            <li>Professional lighting</li>
-                        </ul>
-                    </div>
-                </div>
+        <h2 id="what-separates-good-photographers" class="reveal">What Actually Separates Good DMV Photographers from Bad Ones</h2>
+        <p>Anyone can buy a nice camera. The difference shows up in the details. Here is what real <strong>DMV area photographers</strong> bring to the table, including consistent editing, location planning, backup gear, and the ability to make you look natural on camera.</p>
 
-                <div class="service-card">
-                    <div class="service-image">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Their Editing Looks Real</h3>
-                        <p class="service-description">Over-edited photos age badly. The best <strong>DMV photographers</strong> deliver images that look polished but still look like you. They follow natural skin tones and lighting and keep the editing clean.</p>
-                        <ul class="service-features">
-                            <li>Natural color correction</li>
-                            <li>Professional retouching</li>
-                            <li>Consistent style</li>
-                            <li>Fast turnaround</li>
-                        </ul>
-                    </div>
-                </div>
+        <h3>They Know the DMV Like a Local</h3>
+        <p>A photographer who actually works in this area knows DC's tricky lighting at the monuments, Maryland's best-kept venue secrets, and Virginia's scenic spots that don't get overrun with crowds. They also know strong portrait locations in <strong>Prince George's County</strong>, the go-to locations in <strong>Northern Virginia</strong>, and how to translate that planning mindset to Charleston sessions.</p>
+        <ul>
+            <li>DC monument permit knowledge</li>
+            <li>Maryland venue familiarity</li>
+            <li>Virginia location expertise</li>
+            <li>Weather backup plans</li>
+        </ul>
 
-                <div class="service-card">
-                    <div class="service-image">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">They Communicate Before You Have to Chase Them</h3>
-                        <p class="service-description">If a photographer takes a week to reply to your inquiry, that tells you something. Whether you are planning a <strong>DC wedding</strong> or booking <strong>Maryland corporate headshots</strong>, you deserve someone who answers questions and sets clear expectations upfront.</p>
-                        <ul class="service-features">
-                            <li>24-48 hour response time</li>
-                            <li>Clear contracts</li>
-                            <li>Detailed timelines</li>
-                            <li>Vision alignment</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <h3>Their Gear Matches the Job</h3>
+        <p>You need cameras and lenses that perform in all conditions. A dimly lit <strong>DC corporate event</strong> requires different gear than an outdoor <strong>Maryland graduation session</strong> or a golden-hour <strong>Virginia family shoot</strong>. Professionals carry backup equipment because things break at the worst possible time.</p>
+        <ul>
+            <li>Professional camera bodies</li>
+            <li>Multiple lens options</li>
+            <li>Backup equipment</li>
+            <li>Professional lighting</li>
+        </ul>
 
-            <!-- Interactive Checklist -->
-            <div class="interactive-checklist">
-                <h3 class="checklist-title">Your DMV Photographer Evaluation Checklist</h3>
-                <p style="margin-bottom: 25px; color: #5a5a5a;">Click each item as you evaluate potential photographers.</p>
+        <h3>Their Editing Looks Real</h3>
+        <p>Over-edited photos age badly. The best <strong>DMV photographers</strong> deliver images that look polished but still look like you. They follow natural skin tones and lighting and keep the editing clean.</p>
+        <ul>
+            <li>Natural color correction</li>
+            <li>Professional retouching</li>
+            <li>Consistent style</li>
+            <li>Fast turnaround</li>
+        </ul>
 
-                <button class="checklist-item" type="button" aria-pressed="false" onclick="toggleCheck(this)">
-                    <div class="checklist-checkbox"></div>
-                    <div class="checklist-text">
-                        <strong>Local Knowledge:</strong> Can they name specific shooting spots in your area without Googling it? Do they know the best times to shoot at those locations?
-                    </div>
-                </button>
+        <h3>They Communicate Before You Have to Chase Them</h3>
+        <p>If a photographer takes a week to reply to your inquiry, that tells you something. Whether you are planning a <strong>DC wedding</strong> or booking <strong>Maryland corporate headshots</strong>, you deserve someone who answers questions and sets clear expectations upfront.</p>
+        <ul>
+            <li>24-48 hour response time</li>
+            <li>Clear contracts</li>
+            <li>Detailed timelines</li>
+            <li>Vision alignment</li>
+        </ul>
 
-                <button class="checklist-item" type="button" aria-pressed="false" onclick="toggleCheck(this)">
-                    <div class="checklist-checkbox"></div>
-                    <div class="checklist-text">
-                        <strong>Portfolio Consistency:</strong> Does their work look consistently strong across different DMV venues and lighting situations, or do they have one great shot and a bunch of mediocre ones?
-                    </div>
-                </button>
+        <h3>Your DMV Photographer Evaluation Checklist</h3>
+        <p>Work through this list as you evaluate potential photographers.</p>
+        <ul>
+            <li><strong>Local Knowledge:</strong> Can they name specific shooting spots in your area without Googling it? Do they know the best times to shoot at those locations?</li>
+            <li><strong>Portfolio Consistency:</strong> Does their work look consistently strong across different DMV venues and lighting situations, or do they have one great shot and a bunch of mediocre ones?</li>
+            <li><strong>Real Equipment:</strong> Do they use professional-grade cameras and carry backups? Ask. A serious photographer will not be offended by the question.</li>
+            <li><strong>Recent Reviews:</strong> Do they have positive testimonials from DMV clients in the last 6 months? Old reviews do not tell you much about who they are now.</li>
+            <li><strong>Transparent Pricing:</strong> Are their packages clearly listed with no hidden fees? If you have to schedule a call just to learn the price, that is a yellow flag.</li>
+        </ul>
 
-                <button class="checklist-item" type="button" aria-pressed="false" onclick="toggleCheck(this)">
-                    <div class="checklist-checkbox"></div>
-                    <div class="checklist-text">
-                        <strong>Real Equipment:</strong> Do they use professional-grade cameras and carry backups? Ask. A serious photographer will not be offended by the question.
-                    </div>
-                </button>
+        <h2 id="location-knowledge" class="reveal">Why Location Knowledge Matters More Than You Think</h2>
+        <p>A photographer who knows the DMV will save you time, stress, and bad photos. Someone who has never shot at the Lincoln Memorial at golden hour does not know about the crowds, the angles, or the light. That kind of thing only comes from experience.</p>
 
-                <button class="checklist-item" type="button" aria-pressed="false" onclick="toggleCheck(this)">
-                    <div class="checklist-checkbox"></div>
-                    <div class="checklist-text">
-                        <strong>Recent Reviews:</strong> Do they have positive testimonials from DMV clients in the last 6 months? Old reviews do not tell you much about who they are now.
-                    </div>
-                </button>
+        <h3>Washington DC</h3>
+        <p><strong>DC photographers</strong> need to understand monument restrictions, the best sunrise and sunset windows at the <a title="National Mall and Memorial Parks official site" href="https://www.nps.gov/nama/index.htm" target="_blank" rel="noopener">National Mall</a>, when tourist crowds thin out at popular locations, and where to park for Georgetown waterfront sessions. If they cannot answer these questions, they have not done enough work in the city.</p>
 
-                <button class="checklist-item" type="button" aria-pressed="false" onclick="toggleCheck(this)">
-                    <div class="checklist-checkbox"></div>
-                    <div class="checklist-text">
-                        <strong>Transparent Pricing:</strong> Are their packages clearly listed with no hidden fees? If you have to schedule a call just to learn the price, that is a yellow flag.
-                    </div>
-                </button>
-            </div>
+        <h3>Maryland</h3>
+        <p><strong>Maryland photographers</strong> stand out when they know the overlooked spots in <strong>Prince George's County</strong>, how to handle tricky lighting at <strong>Montgomery County</strong> venues, park rules, and the right time of year for seasonal color. Spots like Great Falls and Cunningham Falls State Park are popular for a reason, but a good photographer also knows quieter backups.</p>
 
-            <!-- DMV Location Expertise -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">Why Location Knowledge Matters More Than You Think</h2>
-                    <p class="blog-text">A photographer who knows the DMV will save you time, stress, and bad photos. Someone who has never shot at the Lincoln Memorial at golden hour does not know about the crowds, the angles, or the light. That kind of thing only comes from experience.</p>
+        <h3>Virginia</h3>
+        <p><strong>Northern Virginia photographers</strong> prove their experience by knowing strong backdrops in Alexandria, how to use <strong>Arlington's</strong> mix of urban and natural settings, how to coordinate with <strong>Fairfax County</strong> venues, and when to book fall sessions for the best color. Simple locations can deliver strong results when you know how to work with them.</p>
 
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Washington DC</h3>
-                    <p class="blog-text"><strong>DC photographers</strong> need to understand monument restrictions, the best sunrise and sunset windows at the <a title="National Mall and Memorial Parks official site" href="https://www.nps.gov/nama/index.htm" target="_blank" rel="noopener">National Mall</a>, when tourist crowds thin out at popular locations, and where to park for Georgetown waterfront sessions. If they cannot answer these questions, they have not done enough work in the city.</p>
+        <h2 id="pricing-guide" class="reveal">DMV Photography Pricing Guide</h2>
+        <p>You should know the going rates before you start reaching out. Here is what <strong>DMV photography pricing</strong> looks like across different session types. Prices shift based on location, photographer experience, and what is included.</p>
+        <ul>
+            <li><strong>$40-$150 &mdash; Headshots &amp; Basic Portraits:</strong> Professional headshots, basic portrait sessions, simple graduation photos</li>
+            <li><strong>$150-$400 &mdash; Events &amp; Extended Sessions:</strong> Event photography, family portraits, comprehensive graduation sessions</li>
+            <li><strong>$400+ &mdash; Weddings &amp; Premium:</strong> Wedding photography, full-day events, luxury portrait experiences</li>
+        </ul>
 
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Maryland</h3>
-                    <p class="blog-text"><strong>Maryland photographers</strong> stand out when they know the overlooked spots in <strong>Prince George's County</strong>, how to handle tricky lighting at <strong>Montgomery County</strong> venues, park rules, and the right time of year for seasonal color. Spots like Great Falls and Cunningham Falls State Park are popular for a reason, but a good photographer also knows quieter backups.</p>
+        <h2 id="how-to-prepare" class="reveal">How to Prepare for Your DMV Photography Session</h2>
+        <p>Good preparation makes a noticeable difference in your final images. Most professionals will share a shot list or mood board ahead of time so you feel comfortable and look your best on camera.</p>
 
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Virginia</h3>
-                    <p class="blog-text"><strong>Northern Virginia photographers</strong> prove their experience by knowing strong backdrops in Alexandria, how to use <strong>Arlington's</strong> mix of urban and natural settings, how to coordinate with <strong>Fairfax County</strong> venues, and when to book fall sessions for the best color. Simple locations can deliver strong results when you know how to work with them.</p>
-                </div>
-            </div>
+        <p>If you are shooting at popular DMV locations like the National Mall or Old Town Alexandria, plan your wardrobe and timing ahead of the session. Visit places like <a title="Great Falls Park official site" href="https://www.nps.gov/grfa/index.htm" target="_blank" rel="noopener">Great Falls Park</a> during off-peak hours so you are not fighting crowds the whole time.</p>
 
-            <!-- Pricing Guide -->
-            <div class="price-table">
-                <h2 class="section-title">DMV Photography Pricing Guide</h2>
-                <p class="blog-text">You should know the going rates before you start reaching out. Here is what <strong>DMV photography pricing</strong> looks like across different session types. Prices shift based on location, photographer experience, and what is included.</p>
+        <h2 id="faq" class="reveal">Questions You Should Ask Before Booking</h2>
+        <p>These are the questions I would ask if I were hiring a <strong>DMV area photographer</strong> for the first time. The answers will tell you a lot about whether they are the right fit.</p>
 
-                <div class="price-grid">
-                    <div class="price-card">
-                        <div class="price-amount">$40-$150</div>
-                        <div class="price-label">Headshots & Basic Portraits</div>
-                        <p style="color: #5a5a5a; font-size: 0.9rem;">Professional headshots, basic portrait sessions, simple graduation photos</p>
-                    </div>
+        <details class="faq-item">
+            <summary>How familiar are you with my specific DMV location?</summary>
+            <p>Ask about their experience with your specific area, whether that is downtown DC, Prince George's County MD, Northern Virginia, or Charleston SC. They should be able to tell you the best shooting times, where to park, and where they would go if the weather turns. For DC sessions, they need to understand monument and permit limitations without you having to bring it up.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Can you show me examples of similar DMV work?</summary>
+            <p>Ask to see recent work from sessions similar to yours. Look at more than just the highlight reel. You want to see consistency in quality, style, and editing across different venues and lighting. If every photo on their site was taken at the same spot in perfect light, that tells you something.</p>
+        </details>
+        <details class="faq-item">
+            <summary>What's your experience with permits and restrictions?</summary>
+            <p>For DC monument shoots or historic spots in Maryland and Virginia, your photographer needs to know the permit rules, restricted areas, and backup options. This is not something they should be figuring out the day of your session. A professional stays current with changing regulations.</p>
+        </details>
+        <details class="faq-item">
+            <summary>What's included in your DMV photography packages?</summary>
+            <p>Get the details in writing. How many edited photos do you receive? What is the turnaround time? Do you get high-resolution files and a print release? Is there an online gallery? Are there extra fees for DMV travel? The more specific they are, the less likely you are to get surprised later.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Do you have backup plans for weather or issues?</summary>
+            <p>This matters for any outdoor DMV session. A professional will already have covered locations in mind, a clear rescheduling policy, and indoor alternatives ready to go. If their answer is "we'll figure it out," keep looking.</p>
+        </details>
 
-                    <div class="price-card">
-                        <div class="price-amount">$150-$400</div>
-                        <div class="price-label">Events & Extended Sessions</div>
-                        <p style="color: #5a5a5a; font-size: 0.9rem;">Event photography, family portraits, comprehensive graduation sessions</p>
-                    </div>
+        <h3>Helpful DMV Photography Resources</h3>
+        <p>If you are planning a session in the DMV, these links will help you research locations and understand permit requirements before you book.</p>
 
-                    <div class="price-card">
-                        <div class="price-amount">$400+</div>
-                        <div class="price-label">Weddings & Premium</div>
-                        <p style="color: #5a5a5a; font-size: 0.9rem;">Wedding photography, full-day events, luxury portrait experiences</p>
-                    </div>
-                </div>
-            </div>
+        <ul>
+            <li><a title="Read the DMV photography pricing guide" href="/blog/photography-pricing/">DMV photography pricing guide</a> for budget expectations before you inquire</li>
+            <li><a title="Read the PG County portrait locations guide" href="/blog/pg-portrait-locations/">PG County portrait locations</a> for Maryland session ideas</li>
+            <li><a title="View DMV photography services" href="/dmv-photographer/">DMV photography services</a> if you need DC, Maryland, or Virginia coverage by request</li>
+            <li><a title="View Charleston photography services" href="/charleston-photographer/">Charleston photography services</a> if you are booking in my primary service area</li>
+        </ul>
 
-            <!-- Photography Preparation Tips -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">How to Prepare for Your DMV Photography Session</h2>
-                    <p class="blog-text">Good preparation makes a noticeable difference in your final images. Most professionals will share a shot list or mood board ahead of time so you feel comfortable and look your best on camera.</p>
+        <p>If you are comparing my work specifically, start with the <a title="View Charleston photography services" href="/charleston-photographer/">Charleston photographer page</a>, the <a title="View the Visuals by Joshua photography portfolio" href="/gallery">portfolio</a>, and the <a title="Read photography booking FAQs" href="/faq">booking FAQ</a> before you reach out.</p>
 
-                    <p class="blog-text">If you are shooting at popular DMV locations like the National Mall or Old Town Alexandria, plan your wardrobe and timing ahead of the session. Visit places like <a title="Great Falls Park official site" href="https://www.nps.gov/grfa/index.htm" target="_blank" rel="noopener">Great Falls Park</a> during off-peak hours so you are not fighting crowds the whole time.</p>
-                </div>
-            </div>
-
-            <!-- FAQ Section -->
-            <div class="about-container" style="margin-bottom: 40px;">
-                <div class="about-content">
-                    <h2 class="section-title">Questions You Should Ask Before Booking</h2>
-                    <p class="blog-text">These are the questions I would ask if I were hiring a <strong>DMV area photographer</strong> for the first time. The answers will tell you a lot about whether they are the right fit.</p>
-                </div>
-            </div>
-
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-1">
-                        <span>How familiar are you with my specific DMV location?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer" id="faq-1">
-                        <p>Ask about their experience with your specific area, whether that is <strong>downtown DC</strong>, <strong>Prince George's County MD</strong>, <strong>Northern Virginia</strong>, or <strong>Charleston SC</strong>. They should be able to tell you the best shooting times, where to park, and where they would go if the weather turns. For DC sessions, they need to understand monument and permit limitations without you having to bring it up.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-2">
-                        <span>Can you show me examples of similar DMV work?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer" id="faq-2">
-                        <p>Ask to see recent work from sessions similar to yours. Look at more than just the highlight reel. You want to see consistency in quality, style, and editing across different venues and lighting. If every photo on their site was taken at the same spot in perfect light, that tells you something.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-3">
-                        <span>What's your experience with permits and restrictions?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer" id="faq-3">
-                        <p>For DC monument shoots or historic spots in Maryland and Virginia, your photographer needs to know the permit rules, restricted areas, and backup options. This is not something they should be figuring out the day of your session. A professional stays current with changing regulations.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-4">
-                        <span>What's included in your DMV photography packages?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer" id="faq-4">
-                        <p>Get the details in writing. How many edited photos do you receive? What is the turnaround time? Do you get high-resolution files and a print release? Is there an online gallery? Are there extra fees for DMV travel? The more specific they are, the less likely you are to get surprised later.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-5">
-                        <span>Do you have backup plans for weather or issues?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer" id="faq-5">
-                        <p>This matters for any outdoor DMV session. A professional will already have covered locations in mind, a clear rescheduling policy, and indoor alternatives ready to go. If their answer is "we'll figure it out," keep looking.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DMV Resources -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Helpful DMV Photography Resources</h3>
-                    <p class="blog-text">If you are planning a session in the DMV, these links will help you research locations and understand permit requirements before you book.</p>
-
-                    <ul style="margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
-                        <li><a title="Read the DMV photography pricing guide" href="/blog/photography-pricing/">DMV photography pricing guide</a> for budget expectations before you inquire</li>
-                        <li><a title="Read the PG County portrait locations guide" href="/blog/pg-portrait-locations/">PG County portrait locations</a> for Maryland session ideas</li>
-                        <li><a title="View DMV photography services" href="/dmv-photographer/">DMV photography services</a> if you need DC, Maryland, or Virginia coverage by request</li>
-                        <li><a title="View Charleston photography services" href="/charleston-photographer/">Charleston photography services</a> if you are booking in my primary service area</li>
-                    </ul>
-
-                    <p class="blog-text">If you are comparing my work specifically, start with the <a title="View Charleston photography services" href="/charleston-photographer/">Charleston photographer page</a>, the <a title="View the Visuals by Joshua photography portfolio" href="/gallery">portfolio</a>, and the <a title="Read photography booking FAQs" href="/faq">booking FAQ</a> before you reach out.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </article>
 
     <!-- CTA Banner -->
     <section class="cta-banner">
         <div class="container">
-            <h2 class="cta-title">Ready to Book a Photographer in Charleston or the DMV?</h2>
-            <p class="cta-text">You have done the research. Now put it to use. Charleston bookings are the main focus, and DMV sessions are available by request when the schedule fits.</p>
+            <h2>Ready to Book a Photographer in Charleston or the DMV?</h2>
+            <p>You have done the research. Now put it to use. Charleston bookings are the main focus, and DMV sessions are available by request when the schedule fits.</p>
             <div class="cta-buttons">
-                <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact" class="btn btn-accent">Check Charleston Availability</a>
-                <a title="Request DMV photography availability" href="/index.html?location=dmv#contact" class="btn">Request DMV Availability</a>
-                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn">View Portfolio</a>
+                <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact" class="btn btn-primary">Check Charleston Availability</a>
+                <a title="Request DMV photography availability" href="/index.html?location=dmv#contact" class="btn btn-ghost">Request DMV Availability</a>
+                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn btn-ghost">View Portfolio</a>
             </div>
         </div>
     </section>
     </main>
 
-
     <!-- Back to Top Button -->
-    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
+    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page">&uarr;</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals by Joshua</h3>
+                    <p>Editorial photography for milestones &amp; moments. Serving Charleston SC + Northern VA / DMV.</p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="tel:+12403608465" style="display: block; margin-bottom: 0.5rem;">&#128222; (240) 360-8465</a>
+                        <a href="mailto:jbmsmusic05@gmail.com" style="display: block; margin-bottom: 0.5rem;">&#9993;&#65039; jbmsmusic05@gmail.com</a>
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128247; Instagram</a>
+                        <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128218; Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/gallery">Full Gallery</a></li>
+                        <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+                        <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+                        <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+                        <li><a href="/blog.html">Photography Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Visuals by Joshua. Charleston SC &amp; Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
-        // Checklist Toggle
-        function toggleCheck(item) {
-            const checkbox = item.querySelector('.checklist-checkbox');
-            const isPressed = item.getAttribute('aria-pressed') === 'true';
-            item.setAttribute('aria-pressed', String(!isPressed));
-            checkbox.classList.toggle('checked');
-        }
-
-        // FAQ Toggle
-        const faqItems = document.querySelectorAll('.faq-item');
-
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-
-            question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-
-                // Close all FAQs
-                faqItems.forEach(faqItem => {
-                    faqItem.classList.remove('active');
-                    const faqButton = faqItem.querySelector('.faq-question');
-                    if (faqButton) {
-                        faqButton.setAttribute('aria-expanded', 'false');
-                    }
-                });
-
-                // If the clicked item wasn't active, make it active
-                if (!isActive) {
-                    item.classList.add('active');
-                    question.setAttribute('aria-expanded', 'true');
-                }
-            });
-        });
-
         // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.add('show');
@@ -490,95 +833,28 @@
                 backToTopButton.classList.remove('show');
             }
         });
-
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Mobile navigation
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-
-        if (hamburger) {
-            const toggleMenu = () => {
-                navMenu.classList.toggle('active');
-            };
-
-            hamburger.addEventListener('click', toggleMenu);
-            hamburger.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    toggleMenu();
-                }
-            });
-
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', () => {
-                    navMenu.classList.remove('active');
-                });
-            });
-        }
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                if (this.getAttribute('href') !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth' });
+        // Scroll reveal for section headings, pull-quote, figure, and TOC
+        const revealTargets = document.querySelectorAll('.reveal');
+        if (revealTargets.length && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        revealObserver.unobserve(entry.target);
                     }
-                }
-            });
-        });
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+            revealTargets.forEach(el => revealObserver.observe(el));
+        } else {
+            revealTargets.forEach(el => el.classList.add('in-view'));
+        }
     </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Visuals by Joshua</h3>
-          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
-          <p style="margin-top: 1.5rem;">
-            <a href="tel:+12403608465">(240) 360-8465</a><br>
-            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
-          </p>
-          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
-            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery">Full Gallery</a></li>
-            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Locations</h4>
-          <ul>
-            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
-            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
-            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
-            <li><a href="/blog.html">Photography Blog</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>

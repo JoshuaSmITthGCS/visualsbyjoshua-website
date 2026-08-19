@@ -13,8 +13,8 @@
 
     <!-- OG Tags -->
     <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Visuals by Joshua">
-  <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Visuals by Joshua">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://visualsbyjoshua.com/blog/multicultural-student-graduation-night-photography/" />
     <meta property="og:title" content="Multicultural Student Graduation Night Photography | Charleston Event Photographer" />
     <meta property="og:description" content="Behind the scenes of a multicultural graduation celebration. How to photograph cultural details, group moments, and indoor events with mixed lighting." />
@@ -27,16 +27,12 @@
     <meta name="twitter:description" content="Behind the scenes of a multicultural graduation celebration. How to photograph cultural details, group moments, and indoor events with mixed lighting." />
     <meta name="twitter:image" content="https://visualsbyjoshua.com/newblogimages/multicultural-student-graduation-night-photography.webp" />
 
-    <!-- Fonts -->
+    <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Shared Blog Styles -->
-    <link rel="stylesheet" href="/styles.css">
-
-    <!-- Schema.org Article markup -->
+    <!-- Schema.org markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -68,325 +64,754 @@
         },
         "keywords": "multicultural graduation photographer, student graduation event photography Charleston, diversity graduation celebration photos, graduation event photographer Charleston SC"
     }
-    </script><style>
-        .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://visualsbyjoshua.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://visualsbyjoshua.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Multicultural Student Graduation Night Photography in Charleston",
+          "item": "https://visualsbyjoshua.com/blog/multicultural-student-graduation-night-photography/"
         }
-        @media (min-width: 800px) {
-          .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-          }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a multicultural graduation night celebration?", "acceptedAnswer": {"@type": "Answer", "text": "A multicultural graduation night is a ceremony organized by a university's multicultural center or student organizations to honor graduates from diverse cultural backgrounds. Students wear cultural sashes, stoles, and traditional attire. The events include cultural flags, music, speeches, and group celebrations. These are common at HBCUs and universities with strong diversity programs and carry deep personal significance for graduates and their families."}}, {"@type": "Question", "name": "How do you photograph group celebrations at graduation events?", "acceptedAnswer": {"@type": "Answer", "text": "Group graduation photos require quick direction and awareness of the room. Position yourself where the lighting is most even, have the tallest people step to the back, and shoot at a wider focal length like 24-35mm so nobody gets cut off. Take multiple frames because in any group of 10 or more people someone will blink. Use a flash bounced off the ceiling to fill shadows evenly across the group."}}, {"@type": "Question", "name": "What should I expect at a cultural graduation event as a photographer?", "acceptedAnswer": {"@type": "Answer", "text": "Expect a fast-paced environment with speeches, group photos, cultural performances, and candid celebrations happening simultaneously. Students will be wearing cultural sashes, stoles, and flags that are important to document. Coordinate with the event organizer beforehand to know the schedule and any cultural protocols. Arrive early to scout the venue lighting and identify the best angles."}}, {"@type": "Question", "name": "How much does graduation event photography cost in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Graduation event photography in Charleston typically ranges from $300 to $800 depending on the length of the event and deliverables. A two to three hour event with edited digital images usually falls in the $400-$600 range. Check out my Charleston photography pricing guide for a full breakdown."}}, {"@type": "Question", "name": "How do you handle mixed lighting at indoor graduation venues?", "acceptedAnswer": {"@type": "Answer", "text": "Indoor venues often mix fluorescent, tungsten, and natural light sources. I shoot in RAW format to correct white balance in post-processing and use an on-camera flash bounced off the ceiling for consistent, neutral light on subjects. Setting a custom white balance on location with a gray card gets closer in-camera and reduces editing time."}}]}</script>
+
+    <script src="/analytics.js" defer></script>
+
+    <style>
+        /* ========================================
+           RESET & BASE (matches homepage design system)
+           ======================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
         }
 
-        .tip-card {
-            background: var(--light);
-            padding: 30px;
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #2a2a2a;
+            background-color: #fcfbfa;
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s ease; }
+        a:hover { opacity: 0.7; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: #2a2a2a;
+            color: #fff;
+            padding: 12px 22px;
+            z-index: 1000;
+            border-radius: 0 0 8px 0;
+            font-size: 0.9rem;
+        }
+        .skip-link:focus { left: 0; }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(252, 251, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px clamp(20px, 5vw, 80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+
+        .nav-menu { display: flex; gap: 40px; list-style: none; }
+        .nav-menu a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2a2a2a;
+        }
+        .nav-menu a:hover { color: #be976d; opacity: 1; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+        }
+        .nav-toggle-bar {
+            width: 22px;
+            height: 2px;
+            background: #2a2a2a;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: #fcfbfa;
+                border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+                padding: 8px 0 16px;
+                transform: translateY(-12px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.25s ease;
+            }
+            .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-menu a { display: block; padding: 14px 20px; }
+            .nav-toggle { display: flex; }
+        }
+
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        p { font-size: 1rem; line-height: 1.8; }
+
+        .kicker {
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #be976d;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* ========================================
+           LAYOUT PRIMITIVES
+           ======================================== */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
             border-radius: 10px;
-            margin: 30px 0;
-            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        .btn-ghost {
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            color: #ffffff;
+            background: transparent;
+        }
+        .btn-ghost:hover { background: rgba(255, 255, 255, 0.15); opacity: 1; }
+        .btn-primary {
+            background: #be976d;
+            color: #ffffff;
+            border: 2px solid #be976d;
+        }
+        .btn-primary:hover {
+            background: #a67f5a;
+            border-color: #a67f5a;
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #2a2a2a;
+            border: 2px solid #2a2a2a;
+        }
+        .btn-secondary:hover { background: #2a2a2a; color: #fcfbfa; opacity: 1; }
+
+        /* ========================================
+           ARTICLE HERO
+           ======================================== */
+        .article-hero {
+            position: relative;
+            width: 100%;
+            min-height: 64vh;
+            margin-top: 80px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(20,18,15,0.15) 0%, rgba(20,18,15,0.55) 100%), url('/newblogimages/multicultural-student-graduation-night-photography.webp') center 35% / cover no-repeat;
+        }
+        @media (max-width: 768px) { .article-hero { margin-top: 68px; min-height: 56vh; } }
+
+        .article-hero-content {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            width: 100%;
+            padding: 60px clamp(20px, 5vw, 80px) 56px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
-        .pro-tip {
+        .breadcrumb {
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 18px;
+        }
+        .breadcrumb a { color: #ffffff; }
+        .breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+        .article-hero h1 {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            font-style: italic;
+            letter-spacing: -0.01em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            max-width: 900px;
+            margin-bottom: 1rem;
+        }
+
+        .article-hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 300;
+            max-width: 640px;
+            opacity: 0.95;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            margin-top: 30px;
+            font-size: 0.8125rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* ========================================
+           ARTICLE BODY
+           ======================================== */
+        .article-body {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
+        }
+
+        .article-body h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-style: italic;
+            margin: 3.25rem 0 1.25rem;
+            scroll-margin-top: 96px;
+        }
+        .article-body h2:first-of-type { margin-top: 0; }
+
+        .article-body h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #2a2a2a;
+            margin: 2.25rem 0 1rem;
+            padding-left: 16px;
+            border-left: 3px solid #be976d;
+        }
+
+        /* First paragraph after a heading reads as a lede: slightly heavier weight
+           gives skimmers a scan-anchor without adding another visual element. */
+        .article-body h2 + p {
+            font-weight: 500;
+            font-size: 1.0625rem;
+            color: #2a2a2a;
+        }
+
+        .article-body p { margin-bottom: 1.5rem; color: #3a3630; }
+
+        .article-body ul {
+            margin: 0 0 1.75rem 1.25rem;
+            line-height: 2;
+            color: #3a3630;
+        }
+
+        .article-body a {
+            color: #7d5732;
+            border-bottom: 1px solid rgba(190, 151, 109, 0.5);
+        }
+        .article-body a:hover { opacity: 1; border-color: #be976d; }
+
+        .article-body strong { font-weight: 600; color: #2a2a2a; }
+
+        .article-figure { margin: 3rem 0; text-align: center; }
+        .article-figure img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            margin: 0 auto;
+        }
+        .article-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.875rem;
+            font-style: italic;
+            color: #63594e;
+        }
+
+        /* ========================================
+           PULL QUOTE
+           ======================================== */
+        .pull-quote {
+            margin: 3.5rem 0;
+            padding-left: 28px;
+            border-left: 3px solid #be976d;
+        }
+        .pull-quote p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+            line-height: 1.35;
+            color: #2a2a2a;
+            margin: 0;
+        }
+
+        /* ========================================
+           COLLAPSIBLE SECTIONS (native <details>, no JS dependency)
+           ======================================== */
+        .toc-box {
+            margin-bottom: 3rem;
+            padding: 22px 26px;
             background: #f5f3f0;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
-        }
-
-        .pro-tip h3 {
-            color: #856545;
-            margin-bottom: 10px;
-        }
-
-        .faq-section {
-            margin: 60px 0;
-        }
-
-        .faq-item {
-            background: var(--light);
-            padding: 25px 30px;
             border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: var(--shadow);
         }
-
-        .faq-item h3 {
-            color: var(--primary);
-            margin-bottom: 12px;
+        .toc-box summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
             font-size: 1.15rem;
+            color: #2a2a2a;
+        }
+        .toc-box summary::-webkit-details-marker { display: none; }
+        .toc-box summary::after {
+            content: '+';
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .toc-box[open] summary::after { transform: rotate(45deg); }
+        .toc-list {
+            list-style: none;
+            margin: 18px 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 24px;
+        }
+        @media (max-width: 560px) { .toc-list { grid-template-columns: 1fr; } }
+        .toc-list a {
+            font-size: 0.9375rem;
+            color: #5a564e;
+            border-bottom: none;
+        }
+        .toc-list a:hover { color: #7d5732; opacity: 1; }
+
+        /* ========================================
+           FAQ
+           ======================================== */
+        .faq-item {
+            padding: 4px 0;
+            border-top: 1px solid rgba(42, 42, 42, 0.1);
+        }
+        .faq-item:last-child { border-bottom: 1px solid rgba(42, 42, 42, 0.1); }
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            flex-shrink: 0;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .faq-item[open] summary::after { transform: rotate(45deg); }
+        .faq-item p { margin: 0 0 22px; color: #5a564e; }
+
+        /* ========================================
+           CTA BANNER
+           ======================================== */
+        .cta-banner {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: clamp(60px, 8vw, 90px) 0;
+            text-align: center;
+        }
+        .cta-banner .container { max-width: 700px; }
+        .cta-banner h2 { color: #ffffff; font-style: italic; margin-bottom: 1.25rem; }
+        .cta-banner p { color: rgba(255, 255, 255, 0.85); margin-bottom: 2rem; }
+        .cta-banner p a { color: #d9b48f; border-bottom: 1px solid rgba(217, 180, 143, 0.5); }
+        .cta-banner p a:hover { opacity: 1; }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer { background: #2a2a2a; color: #ffffff; padding: 60px 0 110px; }
+        @media (min-width: 769px) { .footer { padding-bottom: 30px; } }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p { font-size: 0.9375rem; opacity: 0.8; }
+        .footer-links h4 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { font-size: 0.9375rem; opacity: 0.8; transition: opacity 0.3s ease; }
+        .footer-links a:hover { opacity: 1; }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+            font-size: 0.875rem;
+            opacity: 0.7;
         }
 
-        .faq-item p {
-            line-height: 1.7;
-            color: #5a5a5a;
+        /* ========================================
+           BACK TO TOP
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 90;
         }
+        .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .back-to-top:hover { opacity: 0.85; background: #be976d; }
 
-        .location-highlight {
-            background: var(--light);
-            padding: 30px;
-            border-radius: 10px;
-            margin: 40px 0;
-            box-shadow: var(--shadow);
+        /* ========================================
+           SCROLL REVEAL
+           ======================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
         }
     </style>
-  <script src="/analytics.js" defer></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://visualsbyjoshua.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://visualsbyjoshua.com/blog.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Multicultural Student Graduation Night Photography in Charleston",
-      "item": "https://visualsbyjoshua.com/blog/multicultural-student-graduation-night-photography/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a multicultural graduation night celebration?", "acceptedAnswer": {"@type": "Answer", "text": "A multicultural graduation night is a ceremony organized by a university's multicultural center or student organizations to honor graduates from diverse cultural backgrounds. Students wear cultural sashes, stoles, and traditional attire. The events include cultural flags, music, speeches, and group celebrations. These are common at HBCUs and universities with strong diversity programs and carry deep personal significance for graduates and their families."}}, {"@type": "Question", "name": "How do you photograph group celebrations at graduation events?", "acceptedAnswer": {"@type": "Answer", "text": "Group graduation photos require quick direction and awareness of the room. Position yourself where the lighting is most even, have the tallest people step to the back, and shoot at a wider focal length like 24-35mm so nobody gets cut off. Take multiple frames because in any group of 10 or more people someone will blink. Use a flash bounced off the ceiling to fill shadows evenly across the group."}}, {"@type": "Question", "name": "What should I expect at a cultural graduation event as a photographer?", "acceptedAnswer": {"@type": "Answer", "text": "Expect a fast-paced environment with speeches, group photos, cultural performances, and candid celebrations happening simultaneously. Students will be wearing cultural sashes, stoles, and flags that are important to document. Coordinate with the event organizer beforehand to know the schedule and any cultural protocols. Arrive early to scout the venue lighting and identify the best angles."}}, {"@type": "Question", "name": "How much does graduation event photography cost in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Graduation event photography in Charleston typically ranges from $300 to $800 depending on the length of the event and deliverables. A two to three hour event with edited digital images usually falls in the $400-$600 range. Check out my Charleston photography pricing guide for a full breakdown."}}, {"@type": "Question", "name": "How do you handle mixed lighting at indoor graduation venues?", "acceptedAnswer": {"@type": "Answer", "text": "Indoor venues often mix fluorescent, tungsten, and natural light sources. I shoot in RAW format to correct white balance in post-processing and use an on-camera flash bounced off the ceiling for consistent, neutral light on subjects. Setting a custom white balance on location with a gray card gets closer in-camera and reduces editing time."}}]}</script>
-  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/blog/photography-pricing/">Pricing</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
-        <li><a href="/#contact">Book Now</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </nav>
+    <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
 
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Visuals by Joshua</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/blog/photography-pricing/">Pricing</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+                <li><a href="/#contact">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Blog Hero Section -->
-    <section class="article-hero hero-bg" style="--bg-url: url('/newblogimages/multicultural-student-graduation-night-photography.webp');" id="main">
-        <div class="blog-hero-content">
+    <!-- Article Hero -->
+    <section class="article-hero" id="main">
+        <div class="article-hero-content">
             <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Multicultural Student Graduation Night Photography in Charleston</div>
-          <h1 class="blog-hero-title">Multicultural Student Graduation Night Photography in Charleston</h1>
-            <p class="blog-hero-subtitle">Capturing cultural pride, group celebrations, and the energy of a multicultural graduation event at a university campus</p>
-
-            <div class="blog-meta">
-                <div class="meta-item">
-                    <i class="fas fa-user"></i>
-                    <span>By Joshua Smith</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-calendar"></i>
-                    <span>November 21, 2025</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i>
-                    <span>7 min read</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Charleston, SC</span>
-                </div>
+            <h1>Multicultural Student Graduation Night Photography in Charleston</h1>
+            <p class="article-hero-subtitle">Capturing cultural pride, group celebrations, and the energy of a multicultural graduation event at a university campus</p>
+            <div class="article-meta">
+                <span>By Joshua Smith</span>
+                <span>November 21, 2025</span>
+                <span>7 min read</span>
+                <span>Charleston, SC</span>
             </div>
         </div>
     </section>
 
-    <!-- Blog Content -->
-    <section class="article-content">
-        <div class="blog-container">
+    <main>
+    <article class="article-body">
 
-            <!-- Introduction -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">Why Multicultural Graduation Nights Deserve Their Own Photographer</h2>
-                    <p class="blog-text">Graduation is not one moment. It is a whole season of celebrations, and for a lot of students, the multicultural graduation night is the one that actually means the most. This is where they get to celebrate with the communities that held them together through four years of late nights, tough semesters, and being far from home. It is personal in a way that the big commencement ceremony cannot be.</p>
+        <details class="toc-box reveal">
+            <summary>In this guide</summary>
+            <ul class="toc-list">
+                <li><a href="#why-graduation-nights-matter">Why these nights deserve their own photographer</a></li>
+                <li><a href="#what-is-a-multicultural-graduation-night">What a multicultural graduation night is</a></li>
+                <li><a href="#group-vs-individual-photos">Group celebrations vs. individual portraits</a></li>
+                <li><a href="#mixed-lighting">Handling mixed indoor lighting</a></li>
+                <li><a href="#cultural-details">Capturing cultural details</a></li>
+                <li><a href="#working-with-organizers">Working with event organizers</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </details>
 
-                    <p class="blog-text">I photographed a <strong>multicultural student graduation night</strong> on November 21, 2025, at a university multicultural center in Charleston. The room was packed. Cultural sashes and stoles in every color. Flags draped on tables. HBCU chalkboard signs set up for photo ops. Students from different backgrounds all in the same room celebrating the same thing: they made it. My job was to capture all of that without slowing any of it down.</p>
+        <h2 id="why-graduation-nights-matter" class="reveal">Why Multicultural Graduation Nights Deserve Their Own Photographer</h2>
+        <p>Graduation is not one moment. It is a whole season of celebrations, and for a lot of students, the multicultural graduation night is the one that actually means the most. This is where they get to celebrate with the communities that held them together through four years of late nights, tough semesters, and being far from home. It is personal in a way that the big commencement ceremony cannot be.</p>
 
-                    <p class="blog-text">If you are an event organizer, a student group, or a university looking for a <a title="Book Charleston event photography with Joshua" href="/index.html?service=event&location=charleston#contact">Charleston event photographer</a>, this post breaks down what goes into shooting these events and why the details matter more than you think.</p>
-                </div>
-            </div>
+        <p>I photographed a <strong>multicultural student graduation night</strong> on November 21, 2025, at a university multicultural center in Charleston. The room was packed. Cultural sashes and stoles in every color. Flags draped on tables. HBCU chalkboard signs set up for photo ops. Students from different backgrounds all in the same room celebrating the same thing: they made it. My job was to capture all of that without slowing any of it down.</p>
 
-            <!-- Featured Image -->
-            <div style="margin: 40px 0; max-height: 500px; overflow: hidden; border-radius: 10px; box-shadow: var(--shadow);">
-                <picture>
-                  <source type="image/avif" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.avif 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.avif 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.avif 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <source type="image/webp" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.webp 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.webp 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.webp 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <img src="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.jpg" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.jpg 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.jpg 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.jpg 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="1206" height="2622" alt="Multicultural student graduation night celebration with cultural sashes and group photos in Charleston SC by Joshua Smith photographer" style="width: 100%; height: 500px; object-fit: cover; border-radius: 10px;" loading="lazy" decoding="async">
-                </picture>
-            </div>
+        <p>If you are an event organizer, a student group, or a university looking for a <a title="Book Charleston event photography with Joshua" href="/index.html?service=event&location=charleston#contact">Charleston event photographer</a>, this post breaks down what goes into shooting these events and why the details matter more than you think.</p>
 
-            <!-- What Multicultural Graduations Are -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">What Is a Multicultural Graduation Night and Why Does It Matter?</h2>
-                    <p class="blog-text">A multicultural graduation night is a ceremony organized by a university's multicultural center or student organizations to honor graduates from diverse cultural, ethnic, and racial backgrounds. These are separate from the main commencement ceremony and focus on celebrating the cultural identities that shaped each student's college experience.</p>
+        <figure class="article-figure reveal">
+            <picture>
+                <source type="image/avif" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.avif 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.avif 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.avif 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <source type="image/webp" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.webp 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.webp 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.webp 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <img src="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.jpg" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.jpg 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.jpg 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.jpg 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)" width="1206" height="2622" alt="Multicultural student graduation night celebration with cultural sashes and group photos in Charleston SC by Joshua Smith photographer" loading="lazy" decoding="async">
+            </picture>
+        </figure>
 
-                    <p class="blog-text">Students wear cultural stoles and sashes that represent their heritage, nationality, Greek letter organizations, or academic honors. You will see flags from different countries displayed around the venue. There are usually speeches from student leaders, faculty, and sometimes family members. The atmosphere is more intimate than a stadium commencement. People are laughing, crying, hugging. The energy in the room is real in a way that formal ceremonies often are not.</p>
+        <h2 id="what-is-a-multicultural-graduation-night" class="reveal">What Is a Multicultural Graduation Night and Why Does It Matter?</h2>
+        <p>A multicultural graduation night is a ceremony organized by a university's multicultural center or student organizations to honor graduates from diverse cultural, ethnic, and racial backgrounds. These are separate from the main commencement ceremony and focus on celebrating the cultural identities that shaped each student's college experience.</p>
 
-                    <p class="blog-text">At HBCUs and universities with strong multicultural programs, these events carry serious weight. For first-generation college graduates especially, this night is a milestone not just for them but for their entire family. That context matters when you are behind the camera. You are not just documenting an event. You are preserving something that means everything to the people in that room.</p>
+        <p>Students wear cultural stoles and sashes that represent their heritage, nationality, Greek letter organizations, or academic honors. You will see flags from different countries displayed around the venue. There are usually speeches from student leaders, faculty, and sometimes family members. The atmosphere is more intimate than a stadium commencement. People are laughing, crying, hugging. The energy in the room is real in a way that formal ceremonies often are not.</p>
 
-                    <p class="blog-text">As a photographer, understanding the significance is step one. You cannot capture what you do not respect. I went in knowing this was not a casual mixer. It was a celebration of identity, perseverance, and community. Every frame needed to reflect that.</p>
-                </div>
-            </div>
+        <p>At HBCUs and universities with strong multicultural programs, these events carry serious weight. For first-generation college graduates especially, this night is a milestone not just for them but for their entire family. That context shapes every decision behind the camera.</p>
 
-            <!-- Group Celebrations vs Individual Portraits -->
-            <div class="tip-card">
-                <h2 class="section-title">How Do You Photograph Group Celebrations vs Individual Portraits at Graduation Events?</h2>
-                <p class="blog-text">Multicultural graduation nights move fast. You are not working with a shot list and a calm subject standing in front of a backdrop. You are working a room where group photos form spontaneously, break apart, and reform with different people in the span of thirty seconds. Your approach has to match that pace.</p>
+        <blockquote class="pull-quote reveal">
+            <p>You are not just documenting an event. You are preserving something that means everything to the people in that room.</p>
+        </blockquote>
 
-                <p class="blog-text">For <strong>group celebrations</strong>, I stay on my feet and keep a wide lens ready. A 24-70mm at around 28-35mm lets me fit groups of 8 to 15 people without stepping so far back that I lose the intimacy of the moment. I position myself where the ambient light is most even and direct groups to face that direction when possible. Tallest people to the back, shorter in front, everyone squeezed in tight. Take at least three frames per group because someone always blinks.</p>
+        <p>As a photographer, understanding the significance is step one. You cannot capture what you do not respect. I went in knowing this was not a casual mixer. It was a celebration of identity, perseverance, and community. Every frame needed to reflect that.</p>
 
-                <p class="blog-text">For <strong>individual portraits</strong>, I look for moments between the planned activities. A graduate adjusting their stole. Someone looking at their phone with a smile because a family member just texted congratulations. Two friends holding up their cultural sashes together. These candid moments tell the story of the night better than any posed shot. I keep my aperture around f/2.8 to f/4 to separate individuals from the busy background.</p>
+        <h2 id="group-vs-individual-photos" class="reveal">How Do You Photograph Group Celebrations vs Individual Portraits at Graduation Events?</h2>
+        <p>Multicultural graduation nights move fast. You are not working with a shot list and a calm subject standing in front of a backdrop. You are working a room where group photos form spontaneously, break apart, and reform with different people in the span of thirty seconds. Your approach has to match that pace.</p>
 
-                <p class="blog-text">The key is switching between these two modes constantly. Wide for groups, tight for individuals. Flash for groups in dim corners, natural light for candid moments near windows or well-lit areas. You need to be comfortable adjusting on the fly because this kind of event does not wait for you to figure out your settings.</p>
-            </div>
+        <p>For <strong>group celebrations</strong>, I stay on my feet and keep a wide lens ready. A 24-70mm at around 28-35mm lets me fit groups of 8 to 15 people without stepping so far back that I lose the intimacy of the moment. I position myself where the ambient light is most even and direct groups to face that direction when possible. Tallest people to the back, shorter in front, everyone squeezed in tight. Take at least three frames per group because someone always blinks.</p>
 
-            <!-- Mixed Lighting -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">How Do You Handle Mixed Lighting at Indoor Graduation Venues?</h2>
-                    <p class="blog-text">Indoor event lighting is one of the biggest challenges in <strong>graduation event photography</strong>. University multicultural centers are not photography studios. You get fluorescent overhead panels casting green, tungsten accent lights pushing warm orange, maybe some natural light from windows on one side of the room, and string lights or colored decorations adding their own tint. All of that hits your sensor at the same time.</p>
+        <p>For <strong>individual portraits</strong>, I look for moments between the planned activities. A graduate adjusting their stole. Someone looking at their phone with a smile because a family member just texted congratulations. Two friends holding up their cultural sashes together. These candid moments tell the story of the night better than any posed shot. I keep my aperture around f/2.8 to f/4 to separate individuals from the busy background.</p>
 
-                    <p class="blog-text">Here is how I deal with it. First, I shoot in RAW. Always. RAW files give you full control over <a title="Understanding white balance in mixed lighting" href="https://helpx.adobe.com/lightroom-classic/using/white-balance.html" target="_blank" rel="noopener">white balance in post-processing</a>. If I shot JPEG and the white balance was off, those skin tones are gone. With RAW I can correct color casts frame by frame if needed.</p>
+        <p>The key is switching between these two modes constantly. Wide for groups, tight for individuals. Flash for groups in dim corners, natural light for candid moments near windows or well-lit areas. You need to be comfortable adjusting on the fly because this kind of event does not wait for you to figure out your settings.</p>
 
-                    <p class="blog-text">Second, I set a custom white balance on location. I carry a gray card and take a reference shot under the dominant light source in the room. That gets me close in-camera and reduces the amount of correction I need later. For this event, the overhead fluorescents were the primary light, so I set my Kelvin around 4200K and adjusted from there.</p>
+        <h2 id="mixed-lighting" class="reveal">How Do You Handle Mixed Lighting at Indoor Graduation Venues?</h2>
+        <p>Indoor event lighting is one of the biggest challenges in <strong>graduation event photography</strong>. University multicultural centers are not photography studios. You get fluorescent overhead panels casting green, tungsten accent lights pushing warm orange, maybe some natural light from windows on one side of the room, and string lights or colored decorations adding their own tint. All of that hits your sensor at the same time.</p>
 
-                    <p class="blog-text">Third, I use an on-camera flash bounced off the ceiling. Bouncing the flash creates a broad, even light source that overpowers the mixed ambient light and gives me consistent, neutral color on skin. Direct flash looks harsh and creates hard shadows. Bounced flash wraps around the subject and fills the room more naturally. I keep the flash at about minus one stop of compensation so it fills without overpowering the ambient atmosphere of the event.</p>
+        <p>Here is how I deal with it. First, I shoot in RAW. Always. RAW files give you full control over <a title="Understanding white balance in mixed lighting" href="https://helpx.adobe.com/lightroom-classic/using/white-balance.html" target="_blank" rel="noopener">white balance in post-processing</a>. If I shot JPEG and the white balance was off, those skin tones are gone. With RAW I can correct color casts frame by frame if needed.</p>
 
-                    <p class="blog-text">The goal is photos where skin tones look accurate regardless of what color the overhead lights are casting. That takes a combination of good technique in-camera and careful editing after the fact.</p>
-                </div>
-            </div>
+        <p>Second, I set a custom white balance on location. I carry a gray card and take a reference shot under the dominant light source in the room. That gets me close in-camera and reduces the amount of correction I need later. For this event, the overhead fluorescents were the primary light, so I set my Kelvin around 4200K and adjusted from there.</p>
 
-            <!-- Cultural Details -->
-            <div class="tip-card">
-                <h2 class="section-title">Why Capturing Cultural Details at Graduation Events Matters for the Final Gallery</h2>
-                <p class="blog-text">The details are what make a multicultural graduation night different from any other event. Cultural stoles and sashes. Flags representing home countries. HBCU signs. Traditional patterns and colors. If you do not photograph those details, you missed the point of the event.</p>
+        <p>Third, I use an on-camera flash bounced off the ceiling. Bouncing the flash creates a broad, even light source that overpowers the mixed ambient light and gives me consistent, neutral color on skin. Direct flash looks harsh and creates hard shadows. Bounced flash wraps around the subject and fills the room more naturally. I keep the flash at about minus one stop of compensation so it fills without overpowering the ambient atmosphere of the event.</p>
 
-                <p class="blog-text">I dedicate time at the beginning of the event, before it gets too crowded, to photograph the setup. The table displays with cultural flags and cloths. The chalkboard signs that say "HBCU Grad" or represent specific organizations. The decorations that the student committee spent hours putting together. Those detail shots serve two purposes: they tell the full story of the event in the final gallery, and they show the organizers that you paid attention to their work.</p>
+        <p>The goal is photos where skin tones look accurate regardless of what color the overhead lights are casting. That takes a combination of good technique in-camera and careful editing after the fact.</p>
 
-                <p class="blog-text">During the event, I focus on <strong>close-up shots of stoles and sashes</strong> as students wear them. A tight crop on a cultural sash draped over a graduation gown tells a story in one frame. The embroidery, the colors, the way it sits against the black fabric. These are the photos that end up on mantels and in frames because they capture something deeply personal.</p>
+        <h2 id="cultural-details" class="reveal">Why Capturing Cultural Details at Graduation Events Matters for the Final Gallery</h2>
+        <p>The details are what make a multicultural graduation night different from any other event. Cultural stoles and sashes. Flags representing home countries. HBCU signs. Traditional patterns and colors. If you do not photograph those details, you missed the point of the event.</p>
 
-                <p class="blog-text">I also watch for moments where students interact with these cultural elements. Someone tying a friend's stole. A group holding up their country's flag together. A graduate showing their parents the sash they earned. Those are the shots that make a multicultural graduation gallery worth scrolling through. If you want to see how I approach detail work in other event settings, check out my <a title="Read the event photography checklist" href="/blog/event-photography-checklist-smithsonian-folklife/">event photography checklist</a> post.</p>
-            </div>
+        <p>I dedicate time at the beginning of the event, before it gets too crowded, to photograph the setup. The table displays with cultural flags and cloths. The chalkboard signs that say "HBCU Grad" or represent specific organizations. The decorations that the student committee spent hours putting together. Those detail shots serve two purposes: they tell the full story of the event in the final gallery, and they show the organizers that you paid attention to their work.</p>
 
-            <!-- Pro Tip -->
-            <div class="pro-tip">
-                <h3><i class="fas fa-lightbulb"></i> Pro Tip: Coordinate With the Event Organizer Before the Night</h3>
-                <p>Reach out to the student group or multicultural center coordinator at least a week before the event. Ask for the schedule, key moments they want documented, any cultural protocols to be aware of, and where the main activities will happen in the room. Knowing that the keynote speech happens at 7:15 and the group photo is at 8:00 lets you position yourself in advance instead of scrambling when things start. It also shows the organizers you take their event seriously, which leads to better cooperation during the night and repeat bookings for future years.</p>
-            </div>
+        <p>During the event, I focus on <strong>close-up shots of stoles and sashes</strong> as students wear them. A tight crop on a cultural sash draped over a graduation gown tells a story in one frame. The embroidery, the colors, the way it sits against the black fabric. These are the photos that end up on mantels and in frames because they capture something deeply personal.</p>
 
-            <!-- Working With Event Organizers -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">How Should a Photographer Work With University Event Organizers?</h2>
-                    <p class="blog-text">University events are not like private shoots. You are working within someone else's program. There is a schedule. There are speakers. There are moments that are sacred to the community and moments that are casual. Understanding the difference is what separates a good event photographer from someone who just showed up with a camera.</p>
+        <p>I also watch for moments where students interact with these cultural elements. Someone tying a friend's stole. A group holding up their country's flag together. A graduate showing their parents the sash they earned. Those are the shots that make a multicultural graduation gallery worth scrolling through. If you want to see how I approach detail work in other event settings, check out my <a title="Read the event photography checklist" href="/blog/event-photography-checklist-smithsonian-folklife/">event photography checklist</a> post.</p>
 
-                    <p class="blog-text">I always meet with the organizer or main point of contact before the event starts. We walk the room together. They show me where the podium will be, where the photo backdrop is set up, where groups will gather. I identify my shooting positions and note where the light is best. This five-minute walkthrough saves me from missing key moments later because I was in the wrong part of the room.</p>
+        <h3>Pro Tip: Coordinate With the Event Organizer Before the Night</h3>
+        <p>Reach out to the student group or multicultural center coordinator at least a week before the event. Ask for the schedule, key moments they want documented, any cultural protocols to be aware of, and where the main activities will happen in the room. Knowing that the keynote speech happens at 7:15 and the group photo is at 8:00 lets you position yourself in advance instead of scrambling when things start. It also shows the organizers you take their event seriously, which leads to better cooperation during the night and repeat bookings for future years.</p>
 
-                    <p class="blog-text">During the event, I stay visible but not intrusive. I do not walk in front of the podium during a speech. I do not interrupt group photos that are happening organically to redirect people for my shot. I read the room and shoot around what is already happening. If students are having a moment, I capture it from a respectful distance with a longer lens rather than pushing in close.</p>
+        <h2 id="working-with-organizers" class="reveal">How Should a Photographer Work With University Event Organizers?</h2>
+        <p>University events are not like private shoots. You are working within someone else's program. There is a schedule. There are speakers. There are moments that are sacred to the community and moments that are casual. Understanding the difference is what separates a good event photographer from someone who just showed up with a camera.</p>
 
-                    <p class="blog-text">After the event, I deliver a gallery that covers the full arc of the night: the setup, the early arrivals, the speeches, the group photos, the candid celebrations, and the final moments. A complete gallery is what gets you hired again the next year. The multicultural center wants to use those images for their social media, their annual reports, and their recruitment materials. Give them a gallery they can actually use for all of that.</p>
-                </div>
-            </div>
+        <p>I always meet with the organizer or main point of contact before the event starts. We walk the room together. They show me where the podium will be, where the photo backdrop is set up, where groups will gather. I identify my shooting positions and note where the light is best. This five-minute walkthrough saves me from missing key moments later because I was in the wrong part of the room.</p>
 
-            <!-- What Gear Works -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">What Gear Works Best for Indoor Graduation Event Photography?</h3>
-                    <p class="blog-text">For this multicultural graduation night I carried two lenses and one flash. That is it. Indoor events require mobility, and hauling a bag full of specialty lenses slows you down.</p>
+        <p>During the event, I stay visible but not intrusive. I do not walk in front of the podium during a speech. I do not interrupt group photos that are happening organically to redirect people for my shot. I read the room and shoot around what is already happening. If students are having a moment, I capture it from a respectful distance with a longer lens rather than pushing in close.</p>
 
-                    <p class="blog-text">My main lens was a <a title="24-70mm f/2.8 lens overview" href="https://www.dpreview.com/lenses" target="_blank" rel="noopener">24-70mm f/2.8</a>. This covers the range you need for both wide room shots and tighter individual frames. At 24mm I can capture a group of 20 people in a semi-circle without backing into a wall. At 70mm I can isolate a speaker at the podium from across the room. The f/2.8 aperture lets in enough light to shoot at reasonable ISOs even when the venue lighting is dim.</p>
+        <p>After the event, I deliver a gallery that covers the full arc of the night: the setup, the early arrivals, the speeches, the group photos, the candid celebrations, and the final moments. A complete gallery is what gets you hired again the next year. The multicultural center wants to use those images for their social media, their annual reports, and their recruitment materials. Give them a gallery they can actually use for all of that.</p>
 
-                    <p class="blog-text">My second lens was a 70-200mm f/2.8 for moments when I could not physically get closer. Speeches, performances, reactions from across the room. The compression at 200mm also gives you clean headshots with blurred backgrounds even in a cluttered event space.</p>
+        <h3>What Gear Works Best for Indoor Graduation Event Photography?</h3>
+        <p>For this multicultural graduation night I carried two lenses and one flash. That is it. Indoor events require mobility, and hauling a bag full of specialty lenses slows you down.</p>
 
-                    <p class="blog-text">For flash, I used a speedlight mounted on-camera with a bounce diffuser. Bounced off the ceiling at about 45 degrees, it creates soft, even light that works for both groups and individuals. I kept it in TTL mode with minus one stop compensation so it fills shadows without making the flash obvious in the final image. The goal is photos that look naturally lit even when they are not.</p>
-                </div>
-            </div>
+        <p>My main lens was a <a title="24-70mm f/2.8 lens overview" href="https://www.dpreview.com/lenses" target="_blank" rel="noopener">24-70mm f/2.8</a>. This covers the range you need for both wide room shots and tighter individual frames. At 24mm I can capture a group of 20 people in a semi-circle without backing into a wall. At 70mm I can isolate a speaker at the podium from across the room. The f/2.8 aperture lets in enough light to shoot at reasonable ISOs even when the venue lighting is dim.</p>
 
-            <!-- FAQ Section -->
-            <div class="faq-section">
-                <h2 class="section-title">Frequently Asked Questions</h2>
+        <p>My second lens was a 70-200mm f/2.8 for moments when I could not physically get closer. Speeches, performances, reactions from across the room. The compression at 200mm also gives you clean headshots with blurred backgrounds even in a cluttered event space.</p>
 
-                <div class="faq-item">
-                    <h3>What is a multicultural graduation night celebration?</h3>
-                    <p>A multicultural graduation night is a ceremony organized by a university's multicultural center or student organizations to honor graduates from diverse cultural backgrounds. Students wear cultural sashes, stoles, and traditional attire. The events include cultural flags, music, speeches, and group celebrations. These are common at HBCUs and universities with strong diversity programs and carry deep personal significance for graduates and their families.</p>
-                </div>
+        <p>For flash, I used a speedlight mounted on-camera with a bounce diffuser. Bounced off the ceiling at about 45 degrees, it creates soft, even light that works for both groups and individuals. I kept it in TTL mode with minus one stop compensation so it fills shadows without making the flash obvious in the final image. The goal is photos that look naturally lit even when they are not.</p>
 
-                <div class="faq-item">
-                    <h3>How do you photograph group celebrations at graduation events?</h3>
-                    <p>Group graduation photos require quick direction and awareness of the room. Position yourself where the lighting is most even, have the tallest people step to the back, and shoot at a wider focal length like 24-35mm so nobody gets cut off. Take multiple frames because in any group of 10 or more people someone will blink. Use a flash bounced off the ceiling to fill shadows evenly across the group.</p>
-                </div>
+        <h2 id="faq" class="reveal">Frequently Asked Questions</h2>
 
-                <div class="faq-item">
-                    <h3>What should I expect at a cultural graduation event as a photographer?</h3>
-                    <p>Expect a fast-paced environment with speeches, group photos, cultural performances, and candid celebrations happening simultaneously. Students will be wearing cultural sashes, stoles, and flags that are important to document. Coordinate with the event organizer beforehand to know the schedule and any cultural protocols. Arrive early to scout the venue lighting and identify the best angles.</p>
-                </div>
+        <details class="faq-item">
+            <summary>What is a multicultural graduation night celebration?</summary>
+            <p>A multicultural graduation night is a ceremony organized by a university's multicultural center or student organizations to honor graduates from diverse cultural backgrounds. Students wear cultural sashes, stoles, and traditional attire. The events include cultural flags, music, speeches, and group celebrations. These are common at HBCUs and universities with strong diversity programs and carry deep personal significance for graduates and their families.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How do you photograph group celebrations at graduation events?</summary>
+            <p>Group graduation photos require quick direction and awareness of the room. Position yourself where the lighting is most even, have the tallest people step to the back, and shoot at a wider focal length like 24-35mm so nobody gets cut off. Take multiple frames because in any group of 10 or more people someone will blink. Use a flash bounced off the ceiling to fill shadows evenly across the group.</p>
+        </details>
+        <details class="faq-item">
+            <summary>What should I expect at a cultural graduation event as a photographer?</summary>
+            <p>Expect a fast-paced environment with speeches, group photos, cultural performances, and candid celebrations happening simultaneously. Students will be wearing cultural sashes, stoles, and flags that are important to document. Coordinate with the event organizer beforehand to know the schedule and any cultural protocols. Arrive early to scout the venue lighting and identify the best angles.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How much does graduation event photography cost in Charleston?</summary>
+            <p>Graduation event photography in Charleston typically ranges from $300 to $800 depending on the length of the event and deliverables. A two to three hour event with edited digital images usually falls in the $400-$600 range. Check out my <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston photography pricing guide</a> for a full breakdown.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How do you handle mixed lighting at indoor graduation venues?</summary>
+            <p>Indoor venues often mix fluorescent, tungsten, and natural light sources. I shoot in RAW format to correct white balance in post-processing and use an on-camera flash bounced off the ceiling for consistent, neutral light on subjects. Setting a custom white balance on location with a gray card gets closer in-camera and reduces editing time.</p>
+        </details>
 
-                <div class="faq-item">
-                    <h3>How much does graduation event photography cost in Charleston?</h3>
-                    <p>Graduation event photography in Charleston typically ranges from $300 to $800 depending on the length of the event and deliverables. A two to three hour event with edited digital images usually falls in the $400-$600 range. Check out my <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston photography pricing guide</a> for a full breakdown.</p>
-                </div>
+        <h2 id="book-a-photographer" class="reveal">Book a Graduation Event Photographer in Charleston</h2>
+        <p>I photograph graduation events across Charleston, from multicultural celebrations and commencement ceremonies to individual graduation portraits. DMV coverage is available by request. If your student organization, university department, or multicultural center needs a photographer who understands the importance of these events, let's talk. Check out my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more of my event and graduation work, or <a title="Contact Joshua Smith about graduation event photography" href="/index.html#contact">request event coverage</a>.</p>
 
-                <div class="faq-item">
-                    <h3>How do you handle mixed lighting at indoor graduation venues?</h3>
-                    <p>Indoor venues often mix fluorescent, tungsten, and natural light sources. I shoot in RAW format to correct white balance in post-processing and use an on-camera flash bounced off the ceiling for consistent, neutral light on subjects. Setting a custom white balance on location with a gray card gets closer in-camera and reduces editing time.</p>
-                </div>
-            </div>
+        <p>You can also visit my <a title="View Charleston event photography services" href="/charleston-event-photographer/">Charleston event photographer</a> page for packages and availability, compare rates in the <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston pricing guide</a>, or read my post on <a title="Read the Charleston graduation photography guide" href="/blog/charleston-graduation-photography/">Charleston graduation photography</a>.</p>
 
-            <!-- CTA Section -->
-            <div class="location-highlight">
-                <h2 class="section-title">Book a Graduation Event Photographer in Charleston</h2>
-                <p class="blog-text">I photograph graduation events across Charleston, from multicultural celebrations and commencement ceremonies to individual graduation portraits. DMV coverage is available by request. If your student organization, university department, or multicultural center needs a photographer who understands the importance of these events, let's talk. Check out my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="external-link" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more of my event and graduation work, or <a title="Contact Joshua Smith about graduation event photography" href="/index.html#contact">request event coverage</a>.</p>
-
-                <p class="blog-text">You can also visit my <a title="View Charleston event photography services" href="/charleston-event-photographer/">Charleston event photographer</a> page for packages and availability, compare rates in the <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston pricing guide</a>, or read my post on <a title="Read the Charleston graduation photography guide" href="/blog/charleston-graduation-photography/">Charleston graduation photography</a>.</p>
-            </div>
-        </div>
-    </section>
+    </article>
 
     <!-- CTA Banner -->
     <section class="cta-banner">
         <div class="container">
-            <h2 class="cta-title">Need a Photographer for Your Graduation Event?</h2>
-            <p class="cta-text">Multicultural nights, commencement ceremonies, graduation portraits. Professional event photography in Charleston that captures the moments that matter most.</p>
+            <h2>Need a Photographer for Your Graduation Event?</h2>
+            <p>Multicultural nights, commencement ceremonies, graduation portraits. Professional event photography in Charleston that captures the moments that matter most.</p>
             <div class="cta-buttons">
-                
-                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
+                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn btn-primary" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
             </div>
         </div>
     </section>
-
+    </main>
 
     <!-- Back to Top Button -->
-    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
+    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page">&uarr;</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals by Joshua</h3>
+                    <p>Editorial photography for milestones &amp; moments. Serving Charleston SC + Northern VA / DMV.</p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="tel:+12403608465" style="display: block; margin-bottom: 0.5rem;">&#128222; (240) 360-8465</a>
+                        <a href="mailto:jbmsmusic05@gmail.com" style="display: block; margin-bottom: 0.5rem;">&#9993;&#65039; jbmsmusic05@gmail.com</a>
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128247; Instagram</a>
+                        <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128218; Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/gallery">Full Gallery</a></li>
+                        <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+                        <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+                        <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+                        <li><a href="/blog.html">Photography Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Visuals by Joshua. Charleston SC &amp; Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.add('show');
@@ -394,77 +819,28 @@
                 backToTopButton.classList.remove('show');
             }
         });
-
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Scroll reveal for section headings, pull-quote, figure, and TOC
+        const revealTargets = document.querySelectorAll('.reveal');
+        if (revealTargets.length && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+            revealTargets.forEach(el => revealObserver.observe(el));
+        } else {
+            revealTargets.forEach(el => el.classList.add('in-view'));
+        }
     </script>
-  <script>
-    (function() {
-      var hamburger = document.querySelector('.hamburger');
-      var navMenu = document.querySelector('.nav-menu');
-      if (!hamburger || !navMenu) return;
-      function close() {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-      }
-      hamburger.addEventListener('click', function() {
-        var open = navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active', open);
-        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      navMenu.querySelectorAll('.nav-link').forEach(function(l) { l.addEventListener('click', close); });
-      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
-    })();
-  </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Visuals by Joshua</h3>
-          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
-          <p style="margin-top: 1.5rem;">
-            <a href="tel:+12403608465">(240) 360-8465</a><br>
-            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
-          </p>
-          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
-            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery">Full Gallery</a></li>
-            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Locations</h4>
-          <ul>
-            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
-            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
-            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
-            <li><a href="/blog.html">Photography Blog</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>

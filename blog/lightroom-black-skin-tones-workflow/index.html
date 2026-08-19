@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Editing Black Skin Tones in Lightroom</title>
-  <meta name="description" content="Use this step-by-step Lightroom workflow for accurate deep skin tones, including HSL values, masking order, and fixes for grey or orange skin.">
-  <meta name="author" content="Joshua Smith">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://visualsbyjoshua.com/blog/lightroom-black-skin-tones-workflow/">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Visuals by Joshua">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="https://visualsbyjoshua.com/blog/lightroom-black-skin-tones-workflow/">
-  <meta property="og:title" content="Editing Black Skin Tones in Lightroom">
-  <meta property="og:description" content="Use this step-by-step Lightroom workflow for accurate deep skin tones, including HSL values, masking order, and fixes for grey or orange skin.">
-  <meta property="og:image" content="https://visualsbyjoshua.com/images/optimized/home/dmv-photographer-960.jpg">
-  <meta property="article:published_time" content="2026-07-17">
-  <meta property="article:modified_time" content="2026-07-17">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Editing Black Skin Tones in Lightroom">
-  <meta name="twitter:description" content="Use this step-by-step Lightroom workflow for accurate deep skin tones, including HSL values, masking order, and fixes for grey or orange skin.">
-  <meta name="twitter:image" content="https://visualsbyjoshua.com/images/optimized/home/dmv-photographer-960.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="/styles.css">
-  <script type="application/ld+json">{
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Editing Black Skin Tones in Lightroom</title>
+    <meta name="description" content="Use this step-by-step Lightroom workflow for accurate deep skin tones, including HSL values, masking order, and fixes for grey or orange skin.">
+    <meta name="author" content="Joshua Smith">
+    <link rel="canonical" href="https://visualsbyjoshua.com/blog/lightroom-black-skin-tones-workflow/">
+    <meta name="robots" content="index, follow">
+
+    <!-- OG Tags -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Visuals by Joshua">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://visualsbyjoshua.com/blog/lightroom-black-skin-tones-workflow/">
+    <meta property="og:title" content="Editing Black Skin Tones in Lightroom">
+    <meta property="og:description" content="Use this step-by-step Lightroom workflow for accurate deep skin tones, including HSL values, masking order, and fixes for grey or orange skin.">
+    <meta property="og:image" content="https://visualsbyjoshua.com/images/optimized/home/dmv-photographer-960.jpg">
+    <meta property="article:published_time" content="2026-07-17">
+    <meta property="article:modified_time" content="2026-07-17">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Editing Black Skin Tones in Lightroom">
+    <meta name="twitter:description" content="Use this step-by-step Lightroom workflow for accurate deep skin tones, including HSL values, masking order, and fixes for grey or orange skin.">
+    <meta name="twitter:image" content="https://visualsbyjoshua.com/images/optimized/home/dmv-photographer-960.jpg">
+
+    <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Editing Black Skin Tones in Lightroom: A Repeatable Workflow",
@@ -61,7 +69,7 @@
     "lightroom portrait editing steps"
   ]
 }</script>
-  <script type="application/ld+json">{
+    <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -85,279 +93,834 @@
     }
   ]
 }</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why does dark skin look grey in my photos?", "acceptedAnswer": {"@type": "Answer", "text": "Two causes. Underexposure in camera, or lifted shadows and raised Clarity in post. Fix exposure globally, then raise Orange luminance in HSL."}}, {"@type": "Question", "name": "What HSL settings work for Black skin tones?", "acceptedAnswer": {"@type": "Answer", "text": "Raise Orange luminance, lower Yellow saturation, and leave Red close to neutral. Exact values depend on the light, but that direction is consistent."}}, {"@type": "Question", "name": "Should I use skin smoothing on darker skin?", "acceptedAnswer": {"@type": "Answer", "text": "Lightly. Texture at -10 to -20 keeps pores. Aggressive smoothing removes the specular highlights that give deep skin dimension."}}, {"@type": "Question", "name": "How do I fix a green cast on skin?", "acceptedAnswer": {"@type": "Answer", "text": "Adjust the tint slider toward magenta, then check the RGB readout on the cheek. Green above red always means a cast, no matter what the screen shows you."}}, {"@type": "Question", "name": "Do camera profiles matter for skin tones?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Adobe Color and Camera Standard render skin differently. Pick one and use it across a gallery so tones stay consistent."}}, {"@type": "Question", "name": "How long should editing a 50 image gallery take?", "acceptedAnswer": {"@type": "Answer", "text": "Between 90 minutes and three hours once you have a workflow and a preset. Longer than that means you are editing image by image instead of by lighting setup."}}]}</script>
-<style>
-    .article-hero { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat; }
-    .article-kicker { color: #d9c3a8; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
-    .article-toc { margin: 0 0 42px; padding: 24px 28px; border: 1px solid #e8e8e8; border-radius: 10px; background: #f5f3f0; }
-    .article-toc h2 { margin-bottom: 14px; }
-    .article-toc ol { margin-left: 22px; columns: 2; }
-    .article-toc li { margin: 0 24px 10px 0; break-inside: avoid; }
-    .blog-container > h2 { margin: 54px 0 20px; font-size: clamp(1.75rem,4vw,2.35rem); }
-    .blog-container > h3 { margin: 30px 0 12px; font-size: 1.6rem; }
-    .blog-container > p, .blog-container > ul, .blog-container > ol { color: #5a5a5a; font-size: 1.08rem; line-height: 1.82; }
-    .blog-container > p { margin-bottom: 22px; }
-    .blog-container > ul, .blog-container > ol { margin: 14px 0 28px 28px; }
-    .blog-container > li, .blog-container li { margin-bottom: 9px; }
-    .table-wrap { margin: 24px 0 36px; overflow-x: auto; border-radius: 9px; box-shadow: 0 5px 18px rgba(0,0,0,.08); }
-    table { width: 100%; border-collapse: collapse; background: white; min-width: 560px; }
-    th, td { padding: 14px 16px; text-align: left; border-bottom: 1px solid #e8e8e8; vertical-align: top; }
-    th { color: white; background: #2a2a2a; }
-    tbody tr:nth-child(even) { background: #f5f3f0; }
-    .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
-    .faq-static h3 { margin: 0 0 10px; font-size: 1.3rem; }
-    .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
-    .author-note { margin-top: 42px; padding: 22px; border-radius: 8px; background: #f5f3f0; }
-    .article-cta { margin: 56px 0 10px; padding: 34px; text-align: center; color: white; background: #2a2a2a; border-radius: 12px; }
-    .article-cta h2 { color: white; margin-bottom: 12px; }
-    .article-cta p { color: rgba(255,255,255,.9); margin-bottom: 22px; }
-    @media (max-width: 700px) { .article-toc ol { columns: 1; } }
-  </style>
-  <script src="/analytics.js" defer></script>
-  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why does dark skin look grey in my photos?", "acceptedAnswer": {"@type": "Answer", "text": "Two causes. Underexposure in camera, or lifted shadows and raised Clarity in post. Fix exposure globally, then raise Orange luminance in HSL."}}, {"@type": "Question", "name": "What HSL settings work for Black skin tones?", "acceptedAnswer": {"@type": "Answer", "text": "Raise Orange luminance, lower Yellow saturation, and leave Red close to neutral. Exact values depend on the light, but that direction is consistent."}}, {"@type": "Question", "name": "Should I use skin smoothing on darker skin?", "acceptedAnswer": {"@type": "Answer", "text": "Lightly. Texture at -10 to -20 keeps pores. Aggressive smoothing removes the specular highlights that give deep skin dimension."}}, {"@type": "Question", "name": "How do I fix a green cast on skin?", "acceptedAnswer": {"@type": "Answer", "text": "Adjust the tint slider toward magenta, then check the RGB readout on the cheek. Green above red always means a cast, no matter what the screen shows you."}}, {"@type": "Question", "name": "Do camera profiles matter for skin tones?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Adobe Color and Camera Standard render skin differently. Pick one and use it across a gallery so tones stay consistent."}}, {"@type": "Question", "name": "How long should editing a 50 image gallery take?", "acceptedAnswer": {"@type": "Answer", "text": "Between 90 minutes and three hours once you have a workflow and a preset. Longer than that means you are editing image by image instead of by lighting setup."}}]}</script>
+
+    <script src="/analytics.js" defer></script>
+
+    <style>
+        /* ========================================
+           RESET & BASE (matches homepage design system)
+           ======================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #2a2a2a;
+            background-color: #fcfbfa;
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s ease; }
+        a:hover { opacity: 0.7; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: #2a2a2a;
+            color: #fff;
+            padding: 12px 22px;
+            z-index: 1000;
+            border-radius: 0 0 8px 0;
+            font-size: 0.9rem;
+        }
+        .skip-link:focus { left: 0; }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(252, 251, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px clamp(20px, 5vw, 80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+
+        .nav-menu { display: flex; gap: 40px; list-style: none; }
+        .nav-menu a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2a2a2a;
+        }
+        .nav-menu a:hover { color: #be976d; opacity: 1; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+        }
+        .nav-toggle-bar {
+            width: 22px;
+            height: 2px;
+            background: #2a2a2a;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: #fcfbfa;
+                border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+                padding: 8px 0 16px;
+                transform: translateY(-12px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.25s ease;
+            }
+            .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-menu a { display: block; padding: 14px 20px; }
+            .nav-toggle { display: flex; }
+        }
+
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        p { font-size: 1rem; line-height: 1.8; }
+
+        .kicker {
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #be976d;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* ========================================
+           LAYOUT PRIMITIVES
+           ======================================== */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .btn-ghost {
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            color: #ffffff;
+            background: transparent;
+        }
+        .btn-ghost:hover { background: rgba(255, 255, 255, 0.15); opacity: 1; }
+        .btn-primary {
+            background: #be976d;
+            color: #ffffff;
+            border: 2px solid #be976d;
+        }
+        .btn-primary:hover {
+            background: #a67f5a;
+            border-color: #a67f5a;
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #2a2a2a;
+            border: 2px solid #2a2a2a;
+        }
+        .btn-secondary:hover { background: #2a2a2a; color: #fcfbfa; opacity: 1; }
+
+        /* ========================================
+           ARTICLE HERO
+           ======================================== */
+        .article-hero {
+            position: relative;
+            width: 100%;
+            min-height: 64vh;
+            margin-top: 80px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(20,18,15,0.15) 0%, rgba(20,18,15,0.55) 100%), url('/images/optimized/home/dmv-photographer-960.jpg') center 35% / cover no-repeat;
+        }
+        @media (max-width: 768px) { .article-hero { margin-top: 68px; min-height: 56vh; } }
+
+        .article-hero-content {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            width: 100%;
+            padding: 60px clamp(20px, 5vw, 80px) 56px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 18px;
+        }
+        .breadcrumb a { color: #ffffff; }
+        .breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+        .article-hero h1 {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            font-style: italic;
+            letter-spacing: -0.01em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            max-width: 900px;
+            margin-bottom: 1rem;
+        }
+
+        .article-hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 300;
+            max-width: 640px;
+            opacity: 0.95;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            margin-top: 30px;
+            font-size: 0.8125rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* ========================================
+           ARTICLE BODY
+           ======================================== */
+        .article-body {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
+        }
+
+        .article-body h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-style: italic;
+            margin: 3.25rem 0 1.25rem;
+            scroll-margin-top: 96px;
+        }
+        .article-body h2:first-of-type { margin-top: 0; }
+
+        .article-body h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #2a2a2a;
+            margin: 2.25rem 0 1rem;
+            padding-left: 16px;
+            border-left: 3px solid #be976d;
+            scroll-margin-top: 96px;
+        }
+
+        /* First paragraph after a heading reads as a lede: slightly heavier weight
+           gives skimmers a scan-anchor without adding another visual element. */
+        .article-body h2 + p {
+            font-weight: 500;
+            font-size: 1.0625rem;
+            color: #2a2a2a;
+        }
+
+        .article-body p { margin-bottom: 1.5rem; color: #3a3630; }
+
+        .article-body ul,
+        .article-body ol {
+            margin: 0 0 1.75rem 1.25rem;
+            line-height: 2;
+            color: #3a3630;
+        }
+
+        .article-body li { margin-bottom: 0.25rem; }
+
+        .article-body a {
+            color: #7d5732;
+            border-bottom: 1px solid rgba(190, 151, 109, 0.5);
+        }
+        .article-body a:hover { opacity: 1; border-color: #be976d; }
+
+        .article-body strong { font-weight: 600; color: #2a2a2a; }
+
+        .article-figure { margin: 3rem 0; text-align: center; }
+        .article-figure img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            margin: 0 auto;
+        }
+        .article-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.875rem;
+            font-style: italic;
+            color: #63594e;
+        }
+
+        /* ========================================
+           PULL QUOTE
+           ======================================== */
+        .pull-quote {
+            margin: 3.5rem 0;
+            padding-left: 28px;
+            border-left: 3px solid #be976d;
+        }
+        .pull-quote p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+            line-height: 1.35;
+            color: #2a2a2a;
+            margin: 0;
+        }
+
+        /* ========================================
+           COLLAPSIBLE SECTIONS (native <details>, no JS dependency)
+           ======================================== */
+        .toc-box {
+            margin-bottom: 3rem;
+            padding: 22px 26px;
+            background: #f5f3f0;
+            border-radius: 10px;
+        }
+        .toc-box summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.15rem;
+            color: #2a2a2a;
+        }
+        .toc-box summary::-webkit-details-marker { display: none; }
+        .toc-box summary::after {
+            content: '+';
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .toc-box[open] summary::after { transform: rotate(45deg); }
+        .toc-list {
+            list-style: none;
+            margin: 18px 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 24px;
+        }
+        @media (max-width: 560px) { .toc-list { grid-template-columns: 1fr; } }
+        .toc-list a {
+            font-size: 0.9375rem;
+            color: #5a564e;
+            border-bottom: none;
+        }
+        .toc-list a:hover { color: #7d5732; opacity: 1; }
+
+        /* ========================================
+           FAQ
+           ======================================== */
+        .faq-item {
+            padding: 4px 0;
+            border-top: 1px solid rgba(42, 42, 42, 0.1);
+        }
+        .faq-item:last-child { border-bottom: 1px solid rgba(42, 42, 42, 0.1); }
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            flex-shrink: 0;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .faq-item[open] summary::after { transform: rotate(45deg); }
+        .faq-item p { margin: 0 0 22px; color: #5a564e; }
+
+        /* ========================================
+           CTA BANNER
+           ======================================== */
+        .cta-banner {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: clamp(60px, 8vw, 90px) 0;
+            text-align: center;
+        }
+        .cta-banner .container { max-width: 700px; }
+        .cta-banner h2 { color: #ffffff; font-style: italic; margin-bottom: 1.25rem; }
+        .cta-banner p { color: rgba(255, 255, 255, 0.85); margin-bottom: 2rem; }
+        .cta-banner p a { color: #d9b48f; border-bottom: 1px solid rgba(217, 180, 143, 0.5); }
+        .cta-banner p a:hover { opacity: 1; }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer { background: #2a2a2a; color: #ffffff; padding: 60px 0 110px; }
+        @media (min-width: 769px) { .footer { padding-bottom: 30px; } }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p { font-size: 0.9375rem; opacity: 0.8; }
+        .footer-links h4 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { font-size: 0.9375rem; opacity: 0.8; transition: opacity 0.3s ease; }
+        .footer-links a:hover { opacity: 1; }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+            font-size: 0.875rem;
+            opacity: 0.7;
+        }
+
+        /* ========================================
+           BACK TO TOP
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 90;
+        }
+        .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .back-to-top:hover { opacity: 0.85; background: #be976d; }
+
+        /* ========================================
+           SCROLL REVEAL
+           ======================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+        }
+
+        /* ========================================
+           POST-SPECIFIC ADDITIONS (data tables + author note)
+           this post's content needs a table and a highlighted note
+           that the canonical template's post did not require.
+           ======================================== */
+        .table-wrap { margin: 0 0 1.75rem; overflow-x: auto; border-radius: 9px; box-shadow: 0 5px 18px rgba(0,0,0,.08); }
+        .article-body table { width: 100%; border-collapse: collapse; background: #ffffff; min-width: 480px; }
+        .article-body th, .article-body td { padding: 14px 16px; text-align: left; border-bottom: 1px solid #e8e8e8; vertical-align: top; font-size: 0.9375rem; color: #3a3630; }
+        .article-body th { color: #ffffff; background: #2a2a2a; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 600; }
+        .article-body tbody tr:nth-child(even) { background: #f5f3f0; }
+        .author-note {
+            margin: 3rem 0 0;
+            padding: 22px 26px;
+            border-radius: 10px;
+            background: #f5f3f0;
+        }
+        .author-note p { margin: 0; color: #5a564e; }
+    </style>
 </head>
 <body>
-  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/blog/photography-pricing/">Pricing</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
-        <li><a href="/#contact">Book Now</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </nav>
+    <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
 
-
-  <main>
-    <article>
-      <section class="blog-hero article-hero hero-bg" style="--bg-url: url('/images/optimized/home/dmv-photographer-960.jpg');" id="main">
-        <div class="blog-hero-content">
-          <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Editing</div>
-          <p class="article-kicker">Editing</p>
-          <h1 class="blog-hero-title">Editing Black Skin Tones in Lightroom: A Repeatable Workflow</h1>
-          <p class="blog-hero-subtitle">Use this step-by-step Lightroom workflow for accurate deep skin tones, including HSL values, masking order, and fixes for grey or orange skin.</p>
-          <div class="blog-meta">
-            <div class="meta-item"><i class="fas fa-user" aria-hidden="true"></i><span>By Joshua Smith</span></div>
-            <div class="meta-item"><i class="fas fa-calendar" aria-hidden="true"></i><time datetime="2026-07-17">July 17, 2026</time></div>
-            <div class="meta-item"><i class="fas fa-clock" aria-hidden="true"></i><span>7 min read</span></div>
-          </div>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Visuals by Joshua</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/blog/photography-pricing/">Pricing</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+                <li><a href="/#contact">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
         </div>
-      </section>
+    </nav>
 
-      <div class="blog-content">
-        <div class="blog-container">
-          <nav class="article-toc" aria-label="Table of contents">
-            <h2>In this guide</h2>
-            <ol><li><a href="#get-it-right-in-camera-first">Get it right in camera first</a></li>
-<li><a href="#step-1-profile-and-white-balance">Step 1: Profile and white balance</a></li>
-<li><a href="#step-2-global-exposure-and-tone">Step 2: Global exposure and tone</a></li>
-<li><a href="#step-3-the-tone-curve">Step 3: The tone curve</a></li>
-<li><a href="#step-4-hsl-the-part-that-matters-most">Step 4: HSL, the part that matters most</a></li>
-<li><a href="#step-5-masking">Step 5: Masking</a></li>
-<li><a href="#step-6-color-grading-and-finish">Step 6: Color grading and finish</a></li>
-<li><a href="#keeping-a-gallery-consistent">Keeping a gallery consistent</a></li>
-<li><a href="#the-four-mistakes">The four mistakes</a></li>
-<li><a href="#faq">FAQ</a></li></ol>
-          </nav>
-<p>Most editing tutorials were built around light skin. Follow them on a dark-skinned subject and you get one of three failures. Skin goes grey. Skin goes orange. Or the shadows fill with green and magenta noise the moment you lift them.</p>
-<p>This is the order I edit in, and why each step is where it is.</p>
-<h2 id="get-it-right-in-camera-first">Get it right in camera first</h2>
-<p>No workflow fixes an underexposed file. Camera meters pull toward the average brightness of the scene, and on a dark-skinned subject in a bright room that means underexposure by half a stop or more.</p>
-<p>Fixes on set:</p>
-<ul>
-<li>Spot meter off the cheek, not the whole scene.</li>
-<li>Add a third to two thirds of a stop of exposure compensation when the background is bright.</li>
-<li>Watch the histogram and put skin in the upper middle, never the left third.</li>
-<li>Always shoot RAW. Recovering a JPEG on deep skin tones produces banding immediately.</li>
-</ul>
-<p>For the full camera side, read <a href="/blog/sony-a7iii-event-photography-settings/">Sony A7III Event Settings</a>.</p>
-<h2 id="step-1-profile-and-white-balance">Step 1: Profile and white balance</h2>
-<p>Start with Adobe Color or the Camera Standard profile. Skip the creative profiles until the very end.</p>
-<p>Set white balance off something neutral in the frame, then correct by eye on skin. Deep skin tones show a color cast faster than pale skin does, and a mixed lighting venue will push them green under fluorescents or magenta under LED.</p>
-<p>Typical starting point on Sony files under daylight: 5200K to 5600K, tint +6 to +12.</p>
-<h2 id="step-2-global-exposure-and-tone">Step 2: Global exposure and tone</h2>
-<p>Work in this order. Each control affects the ones after it.</p>
-<div class="table-wrap"><table><thead><tr>
-<th>Control</th><th>Typical range</th><th>What it does here</th>
-</tr></thead><tbody>
-<tr><td>Exposure</td><td>+0.20 to +0.60</td><td>Recovers the meter's underexposure</td></tr>
-<tr><td>Highlights</td><td>-20 to -50</td><td>Controls specular shine on foreheads and noses</td></tr>
-<tr><td>Shadows</td><td>+10 to +30</td><td>Opens shadow detail without going flat</td></tr>
-<tr><td>Whites</td><td>+5 to +20</td><td>Sets the white point</td></tr>
-<tr><td>Blacks</td><td>-5 to -15</td><td>Keeps real black in the frame</td></tr>
-</tbody></table></div>
-<p>Do not push Shadows past about +40. Lifting shadows aggressively on brown skin drags out color noise and shifts the midtones toward grey. If a face is too dark, fix exposure and use a mask, not the global shadow slider.</p>
-<h2 id="step-3-the-tone-curve">Step 3: The tone curve</h2>
-<p>A gentle S curve adds contrast without crushing the midtones where skin lives.</p>
-<ul>
-<li>Lift the shadow point slightly for a soft matte base.</li>
-<li>Pull the lower third down about five points.</li>
-<li>Push the upper midtone up about five points.</li>
-<li>Leave the top highlight untouched.</li>
-</ul>
-<p>Then check the individual RGB curves. Lifting the blue channel in the shadows cools the darkest areas, which is usually where a green cast hides.</p>
-<h2 id="step-4-hsl-the-part-that-matters-most">Step 4: HSL, the part that matters most</h2>
-<p>This is where skin either looks right or looks like a filter.</p>
-<p><strong>Orange</strong> is the primary skin channel. <strong>Red</strong> carries the deeper tones and lips. <strong>Yellow</strong> is the one that ruins everything.</p>
-<p>Starting values for deep skin:</p>
-<div class="table-wrap"><table><thead><tr>
-<th>Channel</th><th>Hue</th><th>Saturation</th><th>Luminance</th>
-</tr></thead><tbody>
-<tr><td>Red</td><td>-2 to +4</td><td>-5 to +5</td><td>0 to +8</td></tr>
-<tr><td>Orange</td><td>-4 to +5</td><td>-8 to +2</td><td>+5 to +15</td></tr>
-<tr><td>Yellow</td><td>-10 to -20</td><td>-10 to -25</td><td>-5 to +5</td></tr>
-</tbody></table></div>
-<p>Pull yellow saturation down. Yellow is what makes brown skin look sallow or jaundiced. Dropping yellow luminance slightly also deepens the richness without adding saturation.</p>
-<p>Raise orange luminance to bring skin up without brightening the whole frame. This is the single most effective slider for deep skin tones.</p>
-<h3 id="the-test-that-catches-errors">The test that catches errors</h3>
-<p>Zoom to 100 percent on the cheek and check the RGB readout under the histogram. On healthy brown skin in neutral light, red should be highest, green in the middle, and blue lowest, with green and blue reasonably close. When green climbs above red, the file has a cast.</p>
-<h3 style="color: var(--primary); margin: 30px 0 15px 0;">Step 5: Masking</h3>
-<p>Only now do you touch local adjustments.</p>
-<ol>
-<li><strong>Subject mask, then subtract the background.</strong> Raise exposure 0.15 to 0.30 to separate the subject.</li>
-<li><strong>Face mask.</strong> Lower Texture by 10 to 20 for smoothing that keeps pores. Never use Clarity on skin, it darkens midtones and adds a grey cast.</li>
-<li><strong>Eyes.</strong> Raise Exposure 0.25, Whites 10, Sharpness 20. Stop there. Over-brightened eyes look uncanny.</li>
-<li><strong>Teeth.</strong> Saturation -15, Exposure +0.15. Do not desaturate past -25 or teeth read grey.</li>
-<li><strong>Radial mask on the background.</strong> Exposure -0.20 to draw attention forward.</li>
-<li><strong>Highlight recovery on shine.</strong> A small brush at Highlights -30 on foreheads and nose bridges. Shine is a lighting problem, not a skin problem, so fix it lightly.</li>
-</ol>
-<h3 style="color: var(--primary); margin: 30px 0 15px 0;">Step 6: Color grading and finish</h3>
-<p>Split toning belongs at the end and it should be subtle.</p>
-<ul>
-<li>Shadows toward blue or teal at 8 to 15 saturation.</li>
-<li>Highlights toward warm orange at 5 to 10 saturation.</li>
-<li>Balance slightly toward highlights.</li>
-</ul>
-<p>Add Texture +5 globally and sharpen at Amount 40, Radius 1.0, Detail 25, Masking 60. High masking keeps sharpening off skin and on eyes, hair, and clothing.</p>
-<h3 style="color: var(--primary); margin: 30px 0 15px 0;">Keeping a gallery consistent</h3>
-<p>Edit one hero image completely. Copy settings and paste to the rest of the same lighting setup. Then go image by image and correct only white balance and exposure.</p>
-<p>Do not paste HSL across different lighting conditions. Indoor tungsten and outdoor shade need different yellow values, and a gallery where skin shifts color between frames looks worse than a gallery that is slightly off but consistent.</p>
-<p>Build a preset once you have a look that repeats. Save it as a starting point, not a finish.</p>
-<h2 id="the-four-mistakes">The four mistakes</h2>
-<ol>
-<li><strong>Cranking Clarity.</strong> It grinds midtones and greys out brown skin. Use Texture instead.</li>
-<li><strong>Lifting shadows to +60.</strong> Color noise and a flat, hazy face.</li>
-<li><strong>Global saturation increases.</strong> Push Vibrance instead, or better, adjust HSL channel by channel.</li>
-<li><strong>Heavy skin smoothing.</strong> Deep skin has visible texture and specular highlights. Removing them makes people look like plastic.</li>
-</ol>
-<p>For pricing the time this takes, read <a href="/blog/graduation-photography-pricing-charleston-dmv/">What Photography Actually Costs in Charleston and the DMV</a>.</p>
-<h2 id="faq">FAQ</h2>
-<div class="faq-static">
-<h3>Why does dark skin look grey in my photos?</h3>
-<p>Two causes. Underexposure in camera, or lifted shadows and raised Clarity in post. Fix exposure globally, then raise Orange luminance in HSL.</p>
-</div>
-<div class="faq-static">
-<h3>What HSL settings work for Black skin tones?</h3>
-<p>Raise Orange luminance, lower Yellow saturation, and leave Red close to neutral. Exact values depend on the light, but that direction is consistent.</p>
-</div>
-<div class="faq-static">
-<h3>Should I use skin smoothing on darker skin?</h3>
-<p>Lightly. Texture at -10 to -20 keeps pores. Aggressive smoothing removes the specular highlights that give deep skin dimension.</p>
-</div>
-<div class="faq-static">
-<h3>How do I fix a green cast on skin?</h3>
-<p>Adjust the tint slider toward magenta, then check the RGB readout on the cheek. Green above red always means a cast, no matter what the screen shows you.</p>
-</div>
-<div class="faq-static">
-<h3>Do camera profiles matter for skin tones?</h3>
-<p>Yes. Adobe Color and Camera Standard render skin differently. Pick one and use it across a gallery so tones stay consistent.</p>
-</div>
-<div class="faq-static">
-<h3>How long should editing a 50 image gallery take?</h3>
-<p>Between 90 minutes and three hours once you have a workflow and a preset. Longer than that means you are editing image by image instead of by lighting setup.</p>
-</div>
-<h2 id="sources-and-further-reading">Sources and further reading</h2>
-<ul>
-<li><a href="https://helpx.adobe.com/lightroom-classic/user-guide.html" target="_blank" rel="noopener noreferrer">Adobe Lightroom Classic user guide</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Color_temperature" target="_blank" rel="noopener noreferrer">Color temperature and white balance</a></li>
-</ul>
-<p class="author-note"><em>Joshua Smith edits and shoots portraits, graduations, and events in Charleston and the DMV as <a href="https://visualsbyjoshua.com" target="_blank" rel="noopener noreferrer">Visuals by Joshua</a>. Compare edited results in the <a href="/gallery">gallery</a> or <a href="/index.html#contact">start a conversation about your session</a>.</em></p>
-          <section class="article-cta">
-            <h2>Need photography in Charleston or the DMV?</h2>
-            <p>Let Joshua know your session type, location, and date to check availability.</p>
-            <a href="/index.html#contact" class="btn btn-accent">Check Availability</a>
-          </section>
+    <!-- Article Hero -->
+    <section class="article-hero" id="main">
+        <div class="article-hero-content">
+            <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; Editing Black Skin Tones in Lightroom: A Repeatable Workflow</div>
+            <p class="kicker">Editing</p>
+            <h1>Editing Black Skin Tones in Lightroom: A Repeatable Workflow</h1>
+            <p class="article-hero-subtitle">Use this step-by-step Lightroom workflow for accurate deep skin tones, including HSL values, masking order, and fixes for grey or orange skin.</p>
+            <div class="article-meta">
+                <span>By Joshua Smith</span>
+                <span>July 17, 2026</span>
+                <span>7 min read</span>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <main>
+    <article class="article-body">
+
+        <details class="toc-box reveal">
+            <summary>In this guide</summary>
+            <ul class="toc-list">
+                <li><a href="#get-it-right-in-camera-first">Get it right in camera first</a></li>
+                <li><a href="#step-1-profile-and-white-balance">Step 1: Profile and white balance</a></li>
+                <li><a href="#step-2-global-exposure-and-tone">Step 2: Global exposure and tone</a></li>
+                <li><a href="#step-3-the-tone-curve">Step 3: The tone curve</a></li>
+                <li><a href="#step-4-hsl-the-part-that-matters-most">Step 4: HSL, the part that matters most</a></li>
+                <li><a href="#the-four-mistakes">The four mistakes</a></li>
+                <li><a href="#sources-and-further-reading">Sources and further reading</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </details>
+
+        <p>Most editing tutorials were built around light skin. Follow them on a dark-skinned subject and you get one of three failures. Skin goes grey. Skin goes orange. Or the shadows fill with green and magenta noise the moment you lift them.</p>
+        <p>This is the order I edit in, and why each step is where it is.</p>
+
+        <h2 id="get-it-right-in-camera-first" class="reveal">Get It Right in Camera First</h2>
+        <p>No workflow fixes an underexposed file. Camera meters pull toward the average brightness of the scene, and on a dark-skinned subject in a bright room that means underexposure by half a stop or more.</p>
+
+        <p>Fixes on set:</p>
+        <ul>
+            <li>Spot meter off the cheek, not the whole scene.</li>
+            <li>Add a third to two thirds of a stop of exposure compensation when the background is bright.</li>
+            <li>Watch the histogram and put skin in the upper middle, never the left third.</li>
+            <li>Always shoot RAW. Recovering a JPEG on deep skin tones produces banding immediately.</li>
+        </ul>
+        <p>For the full camera side, read <a href="/blog/sony-a7iii-event-photography-settings/">Sony A7III Event Settings</a>.</p>
+
+        <h2 id="step-1-profile-and-white-balance" class="reveal">Step 1: Profile and White Balance</h2>
+        <p>Start with Adobe Color or the Camera Standard profile. Skip the creative profiles until the very end.</p>
+
+        <p>Set white balance off something neutral in the frame, then correct by eye on skin. Deep skin tones show a color cast faster than pale skin does, and a mixed lighting venue will push them green under fluorescents or magenta under LED.</p>
+
+        <p>Typical starting point on Sony files under daylight: 5200K to 5600K, tint +6 to +12.</p>
+
+        <h2 id="step-2-global-exposure-and-tone" class="reveal">Step 2: Global Exposure and Tone</h2>
+        <p>Work in this order. Each control affects the ones after it.</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Control</th><th>Typical range</th><th>What it does here</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Exposure</td><td>+0.20 to +0.60</td><td>Recovers the meter's underexposure</td></tr>
+                    <tr><td>Highlights</td><td>-20 to -50</td><td>Controls specular shine on foreheads and noses</td></tr>
+                    <tr><td>Shadows</td><td>+10 to +30</td><td>Opens shadow detail without going flat</td></tr>
+                    <tr><td>Whites</td><td>+5 to +20</td><td>Sets the white point</td></tr>
+                    <tr><td>Blacks</td><td>-5 to -15</td><td>Keeps real black in the frame</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Do not push Shadows past about +40. Lifting shadows aggressively on brown skin drags out color noise and shifts the midtones toward grey. If a face is too dark, fix exposure and use a mask, not the global shadow slider.</p>
+
+        <h2 id="step-3-the-tone-curve" class="reveal">Step 3: The Tone Curve</h2>
+        <p>A gentle S curve adds contrast without crushing the midtones where skin lives.</p>
+
+        <ul>
+            <li>Lift the shadow point slightly for a soft matte base.</li>
+            <li>Pull the lower third down about five points.</li>
+            <li>Push the upper midtone up about five points.</li>
+            <li>Leave the top highlight untouched.</li>
+        </ul>
+        <p>Then check the individual RGB curves. Lifting the blue channel in the shadows cools the darkest areas, which is usually where a green cast hides.</p>
+
+        <h2 id="step-4-hsl-the-part-that-matters-most" class="reveal">Step 4: HSL, the Part That Matters Most</h2>
+        <p>This is where skin either looks right or looks like a filter.</p>
+
+        <p><strong>Orange</strong> is the primary skin channel. <strong>Red</strong> carries the deeper tones and lips. <strong>Yellow</strong> is the one that ruins everything.</p>
+
+        <p>Starting values for deep skin:</p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Channel</th><th>Hue</th><th>Saturation</th><th>Luminance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Red</td><td>-2 to +4</td><td>-5 to +5</td><td>0 to +8</td></tr>
+                    <tr><td>Orange</td><td>-4 to +5</td><td>-8 to +2</td><td>+5 to +15</td></tr>
+                    <tr><td>Yellow</td><td>-10 to -20</td><td>-10 to -25</td><td>-5 to +5</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>Pull yellow saturation down. Yellow is what makes brown skin look sallow or jaundiced. Dropping yellow luminance slightly also deepens the richness without adding saturation.</p>
+
+        <p>Raise orange luminance to bring skin up without brightening the whole frame. This is the single most effective slider for deep skin tones.</p>
+
+        <h3 id="the-test-that-catches-errors">The Test That Catches Errors</h3>
+        <p>Zoom to 100 percent on the cheek and check the RGB readout under the histogram. On healthy brown skin in neutral light, red should be highest, green in the middle, and blue lowest, with green and blue reasonably close. That comparison is the fastest way to catch a cast before it reaches a client gallery.</p>
+
+        <blockquote class="pull-quote reveal">
+            <p>When green climbs above red, the file has a cast.</p>
+        </blockquote>
+
+        <h3 id="step-5-masking">Step 5: Masking</h3>
+        <p>Only now do you touch local adjustments.</p>
+
+        <ol>
+            <li><strong>Subject mask, then subtract the background.</strong> Raise exposure 0.15 to 0.30 to separate the subject.</li>
+            <li><strong>Face mask.</strong> Lower Texture by 10 to 20 for smoothing that keeps pores. Never use Clarity on skin, it darkens midtones and adds a grey cast.</li>
+            <li><strong>Eyes.</strong> Raise Exposure 0.25, Whites 10, Sharpness 20. Stop there. Over-brightened eyes look uncanny.</li>
+            <li><strong>Teeth.</strong> Saturation -15, Exposure +0.15. Do not desaturate past -25 or teeth read grey.</li>
+            <li><strong>Radial mask on the background.</strong> Exposure -0.20 to draw attention forward.</li>
+            <li><strong>Highlight recovery on shine.</strong> A small brush at Highlights -30 on foreheads and nose bridges. Shine is a lighting problem, not a skin problem, so fix it lightly.</li>
+        </ol>
+
+        <h3 id="step-6-color-grading-and-finish">Step 6: Color Grading and Finish</h3>
+        <p>Split toning belongs at the end and it should be subtle.</p>
+
+        <ul>
+            <li>Shadows toward blue or teal at 8 to 15 saturation.</li>
+            <li>Highlights toward warm orange at 5 to 10 saturation.</li>
+            <li>Balance slightly toward highlights.</li>
+        </ul>
+        <p>Add Texture +5 globally and sharpen at Amount 40, Radius 1.0, Detail 25, Masking 60. High masking keeps sharpening off skin and on eyes, hair, and clothing.</p>
+
+        <h3 id="keeping-a-gallery-consistent">Keeping a Gallery Consistent</h3>
+        <p>Edit one hero image completely. Copy settings and paste to the rest of the same lighting setup. Then go image by image and correct only white balance and exposure.</p>
+
+        <p>Do not paste HSL across different lighting conditions. Indoor tungsten and outdoor shade need different yellow values, and a gallery where skin shifts color between frames looks worse than a gallery that is slightly off but consistent.</p>
+
+        <p>Build a preset once you have a look that repeats. Save it as a starting point, not a finish.</p>
+
+        <h2 id="the-four-mistakes" class="reveal">The Four Mistakes</h2>
+        <ol>
+            <li><strong>Cranking Clarity.</strong> It grinds midtones and greys out brown skin. Use Texture instead.</li>
+            <li><strong>Lifting shadows to +60.</strong> Color noise and a flat, hazy face.</li>
+            <li><strong>Global saturation increases.</strong> Push Vibrance instead, or better, adjust HSL channel by channel.</li>
+            <li><strong>Heavy skin smoothing.</strong> Deep skin has visible texture and specular highlights. Removing them makes people look like plastic.</li>
+        </ol>
+        <p>For pricing the time this takes, read <a href="/blog/graduation-photography-pricing-charleston-dmv/">What Photography Actually Costs in Charleston and the DMV</a>.</p>
+
+        <h2 id="sources-and-further-reading" class="reveal">Sources and Further Reading</h2>
+        <ul>
+            <li><a href="https://helpx.adobe.com/lightroom-classic/user-guide.html" target="_blank" rel="noopener noreferrer">Adobe Lightroom Classic user guide</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Color_temperature" target="_blank" rel="noopener noreferrer">Color temperature and white balance</a></li>
+        </ul>
+
+        <p class="author-note"><em>Joshua Smith edits and shoots portraits, graduations, and events in Charleston and the DMV as <a href="https://visualsbyjoshua.com" target="_blank" rel="noopener noreferrer">Visuals by Joshua</a>. Compare edited results in the <a href="/gallery">gallery</a> or <a href="/index.html#contact">start a conversation about your session</a>.</em></p>
+
+        <h2 id="faq" class="reveal">FAQ</h2>
+
+        <details class="faq-item">
+            <summary>Why does dark skin look grey in my photos?</summary>
+            <p>Two causes. Underexposure in camera, or lifted shadows and raised Clarity in post. Fix exposure globally, then raise Orange luminance in HSL.</p>
+        </details>
+        <details class="faq-item">
+            <summary>What HSL settings work for Black skin tones?</summary>
+            <p>Raise Orange luminance, lower Yellow saturation, and leave Red close to neutral. Exact values depend on the light, but that direction is consistent.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Should I use skin smoothing on darker skin?</summary>
+            <p>Lightly. Texture at -10 to -20 keeps pores. Aggressive smoothing removes the specular highlights that give deep skin dimension.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How do I fix a green cast on skin?</summary>
+            <p>Adjust the tint slider toward magenta, then check the RGB readout on the cheek. Green above red always means a cast, no matter what the screen shows you.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Do camera profiles matter for skin tones?</summary>
+            <p>Yes. Adobe Color and Camera Standard render skin differently. Pick one and use it across a gallery so tones stay consistent.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How long should editing a 50 image gallery take?</summary>
+            <p>Between 90 minutes and three hours once you have a workflow and a preset. Longer than that means you are editing image by image instead of by lighting setup.</p>
+        </details>
+
     </article>
-  </main>
 
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-    if (hamburger && navMenu) {
-      const toggleMenu = () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-      };
-      hamburger.addEventListener('click', toggleMenu);
-      hamburger.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-          toggleMenu();
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Need Photography in Charleston or the DMV?</h2>
+            <p>Let Joshua know your session type, location, and date to check availability.</p>
+            <div class="cta-buttons">
+                <a href="/index.html#contact" class="btn btn-primary">Check Availability</a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page">&uarr;</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals by Joshua</h3>
+                    <p>Editorial photography for milestones &amp; moments. Serving Charleston SC + Northern VA / DMV.</p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="tel:+12403608465" style="display: block; margin-bottom: 0.5rem;">&#128222; (240) 360-8465</a>
+                        <a href="mailto:jbmsmusic05@gmail.com" style="display: block; margin-bottom: 0.5rem;">&#9993;&#65039; jbmsmusic05@gmail.com</a>
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128247; Instagram</a>
+                        <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128218; Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/gallery">Full Gallery</a></li>
+                        <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+                        <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+                        <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+                        <li><a href="/blog.html">Photography Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Visuals by Joshua. Charleston SC &amp; Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Scroll reveal for section headings, pull-quote, figure, and TOC
+        const revealTargets = document.querySelectorAll('.reveal');
+        if (revealTargets.length && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+            revealTargets.forEach(el => revealObserver.observe(el));
+        } else {
+            revealTargets.forEach(el => el.classList.add('in-view'));
         }
-      });
-    }
-  </script>
+    </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Visuals by Joshua</h3>
-          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
-          <p style="margin-top: 1.5rem;">
-            <a href="tel:+12403608465">(240) 360-8465</a><br>
-            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
-          </p>
-          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
-            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery">Full Gallery</a></li>
-            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Locations</h4>
-          <ul>
-            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
-            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
-            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
-            <li><a href="/blog.html">Photography Blog</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>

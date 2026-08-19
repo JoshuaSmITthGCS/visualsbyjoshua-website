@@ -13,8 +13,8 @@
 
     <!-- OG Tags -->
     <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Visuals by Joshua">
-  <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Visuals by Joshua">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://visualsbyjoshua.com/blog/fiji-y2k-party-event-photography-charleston/" />
     <meta property="og:title" content="FIJI Y2K Party at Lo-Fi Brewing | Charleston Event Photography" />
     <meta property="og:description" content="Charleston event photography for a Greek life party at Lo-Fi Brewing with flash, fisheye crowd shots, and fast event coverage." />
@@ -27,16 +27,12 @@
     <meta name="twitter:description" content="Charleston event photography for a Greek life party at Lo-Fi Brewing with flash and fisheye crowd shots." />
     <meta name="twitter:image" content="https://visualsbyjoshua.com/images/events/fiji-y2k-party-lofi-brewing-charleston.webp" />
 
-    <!-- Fonts -->
+    <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Shared Blog Styles -->
-    <link rel="stylesheet" href="/styles.css">
-
-    <!-- Schema.org BlogPosting markup -->
+    <!-- Schema.org markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -68,331 +64,760 @@
         },
         "keywords": "event photographer Charleston SC, fraternity party photographer, Lo-Fi Brewing event photography, college event photographer Charleston, Greek life photographer Charleston"
     }
-    </script><style>
-        .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://visualsbyjoshua.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://visualsbyjoshua.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "FIJI Y2K Party at Lo-Fi Brewing: Charleston Event Photography",
+          "item": "https://visualsbyjoshua.com/blog/fiji-y2k-party-event-photography-charleston/"
         }
-        @media (min-width: 800px) {
-          .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-          }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does a fraternity event photographer cost in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Fraternity and sorority event photography in Charleston typically runs between $250 and $600 depending on coverage length and deliverables. Most Greek life events need 2-3 hours. Check my Charleston photography pricing guide for a full breakdown."}}, {"@type": "Question", "name": "What equipment do you use for dark venue event photography?", "acceptedAnswer": {"@type": "Answer", "text": "For dark venues like breweries and bars I use a Godox V1 Pro off-camera flash, a Tamron 28-75mm f/2.8 for general coverage, and a fisheye lens for wide crowd shots. Off-camera flash is essential in venues with low or colored lighting because it gives you directional control that on-camera flash cannot match."}}, {"@type": "Question", "name": "Do you photograph Greek life events at CofC?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I photograph fraternity and sorority events for College of Charleston organizations including formals, themed parties, philanthropy events, and chapter functions. I am familiar with most CofC Greek life venues in the Charleston area."}}, {"@type": "Question", "name": "How quickly do you deliver photos after a fraternity party?", "acceptedAnswer": {"@type": "Answer", "text": "Social media highlights go out within 48 hours so your chapter can post while the event is still fresh. The full edited gallery is ready within one week. If you need faster turnaround for a specific deadline, let me know when you book."}}, {"@type": "Question", "name": "Can you photograph events at Lo-Fi Brewing in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I have shot at Lo-Fi Brewing and I know the layout and lighting. The space works well for private events, parties, and live music. The industrial look adds character to the photos. Flash is required for any nighttime event there."}}, {"@type": "Question", "name": "Why use a fisheye lens at a party?", "acceptedAnswer": {"@type": "Answer", "text": "A fisheye gives you an ultra-wide field of view that fits the entire crowd, the venue, and the energy into one frame. The distortion creates an immersive look that matches the intensity of a packed party. Use it for crowd moments and dance floor energy, not for individual portraits."}}]}</script>
+
+    <script src="/analytics.js" defer></script>
+
+    <style>
+        /* ========================================
+           RESET & BASE (matches homepage design system)
+           ======================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
         }
 
-        .tip-card {
-            background: var(--light);
-            padding: 30px;
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #2a2a2a;
+            background-color: #fcfbfa;
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s ease; }
+        a:hover { opacity: 0.7; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: #2a2a2a;
+            color: #fff;
+            padding: 12px 22px;
+            z-index: 1000;
+            border-radius: 0 0 8px 0;
+            font-size: 0.9rem;
+        }
+        .skip-link:focus { left: 0; }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(252, 251, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px clamp(20px, 5vw, 80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+
+        .nav-menu { display: flex; gap: 40px; list-style: none; }
+        .nav-menu a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2a2a2a;
+        }
+        .nav-menu a:hover { color: #be976d; opacity: 1; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+        }
+        .nav-toggle-bar {
+            width: 22px;
+            height: 2px;
+            background: #2a2a2a;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: #fcfbfa;
+                border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+                padding: 8px 0 16px;
+                transform: translateY(-12px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.25s ease;
+            }
+            .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-menu a { display: block; padding: 14px 20px; }
+            .nav-toggle { display: flex; }
+        }
+
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        p { font-size: 1rem; line-height: 1.8; }
+
+        .kicker {
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #be976d;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* ========================================
+           LAYOUT PRIMITIVES
+           ======================================== */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
             border-radius: 10px;
-            margin: 30px 0;
-            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+        .btn-ghost {
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            color: #ffffff;
+            background: transparent;
+        }
+        .btn-ghost:hover { background: rgba(255, 255, 255, 0.15); opacity: 1; }
+        .btn-primary {
+            background: #be976d;
+            color: #ffffff;
+            border: 2px solid #be976d;
+        }
+        .btn-primary:hover {
+            background: #a67f5a;
+            border-color: #a67f5a;
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #2a2a2a;
+            border: 2px solid #2a2a2a;
+        }
+        .btn-secondary:hover { background: #2a2a2a; color: #fcfbfa; opacity: 1; }
+
+        /* ========================================
+           ARTICLE HERO
+           ======================================== */
+        .article-hero {
+            position: relative;
+            width: 100%;
+            min-height: 64vh;
+            margin-top: 80px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(20,18,15,0.15) 0%, rgba(20,18,15,0.55) 100%), url('/images/events/fiji-y2k-party-lofi-brewing-charleston.webp') center 35% / cover no-repeat;
+        }
+        @media (max-width: 768px) { .article-hero { margin-top: 68px; min-height: 56vh; } }
+
+        .article-hero-content {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            width: 100%;
+            padding: 60px clamp(20px, 5vw, 80px) 56px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
-        .pro-tip {
+        .breadcrumb {
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 18px;
+        }
+        .breadcrumb a { color: #ffffff; }
+        .breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+        .article-hero h1 {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            font-style: italic;
+            letter-spacing: -0.01em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            max-width: 900px;
+            margin-bottom: 1rem;
+        }
+
+        .article-hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 300;
+            max-width: 640px;
+            opacity: 0.95;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            margin-top: 30px;
+            font-size: 0.8125rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* ========================================
+           ARTICLE BODY
+           ======================================== */
+        .article-body {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
+        }
+
+        .article-body h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-style: italic;
+            margin: 3.25rem 0 1.25rem;
+            scroll-margin-top: 96px;
+        }
+        .article-body h2:first-of-type { margin-top: 0; }
+
+        .article-body h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #2a2a2a;
+            margin: 2.25rem 0 1rem;
+            padding-left: 16px;
+            border-left: 3px solid #be976d;
+        }
+
+        /* First paragraph after a heading reads as a lede: slightly heavier weight
+           gives skimmers a scan-anchor without adding another visual element. */
+        .article-body h2 + p {
+            font-weight: 500;
+            font-size: 1.0625rem;
+            color: #2a2a2a;
+        }
+
+        .article-body p { margin-bottom: 1.5rem; color: #3a3630; }
+
+        .article-body ul {
+            margin: 0 0 1.75rem 1.25rem;
+            line-height: 2;
+            color: #3a3630;
+        }
+
+        .article-body a {
+            color: #7d5732;
+            border-bottom: 1px solid rgba(190, 151, 109, 0.5);
+        }
+        .article-body a:hover { opacity: 1; border-color: #be976d; }
+
+        .article-body strong { font-weight: 600; color: #2a2a2a; }
+
+        .article-figure { margin: 3rem 0; text-align: center; }
+        .article-figure img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            margin: 0 auto;
+        }
+        .article-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.875rem;
+            font-style: italic;
+            color: #63594e;
+        }
+
+        /* ========================================
+           PULL QUOTE
+           ======================================== */
+        .pull-quote {
+            margin: 3.5rem 0;
+            padding-left: 28px;
+            border-left: 3px solid #be976d;
+        }
+        .pull-quote p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+            line-height: 1.35;
+            color: #2a2a2a;
+            margin: 0;
+        }
+
+        /* ========================================
+           COLLAPSIBLE SECTIONS (native <details>, no JS dependency)
+           ======================================== */
+        .toc-box {
+            margin-bottom: 3rem;
+            padding: 22px 26px;
             background: #f5f3f0;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
-        }
-
-        .pro-tip h3 {
-            color: #856545;
-            margin-bottom: 10px;
-        }
-
-        .faq-section {
-            margin: 60px 0;
-        }
-
-        .faq-item {
-            background: var(--light);
-            padding: 25px 30px;
             border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: var(--shadow);
         }
-
-        .faq-item h3 {
-            color: var(--primary);
-            margin-bottom: 12px;
+        .toc-box summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
             font-size: 1.15rem;
+            color: #2a2a2a;
+        }
+        .toc-box summary::-webkit-details-marker { display: none; }
+        .toc-box summary::after {
+            content: '+';
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .toc-box[open] summary::after { transform: rotate(45deg); }
+        .toc-list {
+            list-style: none;
+            margin: 18px 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 24px;
+        }
+        @media (max-width: 560px) { .toc-list { grid-template-columns: 1fr; } }
+        .toc-list a {
+            font-size: 0.9375rem;
+            color: #5a564e;
+            border-bottom: none;
+        }
+        .toc-list a:hover { color: #7d5732; opacity: 1; }
+
+        /* ========================================
+           FAQ
+           ======================================== */
+        .faq-item {
+            padding: 4px 0;
+            border-top: 1px solid rgba(42, 42, 42, 0.1);
+        }
+        .faq-item:last-child { border-bottom: 1px solid rgba(42, 42, 42, 0.1); }
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            flex-shrink: 0;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .faq-item[open] summary::after { transform: rotate(45deg); }
+        .faq-item p { margin: 0 0 22px; color: #5a564e; }
+
+        /* ========================================
+           CTA BANNER
+           ======================================== */
+        .cta-banner {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: clamp(60px, 8vw, 90px) 0;
+            text-align: center;
+        }
+        .cta-banner .container { max-width: 700px; }
+        .cta-banner h2 { color: #ffffff; font-style: italic; margin-bottom: 1.25rem; }
+        .cta-banner p { color: rgba(255, 255, 255, 0.85); margin-bottom: 2rem; }
+        .cta-banner p a { color: #d9b48f; border-bottom: 1px solid rgba(217, 180, 143, 0.5); }
+        .cta-banner p a:hover { opacity: 1; }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer { background: #2a2a2a; color: #ffffff; padding: 60px 0 110px; }
+        @media (min-width: 769px) { .footer { padding-bottom: 30px; } }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p { font-size: 0.9375rem; opacity: 0.8; }
+        .footer-links h4 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { font-size: 0.9375rem; opacity: 0.8; transition: opacity 0.3s ease; }
+        .footer-links a:hover { opacity: 1; }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+            font-size: 0.875rem;
+            opacity: 0.7;
         }
 
-        .faq-item p {
-            line-height: 1.7;
-            color: #5a5a5a;
+        /* ========================================
+           BACK TO TOP
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 90;
         }
+        .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .back-to-top:hover { opacity: 0.85; background: #be976d; }
 
-        .location-highlight {
-            background: var(--light);
-            padding: 30px;
-            border-radius: 10px;
-            margin: 40px 0;
-            box-shadow: var(--shadow);
+        /* ========================================
+           SCROLL REVEAL
+           ======================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
         }
     </style>
-  <script src="/analytics.js" defer></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://visualsbyjoshua.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://visualsbyjoshua.com/blog.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "FIJI Y2K Party at Lo-Fi Brewing: Charleston Event Photography",
-      "item": "https://visualsbyjoshua.com/blog/fiji-y2k-party-event-photography-charleston/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does a fraternity event photographer cost in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Fraternity and sorority event photography in Charleston typically runs between $250 and $600 depending on coverage length and deliverables. Most Greek life events need 2-3 hours. Check my Charleston photography pricing guide for a full breakdown."}}, {"@type": "Question", "name": "What equipment do you use for dark venue event photography?", "acceptedAnswer": {"@type": "Answer", "text": "For dark venues like breweries and bars I use a Godox V1 Pro off-camera flash, a Tamron 28-75mm f/2.8 for general coverage, and a fisheye lens for wide crowd shots. Off-camera flash is essential in venues with low or colored lighting because it gives you directional control that on-camera flash cannot match."}}, {"@type": "Question", "name": "Do you photograph Greek life events at CofC?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I photograph fraternity and sorority events for College of Charleston organizations including formals, themed parties, philanthropy events, and chapter functions. I am familiar with most CofC Greek life venues in the Charleston area."}}, {"@type": "Question", "name": "How quickly do you deliver photos after a fraternity party?", "acceptedAnswer": {"@type": "Answer", "text": "Social media highlights go out within 48 hours so your chapter can post while the event is still fresh. The full edited gallery is ready within one week. If you need faster turnaround for a specific deadline, let me know when you book."}}, {"@type": "Question", "name": "Can you photograph events at Lo-Fi Brewing in Charleston?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I have shot at Lo-Fi Brewing and I know the layout and lighting. The space works well for private events, parties, and live music. The industrial look adds character to the photos. Flash is required for any nighttime event there."}}, {"@type": "Question", "name": "Why use a fisheye lens at a party?", "acceptedAnswer": {"@type": "Answer", "text": "A fisheye gives you an ultra-wide field of view that fits the entire crowd, the venue, and the energy into one frame. The distortion creates an immersive look that matches the intensity of a packed party. Use it for crowd moments and dance floor energy, not for individual portraits."}}]}</script>
-  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/blog/photography-pricing/">Pricing</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
-        <li><a href="/#contact">Book Now</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </nav>
+    <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
 
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Visuals by Joshua</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/blog/photography-pricing/">Pricing</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+                <li><a href="/#contact">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Blog Hero Section -->
-    <section class="article-hero hero-bg" style="--bg-url: url('/images/events/fiji-y2k-party-lofi-brewing-charleston.webp');" id="main">
-        <div class="blog-hero-content">
+    <!-- Article Hero -->
+    <section class="article-hero" id="main">
+        <div class="article-hero-content">
             <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; FIJI Y2K Party at Lo-Fi Brewing: Charleston Event Photography</div>
-          <h1 class="blog-hero-title">FIJI Y2K Party at Lo-Fi Brewing: Charleston Event Photography</h1>
-            <p class="blog-hero-subtitle">Off-camera flash, a fisheye lens, and what it takes to shoot a fraternity party in a dark brewery</p>
-
-            <div class="blog-meta">
-                <div class="meta-item">
-                    <i class="fas fa-user"></i>
-                    <span>By Joshua Smith</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-calendar"></i>
-                    <span>March 21, 2026</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i>
-                    <span>7 min read</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Charleston, SC</span>
-                </div>
+            <h1>FIJI Y2K Party at Lo-Fi Brewing: Charleston Event Photography</h1>
+            <p class="article-hero-subtitle">Off-camera flash, a fisheye lens, and what it takes to shoot a fraternity party in a dark brewery</p>
+            <div class="article-meta">
+                <span>By Joshua Smith</span>
+                <span>March 21, 2026</span>
+                <span>7 min read</span>
+                <span>Charleston, SC</span>
             </div>
         </div>
     </section>
 
-    <!-- Blog Content -->
-    <section class="article-content">
-        <div class="blog-container">
+    <main>
+    <article class="article-body">
 
-            <!-- Introduction -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">A Brewery, a Theme Party, and Zero Natural Light</h2>
-                    <p class="blog-text">Indoor venue. Blue and purple stage lighting. A packed room of people dressed in Y2K fits with a DJ pushing the bass through the walls. That is what I walked into when Phi Gamma Delta (FIJI) hired me to shoot their Y2K themed party at Lo-Fi Brewing in Charleston.</p>
+        <details class="toc-box reveal">
+            <summary>In this guide</summary>
+            <ul class="toc-list">
+                <li><a href="#brewery-theme-party">A brewery, a theme party, and zero natural light</a></li>
+                <li><a href="#lofi-brewing">Lo-Fi Brewing is a dark room with good bones</a></li>
+                <li><a href="#off-camera-flash">Off-camera flash changes everything indoors</a></li>
+                <li><a href="#two-lenses">Two lenses, two looks</a></li>
+                <li><a href="#dj-coverage">Photographing the DJ</a></li>
+                <li><a href="#working-the-crowd">Working a fraternity crowd</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </details>
 
-                    <p class="blog-text">This is the kind of <strong>event photography in Charleston</strong> that tests everything. Your flash game, your ability to read a room, your lens choices, your stamina. There is no good ambient light to lean on. The room is dark except for colored LEDs and whatever the DJ booth is throwing off. You bring your own light or you bring home nothing.</p>
+        <h2 id="brewery-theme-party" class="reveal">A Brewery, a Theme Party, and Zero Natural Light</h2>
+        <p>Indoor venue. Blue and purple stage lighting. A packed room of people dressed in Y2K fits with a DJ pushing the bass through the walls. That is what I walked into when Phi Gamma Delta (FIJI) hired me to shoot their Y2K themed party at Lo-Fi Brewing in Charleston.</p>
 
-                    <p class="blog-text">Here is how I approached this shoot, what gear I used, and why fraternity event photography at venues like Lo-Fi Brewing requires a different mindset than outdoor parties.</p>
-                </div>
-            </div>
+        <p>This is the kind of <strong>event photography in Charleston</strong> that tests everything. Your flash game, your ability to read a room, your lens choices, your stamina. There is no good ambient light to lean on. The room is dark except for colored LEDs and whatever the DJ booth is throwing off. That reality shapes every decision I make once the doors open.</p>
 
-            <!-- Featured Image -->
-            <div style="margin: 40px 0; max-height: 500px; overflow: hidden; border-radius: 10px; box-shadow: var(--shadow);">
-                <picture>
-                  <source type="image/avif" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.avif 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.avif 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.avif 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <source type="image/webp" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.webp 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.webp 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.webp 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)">
-                  <img src="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.jpg" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.jpg 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.jpg 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.jpg 1200w" sizes="(min-width: 940px) 860px, calc(100vw - 40px)" width="1206" height="2622" alt="FIJI Phi Gamma Delta Y2K party event photography at Lo-Fi Brewing Charleston SC with DJ and crowd" style="width: 100%; height: 500px; object-fit: cover; border-radius: 10px;" loading="lazy" decoding="async">
-                </picture>
-            </div>
+        <blockquote class="pull-quote reveal">
+            <p>You bring your own light or you bring home nothing.</p>
+        </blockquote>
 
-            <!-- The Venue -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Lo-Fi Brewing Is a Dark Room With Good Bones</h2>
-                    <p class="blog-text">Lo-Fi Brewing sits on Upper King Street in Charleston. The space is industrial. Concrete floors, exposed brick, high ceilings. For a brewery it has character. For a photographer it has challenges.</p>
+        <p>Here is how I approached this shoot, what gear I used, and why fraternity event photography at venues like Lo-Fi Brewing requires a different mindset than outdoor parties.</p>
 
-                    <p class="blog-text">The ambient lighting is low on a normal night. For a party with a DJ setup and colored stage lights it drops even lower. The only consistent light sources were the blue and purple LEDs on the DJ booth and some overhead fixtures that the venue dimmed for the event. That means your camera's meter is useless. Auto white balance will fight you. And if you try to shoot available light only you get noisy, color-cast images that look like they were taken through a grape juice filter.</p>
+        <figure class="article-figure reveal">
+            <picture>
+                <source type="image/avif" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.avif 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.avif 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.avif 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <source type="image/webp" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.webp 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.webp 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.webp 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)">
+                <img src="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.jpg" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.jpg 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.jpg 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.jpg 1200w" sizes="(min-width: 780px) 700px, calc(100vw - 40px)" width="1206" height="2622" alt="FIJI Phi Gamma Delta Y2K party event photography at Lo-Fi Brewing Charleston SC with DJ and crowd" loading="lazy" decoding="async">
+            </picture>
+        </figure>
 
-                    <p class="blog-text">I have shot outdoor events where ambient light gives you something to work with. Indoor venues like Lo-Fi take that away entirely. You need flash. Not on-camera bounce flash. Real, controlled, off-camera flash that gives you clean light on your subjects while letting the venue lighting do its thing in the background.</p>
-                </div>
-            </div>
+        <h2 id="lofi-brewing" class="reveal">Lo-Fi Brewing Is a Dark Room With Good Bones</h2>
+        <p>Lo-Fi Brewing sits on Upper King Street in Charleston. The space is industrial. Concrete floors, exposed brick, high ceilings. For a brewery it has character. For a photographer it has challenges.</p>
 
-            <!-- Flash Setup -->
-            <div class="tip-card">
-                <h2 class="section-title">Off-Camera Flash Changes Everything Indoors</h2>
-                <p class="blog-text">I brought my <a title="Godox V1 Pro flash" href="https://www.godox.com/" target="_blank" rel="noopener">Godox V1 Pro</a> for this event. It is a round-head flash with enough power to fill a room and fast enough recycle time to keep up with a party. I ran it off-camera for most of the night, holding it in my left hand angled about 45 degrees above and to the side of my subjects.</p>
+        <p>The ambient lighting is low on a normal night. For a party with a DJ setup and colored stage lights it drops even lower. The only consistent light sources were the blue and purple LEDs on the DJ booth and some overhead fixtures that the venue dimmed for the event. That means your camera's meter is useless. Auto white balance will fight you. And if you try to shoot available light only you get noisy, color-cast images that look like they were taken through a grape juice filter.</p>
 
-                <p class="blog-text">Why off-camera instead of on-camera? Direction. On-camera flash hits your subject straight on and creates flat, harsh light with hard shadows on the wall behind them. Move the flash off to the side and you get dimension. One side of the face lights up, the other falls into shadow, and the background gets its own separation. It looks more natural even though there is nothing natural about firing a strobe in a brewery at midnight.</p>
+        <p>I have shot outdoor events where ambient light gives you something to work with. Indoor venues like Lo-Fi take that away entirely. You need flash. Not on-camera bounce flash. Real, controlled, off-camera flash that gives you clean light on your subjects while letting the venue lighting do its thing in the background.</p>
 
-                <p class="blog-text">I set the flash to TTL mode and let it adjust power automatically based on distance. In a venue where you are constantly moving between the DJ booth, the crowd, and the bar, manual flash power means you are chimping after every shot and adjusting. TTL is not perfect but it keeps you shooting instead of fiddling with settings. If a shot comes out too hot or too dark I adjust the flash exposure compensation and keep moving.</p>
+        <h2 id="off-camera-flash" class="reveal">Off-Camera Flash Changes Everything Indoors</h2>
+        <p>I brought my <a title="Godox V1 Pro flash" href="https://www.godox.com/" target="_blank" rel="noopener">Godox V1 Pro</a> for this event. It is a round-head flash with enough power to fill a room and fast enough recycle time to keep up with a party. I ran it off-camera for most of the night, holding it in my left hand angled about 45 degrees above and to the side of my subjects.</p>
 
-                <p class="blog-text">The Godox V1 Pro has a modeling light that I used between shots to help people see where I was pointing and to give me a quick preview of the light direction. Small feature, big help in a dark room.</p>
-            </div>
+        <p>Why off-camera instead of on-camera? Direction. On-camera flash hits your subject straight on and creates flat, harsh light with hard shadows on the wall behind them. Move the flash off to the side and you get dimension. One side of the face lights up, the other falls into shadow, and the background gets its own separation. It looks more natural even though there is nothing natural about firing a strobe in a brewery at midnight.</p>
 
-            <!-- Two Lens Approach -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Two Lenses, Two Looks</h2>
-                    <p class="blog-text">I ran two lenses for this shoot. My <a title="Tamron 28-75mm f/2.8 lens overview" href="https://www.tamron.com/global/consumer/lenses/a036" target="_blank" rel="noopener">Tamron 28-75mm f/2.8</a> handled about 70% of the night. It is my default event lens because the zoom range covers groups, candids, DJ shots, and tight portraits without swapping glass. At 28mm I can fit a group of eight people standing shoulder to shoulder. At 75mm I can isolate the DJ behind the decks with the crowd blurred out behind them.</p>
+        <p>I set the flash to TTL mode and let it adjust power automatically based on distance. In a venue where you are constantly moving between the DJ booth, the crowd, and the bar, manual flash power means you are chimping after every shot and adjusting. TTL is not perfect but it keeps you shooting instead of fiddling with settings. If a shot comes out too hot or too dark I adjust the flash exposure compensation and keep moving.</p>
 
-                    <p class="blog-text">The other 30% went to my fisheye lens. And this is where the Y2K party photos got interesting.</p>
+        <p>The Godox V1 Pro has a modeling light that I used between shots to help people see where I was pointing and to give me a quick preview of the light direction. Small feature, big help in a dark room.</p>
 
-                    <h3>The Fisheye Gives You the Whole Room</h3>
-                    <p class="blog-text">A fisheye is not an everyday lens. You do not use it for headshots or detail work. But for a packed party in a dark venue it does something no other lens can. It gives you the entire room in one frame. The crowd, the ceiling, the DJ, the lights, the smoke, all of it bending and wrapping around the center of the image.</p>
+        <h2 id="two-lenses" class="reveal">Two Lenses, Two Looks</h2>
+        <p>I ran two lenses for this shoot. My <a title="Tamron 28-75mm f/2.8 lens overview" href="https://www.tamron.com/global/consumer/lenses/a036" target="_blank" rel="noopener">Tamron 28-75mm f/2.8</a> handled about 70% of the night. It is my default event lens because the zoom range covers groups, candids, DJ shots, and tight portraits without swapping glass. At 28mm I can fit a group of eight people standing shoulder to shoulder. At 75mm I can isolate the DJ behind the decks with the crowd blurred out behind them.</p>
 
-                    <p class="blog-text">I used the fisheye for crowd shots from inside the dance floor. Held the camera low, pointed up, and fired the flash. The distortion works here because it matches the energy. A Y2K theme party is already loud and exaggerated. The fisheye leans into that. The circular frames I got from this lens are some of the strongest images from the night because they feel like being in the middle of the room, not watching from the side.</p>
+        <p>The other 30% went to my fisheye lens. And this is where the Y2K party photos got interesting.</p>
 
-                    <p class="blog-text">If you are thinking about using a fisheye for event work, use it for wide crowd moments and venue shots only. Switch back to your standard zoom for anything where you need faces to look accurate. Fisheye distortion on a portrait is not flattering.</p>
-                </div>
-            </div>
+        <h3>The Fisheye Gives You the Whole Room</h3>
+        <p>A fisheye is not an everyday lens. You do not use it for headshots or detail work. But for a packed party in a dark venue it does something no other lens can. It gives you the entire room in one frame. The crowd, the ceiling, the DJ, the lights, the smoke, all of it bending and wrapping around the center of the image.</p>
 
-            <!-- DJ Coverage -->
-            <div class="tip-card">
-                <h2 class="section-title">Photographing the DJ Sets the Tone for the Whole Gallery</h2>
-                <p class="blog-text">DJ Jaylen Williams ran the music for the FIJI Y2K party and getting good photos of the DJ is one of the first things I focus on at any event with live music or a DJ set. The DJ is the anchor of the night. They set the mood, they control the energy, and photos of them behind the decks establish context for every other image in the gallery.</p>
+        <p>I used the fisheye for crowd shots from inside the dance floor. Held the camera low, pointed up, and fired the flash. The distortion works here because it matches the energy. A Y2K theme party is already loud and exaggerated. The fisheye leans into that. The circular frames I got from this lens are some of the strongest images from the night because they feel like being in the middle of the room, not watching from the side.</p>
 
-                <p class="blog-text">I shot Jaylen from a few different angles. Straight on from the crowd side to show the full setup with lights behind him. From the side to get a profile shot with the mixer and his hands on the controls. And from behind the booth looking out at the crowd, which gives the organizer a perspective they never see during the actual event.</p>
+        <p>If you are thinking about using a fisheye for event work, use it for wide crowd moments and venue shots only. Switch back to your standard zoom for anything where you need faces to look accurate. Fisheye distortion on a portrait is not flattering.</p>
 
-                <p class="blog-text">For DJ photos I dropped my flash power and let the venue's colored lights contribute more to the exposure. Blue and purple light on the DJ booth looks good when you let it exist in the frame. Overpowering it with white flash kills the atmosphere. I bumped my ISO to 1600 and slowed my shutter to 1/60 to let the color bleed in while the flash froze the DJ sharp. That combination of sharp subject and colored motion in the background is what makes event photos feel alive.</p>
+        <h2 id="dj-coverage" class="reveal">Photographing the DJ Sets the Tone for the Whole Gallery</h2>
+        <p>DJ Jaylen Williams ran the music for the FIJI Y2K party and getting good photos of the DJ is one of the first things I focus on at any event with live music or a DJ set. The DJ is the anchor of the night. They set the mood, they control the energy, and photos of them behind the decks establish context for every other image in the gallery.</p>
 
-                <p class="blog-text">I have used a similar approach shooting concert photography. The principle is the same. Let the stage light be part of the story instead of fighting it.</p>
-            </div>
+        <p>I shot Jaylen from a few different angles. Straight on from the crowd side to show the full setup with lights behind him. From the side to get a profile shot with the mixer and his hands on the controls. And from behind the booth looking out at the crowd, which gives the organizer a perspective they never see during the actual event.</p>
 
-            <!-- Working the Crowd -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Working a Fraternity Crowd Is About Energy, Not Perfection</h2>
-                    <p class="blog-text">Greek life events have their own rhythm. People show up in groups. They want photos together. They want to look good but they do not want to stop having fun to pose for five minutes. You have to match their energy or you become background noise.</p>
+        <p>For DJ photos I dropped my flash power and let the venue's colored lights contribute more to the exposure. Blue and purple light on the DJ booth looks good when you let it exist in the frame. Overpowering it with white flash kills the atmosphere. I bumped my ISO to 1600 and slowed my shutter to 1/60 to let the color bleed in while the flash froze the DJ sharp. That combination of sharp subject and colored motion in the background is what makes event photos feel alive.</p>
 
-                    <p class="blog-text">I move through the crowd fast. If a group flags me down I walk over, position the flash, tell them to get tight, and fire three frames in five seconds. Check focus on the LCD, give them a thumbs up, and keep moving. If I see a good candid moment I shoot it without asking. Two friends laughing, someone dancing, the crowd surging forward when a song hits. Those are the photos that get shared the most because they are real.</p>
+        <p>I have used a similar approach shooting concert photography. The principle is the same. Let the stage light be part of the story instead of fighting it.</p>
 
-                    <p class="blog-text">For this FIJI event the Y2K theme meant people put effort into their outfits. Platform shoes, chunky sunglasses, baggy jeans, frosted tips. That gives you visual texture in every frame. I made sure to get full-body shots that showed the fits because half the point of a themed party is showing up in costume. Cropping out the outfit to get a tighter portrait would have missed the point entirely.</p>
-                </div>
-            </div>
+        <h2 id="working-the-crowd" class="reveal">Working a Fraternity Crowd Is About Energy, Not Perfection</h2>
+        <p>Greek life events have their own rhythm. People show up in groups. They want photos together. They want to look good but they do not want to stop having fun to pose for five minutes. You have to match their energy or you become background noise.</p>
 
-            <!-- Pro Tip -->
-            <div class="pro-tip">
-                <h3><i class="fas fa-lightbulb"></i> Pro Tip: Protect Your Gear in a Brewery</h3>
-                <p>Breweries have wet floors. People are holding drinks. It is loud and crowded and someone is going to bump into you at some point. I keep a lens cloth in my back pocket and wipe down my front element every 20 minutes. If you are using off-camera flash, keep a firm grip. I also use a camera strap even though I usually shoot without one outdoors. In a packed venue, dropping your camera means it hits concrete and it is done. The strap saves you from a $2,000 accident.</p>
-            </div>
+        <p>I move through the crowd fast. If a group flags me down I walk over, position the flash, tell them to get tight, and fire three frames in five seconds. Check focus on the LCD, give them a thumbs up, and keep moving. If I see a good candid moment I shoot it without asking. Two friends laughing, someone dancing, the crowd surging forward when a song hits. Those are the photos that get shared the most because they are real.</p>
 
-            <!-- Gear Breakdown -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">Full Gear List for This Shoot</h3>
-                    <p class="blog-text">Every event is different but here is exactly what I brought to Lo-Fi Brewing for the FIJI party and why each piece earned its spot in the bag.</p>
+        <p>For this FIJI event the Y2K theme meant people put effort into their outfits. Platform shoes, chunky sunglasses, baggy jeans, frosted tips. That gives you visual texture in every frame. I made sure to get full-body shots that showed the fits because half the point of a themed party is showing up in costume. Cropping out the outfit to get a tighter portrait would have missed the point entirely.</p>
 
-                    <ul class="blog-text" style="margin-left: 20px; margin-top: 10px; line-height: 2.2;">
-                        <li><strong>Tamron 28-75mm f/2.8</strong> for general coverage, groups, DJ shots, and candids</li>
-                        <li><strong>Fisheye lens</strong> for ultra-wide crowd shots and circular party frames</li>
-                        <li><strong>Godox V1 Pro</strong> off-camera flash for controlled directional lighting</li>
-                        <li><strong>Extra flash batteries</strong> because a full night of firing drains them fast</li>
-                        <li><strong>Two memory cards</strong> because shooting an event on one card is asking for trouble</li>
-                    </ul>
+        <h3>Pro Tip: Protect Your Gear in a Brewery</h3>
+        <p>Breweries have wet floors. People are holding drinks. It is loud and crowded and someone is going to bump into you at some point. I keep a lens cloth in my back pocket and wipe down my front element every 20 minutes. If you are using off-camera flash, keep a firm grip. I also use a camera strap even though I usually shoot without one outdoors. In a packed venue, dropping your camera means it hits concrete and it is done. The strap saves you from a $2,000 accident.</p>
 
-                    <p class="blog-text">No light stands, no modifiers, no second body. At a party this packed you need to be mobile. Every piece of gear you add slows you down and takes up space in a room that does not have any to spare. My <a title="Read the event photography checklist" href="/blog/event-photography-checklist-smithsonian-folklife/">event photography checklist</a> covers gear packing in more detail if you want the full breakdown.</p>
-                </div>
-            </div>
+        <h3>Full Gear List for This Shoot</h3>
+        <p>Every event is different but here is exactly what I brought to Lo-Fi Brewing for the FIJI party and why each piece earned its spot in the bag.</p>
 
-            <!-- FAQ Section -->
-            <div class="faq-section">
-                <h2 class="section-title">Frequently Asked Questions</h2>
+        <ul>
+            <li><strong>Tamron 28-75mm f/2.8</strong> for general coverage, groups, DJ shots, and candids</li>
+            <li><strong>Fisheye lens</strong> for ultra-wide crowd shots and circular party frames</li>
+            <li><strong>Godox V1 Pro</strong> off-camera flash for controlled directional lighting</li>
+            <li><strong>Extra flash batteries</strong> because a full night of firing drains them fast</li>
+            <li><strong>Two memory cards</strong> because shooting an event on one card is asking for trouble</li>
+        </ul>
 
-                <div class="faq-item">
-                    <h3>How much does a fraternity event photographer cost in Charleston?</h3>
-                    <p>Fraternity and sorority event photography in Charleston typically runs between $250 and $600 depending on coverage length and deliverables. Most Greek life events need 2-3 hours. Check my <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston photography pricing guide</a> for a full breakdown.</p>
-                </div>
+        <p>No light stands, no modifiers, no second body. At a party this packed you need to be mobile. Every piece of gear you add slows you down and takes up space in a room that does not have any to spare. My <a title="Read the event photography checklist" href="/blog/event-photography-checklist-smithsonian-folklife/">event photography checklist</a> covers gear packing in more detail if you want the full breakdown.</p>
 
-                <div class="faq-item">
-                    <h3>What equipment do you use for dark venue event photography?</h3>
-                    <p>For dark venues like breweries and bars I use a Godox V1 Pro off-camera flash, a Tamron 28-75mm f/2.8 for general coverage, and a fisheye lens for wide crowd shots. Off-camera flash is essential in venues with low or colored lighting because it gives you directional control that on-camera flash cannot match.</p>
-                </div>
+        <h2 id="faq" class="reveal">Frequently Asked Questions</h2>
 
-                <div class="faq-item">
-                    <h3>Do you photograph Greek life events at CofC?</h3>
-                    <p>Yes. I photograph fraternity and sorority events for College of Charleston organizations including formals, themed parties, philanthropy events, and chapter functions. I am familiar with most CofC Greek life venues in the Charleston area.</p>
-                </div>
+        <details class="faq-item">
+            <summary>How much does a fraternity event photographer cost in Charleston?</summary>
+            <p>Fraternity and sorority event photography in Charleston typically runs between $250 and $600 depending on coverage length and deliverables. Most Greek life events need 2-3 hours. Check my <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston photography pricing guide</a> for a full breakdown.</p>
+        </details>
+        <details class="faq-item">
+            <summary>What equipment do you use for dark venue event photography?</summary>
+            <p>For dark venues like breweries and bars I use a Godox V1 Pro off-camera flash, a Tamron 28-75mm f/2.8 for general coverage, and a fisheye lens for wide crowd shots. Off-camera flash is essential in venues with low or colored lighting because it gives you directional control that on-camera flash cannot match.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Do you photograph Greek life events at CofC?</summary>
+            <p>Yes. I photograph fraternity and sorority events for College of Charleston organizations including formals, themed parties, philanthropy events, and chapter functions. I am familiar with most CofC Greek life venues in the Charleston area.</p>
+        </details>
+        <details class="faq-item">
+            <summary>How quickly do you deliver photos after a fraternity party?</summary>
+            <p>Social media highlights go out within 48 hours so your chapter can post while the event is still fresh. The full edited gallery is ready within one week. If you need faster turnaround for a specific deadline, let me know when you book.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Can you photograph events at Lo-Fi Brewing in Charleston?</summary>
+            <p>Yes. I have shot at Lo-Fi Brewing and I know the layout and lighting. The space works well for private events, parties, and live music. The industrial look adds character to the photos. Flash is required for any nighttime event there.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Why use a fisheye lens at a party?</summary>
+            <p>A fisheye gives you an ultra-wide field of view that fits the entire crowd, the venue, and the energy into one frame. The distortion creates an immersive look that matches the intensity of a packed party. Use it for crowd moments and dance floor energy, not for individual portraits.</p>
+        </details>
 
-                <div class="faq-item">
-                    <h3>How quickly do you deliver photos after a fraternity party?</h3>
-                    <p>Social media highlights go out within 48 hours so your chapter can post while the event is still fresh. The full edited gallery is ready within one week. If you need faster turnaround for a specific deadline, let me know when you book.</p>
-                </div>
+        <h2 class="reveal">Need an Event Photographer in Charleston?</h2>
+        <p>I shoot fraternity parties, sorority events, private celebrations, and everything in between across Charleston. DMV coverage is available by request when the date and project fit. Whether your event is at a brewery, a rooftop, a backyard, or a ballroom, I bring the flash, the lenses, and the experience to deliver photos that match the energy of the night. Browse my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more event work or <a title="Contact Joshua Smith about Greek life event photography" href="/index.html?service=event&location=charleston#contact">request event coverage</a>.</p>
 
-                <div class="faq-item">
-                    <h3>Can you photograph events at Lo-Fi Brewing in Charleston?</h3>
-                    <p>Yes. I have shot at Lo-Fi Brewing and I know the layout and lighting. The space works well for private events, parties, and live music. The industrial look adds character to the photos. Flash is required for any nighttime event there.</p>
-                </div>
+        <p>For more on what I offer, visit my <a title="View Charleston event photography services" href="/charleston-event-photographer/">Charleston event photographer</a> page or compare rates in the <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston pricing guide</a>. If you are a CofC organization planning your next function, I have worked with Greek life chapters before and I know what you need. Hit my <a title="Read photography booking FAQs" href="/faq">FAQ</a> for quick answers or <a title="Contact Joshua Smith about Charleston event photography" href="/index.html?service=event&location=charleston#contact">contact me</a> to get a quote.</p>
 
-                <div class="faq-item">
-                    <h3>Why use a fisheye lens at a party?</h3>
-                    <p>A fisheye gives you an ultra-wide field of view that fits the entire crowd, the venue, and the energy into one frame. The distortion creates an immersive look that matches the intensity of a packed party. Use it for crowd moments and dance floor energy, not for individual portraits.</p>
-                </div>
-            </div>
-
-            <!-- CTA Section -->
-            <div class="location-highlight">
-                <h2 class="section-title">Need an Event Photographer in Charleston?</h2>
-                <p class="blog-text">I shoot fraternity parties, sorority events, private celebrations, and everything in between across Charleston. DMV coverage is available by request when the date and project fit. Whether your event is at a brewery, a rooftop, a backyard, or a ballroom, I bring the flash, the lenses, and the experience to deliver photos that match the energy of the night. Browse my <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="external-link" aria-label="View the Visuals by Joshua photography portfolio">portfolio</a> to see more event work or <a title="Contact Joshua Smith about Greek life event photography" href="/index.html?service=event&location=charleston#contact">request event coverage</a>.</p>
-
-                <p class="blog-text">For more on what I offer, visit my <a title="View Charleston event photography services" href="/charleston-event-photographer/">Charleston event photographer</a> page or compare rates in the <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston pricing guide</a>. If you are a CofC organization planning your next function, I have worked with Greek life chapters before and I know what you need. Hit my <a title="Read photography booking FAQs" href="/faq">FAQ</a> for quick answers or <a title="Contact Joshua Smith about Charleston event photography" href="/index.html?service=event&location=charleston#contact">contact me</a> to get a quote.</p>
-            </div>
-        </div>
-    </section>
+    </article>
 
     <!-- CTA Banner -->
     <section class="cta-banner">
         <div class="container">
-            <h2 class="cta-title">Book Your Next Event in Charleston</h2>
-            <p class="cta-text">From Greek life parties to private events and concerts, get professional event photography that keeps up with the energy of your night.</p>
+            <h2>Book Your Next Event in Charleston</h2>
+            <p>From Greek life parties to private events and concerts, get professional event photography that keeps up with the energy of your night.</p>
             <div class="cta-buttons">
-                <a title="Check Charleston event photography availability" href="/index.html?service=event&location=charleston#contact" class="btn btn-accent">Check Event Availability</a>
-                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
+                <a title="Check Charleston event photography availability" href="/index.html?service=event&location=charleston#contact" class="btn btn-primary">Check Event Availability</a>
+                <a title="View the Visuals by Joshua photography portfolio" href="/gallery" class="btn btn-ghost" aria-label="View the Visuals by Joshua photography portfolio">View Portfolio</a>
             </div>
         </div>
     </section>
-
+    </main>
 
     <!-- Back to Top Button -->
-    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
+    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page">&uarr;</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals by Joshua</h3>
+                    <p>Editorial photography for milestones &amp; moments. Serving Charleston SC + Northern VA / DMV.</p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="tel:+12403608465" style="display: block; margin-bottom: 0.5rem;">&#128222; (240) 360-8465</a>
+                        <a href="mailto:jbmsmusic05@gmail.com" style="display: block; margin-bottom: 0.5rem;">&#9993;&#65039; jbmsmusic05@gmail.com</a>
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128247; Instagram</a>
+                        <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128218; Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/gallery">Full Gallery</a></li>
+                        <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+                        <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+                        <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+                        <li><a href="/blog.html">Photography Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Visuals by Joshua. Charleston SC &amp; Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.add('show');
@@ -400,77 +825,28 @@
                 backToTopButton.classList.remove('show');
             }
         });
-
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Scroll reveal for section headings, pull-quote, figure, and TOC
+        const revealTargets = document.querySelectorAll('.reveal');
+        if (revealTargets.length && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+            revealTargets.forEach(el => revealObserver.observe(el));
+        } else {
+            revealTargets.forEach(el => el.classList.add('in-view'));
+        }
     </script>
-  <script>
-    (function() {
-      var hamburger = document.querySelector('.hamburger');
-      var navMenu = document.querySelector('.nav-menu');
-      if (!hamburger || !navMenu) return;
-      function close() {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-      }
-      hamburger.addEventListener('click', function() {
-        var open = navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active', open);
-        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      navMenu.querySelectorAll('.nav-link').forEach(function(l) { l.addEventListener('click', close); });
-      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
-    })();
-  </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Visuals by Joshua</h3>
-          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
-          <p style="margin-top: 1.5rem;">
-            <a href="tel:+12403608465">(240) 360-8465</a><br>
-            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
-          </p>
-          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
-            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery">Full Gallery</a></li>
-            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Locations</h4>
-          <ul>
-            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
-            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
-            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
-            <li><a href="/blog.html">Photography Blog</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>
