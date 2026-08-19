@@ -254,6 +254,14 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Blog: Editorial Fashion Photography Inside a Record Store -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/record-store-editorial-fashion-photography/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Blog: Event Photography Checklist Smithsonian Folklife -->
   <url>
     <loc>https://visualsbyjoshua.com/blog/event-photography-checklist-smithsonian-folklife/</loc>
