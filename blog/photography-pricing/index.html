@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- SEO Meta Tags -->
+    <!-- SEO Meta Tags -->
     <title>Average Photography Hourly Rate &amp; Prices (2026)</title>
     <meta name="description" content="Photographer hourly rates run $150-$400. See real 2026 pricing for portraits, events, headshots, and mini sessions in the DMV and Charleston, by the hour.">
     <meta name="author" content="Joshua Smith">
@@ -13,8 +13,8 @@
 
     <!-- OG Tags -->
     <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Visuals by Joshua">
-  <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Visuals by Joshua">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://visualsbyjoshua.com/blog/photography-pricing/" />
     <meta property="og:title" content="Photography Prices in DMV & Charleston | Visuals by Joshua" />
     <meta property="og:description" content="Compare photography pricing for portraits, events, headshots, and graduations in the DMV and Charleston." />
@@ -27,14 +27,10 @@
     <meta name="twitter:description" content="Compare pricing for portrait, event, headshot, and graduation photography in the DMV and Charleston." />
     <meta name="twitter:image" content="https://visualsbyjoshua.com/dmv-photography-pricing-guide.webp" />
 
-    <!-- Fonts -->
+    <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Shared Blog Styles -->
-    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Schema.org markup -->
     <script type="application/ld+json">
@@ -66,495 +62,918 @@
         "keywords": "photography prices DMV, Charleston photography pricing, portrait photographer cost Maryland, headshot prices DC, event photographer rates DMV, Charleston photographer rates"
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://visualsbyjoshua.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://visualsbyjoshua.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How Much Does Photography Cost in the DMV? (2026 Guide)",
+          "item": "https://visualsbyjoshua.com/blog/photography-pricing/"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the average photographer hourly rate in the DMV?", "acceptedAnswer": {"@type": "Answer", "text": "Most DMV photographers charge $150 to $400 per hour, with the majority of sessions falling between $200 and $300 depending on experience and location."}}, {"@type": "Question", "name": "Why does Washington DC cost more than the suburbs?", "acceptedAnswer": {"@type": "Answer", "text": "DC rates run 20 to 30 percent higher due to expensive parking, permit fees for monuments and federal buildings, and the general cost of doing business downtown."}}, {"@type": "Question", "name": "Are there hidden fees I should ask about?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about travel fees outside a 25-mile radius, parking in downtown DC, permit fees for monuments, rush delivery surcharges, and weekend rate increases before you book."}}, {"@type": "Question", "name": "Is a mini session worth it if I am on a budget?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A 15 to 20 minute mini session with about 5 edited images typically runs $40 to $75, which covers a quick need like a profile photo or a small family update."}}, {"@type": "Question", "name": "Do prices change based on the season?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. January, February, and August tend to be slower months, and many photographers run promotions during that window. Booking 2 to 3 months ahead also tends to get better rates."}}, {"@type": "Question", "name": "Should I book by the hour or by the package?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the shoot. Portraits and headshots usually work best as flat packages, while events with an uncertain timeline are often priced hourly with a 2 to 3 hour minimum."}}]}</script>
+
+    <script src="/analytics.js" defer></script>
 
     <style>
-        .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-        }
-        @media (min-width: 800px) {
-          .blog-hero {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), var(--bg-url) center 35% / cover no-repeat;
-          }
+        /* ========================================
+           RESET & BASE (matches homepage design system)
+           ======================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            scroll-behavior: smooth;
         }
 
-        .faq-static { margin: 18px 0; padding: 22px 24px; border-radius: 8px; background: #f5f3f0; }
-        .faq-static h3 { margin: 0 0 10px; font-size: 1.2rem; color: var(--primary); }
-        .faq-static p { margin: 0; color: #5a5a5a; line-height: 1.75; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #2a2a2a;
+            background-color: #fcfbfa;
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s ease; }
+        a:hover { opacity: 0.7; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+            top: 0;
+            background: #2a2a2a;
+            color: #fff;
+            padding: 12px 22px;
+            z-index: 1000;
+            border-radius: 0 0 8px 0;
+            font-size: 0.9rem;
+        }
+        .skip-link:focus { left: 0; }
+
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            background: rgba(252, 251, 250, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px clamp(20px, 5vw, 80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+
+        .nav-menu { display: flex; gap: 40px; list-style: none; }
+        .nav-menu a {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2a2a2a;
+        }
+        .nav-menu a:hover { color: #be976d; opacity: 1; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+        }
+        .nav-toggle-bar {
+            width: 22px;
+            height: 2px;
+            background: #2a2a2a;
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: #fcfbfa;
+                border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+                padding: 8px 0 16px;
+                transform: translateY(-12px);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.25s ease;
+            }
+            .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-menu a { display: block; padding: 14px 20px; }
+            .nav-toggle { display: flex; }
+        }
+
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        p { font-size: 1rem; line-height: 1.8; }
+
+        .kicker {
+            font-size: 0.875rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: #be976d;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* ========================================
+           LAYOUT PRIMITIVES
+           ======================================== */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .btn-ghost {
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            color: #ffffff;
+            background: transparent;
+        }
+        .btn-ghost:hover { background: rgba(255, 255, 255, 0.15); opacity: 1; }
+        .btn-primary {
+            background: #be976d;
+            color: #ffffff;
+            border: 2px solid #be976d;
+        }
+        .btn-primary:hover {
+            background: #a67f5a;
+            border-color: #a67f5a;
+            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3);
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #2a2a2a;
+            border: 2px solid #2a2a2a;
+        }
+        .btn-secondary:hover { background: #2a2a2a; color: #fcfbfa; opacity: 1; }
+
+        /* ========================================
+           ARTICLE HERO
+           ======================================== */
+        .article-hero {
+            position: relative;
+            width: 100%;
+            min-height: 64vh;
+            margin-top: 80px;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+            background: linear-gradient(180deg, rgba(20,18,15,0.15) 0%, rgba(20,18,15,0.55) 100%), url('/dmv-photography-pricing-guide.webp') center 35% / cover no-repeat;
+        }
+        @media (max-width: 768px) { .article-hero { margin-top: 68px; min-height: 56vh; } }
+
+        .article-hero-content {
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            width: 100%;
+            padding: 60px clamp(20px, 5vw, 80px) 56px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-bottom: 18px;
+        }
+        .breadcrumb a { color: #ffffff; }
+        .breadcrumb a:hover { opacity: 1; text-decoration: underline; }
+
+        .article-hero h1 {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            font-style: italic;
+            letter-spacing: -0.01em;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+            max-width: 900px;
+            margin-bottom: 1rem;
+        }
+
+        .article-hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            font-weight: 300;
+            max-width: 640px;
+            opacity: 0.95;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            margin-top: 30px;
+            font-size: 0.8125rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        /* ========================================
+           ARTICLE BODY
+           ======================================== */
+        .article-body {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
+        }
+
+        .article-body h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-style: italic;
+            margin: 3.25rem 0 1.25rem;
+            scroll-margin-top: 96px;
+        }
+        .article-body h2:first-of-type { margin-top: 0; }
+
+        .article-body h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #2a2a2a;
+            margin: 2.25rem 0 1rem;
+            padding-left: 16px;
+            border-left: 3px solid #be976d;
+        }
+
+        /* First paragraph after a heading reads as a lede: slightly heavier weight
+           gives skimmers a scan-anchor without adding another visual element. */
+        .article-body h2 + p {
+            font-weight: 500;
+            font-size: 1.0625rem;
+            color: #2a2a2a;
+        }
+
+        .article-body p { margin-bottom: 1.5rem; color: #3a3630; }
+
+        .article-body ul {
+            margin: 0 0 1.75rem 1.25rem;
+            line-height: 2;
+            color: #3a3630;
+        }
+
+        .article-body a {
+            color: #7d5732;
+            border-bottom: 1px solid rgba(190, 151, 109, 0.5);
+        }
+        .article-body a:hover { opacity: 1; border-color: #be976d; }
+
+        .article-body strong { font-weight: 600; color: #2a2a2a; }
+
+        .article-figure { margin: 3rem 0; text-align: center; }
+        .article-figure img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            margin: 0 auto;
+        }
+        .article-figure figcaption {
+            margin-top: 14px;
+            font-size: 0.875rem;
+            font-style: italic;
+            color: #63594e;
+        }
+
+        /* ========================================
+           PULL QUOTE
+           ======================================== */
+        .pull-quote {
+            margin: 3.5rem 0;
+            padding-left: 28px;
+            border-left: 3px solid #be976d;
+        }
+        .pull-quote p {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: clamp(1.5rem, 3.4vw, 2.25rem);
+            line-height: 1.35;
+            color: #2a2a2a;
+            margin: 0;
+        }
+
+        /* ========================================
+           COLLAPSIBLE SECTIONS (native <details>, no JS dependency)
+           ======================================== */
+        .toc-box {
+            margin-bottom: 3rem;
+            padding: 22px 26px;
+            background: #f5f3f0;
+            border-radius: 10px;
+        }
+        .toc-box summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.15rem;
+            color: #2a2a2a;
+        }
+        .toc-box summary::-webkit-details-marker { display: none; }
+        .toc-box summary::after {
+            content: '+';
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .toc-box[open] summary::after { transform: rotate(45deg); }
+        .toc-list {
+            list-style: none;
+            margin: 18px 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 24px;
+        }
+        @media (max-width: 560px) { .toc-list { grid-template-columns: 1fr; } }
+        .toc-list a {
+            font-size: 0.9375rem;
+            color: #5a564e;
+            border-bottom: none;
+        }
+        .toc-list a:hover { color: #7d5732; opacity: 1; }
+
+        /* ========================================
+           FAQ
+           ======================================== */
+        .faq-item {
+            padding: 4px 0;
+            border-top: 1px solid rgba(42, 42, 42, 0.1);
+        }
+        .faq-item:last-child { border-bottom: 1px solid rgba(42, 42, 42, 0.1); }
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 22px 0;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #2a2a2a;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            flex-shrink: 0;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.25rem;
+            color: #be976d;
+            transition: transform 0.25s ease;
+        }
+        .faq-item[open] summary::after { transform: rotate(45deg); }
+        .faq-item p { margin: 0 0 22px; color: #5a564e; }
+
+        /* ========================================
+           CTA BANNER
+           ======================================== */
+        .cta-banner {
+            background: #2a2a2a;
+            color: #ffffff;
+            padding: clamp(60px, 8vw, 90px) 0;
+            text-align: center;
+        }
+        .cta-banner .container { max-width: 700px; }
+        .cta-banner h2 { color: #ffffff; font-style: italic; margin-bottom: 1.25rem; }
+        .cta-banner p { color: rgba(255, 255, 255, 0.85); margin-bottom: 2rem; }
+        .cta-banner p a { color: #d9b48f; border-bottom: 1px solid rgba(217, 180, 143, 0.5); }
+        .cta-banner p a:hover { opacity: 1; }
+        .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer { background: #2a2a2a; color: #ffffff; padding: 60px 0 110px; }
+        @media (min-width: 769px) { .footer { padding-bottom: 30px; } }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p { font-size: 0.9375rem; opacity: 0.8; }
+        .footer-links h4 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { font-size: 0.9375rem; opacity: 0.8; transition: opacity 0.3s ease; }
+        .footer-links a:hover { opacity: 1; }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+            font-size: 0.875rem;
+            opacity: 0.7;
+        }
+
+        /* ========================================
+           BACK TO TOP
+           ======================================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 90;
+        }
+        .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .back-to-top:hover { opacity: 0.85; background: #be976d; }
+
+        /* ========================================
+           SCROLL REVEAL
+           ======================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+        }
     </style>
-  <script src="/analytics.js" defer></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://visualsbyjoshua.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://visualsbyjoshua.com/blog.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "How Much Does Photography Cost in the DMV? (2026 Guide)",
-      "item": "https://visualsbyjoshua.com/blog/photography-pricing/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the average photographer hourly rate in the DMV?", "acceptedAnswer": {"@type": "Answer", "text": "Most DMV photographers charge $150 to $400 per hour, with the majority of sessions falling between $200 and $300 depending on experience and location."}}, {"@type": "Question", "name": "Why does Washington DC cost more than the suburbs?", "acceptedAnswer": {"@type": "Answer", "text": "DC rates run 20 to 30 percent higher due to expensive parking, permit fees for monuments and federal buildings, and the general cost of doing business downtown."}}, {"@type": "Question", "name": "Are there hidden fees I should ask about?", "acceptedAnswer": {"@type": "Answer", "text": "Ask about travel fees outside a 25-mile radius, parking in downtown DC, permit fees for monuments, rush delivery surcharges, and weekend rate increases before you book."}}, {"@type": "Question", "name": "Is a mini session worth it if I am on a budget?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A 15 to 20 minute mini session with about 5 edited images typically runs $40 to $75, which covers a quick need like a profile photo or a small family update."}}, {"@type": "Question", "name": "Do prices change based on the season?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. January, February, and August tend to be slower months, and many photographers run promotions during that window. Booking 2 to 3 months ahead also tends to get better rates."}}, {"@type": "Question", "name": "Should I book by the hour or by the package?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the shoot. Portraits and headshots usually work best as flat packages, while events with an uncertain timeline are often priced hourly with a 2 to 3 hour minimum."}}]}</script>
-  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/blog/photography-pricing/">Pricing</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
-        <li><a href="/#contact">Book Now</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </nav>
+    <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
 
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Visuals by Joshua</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/blog/photography-pricing/">Pricing</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+                <li><a href="/#contact">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Blog Hero Section -->
-    <section class="article-hero hero-bg" style="--bg-url: url('/dmv-photography-pricing-guide.webp');" id="main">
-        <div class="blog-hero-content">
+    <!-- Article Hero -->
+    <section class="article-hero" id="main">
+        <div class="article-hero-content">
             <div class="breadcrumb"><a href="/">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; How Much Does Photography Cost in the DMV? (2026 Guide)</div>
-          <h1 class="blog-hero-title">How Much Does Photography Cost in the DMV? (2026 Guide)</h1>
-            <p class="blog-hero-subtitle">Real pricing for portraits, events, and headshots across Maryland, DC, and Virginia</p>
-
-            <div class="blog-meta">
-                <div class="meta-item">
-                    <i class="fas fa-user"></i>
-                    <span>By Joshua Smith</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-calendar"></i>
-                    <span>Published January 15, 2025 &middot; Updated May 2, 2026</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i>
-                    <span>15 min read</span>
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>DMV Area</span>
-                </div>
+            <h1>How Much Does Photography Cost in the DMV? (2026 Guide)</h1>
+            <p class="article-hero-subtitle">Real pricing for portraits, events, and headshots across Maryland, DC, and Virginia</p>
+            <div class="article-meta">
+                <span>By Joshua Smith</span>
+                <span>Published January 15, 2025 &middot; Updated May 2, 2026</span>
+                <span>15 min read</span>
+                <span>DMV Area</span>
             </div>
         </div>
     </section>
 
-    <!-- Blog Content -->
-    <section class="article-content">
-        <div class="blog-container">
+    <main>
+    <article class="article-body">
 
-            <!-- Introduction -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">What Photography Actually Costs in the DMV</h2>
-                    <p class="blog-text">You want to know what a photographer costs in the DMV before you reach out. I get it. Nobody likes surprise pricing.</p>
+        <details class="toc-box reveal">
+            <summary>In this guide</summary>
+            <ul class="toc-list">
+                <li><a href="#what-it-costs">What photography actually costs</a></li>
+                <li><a href="#portrait-pricing">Portrait photography pricing</a></li>
+                <li><a href="#event-pricing">Event photography rates</a></li>
+                <li><a href="#headshot-pricing">Headshot photography prices</a></li>
+                <li><a href="#cost-factors">What affects photography costs</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </details>
 
-                    <p class="blog-text">I'm a Charleston-based photographer who also works the DMV &mdash; DC, Northern Virginia, Maryland &mdash; by request. I put this guide together because I got tired of seeing vague answers to a simple question. The average <strong>DMV photographer charges between $150 and $400 per hour</strong>, but what you actually pay depends on the type of shoot, where you want it, and what you need delivered. My own DMV rates are listed below, separate from these market averages.</p>
-                    <p class="blog-text">The short answer: expect to pay $150&ndash;$400 per hour for professional photography, with most sessions falling between $200 and $300 per hour depending on experience and location.</p>
+        <h2 id="what-it-costs" class="reveal">What Photography Actually Costs in the DMV</h2>
+        <p>You want to know what a photographer costs in the DMV before you reach out. I get it. Nobody likes surprise pricing.</p>
 
-                    <p class="blog-text">Here is a full breakdown of what you can expect to pay for <strong>portraits, events, and headshots</strong> across the region.</p>
+        <p>I'm a Charleston-based photographer who also works the DMV &mdash; DC, Northern Virginia, Maryland &mdash; by request. I put this guide together because I got tired of seeing vague answers to a simple question. The average <strong>DMV photographer charges between $150 and $400 per hour</strong>, but what you actually pay depends on the type of shoot, where you want it, and what you need delivered. My own DMV rates are listed below, separate from these market averages.</p>
 
-                    <p class="blog-text">I am now Charleston-first for regular bookings, so if you found this guide while comparing rates, start with my <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston photography pricing guide</a> or <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact">check Charleston availability</a>. DMV work is still available by request when the date and project fit.</p>
-                </div>
+        <p>Here's that answer in plain terms:</p>
+
+        <blockquote class="pull-quote reveal">
+            <p>The short answer: expect to pay $150&ndash;$400 per hour for professional photography, with most sessions falling between $200 and $300 per hour depending on experience and location.</p>
+        </blockquote>
+
+        <p>Here is a full breakdown of what you can expect to pay for <strong>portraits, events, and headshots</strong> across the region.</p>
+
+        <p>I am now Charleston-first for regular bookings, so if you found this guide while comparing rates, start with my <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/">Charleston photography pricing guide</a> or <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact">check Charleston availability</a>. DMV work is still available by request when the date and project fit.</p>
+
+        <div class="toc-box reveal" style="text-align: left;">
+            <h3 style="margin-top: 0;">Need a real quote instead of another estimate?</h3>
+            <p style="margin-bottom: 1.5rem;">Send the date, service type, location, and timing. Charleston bookings get priority availability, and DMV sessions are available by request when the route and schedule line up.</p>
+            <div class="cta-buttons" style="justify-content: flex-start;">
+                <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact" class="btn btn-primary">Check Charleston Availability</a>
+                <a title="Request DMV photography availability" href="/index.html?location=dmv#contact" class="btn btn-secondary">Request DMV Quote</a>
+                <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/" class="btn btn-secondary">Charleston Pricing</a>
             </div>
+        </div>
 
-            <div class="blog-conversion-cta">
-                <h2>Need a real quote instead of another estimate?</h2>
-                <p>Send the date, service type, location, and timing. Charleston bookings get priority availability, and DMV sessions are available by request when the route and schedule line up.</p>
-                <div class="blog-conversion-actions">
-                    <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact" class="btn btn-accent">Check Charleston Availability</a>
-                    <a title="Request DMV photography availability" href="/index.html?location=dmv#contact" class="btn">Request DMV Quote</a>
-                    <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/" class="btn">Charleston Pricing</a>
-                </div>
+        <h2 id="portrait-pricing" class="reveal">Portrait Photography Pricing in the DMV</h2>
+
+        <h3>Individual Portraits</h3>
+        <p><strong>$80-$200</strong></p>
+        <ul>
+            <li>30-60 minute session</li>
+            <li>1 location in MD/DC/VA</li>
+            <li>10-30 edited images</li>
+            <li>Online gallery delivery</li>
+            <li>Print release included</li>
+        </ul>
+
+        <h3>Family Portraits</h3>
+        <p><strong>$150-$350</strong></p>
+        <ul>
+            <li>60-90 minute session</li>
+            <li>Up to 6 family members</li>
+            <li>25-50 edited images</li>
+            <li>2 outfit changes</li>
+            <li>Popular in Montgomery County</li>
+        </ul>
+
+        <h3>Couples/Engagement</h3>
+        <p><strong>$200-$400</strong></p>
+        <ul>
+            <li>90-120 minute session</li>
+            <li>Multiple DMV locations</li>
+            <li>40-80 edited images</li>
+            <li>Sunset/golden hour timing</li>
+            <li>DC monuments available</li>
+        </ul>
+
+        <h2 id="event-pricing" class="reveal">Event Photography Rates in Maryland, DC and Virginia</h2>
+        <p><strong>Event photography in the DMV</strong> runs $150 to $400 per hour. Most photographers require a 2 to 3 hour minimum. Corporate events in DC tend to cost more because the editing expectations are higher and the turnaround is tighter.</p>
+
+        <h3>DMV Event Photography Pricing Breakdown</h3>
+        <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr style="background: #be976d; color: white;">
+                    <th style="padding: 15px; text-align: left;">Event Type</th>
+                    <th style="padding: 15px; text-align: center;">Hourly Rate</th>
+                    <th style="padding: 15px; text-align: center;">Typical Package</th>
+                    <th style="padding: 15px; text-align: center;">Popular Areas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border-bottom: 1px solid #e8e8e8;">
+                    <td style="padding: 15px;"><strong>Corporate Events</strong></td>
+                    <td style="padding: 15px; text-align: center;">$200-$400/hr</td>
+                    <td style="padding: 15px; text-align: center;">$800-$2,000</td>
+                    <td style="padding: 15px; text-align: center;">DC, Arlington, Bethesda</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e8e8e8; background: #f5f3f0;">
+                    <td style="padding: 15px;"><strong>Birthday Parties</strong></td>
+                    <td style="padding: 15px; text-align: center;">$150-$250/hr</td>
+                    <td style="padding: 15px; text-align: center;">$450-$750</td>
+                    <td style="padding: 15px; text-align: center;">PG County, Fairfax</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e8e8e8;">
+                    <td style="padding: 15px;"><strong>Small Weddings</strong></td>
+                    <td style="padding: 15px; text-align: center;">$250-$500/hr</td>
+                    <td style="padding: 15px; text-align: center;">$1,500-$4,000</td>
+                    <td style="padding: 15px; text-align: center;">All DMV Areas</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e8e8e8; background: #f5f3f0;">
+                    <td style="padding: 15px;"><strong>Graduations</strong></td>
+                    <td style="padding: 15px; text-align: center;">$150-$200/hr</td>
+                    <td style="padding: 15px; text-align: center;">$150-$400</td>
+                    <td style="padding: 15px; text-align: center;">UMD, Howard, Georgetown</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e8e8e8;">
+                    <td style="padding: 15px;"><strong>Conferences</strong></td>
+                    <td style="padding: 15px; text-align: center;">$175-$350/hr</td>
+                    <td style="padding: 15px; text-align: center;">$1,000-$3,000</td>
+                    <td style="padding: 15px; text-align: center;">DC, National Harbor</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <h2 id="headshot-pricing" class="reveal">Professional Headshot Photography Prices</h2>
+        <p>The DMV has over 500,000 federal employees and contractors. That means demand for <strong>professional headshots</strong> stays high year-round. You need one for LinkedIn, your company website, or a speaking bio. <a title="LinkedIn photo tips" href="https://www.linkedin.com/help/linkedin/answer/a566255" target="_blank" rel="noopener">LinkedIn's own guidance</a> on profile photos backs up why a real headshot outperforms a cropped selfie. Here is what that costs.</p>
+
+        <h3>Basic Headshots</h3>
+        <p><strong>$40-$75</strong></p>
+        <ul>
+            <li>15-minute mini session</li>
+            <li>1-2 final images</li>
+            <li>Basic retouching</li>
+            <li>48-hour delivery</li>
+            <li>Digital files only</li>
+        </ul>
+
+        <h3>Professional Package</h3>
+        <p><strong>$100-$150</strong></p>
+        <ul>
+            <li>30-minute session</li>
+            <li>3-5 final images</li>
+            <li>Advanced retouching</li>
+            <li>Multiple backgrounds</li>
+            <li>LinkedIn optimization</li>
+        </ul>
+
+        <h3>Executive Headshots</h3>
+        <p><strong>$200-$300</strong></p>
+        <ul>
+            <li>45-60 minute session</li>
+            <li>8-10 final images</li>
+            <li>Premium retouching</li>
+            <li>On-location option</li>
+            <li>Rush delivery available</li>
+        </ul>
+
+        <h3>How much does a mini session cost?</h3>
+        <p>A mini session with 5 edited digital images typically costs $40&ndash;$75 in the DMV and Charleston, for a 15&ndash;20 minute shoot at one location.</p>
+
+        <h2 id="cost-factors" class="reveal">What Affects Photography Costs in the DMV</h2>
+
+        <h3>1. Location Within the DMV</h3>
+        <p><strong>Washington DC</strong> rates run 20 to 30 percent higher than the suburbs. Parking is expensive, permits for monuments and federal buildings add up, and the cost of doing business downtown is just higher.</p>
+
+        <p><strong>Northern Virginia</strong> pricing in Arlington, Alexandria, and Fairfax County sits close to DC rates, especially for corporate work. McLean and Tysons Corner are premium areas.</p>
+
+        <p><strong>Maryland</strong> varies a lot. Montgomery County neighborhoods like Bethesda and Rockville match DC pricing. Prince George's County and the outer suburbs tend to run 15 to 25 percent lower. Baltimore area rates fall below the DC metro average.</p>
+
+        <p>These ranges line up with national data too. The <a title="Bureau of Labor Statistics photographer wage data" href="https://www.bls.gov/ooh/entertainment-and-sports/photographers.htm" target="_blank" rel="noopener">Bureau of Labor Statistics</a> shows freelance photography income varies widely by market and specialty, which is exactly why a flat national number rarely matches what you will actually pay in the DMV.</p>
+
+        <h3>2. Photographer Experience Level</h3>
+        <ul>
+            <li><strong>Beginners (0-2 years):</strong> $75-$150/hour</li>
+            <li><strong>Intermediate (2-5 years):</strong> $150-$250/hour</li>
+            <li><strong>Experienced (5-10 years):</strong> $250-$400/hour</li>
+            <li><strong>Master photographers (10+ years):</strong> $400+/hour</li>
+        </ul>
+
+        <h3>3. Additional Costs to Plan For</h3>
+        <p>These are the extras that can shift your total. Ask about them upfront so nothing catches you off guard.</p>
+        <ul>
+            <li><strong>Travel fees:</strong> $0.50-$1.00/mile outside 25-mile radius</li>
+            <li><strong>Parking fees:</strong> $15-$40 in downtown DC</li>
+            <li><strong>Permit fees:</strong> $50-$200 for DC monuments</li>
+            <li><strong>Rush delivery:</strong> 25-50% surcharge</li>
+            <li><strong>Weekend rates:</strong> 10-20% higher than weekdays</li>
+            <li><strong>Additional editing:</strong> $25-$50/image</li>
+        </ul>
+
+        <h3>DMV Photography Pricing by Area</h3>
+
+        <p><strong>Washington, DC</strong> &mdash; Average hourly rate: $200-$400</p>
+        <ul>
+            <li>Georgetown sessions: +20% premium</li>
+            <li>Capitol Hill area: Permit required</li>
+            <li>National Mall: Free with restrictions</li>
+            <li>Dupont Circle: Popular for headshots</li>
+        </ul>
+
+        <p><strong>Montgomery County, MD</strong> &mdash; Average hourly rate: $175-$350</p>
+        <ul>
+            <li>Bethesda: Premium pricing area</li>
+            <li>Rockville: Standard DMV rates</li>
+            <li>Silver Spring: 10-15% below DC</li>
+            <li>Gaithersburg: Value pricing</li>
+        </ul>
+
+        <p><strong>Prince George's County, MD</strong> &mdash; Average hourly rate: $150-$300</p>
+        <ul>
+            <li>Upper Marlboro: Standard rates</li>
+            <li>Bowie: Popular for families</li>
+            <li>College Park: Student discounts</li>
+            <li>National Harbor: Event premium</li>
+        </ul>
+
+        <p><strong>Northern Virginia</strong> &mdash; Average hourly rate: $175-$375</p>
+        <ul>
+            <li>Arlington: Matches DC pricing</li>
+            <li>Alexandria Old Town: Premium</li>
+            <li>Fairfax: Standard rates</li>
+            <li>Loudoun County: Value pricing</li>
+        </ul>
+
+        <h3>How to Save Money on DMV Photography</h3>
+        <p>You do not have to overpay. Here are the real ways people save on photography in this area.</p>
+        <ol style="margin: 0 0 1.75rem 1.25rem; line-height: 2; color: #3a3630;">
+            <li><strong>Book weekday mornings.</strong> Most photographers offer 10 to 20 percent lower rates during off-peak hours.</li>
+            <li><strong>Choose suburban locations.</strong> PG County and the outer suburbs cost less than DC or Arlington.</li>
+            <li><strong>Book a mini session.</strong> A 15 to 30 minute session gets you what you need at a fraction of the price.</li>
+            <li><strong>Group up for headshots.</strong> Split the cost with friends or coworkers and everyone wins.</li>
+            <li><strong>Watch for seasonal deals.</strong> January, February, and August are slower months. Photographers run promotions.</li>
+            <li><strong>Bundle your services.</strong> Headshots plus family portraits in one booking saves 15 to 25 percent.</li>
+            <li><strong>Ask about referral discounts.</strong> Many photographers take 10 to 15 percent off when you send someone their way.</li>
+            <li><strong>Book early.</strong> Reserving 2 to 3 months ahead usually gets you better rates.</li>
+        </ol>
+
+        <h3>When You Should Pay More</h3>
+        <p>Not every shoot needs the cheapest option. Some situations call for investing in someone with more experience and better gear.</p>
+        <ul>
+            <li><strong>Executive headshots.</strong> Your photo represents your company. It needs to look like it.</li>
+            <li><strong>Events you only get once.</strong> Weddings, milestone birthdays, and graduations do not get a reshoot.</li>
+            <li><strong>Commercial work.</strong> If the images go on your website, in ads, or in marketing materials, quality matters more.</li>
+            <li><strong>Large group events.</strong> Managing 100+ people and getting clean shots takes real experience.</li>
+            <li><strong>DC monument shoots.</strong> You need a photographer who knows the permit process and the best angles.</li>
+            <li><strong>Tight deadlines.</strong> When you need images fast, you are paying for reliability and a proven workflow.</li>
+        </ul>
+
+        <h2 id="faq" class="reveal">DMV Photography Pricing FAQ</h2>
+
+        <details class="faq-item">
+            <summary>What is the average photographer hourly rate in the DMV?</summary>
+            <p>Most DMV photographers charge $150 to $400 per hour, with the majority of sessions falling between $200 and $300 depending on experience and location.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Why does Washington DC cost more than the suburbs?</summary>
+            <p>DC rates run 20 to 30 percent higher due to expensive parking, permit fees for monuments and federal buildings, and the general cost of doing business downtown.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Are there hidden fees I should ask about?</summary>
+            <p>Ask about travel fees outside a 25-mile radius, parking in downtown DC, permit fees for monuments, rush delivery surcharges, and weekend rate increases before you book.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Is a mini session worth it if I am on a budget?</summary>
+            <p>Yes. A 15 to 20 minute mini session with about 5 edited images typically runs $40 to $75, which covers a quick need like a profile photo or a small family update.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Do prices change based on the season?</summary>
+            <p>Yes. January, February, and August tend to be slower months, and many photographers run promotions during that window. Booking 2 to 3 months ahead also tends to get better rates.</p>
+        </details>
+        <details class="faq-item">
+            <summary>Should I book by the hour or by the package?</summary>
+            <p>It depends on the shoot. Portraits and headshots usually work best as flat packages, while events with an uncertain timeline are often priced hourly with a 2 to 3 hour minimum.</p>
+        </details>
+
+    </article>
+
+    <!-- Secondary CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Comparing prices because you might book soon?</h2>
+            <p>Use the pricing ranges here to sanity-check your budget, then look at real galleries and send the date if you want a quote that matches your session.</p>
+            <div class="cta-buttons">
+                <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact" class="btn btn-primary">Check Charleston Availability</a>
+                <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/" class="btn btn-ghost">Charleston Pricing</a>
             </div>
-
-            <!-- Portrait Photography Pricing -->
-            <div class="pricing-section">
-                <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Portrait Photography Pricing in the DMV</h2>
-
-                <div class="price-grid">
-                    <div class="price-card">
-                        <h3 class="price-label">Individual Portraits</h3>
-                        <div class="price-amount">$80-$200</div>
-                        <ul class="price-features">
-                            <li>30-60 minute session</li>
-                            <li>1 location in MD/DC/VA</li>
-                            <li>10-30 edited images</li>
-                            <li>Online gallery delivery</li>
-                            <li>Print release included</li>
-                        </ul>
-                        
-                    </div>
-
-                    <div class="price-card featured">
-                        <h3 class="price-label">Family Portraits</h3>
-                        <div class="price-amount">$150-$350</div>
-                        <ul class="price-features">
-                            <li>60-90 minute session</li>
-                            <li>Up to 6 family members</li>
-                            <li>25-50 edited images</li>
-                            <li>2 outfit changes</li>
-                            <li>Popular in Montgomery County</li>
-                        </ul>
-                        
-                    </div>
-
-                    <div class="price-card">
-                        <h3 class="price-label">Couples/Engagement</h3>
-                        <div class="price-amount">$200-$400</div>
-                        <ul class="price-features">
-                            <li>90-120 minute session</li>
-                            <li>Multiple DMV locations</li>
-                            <li>40-80 edited images</li>
-                            <li>Sunset/golden hour timing</li>
-                            <li>DC monuments available</li>
-                        </ul>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <!-- Event Photography Pricing -->
-            <div class="about-container" style="margin-bottom: 60px;">
-                <div class="about-content">
-                    <h2 class="section-title">Event Photography Rates in Maryland, DC and Virginia</h2>
-                    <p class="blog-text"><strong>Event photography in the DMV</strong> runs $150 to $400 per hour. Most photographers require a 2 to 3 hour minimum. Corporate events in DC tend to cost more because the editing expectations are higher and the turnaround is tighter.</p>
-                </div>
-            </div>
-
-            <div class="pricing-table">
-                <h3 style="text-align: center; margin-bottom: 30px; color: var(--primary);">DMV Event Photography Pricing Breakdown</h3>
-                <table style="width: 100%; border-collapse: collapse;">
-                    <thead>
-                        <tr style="background: var(--primary); color: white;">
-                            <th style="padding: 15px; text-align: left;">Event Type</th>
-                            <th style="padding: 15px; text-align: center;">Hourly Rate</th>
-                            <th style="padding: 15px; text-align: center;">Typical Package</th>
-                            <th style="padding: 15px; text-align: center;">Popular Areas</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-bottom: 1px solid #e8e8e8;">
-                            <td style="padding: 15px;"><strong>Corporate Events</strong></td>
-                            <td style="padding: 15px; text-align: center;">$200-$400/hr</td>
-                            <td style="padding: 15px; text-align: center;">$800-$2,000</td>
-                            <td style="padding: 15px; text-align: center;">DC, Arlington, Bethesda</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e8e8e8; background: #f5f3f0;">
-                            <td style="padding: 15px;"><strong>Birthday Parties</strong></td>
-                            <td style="padding: 15px; text-align: center;">$150-$250/hr</td>
-                            <td style="padding: 15px; text-align: center;">$450-$750</td>
-                            <td style="padding: 15px; text-align: center;">PG County, Fairfax</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e8e8e8;">
-                            <td style="padding: 15px;"><strong>Small Weddings</strong></td>
-                            <td style="padding: 15px; text-align: center;">$250-$500/hr</td>
-                            <td style="padding: 15px; text-align: center;">$1,500-$4,000</td>
-                            <td style="padding: 15px; text-align: center;">All DMV Areas</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e8e8e8; background: #f5f3f0;">
-                            <td style="padding: 15px;"><strong>Graduations</strong></td>
-                            <td style="padding: 15px; text-align: center;">$150-$200/hr</td>
-                            <td style="padding: 15px; text-align: center;">$150-$400</td>
-                            <td style="padding: 15px; text-align: center;">UMD, Howard, Georgetown</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #e8e8e8;">
-                            <td style="padding: 15px;"><strong>Conferences</strong></td>
-                            <td style="padding: 15px; text-align: center;">$175-$350/hr</td>
-                            <td style="padding: 15px; text-align: center;">$1,000-$3,000</td>
-                            <td style="padding: 15px; text-align: center;">DC, National Harbor</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- Headshot Pricing -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">Professional Headshot Photography Prices</h2>
-                    <p class="blog-text">The DMV has over 500,000 federal employees and contractors. That means demand for <strong>professional headshots</strong> stays high year-round. You need one for LinkedIn, your company website, or a speaking bio. <a title="LinkedIn photo tips" href="https://www.linkedin.com/help/linkedin/answer/a566255" target="_blank" rel="noopener">LinkedIn's own guidance</a> on profile photos backs up why a real headshot outperforms a cropped selfie. Here is what that costs.</p>
-                </div>
-            </div>
-
-            <div class="price-grid">
-                <div class="price-card">
-                    <h3 class="price-label">Basic Headshots</h3>
-                    <div class="price-amount">$40-$75</div>
-                    <ul class="price-features">
-                        <li>15-minute mini session</li>
-                        <li>1-2 final images</li>
-                        <li>Basic retouching</li>
-                        <li>48-hour delivery</li>
-                        <li>Digital files only</li>
-                    </ul>
-                </div>
-
-                <div class="price-card featured">
-                    <h3 class="price-label">Professional Package</h3>
-                    <div class="price-amount">$100-$150</div>
-                    <ul class="price-features">
-                        <li>30-minute session</li>
-                        <li>3-5 final images</li>
-                        <li>Advanced retouching</li>
-                        <li>Multiple backgrounds</li>
-                        <li>LinkedIn optimization</li>
-                    </ul>
-                </div>
-
-                <div class="price-card">
-                    <h3 class="price-label">Executive Headshots</h3>
-                    <div class="price-amount">$200-$300</div>
-                    <ul class="price-features">
-                        <li>45-60 minute session</li>
-                        <li>8-10 final images</li>
-                        <li>Premium retouching</li>
-                        <li>On-location option</li>
-                        <li>Rush delivery available</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Mini Session Pricing -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">How much does a mini session cost?</h3>
-                    <p class="blog-text">A mini session with 5 edited digital images typically costs $40&ndash;$75 in the DMV and Charleston, for a 15&ndash;20 minute shoot at one location.</p>
-                </div>
-            </div>
-
-            <!-- Factors Affecting Pricing -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">What Affects Photography Costs in the DMV</h2>
-
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">1. Location Within the DMV</h3>
-                    <p class="blog-text"><strong>Washington DC</strong> rates run 20 to 30 percent higher than the suburbs. Parking is expensive, permits for monuments and federal buildings add up, and the cost of doing business downtown is just higher.</p>
-
-                    <p class="blog-text"><strong>Northern Virginia</strong> pricing in Arlington, Alexandria, and Fairfax County sits close to DC rates, especially for corporate work. McLean and Tysons Corner are premium areas.</p>
-
-                    <p class="blog-text"><strong>Maryland</strong> varies a lot. Montgomery County neighborhoods like Bethesda and Rockville match DC pricing. Prince George's County and the outer suburbs tend to run 15 to 25 percent lower. Baltimore area rates fall below the DC metro average.</p>
-
-                    <p class="blog-text">These ranges line up with national data too. The <a title="Bureau of Labor Statistics photographer wage data" href="https://www.bls.gov/ooh/entertainment-and-sports/photographers.htm" target="_blank" rel="noopener">Bureau of Labor Statistics</a> shows freelance photography income varies widely by market and specialty, which is exactly why a flat national number rarely matches what you will actually pay in the DMV.</p>
-
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">2. Photographer Experience Level</h3>
-                    <ul style="margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
-                        <li><strong>Beginners (0-2 years):</strong> $75-$150/hour</li>
-                        <li><strong>Intermediate (2-5 years):</strong> $150-$250/hour</li>
-                        <li><strong>Experienced (5-10 years):</strong> $250-$400/hour</li>
-                        <li><strong>Master photographers (10+ years):</strong> $400+/hour</li>
-                    </ul>
-
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">3. Additional Costs to Plan For</h3>
-                    <p class="blog-text">These are the extras that can shift your total. Ask about them upfront so nothing catches you off guard.</p>
-                    <ul style="margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
-                        <li><strong>Travel fees:</strong> $0.50-$1.00/mile outside 25-mile radius</li>
-                        <li><strong>Parking fees:</strong> $15-$40 in downtown DC</li>
-                        <li><strong>Permit fees:</strong> $50-$200 for DC monuments</li>
-                        <li><strong>Rush delivery:</strong> 25-50% surcharge</li>
-                        <li><strong>Weekend rates:</strong> 10-20% higher than weekdays</li>
-                        <li><strong>Additional editing:</strong> $25-$50/image</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Price Comparison by Area -->
-            <div class="pricing-section" style="background: white; padding: 40px 0;">
-                <h3 style="color: var(--primary); margin: 30px 0 15px 0;">DMV Photography Pricing by Area</h3>
-
-                <div class="location-grid">
-                    <div class="location-card">
-                        <div class="location-content">
-                            <h3 class="location-title">Washington, DC</h3>
-                            <p><strong>Average hourly rate:</strong> $200-$400</p>
-                            <ul style="margin-top: 15px; line-height: 1.8;">
-                                <li>Georgetown sessions: +20% premium</li>
-                                <li>Capitol Hill area: Permit required</li>
-                                <li>National Mall: Free with restrictions</li>
-                                <li>Dupont Circle: Popular for headshots</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="location-card">
-                        <div class="location-content">
-                            <h3 class="location-title">Montgomery County, MD</h3>
-                            <p><strong>Average hourly rate:</strong> $175-$350</p>
-                            <ul style="margin-top: 15px; line-height: 1.8;">
-                                <li>Bethesda: Premium pricing area</li>
-                                <li>Rockville: Standard DMV rates</li>
-                                <li>Silver Spring: 10-15% below DC</li>
-                                <li>Gaithersburg: Value pricing</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="location-card">
-                        <div class="location-content">
-                            <h3 class="location-title">Prince George's County, MD</h3>
-                            <p><strong>Average hourly rate:</strong> $150-$300</p>
-                            <ul style="margin-top: 15px; line-height: 1.8;">
-                                <li>Upper Marlboro: Standard rates</li>
-                                <li>Bowie: Popular for families</li>
-                                <li>College Park: Student discounts</li>
-                                <li>National Harbor: Event premium</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="location-card">
-                        <div class="location-content">
-                            <h3 class="location-title">Northern Virginia</h3>
-                            <p><strong>Average hourly rate:</strong> $175-$375</p>
-                            <ul style="margin-top: 15px; line-height: 1.8;">
-                                <li>Arlington: Matches DC pricing</li>
-                                <li>Alexandria Old Town: Premium</li>
-                                <li>Fairfax: Standard rates</li>
-                                <li>Loudoun County: Value pricing</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Money-Saving Tips -->
-            <div class="blog-conversion-cta">
-                <h2>Comparing prices because you might book soon?</h2>
-                <p>Use the pricing ranges here to sanity-check your budget, then look at real galleries and send the date if you want a quote that matches your session.</p>
-                <div class="blog-conversion-actions">
-                    <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact" class="btn btn-accent">Check Charleston Availability</a>
-                    <a title="View photography portfolio examples" href="/gallery" class="btn">View Portfolio Examples</a>
-                    <a title="Open the Charleston photography pricing guide" href="/blog/charleston-photography-pricing/" class="btn">Charleston Pricing</a>
-                </div>
-                <div class="blog-resource-links" aria-label="Related photography services">
-                    <a title="View Charleston portrait photography services" href="/charleston-portrait-photographer/">Portraits</a>
-                    <a title="View Charleston event photography services" href="/charleston-event-photographer/">Events</a>
-                    <a title="Read Charleston graduation photography guide" href="/blog/charleston-graduation-photography/">Graduation</a>
-                    <a title="Read Charleston headshot pricing guide" href="/blog/charleston-headshot-guide/">Headshots</a>
-                    <a title="Read Charleston family photo locations guide" href="/blog/charleston-family-photo-locations/">Family Sessions</a>
-                </div>
-            </div>
-
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">How to Save Money on DMV Photography</h3>
-                    <p class="blog-text">You do not have to overpay. Here are the real ways people save on photography in this area.</p>
-
-                    <ol style="margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
-                        <li><strong>Book weekday mornings.</strong> Most photographers offer 10 to 20 percent lower rates during off-peak hours.</li>
-                        <li><strong>Choose suburban locations.</strong> PG County and the outer suburbs cost less than DC or Arlington.</li>
-                        <li><strong>Book a mini session.</strong> A 15 to 30 minute session gets you what you need at a fraction of the price.</li>
-                        <li><strong>Group up for headshots.</strong> Split the cost with friends or coworkers and everyone wins.</li>
-                        <li><strong>Watch for seasonal deals.</strong> January, February, and August are slower months. Photographers run promotions.</li>
-                        <li><strong>Bundle your services.</strong> Headshots plus family portraits in one booking saves 15 to 25 percent.</li>
-                        <li><strong>Ask about referral discounts.</strong> Many photographers take 10 to 15 percent off when you send someone their way.</li>
-                        <li><strong>Book early.</strong> Reserving 2 to 3 months ahead usually gets you better rates.</li>
-                    </ol>
-                </div>
-            </div>
-
-            <!-- When to Invest More -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h3 style="color: var(--primary); margin: 30px 0 15px 0;">When You Should Pay More</h3>
-                    <p class="blog-text">Not every shoot needs the cheapest option. Some situations call for investing in someone with more experience and better gear.</p>
-
-                    <ul style="margin-left: 2rem; margin-bottom: 2rem; line-height: 1.8;">
-                        <li><strong>Executive headshots.</strong> Your photo represents your company. It needs to look like it.</li>
-                        <li><strong>Events you only get once.</strong> Weddings, milestone birthdays, and graduations do not get a reshoot.</li>
-                        <li><strong>Commercial work.</strong> If the images go on your website, in ads, or in marketing materials, quality matters more.</li>
-                        <li><strong>Large group events.</strong> Managing 100+ people and getting clean shots takes real experience.</li>
-                        <li><strong>DC monument shoots.</strong> You need a photographer who knows the permit process and the best angles.</li>
-                        <li><strong>Tight deadlines.</strong> When you need images fast, you are paying for reliability and a proven workflow.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- FAQ -->
-            <div class="about-container" style="margin: 60px 0;">
-                <div class="about-content">
-                    <h2 class="section-title">DMV Photography Pricing FAQ</h2>
-
-                    <div class="faq-static">
-                        <h3>What is the average photographer hourly rate in the DMV?</h3>
-                        <p>Most DMV photographers charge $150 to $400 per hour, with the majority of sessions falling between $200 and $300 depending on experience and location.</p>
-                    </div>
-
-                    <div class="faq-static">
-                        <h3>Why does Washington DC cost more than the suburbs?</h3>
-                        <p>DC rates run 20 to 30 percent higher due to expensive parking, permit fees for monuments and federal buildings, and the general cost of doing business downtown.</p>
-                    </div>
-
-                    <div class="faq-static">
-                        <h3>Are there hidden fees I should ask about?</h3>
-                        <p>Ask about travel fees outside a 25-mile radius, parking in downtown DC, permit fees for monuments, rush delivery surcharges, and weekend rate increases before you book.</p>
-                    </div>
-
-                    <div class="faq-static">
-                        <h3>Is a mini session worth it if I am on a budget?</h3>
-                        <p>Yes. A 15 to 20 minute mini session with about 5 edited images typically runs $40 to $75, which covers a quick need like a profile photo or a small family update.</p>
-                    </div>
-
-                    <div class="faq-static">
-                        <h3>Do prices change based on the season?</h3>
-                        <p>Yes. January, February, and August tend to be slower months, and many photographers run promotions during that window. Booking 2 to 3 months ahead also tends to get better rates.</p>
-                    </div>
-
-                    <div class="faq-static">
-                        <h3>Should I book by the hour or by the package?</h3>
-                        <p>It depends on the shoot. Portraits and headshots usually work best as flat packages, while events with an uncertain timeline are often priced hourly with a 2 to 3 hour minimum.</p>
-                    </div>
-                </div>
-            </div>
+            <p style="margin-top: 2rem; margin-bottom: 0;">Related services: <a title="View Charleston portrait photography services" href="/charleston-portrait-photographer/">Portraits</a> &middot; <a title="View Charleston event photography services" href="/charleston-event-photographer/">Events</a> &middot; <a title="Read Charleston graduation photography guide" href="/blog/charleston-graduation-photography/">Graduation</a> &middot; <a title="Read Charleston headshot pricing guide" href="/blog/charleston-headshot-guide/">Headshots</a> &middot; <a title="Read Charleston family photo locations guide" href="/blog/charleston-family-photo-locations/">Family Sessions</a></p>
         </div>
     </section>
 
     <!-- CTA Banner -->
     <section class="cta-banner">
         <div class="container">
-            <h2 class="cta-title">Get Transparent Pricing for Charleston or DMV Photography</h2>
-            <p class="cta-text">No hidden fees. No surprises. Charleston portrait, graduation, and event bookings are the main focus, with DMV sessions available by request for the right date and project.</p>
+            <h2>Get Transparent Pricing for Charleston or DMV Photography</h2>
+            <p>No hidden fees. No surprises. Charleston portrait, graduation, and event bookings are the main focus, with DMV sessions available by request for the right date and project.</p>
             <div class="cta-buttons">
-                <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact" class="btn btn-accent">Check Charleston Availability</a>
-                <a title="Request DMV photography availability" href="/index.html?location=dmv#contact" class="btn">Request DMV Availability</a>
+                <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact" class="btn btn-primary">Check Charleston Availability</a>
+                <a title="Request DMV photography availability" href="/index.html?location=dmv#contact" class="btn btn-ghost">Request DMV Availability</a>
+                <a title="View photography portfolio examples" href="/gallery" class="btn btn-ghost">View Portfolio Examples</a>
             </div>
         </div>
     </section>
-
+    </main>
 
     <!-- Back to Top Button -->
-    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page"><i class="fas fa-arrow-up"></i></a>
+    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page">&uarr;</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals by Joshua</h3>
+                    <p>Editorial photography for milestones &amp; moments. Serving Charleston SC + Northern VA / DMV.</p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="tel:+12403608465" style="display: block; margin-bottom: 0.5rem;">&#128222; (240) 360-8465</a>
+                        <a href="mailto:jbmsmusic05@gmail.com" style="display: block; margin-bottom: 0.5rem;">&#9993;&#65039; jbmsmusic05@gmail.com</a>
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128247; Instagram</a>
+                        <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128218; Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/gallery">Full Gallery</a></li>
+                        <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+                        <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+                        <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+                        <li><a href="/blog.html">Photography Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Visuals by Joshua. Charleston SC &amp; Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
-
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.add('show');
@@ -562,77 +981,28 @@
                 backToTopButton.classList.remove('show');
             }
         });
-
         backToTopButton.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Scroll reveal for section headings, pull-quote, figure, and TOC
+        const revealTargets = document.querySelectorAll('.reveal');
+        if (revealTargets.length && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+            revealTargets.forEach(el => revealObserver.observe(el));
+        } else {
+            revealTargets.forEach(el => el.classList.add('in-view'));
+        }
     </script>
-  <script>
-    (function() {
-      var hamburger = document.querySelector('.hamburger');
-      var navMenu = document.querySelector('.nav-menu');
-      if (!hamburger || !navMenu) return;
-      function close() {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-        hamburger.setAttribute('aria-expanded', 'false');
-      }
-      hamburger.addEventListener('click', function() {
-        var open = navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active', open);
-        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      navMenu.querySelectorAll('.nav-link').forEach(function(l) { l.addEventListener('click', close); });
-      document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close(); });
-    })();
-  </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Visuals by Joshua</h3>
-          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
-          <p style="margin-top: 1.5rem;">
-            <a href="tel:+12403608465">(240) 360-8465</a><br>
-            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
-          </p>
-          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
-            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery">Full Gallery</a></li>
-            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Locations</h4>
-          <ul>
-            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
-            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
-            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
-            <li><a href="/blog.html">Photography Blog</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>
