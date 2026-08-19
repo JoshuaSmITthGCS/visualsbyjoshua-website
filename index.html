@@ -703,31 +703,41 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      justify-content: center;
     }
 
     .portfolio-pin-header {
       text-align: center;
-      padding: 0 clamp(20px, 5vw, 80px) 30px;
+      padding: clamp(40px, 6vw, 70px) clamp(20px, 5vw, 80px) 20px;
+      flex: 0 0 auto;
+    }
+
+    .portfolio-viewport {
+      flex: 1 1 auto;
+      overflow: hidden;
+      position: relative;
     }
 
     .portfolio-track {
-      display: flex;
-      gap: 4px;
-      padding: 0 clamp(20px, 5vw, 80px);
+      column-count: 1;
+      column-gap: 4px;
+      padding: 0 clamp(20px, 5vw, 80px) 40px;
       will-change: transform;
+    }
+
+    @media (min-width: 600px) {
+      .portfolio-track { column-count: 2; }
+    }
+
+    @media (min-width: 980px) {
+      .portfolio-track { column-count: 3; }
     }
 
     .portfolio-item {
       position: relative;
+      break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      margin-bottom: 4px;
       perspective: 1000px;
-      flex: 0 0 calc((100% - 3 * 4px) / 4);
-    }
-
-    @media (max-width: 767px) {
-      .portfolio-item {
-        flex: 0 0 calc((100% - 4px) / 2);
-      }
     }
 
     .portfolio-card {
@@ -738,6 +748,14 @@
       transition: transform 0.6s;
       cursor: pointer;
       border-radius: 10px;
+    }
+
+    .portfolio-item.size-big .portfolio-card {
+      aspect-ratio: 4 / 5.6;
+    }
+
+    .portfolio-item.size-small .portfolio-card {
+      aspect-ratio: 4 / 3.5;
     }
 
     .portfolio-item:hover .portfolio-card {
@@ -1226,15 +1244,16 @@
     </div>
   </section>
 
-  <!-- Portfolio: Sticky Horizontal Scroll with Flip Cards -->
+  <!-- Portfolio: Sticky Vertical Scroll through a Mixed Masonry Grid -->
   <section id="portfolio" class="portfolio-pin">
     <div class="portfolio-pin-inner">
       <div class="portfolio-pin-header">
         <span class="kicker">Portfolio</span>
         <h2>Recent Work</h2>
       </div>
+      <div class="portfolio-viewport">
       <div class="portfolio-track">
-    <div class="portfolio-item">
+    <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/home/cypress-gardens-portfolio-card-1200.webp" alt="Best photo spots Charleston SC Cypress Gardens engagement" loading="lazy">
@@ -1247,7 +1266,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/home/wutang-concert-bw-alt-1200.webp" alt="Concert event coverage photography GZA Wu-Tang" loading="lazy">
@@ -1260,7 +1279,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/home/graduation-recap-alt-1080.webp" alt="Graduation photographer near me Charleston SC" loading="lazy">
@@ -1273,7 +1292,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/studio/studio-black-white-silhouette-portrait-1200.webp" alt="Portrait photography studio session" loading="lazy">
@@ -1286,7 +1305,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/events/college-party-event-photography-1200.webp" alt="College party event coverage photography" loading="lazy">
@@ -1299,7 +1318,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/portraits/night-flash-greek-life-portrait-1200.webp" alt="Sorority flash photography nightlife portraits" loading="lazy">
@@ -1312,7 +1331,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.webp" alt="Birthday photoshoot near me Sullivan's Island Charleston" loading="lazy">
@@ -1325,7 +1344,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/couples/charleston-anniversary-couple-downtown.webp" alt="Anniversary photoshoot downtown Charleston couples" loading="lazy">
@@ -1338,7 +1357,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/events/fiji-y2k-party-lofi-brewing-charleston.webp" alt="FIJI Y2K party event photography at Lo-Fi Brewing Charleston" loading="lazy">
@@ -1351,7 +1370,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/events/charleston-juneteenth-event-photography-1200.webp" alt="Charleston Juneteenth event photography Shades of PINCK" loading="lazy">
@@ -1364,7 +1383,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.webp" alt="Shutter drag long exposure portrait photography" loading="lazy">
@@ -1377,7 +1396,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.webp" alt="Multicultural student graduation night photography" loading="lazy">
@@ -1390,7 +1409,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/portraits/baltimore-garden-fairycore-portrait-800.webp" alt="Baltimore garden fairycore portrait photography" loading="lazy">
@@ -1403,7 +1422,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.webp" alt="Charleston historic district graduation portrait" loading="lazy">
@@ -1416,7 +1435,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.webp" alt="Philadelphia street photography" loading="lazy">
@@ -1429,7 +1448,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.webp" alt="Charleston multicultural student night photography" loading="lazy">
@@ -1442,7 +1461,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/folklife-traditional-dance.webp" alt="Smithsonian Folklife Festival event photography" loading="lazy">
@@ -1455,7 +1474,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-800.jpg" alt="Charleston photography permit guide" loading="lazy">
@@ -1468,7 +1487,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.jpg" alt="Record store editorial fashion photography Charleston" loading="lazy">
@@ -1480,6 +1499,7 @@
         </div>
       </div>
     </div>
+      </div>
       </div>
     </div>
   </section>
@@ -2028,15 +2048,16 @@
     (function () {
       var wrapper = document.querySelector('.portfolio-pin');
       var inner = document.querySelector('.portfolio-pin-inner');
+      var viewport = document.querySelector('.portfolio-viewport');
       var track = document.querySelector('.portfolio-track');
-      if (!wrapper || !inner || !track) return;
+      if (!wrapper || !inner || !viewport || !track) return;
 
       var scrollDistance = 0;
 
       function measure() {
-        var trackWidth = track.scrollWidth;
-        var viewportWidth = track.parentElement.clientWidth;
-        scrollDistance = Math.max(0, trackWidth - viewportWidth);
+        var trackHeight = track.scrollHeight;
+        var viewportHeight = viewport.clientHeight;
+        scrollDistance = Math.max(0, trackHeight - viewportHeight);
         wrapper.style.height = (window.innerHeight + scrollDistance) + 'px';
       }
 
@@ -2044,14 +2065,14 @@
         var rect = wrapper.getBoundingClientRect();
         var total = wrapper.offsetHeight - window.innerHeight;
         if (total <= 0) {
-          track.style.transform = 'translateX(0px)';
+          track.style.transform = 'translateY(0px)';
           return;
         }
         var scrolled = -rect.top;
         var progress = scrolled / total;
         if (progress < 0) progress = 0;
         if (progress > 1) progress = 1;
-        track.style.transform = 'translateX(-' + (progress * scrollDistance) + 'px)';
+        track.style.transform = 'translateY(-' + (progress * scrollDistance) + 'px)';
       }
 
       window.addEventListener('resize', function () {
