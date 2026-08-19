@@ -9,8 +9,8 @@
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Visuals by Joshua">
-  <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Visuals by Joshua">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://visualsbyjoshua.com/blog.html">
     <meta property="og:title" content="Charleston Photography Blog | Visuals by Joshua">
     <meta property="og:description" content="Charleston photography tips, location guides, pricing advice, and real portrait and event session breakdowns. DMV posts remain available as a secondary archive.">
@@ -21,15 +21,11 @@
     <meta name="twitter:title" content="Charleston Photography Blog | Visuals by Joshua">
     <meta name="twitter:description" content="Charleston photography tips, location guides, pricing advice, and real portrait and event session breakdowns.">
     <meta name="twitter:image" content="https://visualsbyjoshua.com/smithsonian-portrait-hero.webp">
-    
-    <!-- Same fonts and styles as your main site -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/blog-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -74,1217 +70,922 @@
       ]
     }
     </script>
-  <script src="/analytics.js" defer></script>
-  <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="/analytics.js" defer></script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; line-height: 1.6; color: #2a2a2a; background-color: #fcfbfa; overflow-x: hidden; }
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s ease; }
+        a:hover { opacity: 0.7; }
+        button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+        .skip-link { position: absolute; left: -999px; top: 0; background: #2a2a2a; color: #fff; padding: 12px 22px; z-index: 1000; border-radius: 0 0 8px 0; font-size: 0.9rem; }
+        .skip-link:focus { left: 0; }
+
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(252, 251, 250, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(42, 42, 42, 0.1); }
+        .nav-container { max-width: 1400px; margin: 0 auto; padding: 20px clamp(20px, 5vw, 80px); display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; font-style: italic; font-weight: 600; color: #2a2a2a; }
+        .nav-menu { display: flex; gap: 40px; list-style: none; }
+        .nav-menu a { font-size: 0.9375rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: #2a2a2a; }
+        .nav-menu a:hover { color: #be976d; opacity: 1; }
+        .nav-toggle { display: none; flex-direction: column; gap: 5px; padding: 10px; }
+        .nav-toggle-bar { width: 22px; height: 2px; background: #2a2a2a; transition: all 0.3s ease; }
+        @media (max-width: 768px) {
+            .nav-menu { position: fixed; top: 68px; left: 0; right: 0; flex-direction: column; gap: 0; background: #fcfbfa; border-bottom: 1px solid rgba(42, 42, 42, 0.1); padding: 8px 0 16px; transform: translateY(-12px); opacity: 0; pointer-events: none; transition: all 0.25s ease; }
+            .nav-menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+            .nav-menu li { width: 100%; text-align: center; }
+            .nav-menu a { display: block; padding: 14px 20px; }
+            .nav-toggle { display: flex; }
+        }
+
+        h1, h2, h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; line-height: 1.2; }
+        p { font-size: 1rem; line-height: 1.8; }
+        .kicker { font-size: 0.875rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 500; color: #be976d; margin-bottom: 0.5rem; display: inline-block; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+        .btn { display: inline-block; padding: 14px 32px; font-size: 0.9375rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; border-radius: 10px; transition: all 0.3s ease; }
+        .btn-primary { background: #be976d; color: #ffffff; border: 2px solid #be976d; }
+        .btn-primary:hover { background: #a67f5a; border-color: #a67f5a; opacity: 1; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3); }
+
+        /* BLOG HEADER */
+        .blog-header { margin-top: 80px; padding: clamp(60px, 8vw, 100px) 0 clamp(40px, 6vw, 60px); text-align: center; }
+        @media (max-width: 768px) { .blog-header { margin-top: 68px; } }
+        .blog-header h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-style: italic; margin-bottom: 1.25rem; }
+        .blog-header p { max-width: 680px; margin: 0 auto 0.75rem; color: #3a3630; }
+        .blog-header a { color: #7d5732; border-bottom: 1px solid rgba(190, 151, 109, 0.5); }
+        .blog-header a:hover { opacity: 1; border-color: #be976d; }
+
+        /* CATEGORY FILTER */
+        .blog-categories { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: clamp(40px, 6vw, 60px); }
+        .category-btn { padding: 10px 20px; font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid rgba(42, 42, 42, 0.2); border-radius: 30px; color: #5a564e; background: transparent; transition: all 0.25s ease; }
+        .category-btn:hover { opacity: 1; border-color: #be976d; color: #be976d; }
+        .category-btn.active { background: #2a2a2a; border-color: #2a2a2a; color: #fcfbfa; opacity: 1; }
+
+        /* BLOG GRID */
+        .blog-grid-section { padding-bottom: clamp(80px, 10vw, 120px); }
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: 32px 28px; }
+        .blog-card { display: none; }
+        .blog-card.show { display: flex; flex-direction: column; }
+        .blog-card-image { display: block; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 10px; margin-bottom: 18px; }
+        .blog-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+        .blog-card-image:hover img { transform: scale(1.05); }
+        .blog-card-content { display: flex; flex-direction: column; flex-grow: 1; }
+        .blog-card-date { font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: #be976d; margin-bottom: 8px; }
+        .blog-card-title { font-size: 1.3rem; font-style: italic; margin-bottom: 10px; }
+        .blog-card-title a { color: #2a2a2a; }
+        .blog-card-title a:hover { opacity: 1; color: #7d5732; }
+        .blog-card-excerpt { font-size: 0.9375rem; line-height: 1.65; color: #5a564e; margin-bottom: 14px; flex-grow: 1; }
+        .blog-card-link { font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: #7d5732; align-self: flex-start; }
+        .blog-card-link:hover { opacity: 1; color: #be976d; }
+
+        .no-results { display: none; text-align: center; padding: 60px 0; color: #5a564e; grid-column: 1 / -1; }
+        .no-results.show { display: block; }
+
+        /* FOOTER */
+        .footer { background: #2a2a2a; color: #ffffff; padding: 60px 0 30px; }
+        @media (max-width: 768px) { .footer { padding-bottom: 110px; } }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .footer-brand h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2rem; font-style: italic; margin-bottom: 1rem; }
+        .footer-brand p { font-size: 0.9375rem; opacity: 0.8; }
+        .footer-links h4 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.25rem; margin-bottom: 1rem; }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { font-size: 0.9375rem; opacity: 0.8; transition: opacity 0.3s ease; }
+        .footer-links a:hover { opacity: 1; }
+        .footer-bottom { padding-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.15); text-align: center; font-size: 0.875rem; opacity: 0.7; }
+
+        .back-to-top { position: fixed; bottom: 24px; right: 24px; width: 46px; height: 46px; border-radius: 50%; background: #2a2a2a; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; opacity: 0; pointer-events: none; transform: translateY(10px); transition: all 0.3s ease; z-index: 90; }
+        .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+        .back-to-top:hover { opacity: 0.85; background: #be976d; }
+    </style>
 </head>
 <body>
-  <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">Visuals by Joshua</a>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="/#portfolio">Portfolio</a></li>
-        <li><a href="/blog/photography-pricing/">Pricing</a></li>
-        <li><a href="/#about">About</a></li>
-        <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
-        <li><a href="/#contact">Book Now</a></li>
-      </ul>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-    </div>
-  </nav>
+    <a title="Skip directly to the main page content" class="skip-link" href="#main">Skip to content</a>
 
-    
-    <!-- Use your existing header -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Visuals by Joshua</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/blog/photography-pricing/">Pricing</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
+                <li><a href="/#contact">Book Now</a></li>
+            </ul>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </div>
+    </nav>
 
     <main id="main">
-    <!-- Blog Header -->
     <section class="blog-header">
+        <span class="kicker">The Journal</span>
         <h1>Charleston Photography Blog</h1>
         <p>Photography tips, local guides, pricing insights, and real shoot breakdowns focused on Charleston portraits, graduations, couples sessions, and events.</p>
         <p>Start with the <a href="/blog/charleston-photography-pricing/">Charleston pricing guide</a>, compare <a href="/charleston-portrait-photographer/">portrait sessions</a>, or browse the <a href="/dmv-photographer/">DMV photographer page</a> when you need DC, Maryland, or Virginia coverage.</p>
     </section>
 
-    <!-- Blog Grid -->
     <section class="blog-grid-section">
         <div class="container">
-            <!-- Category Filter -->
             <div class="blog-categories">
                 <button class="category-btn active" data-category="all">All Posts</button>
                 <button class="category-btn" data-category="portraits">Portrait Tips</button>
                 <button class="category-btn" data-category="events">Event Photography</button>
                 <button class="category-btn" data-category="locations">Location Guides</button>
-                <button class="category-btn" data-category="couples">Couples & Engagements</button>
-                <button class="category-btn" data-category="concerts">Concerts & Music</button>
+                <button class="category-btn" data-category="couples">Couples &amp; Engagements</button>
+                <button class="category-btn" data-category="concerts">Concerts &amp; Music</button>
                 <button class="category-btn" data-category="graduations">Graduations</button>
-                <button class="category-btn" data-category="greeklife">Greek Life & Parties</button>
+                <button class="category-btn" data-category="greeklife">Greek Life &amp; Parties</button>
                 <button class="category-btn" data-category="business">Photography Business</button>
                 <button class="category-btn" data-category="education">Gear &amp; Technique</button>
             </div>
 
-            <!-- Blog Posts Grid -->
-            <div class="blog-grid">
-
-<article class="blog-card" data-category="portraits">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-400.avif 400w, /images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.avif 800w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-400.webp 400w, /images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.webp 800w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.jpg" srcset="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-400.jpg 400w, /images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.jpg 800w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1586" height="1982" alt="Two models flipping through vinyl records in a Charleston record store, editorial fashion photography" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">August 18, 2026</div>
-        <h2 class="blog-title">Editorial Fashion Photography Inside a Record Store</h2>
-        <p class="blog-excerpt">Styling, low-light technique, and directing candid energy between two models for a shoot built entirely around a found location.</p>
-        <a title="Read Editorial Fashion Photography Inside a Record Store" href="/blog/record-store-editorial-fashion-photography/" class="read-more" aria-label="Read Editorial Fashion Photography Inside a Record Store">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- July 2026 Article Pack Start -->
-<article class="blog-card" data-category="education events">
-    <div class="blog-image">
-        <img height="640" width="960" src="/images/optimized/home/college-party-event-photography-960.jpg" alt="Indoor event photography in challenging light by Visuals by Joshua" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">June 29, 2026</div>
-        <h2 class="blog-title">Sony A7III Event Photography Settings: A Cheat Sheet You Can Read On Location</h2>
-        <p class="blog-excerpt">Exact Sony A7III settings for receptions, ceremonies, conferences, and dim ballrooms, plus the menu setup that keeps you from missing frames.</p>
-        <a title="Read Sony A7III Event Photography Settings: A Cheat Sheet You Can Read On Location" href="/blog/sony-a7iii-event-photography-settings/" class="read-more" aria-label="Read Sony A7III Event Photography Settings: A Cheat Sheet You Can Read On Location">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="education portraits">
-    <div class="blog-image">
-        <img height="640" width="960" src="/images/optimized/home/charleston-portrait-photographer-960.jpg" alt="Charleston outdoor portrait made with controlled lighting" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 2, 2026</div>
-        <h2 class="blog-title">Flash as Fill in Harsh Midday Sun: The Exact Settings I Use</h2>
-        <p class="blog-excerpt">How to use TTL fill flash and high-speed sync to shoot portraits at noon without blown highlights or raccoon-eye shadows, with exact compensation values.</p>
-        <a title="Read Flash as Fill in Harsh Midday Sun: The Exact Settings I Use" href="/blog/flash-fill-harsh-sun-settings/" class="read-more" aria-label="Read Flash as Fill in Harsh Midday Sun: The Exact Settings I Use">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="education events">
-    <div class="blog-image">
-        <img height="640" width="960" src="/images/optimized/home/charleston-event-photographer-960.jpg" alt="Flash-lit Charleston event photograph by Visuals by Joshua" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 5, 2026</div>
-        <h2 class="blog-title">Godox V1 vs V1 Pro vs AD200 Pro II: What Actually Belongs in an Event Photographer's Bag</h2>
-        <p class="blog-excerpt">Compare the Godox V1, V1 Pro, and AD200 Pro II for events and portraits, including which flash to buy first and why the ecosystem matters.</p>
-        <a title="Read Godox V1 vs V1 Pro vs AD200 Pro II: What Actually Belongs in an Event Photographer's Bag" href="/blog/godox-v1-pro-vs-ad200-flash-guide/" class="read-more" aria-label="Read Godox V1 vs V1 Pro vs AD200 Pro II: What Actually Belongs in an Event Photographer's Bag">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="education events">
-    <div class="blog-image">
-        <img height="640" width="960" src="/images/optimized/home/charleston-event-location-960.jpg" alt="Event photograph created with a standard zoom lens" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 8, 2026</div>
-        <h2 class="blog-title">Tamron 28-75mm G2 vs A036: Is the Gen 2 Worth Double the Used Price?</h2>
-        <p class="blog-excerpt">A side-by-side look at the Tamron 28-75mm f/2.8 G2 (A063) and the original A036 on a Sony A7III, based on paid event and portrait work rather than test charts.</p>
-        <a title="Read Tamron 28-75mm G2 vs A036: Is the Gen 2 Worth Double the Used Price?" href="/blog/tamron-28-75-g2-vs-a036-real-world/" class="read-more" aria-label="Read Tamron 28-75mm G2 vs A036: Is the Gen 2 Worth Double the Used Price?">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="locations graduations">
-    <div class="blog-image">
-        <img height="972" width="960" src="/images/optimized/home/charleston-graduation-photography-960.jpg" alt="College of Charleston graduation portrait in Charleston South Carolina" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 11, 2026</div>
-        <h2 class="blog-title">12 Charleston Graduation Photo Locations, With the Best Time to Shoot Each One</h2>
-        <p class="blog-excerpt">A shot-tested guide to graduation photo locations in Charleston, SC, including light direction, crowd levels, parking, and permit rules for each spot.</p>
-        <a title="Read 12 Charleston Graduation Photo Locations, With the Best Time to Shoot Each One" href="/blog/charleston-graduation-photo-locations/" class="read-more" aria-label="Read 12 Charleston Graduation Photo Locations, With the Best Time to Shoot Each One">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="education portraits graduations couples">
-    <div class="blog-image">
-        <img height="640" width="960" src="/images/optimized/home/charleston-portrait-location-960.jpg" alt="Directed portrait session in Charleston by Visuals by Joshua" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 14, 2026</div>
-        <h2 class="blog-title">40 Posing Prompts You Can Say Out Loud, Word for Word</h2>
-        <p class="blog-excerpt">A verbatim script of posing directions for portraits, graduations, couples, and headshots, plus fixes for awkward hands, height differences, and stiff subjects.</p>
-        <a title="Read 40 Posing Prompts You Can Say Out Loud, Word for Word" href="/blog/posing-prompts-script-photographers/" class="read-more" aria-label="Read 40 Posing Prompts You Can Say Out Loud, Word for Word">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="education portraits">
-    <div class="blog-image">
-        <img height="640" width="960" src="/images/optimized/home/dmv-photographer-960.jpg" alt="Portrait with carefully rendered deep skin tones by Visuals by Joshua" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 17, 2026</div>
-        <h2 class="blog-title">Editing Black Skin Tones in Lightroom: A Repeatable Workflow</h2>
-        <p class="blog-excerpt">Use this step-by-step Lightroom workflow for accurate deep skin tones, including HSL values, masking order, and fixes for grey or orange skin.</p>
-        <a title="Read Editing Black Skin Tones in Lightroom: A Repeatable Workflow" href="/blog/lightroom-black-skin-tones-workflow/" class="read-more" aria-label="Read Editing Black Skin Tones in Lightroom: A Repeatable Workflow">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="business graduations">
-    <div class="blog-image">
-        <img height="640" width="960" src="/images/optimized/home/charleston-pricing-guide-960.jpg" alt="Charleston photography session featured in the 2026 pricing guide" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 19, 2026</div>
-        <h2 class="blog-title">What Photography Actually Costs in Charleston and the DMV in 2026</h2>
-        <p class="blog-excerpt">See real 2026 pricing for graduation, portrait, headshot, and event photography in Charleston and the DMV, plus the factors that change your quote.</p>
-        <a title="Read What Photography Actually Costs in Charleston and the DMV in 2026" href="/blog/graduation-photography-pricing-charleston-dmv/" class="read-more" aria-label="Read What Photography Actually Costs in Charleston and the DMV in 2026">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="business education events">
-    <div class="blog-image">
-        <img height="640" width="960" src="/images/optimized/home/charleston-event-location-960.jpg" alt="Paid event photography coverage in Charleston" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 21, 2026</div>
-        <h2 class="blog-title">The Backup Gear Checklist: What Fails at Paid Events and What to Carry</h2>
-        <p class="blog-excerpt">Use this failure-first event photography gear checklist to prepare backup flashes, cards, batteries, cameras, lenses, cables, and chargers.</p>
-        <a title="Read The Backup Gear Checklist: What Fails at Paid Events and What to Carry" href="/blog/backup-gear-checklist-paid-events/" class="read-more" aria-label="Read The Backup Gear Checklist: What Fails at Paid Events and What to Carry">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="education events concerts">
-    <div class="blog-image">
-        <img height="640" width="960" src="/images/optimized/home/concert-photographer-charleston-960.jpg" alt="Creative wide-angle event photograph by Visuals by Joshua" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 23, 2026</div>
-        <h2 class="blog-title">Using an APS-C Fisheye on a Full Frame Sony: The TTArtisan 7.5mm Crop Mode Guide</h2>
-        <p class="blog-excerpt">How to shoot the TTArtisan 7.5mm f/2 fisheye on a full frame Sony A7III, when to use APS-C crop mode, and when the vignette is worth keeping.</p>
-        <a title="Read Using an APS-C Fisheye on a Full Frame Sony: The TTArtisan 7.5mm Crop Mode Guide" href="/blog/ttartisan-fisheye-aps-c-crop-guide/" class="read-more" aria-label="Read Using an APS-C Fisheye on a Full Frame Sony: The TTArtisan 7.5mm Crop Mode Guide">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-<!-- July 2026 Article Pack End -->
-
-
-
-
-
-
-
-
-<article class="blog-card" data-category="events locations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-400.avif 400w, /images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-800.avif 800w, /images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-400.webp 400w, /images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-800.webp 800w, /images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-1200.jpg" srcset="/images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-400.jpg 400w, /images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-800.jpg 800w, /images/optimized/posts/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1400" height="1750" alt="Charleston Juneteenth event photography on James Island with guest groups and Lowcountry views" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">June 26, 2026</div>
-        <h2 class="blog-title">Charleston Juneteenth Event Photography</h2>
-        <p class="blog-excerpt">Black joy, food, portraits, and community at Megan Pinckney Rutherford's Shades of PINCK cookout on James Island.</p>
-        <a title="View the Charleston Juneteenth event photography gallery" href="blog/charleston-juneteenth-event-photography/" class="read-more" aria-label="View the Charleston Juneteenth event photography gallery">
-            View Gallery <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- Missing Charleston Articles Start -->
-<article class="blog-card" data-category="graduations business">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/portraits/charleston-graduation-photography-400.webp 400w, /images/optimized/portraits/charleston-graduation-photography-800.webp 800w, /images/optimized/portraits/charleston-graduation-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/portraits/charleston-graduation-photography-1200.jpg" srcset="/images/optimized/portraits/charleston-graduation-photography-400.jpg 400w, /images/optimized/portraits/charleston-graduation-photography-800.jpg 800w, /images/optimized/portraits/charleston-graduation-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1221" alt="College of Charleston graduation portrait session in downtown Charleston" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 3, 2026</div>
-        <h2 class="blog-title">Charleston Graduation Photo Prices</h2>
-        <p class="blog-excerpt">See graduation photo prices, session ranges, delivery timing, and what changes the quote for Charleston and College of Charleston portraits.</p>
-        <a title="Read Charleston Graduation Photography Prices in 2026" href="blog/charleston-graduation-photography-prices/" class="read-more" aria-label="Read Charleston Graduation Photography Prices in 2026">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="locations portraits couples graduations">
-    <div class="blog-image">
-        <img height="171" width="960" src="/images/optimized/home/charleston-portrait-location-960.jpg" alt="Charleston portrait location with historic local texture" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 3, 2026</div>
-        <h2 class="blog-title">Best Charleston Photo Spots</h2>
-        <p class="blog-excerpt">Compare Charleston photo spots by light, crowd level, parking, permit risk, and the type of session you want.</p>
-        <a title="Read Best Photo Spots in Charleston SC" href="blog/best-photo-spots-charleston-sc/" class="read-more" aria-label="Read Best Photo Spots in Charleston SC">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="greeklife events locations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/events/college-party-event-photography-400.avif 400w, /images/optimized/events/college-party-event-photography-800.avif 800w, /images/optimized/events/college-party-event-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/events/college-party-event-photography-400.webp 400w, /images/optimized/events/college-party-event-photography-800.webp 800w, /images/optimized/events/college-party-event-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/events/college-party-event-photography-1200.jpg" srcset="/images/optimized/events/college-party-event-photography-400.jpg 400w, /images/optimized/events/college-party-event-photography-800.jpg 800w, /images/optimized/events/college-party-event-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1264" alt="Charleston Greek life and college event photography with flash" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 3, 2026</div>
-        <h2 class="blog-title">Greek Life Photo Locations</h2>
-        <p class="blog-excerpt">Plan Greek life photos for chapters, bid day, formals, big little reveals, executive boards, and student groups in Charleston.</p>
-        <a title="Read Sorority and Fraternity Group Photo Locations in Charleston" href="blog/sorority-fraternity-group-photos-charleston/" class="read-more" aria-label="Read Sorority and Fraternity Group Photo Locations in Charleston">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="business portraits">
-    <div class="blog-image">
-        <img height="600" width="400" src="/images/optimized/root/headshot1-400.jpg" alt="Charleston professional headshot portrait with clean background" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 3, 2026</div>
-        <h2 class="blog-title">Charleston Headshot Prices</h2>
-        <p class="blog-excerpt">Compare headshot price ranges for individuals, small teams, on site company days, LinkedIn updates, retouching, and delivery.</p>
-        <a title="Read Charleston Headshot Prices in 2026" href="blog/charleston-headshot-pricing/" class="read-more" aria-label="Read Charleston Headshot Prices in 2026">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="locations portraits">
-    <div class="blog-image">
-        <img height="243" width="960" src="/images/optimized/home/charleston-portrait-photographer-960.jpg" alt="Charleston family and portrait photography location with natural light" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 3, 2026</div>
-        <h2 class="blog-title">Charleston Family Photo Locations</h2>
-        <p class="blog-excerpt">Choose Charleston family photo spots by shade, bathrooms, stroller access, parking, crowd level, and how much walking your group can handle.</p>
-        <a title="Read Best Family Photo Locations in Charleston SC" href="blog/charleston-family-photo-locations/" class="read-more" aria-label="Read Best Family Photo Locations in Charleston SC">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="locations business">
-    <div class="blog-image">
-        <img height="202" width="960" src="/images/optimized/home/charleston-event-location-960.jpg" alt="Charleston outdoor event and portrait location with local permit considerations" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 3, 2026</div>
-        <h2 class="blog-title">Charleston Photography Permits</h2>
-        <p class="blog-excerpt">Learn when Charleston photo sessions need permits, when simple portraits stay straightforward, and what to check before you bring props or a large group.</p>
-        <a title="Read Photography Permits in Charleston SC" href="blog/charleston-photography-permit-guide/" class="read-more" aria-label="Read Photography Permits in Charleston SC">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="locations portraits couples graduations">
-    <div class="blog-image">
-        <img height="220" width="960" src="/images/optimized/home/charleston-couples-photography-960.jpg" alt="Charleston couples photography in soft natural light" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 3, 2026</div>
-        <h2 class="blog-title">Best Time for Charleston Photos</h2>
-        <p class="blog-excerpt">Choose the best photo time in Charleston for downtown streets, beaches, parks, campus, gardens, summer heat, rain, and crowds.</p>
-        <a title="Read Best Time of Day for Photos in Charleston" href="blog/best-time-of-day-for-photos-charleston/" class="read-more" aria-label="Read Best Time of Day for Photos in Charleston">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-<!-- Missing Charleston Articles End -->
-
-<!-- SEO CHARLESTON GUIDE PAGES START -->
-<article class="blog-card" data-category="portraits graduations locations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/portraits/charleston-graduation-photography-400.webp 400w, /images/optimized/portraits/charleston-graduation-photography-800.webp 800w, /images/optimized/portraits/charleston-graduation-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/portraits/charleston-graduation-photography-1200.jpg" srcset="/images/optimized/portraits/charleston-graduation-photography-400.jpg 400w, /images/optimized/portraits/charleston-graduation-photography-800.jpg 800w, /images/optimized/portraits/charleston-graduation-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1221" alt="Charleston graduation portrait session in cap and gown" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 2, 2026</div>
-        <h2 class="blog-title">Charleston Graduation Photo Locations Guide</h2>
-        <p class="blog-excerpt">A Charleston graduation photo guide for Cistern Yard, Rainbow Row, waterfront streets, outfit planning, timing, permits, and delivery.</p>
-        <a title="Read Charleston Graduation Photo Locations Guide" href="blog/charleston-graduation-photo-locations-guide/" class="read-more" aria-label="Read Charleston Graduation Photo Locations Guide">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="portraits locations">
-    <div class="blog-image">
-        <img height="243" width="960" src="/images/optimized/home/charleston-portrait-photographer-960.jpg" alt="Charleston senior portrait outdoors with natural light" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 2, 2026</div>
-        <h2 class="blog-title">Charleston Senior Portrait Guide</h2>
-        <p class="blog-excerpt">A direct Charleston senior portrait guide for locations, outfits, posing, parent planning, and photos that work for announcements and social posts.</p>
-        <a title="Read Charleston Senior Portrait Guide" href="blog/charleston-senior-portrait-guide/" class="read-more" aria-label="Read Charleston Senior Portrait Guide">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="events business">
-    <div class="blog-image">
-        <img height="455" width="960" src="/images/optimized/home/charleston-event-photographer-960.jpg" alt="Charleston event photography with guests at an indoor gathering" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 2, 2026</div>
-        <h2 class="blog-title">Charleston Event Photography Planning Guide</h2>
-        <p class="blog-excerpt">A Charleston event photography planning guide for timelines, shot lists, permits, lighting, delivery, and the images your team needs after the event.</p>
-        <a title="Read Charleston Event Photography Planning Guide" href="blog/charleston-event-photography-planning-guide/" class="read-more" aria-label="Read Charleston Event Photography Planning Guide">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="portraits business">
-    <div class="blog-image">
-        <img height="600" width="400" src="/images/optimized/root/headshot1-400.jpg" alt="Charleston professional headshot portrait with clean background" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 2, 2026</div>
-        <h2 class="blog-title">Charleston Headshot Guide</h2>
-        <p class="blog-excerpt">A Charleston headshot guide for professionals, students, teams, founders, and creatives who need clean portraits for digital-first profiles.</p>
-        <a title="Read Charleston Headshot Guide" href="blog/charleston-headshot-guide/" class="read-more" aria-label="Read Charleston Headshot Guide">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="couples locations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.avif 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.avif 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.webp 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.webp 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.jpg 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.jpg 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1200" height="1210" alt="Charleston engagement photography at Cypress Gardens" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 2, 2026</div>
-        <h2 class="blog-title">Charleston Engagement Photo Locations Guide</h2>
-        <p class="blog-excerpt">A Charleston engagement photo guide for couples choosing downtown streets, beaches, gardens, Cypress Gardens, outfits, and proposal timing.</p>
-        <a title="Read Charleston Engagement Photo Locations Guide" href="blog/charleston-engagement-photo-locations-guide/" class="read-more" aria-label="Read Charleston Engagement Photo Locations Guide">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="business portraits">
-    <div class="blog-image">
-        <img height="300" width="960" src="/images/optimized/home/charleston-pricing-guide-960.jpg" alt="Charleston brand photography planning image for local businesses" loading="lazy" decoding="async">
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 2, 2026</div>
-        <h2 class="blog-title">Charleston Brand Photography Guide</h2>
-        <p class="blog-excerpt">A Charleston brand photography guide for founders, creatives, restaurants, service businesses, and teams that need useful images for web and social.</p>
-        <a title="Read Charleston Brand Photography Guide" href="blog/charleston-brand-photography-guide/" class="read-more" aria-label="Read Charleston Brand Photography Guide">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="events graduations greeklife">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.avif 400w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.avif 800w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.webp 400w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.webp 800w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.jpg" srcset="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.jpg 400w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.jpg 800w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1365" height="2048" alt="Charleston multicultural student organization event photography" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 2, 2026</div>
-        <h2 class="blog-title">Charleston Student Organization Event Photography Guide</h2>
-        <p class="blog-excerpt">A Charleston student organization event guide for club leaders planning coverage for cultural nights, Greek life, awards, recruitment, and social posts.</p>
-        <a title="Read Charleston Student Organization Event Photography Guide" href="blog/charleston-student-organization-event-photography-guide/" class="read-more" aria-label="Read Charleston Student Organization Event Photography Guide">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="events greeklife">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/events/college-party-event-photography-400.avif 400w, /images/optimized/events/college-party-event-photography-800.avif 800w, /images/optimized/events/college-party-event-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/events/college-party-event-photography-400.webp 400w, /images/optimized/events/college-party-event-photography-800.webp 800w, /images/optimized/events/college-party-event-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/events/college-party-event-photography-1200.jpg" srcset="/images/optimized/events/college-party-event-photography-400.jpg 400w, /images/optimized/events/college-party-event-photography-800.jpg 800w, /images/optimized/events/college-party-event-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1264" alt="Charleston college party event photography with flash" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 2, 2026</div>
-        <h2 class="blog-title">Charleston Nightlife Party Photography Guide</h2>
-        <p class="blog-excerpt">A Charleston nightlife and party photography guide for dark venues, Greek life, birthdays, breweries, flash, safety, posting, and shot priorities.</p>
-        <a title="Read Charleston Nightlife Party Photography Guide" href="blog/charleston-nightlife-party-photography-guide/" class="read-more" aria-label="Read Charleston Nightlife Party Photography Guide">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="couples locations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.avif 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.avif 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.webp 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.webp 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.jpg 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.jpg 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1200" height="1652" alt="Anniversary photography in downtown Charleston" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 2, 2026</div>
-        <h2 class="blog-title">Charleston Anniversary and Proposal Photo Guide</h2>
-        <p class="blog-excerpt">A Charleston anniversary and proposal photography guide for couples planning meaningful photos downtown, near the water, or in local parks.</p>
-        <a title="Read Charleston Anniversary and Proposal Photo Guide" href="blog/charleston-anniversary-proposal-photo-guide/" class="read-more" aria-label="Read Charleston Anniversary and Proposal Photo Guide">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="portraits graduations locations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.avif 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.avif 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.webp 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.webp 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.jpg" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.jpg 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.jpg 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Charleston spring portrait session under oak trees" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 2, 2026</div>
-        <h2 class="blog-title">Charleston Seasonal Photo Session Guide</h2>
-        <p class="blog-excerpt">A Charleston seasonal photography guide for choosing spring, summer, fall, or winter sessions based on light, weather, outfits, and deadlines.</p>
-        <a title="Read Charleston Seasonal Photo Session Guide" href="blog/charleston-seasonal-photo-session-guide/" class="read-more" aria-label="Read Charleston Seasonal Photo Session Guide">
-            Read Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-<!-- SEO CHARLESTON GUIDE PAGES END -->
-
-<!-- NEW: Charleston Spring Graduation Portrait Session -->
-<!-- NEW: Charleston Multicultural Student Night Photography -->
-<article class="blog-card" data-category="events">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.avif 400w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.avif 800w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.webp 400w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.webp 800w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.jpg" srcset="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.jpg 400w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.jpg 800w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1365" height="2048" alt="Charleston multicultural student night event photography" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">April 25, 2026</div>
-        <h2 class="blog-title">Charleston Multicultural Student Night: Celebrating BSU, Asian Student Association, LGBTQ Students & More</h2>
-        <p class="blog-excerpt">Event photography coverage of a multicultural celebration bringing together Charleston's diverse student communities. Professional event photography capturing cultural identity and community celebration.</p>
-        <a title="View Multicultural Night Guide" href="blog/charleston-multicultural-student-night-photography/" class="read-more" aria-label="View Multicultural Night Guide">
-            View Multicultural Night Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="portraits graduations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.avif 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.avif 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.webp 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.webp 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.jpg" srcset="/images/optimized/newblogimages/charleston-spring-graduation-portrait-session-400.jpg 400w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-800.jpg 800w, /images/optimized/newblogimages/charleston-spring-graduation-portrait-session-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Charleston spring graduation portrait session under oak trees" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">April 24, 2025</div>
-        <h2 class="blog-title">Charleston Spring Graduation Portrait Session: Celebrating Under the Oaks</h2>
-        <p class="blog-excerpt">A spring graduation portrait session through Charleston's tree-lined streets and pastel houses. Two outfit changes, golden light, and why spring is the best season for grad photos.</p>
-        <a title="View Spring Graduation Guide" href="blog/charleston-spring-graduation-portrait-session/" class="read-more" aria-label="View Spring Graduation Guide">
-            View Spring Graduation Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="business">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/portraits/charleston-graduation-photography-400.webp 400w, /images/optimized/portraits/charleston-graduation-photography-800.webp 800w, /images/optimized/portraits/charleston-graduation-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/portraits/charleston-graduation-photography-1200.jpg" srcset="/images/optimized/portraits/charleston-graduation-photography-400.jpg 400w, /images/optimized/portraits/charleston-graduation-photography-800.jpg 800w, /images/optimized/portraits/charleston-graduation-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1221" alt="Charleston photography pricing guide for portraits, graduations, and events" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">April 25, 2026</div>
-        <h2 class="blog-title">Charleston Photography Pricing Guide</h2>
-        <p class="blog-excerpt">A Charleston-first breakdown of portrait, graduation, headshot, couples, and event photography rates so you can plan your session before reaching out.</p>
-        <a title="View Charleston Pricing Guide" href="blog/charleston-photography-pricing/" class="read-more" aria-label="View Charleston Pricing Guide">
-            View Charleston Pricing Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Shutter Drag Creative Portrait Photography -->
-<article class="blog-card" data-category="portraits events">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-400.avif 400w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.avif 800w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-400.webp 400w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.webp 800w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.jpg" srcset="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-400.jpg 400w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.jpg 800w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Shutter drag creative portrait photography in Charleston" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">January 9, 2025</div>
-        <h2 class="blog-title">Shutter Drag Photography: How to Create Motion Blur Portraits</h2>
-        <p class="blog-excerpt">Neon lights, slow shutter speeds, and rear curtain sync. A breakdown of how I shoot creative shutter drag portraits in Charleston's nightlife scene.</p>
-        <a title="View Shutter Drag Guide" href="blog/shutter-drag-creative-portrait-photography/" class="read-more" aria-label="View Shutter Drag Guide">
-            View Shutter Drag Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Multicultural Student Graduation Night Photography -->
-<article class="blog-card" data-category="events graduations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.avif 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.avif 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.webp 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.webp 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.jpg" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.jpg 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.jpg 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Multicultural student graduation night photography in Charleston" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">November 21, 2025</div>
-        <h2 class="blog-title">Multicultural Student Graduation Night: Event Photography That Honors Every Culture</h2>
-        <p class="blog-excerpt">Cultural stoles, group celebrations, and the energy of a multicultural graduation night. How I photograph events that celebrate diversity and achievement.</p>
-        <a title="View Graduation Night Guide" href="blog/multicultural-student-graduation-night-photography/" class="read-more" aria-label="View Graduation Night Guide">
-            View Graduation Night Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Philadelphia Street Photography -->
-<article class="blog-card" data-category="portraits locations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.avif 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.avif 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.webp 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.webp 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.jpg" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.jpg 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.jpg 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Philadelphia street photography at Reading Terminal Market and Chinatown" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 18, 2025</div>
-        <h2 class="blog-title">Philadelphia Street Photography: Reading Terminal Market, Chinatown & Beyond</h2>
-        <p class="blog-excerpt">Neon signs, vintage storefronts, and the energy of Philly's streets. A travel photography shoot through Reading Terminal Market, Chinatown, and Penn's Landing.</p>
-        <a title="View Philadelphia Street Guide" href="blog/philadelphia-street-photography-reading-terminal/" class="read-more" aria-label="View Philadelphia Street Guide">
-            View Philadelphia Street Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: World Pride DC Event Photography -->
-<article class="blog-card" data-category="events">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/newblogimages/world-pride-dc-event-photography-400.avif 400w, /images/optimized/newblogimages/world-pride-dc-event-photography-800.avif 800w, /images/optimized/newblogimages/world-pride-dc-event-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/newblogimages/world-pride-dc-event-photography-400.webp 400w, /images/optimized/newblogimages/world-pride-dc-event-photography-800.webp 800w, /images/optimized/newblogimages/world-pride-dc-event-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/world-pride-dc-event-photography-1200.jpg" srcset="/images/optimized/newblogimages/world-pride-dc-event-photography-400.jpg 400w, /images/optimized/newblogimages/world-pride-dc-event-photography-800.jpg 800w, /images/optimized/newblogimages/world-pride-dc-event-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="World Pride DC event photography in Washington DC" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">June 8, 2025</div>
-        <h2 class="blog-title">World Pride DC: Event Photography in a Sea of Color and Energy</h2>
-        <p class="blog-excerpt">Rainbow flags, bold costumes, and raw celebration. Behind the camera at World Pride DC and what it takes to photograph an event this vibrant.</p>
-        <a title="View World Pride Event Guide" href="blog/world-pride-dc-event-photography/" class="read-more" aria-label="View World Pride Event Guide">
-            View World Pride Event Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Charleston Historic District Graduation Portraits -->
-<article class="blog-card" data-category="portraits graduations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-400.avif 400w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.avif 800w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-400.webp 400w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.webp 800w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.jpg" srcset="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-400.jpg 400w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.jpg 800w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Charleston historic district graduation portrait photography" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">April 27, 2025</div>
-        <h2 class="blog-title">Charleston Historic District Graduation Portraits: Roses, Archways & Timeless Elegance</h2>
-        <p class="blog-excerpt">A white dress, red roses, and the brick archways of downtown Charleston. How to turn the historic district into the perfect graduation portrait backdrop.</p>
-        <a title="View Historic District Grad Guide" href="blog/charleston-historic-district-graduation-portraits/" class="read-more" aria-label="View Historic District Grad Guide">
-            View Historic District Grad Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Masters Graduation Photography DC Monuments -->
-<article class="blog-card" data-category="portraits graduations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.avif 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.avif 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.webp 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.webp 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.jpg" srcset="/images/optimized/newblogimages/masters-graduation-photography-dc-monuments-400.jpg 400w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-800.jpg 800w, /images/optimized/newblogimages/masters-graduation-photography-dc-monuments-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Masters graduation photography at DC monuments in Washington" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">May 18, 2025</div>
-        <h2 class="blog-title">Masters Graduation Photography at DC Monuments: Celebrating Your Achievement</h2>
-        <p class="blog-excerpt">A masters graduate, the Washington Monument, and the weight of what she earned. Graduation portrait photography at DC's most iconic landmarks.</p>
-        <a title="View Masters Graduation Guide" href="blog/masters-graduation-photography-dc-monuments/" class="read-more" aria-label="View Masters Graduation Guide">
-            View Masters Graduation Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Doctoral Graduation Photography DC Monuments -->
-<article class="blog-card" data-category="portraits graduations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.avif 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.avif 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.webp 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.webp 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.jpg" srcset="/images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-400.jpg 400w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-800.jpg 800w, /images/optimized/newblogimages/doctoral-graduation-photography-dc-monuments-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Doctoral graduation photography at DC monuments and the Lincoln Memorial" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">June 1, 2025</div>
-        <h2 class="blog-title">Doctoral Graduation Photography at DC Monuments: The Regalia Deserves the Right Backdrop</h2>
-        <p class="blog-excerpt">Crimson doctoral robes on marble steps. A graduation portrait session at the Lincoln Memorial that matches the significance of earning your doctorate.</p>
-        <a title="View Doctoral Graduation Guide" href="blog/doctoral-graduation-photography-dc-monuments/" class="read-more" aria-label="View Doctoral Graduation Guide">
-            View Doctoral Graduation Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Sullivan's Island Birthday Portrait Photography -->
-<article class="blog-card" data-category="portraits">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.avif 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.avif 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.webp 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.webp 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.jpg 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.jpg 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Sullivan's Island Birthday Portrait Photography Charleston" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">March 21, 2026</div>
-        <h2 class="blog-title">Sullivan's Island Birthday Portrait Photography in Charleston</h2>
-        <p class="blog-excerpt">A golden hour beach session, a 28-75mm f/2.8, and why Sullivan's Island is one of the best portrait locations in Charleston for birthday shoots.</p>
-        <a title="View Sullivan Island Guide" href="blog/sullivans-island-birthday-portrait-photography-charleston/" class="read-more" aria-label="View Sullivan Island Guide">
-            View Sullivan Island Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: FIJI Y2K Party at Lo-Fi Brewing -->
-<article class="blog-card" data-category="events greeklife">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.avif 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.avif 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.webp 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.webp 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.jpg" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.jpg 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.jpg 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="FIJI Y2K Party Event Photography Lo-Fi Brewing Charleston" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">March 21, 2026</div>
-        <h2 class="blog-title">FIJI Y2K Party at Lo-Fi Brewing: Charleston Event Photography</h2>
-        <p class="blog-excerpt">Off-camera flash, a fisheye lens, and what it takes to shoot a Phi Gamma Delta fraternity party in a dark brewery in Charleston.</p>
-        <a title="View FIJI Y2K Event Guide" href="blog/fiji-y2k-party-event-photography-charleston/" class="read-more" aria-label="View FIJI Y2K Event Guide">
-            View FIJI Y2K Event Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: College Party Event Photography -->
-<article class="blog-card" data-category="events greeklife">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/events/college-party-event-photography-400.avif 400w, /images/optimized/events/college-party-event-photography-800.avif 800w, /images/optimized/events/college-party-event-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/events/college-party-event-photography-400.webp 400w, /images/optimized/events/college-party-event-photography-800.webp 800w, /images/optimized/events/college-party-event-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/events/college-party-event-photography-1200.jpg" srcset="/images/optimized/events/college-party-event-photography-400.jpg 400w, /images/optimized/events/college-party-event-photography-800.jpg 800w, /images/optimized/events/college-party-event-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1264" alt="College Party Event Photography Charleston" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">March 19, 2026</div>
-        <h2 class="blog-title">College Party Event Photography: What It Takes to Shoot the Energy</h2>
-        <p class="blog-excerpt">The party won't wait for you. Here's how I approach shooting college events at night, from flash technique to working with crowds and event organizers.</p>
-        <a title="View College Party Guide" href="blog/college-party-event-photography/" class="read-more" aria-label="View College Party Guide">
-            View College Party Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Charleston Graduation Photography -->
-<article class="blog-card" data-category="portraits graduations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/portraits/charleston-graduation-photography-400.webp 400w, /images/optimized/portraits/charleston-graduation-photography-800.webp 800w, /images/optimized/portraits/charleston-graduation-photography-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/portraits/charleston-graduation-photography-1200.jpg" srcset="/images/optimized/portraits/charleston-graduation-photography-400.jpg 400w, /images/optimized/portraits/charleston-graduation-photography-800.jpg 800w, /images/optimized/portraits/charleston-graduation-photography-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1221" alt="Charleston Graduation Photography" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">March 19, 2026</div>
-        <h2 class="blog-title">Charleston Graduation Photography: You Worked Too Hard for Bad Grad Photos</h2>
-        <p class="blog-excerpt">The best Charleston locations for grad photos, what to wear, when to book, and what to expect from a session that does your achievement justice.</p>
-        <a title="View Charleston Grad Guide" href="blog/charleston-graduation-photography/" class="read-more" aria-label="View Charleston Grad Guide">
-            View Charleston Grad Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Baltimore Garden Fairycore Portrait Photography -->
-<article class="blog-card" data-category="portraits">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/portraits/baltimore-garden-fairycore-portrait-400.avif 400w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-800.avif 800w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/portraits/baltimore-garden-fairycore-portrait-400.webp 400w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-800.webp 800w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.jpg" srcset="/images/optimized/portraits/baltimore-garden-fairycore-portrait-400.jpg 400w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-800.jpg 800w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1194" alt="Baltimore Garden Fairycore Portrait Photography" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">March 19, 2026</div>
-        <h2 class="blog-title">Baltimore Garden Fairy Core Portrait Photography</h2>
-        <p class="blog-excerpt">Flowing fabrics, soft light, and natural greenery. How I shot an ethereal fairy core portrait session in a Baltimore garden and why this aesthetic works so well outdoors.</p>
-        <a title="View Fairycore Portrait Guide" href="blog/baltimore-garden-fairycore-portrait-photography/" class="read-more" aria-label="View Fairycore Portrait Guide">
-            View Fairycore Portrait Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Night Flash Greek Life Portrait Photography -->
-<article class="blog-card" data-category="portraits greeklife">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/portraits/night-flash-greek-life-portrait-400.avif 400w, /images/optimized/portraits/night-flash-greek-life-portrait-800.avif 800w, /images/optimized/portraits/night-flash-greek-life-portrait-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/portraits/night-flash-greek-life-portrait-400.webp 400w, /images/optimized/portraits/night-flash-greek-life-portrait-800.webp 800w, /images/optimized/portraits/night-flash-greek-life-portrait-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/portraits/night-flash-greek-life-portrait-1200.jpg" srcset="/images/optimized/portraits/night-flash-greek-life-portrait-400.jpg 400w, /images/optimized/portraits/night-flash-greek-life-portrait-800.jpg 800w, /images/optimized/portraits/night-flash-greek-life-portrait-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1282" alt="Night Flash Greek Life Portrait Photography" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">March 19, 2026</div>
-        <h2 class="blog-title">Night Flash Portraits for Greek Life: How to Shoot After Dark</h2>
-        <p class="blog-excerpt">Flash technique, posing groups, and why Greek life photography is its own animal. Real advice from shooting for Kappa Alpha Psi and other organizations.</p>
-        <a title="View Night Flash Guide" href="blog/night-flash-greek-life-portrait-photography/" class="read-more" aria-label="View Night Flash Guide">
-            View Night Flash Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Cypress Gardens Engagement -->
-<article class="blog-card" data-category="couples">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.avif 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.avif 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.webp 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.webp 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.jpg 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.jpg 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1200" height="1210" alt="Engagement Photography at Cypress Gardens Charleston" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">March 15, 2026</div>
-        <h2 class="blog-title">Engagement Photography at Cypress Gardens, Charleston</h2>
-        <p class="blog-excerpt">A dreamy engagement session at one of Charleston's most romantic locations. Tips on the best spots, what to wear, and how to photograph the proposal naturally...</p>
-        <a title="View Cypress Gardens Guide" href="blog/cypress-gardens-engagement-photography-charleston/" class="read-more" aria-label="View Cypress Gardens Guide">
-            View Cypress Gardens Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Anniversary Photography Downtown Charleston -->
-<article class="blog-card" data-category="couples">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.avif 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.avif 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.webp 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.webp 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.jpg 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.jpg 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1200" height="1652" alt="Anniversary Photography Downtown Charleston" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">March 10, 2026</div>
-        <h2 class="blog-title">Anniversary Photography in Downtown Charleston: Celebrating Love at Every Stage</h2>
-        <p class="blog-excerpt">An anniversary session with a sharp couple in historic downtown Charleston. Location tips, styling advice, and why milestone photos matter...</p>
-        <a title="View Anniversary Session Guide" href="blog/anniversary-photography-downtown-charleston/" class="read-more" aria-label="View Anniversary Session Guide">
-            View Anniversary Session Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Studio Black & White Portraits -->
-<article class="blog-card" data-category="portraits">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/studio/studio-black-white-silhouette-portrait-400.avif 400w, /images/optimized/studio/studio-black-white-silhouette-portrait-800.avif 800w, /images/optimized/studio/studio-black-white-silhouette-portrait-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/studio/studio-black-white-silhouette-portrait-400.webp 400w, /images/optimized/studio/studio-black-white-silhouette-portrait-800.webp 800w, /images/optimized/studio/studio-black-white-silhouette-portrait-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/studio/studio-black-white-silhouette-portrait-1200.jpg" srcset="/images/optimized/studio/studio-black-white-silhouette-portrait-400.jpg 400w, /images/optimized/studio/studio-black-white-silhouette-portrait-800.jpg 800w, /images/optimized/studio/studio-black-white-silhouette-portrait-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1206" height="1825" alt="Studio Black and White Portrait Photography" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">March 5, 2026</div>
-        <h2 class="blog-title">The Art of Black & White Studio Portrait Photography</h2>
-        <p class="blog-excerpt">Dramatic silhouettes, moody lighting, and timeless elegance. Behind the scenes of a creative B&W studio session with tips on lighting and props...</p>
-        <a title="View Studio Portrait Guide" href="blog/studio-black-white-portrait-photography/" class="read-more" aria-label="View Studio Portrait Guide">
-            View Studio Portrait Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<!-- NEW: Concert Photography GZA -->
-<article class="blog-card" data-category="concerts">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/concerts/gza-wu-tang-concert-photography-400.avif 400w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/concerts/gza-wu-tang-concert-photography-400.webp 400w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/concerts/gza-wu-tang-concert-photography-400.jpg" srcset="/images/optimized/concerts/gza-wu-tang-concert-photography-400.jpg 400w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="724" height="1086" alt="Concert Photography GZA Wu-Tang Clan" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">March 1, 2026</div>
-        <h2 class="blog-title">Concert Photography: Shooting for GZA of Wu-Tang Clan</h2>
-        <p class="blog-excerpt">Behind the lens at a live performance for one of hip-hop's legends. Pro tips for concert photography, low-light techniques, and shooting raw energy...</p>
-        <a title="View GZA Concert Guide" href="blog/concert-photography-gza-wu-tang/" class="read-more" aria-label="View GZA Concert Guide">
-            View GZA Concert Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-                <!-- Existing Blog Post -->
-<article class="blog-card" data-category="events">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-400.avif 400w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-800.avif 800w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-1200.avif 1200w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-1600.avif 1600w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-400.webp 400w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-800.webp 800w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-1200.webp 1200w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-1600.webp 1600w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-1200.jpg" srcset="/images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-400.jpg 400w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-800.jpg 800w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-1200.jpg 1200w, /images/optimized/posts/streetwear-popup-photography-we-on-the-streets/we-on-streets-live-art-1600.jpg 1600w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="3555" height="4444" alt="Streetwear Event Photography We On The Streets" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 14th, 2025</div>
-        <h2 class="blog-title">Streetwear Event Photography: Inside the We On The Streets Popup</h2>
-        <p class="blog-excerpt">Complete guide to photographing streetwear popup events. Learn techniques for shooting fashion, performances, and culture at DC's premier streetwear showcase...</p>
-        <a title="View Streetwear Event Guide" href="blog/streetwear-popup-photography-we-on-the-streets/" class="read-more" aria-label="View Streetwear Event Guide">
-            View Streetwear Event Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-                 <article class="blog-card" data-category="portraits">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/root/smithsonian-portrait-hero-400.avif 400w, /images/optimized/root/smithsonian-portrait-hero-800.avif 800w, /images/optimized/root/smithsonian-portrait-hero-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/root/smithsonian-portrait-hero-400.webp 400w, /images/optimized/root/smithsonian-portrait-hero-800.webp 800w, /images/optimized/root/smithsonian-portrait-hero-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/root/smithsonian-portrait-hero-1200.jpg" srcset="/images/optimized/root/smithsonian-portrait-hero-400.jpg 400w, /images/optimized/root/smithsonian-portrait-hero-800.jpg 800w, /images/optimized/root/smithsonian-portrait-hero-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1586" height="1982" alt="Portrait Photography at Smithsonian DC" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 9th, 2025</div>
-        <h2 class="blog-title">Portrait Photography at the Smithsonian DC: Location and Posing Guide</h2>
-        <p class="blog-excerpt">Behind the scenes of a professional portrait session at DC's iconic Smithsonian Castle and Hirshhorn Museum with expert posing techniques...</p>
-        <a title="View Smithsonian Portrait Guide" href="blog/smithsonian-portrait-photography/" class="read-more" aria-label="View Smithsonian Portrait Guide">
-            View Smithsonian Portrait Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="events">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-400.avif 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-800.avif 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1200.avif 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1600.avif 1600w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-400.webp 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-800.webp 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1200.webp 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1600.webp 1600w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1200.jpg" srcset="/images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-400.jpg 400w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-800.jpg 800w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1200.jpg 1200w, /images/optimized/posts/event-photography-checklist-smithsonian-folklife/folklife-traditional-dance-1600.jpg 1600w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="3530" height="4412" alt="Event Photography Checklist Smithsonian Folklife Festival" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">July 10, 2025</div>
-        <h2 class="blog-title">Event Photography Checklist: Smithsonian Folklife Festival Guide</h2>
-        <p class="blog-excerpt">Complete event photography checklist from shooting DC's premier cultural festival. Learn action shots, detail photography, and pro tips for large events...</p>
-        <a title="View Event Checklist" href="blog/event-photography-checklist-smithsonian-folklife/" class="read-more" aria-label="View Event Checklist">
-            View Event Checklist <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-
-                <article class="blog-card" data-category="business">
-                    <div class="blog-image">
-                        <picture>
-                          <source type="image/avif" srcset="/images/optimized/root/Me-400.avif 400w, /images/optimized/root/Me-800.avif 800w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-                          <source type="image/webp" srcset="/images/optimized/root/Me-400.webp 400w, /images/optimized/root/Me-800.webp 800w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-                          <img src="/images/optimized/root/Me-800.jpg" srcset="/images/optimized/root/Me-400.jpg 400w, /images/optimized/root/Me-800.jpg 800w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="886" height="886" alt="How to Choose DMV Photographer" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-date">June 2, 2025</div>
-                        <h2 class="blog-title">How to Choose the Right Photographer in the DMV Area</h2>
-                        <p class="blog-excerpt">Your complete guide to finding the perfect photographer in Washington DC, Maryland, and Virginia for portraits, events, and headshots...</p>
-                        <a title="View DMV Photographer Guide" href="blog/choosing-right-photographer-dmv-area/" class="read-more" aria-label="View DMV Photographer Guide">
-                            View DMV Photographer Guide <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </article>
-
-    <article class="blog-card" data-category="business">
-        <div class="blog-image">
-            <picture>
-              <source type="image/avif" srcset="/images/optimized/root/dmv-photography-pricing-guide-400.avif 400w, /images/optimized/root/dmv-photography-pricing-guide-800.avif 800w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-              <source type="image/webp" srcset="/images/optimized/root/dmv-photography-pricing-guide-400.webp 400w, /images/optimized/root/dmv-photography-pricing-guide-800.webp 800w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-              <img src="/images/optimized/root/dmv-photography-pricing-guide-800.jpg" srcset="/images/optimized/root/dmv-photography-pricing-guide-400.jpg 400w, /images/optimized/root/dmv-photography-pricing-guide-800.jpg 800w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1080" height="1350" alt="DMV photography pricing guide cover image for portrait, event, and headshot rates" loading="lazy" decoding="async">
-            </picture>
-        </div>
-        <div class="blog-content">
-            <div class="blog-date">January 20, 2025</div>
-            <h2 class="blog-title">Photography Prices in the DMV 2026: Complete Cost Guide</h2>
-            <p class="blog-excerpt">Wondering how much photographers charge in the DMV? Here's a full breakdown of portrait, event, and headshot rates in Maryland, DC, and Virginia for 2026.</p>
-            <a title="View DMV Pricing Guide" href="blog/photography-pricing/" class="read-more" aria-label="View DMV Pricing Guide">
-                View DMV Pricing Guide <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </article>
-
-<article class="blog-card" data-category="locations">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/root/after3-400.avif 400w, /images/optimized/root/after3-800.avif 800w, /images/optimized/root/after3-1200.avif 1200w, /images/optimized/root/after3-1600.avif 1600w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/root/after3-400.webp 400w, /images/optimized/root/after3-800.webp 800w, /images/optimized/root/after3-1200.webp 1200w, /images/optimized/root/after3-1600.webp 1600w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/root/after3-1200.jpg" srcset="/images/optimized/root/after3-400.jpg 400w, /images/optimized/root/after3-800.jpg 800w, /images/optimized/root/after3-1200.jpg 1200w, /images/optimized/root/after3-1600.jpg 1600w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="3376" height="6000" alt="Portrait Photography Locations PG County" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">January 15th, 2025</div>
-        <h2 class="blog-title">Top Portrait Photography Locations in Prince George's County, MD</h2>
-        <p class="blog-excerpt">From lakes and gardens to historic mansions, explore 15 of the best spots in PG County for portraits, headshots, and family sessions.</p>
-        <a title="View PG County Locations" href="/blog/pg-portrait-locations/" class="read-more" aria-label="View PG County Locations">
-            View PG County Locations <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-<article class="blog-card" data-category="portraits">
-    <div class="blog-image">
-        <picture>
-          <source type="image/avif" srcset="/images/optimized/root/smithsonian-portrait-hero-400.avif 400w, /images/optimized/root/smithsonian-portrait-hero-800.avif 800w, /images/optimized/root/smithsonian-portrait-hero-1200.avif 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <source type="image/webp" srcset="/images/optimized/root/smithsonian-portrait-hero-400.webp 400w, /images/optimized/root/smithsonian-portrait-hero-800.webp 800w, /images/optimized/root/smithsonian-portrait-hero-1200.webp 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)">
-          <img src="/images/optimized/root/smithsonian-portrait-hero-1200.jpg" srcset="/images/optimized/root/smithsonian-portrait-hero-400.jpg 400w, /images/optimized/root/smithsonian-portrait-hero-800.jpg 800w, /images/optimized/root/smithsonian-portrait-hero-1200.jpg 1200w" sizes="(min-width: 1240px) 366px, (min-width: 810px) calc((100vw - 100px) / 3), (min-width: 430px) calc((100vw - 70px) / 2), calc(100vw - 40px)" width="1586" height="1982" alt="Metro Portrait Photography Guide" loading="lazy" decoding="async">
-        </picture>
-    </div>
-    <div class="blog-content">
-        <div class="blog-date">June 30, 2025</div>
-        <h2 class="blog-title">Underground Portraits: Metro Photography Guide</h2>
-        <p class="blog-excerpt">A creative guide to photographing portraits in metro stations across the DMV with lighting and styling tips.</p>
-        <a title="View Metro Portrait Guide" href="blog/metro/" class="read-more" aria-label="View Metro Portrait Guide">
-            View Metro Portrait Guide <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
-</article>
-
-
-                <!-- Add new blog posts here as you create them -->
-
-            </div>
-            <div class="blog-load-more-row">
-                <p class="blog-load-more-count" id="blog-load-more-count"></p>
-                <button type="button" class="btn btn-secondary" id="blog-load-more">Load More Posts</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Get Photography Tips & Special Offers</h2>
-                <p>Join the newsletter for Charleston photography tips, seasonal booking notes, and occasional DMV availability updates.</p>
-                <form class="newsletter-form" action="https://formsubmit.co/jbmsmusic05@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="New newsletter signup">
-                    <input type="hidden" name="_next" value="https://visualsbyjoshua.com/thankyou.html">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="email" name="email" placeholder="Your email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
+            <div class="blog-grid" id="blog-grid">
+        <article class="blog-card" data-category="portraits">
+          <a href="/blog/record-store-editorial-fashion-photography/" class="blog-card-image">
+            <img src="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-1200.jpg" width="1200" height="1500" alt="Editorial Fashion Photography Inside a Record Store" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">August 18, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/record-store-editorial-fashion-photography/">Editorial Fashion Photography Inside a Record Store</a></h2>
+            <p class="blog-card-excerpt">Behind an editorial fashion shoot inside a Charleston record store: styling, low-light technique, and directing candid energy between two models.</p>
+            <a href="/blog/record-store-editorial-fashion-photography/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="education">
+          <a href="/blog/ttartisan-fisheye-aps-c-crop-guide/" class="blog-card-image">
+            <img src="/images/optimized/home/concert-photographer-charleston-960.jpg" width="960" height="139" alt="TTArtisan 7.5mm Fisheye Full-Frame Crop Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 23, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/ttartisan-fisheye-aps-c-crop-guide/">TTArtisan 7.5mm Fisheye Full-Frame Crop Guide</a></h2>
+            <p class="blog-card-excerpt">How to shoot the TTArtisan 7.5mm f/2 fisheye on a full frame Sony A7III, when to use APS-C crop mode, and when the vignette is worth keeping.</p>
+            <a href="/blog/ttartisan-fisheye-aps-c-crop-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="education events portraits">
+          <a href="/blog/backup-gear-checklist-paid-events/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-event-location-960.jpg" width="960" height="202" alt="Event Photography Gear Checklist: Backup Essentials" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 21, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/backup-gear-checklist-paid-events/">Event Photography Gear Checklist: Backup Essentials</a></h2>
+            <p class="blog-card-excerpt">Use this failure-first event photography gear checklist to prepare backup flashes, cards, batteries, cameras, lenses, cables, and chargers.</p>
+            <a href="/blog/backup-gear-checklist-paid-events/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="business graduations">
+          <a href="/blog/graduation-photography-pricing-charleston-dmv/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-pricing-guide-960.jpg" width="960" height="300" alt="Photography Prices in Charleston and the DMV (2026)" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 19, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/graduation-photography-pricing-charleston-dmv/">Photography Prices in Charleston and the DMV (2026)</a></h2>
+            <p class="blog-card-excerpt">Graduation photography runs $150-$600 in Charleston and the DMV. See real 2026 pricing by session type, plus the factors that change your quote.</p>
+            <a href="/blog/graduation-photography-pricing-charleston-dmv/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="education">
+          <a href="/blog/lightroom-black-skin-tones-workflow/" class="blog-card-image">
+            <img src="/images/optimized/home/dmv-photographer-960.jpg" width="960" height="243" alt="Editing Black Skin Tones in Lightroom" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 17, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/lightroom-black-skin-tones-workflow/">Editing Black Skin Tones in Lightroom</a></h2>
+            <p class="blog-card-excerpt">Use this step-by-step Lightroom workflow for accurate deep skin tones, including HSL values, masking order, and fixes for grey or orange skin.</p>
+            <a href="/blog/lightroom-black-skin-tones-workflow/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="couples graduations portraits">
+          <a href="/blog/posing-prompts-script-photographers/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-portrait-location-960.jpg" width="960" height="171" alt="40 Posing Prompts for Photographers" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 14, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/posing-prompts-script-photographers/">40 Posing Prompts for Photographers</a></h2>
+            <p class="blog-card-excerpt">A verbatim script of posing directions for portraits, graduations, couples, and headshots, plus fixes for awkward hands, height differences, and stiff subjects.</p>
+            <a href="/blog/posing-prompts-script-photographers/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="graduations locations">
+          <a href="/blog/charleston-graduation-photo-locations/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-graduation-photography-960.jpg" width="960" height="972" alt="12 Charleston Graduation Photo Locations" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 11, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-graduation-photo-locations/">12 Charleston Graduation Photo Locations</a></h2>
+            <p class="blog-card-excerpt">A shot-tested guide to graduation photo locations in Charleston, SC, including light direction, crowd levels, parking, and permit rules for each spot.</p>
+            <a href="/blog/charleston-graduation-photo-locations/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="education events portraits">
+          <a href="/blog/tamron-28-75-g2-vs-a036-real-world/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-event-location-960.jpg" width="960" height="202" alt="Tamron 28-75 G2 vs A036: Real-World Comparison" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 8, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/tamron-28-75-g2-vs-a036-real-world/">Tamron 28-75 G2 vs A036: Real-World Comparison</a></h2>
+            <p class="blog-card-excerpt">A side-by-side look at the Tamron 28-75mm f/2.8 G2 (A063) and the original A036 on a Sony A7III, based on paid event and portrait work rather than test charts.</p>
+            <a href="/blog/tamron-28-75-g2-vs-a036-real-world/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="education events portraits">
+          <a href="/blog/godox-v1-pro-vs-ad200-flash-guide/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-event-photographer-960.jpg" width="960" height="455" alt="Godox V1 Pro vs AD200 Pro II Flash Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 5, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/godox-v1-pro-vs-ad200-flash-guide/">Godox V1 Pro vs AD200 Pro II Flash Guide</a></h2>
+            <p class="blog-card-excerpt">Compare the Godox V1, V1 Pro, and AD200 Pro II for events and portraits, including which flash to buy first and why the ecosystem matters.</p>
+            <a href="/blog/godox-v1-pro-vs-ad200-flash-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="education portraits">
+          <a href="/blog/flash-fill-harsh-sun-settings/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-portrait-photographer-960.jpg" width="960" height="243" alt="Fill Flash in Harsh Sun: Exact Portrait Settings" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 2, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/flash-fill-harsh-sun-settings/">Fill Flash in Harsh Sun: Exact Portrait Settings</a></h2>
+            <p class="blog-card-excerpt">How to use TTL fill flash and high-speed sync to shoot portraits at noon without blown highlights or raccoon-eye shadows, with exact compensation values.</p>
+            <a href="/blog/flash-fill-harsh-sun-settings/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="education events">
+          <a href="/blog/sony-a7iii-event-photography-settings/" class="blog-card-image">
+            <img src="/images/optimized/home/college-party-event-photography-960.jpg" width="960" height="289" alt="Sony A7III Event Photography Settings Cheat Sheet" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">June 29, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/sony-a7iii-event-photography-settings/">Sony A7III Event Photography Settings Cheat Sheet</a></h2>
+            <p class="blog-card-excerpt">Exact Sony A7III settings for receptions, ceremonies, conferences, and dim ballrooms, plus the menu setup that keeps you from missing frames.</p>
+            <a href="/blog/sony-a7iii-event-photography-settings/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events locations">
+          <a href="/blog/charleston-juneteenth-event-photography/" class="blog-card-image">
+            <img src="/blog/charleston-juneteenth-event-photography/james-island-juneteenth-event-gallery.webp" width="1120" height="1400" alt="Charleston Juneteenth Event Photography | Shades of PINCK" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">June 26, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-juneteenth-event-photography/">Charleston Juneteenth Event Photography | Shades of PINCK</a></h2>
+            <p class="blog-card-excerpt">See Charleston Juneteenth event photography from Megan Pinckney Rutherford&#x27;s Shades of PINCK cookout on James Island by Joshua Smith.</p>
+            <a href="/blog/charleston-juneteenth-event-photography/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="couples locations portraits">
+          <a href="/blog/best-photo-spots-charleston-sc/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-portrait-location-960.jpg" width="960" height="171" alt="Best Photo Spots in Charleston SC" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 3, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/best-photo-spots-charleston-sc/">Best Photo Spots in Charleston SC</a></h2>
+            <p class="blog-card-excerpt">The best photo spots in Charleston SC for portraits, couples, and grads, with parking, permits, crowd tips, golden hour timing, and backup locations.</p>
+            <a href="/blog/best-photo-spots-charleston-sc/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="locations">
+          <a href="/blog/best-time-of-day-for-photos-charleston/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-couples-photography-960.jpg" width="960" height="1237" alt="Best Time of Day for Photos in Charleston" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 3, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/best-time-of-day-for-photos-charleston/">Best Time of Day for Photos in Charleston</a></h2>
+            <p class="blog-card-excerpt">Find the best time of day for Charleston photos by location, season, heat, crowds, beach light, downtown streets, rain, and golden hour.</p>
+            <a href="/blog/best-time-of-day-for-photos-charleston/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="locations portraits">
+          <a href="/blog/charleston-family-photo-locations/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-portrait-photographer-960.jpg" width="960" height="243" alt="Best Family Photo Locations in Charleston SC" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 3, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-family-photo-locations/">Best Family Photo Locations in Charleston SC</a></h2>
+            <p class="blog-card-excerpt">Find Charleston family photo locations for kids, grandparents, holiday cards, beach portraits, parking, shade, bathrooms, and easy walking routes.</p>
+            <a href="/blog/charleston-family-photo-locations/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="business graduations portraits">
+          <a href="/blog/charleston-graduation-photography-prices/" class="blog-card-image">
+            <img src="/images/portraits/charleston-graduation-photography.webp" width="1206" height="1221" alt="Charleston Graduation Photography Prices in 2026" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 3, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-graduation-photography-prices/">Charleston Graduation Photography Prices in 2026</a></h2>
+            <p class="blog-card-excerpt">Charleston graduation photography runs $150-$600. See prices for solo sessions, CofC portraits, family add-ons, delivery, and booking timing.</p>
+            <a href="/blog/charleston-graduation-photography-prices/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="business portraits">
+          <a href="/blog/charleston-headshot-pricing/" class="blog-card-image">
+            <img src="/images/optimized/root/headshot1-400.jpg" width="400" height="600" alt="Charleston Headshot Prices in 2026" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 3, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-headshot-pricing/">Charleston Headshot Prices in 2026</a></h2>
+            <p class="blog-card-excerpt">Charleston headshots start at $40. Compare prices for individuals, teams, LinkedIn updates, on-site headshot days, delivery, retouching, and usage.</p>
+            <a href="/blog/charleston-headshot-pricing/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events locations">
+          <a href="/blog/charleston-photography-permit-guide/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-event-location-960.jpg" width="960" height="202" alt="Photography Permits in Charleston SC" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 3, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-photography-permit-guide/">Photography Permits in Charleston SC</a></h2>
+            <p class="blog-card-excerpt">Learn when Charleston photo sessions need permits for parks, streets, commercial work, private venues, beaches, props, groups, and events.</p>
+            <a href="/blog/charleston-photography-permit-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="business greeklife locations">
+          <a href="/blog/sorority-fraternity-group-photos-charleston/" class="blog-card-image">
+            <img src="/images/events/college-party-event-photography.webp" width="1206" height="1264" alt="Sorority and Fraternity Group Photo Locations in Charleston" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 3, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/sorority-fraternity-group-photos-charleston/">Sorority and Fraternity Group Photo Locations in Charleston</a></h2>
+            <p class="blog-card-excerpt">Plan sorority and fraternity group photos in Charleston with campus spots, downtown routes, beach options, timing, pricing, and group logistics.</p>
+            <a href="/blog/sorority-fraternity-group-photos-charleston/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="couples locations">
+          <a href="/blog/charleston-anniversary-proposal-photo-guide/" class="blog-card-image">
+            <img src="/images/couples/charleston-anniversary-couple-downtown.webp" width="1206" height="1660" alt="Charleston Anniversary and Proposal Photo Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 2, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-anniversary-proposal-photo-guide/">Charleston Anniversary and Proposal Photo Guide</a></h2>
+            <p class="blog-card-excerpt">Plan Charleston anniversary photos and proposal coverage with location ideas, timing, permit notes, outfits, surprise planning, and delivery tips.</p>
+            <a href="/blog/charleston-anniversary-proposal-photo-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="business">
+          <a href="/blog/charleston-brand-photography-guide/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-pricing-guide-960.jpg" width="960" height="300" alt="Charleston Brand Photography Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 2, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-brand-photography-guide/">Charleston Brand Photography Guide</a></h2>
+            <p class="blog-card-excerpt">Plan Charleston brand photography for websites, teams, founders, products, social posts, and local businesses with shot lists and strategy.</p>
+            <a href="/blog/charleston-brand-photography-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="couples locations">
+          <a href="/blog/charleston-engagement-photo-locations-guide/" class="blog-card-image">
+            <img src="/images/couples/cypress-gardens-engagement-shoot.webp" width="1600" height="1614" alt="Charleston Engagement Photo Locations Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 2, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-engagement-photo-locations-guide/">Charleston Engagement Photo Locations Guide</a></h2>
+            <p class="blog-card-excerpt">Plan Charleston engagement photos with downtown, beach, garden, Cypress Gardens, permit, outfit, timing, and proposal coverage advice.</p>
+            <a href="/blog/charleston-engagement-photo-locations-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events locations">
+          <a href="/blog/charleston-event-photography-planning-guide/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-event-photographer-960.jpg" width="960" height="455" alt="Charleston Event Photography Planning Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 2, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-event-photography-planning-guide/">Charleston Event Photography Planning Guide</a></h2>
+            <p class="blog-card-excerpt">Plan Charleston event photography with timelines, shot lists, permit notes, lighting needs, delivery expectations, and local venue advice.</p>
+            <a href="/blog/charleston-event-photography-planning-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="graduations locations">
+          <a href="/blog/charleston-graduation-photo-locations-guide/" class="blog-card-image">
+            <img src="/images/portraits/charleston-graduation-photography.webp" width="1206" height="1221" alt="Charleston Graduation Photo Locations Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 2, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-graduation-photo-locations-guide/">Charleston Graduation Photo Locations Guide</a></h2>
+            <p class="blog-card-excerpt">Plan Charleston graduation photos with location routes, timing, outfits, permit notes, and booking tips for College of Charleston seniors.</p>
+            <a href="/blog/charleston-graduation-photo-locations-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="business portraits">
+          <a href="/blog/charleston-headshot-guide/" class="blog-card-image">
+            <img src="/images/optimized/root/headshot1-400.jpg" width="400" height="600" alt="Charleston Headshot Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 2, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-headshot-guide/">Charleston Headshot Guide</a></h2>
+            <p class="blog-card-excerpt">Plan Charleston headshots for LinkedIn, teams, websites, resumes, and business branding with outfit, background, posing, and delivery advice.</p>
+            <a href="/blog/charleston-headshot-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events greeklife portraits">
+          <a href="/blog/charleston-nightlife-party-photography-guide/" class="blog-card-image">
+            <img src="/images/events/college-party-event-photography.webp" width="1206" height="1264" alt="Charleston Nightlife Party Photography Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 2, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-nightlife-party-photography-guide/">Charleston Nightlife Party Photography Guide</a></h2>
+            <p class="blog-card-excerpt">Plan Charleston party photography for Greek life, student events, birthdays, nightlife, breweries, and dark venues with flash and delivery tips.</p>
+            <a href="/blog/charleston-nightlife-party-photography-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="graduations">
+          <a href="/blog/charleston-seasonal-photo-session-guide/" class="blog-card-image">
+            <img src="/newblogimages/charleston-spring-graduation-portrait-session.webp" width="1206" height="2622" alt="Charleston Seasonal Photo Session Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 2, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-seasonal-photo-session-guide/">Charleston Seasonal Photo Session Guide</a></h2>
+            <p class="blog-card-excerpt">Plan Charleston photo sessions by season with weather, light, outfits, graduation timing, beach sessions, rain plans, and booking advice.</p>
+            <a href="/blog/charleston-seasonal-photo-session-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="locations portraits">
+          <a href="/blog/charleston-senior-portrait-guide/" class="blog-card-image">
+            <img src="/images/optimized/home/charleston-portrait-photographer-960.jpg" width="960" height="243" alt="Charleston Senior Portrait Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 2, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-senior-portrait-guide/">Charleston Senior Portrait Guide</a></h2>
+            <p class="blog-card-excerpt">Plan Charleston senior portraits with location ideas, outfit tips, timing, posing advice, and social-ready delivery for high school seniors.</p>
+            <a href="/blog/charleston-senior-portrait-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events greeklife">
+          <a href="/blog/charleston-student-organization-event-photography-guide/" class="blog-card-image">
+            <img src="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.webp" width="1200" height="1800" alt="Charleston Student Event Photography Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 2, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-student-organization-event-photography-guide/">Charleston Student Event Photography Guide</a></h2>
+            <p class="blog-card-excerpt">Plan Charleston student organization event photography for cultural nights, Greek life, club events, campus awards, and recruitment content.</p>
+            <a href="/blog/charleston-student-organization-event-photography-guide/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events">
+          <a href="/blog/charleston-multicultural-student-night-photography/" class="blog-card-image">
+            <img src="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.webp" width="1200" height="1800" alt="Charleston Student Event Photography | Visuals by Joshua" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">April 25, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-multicultural-student-night-photography/">Charleston Student Event Photography | Visuals by Joshua</a></h2>
+            <p class="blog-card-excerpt">Charleston event photography for multicultural student celebrations, campus org nights, and diversity events with candid coverage by Visuals by Joshua.</p>
+            <a href="/blog/charleston-multicultural-student-night-photography/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="business couples events graduations portraits">
+          <a href="/blog/charleston-photography-pricing/" class="blog-card-image">
+            <img src="/images/portraits/charleston-graduation-photography.webp" width="1206" height="1221" alt="Charleston Photography Pricing Guide" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">April 25, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-photography-pricing/">Charleston Photography Pricing Guide</a></h2>
+            <p class="blog-card-excerpt">Charleston photography pricing: portraits from $80, headshots from $40, graduation and couples sessions from $150, events from $150. See the full breakdown.</p>
+            <a href="/blog/charleston-photography-pricing/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events greeklife portraits">
+          <a href="/blog/fiji-y2k-party-event-photography-charleston/" class="blog-card-image">
+            <img src="/images/events/fiji-y2k-party-lofi-brewing-charleston.webp" width="736" height="1600" alt="FIJI Y2K Party at Lo-Fi Brewing | Charleston Event Photography" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">March 21, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/fiji-y2k-party-event-photography-charleston/">FIJI Y2K Party at Lo-Fi Brewing | Charleston Event Photography</a></h2>
+            <p class="blog-card-excerpt">Charleston event photography for the Phi Gamma Delta Y2K party at Lo-Fi Brewing with flash, fisheye crowd shots, and fast event coverage.</p>
+            <a href="/blog/fiji-y2k-party-event-photography-charleston/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="education locations portraits">
+          <a href="/blog/sullivans-island-birthday-portrait-photography-charleston/" class="blog-card-image">
+            <img src="/images/portraits/sullivans-island-birthday-portrait-charleston.webp" width="736" height="1600" alt="Sullivan&#x27;s Island Birthday Portrait Photography | Charleston Portrait Photographer" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">March 21, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/sullivans-island-birthday-portrait-photography-charleston/">Sullivan&#x27;s Island Birthday Portrait Photography | Charleston Portrait Photographer</a></h2>
+            <p class="blog-card-excerpt">Golden hour birthday portrait session on Sullivan&#x27;s Island, Charleston. Natural light and the right lens turn a beach shoot into something worth framing.</p>
+            <a href="/blog/sullivans-island-birthday-portrait-photography-charleston/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="locations portraits">
+          <a href="/blog/baltimore-garden-fairycore-portrait-photography/" class="blog-card-image">
+            <img src="/images/portraits/baltimore-garden-fairycore-portrait.webp" width="1206" height="1194" alt="Baltimore Garden Fairycore Portrait Photography" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">March 19, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/baltimore-garden-fairycore-portrait-photography/">Baltimore Garden Fairycore Portrait Photography</a></h2>
+            <p class="blog-card-excerpt">Fairy core portrait photography in a lush Baltimore garden with flowing fabrics, natural greenery, and soft golden light from photographer Joshua Smith.</p>
+            <a href="/blog/baltimore-garden-fairycore-portrait-photography/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="graduations portraits">
+          <a href="/blog/charleston-graduation-photography/" class="blog-card-image">
+            <img src="/images/portraits/charleston-graduation-photography.webp" width="1206" height="1221" alt="Charleston Graduation Photographer | Cap &amp; Gown Photos" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">March 19, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-graduation-photography/">Charleston Graduation Photographer | Cap &amp; Gown Photos</a></h2>
+            <p class="blog-card-excerpt">Book Charleston graduation photography for College of Charleston, The Citadel, Charleston Southern, downtown, campus, and waterfront cap and gown portraits.</p>
+            <a href="/blog/charleston-graduation-photography/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events greeklife portraits">
+          <a href="/blog/college-party-event-photography/" class="blog-card-image">
+            <img src="/images/events/college-party-event-photography.webp" width="1206" height="1264" alt="College Party Event Photography: How I Shoot the Chaos" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">March 19, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/college-party-event-photography/">College Party Event Photography: How I Shoot the Chaos</a></h2>
+            <p class="blog-card-excerpt">College party and off-campus event photographer in Charleston. Flash techniques, group shots, and low-light tips for parties, raves, and sorority flashes.</p>
+            <a href="/blog/college-party-event-photography/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="greeklife portraits">
+          <a href="/blog/night-flash-greek-life-portrait-photography/" class="blog-card-image">
+            <img src="/images/portraits/night-flash-greek-life-portrait.webp" width="1206" height="1282" alt="Night Flash Portrait Photography for Greek Life" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">March 19, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/night-flash-greek-life-portrait-photography/">Night Flash Portrait Photography for Greek Life</a></h2>
+            <p class="blog-card-excerpt">How to get sharp, flattering night flash portraits at probates, strolls, and yard shows. Greek life photography tips from a DMV &amp;amp; Charleston photographer.</p>
+            <a href="/blog/night-flash-greek-life-portrait-photography/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="couples locations">
+          <a href="/blog/cypress-gardens-engagement-photography-charleston/" class="blog-card-image">
+            <img src="/images/couples/cypress-gardens-engagement-shoot.webp" width="1600" height="1614" alt="Cypress Gardens Engagement Photography in Charleston SC" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">March 15, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/cypress-gardens-engagement-photography-charleston/">Cypress Gardens Engagement Photography in Charleston SC</a></h2>
+            <p class="blog-card-excerpt">Cypress Gardens engagement photographer in Charleston SC. See why Cypress Gardens is the perfect backdrop, plus tips on timing, outfits, and the proposal.</p>
+            <a href="/blog/cypress-gardens-engagement-photography-charleston/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="couples portraits">
+          <a href="/blog/anniversary-photography-downtown-charleston/" class="blog-card-image">
+            <img src="/images/couples/charleston-anniversary-couple-downtown.webp" width="1206" height="1660" alt="Anniversary Photography in Downtown Charleston" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">March 10, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/anniversary-photography-downtown-charleston/">Anniversary Photography in Downtown Charleston</a></h2>
+            <p class="blog-card-excerpt">Anniversary couples photography in downtown Charleston: Rainbow Row, Waterfront Park, and The Battery for timeless portraits.</p>
+            <a href="/blog/anniversary-photography-downtown-charleston/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="portraits">
+          <a href="/blog/studio-black-white-portrait-photography/" class="blog-card-image">
+            <img src="/images/studio/studio-black-white-silhouette-portrait.webp" width="1206" height="1825" alt="Studio Black and White Portrait Photography | Visuals by Joshua" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">March 5, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/studio-black-white-portrait-photography/">Studio Black and White Portrait Photography | Visuals by Joshua</a></h2>
+            <p class="blog-card-excerpt">Charleston studio black and white portrait photography with dramatic lighting, creative direction, and fine art portrait planning.</p>
+            <a href="/blog/studio-black-white-portrait-photography/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="concerts education">
+          <a href="/blog/concert-photography-gza-wu-tang/" class="blog-card-image">
+            <img src="/images/concerts/gza-wu-tang-concert-photography.webp" width="1600" height="3479" alt="Concert Photography: Shooting GZA of Wu-Tang Clan Live" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">March 1, 2026</div>
+            <h2 class="blog-card-title"><a href="/blog/concert-photography-gza-wu-tang/">Concert Photography: Shooting GZA of Wu-Tang Clan Live</a></h2>
+            <p class="blog-card-excerpt">Behind the lens photographing GZA of Wu-Tang Clan live in concert. Concert photography tips for low light and stage lighting from a Charleston photographer.</p>
+            <a href="/blog/concert-photography-gza-wu-tang/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events graduations portraits">
+          <a href="/blog/multicultural-student-graduation-night-photography/" class="blog-card-image">
+            <img src="/newblogimages/multicultural-student-graduation-night-photography.webp" width="1206" height="2622" alt="Multicultural Student Graduation Night Photography | Charleston Event Photographer" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">November 21, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/multicultural-student-graduation-night-photography/">Multicultural Student Graduation Night Photography | Charleston Event Photographer</a></h2>
+            <p class="blog-card-excerpt">Photographing a multicultural student graduation night in Charleston SC, with tips for cultural sashes, group portraits, and indoor event lighting.</p>
+            <a href="/blog/multicultural-student-graduation-night-photography/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="locations">
+          <a href="/blog/philadelphia-street-photography-reading-terminal/" class="blog-card-image">
+            <img src="/newblogimages/philadelphia-street-photography-reading-terminal.webp" width="1206" height="2622" alt="Philadelphia Street Photography - Reading Terminal Market &amp; Beyond | Urban Photographer" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 18, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/philadelphia-street-photography-reading-terminal/">Philadelphia Street Photography - Reading Terminal Market &amp; Beyond | Urban Photographer</a></h2>
+            <p class="blog-card-excerpt">Street and urban photography in Philadelphia, from Reading Terminal Market to Chinatown and Penn&#x27;s Landing. Neon signs, dragon statues, and street shots.</p>
+            <a href="/blog/philadelphia-street-photography-reading-terminal/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="education events">
+          <a href="/blog/event-photography-checklist-smithsonian-folklife/" class="blog-card-image">
+            <img src="/folklife-traditional-dance.webp" width="1280" height="1600" alt="Event Photography Checklist | Smithsonian Folklife Festival" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 9, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/event-photography-checklist-smithsonian-folklife/">Event Photography Checklist | Smithsonian Folklife Festival</a></h2>
+            <p class="blog-card-excerpt">Event photography checklist from the Smithsonian Folklife Festival, with tips for cultural events in DC, the DMV, and Charleston.</p>
+            <a href="/blog/event-photography-checklist-smithsonian-folklife/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="locations portraits">
+          <a href="/blog/metro/" class="blog-card-image">
+            <img src="/smithsonian-portrait-hero.webp" width="1280" height="1600" alt="Underground Portraits: Mastering Metro Photography in DC" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 9, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/metro/">Underground Portraits: Mastering Metro Photography in DC</a></h2>
+            <p class="blog-card-excerpt">Guide to shooting cinematic portraits in DC Metro stations: lighting techniques, permits, and creative approaches for underground urban photography.</p>
+            <a href="/blog/metro/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events">
+          <a href="/blog/streetwear-popup-photography-we-on-the-streets/" class="blog-card-image">
+            <img src="/we-on-streets-live-art.webp" width="1280" height="1600" alt="Streetwear Event Photography: Inside the We On The Streets Popup" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">July 9, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/streetwear-popup-photography-we-on-the-streets/">Streetwear Event Photography: Inside the We On The Streets Popup</a></h2>
+            <p class="blog-card-excerpt">Behind the scenes shooting the We On The Streets streetwear popup in DC: event photography, streetwear culture, and photographing a popup done right.</p>
+            <a href="/blog/streetwear-popup-photography-we-on-the-streets/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="events">
+          <a href="/blog/world-pride-dc-event-photography/" class="blog-card-image">
+            <img src="/newblogimages/world-pride-dc-event-photography.webp" width="1206" height="2622" alt="World Pride DC Event Photography | DMV Event Photographer" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">June 8, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/world-pride-dc-event-photography/">World Pride DC Event Photography | DMV Event Photographer</a></h2>
+            <p class="blog-card-excerpt">World Pride DC event and parade photography, behind the scenes of shooting vibrant pride celebrations, rainbow crowds, and authentic moments in the DMV.</p>
+            <a href="/blog/world-pride-dc-event-photography/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="business">
+          <a href="/blog/choosing-right-photographer-dmv-area/" class="blog-card-image">
+            <img src="/smithsonian-portrait-hero.webp" width="1280" height="1600" alt="How to Choose a Photographer in DMV or Charleston" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">June 2, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/choosing-right-photographer-dmv-area/">How to Choose a Photographer in DMV or Charleston</a></h2>
+            <p class="blog-card-excerpt">How to choose a photographer in the DMV or Charleston. Compare portfolios, pricing, local knowledge, editing style, and booking details before you hire.</p>
+            <a href="/blog/choosing-right-photographer-dmv-area/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="graduations locations portraits">
+          <a href="/blog/doctoral-graduation-photography-dc-monuments/" class="blog-card-image">
+            <img src="/newblogimages/doctoral-graduation-photography-dc-monuments.webp" width="1206" height="2622" alt="Doctoral Graduation Photography at DC Monuments | DMV Doctoral Graduation Photographer" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">June 1, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/doctoral-graduation-photography-dc-monuments/">Doctoral Graduation Photography at DC Monuments | DMV Doctoral Graduation Photographer</a></h2>
+            <p class="blog-card-excerpt">Doctoral graduation portrait session at DC monuments featuring full academic regalia at the Lincoln Memorial, with doctoral gowns and marble columns.</p>
+            <a href="/blog/doctoral-graduation-photography-dc-monuments/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="graduations locations portraits">
+          <a href="/blog/masters-graduation-photography-dc-monuments/" class="blog-card-image">
+            <img src="/newblogimages/masters-graduation-photography-dc-monuments.webp" width="1206" height="2622" alt="Masters Graduation Photography at DC Monuments | Visuals by Joshua" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">May 18, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/masters-graduation-photography-dc-monuments/">Masters Graduation Photography at DC Monuments | Visuals by Joshua</a></h2>
+            <p class="blog-card-excerpt">Masters graduation portraits at Washington DC monuments, with DMV sessions by request and Charleston graduation photography available for local graduates.</p>
+            <a href="/blog/masters-graduation-photography-dc-monuments/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="graduations locations portraits">
+          <a href="/blog/charleston-historic-district-graduation-portraits/" class="blog-card-image">
+            <img src="/newblogimages/charleston-historic-district-graduation-portraits.webp" width="1206" height="2622" alt="Charleston Historic District Graduation Portraits | Charleston Portrait Photographer" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">April 27, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-historic-district-graduation-portraits/">Charleston Historic District Graduation Portraits | Charleston Portrait Photographer</a></h2>
+            <p class="blog-card-excerpt">Elegant graduation portrait session in Charleston&#x27;s historic district: white dress, roses, brick archways, and iconic downtown locations.</p>
+            <a href="/blog/charleston-historic-district-graduation-portraits/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="graduations locations portraits">
+          <a href="/blog/charleston-spring-graduation-portrait-session/" class="blog-card-image">
+            <img src="/newblogimages/charleston-spring-graduation-portrait-session.webp" width="1206" height="2622" alt="Charleston Spring Graduation Portrait Session | Charleston Graduation Photographer" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">April 24, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/charleston-spring-graduation-portrait-session/">Charleston Spring Graduation Portrait Session | Charleston Graduation Photographer</a></h2>
+            <p class="blog-card-excerpt">Spring graduation portrait session in Charleston SC featuring tree-lined streets, Spanish moss, and pastel houses, with tips on locations and posing.</p>
+            <a href="/blog/charleston-spring-graduation-portrait-session/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="locations portraits">
+          <a href="/blog/smithsonian-portrait-photography/" class="blog-card-image">
+            <img src="/smithsonian-portrait-hero.webp" width="1280" height="1600" alt="Portrait Photography at the Smithsonian DC: Location Guide and Posing Tips" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">January 27, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/smithsonian-portrait-photography/">Portrait Photography at the Smithsonian DC: Location Guide and Posing Tips</a></h2>
+            <p class="blog-card-excerpt">Professional portrait photography session at the Smithsonian Castle and Hirshhorn Museum in Washington DC. Location guide and posing tips from Joshua Smith.</p>
+            <a href="/blog/smithsonian-portrait-photography/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="locations portraits">
+          <a href="/blog/pg-portrait-locations/" class="blog-card-image">
+            <img src="/portrait2.webp" width="1067" height="1600" alt="PG County Portrait Photography Locations | Visuals by Joshua" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">January 20, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/pg-portrait-locations/">PG County Portrait Photography Locations | Visuals by Joshua</a></h2>
+            <p class="blog-card-excerpt">Discover portrait locations in Prince George&#x27;s County, plus Charleston portrait session planning from Visuals by Joshua.</p>
+            <a href="/blog/pg-portrait-locations/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="business events portraits">
+          <a href="/blog/photography-pricing/" class="blog-card-image">
+            <img src="/dmv-photography-pricing-guide.webp" width="1080" height="1350" alt="Photography Prices in DMV &amp; Charleston | Visuals by Joshua" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">January 15, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/photography-pricing/">Photography Prices in DMV &amp; Charleston | Visuals by Joshua</a></h2>
+            <p class="blog-card-excerpt">Photographer hourly rates run $150-$400. See real 2026 pricing for portraits, events, headshots, and mini sessions in the DMV and Charleston, by the hour.</p>
+            <a href="/blog/photography-pricing/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-category="education greeklife portraits">
+          <a href="/blog/shutter-drag-creative-portrait-photography/" class="blog-card-image">
+            <img src="/newblogimages/shutter-drag-creative-portrait-photography.webp" width="1206" height="2622" alt="Shutter Drag Creative Portrait Photography | Charleston Nightlife Photographer" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-date">January 9, 2025</div>
+            <h2 class="blog-card-title"><a href="/blog/shutter-drag-creative-portrait-photography/">Shutter Drag Creative Portrait Photography | Charleston Nightlife Photographer</a></h2>
+            <p class="blog-card-excerpt">How shutter drag and long exposure techniques create vibrant motion blur portraits in nightlife settings, with camera settings and flash technique tips.</p>
+            <a href="/blog/shutter-drag-creative-portrait-photography/" class="blog-card-link">Read the post &rarr;</a>
+          </div>
+        </article>                <p class="no-results" id="no-results">No posts in this category yet. Try another filter.</p>
             </div>
         </div>
     </section>
     </main>
 
+    <a title="Back to the top of the page" href="#" class="back-to-top" id="back-to-top" aria-label="Back to the top of the page">&uarr;</a>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Visuals by Joshua</h3>
+                    <p>Editorial photography for milestones &amp; moments. Serving Charleston SC + Northern VA / DMV.</p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="tel:+12403608465" style="display: block; margin-bottom: 0.5rem;">&#128222; (240) 360-8465</a>
+                        <a href="mailto:jbmsmusic05@gmail.com" style="display: block; margin-bottom: 0.5rem;">&#9993;&#65039; jbmsmusic05@gmail.com</a>
+                    </p>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128247; Instagram</a>
+                        <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" style="font-size: 1.25rem;">&#128218; Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#portfolio">Portfolio</a></li>
+                        <li><a href="/gallery">Full Gallery</a></li>
+                        <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
+                        <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
+                        <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
+                        <li><a href="/blog.html">Photography Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Visuals by Joshua. Charleston SC &amp; Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
 
     <script>
-        const blogGrid = document.querySelector('.blog-grid');
-
-        const parseBlogDate = (dateText) => {
-            const normalizedDate = dateText.replace(/(\d+)(st|nd|rd|th)/gi, '$1');
-            return new Date(normalizedDate);
-        };
-
-        if (blogGrid) {
-            const sortedCards = Array.from(blogGrid.querySelectorAll('.blog-card')).sort((a, b) => {
-                const aDateText = a.querySelector('.blog-date')?.textContent?.trim() || '';
-                const bDateText = b.querySelector('.blog-date')?.textContent?.trim() || '';
-
-                return parseBlogDate(bDateText) - parseBlogDate(aDateText);
+        // Mobile nav toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = navMenu.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', isOpen);
             });
-
-            sortedCards.forEach((card) => {
-                blogGrid.appendChild(card);
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('is-open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
             });
         }
 
-        // Category filtering + pagination — 55 posts in one unpaginated
-        // scroll made the page ~38,000px tall on mobile. Category filter
-        // previously only toggled display:none, so switching categories
-        // never actually reduced how much the page had already rendered.
-        // This shows a page at a time, re-paginating from the top of the
-        // currently-filtered set whenever the category changes.
+        // Back to top
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Category filter
         const categoryBtns = document.querySelectorAll('.category-btn');
-        const blogCards = Array.from(document.querySelectorAll('.blog-card'));
-        const loadMoreBtn = document.getElementById('blog-load-more');
-        const loadMoreCount = document.getElementById('blog-load-more-count');
-        const PAGE_SIZE = 12;
+        const blogCards = document.querySelectorAll('.blog-card');
+        const noResults = document.getElementById('no-results');
 
-        let currentCategory = 'all';
-        let visibleCount = PAGE_SIZE;
-
-        function filteredCards() {
-            return blogCards.filter(card => {
-                if (currentCategory === 'all') return true;
-                return card.dataset.category.split(/\s+/).includes(currentCategory);
-            });
-        }
-
-        function renderBlogGrid() {
-            const filtered = filteredCards();
-            const filteredSet = new Set(filtered);
-
+        function applyFilter(category) {
+            let visibleCount = 0;
             blogCards.forEach(card => {
-                card.style.display = filteredSet.has(card) ? '' : 'none';
+                const cardCategories = card.getAttribute('data-category').split(' ');
+                const matches = category === 'all' || cardCategories.includes(category);
+                card.classList.toggle('show', matches);
+                if (matches) visibleCount++;
             });
-            filtered.forEach((card, i) => {
-                card.style.display = i < visibleCount ? 'block' : 'none';
-            });
-
-            const shown = Math.min(visibleCount, filtered.length);
-            if (loadMoreCount) {
-                loadMoreCount.textContent = filtered.length
-                    ? `Showing ${shown} of ${filtered.length} posts`
-                    : 'No posts in this category yet';
-            }
-            if (loadMoreBtn) {
-                loadMoreBtn.style.display = shown < filtered.length ? 'inline-block' : 'none';
-            }
+            noResults.classList.toggle('show', visibleCount === 0);
         }
 
         categoryBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 categoryBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-
-                currentCategory = btn.dataset.category;
-                visibleCount = PAGE_SIZE;
-                renderBlogGrid();
-                document.querySelector('.blog-grid-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                applyFilter(btn.getAttribute('data-category'));
             });
         });
 
-        if (loadMoreBtn) {
-            loadMoreBtn.addEventListener('click', () => {
-                visibleCount += PAGE_SIZE;
-                renderBlogGrid();
-            });
-        }
-
-        renderBlogGrid();
-
-        // Mobile navigation
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-
-        if (hamburger && navMenu) {
-            const toggleMenu = () => {
-                hamburger.classList.toggle('active');
-                navMenu.classList.toggle('active');
-            };
-
-            hamburger.addEventListener('click', toggleMenu);
-            hamburger.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    toggleMenu();
-                }
-            });
-
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', () => {
-                    hamburger.classList.remove('active');
-                    navMenu.classList.remove('active');
-                });
-            });
-        }
+        applyFilter('all');
     </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3>Visuals by Joshua</h3>
-          <p>Editorial photography for milestones & moments. Serving Charleston SC + Northern VA / DMV. Photographer hourly rates from $80.</p>
-          <p style="margin-top: 1.5rem;">
-            <a href="tel:+12403608465">(240) 360-8465</a><br>
-            <a href="mailto:jbmsmusic05@gmail.com">jbmsmusic05@gmail.com</a>
-          </p>
-          <div class="footer-social" style="margin-top: 1.25rem; display: flex; gap: 14px;">
-            <a href="https://www.instagram.com/visuals_by_joshua" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-instagram" style="font-size: 1.25rem;"></i></a>
-            <a href="https://www.facebook.com/people/Visuals-By-Joshua/61575820500824/" target="_blank" rel="noopener" aria-label="Visuals by Joshua on Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;"><i class="fab fa-facebook-f" style="font-size: 1.25rem;"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="/gallery">Full Gallery</a></li>
-            <li><a href="/blog/photography-pricing/">Photography Pricing</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/testimonials">Testimonials</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Locations</h4>
-          <ul>
-            <li><a href="/charleston-photographer/">Charleston SC Photographer</a></li>
-            <li><a href="/dmv-photographer/">Northern VA / DMV Photographer</a></li>
-            <li><a href="/blog/charleston-graduation-photography/">Graduation Photographer Near Me</a></li>
-            <li><a href="/blog.html">Photography Blog</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Visuals by Joshua. Charleston SC & Northern VA photographer. | <a href="/privacy-policy.html">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>
