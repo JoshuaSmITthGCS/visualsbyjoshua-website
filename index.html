@@ -693,31 +693,50 @@
        PORTFOLIO GRID - Flip Cards (Cropped)
        ======================================== */
     .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
-      gap: 20px;
+      column-count: 1;
+      column-gap: 4px;
       padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
     }
 
-    @media (min-width: 768px) {
-      .portfolio-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
+    @media (min-width: 600px) {
+      .portfolio-grid { column-count: 2; }
+    }
+
+    @media (min-width: 980px) {
+      .portfolio-grid { column-count: 3; }
     }
 
     .portfolio-item {
       position: relative;
-      aspect-ratio: 4 / 5;
+      break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      margin-bottom: 4px;
       perspective: 1000px;
+    }
+
+    /* Mobile: cap the feed at the first 5 cards so people don't have to scroll forever */
+    @media (max-width: 767px) {
+      .portfolio-item:nth-child(n + 6) {
+        display: none;
+      }
     }
 
     .portfolio-card {
       position: relative;
       width: 100%;
-      height: 100%;
+      aspect-ratio: 4 / 5;
       transform-style: preserve-3d;
       transition: transform 0.6s;
       cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .portfolio-item.size-big .portfolio-card {
+      aspect-ratio: 4 / 5.6;
+    }
+
+    .portfolio-item.size-small .portfolio-card {
+      aspect-ratio: 4 / 3.5;
     }
 
     .portfolio-item:hover .portfolio-card {
@@ -1208,7 +1227,7 @@
 
   <!-- Portfolio Grid: Flip Cards with Blog Links -->
   <section id="portfolio" class="portfolio-grid">
-    <div class="portfolio-item">
+    <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/home/cypress-gardens-portfolio-card-1200.webp" alt="Best photo spots Charleston SC Cypress Gardens engagement" loading="lazy">
@@ -1221,7 +1240,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/home/wutang-concert-bw-alt-1200.webp" alt="Concert event coverage photography GZA Wu-Tang" loading="lazy">
@@ -1234,7 +1253,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/home/graduation-recap-alt-1080.webp" alt="Graduation photographer near me Charleston SC" loading="lazy">
@@ -1247,7 +1266,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/studio/studio-black-white-silhouette-portrait-1200.webp" alt="Portrait photography studio session" loading="lazy">
@@ -1260,7 +1279,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/events/college-party-event-photography-1200.webp" alt="College party event coverage photography" loading="lazy">
@@ -1273,7 +1292,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/portraits/night-flash-greek-life-portrait-1200.webp" alt="Sorority flash photography nightlife portraits" loading="lazy">
@@ -1286,7 +1305,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.webp" alt="Birthday photoshoot near me Sullivan's Island Charleston" loading="lazy">
@@ -1299,7 +1318,7 @@
       </div>
     </div>
 
-    <div class="portfolio-item">
+    <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
           <img src="/images/couples/charleston-anniversary-couple-downtown.webp" alt="Anniversary photoshoot downtown Charleston couples" loading="lazy">
@@ -1308,6 +1327,149 @@
           <h3>Downtown Anniversary Session</h3>
           <p>Anniversary photography at good photo spots downtown Charleston</p>
           <a href="/blog/anniversary-photography-downtown-charleston/" class="btn btn-ghost">Read Story →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item size-big">
+      <div class="portfolio-card">
+        <div class="portfolio-card-front">
+          <img src="/images/events/fiji-y2k-party-lofi-brewing-charleston.webp" alt="FIJI Y2K party event photography at Lo-Fi Brewing Charleston" loading="lazy">
+        </div>
+        <div class="portfolio-card-back">
+          <h3>FIJI Y2K Party</h3>
+          <p>Fraternity event coverage with flash and fisheye crowd shots at Lo-Fi Brewing</p>
+          <a href="/blog/fiji-y2k-party-event-photography-charleston/" class="btn btn-ghost">Read Story →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item size-small">
+      <div class="portfolio-card">
+        <div class="portfolio-card-front">
+          <img src="/images/optimized/events/charleston-juneteenth-event-photography-1200.webp" alt="Charleston Juneteenth event photography Shades of PINCK" loading="lazy">
+        </div>
+        <div class="portfolio-card-back">
+          <h3>Charleston Juneteenth Event</h3>
+          <p>Black joy, food, and community at the Shades of PINCK cookout on James Island</p>
+          <a href="/blog/charleston-juneteenth-event-photography/" class="btn btn-ghost">Read Story →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item size-small">
+      <div class="portfolio-card">
+        <div class="portfolio-card-front">
+          <img src="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.webp" alt="Shutter drag long exposure portrait photography" loading="lazy">
+        </div>
+        <div class="portfolio-card-back">
+          <h3>Shutter Drag Portraits</h3>
+          <p>Long exposure and motion blur techniques for vibrant nightlife portraits</p>
+          <a href="/blog/shutter-drag-creative-portrait-photography/" class="btn btn-ghost">Read Story →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item size-big">
+      <div class="portfolio-card">
+        <div class="portfolio-card-front">
+          <img src="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.webp" alt="Multicultural student graduation night photography" loading="lazy">
+        </div>
+        <div class="portfolio-card-back">
+          <h3>Multicultural Graduation Night</h3>
+          <p>Cultural sashes, group portraits, and indoor lighting for a graduation celebration</p>
+          <a href="/blog/multicultural-student-graduation-night-photography/" class="btn btn-ghost">Read Story →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item size-small">
+      <div class="portfolio-card">
+        <div class="portfolio-card-front">
+          <img src="/images/optimized/portraits/baltimore-garden-fairycore-portrait-800.webp" alt="Baltimore garden fairycore portrait photography" loading="lazy">
+        </div>
+        <div class="portfolio-card-back">
+          <h3>Baltimore Fairycore Portraits</h3>
+          <p>Flowing fabrics and soft golden light in a lush Baltimore garden</p>
+          <a href="/blog/baltimore-garden-fairycore-portrait-photography/" class="btn btn-ghost">Read Story →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item size-big">
+      <div class="portfolio-card">
+        <div class="portfolio-card-front">
+          <img src="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.webp" alt="Charleston historic district graduation portrait" loading="lazy">
+        </div>
+        <div class="portfolio-card-back">
+          <h3>Historic District Graduation</h3>
+          <p>Graduation portraits among Charleston's brick archways and iconic downtown streets</p>
+          <a href="/blog/charleston-historic-district-graduation-portraits/" class="btn btn-ghost">Read Story →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item size-small">
+      <div class="portfolio-card">
+        <div class="portfolio-card-front">
+          <img src="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.webp" alt="Philadelphia street photography" loading="lazy">
+        </div>
+        <div class="portfolio-card-back">
+          <h3>Philadelphia Street Photography</h3>
+          <p>Urban street photography from Reading Terminal Market to Chinatown</p>
+          <a href="/blog/philadelphia-street-photography-reading-terminal/" class="btn btn-ghost">Read Story →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item size-small">
+      <div class="portfolio-card">
+        <div class="portfolio-card-front">
+          <img src="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.webp" alt="Charleston multicultural student night photography" loading="lazy">
+        </div>
+        <div class="portfolio-card-back">
+          <h3>Multicultural Student Night</h3>
+          <p>Candid coverage of campus org nights and diversity celebrations</p>
+          <a href="/blog/charleston-multicultural-student-night-photography/" class="btn btn-ghost">Read Story →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item size-big">
+      <div class="portfolio-card">
+        <div class="portfolio-card-front">
+          <img src="/folklife-traditional-dance.webp" alt="Smithsonian Folklife Festival event photography" loading="lazy">
+        </div>
+        <div class="portfolio-card-back">
+          <h3>Smithsonian Folklife Festival</h3>
+          <p>Event coverage of traditional dance and cultural celebration in DC</p>
+          <a href="/blog/event-photography-checklist-smithsonian-folklife/" class="btn btn-ghost">Read Story →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item size-small">
+      <div class="portfolio-card">
+        <div class="portfolio-card-front">
+          <img src="/images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-800.jpg" alt="Charleston photography permit guide" loading="lazy">
+        </div>
+        <div class="portfolio-card-back">
+          <h3>Charleston Permit Guide</h3>
+          <p>What to know about permits for parks, streets, and private venues</p>
+          <a href="/blog/charleston-photography-permit-guide/" class="btn btn-ghost">Read Story →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-item size-small">
+      <div class="portfolio-card">
+        <div class="portfolio-card-front">
+          <img src="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.jpg" alt="Record store editorial fashion photography Charleston" loading="lazy">
+        </div>
+        <div class="portfolio-card-back">
+          <h3>Record Store Editorial</h3>
+          <p>Editorial fashion shoot inside a Charleston record store</p>
+          <a href="/blog/record-store-editorial-fashion-photography/" class="btn btn-ghost">Read Story →</a>
         </div>
       </div>
     </div>
