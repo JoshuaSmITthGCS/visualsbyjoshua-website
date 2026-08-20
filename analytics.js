@@ -68,4 +68,73 @@
   window.addEventListener('load', function () {
     setTimeout(scheduleAnalytics, 12000);
   }, { once: true });
+
+  /* ---- Conversion-funnel event tracking ----
+   * gtag() queues into dataLayer immediately even before the GA4 library
+   * itself has loaded, so these fire correctly regardless of load timing. */
+
+  document.addEventListener('click', function (e) {
+    var ctaEl = e.target.closest('[data-cta-location]');
+    if (ctaEl) {
+      gtag('event', 'cta_click', {
+        cta_label: (ctaEl.textContent || '').trim(),
+        cta_location: ctaEl.getAttribute('data-cta-location'),
+        cta_service: ctaEl.getAttribute('data-service') || undefined
+      });
+      return;
+    }
+
+    var telEl = e.target.closest('a[href^="tel:"]');
+    if (telEl) {
+      gtag('event', 'phone_click', { link_url: telEl.getAttribute('href') });
+      return;
+    }
+
+    var smsEl = e.target.closest('a[href^="sms:"]');
+    if (smsEl) {
+      gtag('event', 'sms_click', { link_url: smsEl.getAttribute('href') });
+      return;
+    }
+
+    var mailEl = e.target.closest('a[href^="mailto:"]');
+    if (mailEl) {
+      gtag('event', 'email_click', { link_url: mailEl.getAttribute('href') });
+    }
+  }, { passive: true });
+
+  var trackedForms = new WeakSet();
+  document.querySelectorAll('form').forEach(function (form) {
+    form.addEventListener('focusin', function () {
+      if (trackedForms.has(form)) return;
+      trackedForms.add(form);
+      gtag('event', 'form_start', { form_id: form.id || form.className });
+    }, { once: true });
+
+    form.addEventListener('submit', function () {
+      gtag('event', 'form_submit', { form_id: form.id || form.className });
+    });
+  });
+
+  var scrollThresholds = [25, 50, 75, 90];
+  var scrollFired = {};
+  function checkScrollDepth() {
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight <= 0) return;
+    var pct = Math.round(((window.scrollY || window.pageYOffset) / docHeight) * 100);
+    scrollThresholds.forEach(function (threshold) {
+      if (pct >= threshold && !scrollFired[threshold]) {
+        scrollFired[threshold] = true;
+        gtag('event', 'scroll_depth', { percent_scrolled: threshold });
+      }
+    });
+  }
+  var scrollTicking = false;
+  window.addEventListener('scroll', function () {
+    if (scrollTicking) return;
+    scrollTicking = true;
+    requestAnimationFrame(function () {
+      checkScrollDepth();
+      scrollTicking = false;
+    });
+  }, { passive: true });
 })();

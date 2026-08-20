@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 
   <!-- SEO Meta Tags - Optimized for search queries -->
   <title>Charleston Photography Pricing | Graduation & Event Photographer Near Me | Visuals by Joshua</title>
@@ -441,6 +441,25 @@
       opacity: 1;
     }
 
+    .nav-cta {
+      background: #be976d;
+      color: #ffffff !important;
+      padding: 10px 22px;
+      border-radius: 30px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-cta:hover {
+      background: #a67f5a;
+      opacity: 1;
+      transform: translateY(-1px);
+    }
+
     .nav-toggle {
       display: none;
       flex-direction: column;
@@ -490,6 +509,50 @@
 
       .nav-toggle {
         display: flex;
+      }
+    }
+
+    /* ========================================
+       STICKY MOBILE CTA (bottom, safe-area aware)
+       ======================================== */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+      text-align: center;
+      min-height: 48px;
+      line-height: 1.2;
+      padding: 15px 16px;
+      padding-bottom: calc(15px + env(safe-area-inset-bottom, 0px));
+      background: #1a1a1a;
+      color: #ffffff;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Reserve the space up front so injecting/showing this bar never shifts layout (CLS) */
+    body {
+      padding-bottom: calc(78px + env(safe-area-inset-bottom, 0px));
+    }
+
+    @media (min-width: 768px) {
+      .sticky-cta {
+        display: none !important;
+      }
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .sticky-cta {
+        display: block;
       }
     }
 
@@ -687,6 +750,13 @@
 
     .hero-cta {
       margin-top: 2rem;
+    }
+
+    .hero-microcopy {
+      font-size: 0.8125rem;
+      letter-spacing: 0.03em;
+      opacity: 0.9;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     }
 
     /* ========================================
@@ -1228,6 +1298,7 @@
       opacity: 0.7;
     }
   </style>
+  <script src="/analytics.js" defer></script>
 </head>
 
 <body>
@@ -1257,7 +1328,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
         <li><a href="/blog.html">Blog</a></li>
-        <li><a href="#contact">Book Now</a></li>
+        <li><a href="#contact" class="nav-cta" data-cta-location="nav">Check My Availability</a></li>
       </ul>
       <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
         <span class="nav-toggle-bar"></span>
@@ -1267,12 +1338,25 @@
     </div>
   </nav>
 
+  <!-- Sticky mobile CTA: persistent, thumb-zone, safe-area aware -->
+  <a href="#contact" class="sticky-cta" data-cta-location="sticky-mobile">Check My Availability</a>
+
   <!-- Hero: Rotating Background -->
   <section class="hero">
     <div class="hero-images">
       <img src="/images/couples/cypress-gardens-engagement-shoot.webp" alt="Engagement photographer near me in Charleston SC at Cypress Gardens" class="hero-image active" loading="eager" fetchpriority="high">
       <img src="/images/concerts/gza-wu-tang-concert-photography.webp" alt="Concert event coverage photography GZA Wu-Tang Clan" class="hero-image" loading="lazy">
-      <img src="/images/optimized/portraits/charleston-graduation-photography-1200.webp" alt="Graduation photographer near me in Charleston SC" class="hero-image" loading="lazy">
+      <picture>
+        <source
+          srcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1080.avif 1080w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w"
+          sizes="100vw"
+          type="image/avif">
+        <source
+          srcset="/images/optimized/portraits/charleston-graduation-photography-400.webp 400w, /images/optimized/portraits/charleston-graduation-photography-800.webp 800w, /images/optimized/portraits/charleston-graduation-photography-1080.webp 1080w, /images/optimized/portraits/charleston-graduation-photography-1200.webp 1200w"
+          sizes="100vw"
+          type="image/webp">
+        <img src="/images/optimized/portraits/charleston-graduation-photography-1200.webp" alt="Graduation photographer near me in Charleston SC" class="hero-image" loading="lazy">
+      </picture>
       <img src="/images/couples/charleston-anniversary-couple-downtown.webp" alt="Birthday photoshoot near me anniversary couple downtown Charleston" class="hero-image" loading="lazy">
     </div>
     <div class="hero-overlay"></div>
@@ -1280,9 +1364,11 @@
       <h1 class="hero-logo">Visuals by Joshua</h1>
       <p class="hero-tagline">Editorial photography for milestones & moments</p>
       <p class="hero-location">Charleston SC + Northern VA / DMV</p>
-      <div class="hero-cta">
+      <div class="hero-cta" style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="#contact" class="btn btn-primary" data-cta-location="hero">Check My Availability</a>
         <a href="#portfolio" class="btn btn-ghost">View Portfolio</a>
       </div>
+      <p class="hero-microcopy" style="margin-top: 1.25rem;">Sessions from $80 &middot; I reply within 24 hours</p>
     </div>
   </section>
 
@@ -1657,6 +1743,43 @@
     </div>
   </section>
 
+  <!-- Reviews / Testimonials -->
+  <section class="reviews section" style="background: #ffffff;">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 60px;">
+        <span class="kicker">Testimonials</span>
+        <h2>What Clients Say</h2>
+      </div>
+
+      <div class="reviews-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 30px;">
+        <div class="review-card" style="padding: 30px; background: #fcfbfa; border-radius: 10px; border: 1px solid #e8e8e8;">
+          <div style="color: #be976d; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
+          <p style="font-size: 0.9375rem; line-height: 1.7; color: #5a5a5a; margin-bottom: 1.5rem; max-width: 100%;">"Joshua did a great job with my graduation photos. He positioned me well, listened to what I wanted, and delivered 30 edited professional photos within 2 days. Fully recommend Joshua for any photography needs."</p>
+          <div style="font-weight: 600; color: #2a2a2a;">Micah Watson</div>
+          <div style="font-size: 0.875rem; color: #7a7a7a;">Graduation Photography</div>
+        </div>
+
+        <div class="review-card" style="padding: 30px; background: #fcfbfa; border-radius: 10px; border: 1px solid #e8e8e8;">
+          <div style="color: #be976d; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
+          <p style="font-size: 0.9375rem; line-height: 1.7; color: #5a5a5a; margin-bottom: 1.5rem; max-width: 100%;">"My photoshoot was great. Josh was patient and kind as I changed scenery and outfits, and he helped with poses when I could not think of any. Highly recommend for high-quality pictures at a reasonable price."</p>
+          <div style="font-weight: 600; color: #2a2a2a;">Jayla G.</div>
+          <div style="font-size: 0.875rem; color: #7a7a7a;">Portrait Session</div>
+        </div>
+
+        <div class="review-card" style="padding: 30px; background: #fcfbfa; border-radius: 10px; border: 1px solid #e8e8e8;">
+          <div style="color: #be976d; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
+          <p style="font-size: 0.9375rem; line-height: 1.7; color: #5a5a5a; margin-bottom: 1.5rem; max-width: 100%;">"The best photos ever. I got so many compliments on my photos, and Josh understood exactly what I wanted them to look like. I would absolutely book with him again."</p>
+          <div style="font-weight: 600; color: #2a2a2a;">Reema A.</div>
+          <div style="font-size: 0.875rem; color: #7a7a7a;">Personal Branding</div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 40px;">
+        <a href="/Testimonials.html" class="btn btn-secondary">Read More Testimonials</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Services: Photography Hourly Rates & Pricing -->
   <section class="services section" id="services">
     <div class="container">
@@ -1686,19 +1809,19 @@
               <h4>Single Portrait</h4>
               <div class="option-price">$80</div>
               <p>30-60 minutes, 20+ edited images</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Single" data-price="$80">Book Now</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Single" data-price="$80" data-cta-location="services-portrait">Book My Session</a>
             </div>
             <div class="service-option">
               <h4>Couple / Engagement</h4>
               <div class="option-price">$200</div>
               <p>1-2 hours, 50+ images, multiple locations</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Couple/Engagement" data-price="$200">Book Now</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Couple/Engagement" data-price="$200" data-cta-location="services-portrait">Book My Session</a>
             </div>
             <div class="service-option">
               <h4>Group Portrait</h4>
               <div class="option-price">$150</div>
               <p>1 hour, 30+ images, up to 6 people</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Group" data-price="$150">Book Now</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Group" data-price="$150" data-cta-location="services-portrait">Book My Session</a>
             </div>
           </div>
         </div>
@@ -1722,19 +1845,19 @@
               <h4>Bronze Package</h4>
               <div class="option-price">$150</div>
               <p>1 hour, 25 edited images, 1 location</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Graduation - Bronze Package" data-price="$150">Book Now</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Graduation - Bronze Package" data-price="$150" data-cta-location="services-graduation">Reserve My Grad Session</a>
             </div>
             <div class="service-option">
               <h4>Silver Package</h4>
               <div class="option-price">$250</div>
               <p>1.5 hours, 40 edited images, 2 locations</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Graduation - Silver Package" data-price="$250">Book Now</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Graduation - Silver Package" data-price="$250" data-cta-location="services-graduation">Reserve My Grad Session</a>
             </div>
             <div class="service-option">
               <h4>Gold Package</h4>
               <div class="option-price">$400</div>
               <p>2 hours, 60+ edited images, 3 locations, priority editing</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Graduation - Gold Package" data-price="$400">Book Now</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Graduation - Gold Package" data-price="$400" data-cta-location="services-graduation">Reserve My Grad Session</a>
             </div>
           </div>
         </div>
@@ -1746,7 +1869,7 @@
           <div class="service-price">Custom</div>
           <p class="service-price-note">Hourly or package</p>
           <p class="service-description">Event coverage photography for university events, concerts, campus parties. Average hourly rate for photographer. Shot for GZA (Wu-Tang Clan).</p>
-          <a href="#contact" class="btn btn-secondary service-cta" data-service="Event Coverage" data-price="Custom">Inquire About Events</a>
+          <a href="#contact" class="btn btn-secondary service-cta" data-service="Event Coverage" data-price="Custom" data-cta-location="services-events">Get My Event Quote</a>
         </div>
       </div>
     </div>
@@ -1776,7 +1899,8 @@
         </div>
       </div>
     </div>
-  
+  </section>
+
   <!-- Stats -->
   <section class="stats section" style="background: #ffffff;">
     <div class="container">
@@ -1803,8 +1927,8 @@
     <div class="container">
       <div class="contact-intro">
         <span class="kicker">Get in Touch</span>
-        <h2>Book Your Session</h2>
-        <p>Looking for a photographer near me in Charleston SC or Northern VA? I reply within 24 hours with availability and photography pricing. Text me at <a href="tel:+12403608465" style="color: #be976d; font-weight: 500;">(240) 360-8465</a> or fill out the form below.</p>
+        <h2>Check My Availability</h2>
+        <p>Looking for a photographer near me in Charleston SC or Northern VA? I reply within 24 hours with availability and photography pricing. Text me at <a href="tel:+12403608465" style="color: #be976d; font-weight: 500;">(240) 360-8465</a> or fill out the form below&mdash;just your name, email, and what you're planning.</p>
       </div>
 
       <form class="contact-form" action="https://formsubmit.co/jbmsmusic05@gmail.com" method="POST">
@@ -1822,36 +1946,47 @@
 
           <div class="form-group">
             <label for="email" class="form-label">Email *</label>
-            <input type="email" id="email" name="email" class="form-input" required>
+            <input type="email" id="email" name="email" class="form-input" inputmode="email" required>
           </div>
         </div>
 
         <div class="form-grid form-grid-2">
           <div class="form-group">
-            <label for="phone" class="form-label">Phone</label>
-            <input type="tel" id="phone" name="phone" class="form-input">
+            <label for="phone" class="form-label">Phone (optional &mdash; so I can text you back faster)</label>
+            <input type="tel" id="phone" name="phone" class="form-input" inputmode="tel">
           </div>
 
           <div class="form-group">
-            <label for="service" class="form-label">Session Type *</label>
-            <select id="service" name="service" class="form-select" required>
-              <option value="">Select a session</option>
+            <label for="session_date" class="form-label">Preferred Date (optional)</label>
+            <input type="text" id="session_date" name="session_date" class="form-input" placeholder="e.g. mid-May 2026, or an exact date">
+          </div>
+        </div>
+
+        <div class="form-grid form-grid-2">
+          <div class="form-group">
+            <label for="service" class="form-label">Session Type (optional)</label>
+            <select id="service" name="service" class="form-select">
+              <option value="">Not sure yet</option>
               <option value="Portrait - Single">Portrait - Single ($80)</option>
               <option value="Portrait - Couple/Engagement">Portrait - Couple/Engagement ($200)</option>
               <option value="Portrait - Group">Portrait - Group ($150)</option>
               <option value="Graduation Photography">Graduation Photography</option>
               <option value="Event Coverage">Event Coverage (Custom)</option>
-              <option value="Not sure">Not sure yet</option>
             </select>
+          </div>
+
+          <div class="form-group">
+            <label for="location" class="form-label">City / Venue (optional)</label>
+            <input type="text" id="location" name="location" class="form-input" placeholder="Charleston, DC, Mount Pleasant...">
           </div>
         </div>
 
         <!-- Graduation Package Selector (conditional) -->
         <div class="form-grid" id="graduation-package-group" style="display: none;">
           <div class="form-group">
-            <label for="graduation-package" class="form-label">Graduation Package *</label>
+            <label for="graduation-package" class="form-label">Graduation Package (optional)</label>
             <select id="graduation-package" name="graduation_package" class="form-select">
-              <option value="">Select a package</option>
+              <option value="">Not sure yet</option>
               <option value="Bronze - $150">Bronze Package - $150 (1 hr, 25 images, 1 location)</option>
               <option value="Silver - $250">Silver Package - $250 (1.5 hrs, 40 images, 2 locations)</option>
               <option value="Gold - $400">Gold Package - $400 (2 hrs, 60+ images, 3 locations, priority editing)</option>
@@ -1861,67 +1996,13 @@
 
         <div class="form-grid">
           <div class="form-group">
-            <label for="location" class="form-label">Preferred Location</label>
-            <select id="location" name="location" class="form-select">
-              <option value="">Select location</option>
-              <option value="Charleston - Downtown">Charleston - Downtown</option>
-              <option value="Charleston - College of Charleston">Charleston - College of Charleston</option>
-              <option value="Charleston - Mount Pleasant">Charleston - Mount Pleasant</option>
-              <option value="Charleston - Sullivan's Island">Charleston - Sullivan's Island</option>
-              <option value="Northern VA / DMV - DC">Northern VA / DMV - Washington DC</option>
-              <option value="Northern VA / DMV - Maryland">Northern VA / DMV - Maryland</option>
-              <option value="Northern VA / DMV - Virginia">Northern VA / DMV - Virginia</option>
-              <option value="Other">Other (specify in message)</option>
-            </select>
+            <label for="message" class="form-label">Anything else? (optional)</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="What are you celebrating? Looking for good photoshoot locations near me?"></textarea>
           </div>
         </div>
 
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="message" class="form-label">Tell me about your session *</label>
-            <textarea id="message" name="message" class="form-textarea" placeholder="What are you celebrating? When are you hoping to schedule? Looking for good photoshoot locations near me?" required></textarea>
-          </div>
-        </div>
-
-        <button type="submit" class="btn btn-primary form-submit">Send Inquiry</button>
+        <button type="submit" class="btn btn-primary form-submit">Send My Inquiry</button>
       </form>
-    </div>
-  </section>
-
-  <!-- Reviews / Testimonials -->
-  <section class="reviews section" style="background: #ffffff;">
-    <div class="container">
-      <div class="text-center" style="margin-bottom: 60px;">
-        <span class="kicker">Testimonials</span>
-        <h2>What Clients Say</h2>
-      </div>
-      
-      <div class="reviews-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 30px;">
-        <div class="review-card" style="padding: 30px; background: #fcfbfa; border-radius: 10px; border: 1px solid #e8e8e8;">
-          <div style="color: #be976d; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
-          <p style="font-size: 0.9375rem; line-height: 1.7; color: #5a5a5a; margin-bottom: 1.5rem; max-width: 100%;">"Joshua did a great job with my graduation photos. He positioned me well, listened to what I wanted, and delivered 30 edited professional photos within 2 days. Fully recommend Joshua for any photography needs."</p>
-          <div style="font-weight: 600; color: #2a2a2a;">Micah Watson</div>
-          <div style="font-size: 0.875rem; color: #7a7a7a;">Graduation Photography</div>
-        </div>
-        
-        <div class="review-card" style="padding: 30px; background: #fcfbfa; border-radius: 10px; border: 1px solid #e8e8e8;">
-          <div style="color: #be976d; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
-          <p style="font-size: 0.9375rem; line-height: 1.7; color: #5a5a5a; margin-bottom: 1.5rem; max-width: 100%;">"My photoshoot was great. Josh was patient and kind as I changed scenery and outfits, and he helped with poses when I could not think of any. Highly recommend for high-quality pictures at a reasonable price."</p>
-          <div style="font-weight: 600; color: #2a2a2a;">Jayla G.</div>
-          <div style="font-size: 0.875rem; color: #7a7a7a;">Portrait Session</div>
-        </div>
-        
-        <div class="review-card" style="padding: 30px; background: #fcfbfa; border-radius: 10px; border: 1px solid #e8e8e8;">
-          <div style="color: #be976d; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
-          <p style="font-size: 0.9375rem; line-height: 1.7; color: #5a5a5a; margin-bottom: 1.5rem; max-width: 100%;">"The best photos ever. I got so many compliments on my photos, and Josh understood exactly what I wanted them to look like. I would absolutely book with him again."</p>
-          <div style="font-weight: 600; color: #2a2a2a;">Reema A.</div>
-          <div style="font-size: 0.875rem; color: #7a7a7a;">Personal Branding</div>
-        </div>
-      </div>
-      
-      <div class="text-center" style="margin-top: 40px;">
-        <a href="/Testimonials.html" class="btn btn-secondary">Read More Testimonials</a>
-      </div>
     </div>
   </section>
 
@@ -2122,19 +2203,10 @@
           alert('Please enter a valid email address.');
           return false;
         }
-
-        // Validate graduation package if graduation is selected
-        const service = document.getElementById('service').value;
-        const graduationPackage = document.getElementById('graduation-package').value;
-        if (service === 'Graduation Photography' && !graduationPackage) {
-          e.preventDefault();
-          alert('Please select a graduation package.');
-          return false;
-        }
       });
     }
 
-    // Show/hide graduation package selector
+    // Show/hide graduation package selector (optional — no required-field blocking)
     const serviceSelect = document.getElementById('service');
     const graduationPackageGroup = document.getElementById('graduation-package-group');
     const graduationPackageSelect = document.getElementById('graduation-package');
@@ -2143,10 +2215,8 @@
       serviceSelect.addEventListener('change', function() {
         if (this.value === 'Graduation Photography') {
           graduationPackageGroup.style.display = 'grid';
-          graduationPackageSelect.setAttribute('required', 'required');
         } else {
           graduationPackageGroup.style.display = 'none';
-          graduationPackageSelect.removeAttribute('required');
           graduationPackageSelect.value = '';
         }
       });
