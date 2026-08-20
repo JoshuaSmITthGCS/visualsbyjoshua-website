@@ -134,6 +134,22 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- NEW Blog: Arizona Desert Travel Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/arizona-desert-travel-photography/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- NEW Blog: Chicago Travel Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/chicago-travel-photography/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- NEW Blog: World Pride DC Event Photography -->
   <url>
     <loc>https://visualsbyjoshua.com/blog/world-pride-dc-event-photography/</loc>
