@@ -31,7 +31,9 @@
   <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -331,7 +333,7 @@
     /*
     THESIS: Portfolio-first photography homepage that lets work speak before words. Refuses the generic service-business template (standard hero-CTA-services grid) in favor of editorial magazine layouts where full-bleed images dominate and asymmetric grids create visual rhythm.
 
-    OWN-WORLD: Warm neutrals (#fcfbfa background, #2a2a2a text, #be976d accent tan), Cormorant Garamond serif display + Inter sans UI, full-width asymmetric image grids, generous whitespace (80-120px vertical rhythm), 10px border-radius on interactive elements, minimal shadows (only 0-2px on hover), smooth 0.3s transitions, image hover zoom to 105%, rotating hero background (8s interval).
+    OWN-WORLD: Warm neutrals (#fcfbfa background, #2a2a2a text, #8a5f35 accent tan), Cormorant Garamond serif display + Inter sans UI, full-width asymmetric image grids, generous whitespace (80-120px vertical rhythm), 10px border-radius on interactive elements, minimal shadows (only 0-2px on hover), smooth 0.3s transitions, image hover zoom to 105%, rotating hero background (8s interval).
 
     STORY: Visitor lands on full-screen hero with rotating portfolio images (couples, concerts, graduation), scrolls into masonry portfolio grid with flip-card effect revealing blog posts, discovers service cards with clear pricing, reads about section with GZA/Wu-Tang credibility, and books via streamlined form with real-time validation.
 
@@ -437,12 +439,12 @@
     }
 
     .nav-menu a:hover {
-      color: #be976d;
+      color: #8a5f35;
       opacity: 1;
     }
 
     .nav-cta {
-      background: #be976d;
+      background: #8a5f35;
       color: #ffffff !important;
       padding: 10px 22px;
       border-radius: 30px;
@@ -455,7 +457,7 @@
     }
 
     .nav-cta:hover {
-      background: #a67f5a;
+      background: #6f4a26;
       opacity: 1;
       transform: translateY(-1px);
     }
@@ -591,7 +593,7 @@
       letter-spacing: 0.15em;
       text-transform: uppercase;
       font-weight: 500;
-      color: #be976d;
+      color: #8a5f35;
       margin-bottom: 0.5rem;
     }
 
@@ -634,17 +636,17 @@
     }
 
     .btn-primary {
-      background: #be976d;
+      background: #8a5f35;
       color: #ffffff;
-      border: 2px solid #be976d;
+      border: 2px solid #8a5f35;
     }
 
     .btn-primary:hover {
-      background: #a67f5a;
-      border-color: #a67f5a;
+      background: #6f4a26;
+      border-color: #6f4a26;
       opacity: 1;
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(190, 151, 109, 0.3);
+      box-shadow: 0 4px 12px rgba(138, 95, 53, 0.3);
     }
 
     .btn-secondary {
@@ -710,7 +712,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.35) 100%);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.48) 100%);
       z-index: 1;
     }
 
@@ -728,7 +730,7 @@
       font-style: italic;
       font-weight: 400;
       margin-bottom: 1.5rem;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
     }
 
     .hero-tagline {
@@ -737,7 +739,7 @@
       text-transform: uppercase;
       font-weight: 400;
       margin-bottom: 0.5rem;
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.65);
     }
 
     .hero-location {
@@ -745,7 +747,7 @@
       letter-spacing: 0.1em;
       margin-bottom: 2.5rem;
       opacity: 0.95;
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.65);
     }
 
     .hero-cta {
@@ -755,8 +757,8 @@
     .hero-microcopy {
       font-size: 0.8125rem;
       letter-spacing: 0.03em;
-      opacity: 0.9;
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      opacity: 0.95;
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.65);
     }
 
     /* ========================================
@@ -906,7 +908,7 @@
     .portfolio-card-back h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      color: #be976d;
+      color: #8a5f35;
     }
 
     .portfolio-card-back p {
@@ -943,7 +945,7 @@
     }
 
     .service-card:hover {
-      border-color: #be976d;
+      border-color: #8a5f35;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       transform: translateY(-4px);
     }
@@ -957,7 +959,7 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       font-weight: 600;
-      color: #be976d;
+      color: #8a5f35;
       margin-bottom: 1rem;
     }
 
@@ -971,13 +973,13 @@
     .service-price {
       font-size: 2rem;
       font-weight: 600;
-      color: #be976d;
+      color: #8a5f35;
       margin-bottom: 0.5rem;
     }
 
     .service-price-note {
       font-size: 0.875rem;
-      color: #7a7a7a;
+      color: #5a5a5a;
       margin-bottom: 1.25rem;
     }
 
@@ -1005,10 +1007,10 @@
       gap: 8px;
       margin-top: 1rem;
       padding: 10px 18px;
-      border: 1px solid #be976d;
+      border: 1px solid #8a5f35;
       border-radius: 30px;
       background: transparent;
-      color: #be976d;
+      color: #8a5f35;
       font-size: 0.875rem;
       font-weight: 600;
       font-family: inherit;
@@ -1018,7 +1020,7 @@
 
     .service-toggle:hover,
     .service-toggle:focus-visible {
-      background: #be976d;
+      background: #8a5f35;
       color: #fff;
     }
 
@@ -1078,7 +1080,7 @@
     .service-option .option-price {
       font-size: 1.5rem;
       font-weight: 600;
-      color: #be976d;
+      color: #8a5f35;
       margin-bottom: 0.5rem;
     }
 
@@ -1221,9 +1223,9 @@
     .form-select:focus,
     .form-textarea:focus {
       outline: none;
-      border-color: #be976d;
+      border-color: #8a5f35;
       background: #ffffff;
-      box-shadow: 0 0 0 3px rgba(190, 151, 109, 0.1);
+      box-shadow: 0 0 0 3px rgba(138, 95, 53, 0.1);
     }
 
     .form-textarea {
@@ -1307,7 +1309,7 @@
 
   THESIS: Portfolio-first photography homepage that lets work speak before words. Refuses the generic service-business template in favor of editorial magazine layouts where full-bleed images dominate.
 
-  OWN-WORLD: Warm neutrals (#fcfbfa background, #2a2a2a text, #be976d accent tan), Cormorant Garamond serif + Inter sans UI, full-width asymmetric grids, generous whitespace (80-120px rhythm), 10px border-radius, minimal shadows, smooth 0.3s transitions, image hover zoom 105%, rotating hero background.
+  OWN-WORLD: Warm neutrals (#fcfbfa background, #2a2a2a text, #8a5f35 accent tan), Cormorant Garamond serif + Inter sans UI, full-width asymmetric grids, generous whitespace (80-120px rhythm), 10px border-radius, minimal shadows, smooth 0.3s transitions, image hover zoom 105%, rotating hero background.
 
   STORY: Visitor lands on rotating hero (4 images, 8s interval), scrolls into masonry portfolio grid with flip-card blog reveals, discovers service cards with pricing, reads about section with GZA/Wu-Tang credibility, books via streamlined form.
 
@@ -1345,19 +1347,19 @@
   <section class="hero">
     <div class="hero-images">
       <img src="/images/couples/cypress-gardens-engagement-shoot.webp" alt="Engagement photographer near me in Charleston SC at Cypress Gardens" class="hero-image active" loading="eager" fetchpriority="high">
-      <img src="/images/concerts/gza-wu-tang-concert-photography.webp" alt="Concert event coverage photography GZA Wu-Tang Clan" class="hero-image" loading="lazy">
+      <img data-src="/images/concerts/gza-wu-tang-concert-photography.webp" alt="Concert event coverage photography GZA Wu-Tang Clan" class="hero-image hero-image-deferred">
       <picture>
         <source
-          srcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1080.avif 1080w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w"
+          data-srcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1080.avif 1080w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w"
           sizes="100vw"
           type="image/avif">
         <source
-          srcset="/images/optimized/portraits/charleston-graduation-photography-400.webp 400w, /images/optimized/portraits/charleston-graduation-photography-800.webp 800w, /images/optimized/portraits/charleston-graduation-photography-1080.webp 1080w, /images/optimized/portraits/charleston-graduation-photography-1200.webp 1200w"
+          data-srcset="/images/optimized/portraits/charleston-graduation-photography-400.webp 400w, /images/optimized/portraits/charleston-graduation-photography-800.webp 800w, /images/optimized/portraits/charleston-graduation-photography-1080.webp 1080w, /images/optimized/portraits/charleston-graduation-photography-1200.webp 1200w"
           sizes="100vw"
           type="image/webp">
-        <img src="/images/optimized/portraits/charleston-graduation-photography-1200.webp" alt="Graduation photographer near me in Charleston SC" class="hero-image" loading="lazy">
+        <img data-src="/images/optimized/portraits/charleston-graduation-photography-1200.webp" alt="Graduation photographer near me in Charleston SC" class="hero-image hero-image-deferred">
       </picture>
-      <img src="/images/couples/charleston-anniversary-couple-downtown.webp" alt="Birthday photoshoot near me anniversary couple downtown Charleston" class="hero-image" loading="lazy">
+      <img data-src="/images/couples/charleston-anniversary-couple-downtown.webp" alt="Birthday photoshoot near me anniversary couple downtown Charleston" class="hero-image hero-image-deferred">
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -1753,24 +1755,24 @@
 
       <div class="reviews-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 30px;">
         <div class="review-card" style="padding: 30px; background: #fcfbfa; border-radius: 10px; border: 1px solid #e8e8e8;">
-          <div style="color: #be976d; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
+          <div style="color: #8a5f35; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
           <p style="font-size: 0.9375rem; line-height: 1.7; color: #5a5a5a; margin-bottom: 1.5rem; max-width: 100%;">"Joshua did a great job with my graduation photos. He positioned me well, listened to what I wanted, and delivered 30 edited professional photos within 2 days. Fully recommend Joshua for any photography needs."</p>
           <div style="font-weight: 600; color: #2a2a2a;">Micah Watson</div>
-          <div style="font-size: 0.875rem; color: #7a7a7a;">Graduation Photography</div>
+          <div style="font-size: 0.875rem; color: #5a5a5a;">Graduation Photography</div>
         </div>
 
         <div class="review-card" style="padding: 30px; background: #fcfbfa; border-radius: 10px; border: 1px solid #e8e8e8;">
-          <div style="color: #be976d; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
+          <div style="color: #8a5f35; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
           <p style="font-size: 0.9375rem; line-height: 1.7; color: #5a5a5a; margin-bottom: 1.5rem; max-width: 100%;">"My photoshoot was great. Josh was patient and kind as I changed scenery and outfits, and he helped with poses when I could not think of any. Highly recommend for high-quality pictures at a reasonable price."</p>
           <div style="font-weight: 600; color: #2a2a2a;">Jayla G.</div>
-          <div style="font-size: 0.875rem; color: #7a7a7a;">Portrait Session</div>
+          <div style="font-size: 0.875rem; color: #5a5a5a;">Portrait Session</div>
         </div>
 
         <div class="review-card" style="padding: 30px; background: #fcfbfa; border-radius: 10px; border: 1px solid #e8e8e8;">
-          <div style="color: #be976d; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
+          <div style="color: #8a5f35; font-size: 1.5rem; margin-bottom: 1rem;">★★★★★</div>
           <p style="font-size: 0.9375rem; line-height: 1.7; color: #5a5a5a; margin-bottom: 1.5rem; max-width: 100%;">"The best photos ever. I got so many compliments on my photos, and Josh understood exactly what I wanted them to look like. I would absolutely book with him again."</p>
           <div style="font-weight: 600; color: #2a2a2a;">Reema A.</div>
-          <div style="font-size: 0.875rem; color: #7a7a7a;">Personal Branding</div>
+          <div style="font-size: 0.875rem; color: #5a5a5a;">Personal Branding</div>
         </div>
       </div>
 
@@ -1786,7 +1788,7 @@
       <div style="text-align: center; margin-bottom: 60px;">
         <span class="kicker">Photography Pricing</span>
         <h2>How Much Does a Photographer Cost?</h2>
-        <p style="margin: 0 auto; color: #5a5a5a;">Hourly rates starting at $80. All sessions include full resolution digital downloads within 1 week. No hidden fees. <a href="/blog/photography-pricing/" style="color: #be976d; font-weight: 500;">View full photography pricing guide →</a></p>
+        <p style="margin: 0 auto; color: #5a5a5a;">Hourly rates starting at $80. All sessions include full resolution digital downloads within 1 week. No hidden fees. <a href="/blog/photography-pricing/" style="color: #8a5f35; font-weight: 500; text-decoration: underline; text-underline-offset: 3px;">View full photography pricing guide →</a></p>
       </div>
 
       <div class="services-grid">
@@ -1809,19 +1811,19 @@
               <h4>Single Portrait</h4>
               <div class="option-price">$80</div>
               <p>30-60 minutes, 20+ edited images</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Single" data-price="$80" data-cta-location="services-portrait">Book My Session</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Single" data-price="$80" data-cta-location="services-portrait" aria-label="Book My Session — Single Portrait, $80">Book My Session</a>
             </div>
             <div class="service-option">
               <h4>Couple / Engagement</h4>
               <div class="option-price">$200</div>
               <p>1-2 hours, 50+ images, multiple locations</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Couple/Engagement" data-price="$200" data-cta-location="services-portrait">Book My Session</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Couple/Engagement" data-price="$200" data-cta-location="services-portrait" aria-label="Book My Session — Couple/Engagement Portrait, $200">Book My Session</a>
             </div>
             <div class="service-option">
               <h4>Group Portrait</h4>
               <div class="option-price">$150</div>
               <p>1 hour, 30+ images, up to 6 people</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Group" data-price="$150" data-cta-location="services-portrait">Book My Session</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Portrait - Group" data-price="$150" data-cta-location="services-portrait" aria-label="Book My Session — Group Portrait, $150">Book My Session</a>
             </div>
           </div>
         </div>
@@ -1845,19 +1847,19 @@
               <h4>Bronze Package</h4>
               <div class="option-price">$150</div>
               <p>1 hour, 25 edited images, 1 location</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Graduation - Bronze Package" data-price="$150" data-cta-location="services-graduation">Reserve My Grad Session</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Graduation - Bronze Package" data-price="$150" data-cta-location="services-graduation" aria-label="Reserve My Grad Session — Bronze Package, $150">Reserve My Grad Session</a>
             </div>
             <div class="service-option">
               <h4>Silver Package</h4>
               <div class="option-price">$250</div>
               <p>1.5 hours, 40 edited images, 2 locations</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Graduation - Silver Package" data-price="$250" data-cta-location="services-graduation">Reserve My Grad Session</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Graduation - Silver Package" data-price="$250" data-cta-location="services-graduation" aria-label="Reserve My Grad Session — Silver Package, $250">Reserve My Grad Session</a>
             </div>
             <div class="service-option">
               <h4>Gold Package</h4>
               <div class="option-price">$400</div>
               <p>2 hours, 60+ edited images, 3 locations, priority editing</p>
-              <a href="#contact" class="btn btn-secondary" data-service="Graduation - Gold Package" data-price="$400" data-cta-location="services-graduation">Reserve My Grad Session</a>
+              <a href="#contact" class="btn btn-secondary" data-service="Graduation - Gold Package" data-price="$400" data-cta-location="services-graduation" aria-label="Reserve My Grad Session — Gold Package, $400">Reserve My Grad Session</a>
             </div>
           </div>
         </div>
@@ -1898,7 +1900,7 @@
 
           <p>I've shot event coverage photography for artists like GZA (Wu-Tang Clan) and covered hundreds of university events, but my favorite work is intimate: couples celebrating anniversaries, graduates marking milestones, professionals building their personal brand at good photoshoot locations near me.</p>
 
-          <p>My photography hourly rate starts at $80, with packages for graduation photography, birthday photoshoots, and event coverage. You'll receive full-resolution digital downloads within 1 week—no upsells, no print minimums. See my <a href="/blog/photography-pricing/" style="color: #be976d;">photography pricing list</a> for typical photography rates.</p>
+          <p>My photography hourly rate starts at $80, with packages for graduation photography, birthday photoshoots, and event coverage. You'll receive full-resolution digital downloads within 1 week—no upsells, no print minimums. See my <a href="/blog/photography-pricing/" style="color: #8a5f35; text-decoration: underline; text-underline-offset: 3px;">photography pricing list</a> for typical photography rates.</p>
 
           <div class="about-credibility">
             <span class="about-credibility-icon">🎤</span>
@@ -1914,15 +1916,15 @@
     <div class="container">
       <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: center;">
         <div class="stat-item">
-          <div class="stat-number" style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 3.5rem; font-weight: 600; color: #be976d; margin-bottom: 0.5rem;">70+</div>
+          <div class="stat-number" style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 3.5rem; font-weight: 600; color: #8a5f35; margin-bottom: 0.5rem;">70+</div>
           <div class="stat-label" style="font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase; color: #5a5a5a;">Happy Clients</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 3.5rem; font-weight: 600; color: #be976d; margin-bottom: 0.5rem;">8+</div>
+          <div class="stat-number" style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 3.5rem; font-weight: 600; color: #8a5f35; margin-bottom: 0.5rem;">8+</div>
           <div class="stat-label" style="font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase; color: #5a5a5a;">Years Experience</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number" style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 3.5rem; font-weight: 600; color: #be976d; margin-bottom: 0.5rem;">10k+</div>
+          <div class="stat-number" style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 3.5rem; font-weight: 600; color: #8a5f35; margin-bottom: 0.5rem;">10k+</div>
           <div class="stat-label" style="font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase; color: #5a5a5a;">Photos Delivered</div>
         </div>
       </div>
@@ -1936,7 +1938,7 @@
       <div class="contact-intro">
         <span class="kicker">Get in Touch</span>
         <h2>Check My Availability</h2>
-        <p>Looking for a photographer near me in Charleston SC or Northern VA? I reply within 24 hours with availability and photography pricing. Text me at <a href="tel:+12403608465" style="color: #be976d; font-weight: 500;">(240) 360-8465</a> or fill out the form below&mdash;just your name, email, and what you're planning.</p>
+        <p>Looking for a photographer near me in Charleston SC or Northern VA? I reply within 24 hours with availability and photography pricing. Text me at <a href="tel:+12403608465" style="color: #8a5f35; font-weight: 500; text-decoration: underline; text-underline-offset: 3px;">(240) 360-8465</a> or fill out the form below&mdash;just your name, email, and what you're planning.</p>
       </div>
 
       <form class="contact-form" action="https://formsubmit.co/jbmsmusic05@gmail.com" method="POST">
@@ -2022,14 +2024,14 @@
         <span class="kicker">GUIDES</span>
         <h2>From the Blog</h2>
         <p style="margin: 0 auto; color: #5a5a5a; max-width: 700px;">Local guides and planning tips to help you prepare for your session or event.</p>
-        <a href="/blog.html" style="color: #be976d; font-weight: 500; margin-top: 1rem; display: inline-block;">See recent guides →</a>
+        <a href="/blog.html" style="color: #8a5f35; font-weight: 500; margin-top: 1rem; display: inline-block; text-decoration: underline; text-underline-offset: 3px;">See recent guides →</a>
       </div>
       
       <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: 30px;">
         <div class="blog-card" style="border-radius: 10px; overflow: hidden; border: 1px solid #e8e8e8; transition: transform 0.3s ease, box-shadow 0.3s ease;">
           <img src="/images/optimized/events/charleston-juneteenth-event-photography-1200.webp" alt="Charleston Juneteenth Event Photography" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;" loading="lazy">
           <div style="padding: 30px;">
-            <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #be976d; margin-bottom: 0.75rem;">JUNE 26, 2026</div>
+            <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #8a5f35; margin-bottom: 0.75rem;">JUNE 26, 2026</div>
             <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Charleston Juneteenth Event Photography</h3>
             <p style="font-size: 0.9375rem; color: #5a5a5a; margin-bottom: 1.5rem; max-width: 100%;">Black joy, food, portraits, and community at a Shades of PINCK cookout on James Island.</p>
             <a href="/blog/charleston-juneteenth-event-photography/" class="btn btn-secondary" style="width: 100%;">View the Gallery</a>
@@ -2039,7 +2041,7 @@
         <div class="blog-card" style="border-radius: 10px; overflow: hidden; border: 1px solid #e8e8e8; transition: transform 0.3s ease, box-shadow 0.3s ease;">
           <img src="/images/couples/charleston-anniversary-couple-downtown.webp" alt="Downtown Charleston Anniversary Photography" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; object-position: center 35%;" loading="lazy">
           <div style="padding: 30px;">
-            <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #be976d; margin-bottom: 0.75rem;">MARCH 10, 2026</div>
+            <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #8a5f35; margin-bottom: 0.75rem;">MARCH 10, 2026</div>
             <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Downtown Charleston Anniversary Photography</h3>
             <p style="font-size: 0.9375rem; color: #5a5a5a; margin-bottom: 1.5rem; max-width: 100%;">A milestone couples session through downtown Charleston with location tips, styling advice, and warm editorial portraits.</p>
             <a href="/blog/anniversary-photography-downtown-charleston/" class="btn btn-secondary" style="width: 100%;">See the Session</a>
@@ -2049,7 +2051,7 @@
         <div class="blog-card" style="border-radius: 10px; overflow: hidden; border: 1px solid #e8e8e8; transition: transform 0.3s ease, box-shadow 0.3s ease;">
           <img src="/images/optimized/portraits/charleston-graduation-photography-1200.webp" alt="Charleston Graduation Photography" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;" loading="lazy">
           <div style="padding: 30px;">
-            <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #be976d; margin-bottom: 0.75rem;">MARCH 19, 2026</div>
+            <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #8a5f35; margin-bottom: 0.75rem;">MARCH 19, 2026</div>
             <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Charleston Graduation Photography</h3>
             <p style="font-size: 0.9375rem; color: #5a5a5a; margin-bottom: 1.5rem; max-width: 100%;">You worked too hard for bad grad photos. The best Charleston locations, what to wear, and when to book your session.</p>
             <a href="/blog/charleston-graduation-photography/" class="btn btn-secondary" style="width: 100%;">Read Charleston Graduation Guide</a>
@@ -2071,7 +2073,7 @@
         <span class="kicker">FAQ</span>
         <h2>Frequently Asked Questions</h2>
         <p style="margin: 0 auto; color: #5a5a5a; max-width: 700px;">Get answers to common questions about booking, turnaround times, service areas, and deliverables. Visit the full FAQ page for the complete list.</p>
-        <a href="/FAQ.html" style="color: #be976d; font-weight: 500; margin-top: 1rem; display: inline-block;">See common questions →</a>
+        <a href="/FAQ.html" style="color: #8a5f35; font-weight: 500; margin-top: 1rem; display: inline-block; text-decoration: underline; text-underline-offset: 3px;">See common questions →</a>
       </div>
       
       <div class="faq-grid" style="max-width: 900px; margin: 0 auto;">
@@ -2108,7 +2110,7 @@
   </section>
 
   <!-- Final CTA band -->
-  <section class="section" style="padding: 70px 0; background: #be976d; text-align: center;">
+  <section class="section" style="padding: 70px 0; background: #8a5f35; text-align: center;">
     <div class="container">
       <h2 style="color: #ffffff; margin-bottom: 1rem;">Let's Make Something Great</h2>
       <p style="color: #ffffff; opacity: 0.95; margin: 0 auto 2rem; max-width: 100%;">Sessions from $80. I reply within 24 hours.</p>
@@ -2176,6 +2178,38 @@
       }
 
       setInterval(rotateHero, rotateInterval);
+    })();
+
+    // Load the non-LCP hero rotation images off the critical path. They sit
+    // absolutely-positioned inside the hero viewport, so loading="lazy" alone
+    // doesn't defer them — the browser still fetches them immediately. Swapping
+    // data-src/data-srcset in after the load event keeps them out of the
+    // initial request waterfall without changing what the visitor ever sees.
+    (function() {
+      function loadDeferredHeroImages() {
+        document.querySelectorAll('.hero-image-deferred').forEach(function(img) {
+          const picture = img.closest('picture');
+          if (picture) {
+            picture.querySelectorAll('source[data-srcset]').forEach(function(source) {
+              source.srcset = source.getAttribute('data-srcset');
+              source.removeAttribute('data-srcset');
+            });
+          }
+          if (img.dataset.src) {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+          }
+        });
+      }
+
+      // Idle-scheduled rather than gated on window.load: load is only as fast
+      // as the slowest subresource on the page (e.g. a webfont), and there's
+      // no reason to make these images wait on that too.
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadDeferredHeroImages, { timeout: 2000 });
+      } else {
+        setTimeout(loadDeferredHeroImages, 300);
+      }
     })();
 
     // Mobile nav toggle
