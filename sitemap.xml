@@ -134,6 +134,22 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- NEW Blog: Maine Coast Travel Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/maine-coast-travel-photography/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- NEW Blog: New York Travel Photography -->
+  <url>
+    <loc>https://visualsbyjoshua.com/blog/new-york-travel-photography/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- NEW Blog: Arizona Desert Travel Photography -->
   <url>
     <loc>https://visualsbyjoshua.com/blog/arizona-desert-travel-photography/</loc>
