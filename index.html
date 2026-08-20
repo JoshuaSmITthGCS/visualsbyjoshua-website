@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!-- SEO Meta Tags - Optimized for search queries -->
-  <title>Charleston Photography Pricing | Graduation & Event Photographer Near Me | Visuals by Joshua</title>
-  <meta name="description" content="Charleston photographer hourly rates starting at $80. Graduation photos, event coverage, couples sessions. Fast turnaround. Serving Charleston SC & DMV (Northern VA, Maryland, DC). View pricing & portfolio.">
+  <title>Charleston Photographer | Graduation & Event Photography</title>
+  <meta name="description" content="Charleston photographer with hourly rates from $80. Graduation photos, event coverage, and couples sessions with fast turnaround. View pricing and portfolio.">
   <meta name="author" content="Joshua Smith">
   <link rel="canonical" href="https://visualsbyjoshua.com/" />
   <meta name="robots" content="index, follow">
-  <meta name="keywords" content="graduation photographer near me, photography hourly rate, photographer cost, Charleston photo spots, birthday photoshoot near me, event coverage photography, DMV photographer, Northern VA photographer">
+  <meta name="keywords" content="Charleston photographer, graduation photographer near me, photography hourly rate, photographer cost, Charleston photo spots, birthday photoshoot near me, event coverage photography, DMV photographer, Northern VA photographer">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="apple-touch-icon" href="/favicon-96x96.png">
 
   <!-- OG Tags -->
   <meta property="og:type" content="website" />
@@ -19,19 +25,22 @@
   <meta property="og:url" content="https://visualsbyjoshua.com/" />
   <meta property="og:title" content="Charleston Photography | Graduation & Event Photographer Near Me" />
   <meta property="og:description" content="Professional photography in Charleston SC & DMV. Hourly rates from $80. Graduation photos, event coverage, couples sessions." />
-  <meta property="og:image" content="https://visualsbyjoshua.com/images/couples/cypress-gardens-engagement-shoot.webp" />
+  <meta property="og:image" content="https://visualsbyjoshua.com/images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://visualsbyjoshua.com/" />
   <meta name="twitter:title" content="Charleston Photography | Graduation Photographer Near Me" />
   <meta name="twitter:description" content="Hourly rates from $80. Graduation photos, event coverage, couples sessions in Charleston & DMV." />
-  <meta name="twitter:image" content="https://visualsbyjoshua.com/images/couples/cypress-gardens-engagement-shoot.webp" />
+  <meta name="twitter:image" content="https://visualsbyjoshua.com/images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg" />
 
   <!-- Fonts: Cormorant Garamond (serif display) + Inter (sans UI) -->
+  <!-- Loaded non-blocking: preload + swap-in avoids holding up first paint -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -44,9 +53,9 @@
     "url": "https://visualsbyjoshua.com/",
     "logo": "https://visualsbyjoshua.com/Logo.webp",
     "image": [
-      "https://visualsbyjoshua.com/images/couples/cypress-gardens-engagement-shoot.webp",
-      "https://visualsbyjoshua.com/images/concerts/gza-wu-tang-concert-photography.webp",
-      "https://visualsbyjoshua.com/images/couples/charleston-anniversary-couple-downtown.webp"
+      "https://visualsbyjoshua.com/images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg",
+      "https://visualsbyjoshua.com/images/optimized/concerts/gza-wu-tang-concert-photography-1200.jpg",
+      "https://visualsbyjoshua.com/images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg"
     ],
     "description": "Professional photographer serving Charleston SC and DMV (DC, Maryland, Northern Virginia). Hourly rates starting at $80. Specializing in graduation photos, event coverage, couples sessions, and professional headshots.",
     "founder": { "@id": "https://visualsbyjoshua.com/#person" },
@@ -668,6 +677,19 @@
       text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
 
+    /* Visually hidden but accessible/crawlable — adds page-topic context to the H1 without altering the wordmark hero design */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
     .hero-tagline {
       font-size: clamp(0.875rem, 2vw, 1.125rem);
       letter-spacing: 0.15em;
@@ -1270,14 +1292,30 @@
   <!-- Hero: Rotating Background -->
   <section class="hero">
     <div class="hero-images">
-      <img src="/images/couples/cypress-gardens-engagement-shoot.webp" alt="Engagement photographer near me in Charleston SC at Cypress Gardens" class="hero-image active" loading="eager" fetchpriority="high">
-      <img src="/images/concerts/gza-wu-tang-concert-photography.webp" alt="Concert event coverage photography GZA Wu-Tang Clan" class="hero-image" loading="lazy">
-      <img src="/images/optimized/portraits/charleston-graduation-photography-1200.webp" alt="Graduation photographer near me in Charleston SC" class="hero-image" loading="lazy">
-      <img src="/images/couples/charleston-anniversary-couple-downtown.webp" alt="Birthday photoshoot near me anniversary couple downtown Charleston" class="hero-image" loading="lazy">
+      <picture>
+        <source type="image/avif" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.avif 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.avif 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.avif 1200w" sizes="100vw">
+        <source type="image/webp" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.webp 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.webp 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.webp 1200w" sizes="100vw">
+        <img src="/images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg" srcset="/images/optimized/couples/cypress-gardens-engagement-shoot-400.jpg 400w, /images/optimized/couples/cypress-gardens-engagement-shoot-800.jpg 800w, /images/optimized/couples/cypress-gardens-engagement-shoot-1200.jpg 1200w" sizes="100vw" alt="Engagement photographer near me in Charleston SC at Cypress Gardens" class="hero-image active" loading="eager" fetchpriority="high" width="1200" height="1597" decoding="async">
+      </picture>
+      <picture>
+        <source type="image/avif" srcset="/images/optimized/concerts/gza-wu-tang-concert-photography-400.avif 400w, /images/optimized/concerts/gza-wu-tang-concert-photography-800.avif 800w, /images/optimized/concerts/gza-wu-tang-concert-photography-1200.avif 1200w" sizes="100vw">
+        <source type="image/webp" srcset="/images/optimized/concerts/gza-wu-tang-concert-photography-400.webp 400w, /images/optimized/concerts/gza-wu-tang-concert-photography-800.webp 800w, /images/optimized/concerts/gza-wu-tang-concert-photography-1200.webp 1200w" sizes="100vw">
+        <img src="/images/optimized/concerts/gza-wu-tang-concert-photography-1200.jpg" srcset="/images/optimized/concerts/gza-wu-tang-concert-photography-400.jpg 400w, /images/optimized/concerts/gza-wu-tang-concert-photography-800.jpg 800w, /images/optimized/concerts/gza-wu-tang-concert-photography-1200.jpg 1200w" sizes="100vw" alt="Concert event coverage photography GZA Wu-Tang Clan" class="hero-image" loading="lazy" width="1200" height="1600" decoding="async">
+      </picture>
+      <picture>
+        <source type="image/avif" srcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w" sizes="100vw">
+        <source type="image/webp" srcset="/images/optimized/portraits/charleston-graduation-photography-400.webp 400w, /images/optimized/portraits/charleston-graduation-photography-800.webp 800w, /images/optimized/portraits/charleston-graduation-photography-1200.webp 1200w" sizes="100vw">
+        <img src="/images/optimized/portraits/charleston-graduation-photography-1200.jpg" srcset="/images/optimized/portraits/charleston-graduation-photography-400.jpg 400w, /images/optimized/portraits/charleston-graduation-photography-800.jpg 800w, /images/optimized/portraits/charleston-graduation-photography-1200.jpg 1200w" sizes="100vw" alt="Graduation photographer near me in Charleston SC" class="hero-image" loading="lazy" width="1200" height="1500" decoding="async">
+      </picture>
+      <picture>
+        <source type="image/avif" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.avif 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.avif 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.avif 1200w" sizes="100vw">
+        <source type="image/webp" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.webp 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.webp 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.webp 1200w" sizes="100vw">
+        <img src="/images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.jpg 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.jpg 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg 1200w" sizes="100vw" alt="Birthday photoshoot near me anniversary couple downtown Charleston" class="hero-image" loading="lazy" width="1200" height="1500" decoding="async">
+      </picture>
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1 class="hero-logo">Visuals by Joshua</h1>
+      <h1 class="hero-logo">Visuals by Joshua<span class="sr-only"> — Charleston Photographer for Portraits, Graduations & Events</span></h1>
       <p class="hero-tagline">Editorial photography for milestones & moments</p>
       <p class="hero-location">Charleston SC + Northern VA / DMV</p>
       <div class="hero-cta">
@@ -1298,12 +1336,16 @@
     <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/home/cypress-gardens-portfolio-card-1200.webp" alt="Best photo spots Charleston SC Cypress Gardens engagement" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/home/cypress-gardens-portfolio-card-400.avif 400w, /images/optimized/home/cypress-gardens-portfolio-card-800.avif 800w, /images/optimized/home/cypress-gardens-portfolio-card-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/home/cypress-gardens-portfolio-card-400.webp 400w, /images/optimized/home/cypress-gardens-portfolio-card-800.webp 800w, /images/optimized/home/cypress-gardens-portfolio-card-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/home/cypress-gardens-portfolio-card-1200.jpg" srcset="/images/optimized/home/cypress-gardens-portfolio-card-400.jpg 400w, /images/optimized/home/cypress-gardens-portfolio-card-800.jpg 800w, /images/optimized/home/cypress-gardens-portfolio-card-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Best photo spots Charleston SC Cypress Gardens engagement" loading="lazy" width="1200" height="1600" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Cypress Gardens Engagement</h3>
           <p>Golden hour engagement session at one of Charleston's best photo spots</p>
-          <a href="/blog/cypress-gardens-engagement-photography-charleston/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/cypress-gardens-engagement-photography-charleston/" class="btn btn-ghost" aria-label="Read the Cypress Gardens Engagement story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1311,12 +1353,16 @@
     <div class="portfolio-item mobile-hide size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/home/wutang-concert-bw-alt-1200.webp" alt="Concert event coverage photography GZA Wu-Tang" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/home/wutang-concert-bw-alt-400.avif 400w, /images/optimized/home/wutang-concert-bw-alt-800.avif 800w, /images/optimized/home/wutang-concert-bw-alt-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/home/wutang-concert-bw-alt-400.webp 400w, /images/optimized/home/wutang-concert-bw-alt-800.webp 800w, /images/optimized/home/wutang-concert-bw-alt-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/home/wutang-concert-bw-alt-1200.jpg" srcset="/images/optimized/home/wutang-concert-bw-alt-400.jpg 400w, /images/optimized/home/wutang-concert-bw-alt-800.jpg 800w, /images/optimized/home/wutang-concert-bw-alt-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Concert event coverage photography GZA Wu-Tang" loading="lazy" width="1200" height="1599" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>GZA (Wu-Tang Clan) Live</h3>
           <p>Event coverage photography for legendary Wu-Tang Clan member</p>
-          <a href="/blog/concert-photography-gza-wu-tang/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/concert-photography-gza-wu-tang/" class="btn btn-ghost" aria-label="Read the GZA (Wu-Tang Clan) Live story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1324,12 +1370,16 @@
     <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/home/graduation-recap-alt-1080.webp" alt="Graduation photographer near me Charleston SC" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/home/graduation-recap-alt-400.avif 400w, /images/optimized/home/graduation-recap-alt-800.avif 800w, /images/optimized/home/graduation-recap-alt-1080.avif 1080w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/home/graduation-recap-alt-400.webp 400w, /images/optimized/home/graduation-recap-alt-800.webp 800w, /images/optimized/home/graduation-recap-alt-1080.webp 1080w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/home/graduation-recap-alt-1080.jpg" srcset="/images/optimized/home/graduation-recap-alt-400.jpg 400w, /images/optimized/home/graduation-recap-alt-800.jpg 800w, /images/optimized/home/graduation-recap-alt-1080.jpg 1080w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Graduation photographer near me Charleston SC" loading="lazy" width="1080" height="1438" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Charleston Graduation</h3>
           <p>Spring graduation portraits in downtown Charleston's historic district</p>
-          <a href="/blog/charleston-spring-graduation-portrait-session/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/charleston-spring-graduation-portrait-session/" class="btn btn-ghost" aria-label="Read the Charleston Graduation story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1337,12 +1387,16 @@
     <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/studio/studio-black-white-silhouette-portrait-1200.webp" alt="Portrait photography studio session" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/studio/studio-black-white-silhouette-portrait-400.avif 400w, /images/optimized/studio/studio-black-white-silhouette-portrait-800.avif 800w, /images/optimized/studio/studio-black-white-silhouette-portrait-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/studio/studio-black-white-silhouette-portrait-400.webp 400w, /images/optimized/studio/studio-black-white-silhouette-portrait-800.webp 800w, /images/optimized/studio/studio-black-white-silhouette-portrait-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/studio/studio-black-white-silhouette-portrait-1200.jpg" srcset="/images/optimized/studio/studio-black-white-silhouette-portrait-400.jpg 400w, /images/optimized/studio/studio-black-white-silhouette-portrait-800.jpg 800w, /images/optimized/studio/studio-black-white-silhouette-portrait-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Portrait photography studio session" loading="lazy" width="1200" height="1500" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Studio Silhouette</h3>
           <p>Creative studio session with dramatic lighting</p>
-          <a href="/blog/studio-black-white-portrait-photography/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/studio-black-white-portrait-photography/" class="btn btn-ghost" aria-label="Read the Studio Silhouette story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1350,12 +1404,16 @@
     <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/events/college-party-event-photography-1200.webp" alt="College party event coverage photography" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/events/college-party-event-photography-400.avif 400w, /images/optimized/events/college-party-event-photography-800.avif 800w, /images/optimized/events/college-party-event-photography-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/events/college-party-event-photography-400.webp 400w, /images/optimized/events/college-party-event-photography-800.webp 800w, /images/optimized/events/college-party-event-photography-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/events/college-party-event-photography-1200.jpg" srcset="/images/optimized/events/college-party-event-photography-400.jpg 400w, /images/optimized/events/college-party-event-photography-800.jpg 800w, /images/optimized/events/college-party-event-photography-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="College party event coverage photography" loading="lazy" width="1200" height="1500" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Campus Event Coverage</h3>
           <p>University event photography for Greek life and student organizations</p>
-          <a href="/blog/college-party-event-photography/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/college-party-event-photography/" class="btn btn-ghost" aria-label="Read the Campus Event Coverage story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1363,12 +1421,16 @@
     <div class="portfolio-item size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/portraits/night-flash-greek-life-portrait-1200.webp" alt="Sorority flash photography nightlife portraits" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/portraits/night-flash-greek-life-portrait-400.avif 400w, /images/optimized/portraits/night-flash-greek-life-portrait-800.avif 800w, /images/optimized/portraits/night-flash-greek-life-portrait-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/portraits/night-flash-greek-life-portrait-400.webp 400w, /images/optimized/portraits/night-flash-greek-life-portrait-800.webp 800w, /images/optimized/portraits/night-flash-greek-life-portrait-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/portraits/night-flash-greek-life-portrait-1200.jpg" srcset="/images/optimized/portraits/night-flash-greek-life-portrait-400.jpg 400w, /images/optimized/portraits/night-flash-greek-life-portrait-800.jpg 800w, /images/optimized/portraits/night-flash-greek-life-portrait-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Sorority flash photography nightlife portraits" loading="lazy" width="1200" height="1600" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Night Flash Portraits</h3>
           <p>Greek life and nightlife portrait photography with creative flash</p>
-          <a href="/blog/night-flash-greek-life-portrait-photography/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/night-flash-greek-life-portrait-photography/" class="btn btn-ghost" aria-label="Read the Night Flash Portraits story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1376,12 +1438,16 @@
     <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.webp" alt="Birthday photoshoot near me Sullivan's Island Charleston" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.avif 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.avif 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.webp 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.webp 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.jpg 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.jpg 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Birthday photoshoot near me Sullivan's Island Charleston" loading="lazy" width="1200" height="1499" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Sullivan's Island Session</h3>
           <p>Birthday photoshoot on Charleston's most beautiful beach</p>
-          <a href="/blog/sullivans-island-birthday-portrait-photography-charleston/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/sullivans-island-birthday-portrait-photography-charleston/" class="btn btn-ghost" aria-label="Read the Sullivan's Island Session story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1389,12 +1455,16 @@
     <div class="portfolio-item mobile-hide size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/couples/charleston-anniversary-couple-downtown.webp" alt="Anniversary photoshoot downtown Charleston couples" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.avif 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.avif 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.webp 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.webp 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.jpg 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.jpg 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Anniversary photoshoot downtown Charleston couples" loading="lazy" width="1200" height="1500" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Downtown Anniversary Session</h3>
           <p>Anniversary photography at good photo spots downtown Charleston</p>
-          <a href="/blog/anniversary-photography-downtown-charleston/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/anniversary-photography-downtown-charleston/" class="btn btn-ghost" aria-label="Read the Downtown Anniversary Session story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1402,12 +1472,16 @@
     <div class="portfolio-item mobile-hide size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/events/fiji-y2k-party-lofi-brewing-charleston.webp" alt="FIJI Y2K party event photography at Lo-Fi Brewing Charleston" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.avif 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.avif 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.webp 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.webp 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.jpg" srcset="/images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-400.jpg 400w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-800.jpg 800w, /images/optimized/events/fiji-y2k-party-lofi-brewing-charleston-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="FIJI Y2K party event photography at Lo-Fi Brewing Charleston" loading="lazy" width="1200" height="2609" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>FIJI Y2K Party</h3>
           <p>Fraternity event coverage with flash and fisheye crowd shots at Lo-Fi Brewing</p>
-          <a href="/blog/fiji-y2k-party-event-photography-charleston/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/fiji-y2k-party-event-photography-charleston/" class="btn btn-ghost" aria-label="Read the FIJI Y2K Party story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1415,12 +1489,16 @@
     <div class="portfolio-item mobile-hide size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/events/charleston-juneteenth-event-photography-1200.webp" alt="Charleston Juneteenth event photography Shades of PINCK" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/events/charleston-juneteenth-event-photography-400.avif 400w, /images/optimized/events/charleston-juneteenth-event-photography-800.avif 800w, /images/optimized/events/charleston-juneteenth-event-photography-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/events/charleston-juneteenth-event-photography-400.webp 400w, /images/optimized/events/charleston-juneteenth-event-photography-800.webp 800w, /images/optimized/events/charleston-juneteenth-event-photography-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/events/charleston-juneteenth-event-photography-1200.jpg" srcset="/images/optimized/events/charleston-juneteenth-event-photography-400.jpg 400w, /images/optimized/events/charleston-juneteenth-event-photography-800.jpg 800w, /images/optimized/events/charleston-juneteenth-event-photography-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Charleston Juneteenth event photography Shades of PINCK" loading="lazy" width="1200" height="772" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Charleston Juneteenth Event</h3>
           <p>Black joy, food, and community at the Shades of PINCK cookout on James Island</p>
-          <a href="/blog/charleston-juneteenth-event-photography/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/charleston-juneteenth-event-photography/" class="btn btn-ghost" aria-label="Read the Charleston Juneteenth Event story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1428,12 +1506,16 @@
     <div class="portfolio-item mobile-hide size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.webp" alt="Shutter drag long exposure portrait photography" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-400.avif 400w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.avif 800w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-400.webp 400w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.webp 800w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.jpg" srcset="/images/optimized/newblogimages/shutter-drag-creative-portrait-photography-400.jpg 400w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-800.jpg 800w, /images/optimized/newblogimages/shutter-drag-creative-portrait-photography-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Shutter drag long exposure portrait photography" loading="lazy" width="1200" height="1499" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Shutter Drag Portraits</h3>
           <p>Long exposure and motion blur techniques for vibrant nightlife portraits</p>
-          <a href="/blog/shutter-drag-creative-portrait-photography/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/shutter-drag-creative-portrait-photography/" class="btn btn-ghost" aria-label="Read the Shutter Drag Portraits story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1441,12 +1523,16 @@
     <div class="portfolio-item mobile-hide size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.webp" alt="Multicultural student graduation night photography" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.avif 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.avif 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.webp 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.webp 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.jpg" srcset="/images/optimized/newblogimages/multicultural-student-graduation-night-photography-400.jpg 400w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-800.jpg 800w, /images/optimized/newblogimages/multicultural-student-graduation-night-photography-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Multicultural student graduation night photography" loading="lazy" width="1200" height="1598" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Multicultural Graduation Night</h3>
           <p>Cultural sashes, group portraits, and indoor lighting for a graduation celebration</p>
-          <a href="/blog/multicultural-student-graduation-night-photography/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/multicultural-student-graduation-night-photography/" class="btn btn-ghost" aria-label="Read the Multicultural Graduation Night story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1454,12 +1540,16 @@
     <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/portraits/baltimore-garden-fairycore-portrait-800.webp" alt="Baltimore garden fairycore portrait photography" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/portraits/baltimore-garden-fairycore-portrait-400.avif 400w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-800.avif 800w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/portraits/baltimore-garden-fairycore-portrait-400.webp 400w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-800.webp 800w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.jpg" srcset="/images/optimized/portraits/baltimore-garden-fairycore-portrait-400.jpg 400w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-800.jpg 800w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Baltimore garden fairycore portrait photography" loading="lazy" width="1200" height="1188" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Baltimore Fairycore Portraits</h3>
           <p>Flowing fabrics and soft golden light in a lush Baltimore garden</p>
-          <a href="/blog/baltimore-garden-fairycore-portrait-photography/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/baltimore-garden-fairycore-portrait-photography/" class="btn btn-ghost" aria-label="Read the Baltimore Fairycore Portraits story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1467,12 +1557,16 @@
     <div class="portfolio-item mobile-hide size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.webp" alt="Charleston historic district graduation portrait" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-400.avif 400w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.avif 800w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-400.webp 400w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.webp 800w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.jpg" srcset="/images/optimized/newblogimages/charleston-historic-district-graduation-portraits-400.jpg 400w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-800.jpg 800w, /images/optimized/newblogimages/charleston-historic-district-graduation-portraits-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Charleston historic district graduation portrait" loading="lazy" width="1200" height="1598" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Historic District Graduation</h3>
           <p>Graduation portraits among Charleston's brick archways and iconic downtown streets</p>
-          <a href="/blog/charleston-historic-district-graduation-portraits/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/charleston-historic-district-graduation-portraits/" class="btn btn-ghost" aria-label="Read the Historic District Graduation story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1480,12 +1574,16 @@
     <div class="portfolio-item size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.webp" alt="Philadelphia street photography" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.avif 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.avif 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.webp 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.webp 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.jpg" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.jpg 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.jpg 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Philadelphia street photography" loading="lazy" width="1200" height="754" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Philadelphia Street Photography</h3>
           <p>Urban street photography from Reading Terminal Market to Chinatown</p>
-          <a href="/blog/philadelphia-street-photography-reading-terminal/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/philadelphia-street-photography-reading-terminal/" class="btn btn-ghost" aria-label="Read the Philadelphia Street Photography story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1493,12 +1591,16 @@
     <div class="portfolio-item mobile-hide size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.webp" alt="Charleston multicultural student night photography" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.avif 400w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.avif 800w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.webp 400w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.webp 800w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.jpg" srcset="/images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-400.jpg 400w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-800.jpg 800w, /images/optimized/posts/charleston-multicultural-student-night-photography/1-_DSC3579-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Charleston multicultural student night photography" loading="lazy" width="1200" height="1800" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Multicultural Student Night</h3>
           <p>Candid coverage of campus org nights and diversity celebrations</p>
-          <a href="/blog/charleston-multicultural-student-night-photography/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/charleston-multicultural-student-night-photography/" class="btn btn-ghost" aria-label="Read the Multicultural Student Night story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1506,12 +1608,16 @@
     <div class="portfolio-item mobile-hide size-big">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/folklife-traditional-dance.webp" alt="Smithsonian Folklife Festival event photography" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/root/folklife-traditional-dance-400.avif 400w, /images/optimized/root/folklife-traditional-dance-800.avif 800w, /images/optimized/root/folklife-traditional-dance-1200.avif 1200w, /images/optimized/root/folklife-traditional-dance-1600.avif 1600w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/root/folklife-traditional-dance-400.webp 400w, /images/optimized/root/folklife-traditional-dance-800.webp 800w, /images/optimized/root/folklife-traditional-dance-1200.webp 1200w, /images/optimized/root/folklife-traditional-dance-1600.webp 1600w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/root/folklife-traditional-dance-1600.jpg" srcset="/images/optimized/root/folklife-traditional-dance-400.jpg 400w, /images/optimized/root/folklife-traditional-dance-800.jpg 800w, /images/optimized/root/folklife-traditional-dance-1200.jpg 1200w, /images/optimized/root/folklife-traditional-dance-1600.jpg 1600w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Smithsonian Folklife Festival event photography" loading="lazy" width="1600" height="2000" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Smithsonian Folklife Festival</h3>
           <p>Event coverage of traditional dance and cultural celebration in DC</p>
-          <a href="/blog/event-photography-checklist-smithsonian-folklife/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/event-photography-checklist-smithsonian-folklife/" class="btn btn-ghost" aria-label="Read the Smithsonian Folklife Festival story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1519,12 +1625,16 @@
     <div class="portfolio-item mobile-hide size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-800.jpg" alt="Charleston photography permit guide" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-400.avif 400w, /images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-800.avif 800w, /images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-400.webp 400w, /images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-800.webp 800w, /images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-1200.jpg" srcset="/images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-400.jpg 400w, /images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-800.jpg 800w, /images/optimized/posts/charleston-photography-permit-guide/cypress-gardens-tender-moment-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Charleston photography permit guide" loading="lazy" width="1200" height="1600" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Charleston Permit Guide</h3>
           <p>What to know about permits for parks, streets, and private venues</p>
-          <a href="/blog/charleston-photography-permit-guide/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/charleston-photography-permit-guide/" class="btn btn-ghost" aria-label="Read the Charleston Permit Guide story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1532,12 +1642,16 @@
     <div class="portfolio-item mobile-hide size-small">
       <div class="portfolio-card">
         <div class="portfolio-card-front">
-          <img src="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.jpg" alt="Record store editorial fashion photography Charleston" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-400.avif 400w, /images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.avif 800w, /images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <source type="image/webp" srcset="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-400.webp 400w, /images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.webp 800w, /images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+            <img src="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-1200.jpg" srcset="/images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-400.jpg 400w, /images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-800.jpg 800w, /images/optimized/posts/record-store-editorial-fashion-photography/record-store-flipping-vinyl-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Record store editorial fashion photography Charleston" loading="lazy" width="1200" height="1500" decoding="async">
+          </picture>
         </div>
         <div class="portfolio-card-back">
           <h3>Record Store Editorial</h3>
           <p>Editorial fashion shoot inside a Charleston record store</p>
-          <a href="/blog/record-store-editorial-fashion-photography/" class="btn btn-ghost">Read Story →</a>
+          <a href="/blog/record-store-editorial-fashion-photography/" class="btn btn-ghost" aria-label="Read the Record Store Editorial story">Read Story →</a>
         </div>
       </div>
     </div>
@@ -1549,12 +1663,16 @@
           <div class="portfolio-item">
             <div class="portfolio-card">
               <div class="portfolio-card-front">
-                <img src="/images/optimized/home/cypress-gardens-portfolio-card-1200.webp" alt="Best photo spots Charleston SC Cypress Gardens engagement" loading="lazy">
+                <picture>
+                  <source type="image/avif" srcset="/images/optimized/home/cypress-gardens-portfolio-card-400.avif 400w, /images/optimized/home/cypress-gardens-portfolio-card-800.avif 800w, /images/optimized/home/cypress-gardens-portfolio-card-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <source type="image/webp" srcset="/images/optimized/home/cypress-gardens-portfolio-card-400.webp 400w, /images/optimized/home/cypress-gardens-portfolio-card-800.webp 800w, /images/optimized/home/cypress-gardens-portfolio-card-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <img src="/images/optimized/home/cypress-gardens-portfolio-card-1200.jpg" srcset="/images/optimized/home/cypress-gardens-portfolio-card-400.jpg 400w, /images/optimized/home/cypress-gardens-portfolio-card-800.jpg 800w, /images/optimized/home/cypress-gardens-portfolio-card-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Best photo spots Charleston SC Cypress Gardens engagement" loading="lazy" width="1200" height="1600" decoding="async">
+                </picture>
               </div>
               <div class="portfolio-card-back">
                 <h3>Cypress Gardens Engagement</h3>
                 <p>Golden hour engagement session at one of Charleston's best photo spots</p>
-                <a href="/blog/cypress-gardens-engagement-photography-charleston/" class="btn btn-ghost">Read Story →</a>
+                <a href="/blog/cypress-gardens-engagement-photography-charleston/" class="btn btn-ghost" aria-label="Read the Cypress Gardens Engagement story">Read Story →</a>
               </div>
             </div>
           </div>
@@ -1562,12 +1680,16 @@
           <div class="portfolio-item">
             <div class="portfolio-card">
               <div class="portfolio-card-front">
-                <img src="/images/optimized/studio/studio-black-white-silhouette-portrait-1200.webp" alt="Portrait photography studio session" loading="lazy">
+                <picture>
+                  <source type="image/avif" srcset="/images/optimized/studio/studio-black-white-silhouette-portrait-400.avif 400w, /images/optimized/studio/studio-black-white-silhouette-portrait-800.avif 800w, /images/optimized/studio/studio-black-white-silhouette-portrait-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <source type="image/webp" srcset="/images/optimized/studio/studio-black-white-silhouette-portrait-400.webp 400w, /images/optimized/studio/studio-black-white-silhouette-portrait-800.webp 800w, /images/optimized/studio/studio-black-white-silhouette-portrait-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <img src="/images/optimized/studio/studio-black-white-silhouette-portrait-1200.jpg" srcset="/images/optimized/studio/studio-black-white-silhouette-portrait-400.jpg 400w, /images/optimized/studio/studio-black-white-silhouette-portrait-800.jpg 800w, /images/optimized/studio/studio-black-white-silhouette-portrait-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Portrait photography studio session" loading="lazy" width="1200" height="1500" decoding="async">
+                </picture>
               </div>
               <div class="portfolio-card-back">
                 <h3>Studio Silhouette</h3>
                 <p>Creative studio session with dramatic lighting</p>
-                <a href="/blog/studio-black-white-portrait-photography/" class="btn btn-ghost">Read Story →</a>
+                <a href="/blog/studio-black-white-portrait-photography/" class="btn btn-ghost" aria-label="Read the Studio Silhouette story">Read Story →</a>
               </div>
             </div>
           </div>
@@ -1575,12 +1697,16 @@
           <div class="portfolio-item">
             <div class="portfolio-card">
               <div class="portfolio-card-front">
-                <img src="/images/optimized/portraits/night-flash-greek-life-portrait-1200.webp" alt="Sorority flash photography nightlife portraits" loading="lazy">
+                <picture>
+                  <source type="image/avif" srcset="/images/optimized/portraits/night-flash-greek-life-portrait-400.avif 400w, /images/optimized/portraits/night-flash-greek-life-portrait-800.avif 800w, /images/optimized/portraits/night-flash-greek-life-portrait-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <source type="image/webp" srcset="/images/optimized/portraits/night-flash-greek-life-portrait-400.webp 400w, /images/optimized/portraits/night-flash-greek-life-portrait-800.webp 800w, /images/optimized/portraits/night-flash-greek-life-portrait-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <img src="/images/optimized/portraits/night-flash-greek-life-portrait-1200.jpg" srcset="/images/optimized/portraits/night-flash-greek-life-portrait-400.jpg 400w, /images/optimized/portraits/night-flash-greek-life-portrait-800.jpg 800w, /images/optimized/portraits/night-flash-greek-life-portrait-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Sorority flash photography nightlife portraits" loading="lazy" width="1200" height="1600" decoding="async">
+                </picture>
               </div>
               <div class="portfolio-card-back">
                 <h3>Night Flash Portraits</h3>
                 <p>Greek life and nightlife portrait photography with creative flash</p>
-                <a href="/blog/night-flash-greek-life-portrait-photography/" class="btn btn-ghost">Read Story →</a>
+                <a href="/blog/night-flash-greek-life-portrait-photography/" class="btn btn-ghost" aria-label="Read the Night Flash Portraits story">Read Story →</a>
               </div>
             </div>
           </div>
@@ -1588,12 +1714,16 @@
           <div class="portfolio-item">
             <div class="portfolio-card">
               <div class="portfolio-card-front">
-                <img src="/images/optimized/portraits/baltimore-garden-fairycore-portrait-800.webp" alt="Baltimore garden fairycore portrait photography" loading="lazy">
+                <picture>
+                  <source type="image/avif" srcset="/images/optimized/portraits/baltimore-garden-fairycore-portrait-400.avif 400w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-800.avif 800w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <source type="image/webp" srcset="/images/optimized/portraits/baltimore-garden-fairycore-portrait-400.webp 400w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-800.webp 800w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <img src="/images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.jpg" srcset="/images/optimized/portraits/baltimore-garden-fairycore-portrait-400.jpg 400w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-800.jpg 800w, /images/optimized/portraits/baltimore-garden-fairycore-portrait-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Baltimore garden fairycore portrait photography" loading="lazy" width="1200" height="1188" decoding="async">
+                </picture>
               </div>
               <div class="portfolio-card-back">
                 <h3>Baltimore Fairycore Portraits</h3>
                 <p>Flowing fabrics and soft golden light in a lush Baltimore garden</p>
-                <a href="/blog/baltimore-garden-fairycore-portrait-photography/" class="btn btn-ghost">Read Story →</a>
+                <a href="/blog/baltimore-garden-fairycore-portrait-photography/" class="btn btn-ghost" aria-label="Read the Baltimore Fairycore Portraits story">Read Story →</a>
               </div>
             </div>
           </div>
@@ -1603,12 +1733,16 @@
           <div class="portfolio-item">
             <div class="portfolio-card">
               <div class="portfolio-card-front">
-                <img src="/images/optimized/home/graduation-recap-alt-1080.webp" alt="Graduation photographer near me Charleston SC" loading="lazy">
+                <picture>
+                  <source type="image/avif" srcset="/images/optimized/home/graduation-recap-alt-400.avif 400w, /images/optimized/home/graduation-recap-alt-800.avif 800w, /images/optimized/home/graduation-recap-alt-1080.avif 1080w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <source type="image/webp" srcset="/images/optimized/home/graduation-recap-alt-400.webp 400w, /images/optimized/home/graduation-recap-alt-800.webp 800w, /images/optimized/home/graduation-recap-alt-1080.webp 1080w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <img src="/images/optimized/home/graduation-recap-alt-1080.jpg" srcset="/images/optimized/home/graduation-recap-alt-400.jpg 400w, /images/optimized/home/graduation-recap-alt-800.jpg 800w, /images/optimized/home/graduation-recap-alt-1080.jpg 1080w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Graduation photographer near me Charleston SC" loading="lazy" width="1080" height="1438" decoding="async">
+                </picture>
               </div>
               <div class="portfolio-card-back">
                 <h3>Charleston Graduation</h3>
                 <p>Spring graduation portraits in downtown Charleston's historic district</p>
-                <a href="/blog/charleston-spring-graduation-portrait-session/" class="btn btn-ghost">Read Story →</a>
+                <a href="/blog/charleston-spring-graduation-portrait-session/" class="btn btn-ghost" aria-label="Read the Charleston Graduation story">Read Story →</a>
               </div>
             </div>
           </div>
@@ -1616,12 +1750,16 @@
           <div class="portfolio-item">
             <div class="portfolio-card">
               <div class="portfolio-card-front">
-                <img src="/images/optimized/events/college-party-event-photography-1200.webp" alt="College party event coverage photography" loading="lazy">
+                <picture>
+                  <source type="image/avif" srcset="/images/optimized/events/college-party-event-photography-400.avif 400w, /images/optimized/events/college-party-event-photography-800.avif 800w, /images/optimized/events/college-party-event-photography-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <source type="image/webp" srcset="/images/optimized/events/college-party-event-photography-400.webp 400w, /images/optimized/events/college-party-event-photography-800.webp 800w, /images/optimized/events/college-party-event-photography-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <img src="/images/optimized/events/college-party-event-photography-1200.jpg" srcset="/images/optimized/events/college-party-event-photography-400.jpg 400w, /images/optimized/events/college-party-event-photography-800.jpg 800w, /images/optimized/events/college-party-event-photography-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="College party event coverage photography" loading="lazy" width="1200" height="1500" decoding="async">
+                </picture>
               </div>
               <div class="portfolio-card-back">
                 <h3>Campus Event Coverage</h3>
                 <p>University event photography for Greek life and student organizations</p>
-                <a href="/blog/college-party-event-photography/" class="btn btn-ghost">Read Story →</a>
+                <a href="/blog/college-party-event-photography/" class="btn btn-ghost" aria-label="Read the Campus Event Coverage story">Read Story →</a>
               </div>
             </div>
           </div>
@@ -1629,12 +1767,16 @@
           <div class="portfolio-item">
             <div class="portfolio-card">
               <div class="portfolio-card-front">
-                <img src="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.webp" alt="Birthday photoshoot near me Sullivan's Island Charleston" loading="lazy">
+                <picture>
+                  <source type="image/avif" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.avif 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.avif 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <source type="image/webp" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.webp 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.webp 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <img src="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg" srcset="/images/optimized/portraits/sullivans-island-birthday-portrait-charleston-400.jpg 400w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-800.jpg 800w, /images/optimized/portraits/sullivans-island-birthday-portrait-charleston-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Birthday photoshoot near me Sullivan's Island Charleston" loading="lazy" width="1200" height="1499" decoding="async">
+                </picture>
               </div>
               <div class="portfolio-card-back">
                 <h3>Sullivan's Island Session</h3>
                 <p>Birthday photoshoot on Charleston's most beautiful beach</p>
-                <a href="/blog/sullivans-island-birthday-portrait-photography-charleston/" class="btn btn-ghost">Read Story →</a>
+                <a href="/blog/sullivans-island-birthday-portrait-photography-charleston/" class="btn btn-ghost" aria-label="Read the Sullivan's Island Session story">Read Story →</a>
               </div>
             </div>
           </div>
@@ -1642,12 +1784,16 @@
           <div class="portfolio-item">
             <div class="portfolio-card">
               <div class="portfolio-card-front">
-                <img src="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.webp" alt="Philadelphia street photography" loading="lazy">
+                <picture>
+                  <source type="image/avif" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.avif 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.avif 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.avif 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <source type="image/webp" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.webp 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.webp 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.webp 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw">
+                  <img src="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.jpg" srcset="/images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-400.jpg 400w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-800.jpg 800w, /images/optimized/newblogimages/philadelphia-street-photography-reading-terminal-1200.jpg 1200w" sizes="(max-width: 767px) 50vw, (max-width: 1200px) 33vw, 25vw" alt="Philadelphia street photography" loading="lazy" width="1200" height="754" decoding="async">
+                </picture>
               </div>
               <div class="portfolio-card-back">
                 <h3>Philadelphia Street Photography</h3>
                 <p>Urban street photography from Reading Terminal Market to Chinatown</p>
-                <a href="/blog/philadelphia-street-photography-reading-terminal/" class="btn btn-ghost">Read Story →</a>
+                <a href="/blog/philadelphia-street-photography-reading-terminal/" class="btn btn-ghost" aria-label="Read the Philadelphia Street Photography story">Read Story →</a>
               </div>
             </div>
           </div>
@@ -1757,7 +1903,11 @@
     <div class="container">
       <div class="about-content">
         <div class="about-image">
-          <img src="/me.webp" alt="Joshua Smith photographer Charleston SC and Northern Virginia DMV" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/root/Me-400.avif 400w, /images/optimized/root/Me-800.avif 800w" sizes="(max-width: 900px) 90vw, 460px">
+            <source type="image/webp" srcset="/images/optimized/root/Me-400.webp 400w, /images/optimized/root/Me-800.webp 800w" sizes="(max-width: 900px) 90vw, 460px">
+            <img src="/images/optimized/root/Me-800.jpg" srcset="/images/optimized/root/Me-400.jpg 400w, /images/optimized/root/Me-800.jpg 800w" sizes="(max-width: 900px) 90vw, 460px" alt="Joshua Smith photographer Charleston SC and Northern Virginia DMV" loading="lazy" width="800" height="800" decoding="async">
+          </picture>
         </div>
 
         <div class="about-text">
@@ -1938,7 +2088,11 @@
       
       <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap: 30px;">
         <div class="blog-card" style="border-radius: 10px; overflow: hidden; border: 1px solid #e8e8e8; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <img src="/images/optimized/events/charleston-juneteenth-event-photography-1200.webp" alt="Charleston Juneteenth Event Photography" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/events/charleston-juneteenth-event-photography-400.avif 400w, /images/optimized/events/charleston-juneteenth-event-photography-800.avif 800w, /images/optimized/events/charleston-juneteenth-event-photography-1200.avif 1200w" sizes="(max-width: 767px) 100vw, (max-width: 1100px) 50vw, 400px">
+            <source type="image/webp" srcset="/images/optimized/events/charleston-juneteenth-event-photography-400.webp 400w, /images/optimized/events/charleston-juneteenth-event-photography-800.webp 800w, /images/optimized/events/charleston-juneteenth-event-photography-1200.webp 1200w" sizes="(max-width: 767px) 100vw, (max-width: 1100px) 50vw, 400px">
+            <img src="/images/optimized/events/charleston-juneteenth-event-photography-1200.jpg" srcset="/images/optimized/events/charleston-juneteenth-event-photography-400.jpg 400w, /images/optimized/events/charleston-juneteenth-event-photography-800.jpg 800w, /images/optimized/events/charleston-juneteenth-event-photography-1200.jpg 1200w" sizes="(max-width: 767px) 100vw, (max-width: 1100px) 50vw, 400px" alt="Charleston Juneteenth Event Photography" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;" loading="lazy" width="1200" height="772" decoding="async">
+          </picture>
           <div style="padding: 30px;">
             <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #be976d; margin-bottom: 0.75rem;">JUNE 26, 2026</div>
             <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Charleston Juneteenth Event Photography</h3>
@@ -1948,7 +2102,11 @@
         </div>
         
         <div class="blog-card" style="border-radius: 10px; overflow: hidden; border: 1px solid #e8e8e8; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <img src="/images/couples/charleston-anniversary-couple-downtown.webp" alt="Downtown Charleston Anniversary Photography" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; object-position: center 35%;" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.avif 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.avif 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.avif 1200w" sizes="(max-width: 767px) 100vw, (max-width: 1100px) 50vw, 400px">
+            <source type="image/webp" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.webp 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.webp 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.webp 1200w" sizes="(max-width: 767px) 100vw, (max-width: 1100px) 50vw, 400px">
+            <img src="/images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg" srcset="/images/optimized/couples/charleston-anniversary-couple-downtown-400.jpg 400w, /images/optimized/couples/charleston-anniversary-couple-downtown-800.jpg 800w, /images/optimized/couples/charleston-anniversary-couple-downtown-1200.jpg 1200w" sizes="(max-width: 767px) 100vw, (max-width: 1100px) 50vw, 400px" alt="Downtown Charleston Anniversary Photography" style="width: 100%; aspect-ratio: 4/3; object-fit: cover; object-position: center 35%;" loading="lazy" width="1200" height="1500" decoding="async">
+          </picture>
           <div style="padding: 30px;">
             <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #be976d; margin-bottom: 0.75rem;">MARCH 10, 2026</div>
             <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Downtown Charleston Anniversary Photography</h3>
@@ -1958,7 +2116,11 @@
         </div>
         
         <div class="blog-card" style="border-radius: 10px; overflow: hidden; border: 1px solid #e8e8e8; transition: transform 0.3s ease, box-shadow 0.3s ease;">
-          <img src="/images/optimized/portraits/charleston-graduation-photography-1200.webp" alt="Charleston Graduation Photography" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;" loading="lazy">
+          <picture>
+            <source type="image/avif" srcset="/images/optimized/portraits/charleston-graduation-photography-400.avif 400w, /images/optimized/portraits/charleston-graduation-photography-800.avif 800w, /images/optimized/portraits/charleston-graduation-photography-1200.avif 1200w" sizes="(max-width: 767px) 100vw, (max-width: 1100px) 50vw, 400px">
+            <source type="image/webp" srcset="/images/optimized/portraits/charleston-graduation-photography-400.webp 400w, /images/optimized/portraits/charleston-graduation-photography-800.webp 800w, /images/optimized/portraits/charleston-graduation-photography-1200.webp 1200w" sizes="(max-width: 767px) 100vw, (max-width: 1100px) 50vw, 400px">
+            <img src="/images/optimized/portraits/charleston-graduation-photography-1200.jpg" srcset="/images/optimized/portraits/charleston-graduation-photography-400.jpg 400w, /images/optimized/portraits/charleston-graduation-photography-800.jpg 800w, /images/optimized/portraits/charleston-graduation-photography-1200.jpg 1200w" sizes="(max-width: 767px) 100vw, (max-width: 1100px) 50vw, 400px" alt="Charleston Graduation Photography" style="width: 100%; aspect-ratio: 4/3; object-fit: cover;" loading="lazy" width="1200" height="1500" decoding="async">
+          </picture>
           <div style="padding: 30px;">
             <div style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #be976d; margin-bottom: 0.75rem;">MARCH 19, 2026</div>
             <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Charleston Graduation Photography</h3>
