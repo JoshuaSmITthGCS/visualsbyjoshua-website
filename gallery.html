@@ -37,13 +37,13 @@
       max-width: 720px;
       margin: 0 auto 30px;
       text-align: center;
-      color: var(--gray);
+      color: #5a5a5a;
     }
 
     .gallery-embed {
-      background: white;
+      background: #ffffff;
+      border: 1px solid #e8e8e8;
       border-radius: 16px;
-      box-shadow: var(--shadow);
       padding: 24px;
       min-height: 420px;
     }
@@ -81,7 +81,7 @@
     }
 
     .embed-fallback a {
-      color: #be976d;
+      color: #8a5f35;
       font-weight: 500;
       text-decoration: underline;
     }
@@ -93,8 +93,18 @@
     }
 
     .gallery-related p {
-      color: var(--gray);
+      color: #5a5a5a;
       margin-bottom: 16px;
+    }
+
+    .gallery-related p a {
+      color: #8a5f35;
+      border-bottom: 1px solid rgba(138, 95, 53, 0.4);
+    }
+
+    .gallery-related p a:hover {
+      opacity: 1;
+      border-color: #8a5f35;
     }
 
     .portfolio-hero-actions,
@@ -114,9 +124,9 @@
       margin: 0 0 48px;
       padding: 28px;
       border-radius: 12px;
-      background: linear-gradient(135deg, rgba(16, 25, 35, 0.96), rgba(13, 21, 32, 0.92));
+      background: linear-gradient(135deg, #2a2a2a, #362c22);
       color: white;
-      box-shadow: var(--shadow);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
     }
 
     .gallery-booking-label {
@@ -333,12 +343,13 @@
   <section class="portfolio-hero" id="main">
     <div class="container">
       <div class="breadcrumb"><a href="/">Home</a> &gt; Portfolio</div>
+      <span class="kicker">Portfolio</span>
       <h1 class="portfolio-title">Photography Portfolio</h1>
       <p class="portfolio-subtitle">A live Instagram portfolio of portrait, event, graduation, couples, concert, and headshot photography with a Charleston-first focus.</p>
       <div class="portfolio-hero-actions">
-        <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact" class="btn btn-accent">Check Charleston Availability</a>
-        <a title="View Charleston photography pricing" href="/blog/charleston-photography-pricing/" class="btn">View Pricing</a>
-        <a title="View Charleston photography services" href="/charleston-photographer/" class="btn">Charleston Services</a>
+        <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact" class="btn btn-primary">Check Charleston Availability</a>
+        <a title="View Charleston photography pricing" href="/blog/charleston-photography-pricing/" class="btn btn-secondary">View Pricing</a>
+        <a title="View Charleston photography services" href="/charleston-photographer/" class="btn btn-secondary">Charleston Services</a>
       </div>
     </div>
   </section>
@@ -361,8 +372,8 @@
               <h3>Portraits, headshots, and personal branding</h3>
               <p>Individual sessions with guided posing, clean edits, and Charleston location planning.</p>
               <div class="portfolio-category-actions">
-                <a title="View Charleston portrait photography services" href="/charleston-portrait-photographer/" class="btn">View Portraits</a>
-                <a title="Book a Charleston portrait session" href="/index.html?service=portrait&amp;location=charleston#contact" class="btn btn-accent">Book Portraits</a>
+                <a title="View Charleston portrait photography services" href="/charleston-portrait-photographer/" class="btn btn-secondary">View Portraits</a>
+                <a title="Book a Charleston portrait session" href="/index.html?service=portrait&amp;location=charleston#contact" class="btn btn-primary">Book Portraits</a>
               </div>
             </div>
           </article>
@@ -375,9 +386,9 @@
               <h3>Cap and gown sessions around Charleston</h3>
               <p>Campus, downtown, and waterfront graduation photos with simple posing direction.</p>
               <div class="portfolio-category-actions">
-                <a title="View Charleston graduation photography portfolio" href="/charleston-graduation-photographer/" class="btn">View Grad Work</a>
-                <a title="Read the Charleston graduation photography guide" href="/blog/charleston-graduation-photography/" class="btn">Grad Guide</a>
-                <a title="Book Charleston graduation photos" href="/index.html?service=graduation&amp;location=charleston#contact" class="btn btn-accent">Book Grad Photos</a>
+                <a title="View Charleston graduation photography portfolio" href="/charleston-graduation-photographer/" class="btn btn-secondary">View Grad Work</a>
+                <a title="Read the Charleston graduation photography guide" href="/blog/charleston-graduation-photography/" class="btn btn-secondary">Grad Guide</a>
+                <a title="Book Charleston graduation photos" href="/index.html?service=graduation&amp;location=charleston#contact" class="btn btn-primary">Book Grad Photos</a>
               </div>
             </div>
           </article>
@@ -390,8 +401,8 @@
               <h3>Parties, campus events, brands, and music</h3>
               <p>Coverage that captures the room, the people, and the moments you need to share.</p>
               <div class="portfolio-category-actions">
-                <a title="View Charleston event photography services" href="/charleston-event-photographer/" class="btn">View Events</a>
-                <a title="Book Charleston event photography" href="/index.html?service=event&amp;location=charleston#contact" class="btn btn-accent">Book Events</a>
+                <a title="View Charleston event photography services" href="/charleston-event-photographer/" class="btn btn-secondary">View Events</a>
+                <a title="Book Charleston event photography" href="/index.html?service=event&amp;location=charleston#contact" class="btn btn-primary">Book Events</a>
               </div>
             </div>
           </article>
@@ -404,8 +415,8 @@
               <h3>Couples, engagements, and styled portraits</h3>
               <p>Editorial-feeling sessions for anniversaries, engagements, birthdays, and creative concepts.</p>
               <div class="portfolio-category-actions">
-                <a title="See a Charleston anniversary photography session" href="/blog/anniversary-photography-downtown-charleston/" class="btn">See Session</a>
-                <a title="Book a Charleston couples photography session" href="/index.html?service=couples&amp;location=charleston#contact" class="btn btn-accent">Book Couples</a>
+                <a title="See a Charleston anniversary photography session" href="/blog/anniversary-photography-downtown-charleston/" class="btn btn-secondary">See Session</a>
+                <a title="Book a Charleston couples photography session" href="/index.html?service=couples&amp;location=charleston#contact" class="btn btn-primary">Book Couples</a>
               </div>
             </div>
           </article>
@@ -418,8 +429,8 @@
           <p>Send your date and session type while the examples are fresh. Charleston requests are routed first, and the booking form takes under a minute.</p>
         </div>
         <div class="gallery-booking-actions">
-          <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact" class="btn btn-accent">Check Availability</a>
-          <a title="Call or text Joshua Smith about photography" href="tel:+12403608465" class="btn">Call or Text</a>
+          <a title="Check Charleston photography availability" href="/index.html?location=charleston#contact" class="btn btn-primary">Check Availability</a>
+          <a title="Call or text Joshua Smith about photography" href="tel:+12403608465" class="btn btn-ghost">Call or Text</a>
         </div>
       </div>
 
@@ -445,8 +456,8 @@
       <div class="gallery-related">
         <p>Looking for something specific? Start with the <a href="/charleston-portrait-photographer/">Charleston portrait</a>, <a href="/charleston-event-photographer/">Charleston event</a>, or <a href="/charleston-photographer/">Charleston photographer</a> pages. The <a href="/dmv-photographer/">DMV photographer</a> page remains available for secondary service-area requests.</p>
         <div class="gallery-related-actions">
-          <a title="Book a Charleston photography session" href="/index.html?location=charleston#contact" class="btn btn-accent">Book a Charleston Session</a>
-          <a title="Request DMV photography availability" href="/index.html?location=dmv#contact" class="btn">Request DMV Availability</a>
+          <a title="Book a Charleston photography session" href="/index.html?location=charleston#contact" class="btn btn-primary">Book a Charleston Session</a>
+          <a title="Request DMV photography availability" href="/index.html?location=dmv#contact" class="btn btn-secondary">Request DMV Availability</a>
         </div>
       </div>
     </div>
