@@ -1240,6 +1240,93 @@
       margin-top: 16px;
     }
 
+    .form-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .form-input.has-error,
+    .form-select.has-error {
+      border-color: #9a3412;
+      background: #fdf1ee;
+    }
+
+    .form-input.has-error:focus,
+    .form-select.has-error:focus {
+      border-color: #9a3412;
+      box-shadow: 0 0 0 3px rgba(154, 52, 18, 0.12);
+    }
+
+    .form-error-text {
+      display: none;
+      margin-top: 8px;
+      font-size: 0.875rem;
+      color: #9a3412;
+    }
+
+    .form-error-text.is-visible {
+      display: block;
+    }
+
+    .form-status {
+      display: none;
+      padding: 16px 20px;
+      border-radius: 10px;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      margin-top: 16px;
+    }
+
+    .form-status.is-visible {
+      display: block;
+    }
+
+    .form-status.is-error {
+      background: #fdf1ee;
+      border: 1px solid rgba(154, 52, 18, 0.25);
+      color: #9a3412;
+    }
+
+    .form-success {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 48px 32px;
+      border: 1px solid rgba(138, 95, 53, 0.2);
+      border-radius: 10px;
+      background: #fcfbfa;
+    }
+
+    .form-success-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(138, 95, 53, 0.12);
+      color: #8a5f35;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .form-success h3 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 1.75rem;
+      margin-bottom: 12px;
+      color: #2a2a2a;
+    }
+
+    .form-success p {
+      color: #5a564e;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
     /* ========================================
        FOOTER
        ======================================== */
@@ -1956,7 +2043,8 @@
 
           <div class="form-group">
             <label for="email" class="form-label">Email *</label>
-            <input type="email" id="email" name="email" class="form-input" inputmode="email" required>
+            <input type="email" id="email" name="email" class="form-input" inputmode="email" required aria-describedby="email-error">
+            <span class="form-error-text" id="email-error"></span>
           </div>
         </div>
 
@@ -2011,8 +2099,17 @@
           </div>
         </div>
 
+        <div class="form-status" id="form-status" role="alert" aria-live="assertive"></div>
+
         <button type="submit" class="btn btn-primary form-submit">Send My Inquiry</button>
       </form>
+
+      <div class="form-success" id="form-success" role="status" aria-live="polite" tabindex="-1" hidden>
+        <span class="form-success-icon" aria-hidden="true">&#10003;</span>
+        <h3>Thanks &mdash; I've got it.</h3>
+        <p>Your message is on its way. I reply within 24 hours with availability and pricing&mdash;or text me now at <a href="tel:+12403608465" style="color: #8a5f35; font-weight: 500; text-decoration: underline; text-underline-offset: 3px;">(240) 360-8465</a> for a faster answer.</p>
+        <button type="button" class="btn btn-secondary" id="form-success-reset">Send Another Message</button>
+      </div>
     </div>
   </section>
 
@@ -2242,33 +2339,113 @@
       });
     });
 
-    // Form validation enhancement
-    const form = document.querySelector('.contact-form');
-    if (form) {
-      form.addEventListener('submit', function(e) {
-        const email = document.getElementById('email').value;
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!emailRegex.test(email)) {
-          e.preventDefault();
-          alert('Please enter a valid email address.');
-          return false;
-        }
-      });
-    }
-
-    // Show/hide graduation package selector (optional — no required-field blocking)
+    // Show/hide graduation package selector
     const serviceSelect = document.getElementById('service');
     const graduationPackageGroup = document.getElementById('graduation-package-group');
     const graduationPackageSelect = document.getElementById('graduation-package');
 
-    if (serviceSelect && graduationPackageGroup) {
+    if (serviceSelect && graduationPackageGroup && graduationPackageSelect) {
       serviceSelect.addEventListener('change', function() {
         if (this.value === 'Graduation Photography') {
           graduationPackageGroup.style.display = 'grid';
+          graduationPackageSelect.setAttribute('required', 'required');
         } else {
           graduationPackageGroup.style.display = 'none';
+          graduationPackageSelect.removeAttribute('required');
           graduationPackageSelect.value = '';
+        }
+      });
+    }
+
+    // Contact form: inline validation + AJAX submission with success/error states
+    const form = document.querySelector('.contact-form');
+    const formStatus = document.getElementById('form-status');
+    const formSuccess = document.getElementById('form-success');
+    const formSuccessReset = document.getElementById('form-success-reset');
+
+    function setFormStatus(message, type) {
+      if (!formStatus) return;
+      formStatus.textContent = message;
+      formStatus.className = 'form-status is-visible' + (type ? ' is-' + type : '');
+    }
+
+    function clearFormStatus() {
+      if (!formStatus) return;
+      formStatus.textContent = '';
+      formStatus.className = 'form-status';
+    }
+
+    if (form) {
+      const submitButton = form.querySelector('.form-submit');
+      const emailField = document.getElementById('email');
+      const emailError = document.getElementById('email-error');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        clearFormStatus();
+        emailField.classList.remove('has-error');
+        if (emailError) { emailError.textContent = ''; emailError.classList.remove('is-visible'); }
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        if (!emailRegex.test(emailField.value.trim())) {
+          emailField.classList.add('has-error');
+          if (emailError) {
+            emailError.textContent = 'Please enter a valid email address.';
+            emailError.classList.add('is-visible');
+          }
+          emailField.focus();
+          return;
+        }
+
+        const emailTo = form.action.split('/').pop();
+        const originalLabel = submitButton.textContent;
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending…';
+
+        fetch('https://formsubmit.co/ajax/' + emailTo, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        })
+          .then(function(response) {
+            if (!response.ok) throw new Error('Request failed');
+            return response.json();
+          })
+          .then(function() {
+            if (window.gtag) {
+              window.gtag('event', 'generate_lead', { form_id: form.className });
+            }
+            form.reset();
+            if (graduationPackageGroup) graduationPackageGroup.style.display = 'none';
+            if (graduationPackageSelect) graduationPackageSelect.removeAttribute('required');
+            form.hidden = true;
+            if (formSuccess) {
+              formSuccess.hidden = false;
+              formSuccess.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              formSuccess.focus();
+            }
+          })
+          .catch(function() {
+            setFormStatus('Something went wrong sending your message. Please try again, or reach me directly at (240) 360-8465 or jbmsmusic05@gmail.com.', 'error');
+          })
+          .finally(function() {
+            submitButton.disabled = false;
+            submitButton.textContent = originalLabel;
+          });
+      });
+    }
+
+    if (formSuccessReset) {
+      formSuccessReset.addEventListener('click', function() {
+        if (formSuccess) formSuccess.hidden = true;
+        if (form) {
+          form.hidden = false;
+          form.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       });
     }
