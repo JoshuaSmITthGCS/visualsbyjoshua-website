@@ -392,10 +392,20 @@
       <p class="submit-review-text">Been a client? I'd love to hear about your experience and share your story with others.</p>
       
       <div class="review-form">
+        <div class="testimonial-success" id="testimonial-success" role="status" aria-live="polite" hidden>
+          <i class="fas fa-check-circle testimonial-success-icon" aria-hidden="true"></i>
+          <h3 class="testimonial-success-title">Thank You for Sharing!</h3>
+          <p class="testimonial-success-message">Your testimonial has been received. I really appreciate you taking the time&mdash;I may feature it (with your permission) on the site and social media.</p>
+          <div class="testimonial-success-actions">
+            <button type="button" class="btn btn-primary" id="testimonial-success-close">Share Another Testimonial</button>
+            <a href="/gallery" class="btn btn-secondary">Browse the Portfolio</a>
+          </div>
+        </div>
+
         <form id="testimonial-form" action="https://formsubmit.co/jbmsmusic05@gmail.com" method="POST" enctype="multipart/form-data">
           <input type="hidden" name="_subject" value="New Client Testimonial Submission">
           <input type="hidden" name="_captcha" value="false">
-          
+
           <div class="form-group">
             <label for="name" class="form-label">Your Name *</label>
             <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
@@ -466,7 +476,8 @@
             <label for="permission">I give permission for Joshua Smith Photography to use my testimonial and photos on the website and social media.</label>
           </div>
           
-          <button type="submit" class="btn btn-accent form-submit">Submit Testimonial</button>
+          <button type="submit" class="btn btn-primary form-submit">Submit Testimonial</button>
+          <div class="form-status" id="testimonial-status" role="status" aria-live="polite"></div>
         </form>
       </div>
     </div>
@@ -536,6 +547,74 @@
             moreText.textContent = `+${files.length - 4} more`;
             previewContainer.appendChild(moreText);
           }
+        });
+      }
+
+      // Form submission: an in-place success page and inline error state
+      // instead of a full-page redirect, so a slow or blocked network call
+      // doesn't read to the user as "nothing happened."
+      const form = document.getElementById('testimonial-form');
+      const formStatus = document.getElementById('testimonial-status');
+      const successPanel = document.getElementById('testimonial-success');
+      const successClose = document.getElementById('testimonial-success-close');
+
+      function setFormStatus(type, message) {
+        if (!formStatus) return;
+        formStatus.textContent = message;
+        formStatus.className = 'form-status' + (type ? ' is-' + type : '');
+      }
+
+      function showSuccess() {
+        if (!successPanel || !form) return;
+        form.hidden = true;
+        successPanel.hidden = false;
+        successPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      if (successClose) {
+        successClose.addEventListener('click', function() {
+          successPanel.hidden = true;
+          form.hidden = false;
+          form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          const submitBtn = form.querySelector('.form-submit');
+          const originalBtnText = submitBtn ? submitBtn.textContent : '';
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+          }
+          setFormStatus('', '');
+
+          fetch('https://formsubmit.co/ajax/jbmsmusic05@gmail.com', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(form)
+          })
+            .then(function(response) {
+              if (!response.ok) throw new Error('Request failed');
+              return response.json();
+            })
+            .then(function() {
+              form.reset();
+              if (previewContainer) previewContainer.innerHTML = '';
+              if (ratingReadout) ratingReadout.textContent = '';
+              showSuccess();
+            })
+            .catch(function() {
+              setFormStatus('error', 'Something went wrong sending that. Please text or call (240) 360-8465, or email jbmsmusic05@gmail.com directly and I\'ll add your testimonial myself.');
+            })
+            .finally(function() {
+              if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalBtnText;
+              }
+            });
         });
       }
     });

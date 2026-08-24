@@ -299,6 +299,11 @@
   text-align: left;
 }
 
+#testimonial-form,
+#testimonial-success {
+  scroll-margin-top: 100px;
+}
+
 .review-form .form-label {
   display: block;
   margin-bottom: 5px;
@@ -410,6 +415,78 @@
   justify-content: center;
   cursor: pointer;
   font-size: 12px;
+}
+
+/* Form submit feedback */
+.form-status {
+  display: none;
+  margin-top: 20px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.form-status.is-success,
+.form-status.is-error {
+  display: block;
+}
+
+.form-status.is-success {
+  background: #eef5ec;
+  border: 1px solid #a9c9a0;
+  color: #2f5b26;
+}
+
+.form-status.is-error {
+  background: #fbeeee;
+  border: 1px solid #e0a9a9;
+  color: #7a2626;
+}
+
+.form-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.testimonial-success {
+  /* .submit-review sets color: white for its light-on-dark copy; this card
+     is a white box sitting inside it, so text here needs its own dark
+     color rather than inheriting that white and vanishing. */
+  color: #2a2a2a;
+  text-align: center;
+  padding: 20px 0 10px;
+}
+
+.testimonial-success[hidden] {
+  display: none;
+}
+
+.testimonial-success-icon {
+  display: block;
+  font-size: 56px;
+  margin: 0 auto 20px;
+  color: #be976d;
+}
+
+.testimonial-success-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 12px;
+  color: #2a2a2a;
+}
+
+.testimonial-success-message {
+  font-size: 1.05rem;
+  color: #5a5a5a;
+  max-width: 50ch;
+  margin: 0 auto 32px;
+}
+
+.testimonial-success-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Responsive */
