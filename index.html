@@ -1253,6 +1253,37 @@
       margin-top: 16px;
     }
 
+    .form-submit:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+
+    .form-status {
+      display: none;
+      margin-top: 16px;
+      padding: 14px 18px;
+      border-radius: 10px;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+    }
+
+    .form-status.is-success,
+    .form-status.is-error {
+      display: block;
+    }
+
+    .form-status.is-success {
+      background: #eef5ec;
+      border: 1px solid #a9c9a0;
+      color: #2f5b26;
+    }
+
+    .form-status.is-error {
+      background: #fbeeee;
+      border: 1px solid #e0a9a9;
+      color: #7a2626;
+    }
+
     /* ========================================
        FOOTER
        ======================================== */
@@ -1964,7 +1995,7 @@
       <form class="contact-form" action="https://formsubmit.co/jbmsmusic05@gmail.com" method="POST">
         <!-- FormSubmit.co Config -->
         <input type="hidden" name="_subject" value="New Photography Session Inquiry">
-        <input type="hidden" name="_next" value="https://visualsbyjoshua.com/thank-you.html">
+        <input type="hidden" name="_next" value="https://visualsbyjoshua.com/thankyou.html">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
 
@@ -2032,6 +2063,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary form-submit">Send My Inquiry</button>
+        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
       </form>
     </div>
   </section>
@@ -2262,18 +2294,60 @@
       });
     });
 
-    // Form validation enhancement
+    // Form submission: inline success/error states instead of a page redirect,
+    // so a slow or blocked network call doesn't read to the user as "nothing happened."
     const form = document.querySelector('.contact-form');
+    const formStatus = document.getElementById('form-status');
+
+    function setFormStatus(type, message) {
+      if (!formStatus) return;
+      formStatus.textContent = message;
+      formStatus.className = 'form-status' + (type ? ' is-' + type : '');
+    }
+
     if (form) {
       form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
         const email = document.getElementById('email').value;
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (!emailRegex.test(email)) {
-          e.preventDefault();
-          alert('Please enter a valid email address.');
-          return false;
+          setFormStatus('error', 'Please enter a valid email address.');
+          return;
         }
+
+        const submitBtn = form.querySelector('.form-submit');
+        const originalBtnText = submitBtn ? submitBtn.textContent : '';
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+        }
+        setFormStatus('', '');
+
+        fetch('https://formsubmit.co/ajax/jbmsmusic05@gmail.com', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        })
+          .then(function(response) {
+            if (!response.ok) throw new Error('Request failed');
+            return response.json();
+          })
+          .then(function() {
+            setFormStatus('success', "Got it! Your inquiry is in my inbox — I'll reply within 24 hours.");
+            form.reset();
+            if (graduationPackageGroup) graduationPackageGroup.style.display = 'none';
+          })
+          .catch(function() {
+            setFormStatus('error', 'Something went wrong sending that. Please text or call (240) 360-8465, or email jbmsmusic05@gmail.com directly and I\'ll get right back to you.');
+          })
+          .finally(function() {
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.textContent = originalBtnText;
+            }
+          });
       });
     }
 
