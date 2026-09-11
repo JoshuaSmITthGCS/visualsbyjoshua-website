@@ -582,6 +582,31 @@ p {
   width: 100%;
 }
 
+.service-option-popular {
+  position: relative;
+  background: #fff;
+  border: 2px solid #be976d;
+  padding-top: 34px;
+}
+
+.service-option-badge {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 8px;
+  background: #be976d;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+}
+
 /* ========================================
    ABOUT
    ======================================== */
