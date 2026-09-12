@@ -1432,7 +1432,7 @@
     <div class="nav-container">
       <a href="/" class="nav-logo">Visuals by Joshua</a>
       <ul class="nav-menu" id="nav-menu">
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="/gallery">Full Gallery</a></li>
         <li><a href="/blog/photography-pricing/">Pricing</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="/blog/best-photo-spots-charleston-sc/">Photo Spots</a></li>
@@ -2104,6 +2104,7 @@
         <div class="about-text">
           <span class="kicker">About</span>
           <h2>Editorial Photography<br>for Real Moments</h2>
+          <p style="color: #8a5f35; font-weight: 500; margin-bottom: 1rem;">Best known for editorial portraits and milestone sessions — always open to events and brand work too.</p>
           <p>I'm Joshua Smith, a photographer near me serving Charleston SC and Northern VA / DMV area. I bring magazine-level composition and cinematic color grading to personal sessions—not just commercial work. Whether it's your engagement at Cypress Gardens, graduation downtown Charleston, or a live concert, every session gets the editorial treatment.</p>
 
           <p>I've shot event coverage photography for artists like GZA (Wu-Tang Clan) and covered hundreds of university events, but my favorite work is intimate: couples celebrating anniversaries, graduates marking milestones, professionals building their personal brand at good photoshoot locations near me.</p>
@@ -2177,62 +2178,10 @@
           </div>
         </div>
 
-        <div class="form-grid form-grid-2">
-          <div class="form-group">
-            <label for="phone" class="form-label">Phone (optional &mdash; so I can text you back faster)</label>
-            <input type="tel" id="phone" name="phone" class="form-input" inputmode="tel">
-          </div>
-
-          <div class="form-group">
-            <label for="session_date" class="form-label">Preferred Date (optional)</label>
-            <input type="text" id="session_date" name="session_date" class="form-input" placeholder="e.g. mid-May 2026, or an exact date">
-          </div>
-        </div>
-
-        <div class="form-grid form-grid-2">
-          <div class="form-group">
-            <label for="service" class="form-label">Session Type (optional)</label>
-            <select id="service" name="service" class="form-select">
-              <option value="">Not sure yet</option>
-              <option value="Portrait - Mini">Portrait - Mini ($150)</option>
-              <option value="Portrait - Signature">Portrait - Signature ($300)</option>
-              <option value="Portrait - Editorial">Portrait - Editorial ($475)</option>
-              <option value="Portrait - Group">Portrait - Group ($225)</option>
-              <option value="Couples - Essential">Couples - Essential ($300)</option>
-              <option value="Couples - Signature">Couples - Signature ($425)</option>
-              <option value="Couples - Full Story">Couples - Full Story ($600)</option>
-              <option value="Headshots - Single">Headshots - Single ($125)</option>
-              <option value="Headshots - Professional">Headshots - Professional ($250)</option>
-              <option value="Headshots - Executive">Headshots - Executive ($400)</option>
-              <option value="Graduation Photography">Graduation Photography</option>
-              <option value="Event Coverage">Event Coverage (from $225/hr)</option>
-              <option value="Concert - Music Photography">Concert / Music Photography (from $275)</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="location" class="form-label">City / Venue (optional)</label>
-            <input type="text" id="location" name="location" class="form-input" placeholder="Charleston, DC, Mount Pleasant...">
-          </div>
-        </div>
-
-        <!-- Graduation Package Selector (conditional) -->
-        <div class="form-grid" id="graduation-package-group" style="display: none;">
-          <div class="form-group">
-            <label for="graduation-package" class="form-label">Graduation Package (optional)</label>
-            <select id="graduation-package" name="graduation_package" class="form-select">
-              <option value="">Not sure yet</option>
-              <option value="Bronze - $175">Bronze Package - $175 (1 hr, 30 images, 1 location)</option>
-              <option value="Silver - $325">Silver Package - $325 (1.5 hrs, 48 images, 2 locations)</option>
-              <option value="Gold - $550">Gold Package - $550 (2 hrs, 70+ images, 3 locations, priority editing)</option>
-            </select>
-          </div>
-        </div>
-
         <div class="form-grid">
           <div class="form-group">
-            <label for="message" class="form-label">Anything else? (optional)</label>
-            <textarea id="message" name="message" class="form-textarea" placeholder="What are you celebrating? Looking for good photoshoot locations near me?"></textarea>
+            <label for="message" class="form-label">What are you looking for? *</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Session type, rough date, and location — e.g. Portrait Signature package, mid-May 2026, Charleston" required></textarea>
           </div>
         </div>
 
@@ -2528,7 +2477,6 @@
           })
           .then(function() {
             form.reset();
-            if (graduationPackageGroup) graduationPackageGroup.style.display = 'none';
             showContactSuccess();
           })
           .catch(function() {
@@ -2540,22 +2488,6 @@
               submitBtn.textContent = originalBtnText;
             }
           });
-      });
-    }
-
-    // Show/hide graduation package selector (optional — no required-field blocking)
-    const serviceSelect = document.getElementById('service');
-    const graduationPackageGroup = document.getElementById('graduation-package-group');
-    const graduationPackageSelect = document.getElementById('graduation-package');
-
-    if (serviceSelect && graduationPackageGroup) {
-      serviceSelect.addEventListener('change', function() {
-        if (this.value === 'Graduation Photography') {
-          graduationPackageGroup.style.display = 'grid';
-        } else {
-          graduationPackageGroup.style.display = 'none';
-          graduationPackageSelect.value = '';
-        }
       });
     }
 
@@ -2572,32 +2504,23 @@
       });
     });
 
-    // Pre-fill service/package from "Book Now" buttons
+    // Pre-fill the message field from "Book Now" buttons
     document.querySelectorAll('[data-service]').forEach(button => {
       button.addEventListener('click', function(e) {
         e.preventDefault();
         const service = this.getAttribute('data-service');
+        const price = this.getAttribute('data-price');
 
         // Scroll to contact form
         document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
 
-        // Pre-fill service dropdown
         setTimeout(() => {
-          if (service.includes('Graduation')) {
-            serviceSelect.value = 'Graduation Photography';
-            graduationPackageGroup.style.display = 'grid';
-            graduationPackageSelect.setAttribute('required', 'required');
-
-            // Extract package type from service string
-            if (service.includes('Bronze')) {
-              graduationPackageSelect.value = 'Bronze - $175';
-            } else if (service.includes('Silver')) {
-              graduationPackageSelect.value = 'Silver - $325';
-            } else if (service.includes('Gold')) {
-              graduationPackageSelect.value = 'Gold - $550';
-            }
-          } else {
-            serviceSelect.value = service;
+          const messageField = document.getElementById('message');
+          if (messageField && !messageField.value) {
+            messageField.value = "I'm interested in: " + service + (price ? ' (' + price + ')' : '') + '. ';
+            messageField.focus();
+            const end = messageField.value.length;
+            messageField.setSelectionRange(end, end);
           }
         }, 500);
       });
